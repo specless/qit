@@ -12,6 +12,8 @@ npm install
 npm run qit
 ```
 
+Then point your browser to: `http://localhost:3131/quarks` and check it out!
+
 ## Production & Methodology
 
 #### Project Structure

@@ -23,7 +23,7 @@ In the directory `/src` there are a number of folders per the below:
 - `/3-atoms` Atoms are the core styles associated with all native HTML tags and unique classes that define a very specific individual element. 
 - `/4-molecules` Molecules should use a minimal amount of custom CSS, but can be assembled and styled by combining quarks and atoms. 
 - `/5-organisms` Organisms should not have any custom CSS, but rather should mostly use a variety of molecules to assemble.
-- `/6-templates` Layouts use a variety of organisms to create a full page view. This is what the user will see and is the closest to the final app environment.
+- `/6-templates` Templates use a variety of organisms to create a full page view. This is what the user will see and is the closest to the final app environment.
 
 **Note: ** Qit will compile each of the base directories at once, starting with `base` and ending with `layouts`. You do not control the order in which your SCSS compiles, just that all `base` components will compile before all `quarks`. This is intentional to force adhering to atomic design principals. Atoms should not depend on other atoms. Quarks should not depend on other quarks. Atoms should depend on quarks. Molecules can depend on atoms and quarks. Etc.
 

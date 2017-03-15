@@ -1,0 +1,232 @@
+[class^='sp-logo-'], [class*=' sp-logo-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+	&::before, &::after {
+		font-family: 'Icon Font' !important;
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		display: inline-block;
+	}
+}
+
+.sp-logo-mark {
+	display: inline-block;
+	position: relative;
+	
+	&:before {
+		content: "\F04E";
+		font-size: 40px;
+	}
+
+	&.sp-small {
+		&:before {
+			font-size: 24px;
+		}
+	}
+
+	&.sp-large {
+		&:before {
+			font-size: 60px;
+		}
+	}
+
+	&.sp-huge {
+		&:before {
+			font-size: 75px;
+		}
+	}
+
+	&.sp-muted {
+		@include sp-font-color(muted);
+	}
+
+	&.sp-contrast {
+		@include sp-font-color(contrast);
+	}
+
+	&.sp-primary {
+		@include sp-font-color(primary);
+	}
+
+	&.sp-success {
+		@include sp-font-color(success);
+	}
+
+	&.sp-warning {
+		@include sp-font-color(warning);
+	}
+
+	&.sp-danger {
+		@include sp-font-color(danger);
+	}
+}
+
+.sp-logo-name {
+	position: relative;
+	display: inline-block;
+
+	&:before {
+		content: "\F04F";
+		font-size: 18px;
+	}
+
+	&.sp-small {
+		&:before {
+			font-size: 13px;
+		}
+	}
+
+	&.sp-large {
+		&:before {
+			font-size: 24px;
+		}
+	}
+
+	&.sp-huge {
+		&:before {
+			font-size: 36px;
+		}
+	}
+
+	&.sp-muted {
+		@include sp-font-color(muted);
+	}
+
+	&.sp-contrast {
+		@include sp-font-color(contrast);
+	}
+
+	&.sp-primary {
+		@include sp-font-color(primary);
+	}
+
+	&.sp-success {
+		@include sp-font-color(success);
+	}
+
+	&.sp-warning {
+		@include sp-font-color(warning);
+	}
+
+	&.sp-danger {
+		@include sp-font-color(danger);
+	}
+}
+
+.sp-logo-lockup {
+	position: relative;
+	display: inline-block;
+
+	&:before {
+		display: block;
+		text-align: center;
+		content: "\F04E";
+		font-size: 40px;
+		margin-bottom: 0.35em;
+	}
+
+	&:after {
+		display: block;
+		text-align: center;
+		content: "\F04F";
+		font-size: 18px;
+	}
+
+	&.sp-small {
+		&:before {
+			font-size: 24px;
+		}
+		&:after {
+			font-size: 13px;
+		}
+	}
+
+	&.sp-large {
+		&:before {
+			font-size: 60px;
+		}
+		&:after {
+			font-size: 24px;
+		}
+	}
+
+	&.sp-huge {
+		&:before {
+			font-size: 75px;
+		}
+		&:after {
+			font-size: 36px;
+		}
+	}
+
+	&.sp-muted {
+		@include sp-font-color(muted);
+	}
+
+	&.sp-contrast {
+		@include sp-font-color(contrast);
+	}
+
+	&.sp-primary {
+		@include sp-font-color(contrast);
+		
+		&::before {
+			@include sp-font-color(primary);
+		}
+	}
+
+	&.sp-success {
+		@include sp-font-color(contrast);
+
+		&::before {
+			@include sp-font-color(success);
+		}
+	}
+
+	&.sp-warning {
+		@include sp-font-color(contrast);
+
+		&::before {
+			@include sp-font-color(warning);
+		}
+	}
+
+	&.sp-danger {
+		@include sp-font-color(contrast);
+
+		&::before {
+			@include sp-font-color(danger);
+		}
+	}
+
+	&.sp-logo-horizontal {
+		&::before {
+			margin-bottom: 0;
+			margin-right: 0.35em;
+			display: inline-block;
+		}
+
+		&::after {
+			display: inline-block;
+			position: relative;
+			transform: translateY(-58%);
+		}
+
+		&.sp-small {
+			&::after {
+				transform: translateY(-48%);
+			}
+		}
+
+		&.sp-large {
+			&::after {
+				transform: translateY(-70%);
+			}
+		}
+	}
+}

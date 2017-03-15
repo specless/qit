@@ -1,0 +1,247 @@
+{
+  "title": "Geometry",
+  "description": "Text goes here.",
+  "examples": [
+    {
+      "title": "Shapes",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-[shape]",
+          "type": "box-target",
+          "classes": "sp-bg-color-primary sp-width-5 sp-height-3 sp-border-bottom-color-primary",
+          "content": "<div class='qit-target'></div>"
+        }
+      ],
+      "modifiers": ["sp-rectangle", "sp-rounded", "sp-triangle", "sp-circle"]
+    },
+  	{
+  		"title": "Width",
+  		"subTitle": "",
+  		"swatches" : [
+  			{
+  				"title": ".sp-width-*",
+  				"type": "box",
+  				"classes": "sp-bg-color-primary sp-height-1",
+  				"content": ""
+  			}
+  		],
+      "modifiers": ["sp-width-1", "sp-width-2", "sp-width-3", "sp-width-4", "sp-width-5", "sp-width-6", "sp-width-7", "sp-width-8", "sp-width-9", "sp-width-10"]
+  	},
+    {
+      "title": "Height",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-height-*",
+          "type": "box",
+          "classes": "sp-bg-color-primary sp-width-1",
+          "content": ""
+        }
+      ],
+      "modifiers": ["sp-height-1", "sp-height-2", "sp-height-3", "sp-height-4", "sp-height-5", "sp-height-6", "sp-height-7", "sp-height-8", "sp-height-9", "sp-height-10"]
+    },
+    {
+      "title": "Borders",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-border-*",
+          "type": "block",
+          "classes": "sp-border-color-primary sp-border-solid",
+          "content": ""
+        }
+      ],
+      "states": ["sp-border-dashed", "sp-border-dotted", "sp-border-double"],
+      "modifiers": ["sp-border-thin", "sp-border-medium", "sp-border-thick", "sp-border-none"]
+    },
+    {
+      "title": "Borders: Top",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-border-top-*",
+          "type": "block",
+          "classes": "sp-border-top-color-primary sp-border-top-solid",
+          "content": ""
+        }
+      ],
+      "states": ["sp-border-top-dashed", "sp-border-top-dotted", "sp-border-top-double"],
+      "modifiers": ["sp-border-top-thin", "sp-border-top-medium", "sp-border-top-thick", "sp-border-top-none"]
+    },
+    {
+      "title": "Borders: Right",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-border-right-*",
+          "type": "block",
+          "classes": "sp-border-right-color-primary sp-border-right-solid",
+          "content": ""
+        }
+      ],
+      "states": ["sp-border-right-dashed", "sp-border-right-dotted", "sp-border-right-double"],
+      "modifiers": ["sp-border-right-thin", "sp-border-right-medium", "sp-border-right-thick", "sp-border-right-none"]
+    },
+    {
+      "title": "Borders: Bottom",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-border-bottom-*",
+          "type": "block",
+          "classes": "sp-border-bottom-color-primary sp-border-bottom-solid",
+          "content": ""
+        }
+      ],
+      "states": ["sp-border-bottom-dashed", "sp-border-bottom-dotted", "sp-border-bottom-double"],
+      "modifiers": ["sp-border-bottom-thin", "sp-border-bottom-medium", "sp-border-bottom-thick", "sp-border-bottom-none"]
+    },
+    {
+      "title": "Borders: Left",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-border-left-*",
+          "type": "block",
+          "classes": "sp-border-left-color-primary sp-border-left-solid",
+          "content": ""
+        }
+      ],
+      "states": ["sp-border-left-dashed", "sp-border-left-dotted", "sp-border-left-double"],
+      "modifiers": ["sp-border-left-thin", "sp-border-left-medium", "sp-border-left-thick", "sp-border-left-none"]
+    },
+    {
+      "title": "Padding",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-padding-*",
+          "type": "box-target",
+          "classes": "sp-bg-color-primary sp-width-1 sp-height-1",
+          "content": "<div class='qit-target'><div class='qit-inner sp-primary sp-width-1 sp-height-1'></div></div>"
+        }
+      ],
+      "modifiers": ["sp-padding-0", "sp-padding-1", "sp-padding-2", "sp-padding-3", "sp-padding-4", "sp-padding-5"]
+    },
+    {
+      "title": "Padding: Top",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-padding-top-*",
+          "type": "box-target",
+          "classes": "sp-bg-color-primary sp-width-1 sp-height-1",
+          "content": "<div class='qit-target'><div class='qit-inner sp-primary sp-width-1 sp-height-1'></div></div>"
+        }
+      ],
+      "modifiers": ["sp-padding-top-0", "sp-padding-top-1", "sp-padding-top-2", "sp-padding-top-3", "sp-padding-top-4", "sp-padding-top-5"]
+    },
+    {
+      "title": "Padding: Right",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-padding-right-*",
+          "type": "box-target",
+          "classes": "sp-bg-color-primary sp-width-1 sp-height-1",
+          "content": "<div class='qit-target'><div class='qit-inner sp-primary sp-width-1 sp-height-1'></div></div>"
+        }
+      ],
+      "modifiers": ["sp-padding-right-0", "sp-padding-right-1", "sp-padding-right-2", "sp-padding-right-3", "sp-padding-right-4", "sp-padding-right-5"]
+    },
+    {
+      "title": "Padding: Bottom",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-padding-bottom-*",
+          "type": "box-target",
+          "classes": "sp-bg-color-primary sp-width-1 sp-height-1",
+          "content": "<div class='qit-target'><div class='qit-inner sp-primary sp-width-1 sp-height-1'></div></div>"
+        }
+      ],
+      "modifiers": ["sp-padding-bottom-0", "sp-padding-bottom-1", "sp-padding-bottom-2", "sp-padding-bottom-3", "sp-padding-bottom-4", "sp-padding-bottom-5"]
+    },
+    {
+      "title": "Padding: Left",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-padding-left-*",
+          "type": "box-target",
+          "classes": "sp-bg-color-primary sp-width-1 sp-height-1",
+          "content": "<div class='qit-target'><div class='qit-inner sp-primary sp-width-1 sp-height-1'></div></div>"
+        }
+      ],
+      "modifiers": ["sp-padding-left-0", "sp-padding-left-1", "sp-padding-left-2", "sp-padding-left-3", "sp-padding-left-4", "sp-padding-left-5"]
+    },
+    {
+      "title": "Margins",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-margin-*",
+          "type": "box-target",
+          "classes": "sp-bg-color-primary sp-width-1 sp-height-1",
+          "content": "<div class='qit-inner'><div class='qit-target'></div></div>"
+        }
+      ],
+      "modifiers": ["sp-margin-0", "sp-margin-1", "sp-margin-2", "sp-margin-3", "sp-margin-4", "sp-margin-5"]
+    },
+    {
+      "title": "Margin: Top",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-margin-top-*",
+          "type": "box-target",
+          "classes": "sp-bg-color-primary sp-width-1 sp-height-1",
+          "content": "<div class='qit-inner'><div class='qit-target'></div></div>"
+        }
+      ],
+      "modifiers": ["sp-margin-top-0", "sp-margin-top-1", "sp-margin-top-2", "sp-margin-top-3", "sp-margin-top-4", "sp-margin-top-5"]
+    },
+    {
+      "title": "Margin: Right",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-margin-right-*",
+          "type": "box-target",
+          "classes": "sp-bg-color-primary sp-width-1 sp-height-1",
+          "content": "<div class='qit-inner'><div class='qit-target'></div></div>"
+        }
+      ],
+      "modifiers": ["sp-margin-right-0", "sp-margin-right-1", "sp-margin-right-2", "sp-margin-right-3", "sp-margin-right-4", "sp-margin-right-5"]
+    },
+    {
+      "title": "Margin: Bottom",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-margin-bottom-*",
+          "type": "box-target",
+          "classes": "sp-bg-color-primary sp-width-1 sp-height-1",
+          "content": "<div class='qit-inner'><div class='qit-target'></div></div>"
+        }
+      ],
+      "modifiers": ["sp-margin-bottom-0", "sp-margin-bottom-1", "sp-margin-bottom-2", "sp-margin-bottom-3", "sp-margin-bottom-4", "sp-margin-bottom-5"]
+    },
+    {
+      "title": "Margin: Left",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-margin-left-*",
+          "type": "box-target",
+          "classes": "sp-bg-color-primary sp-width-1 sp-height-1",
+          "content": "<div class='qit-inner'><div class='qit-target'></div></div>"
+        }
+      ],
+      "modifiers": ["sp-margin-left-0", "sp-margin-left-1", "sp-margin-left-2", "sp-margin-left-3", "sp-margin-left-4", "sp-margin-left-5"]
+    }
+  ],
+  "scss": ["sizing.scss", "spacing.scss", "borders.scss", "shapes.scss", "layering.scss"],
+  "markdown": "index.md"
+}

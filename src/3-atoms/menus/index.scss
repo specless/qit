@@ -1,0 +1,291 @@
+.sp-menu-item {
+	height: 32px;
+	// max-height: 44.39px;
+	box-sizing: border-box;
+	text-align: left;
+	display: block;
+	position: relative;
+	line-height: 1.2;
+	border: none;
+	text-overflow: ellipsis;
+  	white-space: nowrap;
+  	overflow: hidden;
+
+	&:not(.sp-label) {
+		font-weight: 600;
+	}
+
+	@include sp-padding(1, vertical);
+  	@include sp-padding(3, horizontal);
+  	@include sp-font-color(base);
+
+  	@include sp-state(hover) {
+  		@include sp-font-color(white);
+  		@include sp-bg-color(primary);
+  		border: none;
+
+  		@include sp-state(active) {
+  			@include sp-font-color(white);
+  			@include sp-bg-overlay-dark(1);
+  		}
+  	}
+
+  	@include sp-state(focus) {
+  		border: none;
+  	}
+
+  	@include sp-state(active) {
+  		border: none;
+  		@include sp-font-color(contrast);
+  		@include sp-bg-overlay-dark(1);
+  		//@include sp-font-color(primary);
+
+  	}
+
+  	@include sp-state(dark) {
+  		@include sp-state(active) {
+  			@include sp-bg-overlay-light(1);
+
+  			@include sp-state(hover) {
+  				@include sp-bg-overlay-dark(1);
+  			}
+  		}
+  	}
+
+  	@include sp-state(disabled) {
+  		opacity: 0.25;
+  	}
+
+  	&[class*="sp-icon-"]::before {
+		line-height: 0;
+		@include sp-margin(1, right);
+		position: relative;
+		top: 7px;
+	}
+
+	&[class*="sp-icon-after-"]::after {
+		line-height: 0;
+		@include sp-margin(1, left);
+		position: relative;
+		top: 7px;
+	}
+
+	&:not(input):empty {
+		width: 32px;
+		
+		&[class*="sp-icon-"]::before, &[class*="sp-icon-after-"]::after {
+		  @include sp-margin(0);
+		  position: absolute;
+		  line-height: 1;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		}
+
+	}
+
+	@include sp-small {
+		&[class*="sp-icon-"]::before {
+		  top: 5.5px;
+		}
+		
+		&[class*="sp-icon-after-"]::after {
+		  top: 5px;
+		}
+		
+		&:not(input):empty {
+		  width: 30px;
+		}
+	}
+
+	@include sp-large {
+		
+		&[class*="sp-icon-"]::before {
+		  @include sp-margin(1, right);
+		  top: 7px;
+		}
+		
+		&[class*="sp-icon-after-"]::after {
+		  @include sp-margin(1, left);
+		  top: 7px;
+		}
+		&
+		:not(input):empty {
+		  width: 37px;
+		}
+	}
+
+	&.sp-minimal {
+		&[class*="sp-icon-"]::before {
+			top: 6px;
+		}
+
+		&[class*="sp-icon-after-"]::after {
+			top: 6px;
+		}
+
+		@include sp-small {
+			&[class*="sp-icon-"]::before {
+				top: 4px;
+			}
+
+			&[class*="sp-icon-after-"]::after {
+				top: 4px;
+			}
+		}
+
+		@include sp-large {
+			&[class*="sp-icon-"]::before {
+				top: 8px;
+			}
+
+			&[class*="sp-icon-after-"]::after {
+				top: 8px;
+			}
+		}
+	}
+
+  	&.sp-label {
+  		height: 43.7px;
+  		@include sp-padding(2, vertical);
+		@include sp-padding(3, horizontal);
+		@include sp-font-label;
+		cursor: pointer;
+  		position: relative;
+  		i {
+		    position: relative;
+		    top: 1px;
+		    left: 1px;
+		  }
+
+		&[class*="sp-icon-"]::before {
+		    line-height: 0;
+		    @include sp-margin(1, right);
+		    position: relative;
+		    top: 7px;
+		  }
+
+		  &[class*="sp-icon-after-"]::after {
+		    line-height: 0;
+		    @include sp-margin(1, left);
+		    position: relative;
+		    top: 7px;
+		  }
+
+		  &:not(input):empty {
+		    @include sp-padding(0, horizontal);
+		    width: 43.7px;
+		    &[class*="sp-icon-"]::before, &[class*="sp-icon-after-"]::after {
+		      @include sp-margin(0);
+		      position: absolute;
+		      line-height: 1;
+		      top: 50%;
+		      left: 50%;
+		      transform: translate(-50%, -50%);
+		    }
+		  }
+
+		  @include sp-small {
+		    @include sp-padding(2, horizontal);
+		    padding-top: 0.6rem;
+		    padding-bottom: 0.6rem;
+		    height: 31.66px;
+		    line-height: 1;
+		    &[class*="sp-icon-"]::before {
+		      top: 6px;
+		    }
+		    &[class*="sp-icon-after-"]::after {
+		      top: 6px;
+		    }
+		    &:not(input):empty {
+		      width: 31.66px;
+		    }
+		  }
+
+		  @include sp-large {
+		    @include sp-padding(2, vertical);
+		    @include sp-padding(3, horizontal);
+		    height: 44.39px;
+		    &[class*="sp-icon-"]::before {
+		      @include sp-margin(1, right);
+		      top: 8px;
+		    }
+		    &[class*="sp-icon-after-"]::after {
+		      @include sp-margin(1, left);
+		      top: 8px;
+		    }
+		    &:not(input):empty {
+		      width: 44.39px;
+		    }
+		  }
+  	}
+
+  	@include sp-small {
+  		height: 30px;
+
+  		&.sp-label {
+	  		height: 31.66;
+	  	}
+  	}
+
+  	@include sp-large {
+  		height: 37px;
+
+  		&.sp-label {
+	  		height: 44.39px;
+	  	}
+  	}
+
+  	&:visited {
+		@include sp-font-color(base);
+
+		&:hover {
+			@include sp-font-color(white);
+		}
+	}
+
+	&.sp-minimal, &.sp-minimal.sp-horizontal {
+		background: none !important;
+		border: none !important;
+
+		@include sp-state(hover) {
+			@include sp-font-color(contrast);
+		}
+
+		@include sp-state(active) {
+			@include sp-font-color(primary);
+		}
+	}
+
+	&.sp-horizontal {
+		display: inline-block;
+		text-align: center;
+		height: 43.7px;
+		@include sp-state(hover) {
+	  		@include sp-font-color(contrast);
+	  		background-color: transparent;
+	  	}
+
+	  	@include sp-state(active) {
+	  		@include sp-border(thick, solid, bottom);
+	  		background: none;
+	  		@include sp-border-color(primary);
+
+	  		@include sp-state(dark) {
+	  			background: none;
+	  		}
+
+	  		&.sp-minimal {
+	  			@include sp-font-color(primary);
+	  		}
+	  	}
+
+	  	@include sp-small {
+	  		height: 31.66px;
+	  	}
+
+	  	@include sp-large {
+	  		height: 44.39px;
+	  	}
+	}
+}

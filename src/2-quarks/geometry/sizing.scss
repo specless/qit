@@ -1,0 +1,35 @@
+/////////////////////////
+//                     //
+//       sizing        //
+//                     //
+/////////////////////////
+
+@mixin sp-sizing-helper($level, $attr) {
+  @if ($level == 0) {
+    #{$attr}: 0;
+  } @else {
+    $key: sp-length-#{$level};
+    @if (map-has-key($sp-length, $key)) {
+      #{$attr}: map-get($sp-length, $key);
+    } @else {
+      @error "#{$key} does not exist in map $length";
+    }
+  }
+}
+
+@mixin sp-width($level) {
+  @include sp-sizing-helper($level, width)
+}
+
+@mixin sp-height($level) {
+  @include sp-sizing-helper($level, height)
+}
+
+@for $i from 0 to 11 {
+  .sp-width-#{$i}{
+    @include sp-width($i);
+  }
+  .sp-height-#{$i}{
+    @include sp-height($i);
+  }
+}

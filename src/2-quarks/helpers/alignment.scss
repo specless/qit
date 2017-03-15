@@ -1,0 +1,15 @@
+.sp-align-left {
+  @include sp-align();
+}
+
+.sp-align-right {
+  @include sp-align(right);
+}
+
+.sp-align-center {
+  @include sp-align(center);
+}
+
+.sp-align-justify {
+  @include sp-align(justify);
+}

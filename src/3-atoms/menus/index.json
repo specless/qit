@@ -1,0 +1,120 @@
+{
+  "title": "Menu Items",
+  "description": "Text goes here.",
+  "examples": [
+  	{
+  		"title": "Standard Menu Items",
+  		"subTitle": "",
+  		"swatches" : [
+  			{
+  				"title": ".sp-menu-item",
+  				"type": "box-target",
+  				"classes": "sp-menu-item",
+  				"content": "<a class='qit-target'>Menu Item</a>"
+  			}
+  		],
+      "states": ["sp-state-hover", "sp-state-active", "sp-state-disabled", "sp-icon-settings", "sp-icon-after-settings"],
+  		"modifiers": ["sp-small", "sp-large"]
+  	},
+    {
+      "title": "Minimal Menu Items",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-menu-item.sp-minimal",
+          "type": "box-target",
+          "classes": "sp-menu-item sp-minimal",
+          "content": "<a class='qit-target'>Menu Item</a>"
+        }
+      ],
+      "states": ["sp-state-hover", "sp-state-active", "sp-state-disabled", "sp-icon-settings", "sp-icon-after-settings"],
+      "modifiers": ["sp-small", "sp-large"]
+    },
+    {
+      "title": "Horizontal Menu Items",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-menu-item.sp-horizontal",
+          "type": "box-target",
+          "classes": "sp-menu-item sp-horizontal",
+          "content": "<a class='qit-target'>Menu Item</a>"
+        }
+      ],
+      "states": ["sp-state-hover", "sp-state-active", "sp-state-disabled", "sp-icon-settings", "sp-icon-after-settings"],
+      "modifiers": ["sp-small", "sp-large"]
+    },
+    {
+      "title": "Minimal Horizontal Menu Items",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-menu-item.sp-minimal.sp-horizontal",
+          "type": "box-target",
+          "classes": "sp-menu-item sp-horizontal sp-minimal",
+          "content": "<a class='qit-target'>Menu Item</a>"
+        }
+      ],
+      "states": ["sp-state-hover", "sp-state-active", "sp-state-disabled", "sp-icon-settings", "sp-icon-after-settings"],
+      "modifiers": ["sp-small", "sp-large"]
+    },
+    {
+      "title": "Label Menu Items",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-menu-item.sp-minimal.sp-label",
+          "type": "box-target",
+          "classes": "sp-menu-item sp-label",
+          "content": "<a class='qit-target'>Menu Item</a>"
+        }
+      ],
+      "states": ["sp-state-hover", "sp-state-active", "sp-state-disabled", "sp-icon-settings", "sp-icon-after-settings"],
+      "modifiers": ["sp-small", "sp-large"]
+    },
+    {
+      "title": "Label Horizontal Menu Items",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-menu-item.sp-minimal.sp-label.sp-horizontal",
+          "type": "box-target",
+          "classes": "sp-menu-item sp-horizontal sp-label",
+          "content": "<a class='qit-target'>Menu Item</a>"
+        }
+      ],
+      "states": ["sp-state-hover", "sp-state-active", "sp-state-disabled", "sp-icon-settings", "sp-icon-after-settings"],
+      "modifiers": ["sp-small", "sp-large"]
+    },
+    {
+      "title": "Label Minimal Menu Items",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-menu-item.sp-minimal.sp-label",
+          "type": "box-target",
+          "classes": "sp-menu-item sp-label sp-minimal",
+          "content": "<a class='qit-target'>Menu Item</a>"
+        }
+      ],
+      "states": ["sp-state-hover", "sp-state-active", "sp-state-disabled", "sp-icon-settings", "sp-icon-after-settings"],
+      "modifiers": ["sp-small", "sp-large"]
+    },
+    {
+      "title": "Label Minimal Horizontal Menu Items",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-menu-item.sp-minimal.sp-horizontal.sp-label",
+          "type": "box-target",
+          "classes": "sp-menu-item sp-horizontal sp-minimal sp-label",
+          "content": "<a class='qit-target'>Menu Item</a>"
+        }
+      ],
+      "states": ["sp-state-hover", "sp-state-active", "sp-state-disabled", "sp-icon-settings", "sp-icon-after-settings"],
+      "modifiers": ["sp-small", "sp-large"]
+    }
+  ],
+  "scss": ["index.scss"],
+  "markdown": "index.md"
+}

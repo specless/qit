@@ -1,0 +1,130 @@
+{
+  "title": "Text Elements",
+  "description": "Text goes here.",
+  "examples": [
+  	{
+  		"title": "Body & Paragraph Text",
+  		"subTitle": "",
+  		"swatches" : [
+  			{
+  				"title": "body",
+  				"type": "box-target",
+  				"classes": "",
+  				"content": "<div class='sp-width-7 qit-target'>No one should be alone in their old age, he thought. 'Fish,' he said, 'I love you and respect you very much.'</div>"
+  			},
+        {
+          "title": "p",
+          "type": "box-target",
+          "classes": "",
+          "content": "<p class='sp-width-7 qit-target'>No one should be alone in their old age, he thought. 'Fish,' he said, 'I love you and respect you very much.'</p>"
+        }
+  		],
+  		"modifiers": ["sp-small", "sp-large"]
+  	},
+    {
+      "title": "Paragraph Text Colors",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "p.sp-[color]",
+          "type": "box-target",
+          "classes": "",
+          "content": "<p class='sp-width-7 qit-target'>No one should be alone in their old age, he thought. 'Fish,' he said, 'I love you and respect you very much.'</p>"
+        }
+      ],
+      "modifiers": ["sp-contrast", "sp-muted", "sp-primary", "sp-success", "sp-warning", "sp-danger"]
+    },
+    {
+      "title": "Headers",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "h1",
+          "type": "box-target",
+          "classes": "",
+          "content": "<h1 class='sp-width-7 qit-target'>Headline Here</h1>"
+        },
+        {
+          "title": "h2",
+          "type": "box-target",
+          "classes": "",
+          "content": "<h2 class='sp-width-7 qit-target'>Headline Here</h2>"
+        },
+        {
+          "title": "h3",
+          "type": "box-target",
+          "classes": "",
+          "content": "<h3 class='sp-width-7 qit-target'>Headline Here</h3>"
+        },
+        {
+          "title": "h4",
+          "type": "box-target",
+          "classes": "",
+          "content": "<h4 class='sp-width-7 qit-target'>Headline Here</h4>"
+        },
+        {
+          "title": "h5",
+          "type": "box-target",
+          "classes": "",
+          "content": "<h5 class='sp-width-7 qit-target'>Headline Here</h5>"
+        },
+        {
+          "title": "h6",
+          "type": "box-target",
+          "classes": "",
+          "content": "<h6 class='sp-width-7 qit-target'>Headline Here</h6>"
+        }
+      ],
+      "states": ["sp-contrast", "sp-muted", "sp-primary", "sp-success", "sp-warning", "sp-danger"],
+      "modifiers": []
+    },
+    {
+      "title": "Links",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "a",
+          "type": "box-target",
+          "classes": "",
+          "content": "<a href='http://gospecless.com' class='qit-target'>This is a link!</a>"
+        }
+      ],
+      "states": ["sp-state-hover", "sp-state-active", "sp-state-focus", "sp-state-disabled"],
+      "modifiers": ["sp-small", "sp-large"]
+    },
+    {
+      "title": "Blockquotes",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "blockquote",
+          "type": "box-target",
+          "classes": "",
+          "content": "<blockquote class='sp-width-7 qit-target'>No one should be alone in their old age, he thought. 'Fish,' he said, 'I love you and respect you very much.'</blockquote>"
+        },
+        {
+          "title": "blockquote.sp-align-right",
+          "type": "box-target",
+          "classes": "sp-align-right",
+          "content": "<blockquote class='sp-width-7 qit-target'>No one should be alone in their old age, he thought. 'Fish,' he said, 'I love you and respect you very much.'</blockquote>"
+        }
+      ],
+      "modifiers": ["sp-small", "sp-large"]
+    },
+    {
+      "title": "Blockquote: Colors",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "blockquote.sp-[color]",
+          "type": "box-target",
+          "classes": "",
+          "content": "<blockquote class='sp-width-7 qit-target'>No one should be alone in their old age, he thought. 'Fish,' he said, 'I love you and respect you very much.'</blockquote>"
+        }
+      ],
+      "modifiers": ["sp-primary", "sp-success", "sp-warning", "sp-danger"]
+    }
+  ],
+  "scss": ["body.scss", "headers.scss", "links.scss", "paragraphs.scss", "blockquotes.scss"],
+  "markdown": "index.md"
+}

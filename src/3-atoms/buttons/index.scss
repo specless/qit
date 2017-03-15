@@ -1,0 +1,244 @@
+@mixin sp-button-geometry() {
+  @include sp-padding(2, vertical);
+  @include sp-padding(3, horizontal);
+  @include sp-font-label;
+  text-align: center;
+  height: 43.7px;
+  cursor: pointer;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+  // fix icon position when nested inside button element
+  i {
+    position: relative;
+    top: 1px;
+    left: 1px;
+  }
+
+  // remove max-height for circular buttons or else they will be skewed
+  &.sp-circle {
+    max-height: unset;
+    @include sp-shape(circle);
+  }
+
+  @include sp-font-color(contrast);
+  @include sp-tactile;
+  @include sp-primary {
+    @include sp-font-color(white);
+  }
+
+  @include sp-success {
+    @include sp-font-color(white);
+  }
+
+  @include sp-warning {
+    @include sp-font-color(white);
+  }
+
+  @include sp-danger {
+    @include sp-font-color(white);
+  }
+
+  @include sp-state-disabled {
+    @include sp-font-color(muted);
+  }
+
+  &.sp-rounded {
+    @include sp-shape(rounded);
+  }
+  &.sp-circle {
+    max-height: unset;
+    @include sp-shape(circle);
+  }
+
+  &[class*="sp-icon-"]::before {
+    line-height: 0;
+    @include sp-margin(1, right);
+    position: relative;
+    top: 7px;
+  }
+
+  &[class*="sp-icon-after-"]::after {
+    line-height: 0;
+    @include sp-margin(1, left);
+    position: relative;
+    top: 7px;
+  }
+
+  &:not(input):empty {
+    @include sp-padding(0, horizontal);
+    width: 43.7px;
+    &[class*="sp-icon-"]::before, &[class*="sp-icon-after-"]::after {
+      @include sp-margin(0);
+      position: absolute;
+      line-height: 1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  @include sp-small {
+    @include sp-padding(2, horizontal);
+    padding-top: 0.55rem;
+    padding-bottom: 0.65rem;
+    height: 31.66px;
+    line-height: 1;
+    &[class*="sp-icon-"]::before {
+      top: 6px;
+    }
+    &[class*="sp-icon-after-"]::after {
+      top: 6px;
+    }
+    &:not(input):empty {
+      width: 31.66px;
+    }
+  }
+
+  @include sp-large {
+    @include sp-padding(2, vertical);
+    @include sp-padding(3, horizontal);
+    height: 44.39px;
+    &[class*="sp-icon-"]::before {
+      @include sp-margin(1, right);
+      top: 8px;
+    }
+    &[class*="sp-icon-after-"]::after {
+      @include sp-margin(1, left);
+      top: 8px;
+    }
+    &:not(input):empty {
+      width: 44.39px;
+    }
+  }
+
+  .sp-group & {
+    @include sp-shape(base);
+    @include sp-margin(0);
+    margin-left: -1px;
+  }
+
+  &.sp-block {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+button,
+.sp-button,
+input[type='button'],
+input[type='submit'],
+input[type='reset'] {
+
+  @include sp-button-geometry;
+
+  @include sp-shape(rectangle);
+
+
+  @include sp-minimal {
+    background-color: transparent;
+    color: inherit;
+    box-shadow: none !important;
+    @include sp-font-color(contrast);
+
+    @include sp-tactile-minimal;
+
+    &.sp-rounded {
+      max-height: unset;
+      @include sp-shape(rounded);
+    }
+
+    &.sp-circle {
+      max-height: unset;
+      @include sp-shape(circle);
+    }
+
+    @include sp-primary {
+      @include sp-font-color(primary);
+      @include sp-state(active) {
+        @include sp-font-color(white);
+      }
+    }
+
+    @include sp-success {
+      @include sp-font-color(success);
+      @include sp-state(active) {
+        @include sp-font-color(white);
+      }
+    }
+
+    @include sp-warning {
+      @include sp-font-color(warning);
+      @include sp-state(active) {
+        @include sp-font-color(white);
+      }
+    }
+
+    @include sp-danger {
+      @include sp-font-color(danger);
+      @include sp-state(active) {
+        @include sp-font-color(white);
+      }
+    }
+    @include sp-state-disabled {
+      @include sp-font-color(muted);
+    }
+
+    @include sp-state(dark) {
+      //@include sp-font-color(white);
+      border-color: rgba(255,255,255,0.25);
+
+      @include sp-primary {
+        @include sp-font-color(primary);
+        @include sp-border-color(primary);
+      }
+
+      @include sp-success {
+        @include sp-font-color(success);
+        @include sp-border-color(success);
+      }
+
+      @include sp-warning {
+        @include sp-font-color(warning);
+        @include sp-border-color(warning);
+      }
+
+      @include sp-danger {
+        @include sp-font-color(danger);
+        @include sp-border-color(danger);
+      }
+
+      @include sp-state(active) {
+        @include sp-font-color(white);
+      }
+
+
+    }
+  }
+}
+
+.sp-group {
+  // @include sp-margin(2);
+
+  > *:first-child {
+    @include sp-shape(rectangle, left);
+  }
+
+  > *:last-child {
+    @include sp-shape(rectangle, right);
+  }
+
+  &.sp-rounded {
+
+    > *:first-child {
+      @include sp-shape(rounded, left);
+    }
+
+    > *:last-child {
+      @include sp-shape(rounded, right);
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "title": "Typography",
+  "description": "Text goes here.",
+  "examples": [
+    {
+      "title": "Body Text",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "Default Text Styles",
+          "type": "box-target",
+          "classes": "",
+          "content": "<div class='qit-target'>This is body text.</div>"
+        }
+      ],
+      "states": ["sp-base", "sp-small", "sp-large"],
+      "modifiers": ["sp-color-base", "sp-color-contrast", "sp-color-muted", "sp-color-grey", "sp-color-primary", "sp-color-success", "sp-color-warning", "sp-color-danger"]
+    },
+  	{
+      "title": "Headers",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-[h1||h2||h3||h4||h5||h6]",
+          "type": "box-target",
+          "classes": "sp-header",
+          "content": "<div class='sp-height-6 qit-target'>Header</div>"
+        }
+      ],
+      "states": ["sp-h1", "sp-h2", "sp-h3", "sp-h4", "sp-h5", "sp-h6"],
+      "modifiers": ["sp-color-base", "sp-color-contrast", "sp-color-muted", "sp-color-grey", "sp-color-primary", "sp-color-success", "sp-color-warning", "sp-color-danger"]
+    },
+    {
+      "title": "Labels",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-label",
+          "type": "box-target",
+          "classes": "sp-label",
+          "content": "<div class='sp-height-6 qit-target'>This is a label</div>"
+        }
+      ],
+      "states": ["sp-base", "sp-small", "sp-large"],
+      "modifiers": ["sp-color-base", "sp-color-contrast", "sp-color-muted", "sp-color-grey", "sp-color-primary", "sp-color-success", "sp-color-warning", "sp-color-danger"]
+    }
+  ],
+  "scss": ["index.scss"],
+  "markdown": "index.md"
+}

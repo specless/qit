@@ -1,0 +1,122 @@
+@mixin sp-color-helper($color, $attr, $root, $map, $special: '') {
+  @if ($color == 'transparent' or $color == transparent) {
+    #{$attr}: transparent;
+  } @else {
+    $key: #{$root}-#{$color};
+    @if (map-has-key($map, $key)) {
+      $val: map-get($map, $key);
+      @if $special == '' {
+        #{$attr}: $val;
+      } @else if $special == linear-gradient {
+        #{$attr}: linear-gradient($val, $val);
+      }
+    } @else {
+      @error '#{$key} does not exist in #{$map}';
+    }
+  }
+}
+
+@mixin sp-color($color, $attr) {
+  @include sp-color-helper($color, $attr, sp-color, $sp-color);
+}
+
+@mixin sp-color-overlay($level, $attr, $root, $map, $special) {
+  @include sp-color-helper($level, $attr, $root, $map, $special);
+}
+
+@mixin sp-color-overlay-dark($level, $attr, $special: '') {
+  @include sp-color-overlay($level, $attr, sp-shade-dark, $sp-overlay-dark, $special);
+}
+
+@mixin sp-color-overlay-light($level, $attr, $special: '') {
+  @include sp-color-overlay($level, $attr, sp-shade-light, $sp-overlay-light, $special);
+}
+
+/////////////////////////
+//                     //
+//    font colors      //
+//                     //
+/////////////////////////
+
+@mixin sp-font-color($color: null) {
+  @if ($color == inherit or $color == initial) {
+    color: $color;
+  } @else if ($color == null or $color == base or $color == '') {
+    color: $sp-shade-dark-4;
+    @include sp-state-dark {
+      color: $sp-shade-light-4;
+    }
+  } @else if ($color == contrast) {
+    color: $sp-shade-dark-5;
+    @include sp-state-dark {
+      color: $sp-color-white;
+    }
+  } @else if ($color == muted) {
+    color: $sp-shade-dark-3;
+    @include sp-state-dark {
+      color: $sp-shade-light-2;
+    }
+  } @else {
+    @if (map-has-key($sp-color, 'sp-color-#{$color}')) {
+      $val: map-get($sp-color, 'sp-color-#{$color}');
+      color: $val;
+    }
+  }
+}
+
+/////////////////////////
+//                     //
+//  background colors  //
+//                     //
+/////////////////////////
+
+@mixin sp-bg-color($color) {
+  @include sp-color($color, background-color);
+}
+
+@mixin sp-bg-overlay-dark($level) {
+  @include sp-color-overlay-dark($level, background-image, linear-gradient);
+}
+
+@mixin sp-bg-overlay-light($level) {
+  @include sp-color-overlay-light($level, background-image, linear-gradient);
+}
+
+/////////////////////////
+//                     //
+//    border colors    //
+//                     //
+/////////////////////////
+
+@mixin sp-border-color($color, $location: null) {
+  $attr: border-color;
+  @if $location == top or
+      $location == right or
+      $location == bottom or
+      $location == left {
+    $attr: 'border-#{$location}-color';
+  }
+  @include sp-color($color, $attr);
+}
+
+@mixin sp-border-overlay-dark($color,$location: null) {
+  $attr: border-color;
+  @if $location == top or
+      $location == right or
+      $location == bottom or
+      $location == left {
+    $attr: 'border-#{$location}-color';
+  }
+  @include sp-color-overlay-dark($color, $attr);
+}
+
+@mixin sp-border-overlay-light($color,$location: null) {
+  $attr: border-color;
+  @if $location == top or
+      $location == right or
+      $location == bottom or
+      $location == left {
+    $attr: 'border-#{$location}-color';
+  }
+  @include sp-color-overlay-light($color, $attr);
+}

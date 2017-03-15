@@ -1,0 +1,14 @@
+@mixin sp-layering($level) {
+  $key: sp-layering-#{$level};
+  @if map-has-key($sp-layering, $key) {
+    z-index: map-get($sp-layering, $key)
+  } @else {
+    @error 'Value not found in [sp-layering]'
+  }
+}
+
+@each $i in (1, 2, 3, 4) {
+  .sp-layer-#{$i} {
+    @include sp-layering($i);
+  }
+}

@@ -1,0 +1,230 @@
+/////////////////////////
+//                     //
+//       family        //
+//                     //
+/////////////////////////
+
+@mixin sp-font-family() {
+  font-family: $sp-font-primary, $sp-font-alt;
+  -webkit-font-smoothing: antialiased;
+}
+
+/////////////////////////
+//                     //
+//        size         //
+//                     //
+/////////////////////////
+
+@mixin sp-font-size($size: 'base') {
+  $key: 'sp-font-size';
+  @if ($size == '' or $size == null) {
+    $size: 'base';
+  }
+
+  $key: #{$key}-#{$size};
+  @if (map-has-key($sp-font-size, $key)) {
+    font-size: map-get($sp-font-size, $key);
+  } @else {
+    @error "#{$key} does not exist in map $sp-size";
+  }
+}
+
+/////////////////////////
+//                     //
+//       weight        //
+//                     //
+/////////////////////////
+
+@mixin sp-font-weight($weight) {
+  $key: 'sp-font-weight';
+  @if ($key != null) {
+    $key: #{$key}-#{$weight};
+  }
+  @if (map-has-key($sp-font-weight, $key)) {
+    font-weight: map-get($sp-font-weight, $key);
+  } @else {
+    @error "#{$key} does not exist in map $sp-font-weight";
+  }
+}
+
+/////////////////////////
+//                     //
+//      headings       //
+//                     //
+/////////////////////////
+
+@mixin sp-font-header($level) {
+  @if ($level == 1 or $level == h1) {
+    font-size: 2.66rem;
+    line-height: 3.33rem;
+    font-weight: 300;
+  } @else if ($level == 2 or $level == h2) {
+    font-size: 2rem;
+    line-height: 2.53rem;
+    font-weight: 300;
+  } @else if ($level == 3 or $level == h3) {
+    font-size: 1.6rem;
+    line-height: 2.07rem;
+    font-weight: 400;
+  } @else if ($level == 4 or $level == h4) {
+    font-size: 1.33rem;
+    line-height: 1.67rem;
+    font-weight: 600;
+  } @else if ($level == 5 or $level == h5) {
+    font-size: 1.23rem;
+    line-height: 1.53rem;
+    font-weight: 600;
+  } @else if ($level == 6 or $level == h6) {
+    font-size: .93rem;
+    line-height: 1.2rem;
+    font-weight: 600;
+  }
+}
+
+/////////////////////////
+//                     //
+//      font body      //
+//                     //
+/////////////////////////
+
+@mixin sp-font-body($modifier: null, $include-default: true) {
+  @if ($include-default == true) {
+    @include sp-font-family;
+  }
+  @if ($modifier == base) {
+    @include sp-font-size;
+  } @else if ($modifier == small) {
+    font-size: .87rem;
+    line-height: 1.13rem;
+  } @else if ($modifier == large) {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  } @else {
+    @include sp-font-body(base, false);
+    @include sp-small {
+      @include sp-font-body(small, false);
+    }
+    @include sp-large {
+      @include sp-font-body(large, false);
+    }
+  }
+}
+
+/////////////////////////
+//                     //
+//     font labels     //
+//                     //
+/////////////////////////
+
+@mixin sp-font-label($modifier: null, $include-default: true) {
+
+  @if ($include-default == true) {
+    @include sp-font-family;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  @if ($modifier == base) {
+    font-size: .8rem;
+    line-height: 1rem;
+    letter-spacing: .1em;
+  } @else if ($modifier == small) {
+    font-size: .67rem;
+    line-height: 1.1;
+    letter-spacing: .1em;
+  } @else if ($modifier == large) {
+    font-size: 1rem;
+    line-height: 1.1;
+    letter-spacing: .067em;
+    font-weight: 600;
+  } @else {
+    @include sp-font-label(base, false);
+    @include sp-small {
+      @include sp-font-label(small, false);
+    }
+    @include sp-large {
+      @include sp-font-label(large, false);
+    }
+  }
+}
+
+@each $item in ('base', 'small', 'large') {
+  $class: '.sp-font-size';
+  @if $item != null {
+    $class: #{$class}-#{$item}
+  }
+  #{$class} {
+    @include sp-font-size($item);
+  }
+}
+
+@each $item in ('base', 'light', 'semi-bold', 'bold') {
+  $class: '.sp-font-weight';
+  @if $item != null {
+    $class: #{$class}-#{$item}
+  }
+  #{$class} {
+    @include sp-font-weight($item);
+  }
+}
+
+
+/////////////////////////
+//                     //
+//      headings       //
+//                     //
+/////////////////////////
+
+
+
+.sp-h1 {
+  @include sp-font-header(h1);
+}
+
+.sp-h2 {
+  @include sp-font-header(h2);
+}
+
+.sp-h3 {
+  @include sp-font-header(h3);
+}
+
+.sp-h4 {
+  @include sp-font-header(h4);
+}
+
+.sp-h5 {
+  @include sp-font-header(h5);
+}
+
+.sp-h6 {
+  @include sp-font-header(h6);
+}
+
+/////////////////////////
+//                     //
+//      font body      //
+//                     //
+/////////////////////////
+
+.sp-body {
+  @include sp-font-body;
+}
+
+.sp-small {
+  @include sp-font-body(small, false);
+}
+
+.sp-large {
+  @include sp-font-body(large, false);
+}
+
+/////////////////////////
+//                     //
+//     font labels     //
+//                     //
+/////////////////////////
+
+.sp-label {
+  @include sp-font-label;
+}

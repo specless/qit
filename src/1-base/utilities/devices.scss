@@ -1,0 +1,33 @@
+@mixin mobile {
+  @media ($mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media ($tablet) {
+    @content
+  }
+}
+
+@mixin desktop {
+  @media ($desktop) {
+    @content
+  }
+}
+
+@mixin device($device) {
+  @if ($device == mobile) {
+    @include mobile {
+      @content;
+    }
+  } @else if ($device == tablet) {
+    @include tablet {
+      @content;
+    }
+  } @else if ($device == desktop) {
+    @include desktop {
+      @content;
+    }
+  }
+}

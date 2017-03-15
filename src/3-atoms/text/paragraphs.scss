@@ -1,0 +1,25 @@
+p {
+	@include sp-contrast {
+	  	@include sp-font-color(contrast);
+	  }
+
+	  @include sp-muted {
+	  	@include sp-font-color(muted);
+	  }
+
+	  @include sp-primary {
+	  	@include sp-font-color(primary);
+	  }
+
+	  @include sp-success {
+	  	@include sp-font-color(success);
+	  }
+
+	  @include sp-warning {
+	  	@include sp-font-color(warning);
+	  }
+
+	  @include sp-danger {
+	  	@include sp-font-color(danger);
+	}
+}

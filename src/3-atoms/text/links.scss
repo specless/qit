@@ -1,0 +1,26 @@
+a {
+	@include sp-font-color(primary);
+
+	&:visited {
+		@include sp-font-color(primary);
+	}
+
+	@include sp-state(disabled) {
+
+	}
+
+	@include sp-state(hover) {
+		@include sp-font-color(primary);
+		@include sp-border(thin, dotted, bottom);
+		@include sp-border-color(primary, bottom);
+	}
+
+	@include sp-state(focus) {
+		@include sp-border(thin, dotted, bottom);
+		@include sp-border-color(primary, bottom);
+	}
+
+	@include sp-state(active) {
+		
+	}
+}

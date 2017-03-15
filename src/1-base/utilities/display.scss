@@ -1,0 +1,45 @@
+@mixin sp-block {
+  display: block;
+}
+
+@mixin sp-flex {
+  display: flex;
+}
+
+@mixin sp-inline {
+  display: inline-block;
+}
+
+@mixin sp-inline-flex {
+  display: inline-flex;
+}
+
+@mixin sp-absolute {
+  position: absolute;
+}
+
+@mixin sp-relative {
+  position: relative;
+}
+
+@mixin sp-fixed {
+  position: fixed;
+}
+
+@mixin sp-hidden {
+  display: none;
+}
+
+@mixin sp-clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@mixin sp-float-left {
+  float: left;
+}
+
+@mixin sp-float-right {
+  float: right;
+}

@@ -1,0 +1,110 @@
+{
+  "title": "Style Blocks",
+  "description": "Text goes here.",
+  "examples": [
+    {
+      "title": "UI Containers",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "Primary Styles",
+          "type": "block",
+          "classes": "sp-container",
+          "content": ""
+        }
+      ],
+      "modifiers": ["sp-contrast", "sp-alt-one", "sp-alt-two"]
+    },
+    {
+      "title": "UI Overlays",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "Natural",
+          "type": "block",
+          "classes": "sp-overlay",
+          "content": ""
+        }
+      ],
+      "modifiers": ["sp-alt-one", "sp-alt-two", "sp-primary", "sp-success", "sp-warning", "sp-danger"]
+    },
+    {
+      "title": "Tactile UI Elements",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-tactile",
+          "type": "block",
+          "classes": "sp-tactile",
+          "content": ""
+        },
+        {
+          "title": ".sp-tactile.sp-primary",
+          "type": "block",
+          "classes": "sp-tactile sp-primary",
+          "content": ""
+        },
+        {
+          "title": ".sp-tactile.sp-success",
+          "type": "block",
+          "classes": "sp-tactile sp-success",
+          "content": ""
+        },
+        {
+          "title": ".sp-tactile.sp-warning",
+          "type": "block",
+          "classes": "sp-tactile sp-warning",
+          "content": ""
+        },
+        {
+          "title": ".sp-tactile.sp-danger",
+          "type": "block",
+          "classes": "sp-tactile sp-danger",
+          "content": ""
+        }
+      ],
+      "states": ["sp-state-hover", "sp-state-active", "sp-state-disabled"],
+      "modifiers": ["sp-minimal"]
+    },
+    {
+      "title": "Input UI Elements",
+      "subTitle": "@include sp-input($value)",
+      "swatches" : [
+        {
+          "title": ".sp-input",
+          "type": "block",
+          "classes": "sp-input",
+          "content": ""
+        },
+        {
+          "title": ".sp-input.sp-primary",
+          "type": "block",
+          "classes": "sp-input sp-primary",
+          "content": ""
+        },
+        {
+          "title": ".sp-input.sp-success",
+          "type": "block",
+          "classes": "sp-input sp-success",
+          "content": ""
+        },
+        {
+          "title": ".sp-input.sp-warning",
+          "type": "block",
+          "classes": "sp-input sp-warning",
+          "content": ""
+        },
+        {
+          "title": ".sp-input.sp-danger",
+          "type": "block",
+          "classes": "sp-input sp-danger",
+          "content": ""
+        }
+      ],
+      "states": ["sp-state-hover", "sp-state-focus", "sp-state-disabled"],
+      "modifiers": ["sp-minimal"]
+    }
+  ],
+  "scss": ["containers.scss", "overlays.scss", "tactiles.scss", "inputs.scss"],
+  "markdown": "index.md"
+}

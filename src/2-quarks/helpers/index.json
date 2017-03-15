@@ -1,0 +1,35 @@
+{
+  "title": "Helper Classes",
+  "description": "Text goes here.",
+  "examples": [
+  	{
+  		"title": "Display",
+  		"subTitle": "",
+  		"swatches" : [
+  			{
+  				"title": ".sp-color-*",
+  				"type": "box-target",
+  				"classes": "",
+  				"content": "<h4 class='qit-target sp-margin-1'>Headline Text</h4><div class='sp-label qit-target sp-margin-1'>Label Text</div><p class='qit-target sp-margin-1'>Body Text</p>"
+  			}
+  		],
+  		"modifiers": ["sp-color-base", "sp-color-contrast", "sp-color-muted", "sp-color-grey", "sp-color-primary", "sp-color-success", "sp-color-warning", "sp-color-danger"]
+  	},
+    {
+      "title": "Alignment",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-bg-color-*",
+          "type": "block",
+          "classes": "",
+          "content": ""
+        }
+      ],
+      "states": ["sp-bg-overlay-dark-1", "sp-bg-overlay-dark-2", "sp-bg-overlay-dark-3", "sp-bg-overlay-dark-4", "sp-bg-overlay-dark-5", "sp-bg-overlay-light-1", "sp-bg-overlay-light-2", "sp-bg-overlay-light-3", "sp-bg-overlay-light-4", "sp-bg-overlay-light-5"],
+      "modifiers": ["sp-bg-color-black", "sp-bg-color-dark-darker", "sp-bg-color-dark-base", "sp-bg-color-dark-lighter", "sp-bg-color-white", "sp-bg-color-light-lighter", "sp-bg-color-light-base", "sp-bg-color-light-darker", "sp-bg-color-grey", "sp-bg-color-primary", "sp-bg-color-success", "sp-bg-color-warning", "sp-bg-color-danger"]
+    }
+  ],
+  "scss": ["display.scss", "alignment.scss"],
+  "markdown": "index.md"
+}

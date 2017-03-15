@@ -1,0 +1,107 @@
+/////////////////////////
+//                     //
+//  background colors  //
+//                     //
+/////////////////////////
+
+@each $color in (black, dark-base, dark-darker, dark-lighter, white,
+light-base, light-lighter, light-darker, grey,
+primary, success, warning, danger) {
+  .sp-bg-color-#{$color} {
+    @include sp-bg-color($color)
+  }
+}
+
+@for $i from 1 to 6 {
+  .sp-bg-overlay-dark-#{$i} {
+    @include sp-bg-overlay-dark($i)
+  }
+
+  .sp-bg-overlay-light-#{$i} {
+    @include sp-bg-overlay-light($i)
+  }
+}
+
+/////////////////////////
+//                     //
+//    border colors    //
+//                     //
+/////////////////////////
+
+@each $location in (null, top, right, bottom, left) {
+  @each $color in (black, dark-base, dark-darker, dark-lighter, white,
+  light-base, light-lighter, light-darker, grey,
+  primary, success, warning, danger, transparent) {
+    $class: '.sp-border-color';
+    @if ($location) {
+      $class: '.sp-border-#{$location}-color';
+    }
+    $class: #{$class}-#{$color};
+    #{$class} {
+      @include sp-border-color($color, $location);
+    }
+  }
+}
+
+@each $location in (null, top, right, bottom, left) {
+  @for $i from 1 to 6 {
+    $classD: '.sp-border-overlay-dark';
+    $classL: '.sp-border-overlay-light';
+    @if ($location) {
+      $classD: '.sp-border-#{$location}-overlay-dark';
+      $classL: '.sp-border-#{$location}-overlay-light';
+    }
+    $classD: #{$classD}-#{$i};
+    $classL: #{$classL}-#{$i};
+
+    #{$classD} {
+      @include sp-border-overlay-dark($i)
+    }
+
+    #{$classL} {
+      @include sp-border-overlay-light($i)
+    }
+  }
+}
+
+/////////////////////////
+//                     //
+//    font colors      //
+//                     //
+/////////////////////////
+
+.sp-color-base {
+  @include sp-font-color(base);
+}
+
+.sp-color-contrast {
+  @include sp-font-color(contrast)
+}
+
+.sp-color-muted {
+  @include sp-font-color(muted)
+}
+
+.sp-color-grey {
+  @include sp-font-color(grey)
+}
+
+.sp-color-primary {
+  @include sp-font-color(primary)
+}
+
+.sp-color-success {
+  @include sp-font-color(success)
+}
+
+.sp-color-warning {
+  @include sp-font-color(warning)
+}
+
+.sp-color-danger {
+  @include sp-font-color(danger)
+}
+
+.sp-color-grey {
+  @include sp-font-color(grey)
+}

@@ -1,0 +1,34 @@
+{
+  "title": "Shadows",
+  "description": "Text goes here.",
+  "examples": [
+    {
+      "title": "Shadows: Standard",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-shadow-[low||medium||high||none]",
+          "type": "block",
+          "classes": "",
+          "content": ""
+        }
+      ],
+      "modifiers": ["sp-shadow-low", "sp-shadow-medium", "sp-shadow-high", "sp-shadow-none"]
+    },
+    {
+      "title": "Shadows: Inset",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-shadow-[low||medium||high||none]-inset",
+          "type": "block",
+          "classes": "",
+          "content": ""
+        }
+      ],
+      "modifiers": ["sp-shadow-low-inset", "sp-shadow-medium-inset", "sp-shadow-high-inset", "sp-shadow-none-inset"]
+    }
+  ],
+  "scss": ["shadows.scss"],
+  "markdown": "index.md"
+}

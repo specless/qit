@@ -1,0 +1,35 @@
+{
+  "name": "Qit",
+  "version": "1.0.0",
+  "description": "Qit",
+  "main": "index.html",
+  "scripts": {
+    "qit": "node ./index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^15.0.8",
+    "@types/react-dom": "^0.14.23",
+    "babel-core": "^6.13.2",
+    "exports-loader": "^0.6.3",
+    "handlebars": "^4.0.5",
+    "iconfont-builder": "^2.3.2",
+    "imports-loader": "^0.6.5",
+    "livereload": "^0.6.0",
+    "node-markdown": "^0.1.1",
+    "node-sass": "^3.8.0",
+    "node-watch": "^0.4.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "script-loader": "^0.7.0",
+    "webpack": "^1.13.1",
+    "x-tag": "^1.5.11",
+    "yaml-front-matter": "^3.4.0"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.0.4-rc.0",
+    "source-map-loader": "^0.1.6",
+    "typescript": "^2.1.6"
+  }
+}

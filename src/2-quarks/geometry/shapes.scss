@@ -1,0 +1,67 @@
+@mixin sp-shape-helper($map, $class, $pos: '') {
+  @if ($pos == '') {
+    $pos: 'base';
+  }
+  $key: '#{$class}-#{$pos}';
+  @if (map-has-key($map, $key)) {
+    $val: map-get($map, $key);
+    @include sp-border-radius($val);
+  } @else {
+    @error '#{$key} does not exist in map [#{$map}'
+  }
+}
+
+@mixin sp-shape($shape: '', $pos: '') {
+  @if ($shape == 'base' or $shape == '') {
+      @include sp-border-radius(0);
+  } @else if ($shape == 'triangle') {
+    // TODO: Add directionality and size?
+      @include sp-width(0);
+      @include sp-height(0);
+      @include sp-border-color(transparent, top);
+      @include sp-border-color(transparent, right);
+      @include sp-border-color(transparent, left);
+      @include sp-border-width(50px);
+      @include sp-border-width(0, top);
+      @include sp-border-style(solid);
+      background-color: transparent !important;
+  } @else if ($shape == 'circle') {
+      @include sp-border-radius($sp-circle-radius);
+      height: auto;
+      position: relative;
+      padding-top: 100%;
+
+      > * {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+  } @else {
+    $map: $sp-rectangle;
+    $class: 'sp-rectangle';
+    @if ($shape == 'rounded') {
+      $map: $sp-rounded;
+      $class: 'sp-rounded';
+    }
+    @include sp-shape-helper($map, $class, $pos);
+  }
+}
+
+@each $shape in ('base', 'triangle', 'circle') {
+  .sp-#{$shape} {
+    @include sp-shape($shape);
+  }
+}
+
+@each $shape in ('rectangle', 'rounded') {
+  .sp-#{$shape} {
+    @include sp-shape($shape);
+  }
+  @each $pos in ('top', 'right', 'bottom', 'left'){
+    .sp-#{$shape}-#{$pos} {
+      @include sp-shape($shape, $pos)
+    }
+  }
+}

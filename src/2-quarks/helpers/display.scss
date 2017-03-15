@@ -1,0 +1,43 @@
+.sp-block {
+  @include sp-block;
+}
+
+.sp-flex {
+  @include sp-flex;
+}
+
+.sp-inline {
+  @include sp-inline;
+}
+
+.sp-inline-flex {
+  @include sp-inline-flex;
+}
+
+.sp-absolute {
+  @include sp-absolute;
+}
+
+.sp-relative {
+  @include sp-relative;
+}
+
+.sp-fixed {
+  @include sp-fixed;
+}
+
+.sp-hidden, *[hidden] {
+  @include sp-hidden;
+}
+
+.sp-clearfix {
+  @include sp-clearfix;
+}
+
+.sp-float-left {
+  @include sp-float-left;
+}
+
+.sp-float-right {
+  @include sp-float-right;
+}

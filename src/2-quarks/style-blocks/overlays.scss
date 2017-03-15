@@ -1,0 +1,54 @@
+@mixin sp-overlay($color: null) {
+  $baseColor: $color;
+  $darkColor: $baseColor;
+  $backgroundColor: 0;
+  @if $baseColor == null {
+    $baseColor: white;
+    $darkColor: dark-lighter;
+  } @else if $baseColor == alt-one {
+    $baseColor: light-lighter;
+    $darkColor: dark-base;
+  } @else if $baseColor == alt-two {
+    $baseColor: light-base;
+    $darkColor: dark-darker;
+  } @else {
+    $backgroundColor: 4;
+  }
+
+  @include sp-shadow(low, 0 0 .4em .27em);
+  @include sp-bg-color($baseColor);
+  @if ($backgroundColor != 0) {
+    @include sp-bg-overlay-light($backgroundColor);
+  }
+
+  @include sp-state-dark {
+    @include sp-bg-color($darkColor);
+    @if ($backgroundColor != 0) {
+      @include sp-bg-overlay-light($backgroundColor);
+    }
+    @include sp-shadow(medium, 0 0 .4em .27em);
+    @include sp-shadow(low, 0 0 .4em .27em);
+  }
+}
+
+.sp-overlay {
+  @include sp-overlay();
+  @include sp-primary {
+    @include sp-overlay(primary)
+  }
+  @include sp-success {
+    @include sp-overlay(success)
+  }
+  @include sp-warning {
+    @include sp-overlay(warning)
+  }
+  @include sp-danger {
+    @include sp-overlay(danger)
+  }
+  @include sp-alt-one {
+    @include sp-overlay(alt-one)
+  }
+  @include sp-alt-two {
+    @include sp-overlay(alt-two)
+  }
+}

@@ -1,0 +1,198 @@
+$sp-font-size-base: 15px;
+$sp-font-size-large: 1.2rem;
+$sp-font-size-small: .87rem;
+$sp-font-size: (
+        sp-font-size-base: $sp-font-size-base,
+        sp-font-size-large: $sp-font-size-large,
+        sp-font-size-small: $sp-font-size-small,
+);
+
+$sp-font-primary: Source Sans Pro;
+$sp-font-alt: sans-serif;
+
+$sp-font-weight-base: 400;
+$sp-font-weight-light: 300;
+$sp-font-weight-semi-bold: 600;
+$sp-font-weight-bold: 700;
+
+$sp-font-weight: (
+        sp-font-weight-base: $sp-font-weight-base,
+        sp-font-weight-light: $sp-font-weight-light,
+        sp-font-weight-semi-bold: $sp-font-weight-semi-bold,
+        sp-font-weight-bold: $sp-font-weight-bold,
+);
+
+$sp-spacing-0: 0;
+$sp-spacing-1: .4rem;
+$sp-spacing-2: .8rem;
+$sp-spacing-3: 1.6rem;
+$sp-spacing-4: 3.2rem;
+$sp-spacing-5: 6.4rem;
+$sp-spacing: (
+        sp-spacing-0: $sp-spacing-0,
+        sp-spacing-1: $sp-spacing-1,
+        sp-spacing-2: $sp-spacing-2,
+        sp-spacing-3: $sp-spacing-3,
+        sp-spacing-4: $sp-spacing-4,
+        sp-spacing-5: $sp-spacing-5,
+);
+
+$sp-length-1: 2.13rem;
+$sp-length-2: 3rem;
+$sp-length-3: 4.73rem;
+$sp-length-4: 6.13rem;
+$sp-length-5: 8.2rem;
+$sp-length-6: 11.12rem;
+$sp-length-7: 16.27rem;
+$sp-length-8: 24.8rem;
+$sp-length-9: 37.33rem;
+$sp-length-10: 55.87rem;
+$sp-length: (
+        sp-length-1: $sp-length-1,
+        sp-length-2: $sp-length-2,
+        sp-length-3: $sp-length-3,
+        sp-length-4: $sp-length-4,
+        sp-length-5: $sp-length-5,
+        sp-length-6: $sp-length-6,
+        sp-length-7: $sp-length-7,
+        sp-length-8: $sp-length-8,
+        sp-length-9: $sp-length-9,
+        sp-length-10: $sp-length-10,
+);
+
+$sp-layering-1: 1;
+$sp-layering-2: 2;
+$sp-layering-3: 3;
+$sp-layering-4: 4;
+$sp-layering: (
+        sp-layering-1: $sp-layering-1,
+        sp-layering-2: $sp-layering-2,
+        sp-layering-3: $sp-layering-3,
+        sp-layering-4: $sp-layering-4,
+);
+
+$sp-border-style-none: none;
+$sp-border-style-hidden: hidden;
+$sp-border-style-solid: solid;
+$sp-border-style-dashed: dashed;
+$sp-border-style-dotted: dotted;
+$sp-border-style-double: double;
+$sp-border-style-groove: groove;
+$sp-border-style: (
+        sp-border-style-none: $sp-border-style-none,
+        sp-border-style-hidden: $sp-border-style-hidden,
+        sp-border-style-solid: $sp-border-style-solid,
+        sp-border-style-dashed: $sp-border-style-dashed,
+        sp-border-style-dotted: $sp-border-style-dotted,
+        sp-border-style-double: $sp-border-style-double,
+        sp-border-style-groove: $sp-border-style-groove,
+);
+
+$sp-rectangle-radius: 4px;
+$sp-rounded-radius: 50px;
+$sp-circle-radius: 50%;
+
+$sp-rectangle: (
+        sp-rectangle-base: $sp-rectangle-radius,
+        sp-rectangle-top: $sp-rectangle-radius $sp-rectangle-radius 0 0,
+        sp-rectangle-right: 0 $sp-rectangle-radius $sp-rectangle-radius 0,
+        sp-rectangle-bottom: 0 0 $sp-rectangle-radius $sp-rectangle-radius,
+        sp-rectangle-left: $sp-rectangle-radius 0 0 $sp-rectangle-radius,
+);
+
+$sp-rounded: (
+        sp-rounded-base: $sp-rounded-radius,
+        sp-rounded-top: $sp-rounded-radius $sp-rounded-radius 0 0,
+        sp-rounded-right: 0 $sp-rounded-radius $sp-rounded-radius 0,
+        sp-rounded-bottom: 0 0 $sp-rounded-radius $sp-rounded-radius,
+        sp-rounded-left: $sp-rounded-radius 0 0 $sp-rounded-radius,
+);
+$sp-icon-size-base: 1.47rem;
+$sp-icon-size-tiny: 1rem;
+$sp-icon-size-small: 1.27rem;
+$sp-icon-size-large: 1.67rem;
+$sp-icon-size-huge: 3.2rem;
+$sp-icon-size: (
+        sp-icon-size-base: $sp-icon-size-base,
+        sp-icon-size-tiny: $sp-icon-size-tiny,
+        sp-icon-size-small: $sp-icon-size-small,
+        sp-icon-size-large: $sp-icon-size-large,
+        sp-icon-size-huge: $sp-icon-size-huge,
+);
+
+$mobileBreak: 480;
+$desktopBreak: 960;
+$max-width: 1200;
+
+$mobile: 'max-width: #{$mobileBreak}px';
+$tablet: 'min-width: #{$mobileBreak + 1}px';
+$desktop: 'min-width: #{$desktopBreak}px';
+
+$sp-color-black: #000000;
+$sp-color-dark-base: #384146;
+$sp-color-dark-darker: #35393E;
+$sp-color-dark-lighter: #444A50;
+$sp-color-white: #FFFFFF;
+$sp-color-light-base: #EAEAEA;
+$sp-color-light-lighter: #F5F5F5;
+$sp-color-light-darker: #DDDDDD;
+$sp-color-grey: #848895;
+$sp-color-primary: #00C3DC;
+$sp-color-success: #00EC99;
+$sp-color-warning: #FF4A37;
+$sp-color-danger: #FF2455;
+
+$sp-shade-light-1: rgba(255, 255, 255, 0.1);
+$sp-shade-light-2: rgba(255, 255, 255, 0.19);
+$sp-shade-light-3: rgba(255, 255, 255, 0.27);
+$sp-shade-light-4: rgba(255, 255, 255, 0.56);
+$sp-shade-light-5: rgba(255, 255, 255, 0.85);
+$sp-shade-dark-1: rgba(0, 0, 0, 0.05);
+$sp-shade-dark-2: rgba(0, 0, 0, 0.12);
+$sp-shade-dark-3: rgba(0, 0, 0, 0.22);
+$sp-shade-dark-4: rgba(0, 0, 0, 0.5);
+$sp-shade-dark-5: rgba(0, 0, 0, 0.8);
+
+$sp-shadow-low: $sp-shade-dark-2;
+$sp-shadow-medium: $sp-shade-dark-3;
+$sp-shadow-high: $sp-shade-dark-4;
+$sp-shadow-very-high: $sp-shade-dark-5;
+
+$sp-color: (
+        sp-color-black: $sp-color-black,
+        sp-color-dark-base: $sp-color-dark-base,
+        sp-color-dark-darker: $sp-color-dark-darker,
+        sp-color-dark-lighter: $sp-color-dark-lighter,
+        sp-color-white: $sp-color-white,
+        sp-color-light-base: $sp-color-light-base,
+        sp-color-light-lighter: $sp-color-light-lighter,
+        sp-color-light-darker: $sp-color-light-darker,
+        sp-color-grey: $sp-color-grey,
+        sp-color-primary: $sp-color-primary,
+        sp-color-success: $sp-color-success,
+        sp-color-warning: $sp-color-warning,
+        sp-color-danger: $sp-color-danger,
+);
+
+$sp-overlay-light: (
+        sp-shade-light-1: $sp-shade-light-1,
+        sp-shade-light-2: $sp-shade-light-2,
+        sp-shade-light-3: $sp-shade-light-3,
+        sp-shade-light-4: $sp-shade-light-4,
+        sp-shade-light-5: $sp-shade-light-5,
+);
+
+$sp-overlay-dark: (
+        sp-shade-dark-1: $sp-shade-dark-1,
+        sp-shade-dark-2: $sp-shade-dark-2,
+        sp-shade-dark-3: $sp-shade-dark-3,
+        sp-shade-dark-4: $sp-shade-dark-4,
+        sp-shade-dark-5: $sp-shade-dark-5,
+);
+
+$sp-shadow: (
+        sp-shadow-low: $sp-shadow-low,
+        sp-shadow-medium: $sp-shadow-medium,
+        sp-shadow-high: $sp-shadow-high,
+        sp-shadow-very-high: $sp-shadow-very-high,
+);

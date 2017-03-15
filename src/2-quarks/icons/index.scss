@@ -1,0 +1,75 @@
+@mixin sp-icon-styles {
+    content: "\F009";
+    font-family: 'Icon Font' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Better positioning */
+    display: inline-block;
+}
+
+[class^='sp-icon-'], [class*=' sp-icon-'], .sp-icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  &::before {
+    @include sp-icon-styles;
+  }
+}
+
+[class^='sp-icon-after-'], [class*=' sp-icon-after-'] {
+  &::before {
+    display: none;
+  }
+
+  &::after {
+    @include sp-icon-styles;
+  }
+}
+
+.sp-icon::before {
+  content: "\F009";
+}
+
+@mixin sp-icon-size($size: null) {
+  $key: 'sp-icon-size-base';
+  @if ($size != null) {
+    $key: 'sp-icon-size-#{$size}';
+  }
+  @if map-has-key($sp-icon-size, $key) {
+    $val: map-get($sp-icon-size, $key);
+    font-size: $val;
+  }
+}
+
+@each $item in (null, tiny, small, large, huge) {
+  $selector: '[class*="sp-icon-"],[class*="sp-icon-"].sp-base, .sp-base [class*="sp-icon-"]';
+  @if ($item != null and $item != 'base' and $item != '') {
+    $selector: '[class*="sp-icon-"].sp-#{$item}, .sp-#{$item} [class*="sp-icon-"]';
+  }
+  '#{$selector}' {
+    &:before {
+      @include sp-icon-size($item);
+    }
+  }
+}
+
+@each $item in (null, tiny, small, large, huge) {
+  $selector: '[class*="sp-icon-after-"],[class*="sp-icon-after-"].sp-base, .sp-base [class*="sp-icon-after-"]';
+  @if ($item != null and $item != 'base' and $item != '') {
+    $selector: '[class*="sp-icon-after-"].sp-#{$item}, .sp-#{$item} [class*="sp-icon-after-"]';
+  }
+  '#{$selector}' {
+    &:after {
+      @include sp-icon-size($item);
+    }
+  }
+}
+
+@import 'icon-list';

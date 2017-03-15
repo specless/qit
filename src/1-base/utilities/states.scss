@@ -1,0 +1,62 @@
+@mixin sp-state-dark {
+  & .sp-container-dark,
+  &.sp-container-dark,
+  .sp-container-dark & {
+    @content;
+  }
+}
+
+@mixin sp-state-hover {
+  &:hover,
+  &.sp-state-hover {
+    @content;
+  }
+}
+
+@mixin sp-state-active {
+  &:active,
+  &.sp-state-active {
+    @content;
+  }
+}
+
+@mixin sp-state-focus {
+  &:focus,
+  &.sp-state-focus {
+    @content;
+  }
+}
+
+@mixin sp-state-disabled {
+  &:disabled,
+  &.sp-state-disabled {
+    pointer-events: none;
+    @content;
+  }
+}
+
+@mixin sp-state($state) {
+  @if ($state == dark) {
+    @include sp-state-dark {
+      @content;
+    }
+  } @else if ($state == hover) {
+    @include sp-state-hover {
+      @content;
+    }
+  } @else if ($state == active) {
+    @include sp-state-active {
+      @content;
+    }
+  } @else if ($state == focus) {
+    @include sp-state-focus {
+      @content;
+    }
+  } @else if ($state == disabled) {
+    @include sp-state-disabled {
+      @content;
+    }
+  } @else {
+    @error '#{$state} is not a valid state';
+  }
+}

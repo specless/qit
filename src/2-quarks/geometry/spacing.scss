@@ -1,0 +1,66 @@
+/////////////////////////
+//                     //
+//       spacing       //
+//                     //
+/////////////////////////
+
+@mixin sp-spacing-helper($level, $root, $orientation: '') {
+  @if (round($level) != $level) {
+    @error 'Please supply a integer'
+  }
+  $key: sp-spacing-#{$level};
+  $attr: '';
+
+  @if ($orientation == 'top') {
+    $attr: #{$root}-top;
+  } @else if ($orientation == 'right') {
+    $attr: #{$root}-right;
+  } @else if ($orientation == 'bottom') {
+    $attr: #{$root}-bottom;
+  } @else if ($orientation == 'left') {
+    $attr: #{$root}-left;
+  } @else if ($orientation == 'vertical') {
+    $attr: #{$root}-top, #{$root}-bottom;
+  } @else if ($orientation == 'horizontal') {
+    $attr: #{$root}-left, #{$root}-right;
+  } @else {
+    $attr: #{$root}
+  }
+
+  @if (map-has-key($sp-spacing, $key)) {
+    @each $a in $attr {
+      #{$a}: map-get($sp-spacing, $key);
+    }
+  } @else {
+    @error '#{$key} does not exist in map $sp-spacing';
+  }
+}
+
+@mixin sp-margin($level, $orientation: '') {
+  @include sp-spacing-helper($level, margin, $orientation)
+}
+
+@mixin sp-padding($level, $orientation: '') {
+  @include sp-spacing-helper($level, padding, $orientation)
+}
+
+@each $pos in ('', 'top', 'right', 'bottom', 'left', 'vertical', 'horizontal') {
+  $i: 0;
+  @each $spacing in $sp-spacing {
+    $classM: '.sp-margin-#{$i}';
+    $classP: '.sp-padding-#{$i}';
+    @if $pos != '' {
+      $classM: '.sp-margin-#{$pos}-#{$i}';
+      $classP: '.sp-padding-#{$pos}-#{$i}';
+    }
+    $key: nth($spacing, 1);
+    $val: nth($spacing, 2);
+    #{$classM} {
+      @include sp-margin($i, $pos);
+    }
+    #{$classP} {
+      @include sp-padding($i, $pos);
+    }
+    $i: $i + 1;
+  }
+}

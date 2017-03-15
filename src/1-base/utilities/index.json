@@ -1,0 +1,21 @@
+{
+  "title": "Utilities",
+  "description": "Text goes here.",
+  "examples": [
+  	{
+  		"title": ".sp-tactile",
+  		"subTitle": "@include sp-tactile($value)",
+  		"swatches" : [
+  			{
+  				"title": "Natural",
+  				"type": "block",
+  				"classes": "sp-tactile",
+  				"content": "<h2>Test</h2>"
+  			}
+  		],
+  		"modifiers": ["sp-minimal", "sp-small", "sp-large"]
+  	}
+  ],
+  "scss": ["devices.scss", "states.scss", "modifiers.scss", "display.scss", "alignment.scss", "shadows.scss"],
+  "markdown": "index.md"
+}

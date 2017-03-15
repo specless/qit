@@ -1,0 +1,36 @@
+{
+  "title": "Icons",
+  "description": "Text goes here.",
+  "examples": [
+    {
+      "title": "Icon Styles",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-icon-[name]",
+          "type": "box-target",
+          "classes": "sp-icon-settings",
+          "content": "<span class='qit-target'></span>"
+        }
+      ],
+      "states": ["sp-small", "sp-large", "sp-huge"],
+      "modifiers": ["sp-color-contrast", "sp-color-muted", "sp-color-primary", "sp-color-success", "sp-color-danger", "sp-color-warning"]
+    },
+  	{
+  		"title": "Icon Reference",
+  		"subTitle": "",
+  		"swatches" : [
+  			{
+  				"title": ".sp-icon-[name].sp-huge",
+  				"type": "box-target",
+  				"classes": "sp-icon",
+  				"content": "<span class='qit-target sp-small sp-padding-1'></span><br><span class='qit-target sp-padding-1'></span><br><span class='qit-target sp-large sp-padding-1'></span><br><span class='qit-target sp-huge sp-padding-1'></span>"
+  			}
+  		],
+      "states": [],
+      "modifiers": []
+  	}
+  ],
+  "scss": ["index.scss"],
+  "markdown": "index.md"
+}

@@ -1,0 +1,137 @@
+/////////////////////////
+//                     //
+//       radius        //
+//                     //
+/////////////////////////
+
+@mixin sp-border-radius($val) {
+  border-radius: $val;
+}
+
+/////////////////////////
+//                     //
+//        width        //
+//                     //
+/////////////////////////
+
+@mixin sp-border-width($val: medium, $location: null) {
+  $attr: 'border-width';
+  @if $location == top or
+      $location == right or
+      $location == bottom or
+      $location == left {
+    $attr: 'border-#{$location}-width';
+  }
+
+  @if ($val == thin) {
+    #{$attr}: 1px;
+  } @else if ($val == thick) {
+    #{$attr}: 3px;
+  } @else if ($val == medium or $val == null) {
+    #{$attr}: 2px;
+  } @else {
+    // Arbitrary border width
+    #{$attr}: $val;
+  }
+}
+
+/////////////////////////
+//                     //
+//       styles        //
+//                     //
+/////////////////////////
+
+@mixin sp-border-style($val: solid, $location: null) {
+  $attr: 'border-style';
+  @if $location == top or
+      $location == right or
+      $location == bottom or
+      $location == left {
+    $attr: 'border-#{$location}-style';
+  }
+  $key: sp-border-style-#{$val};
+  @if map-has-key($sp-border-style, $key) {
+    #{$attr}: map-get($sp-border-style, $key)
+  } @else {
+    @error 'Invalid value for border-style'
+  }
+}
+
+/////////////////////////
+//                     //
+//    width & style    //
+//    *convenience*    //
+/////////////////////////
+
+@mixin sp-border($thickness, $style, $loc: null) {
+  @include sp-border-width($thickness, $loc);
+  @include sp-border-style($style, $loc);
+}
+
+
+@each $thickness in (thin, medium, thick) {
+  @each $loc in (null, 'top', 'bottom', 'right', 'left') {
+    $class: '.sp-border';
+    @if $loc != null {
+      $class: '#{$class}-#{$loc}-#{$thickness}';
+    } @else {
+      $class: '#{$class}-#{$thickness}';
+    }
+    #{$class} {
+      @include sp-border-width($thickness, $loc)
+    }
+  }
+}
+
+@each $bstyle in (solid, dashed, dotted, double) {
+  @each $loc in (null, 'top', 'bottom', 'right', 'left') {
+    $class: '.sp-border';
+    @if $loc != null {
+      $class: '#{$class}-#{$loc}-#{$bstyle}';
+    } @else {
+      $class: '#{$class}-#{$bstyle}';
+    }
+    #{$class} {
+      @include sp-border-style($bstyle, $loc)
+    }
+  }
+}
+
+
+
+
+
+// For each style (excluding none and hidden),
+// generate a class combining style, thickness, and direction
+@each $style in (solid, dashed, dotted, double) {
+  @each $thickness in (thin, medium, thick) {
+    @each $loc in (null, top, bottom, right, left) {
+      $class: '.sp-border';
+      @if $loc != null {
+        $class: '#{$class}-#{$loc}-#{$thickness}-#{$style}';
+      } @else {
+        $class: '#{$class}-#{$thickness}-#{$style}';
+      }
+      #{$class} {
+        @include sp-border($thickness, $style, $loc)
+      }
+    }
+  }
+}
+
+// It doesn't make sense to have a thickness for
+// border styles none and hidden, so we separated
+// those cases out to there own function
+@each $item in (none, hidden) {
+  @each $loc in (null, top, bottom, right, left) {
+    $class: '.sp-border';
+    @if ($loc != null) {
+      $class: '#{$class}-#{$loc}-#{$item}'
+    } @else {
+      $class: '#{$class}-#{$item}'
+    }
+    #{$class} {
+      @include sp-border-style($item);
+    }
+  }
+}

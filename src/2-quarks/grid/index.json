@@ -1,0 +1,21 @@
+{
+  "title": "Grid System",
+  "description": "Text goes here.",
+  "examples": [
+  	{
+  		"title": "Columns",
+  		"subTitle": "",
+  		"swatches" : [
+  			{
+  				"title": ".sp-wrapper > .sp-row > .sp-col",
+  				"type": "box-target",
+  				"classes": "sp-col sp-bg-color-primary",
+  				"content": "<div class='sp-wrapper sp-width-9'><div class='sp-row'><div class='qit-target sp-height-1'></div></div></div>"
+  			}
+  		],
+  		"modifiers": ["sp-span-1", "sp-span-2", "sp-span-3", "sp-span-4", "sp-span-5", "sp-span-6", "sp-span-7", "sp-span-8", "sp-span-9", "sp-span-10", "sp-span-11", "sp-span-12"]
+  	}
+  ],
+  "scss": ["index.scss"],
+  "markdown": "index.md"
+}

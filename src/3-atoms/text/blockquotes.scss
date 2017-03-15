@@ -1,0 +1,28 @@
+blockquote {
+	@include sp-padding(2, left);
+	text-align: left;
+	@include sp-border(thick, solid, left);
+
+	@include sp-primary {
+	  	@include sp-border-color(primary);
+	}
+
+	@include sp-success {
+	  	@include sp-border-color(success);
+	}
+
+	@include sp-warning {
+	  	@include sp-border-color(warning);
+	}
+
+	 @include sp-danger {
+	  	@include sp-border-color(danger);
+	}
+
+	&.sp-align-right {
+		border: none;
+		padding-left: 0;
+		@include sp-padding(2, right);
+		@include sp-border(thick, solid, right);
+	}
+}

@@ -1,0 +1,130 @@
+@mixin sp-minimal {
+  &.sp-minimal {
+    @content;
+  }
+}
+
+@mixin sp-primary {
+  &.sp-primary {
+    @content;
+  }
+}
+
+@mixin sp-success {
+  &.sp-success {
+    @content;
+  }
+}
+
+@mixin sp-warning {
+  &.sp-warning {
+    @content;
+  }
+}
+
+@mixin sp-danger {
+  &.sp-danger {
+    @content;
+  }
+}
+
+@mixin sp-contrast {
+  &.sp-contrast {
+    @content;
+  }
+}
+
+@mixin sp-muted {
+  &.sp-muted {
+    @content;
+  }
+}
+
+@mixin sp-alt-one {
+  &.sp-alt-one {
+    @content;
+  }
+}
+
+@mixin sp-alt-two {
+  &.sp-alt-two {
+    @content;
+  }
+}
+
+@mixin sp-tiny {
+  &.sp-tiny, .sp-tiny & {
+    @content;
+  }
+}
+
+@mixin sp-small {
+  &.sp-small, .sp-small & {
+    @content;
+  }
+}
+
+@mixin sp-base {
+  &.sp-base, .sp-base & {
+    @content;
+  }
+}
+
+@mixin sp-large {
+  &.sp-large, .sp-large & {
+    @content;
+  }
+}
+
+@mixin sp-huge {
+  &.sp-huge, .sp-huge & {
+    @content;
+  }
+}
+
+@function map-get-next($map, $key, $fallback: false) {
+
+  // Check if map is valid
+  @if type_of($map) == map {
+
+    // Check if key exists in map
+    @if map_has_key($map, $key) {
+
+      // Init index counter variable
+      $i: 0;
+
+      // Init key index
+      $key-index: false;
+
+      // Traverse map for key
+      @each $map-key, $map-value in $map {
+        // Update index
+        $i: $i + 1;
+
+        // If map key found, set key index
+        @if $map-key == $key {
+          $key-index: $i;
+        }
+
+        // If next index return next value
+        @if $i == $key-index + 1 {
+          @return $map-value;
+        }
+
+        // If last entry return false
+        @if $i == length($map) {
+          @return $fallback;
+        }
+      }
+
+      @warn 'No next map item for key #{$key}';
+      @return $fallback;
+    }
+
+    @warn 'No valid key #{$key} in map';
+    @return $fallback;
+  }
+
+  @warn 'No valid map';
+  @return $fallback;
+}

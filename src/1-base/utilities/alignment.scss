@@ -1,0 +1,11 @@
+@mixin sp-align($val: null) {
+  @if ($val == right) {
+    text-align: right;
+  } @else if ($val == center) {
+    text-align: center;
+  } @else if ($val == justify) {
+    text-align: justify;
+  } @else {
+    text-align: left;
+  }
+}

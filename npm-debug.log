@@ -1,0 +1,45 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'run', 'qit' ]
+2 info using npm@3.10.9
+3 info using node@v6.9.2
+4 verbose run-script [ 'preqit', 'qit', 'postqit' ]
+5 info lifecycle Qit@1.0.0~preqit: Qit@1.0.0
+6 silly lifecycle Qit@1.0.0~preqit: no script for preqit, continuing
+7 info lifecycle Qit@1.0.0~qit: Qit@1.0.0
+8 verbose lifecycle Qit@1.0.0~qit: unsafe-perm in lifecycle true
+9 verbose lifecycle Qit@1.0.0~qit: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/scorby/Library/Mobile Documents/com~apple~CloudDocs/Development/qit/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+10 verbose lifecycle Qit@1.0.0~qit: CWD: /Users/scorby/Library/Mobile Documents/com~apple~CloudDocs/Development/qit
+11 silly lifecycle Qit@1.0.0~qit: Args: [ '-c', 'node ./index.js' ]
+12 silly lifecycle Qit@1.0.0~qit: Returned: code: 1  signal: null
+13 info lifecycle Qit@1.0.0~qit: Failed to exec qit script
+14 verbose stack Error: Qit@1.0.0 qit: `node ./index.js`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:255:16)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at EventEmitter.emit (events.js:191:7)
+14 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:40:14)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at ChildProcess.emit (events.js:191:7)
+14 verbose stack     at maybeClose (internal/child_process.js:877:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+15 verbose pkgid Qit@1.0.0
+16 verbose cwd /Users/scorby/Library/Mobile Documents/com~apple~CloudDocs/Development/qit
+17 error Darwin 16.4.0
+18 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "run" "qit"
+19 error node v6.9.2
+20 error npm  v3.10.9
+21 error code ELIFECYCLE
+22 error Qit@1.0.0 qit: `node ./index.js`
+22 error Exit status 1
+23 error Failed at the Qit@1.0.0 qit script 'node ./index.js'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the Qit package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     node ./index.js
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs Qit
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls Qit
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]

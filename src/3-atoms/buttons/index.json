@@ -1,0 +1,186 @@
+{
+  "title": "Buttons",
+  "description": "Text goes here.",
+  "examples": [
+  	{
+  		"title": "Standard Buttons",
+  		"subTitle": "",
+  		"swatches" : [
+  			{
+  				"title": "button || a.sp-button || input[type='button']",
+  				"type": "box-target",
+  				"classes": "",
+  				"content": "<button class='qit-target'>Click Me</button>"
+  			}
+  		],
+      "states": ["sp-state-hover", "sp-state-active", "sp-state-disabled"],
+  		"modifiers": ["sp-small", "sp-large"]
+  	},
+    {
+      "title": "Minimal Buttons",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "button.sp-minimal || a.sp-button.sp-minimal || input[type='button'].sp-minimal",
+          "type": "box-target",
+          "classes": "sp-minimal",
+          "content": "<button class='qit-target'>Click Me</button>"
+        }
+      ],
+      "states": ["sp-state-hover", "sp-state-active", "sp-state-disabled"],
+      "modifiers": ["sp-small", "sp-large"]
+    },
+    {
+      "title": "Rounded Buttons",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "button || a.sp-button || input[type='button']",
+          "type": "box-target",
+          "classes": "sp-rounded",
+          "content": "<button class='qit-target'>Click Me</button>"
+        }
+      ],
+      "states": ["sp-state-hover", "sp-state-active", "sp-state-disabled"],
+      "modifiers": ["sp-small", "sp-large"]
+    },
+    {
+      "title": "Rounded Minimal Buttons",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "button.sp-minimal || a.sp-button.sp-minimal || input[type='button'].sp-minimal",
+          "type": "box-target",
+          "classes": "sp-rounded sp-minimal",
+          "content": "<button class='qit-target'>Click Me</button>"
+        }
+      ],
+      "states": ["sp-state-hover", "sp-state-active", "sp-state-disabled"],
+      "modifiers": ["sp-small", "sp-large"]
+    },
+    {
+      "title": "Button Colors",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "button || a.sp-button || input[type='button']",
+          "type": "box-target",
+          "classes": "",
+          "content": "<button class='qit-target'>Click Me</button>"
+        }
+      ],
+      "states": ["sp-minimal"],
+      "modifiers": ["sp-primary", "sp-success", "sp-warning", "sp-danger"]
+    },
+    {
+      "title": "Rounded Button Colors",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "button || a.sp-button || input[type='button']",
+          "type": "box-target",
+          "classes": "sp-rounded",
+          "content": "<button class='qit-target'>Click Me</button>"
+        }
+      ],
+      "states": ["sp-minimal"],
+      "modifiers": ["sp-primary", "sp-success", "sp-warning", "sp-danger"]
+    },
+    {
+      "title": "Buttons With Icons",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "button.sp-icon-[name] || a.sp-button.sp-icon-[name]",
+          "type": "box-target",
+          "classes": "sp-icon-settings",
+          "content": "<button class='qit-target'>Settings</button>"
+        },
+        {
+          "title": "button.sp-icon-after-[name] || a.sp-button.sp-icon-after-[name]",
+          "type": "box-target",
+          "classes": "sp-icon-after-settings",
+          "content": "<button class='qit-target'>Settings</button>"
+        }
+      ],
+      "states": ["sp-minimal", "sp-small", "sp-large"],
+      "modifiers": ["sp-primary", "sp-success", "sp-warning", "sp-danger"]
+    },
+    {
+      "title": "Rounded Buttons With Icons",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "button.sp-icon-[name] || a.sp-button.sp-icon-[name]",
+          "type": "box-target",
+          "classes": "sp-rounded sp-icon-settings",
+          "content": "<button class='qit-target'>Settings</button>"
+        },
+        {
+          "title": "button.sp-icon-after-[name] || a.sp-button.sp-icon-after-[name]",
+          "type": "box-target",
+          "classes": "sp-rounded sp-icon-after-settings",
+          "content": "<button class='qit-target'>Settings</button>"
+        }
+      ],
+      "states": ["sp-minimal", "sp-small", "sp-large"],
+      "modifiers": ["sp-primary", "sp-success", "sp-warning", "sp-danger"]
+    },
+    {
+      "title": "Icon Buttons",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "button.sp-icon-[name] || a.sp-button.sp-icon-[name]",
+          "type": "box-target",
+          "classes": "sp-icon-settings",
+          "content": "<button class='qit-target'></button>"
+        }
+      ],
+      "states": ["sp-minimal", "sp-small", "sp-large"],
+      "modifiers": ["sp-primary", "sp-success", "sp-warning", "sp-danger"]
+    },
+    {
+      "title": "Rounded Icon Buttons",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "button.sp-icon-[name] || a.sp-button.sp-icon-[name]",
+          "type": "box-target",
+          "classes": "sp-rounded sp-icon-settings",
+          "content": "<button class='qit-target'></button>"
+        }
+      ],
+      "states": ["sp-minimal", "sp-small", "sp-large"],
+      "modifiers": ["sp-primary", "sp-success", "sp-warning", "sp-danger"]
+    },
+    {
+      "title": "Button Groups",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-group > button.sp-icon-[name] || .sp-group > a.sp-button.sp-icon-[name]",
+          "type": "box-target",
+          "classes": "",
+          "content": "<div class='sp-group'><button class='qit-target'>Account</button><button class='qit-target'>User</button><button class='qit-target'>Settings</button></div>"
+        },
+        {
+          "title": ".sp-group > button.sp-icon-[name].sp-minimal || .sp-group > a.sp-button.sp-icon-[name].sp-minimal",
+          "type": "box-target",
+          "classes": "sp-minimal",
+          "content": "<div class='sp-group'><button class='qit-target'>Account</button><button class='qit-target'>User</button><button class='qit-target'>Settings</button></div>"
+        },
+        {
+          "title": ".sp-group > button.sp-icon-[name].sp-icon-[name] || .sp-group > a.sp-button.sp-icon-[name].sp-icon-[name]",
+          "type": "box-target",
+          "classes": "sp-icon-settings",
+          "content": "<div class='sp-group'><button class='qit-target'></button><button class='qit-target'></button><button class='qit-target'></button></div>"
+        }
+      ],
+      "states": ["sp-small", "sp-large"],
+      "modifiers": ["sp-primary", "sp-success", "sp-warning", "sp-danger"]
+    }
+  ],
+  "scss": ["index.scss"],
+  "markdown": "index.md"
+}

@@ -1,0 +1,64 @@
+{
+  "title": "Logos",
+  "description": "Text goes here.",
+  "examples": [
+  	{
+  		"title": "Logo Mark",
+  		"subTitle": "",
+  		"swatches" : [
+  			{
+  				"title": ".sp-logo-mark",
+  				"type": "box-target",
+  				"classes": "sp-logo-mark",
+  				"content": "<span class='qit-target'></span>"
+  			}
+  		],
+  		"states": ["sp-small", "sp-large", "sp-huge"],
+      "modifiers": ["sp-contrast", "sp-muted", "sp-primary", "sp-success", "sp-warning", "sp-danger"]
+  	},
+    {
+      "title": "Logo Name",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-logo-name",
+          "type": "box-target",
+          "classes": "sp-logo-name",
+          "content": "<span class='qit-target'></span>"
+        }
+      ],
+      "states": ["sp-small", "sp-large", "sp-huge"],
+      "modifiers": ["sp-contrast", "sp-muted", "sp-primary", "sp-success", "sp-warning", "sp-danger"]
+    },
+    {
+      "title": "Logo Vertical Lockup",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-logo-lockup",
+          "type": "box-target",
+          "classes": "sp-logo-lockup",
+          "content": "<span class='qit-target'></span>"
+        }
+      ],
+      "states": ["sp-small", "sp-large", "sp-huge"],
+      "modifiers": ["sp-contrast", "sp-muted", "sp-primary", "sp-success", "sp-warning", "sp-danger"]
+    },
+    {
+      "title": "Logo Horizontal Lockup",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-logo-lockup.sp-logo-horizontal",
+          "type": "box-target",
+          "classes": "sp-logo-lockup sp-logo-horizontal",
+          "content": "<span class='qit-target'></span>"
+        }
+      ],
+      "states": ["sp-small", "sp-large", "sp-huge"],
+      "modifiers": ["sp-contrast", "sp-muted", "sp-primary", "sp-success", "sp-warning", "sp-danger"]
+    }
+  ],
+  "scss": ["index.scss"],
+  "markdown": "index.md"
+}

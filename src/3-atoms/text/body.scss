@@ -1,0 +1,18 @@
+body {
+  @include sp-font-body;
+  @include sp-font-color;
+}
+
+strong {
+  @include sp-font-weight(semi-bold)
+}
+
+em {
+  @include sp-font-weight(light);
+}
+
+ul, ol, li {
+  @include sp-padding(0);
+  @include sp-margin(0);
+  list-style: none
+}

@@ -1,0 +1,46 @@
+.sp-container-dark, .sp-container-dark .sp-container {
+
+  &:not(.sp-contrast):not(.sp-alt-one):not(.sp-alt-two) {
+    @include sp-bg-color('dark-base');
+  }
+
+  @include sp-base {
+    @include sp-bg-color('dark-base');
+  }
+
+  @include sp-contrast {
+    @include sp-bg-color('dark-base');
+    @include sp-bg-overlay-dark(4);
+  }
+
+  @include sp-alt-one {
+    @include sp-bg-color('dark-darker');
+  }
+
+  @include sp-alt-two {
+    @include sp-bg-color('dark-lighter');
+  }
+}
+
+.sp-container-light, .sp-container-light .sp-container {
+
+  &:not(.sp-contrast):not(.sp-alt-one):not(.sp-alt-two) {
+    @include sp-bg-color('light-base');
+  }
+
+  @include sp-base {
+    @include sp-bg-color('light-base');
+  }
+
+  @include sp-contrast {
+    @include sp-bg-color('white');
+  }
+
+  @include sp-alt-one {
+    @include sp-bg-color('light-darker');
+  }
+
+  @include sp-alt-two {
+    @include sp-bg-color('light-lighter');
+  }
+}

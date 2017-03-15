@@ -1,0 +1,190 @@
+@mixin includeBaseColor($color, $baseColor) {
+  @if $color != $baseColor {
+    @include sp-bg-color($color)
+  }
+}
+
+@mixin sp-tactile($color: null, $include-default: true) {
+  $baseColor: 'white';
+  @if $color != null {
+    @if $color == 'base' {
+      $color: 'white';
+    }
+    @if $include-default == true {
+      @include sp-border-overlay-dark(3);
+      @include sp-border-style(solid);
+      @include sp-border-width(thin);
+
+      @include sp-state-hover {
+        @include sp-bg-overlay-dark(1);
+        @include sp-shadow(low, 0 0 4px 0);
+      }
+
+      @include sp-state-active {
+        // Active Styles go here
+        @include sp-bg-overlay-dark(2);
+        @include sp-shadow(medium, 0 0 4px 0);
+      }
+
+      @include sp-state-disabled{
+        background-color: $sp-color-white !important;
+        @include sp-bg-overlay-dark(2);
+        @include sp-border-overlay-dark(2);
+      }
+
+      @include sp-state-dark {
+        // Dark style overrides go here
+        //
+
+        @include sp-border-style(solid);
+        @include sp-border-width(thin);
+        // If we are using a $sp-color-white, change to $sp-color-dark for dark background
+        // Else use the color that was passed in
+        @if $color == $baseColor {
+          @include sp-bg-color('dark-lighter');
+          @include sp-border-overlay-dark(4);
+        } @else {
+          @include sp-border-overlay-dark(1);
+        }
+
+        @include sp-state-hover {
+          @include sp-bg-overlay-dark(1);
+        }
+
+        @include sp-state-active {
+          // Hovered dark style overrides go here
+          @if $color == $baseColor {
+            @include sp-bg-overlay-dark(2);
+          } @else {
+            @include sp-bg-overlay-dark(3);
+          }
+        }
+
+        @include sp-state-disabled{
+          background-color:  $sp-color-dark-lighter !important;
+          @include sp-bg-overlay-dark(2);
+          @include sp-border-overlay-dark(2);
+        }
+      }
+    } 
+    @include sp-bg-color($color);
+    @include sp-state-dark {
+      @if $color != $baseColor {
+        @include sp-bg-color($color);
+
+        @include sp-state-active {
+          @include sp-bg-color($color);
+        }
+      }
+    }
+  } @else {
+    @include sp-tactile(base);
+    @include sp-primary {
+      @include sp-tactile(primary, false)
+    }
+    @include sp-success {
+      @include sp-tactile(success, false)
+    }
+    @include sp-warning {
+      @include sp-tactile(warning, false)
+    }
+    @include sp-danger {
+      @include sp-tactile(danger, false)
+    }
+  }
+}
+
+@mixin sp-tactile-minimal($color: null, $include-default: true) {
+  $baseColor: 'dark-3';
+  @if $color != null {
+    @if $color == 'base' {
+      $color: 'dark-3';
+    }
+
+    @if $include-default == true {
+      @include sp-bg-color(transparent);
+      @include sp-border-style(solid);
+      @include sp-border-width(thin);
+
+      @include sp-state(hover) {
+        @include includeBaseColor($color, $baseColor);
+        @include sp-bg-overlay-light(2);
+        //@include sp-shadow(medium, 0 0 4px 0);
+      }
+
+      @include sp-state(active) {
+        @include includeBaseColor($color, $baseColor);
+        @include sp-bg-overlay-light(4);
+        //@include sp-shadow(high, 0 0 4px 0);
+      }
+
+      @include sp-state(disabled) {
+        background-color: transparent !important;
+        @include sp-bg-overlay-light(1)
+      }
+
+      @include sp-state(dark) {
+        @include sp-bg-color(transparent);
+        @include sp-state-hover {
+          @include sp-bg-overlay-dark(2);
+        }
+        @include sp-state(active) {
+          @include sp-bg-overlay-dark(3);
+        }
+
+        @include sp-state(disabled) {
+          background-color: transparent !important;
+          @include sp-bg-overlay-dark(2);
+          @include sp-border-overlay-light(1);
+        }
+      }
+    }
+
+    @if $color != $baseColor {
+      @include sp-border-color($color);
+      @include sp-state(hover) {
+        @include includeBaseColor($color, $baseColor);
+        @include sp-bg-overlay-light(5);
+      }
+      @include sp-state(active) {
+        @include includeBaseColor($color, $baseColor);
+        @include sp-bg-overlay-light(2);
+      }
+      @include sp-state-dark {
+        @include sp-state(hover) {
+          @include includeBaseColor($color, $baseColor);
+          @include sp-bg-overlay-dark(5);
+        }
+        @include sp-state(active) {
+          @include includeBaseColor($color, $baseColor);
+          @include sp-bg-overlay-dark(2);
+        }
+      }
+    } @else {
+      @include sp-border-overlay-dark(3);
+    }
+
+  } @else {
+    @include sp-tactile-minimal(base);
+    @include sp-primary {
+      @include sp-tactile-minimal(primary, false)
+    }
+    @include sp-success {
+      @include sp-tactile-minimal(success, false)
+    }
+    @include sp-warning {
+      @include sp-tactile-minimal(warning, false)
+    }
+    @include sp-danger {
+      @include sp-tactile-minimal(danger, false)
+    }
+  }
+}
+
+.sp-tactile {
+  @include sp-tactile();
+
+  &.sp-minimal {
+    @include sp-tactile-minimal();
+  }
+}

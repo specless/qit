@@ -53,8 +53,8 @@ In each of the directories listed above there are any number of subfolders. Each
   		"modifiers": ["sp-color-base", "sp-color-contrast", "sp-color-muted"] // array of modifier classes that show ways in which this component can be modified
   	}
   ],
-  "scss": ["display.scss", "alignment.scss"], // array of scss files to import to the compiled SCSS output
-  "markdown": "index.md" // Markdown file that will compile at the top of this component's article entry
+  "scss": ["display.scss", "alignment.scss"], // array of scss files to import to the compiled SCSS output. Scss files should be housed in the same directory as the component and all paths are relative to that directory.
+  "markdown": "index.md" // Markdown file that will compile at the top of this component's article entry. Markdown files should be housed in the same directory as the component and all paths are relative to that directory.
 }
 ```
 

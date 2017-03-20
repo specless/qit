@@ -1,6 +1,5 @@
 .sp-menu-item {
 	height: 32px;
-	// max-height: 44.39px;
 	box-sizing: border-box;
 	text-align: left;
 	display: block;
@@ -10,6 +9,7 @@
 	text-overflow: ellipsis;
   	white-space: nowrap;
   	overflow: hidden;
+  	cursor: pointer;
 
 	&:not(.sp-label) {
 		font-weight: 600;
@@ -48,6 +48,7 @@
 
   			@include sp-state(hover) {
   				@include sp-bg-overlay-dark(1);
+  				@include sp-font-color(white);
   			}
   		}
   	}
@@ -261,6 +262,7 @@
 		display: inline-block;
 		text-align: center;
 		height: 43.7px;
+		line-height: 2;
 		@include sp-state(hover) {
 	  		@include sp-font-color(contrast);
 	  		background-color: transparent;
@@ -282,10 +284,30 @@
 
 	  	@include sp-small {
 	  		height: 31.66px;
+	  		max-height: 31.66px;
+	  		line-height: 1.5;
+	  		@include sp-state(active) {
+	  			@include sp-border(medium, solid, bottom);
+	  		}
 	  	}
 
 	  	@include sp-large {
 	  		height: 44.39px;
+	  		line-height: 1.5;
 	  	}
+	}
+}
+
+.sp-menu-header {
+	@include sp-font-label;
+	@include sp-padding(3, horizontal);
+	@include sp-padding(2, vertical);
+	@include sp-border(thin, solid, bottom);
+	opacity: 0.5;
+
+	border-color: $sp-shade-dark-2;
+
+	@include sp-state(dark) {
+		border-color: $sp-shade-light-2;
 	}
 }

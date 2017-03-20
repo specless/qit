@@ -56,6 +56,26 @@
     @include sp-state-dark {
       color: $sp-shade-light-2;
     }
+  } @else if ($color == success) {
+    color: darken($sp-color-success, 12%);
+    @include sp-state-dark {
+      color: $sp-color-success;
+    }
+  } @else if ($color == primary) {
+    color: darken($sp-color-primary, 10%);
+    @include sp-state-dark {
+      color: $sp-color-primary;
+    }
+  } @else if ($color == warning) {
+    color: darken($sp-color-warning, 10%);
+    @include sp-state-dark {
+      color: $sp-color-warning;
+    }
+  } @else if ($color == danger) {
+    color: darken($sp-color-danger, 10%);
+    @include sp-state-dark {
+      color: $sp-color-danger;
+    }
   } @else {
     @if (map-has-key($sp-color, 'sp-color-#{$color}')) {
       $val: map-get($sp-color, 'sp-color-#{$color}');
@@ -71,7 +91,11 @@
 /////////////////////////
 
 @mixin sp-bg-color($color) {
-  @include sp-color($color, background-color);
+  @if ($color == success) {
+    background-color: darken($sp-color-success, 5%);
+  } @else {
+    @include sp-color($color, background-color);
+  }
 }
 
 @mixin sp-bg-overlay-dark($level) {

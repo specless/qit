@@ -43,3 +43,7 @@
 @mixin sp-float-right {
   float: right;
 }
+
+@mixin sp-no-overflow {
+  overflow: hidden;
+}

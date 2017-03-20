@@ -1,0 +1,322 @@
+&[type='checkbox'] {
+    display: none;
+    + label {
+      @include sp-margin(1, horizontal);
+      position: relative;
+      padding-left: 2.2em;
+      padding-right: 1em;
+      &:before {
+        @include sp-icon-styles(check);
+        @include sp-icon-size();
+        display: inline-block;
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        top: -3px;
+        opacity: 0;
+        @include sp-icon-size();
+      }
+      &:after {
+        content: "";
+        @include sp-shape(rectangle);
+        display: inline-block;
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 18px;
+        height: 18px;
+        border: 1px solid $sp-shade-dark-3;
+        background-color: $sp-shade-light-3;
+      }
+
+      @include sp-state(dark) {
+        &:after {
+          border: 1px solid $sp-shade-light-3;
+          background-color: $sp-shade-dark-3;
+        }
+      }
+
+      @include sp-state(hover) {
+        &:after {
+          background-color: $sp-shade-light-4;
+          border-color: $sp-shade-dark-4;
+        }
+        @include sp-state(dark) {
+          &:after {
+             border-color: $sp-shade-light-4;
+             background-color: $sp-shade-dark-4;
+          }
+        }
+      }
+    }
+
+
+    &:checked + label {
+      &:before {
+        opacity: 1;
+        @include sp-font-color(primary);
+      }
+    }
+
+  @include sp-state(disabled) {
+    + label {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }
+
+  @include sp-primary {
+    + label {
+      @include sp-font-color(primary);
+      &::before {
+        @include sp-font-color(primary);
+      }
+
+      &::after {
+        @include sp-border-color(primary);
+      }
+
+    }
+  }
+
+  @include sp-success {
+    + label {
+      @include sp-font-color(success);
+      &::before {
+        @include sp-font-color(success);
+      }
+
+      &::after {
+        @include sp-border-color(success);
+      }
+
+    }
+  }
+
+  @include sp-warning {
+    + label {
+      @include sp-font-color(warning);
+      &::before {
+        @include sp-font-color(warning);
+      }
+
+      &::after {
+        @include sp-border-color(warning);
+      }
+
+    }
+  }
+
+  @include sp-danger {
+    + label {
+      @include sp-font-color(danger);
+      &::before {
+        @include sp-font-color(danger);
+      }
+
+      &::after {
+        @include sp-border-color(danger);
+      }
+
+    }
+  }
+
+  @include sp-small {
+    + label {
+      @include sp-font-size(small);
+      &:before {
+        @include sp-icon-size(small);
+      }
+      &:after {
+        @include sp-icon-size(small);
+        width: 15px;
+        height: 15px;
+        top: 0;
+      }
+    }
+  }
+
+  @include sp-large {
+    + label {
+      @include sp-font-size(large);
+      &:before {
+        @include sp-icon-size(large);
+      }
+      &:after {
+        @include sp-icon-size(large);
+        width: 18px;
+        height: 18px;
+        border-width: 2px;
+      }
+    }
+  }
+}
+
+input[type='radio'] {
+    border-radius: 50px;
+    position: relative;
+    width: 18px;
+    height: 18px;
+    top: 5px;
+    @include sp-margin(1, left);
+    margin-right: 1em;
+
+    @include sp-large {
+      //margin-right: 1.5rem;
+      width: 22px;
+      height: 22px;
+      &:before {
+        width: 22px;
+        height: 22px;
+      }
+
+      &:checked:after {
+        width: 14px;
+        height: 14px;
+      }
+    }
+
+    @include sp-small {
+      &::before {
+        width: 16px;
+        height: 16px;
+      }
+
+      &:checked::after {
+        margin-left: -1px;
+        width: 7px;
+        height: 7px;
+        //left: 46%;
+      }
+    }
+
+    &:before {
+      content: '';
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      border: 2px solid black;
+      display: inline-block;
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 0;
+      line-height: 0;
+      transform: translateY(-50%);
+      border: 1px solid $sp-shade-dark-3;
+      background-color: $sp-shade-light-3;
+    }
+
+    @include sp-state(dark) {
+      &:before {
+        border: 1px solid $sp-shade-light-3;
+        background-color: $sp-shade-dark-3;
+      }
+    }
+
+    &:checked:after {
+      content: '';
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $sp-color-primary;
+      display: inline-block;
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      line-height: 0;
+      transform: translate(-40%, -50%);
+    }
+    @include sp-primary {
+      + label {
+        @include sp-font-color(primary);
+      }
+      &::before {
+        @include sp-border-color(primary);
+      }
+      &:checked::after {
+        @include sp-bg-color(primary);
+      }
+    }
+    @include sp-success {
+      + label {
+        @include sp-font-color(success);
+      }
+      &::before {
+        @include sp-border-color(success);
+      }
+      &:checked::after {
+        @include sp-bg-color(success);
+      }
+    }
+    @include sp-warning {
+      + label {
+        @include sp-font-color(warning);
+      }
+      &::before {
+        @include sp-border-color(warning);
+      }
+      &:checked::after {
+        @include sp-bg-color(warning);
+      }
+    }
+    @include sp-danger {
+      + label {
+        @include sp-font-color(danger);
+      }
+      &::before {
+        @include sp-border-color(danger);
+      }
+      &:checked::after {
+        @include sp-bg-color(danger);
+      }
+    }
+
+    + label {
+      padding-right: 1em;
+    }
+
+    @include sp-state(hover) {
+      &:before {
+        border-color: $sp-shade-dark-4;
+      }
+
+      @include sp-state(dark) {
+        &:before {
+          border-color: $sp-shade-light-4;
+        }
+      }
+    }
+    @include sp-state(disabled) {
+      + label {
+        opacity: 0.5;
+        pointer-events: none;
+      }
+    }
+
+    @include sp-small {
+      + label {
+        @include sp-font-size(small);
+      }
+
+      &:checked:after {
+
+      }
+    }
+
+    @include sp-large {
+      + label {
+        @include sp-font-size(large);
+      }
+
+      &:before {
+        border-width: 2px;
+      }
+
+      &:checked:after {
+        transform: translate(-35%, -50%);
+      }
+    }
+}

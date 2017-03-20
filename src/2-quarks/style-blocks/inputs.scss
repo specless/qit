@@ -28,7 +28,6 @@
         @include sp-bg-overlay-dark(2);
         @include sp-border-overlay-dark(3);
         @include sp-shadow(medium, inset 0 0 .4em .07em);
-        @include sp-border-radius(inherit);
 
         @include sp-state(hover) {
           @include sp-bg-overlay-dark(3);
@@ -47,14 +46,14 @@
       }
     }
     @if $color != 'base' {
-      @include sp-state-focus {
+      // @include sp-state-focus {
         @include sp-border-color($color);
-      }
+      // }
     }
   } @else {
     @include sp-input(base);
     @include sp-primary {
-      @include sp-input(primary, false)
+      @include sp-input(primary, false);
     }
     @include sp-success {
       @include sp-input(success, false)

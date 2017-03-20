@@ -1,0 +1,73 @@
+{
+  "title": "Menus",
+  "description": "Text goes here.",
+  "examples": [
+  	{
+  		"title": "Vertical Menu",
+  		"subTitle": ".sp-container",
+  		"swatches" : [
+  			{
+  				"title": "No Class",
+  				"type": "box-target",
+  				"classes": "",
+  				"content": ["menu.html"]
+        }
+  		],
+  		"modifiers": ["sp-small", "sp-large"]
+  	},
+    {
+      "title": "Vertical Menu Variations",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-container",
+          "type": "box-target",
+          "classes": "sp-container",
+          "content": ["menu.html"]
+        }
+      ],
+      "modifiers": ["sp-alt-one", "sp-alt-two", "sp-contrast"]
+    },
+    {
+      "title": "Horizontal Menu",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "No Class",
+          "type": "box-target",
+          "classes": "",
+          "content": ["menu-horizontal.html"]
+        }
+      ],
+      "modifiers": ["sp-small", "sp-large"]
+    },
+    {
+      "title": "Dropdown Menu",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-overlay.sp-rectangle.sp-no-overflow",
+          "type": "box-target",
+          "classes": "sp-overlay sp-rectangle sp-no-overflow",
+          "content": ["menu.html"]
+        }
+      ],
+      "modifiers": ["sp-small", "sp-large"]
+    },
+    {
+      "title": "Dropdown Menu Variations",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-overlay.sp-rectangle.sp-no-overflow",
+          "type": "box-target",
+          "classes": "sp-overlay sp-rectangle sp-no-overflow",
+          "content": ["menu.html"]
+        }
+      ],
+      "modifiers": ["sp-alt-one", "sp-alt-two"]
+    }
+  ],
+  "scss": ["index.scss"],
+  "markdown": "index.md"
+}

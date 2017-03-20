@@ -74,6 +74,25 @@ const uniCodeStart = 61440;
 				    	}
 				    }
 
+				    if (list[components[i]].examples != undefined) {
+				    	var examples = list[components[i]].examples;
+				    	for (l = 0; l < examples.length; l++) {
+				    		var swatches = examples[l].swatches;
+				    		for (m = 0; m < swatches.length; m++) {
+				    			if (swatches[m].content.constructor === Array) {
+				    				var htmlFile = './' + path.join(options[type], components[i], swatches[m].content[0]);
+				    				try {
+				    					var htmlContent = fs.readFileSync(htmlFile, 'utf8');
+				    					swatches[m].content = htmlContent;
+				    				} catch(e) {
+				    					console.error('Could not find html file referenced in component "' + components[i] + '". No html file present at "' + htmlFile + '".');
+				    				}
+
+				    			}
+				    		}
+				    	}
+				    }
+
 				} catch(e) {
 				    console.error("Component module for '" + components[i] + "'' not found. Component not registered.");
 				}

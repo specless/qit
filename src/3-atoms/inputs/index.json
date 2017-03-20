@@ -1,0 +1,346 @@
+{
+  "title": "Inputs & Form Elements",
+  "description": "Text goes here.",
+  "examples": [
+  	{
+  		"title": "Text Fields",
+  		"subTitle": "",
+  		"swatches" : [
+  			{
+  				"title": "input[type='text']",
+  				"type": "box-target",
+  				"classes": "",
+  				"content": "<input class='qit-target' placeholder='Placeholder Text' type='text'/>"
+  			},
+        {
+          "title": "input[type='email']",
+          "type": "box-target",
+          "classes": "",
+          "content": "<input class='qit-target' placeholder='Placeholder Text' type='email'/>"
+        },
+        {
+          "title": "input[type='time']",
+          "type": "box-target",
+          "classes": "",
+          "content": "<input class='qit-target' placeholder='Placeholder Text' type='time'/>"
+        },
+        {
+          "title": "input[type='tel']",
+          "type": "box-target",
+          "classes": "",
+          "content": "<input class='qit-target' placeholder='Placeholder Text' type='tel'/>"
+        },
+        {
+          "title": "input[type='search']",
+          "type": "box-target",
+          "classes": "",
+          "content": "<input class='qit-target' placeholder='Placeholder Text' type='search'/>"
+        },
+        {
+          "title": "input[type='password']",
+          "type": "box-target",
+          "classes": "",
+          "content": "<input class='qit-target' placeholder='Placeholder Text' type='password'/>"
+        },
+        {
+          "title": "input[type='number']",
+          "type": "box-target",
+          "classes": "",
+          "content": "<input class='qit-target' placeholder='Placeholder Text' type='number'/>"
+        },
+        {
+          "title": "input[type='month']",
+          "type": "box-target",
+          "classes": "",
+          "content": "<input class='qit-target' placeholder='Placeholder Text' type='month'/>"
+        },
+        {
+          "title": "input[type='datetime-local']",
+          "type": "box-target",
+          "classes": "",
+          "content": "<input class='qit-target' placeholder='Placeholder Text' type='datetime-local'/>"
+        },
+        {
+          "title": "input[type='datetime']",
+          "type": "box-target",
+          "classes": "",
+          "content": "<input class='qit-target' placeholder='Placeholder Text' type='datetime'/>"
+        },
+        {
+          "title": "input[type='date']",
+          "type": "box-target",
+          "classes": "",
+          "content": "<input class='qit-target' placeholder='Placeholder Text' type='date'/>"
+        }
+  		],
+      "states": ["sp-state-hover", "sp-state-focus", "sp-state-disabled"],
+  		"modifiers": ["sp-small", "sp-large"]
+  	},
+    {
+      "title": "Minimal Text Fields",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "input[type='text'].sp-minimal",
+          "type": "box-target",
+          "classes": "sp-minimal",
+          "content": "<input class='qit-target' placeholder='Placeholder Text' type='text'/>"
+        },
+        {
+          "title": "input[type='email'].sp-minimal",
+          "type": "box-target",
+          "classes": "sp-minimal",
+          "content": "<input class='qit-target' placeholder='Placeholder Text' type='email'/>"
+        },
+        {
+          "title": "input[type='time'].sp-minimal",
+          "type": "box-target",
+          "classes": "sp-minimal",
+          "content": "<input class='qit-target' placeholder='Placeholder Text' type='time'/>"
+        },
+        {
+          "title": "input[type='tel'].sp-minimal",
+          "type": "box-target",
+          "classes": "sp-minimal",
+          "content": "<input class='qit-target' placeholder='Placeholder Text' type='tel'/>"
+        },
+        {
+          "title": "input[type='search'].sp-minimal",
+          "type": "box-target",
+          "classes": "sp-minimal",
+          "content": "<input class='qit-target' placeholder='Placeholder Text' type='search'/>"
+        },
+        {
+          "title": "input[type='password'].sp-minimal",
+          "type": "box-target",
+          "classes": "sp-minimal",
+          "content": "<input class='qit-target' placeholder='Placeholder Text' type='password'/>"
+        },
+        {
+          "title": "input[type='number'].sp-minimal",
+          "type": "box-target",
+          "classes": "sp-minimal",
+          "content": "<input class='qit-target' placeholder='Placeholder Text' type='number'/>"
+        },
+        {
+          "title": "input[type='month'].sp-minimal",
+          "type": "box-target",
+          "classes": "sp-minimal",
+          "content": "<input class='qit-target' placeholder='Placeholder Text' type='month'/>"
+        },
+        {
+          "title": "input[type='datetime-local'].sp-minimal",
+          "type": "box-target",
+          "classes": "sp-minimal",
+          "content": "<input class='qit-target' placeholder='Placeholder Text' type='datetime-local'/>"
+        },
+        {
+          "title": "input[type='datetime'].sp-minimal",
+          "type": "box-target",
+          "classes": "sp-minimal",
+          "content": "<input class='qit-target' placeholder='Placeholder Text' type='datetime'/>"
+        },
+        {
+          "title": "input[type='date'].sp-minimal",
+          "type": "box-target",
+          "classes": "sp-minimal",
+          "content": "<input class='qit-target' placeholder='Placeholder Text' type='date'/>"
+        }
+      ],
+      "states": ["sp-state-hover", "sp-state-focus", "sp-state-disabled"],
+      "modifiers": ["sp-small", "sp-large"]
+    },
+    {
+      "title": "Button Inputs",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "input[type='button']",
+          "type": "box-target",
+          "classes": "",
+          "content": "<input class='qit-target' value='Button' type='button'/>"
+        },
+        {
+          "title": "input[type='submit']",
+          "type": "box-target",
+          "classes": "",
+          "content": "<input class='qit-target' value='Submit' type='submit'/>"
+        },
+        {
+          "title": "input[type='reset']",
+          "type": "box-target",
+          "classes": "",
+          "content": "<input class='qit-target' value='Reset' type='reset'/>"
+        },
+        {
+          "title": "input[type='file']",
+          "type": "box-target",
+          "classes": "",
+          "content": "<input class='qit-target' value='Choose File' type='file'/>"
+        }
+      ],
+      "states": ["sp-state-hover", "sp-state-focus", "sp-state-disabled"],
+      "modifiers": ["sp-small", "sp-large"]
+    },
+    {
+      "title": "Minimal Button Inputs",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "input[type='button'].sp-minimal",
+          "type": "box-target",
+          "classes": "sp-minimal",
+          "content": "<input class='qit-target' value='Button' type='button'/>"
+        },
+        {
+          "title": "input[type='submit'].sp-minimal",
+          "type": "box-target",
+          "classes": "sp-minimal",
+          "content": "<input class='qit-target' value='Submit' type='submit'/>"
+        },
+        {
+          "title": "input[type='reset'].sp-minimal",
+          "type": "box-target",
+          "classes": "sp-minimal",
+          "content": "<input class='qit-target' value='Reset' type='reset'/>"
+        },
+        {
+          "title": "input[type='file'].sp-minimal",
+          "type": "box-target",
+          "classes": "sp-minimal",
+          "content": "<input class='qit-target' value='Choose File' type='file'/>"
+        }
+      ],
+      "states": ["sp-state-hover", "sp-state-focus", "sp-state-disabled"],
+      "modifiers": ["sp-small", "sp-large"]
+    },
+    {
+      "title": "Select Menu",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "select",
+          "type": "box-target",
+          "classes": "",
+          "content": "<select class='qit-target'><option value='item-1'>Option 1</option><option value='item-2'>Option 2</option><option value='item-3'>Option 3</option></select><label></label>"
+        }
+      ],
+      "states": ["sp-state-hover", "sp-state-focus", "sp-state-disabled"],
+      "modifiers": ["sp-small", "sp-large"]
+    },
+    {
+      "title": "Minimal Select Menu",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "select",
+          "type": "box-target",
+          "classes": "sp-minimal",
+          "content": "<select class='qit-target'><option value='item-1'>Option 1</option><option value='item-2'>Option 2</option><option value='item-3'>Option 3</option></select><label></label>"
+        }
+      ],
+      "states": ["sp-state-hover", "sp-state-focus", "sp-state-disabled"],
+      "modifiers": ["sp-small", "sp-large"]
+    },
+    {
+      "title": "Text Area",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "textarea",
+          "type": "box-target",
+          "classes": "",
+          "content": "<textarea class='qit-target'>This is a text area. A lot of text can go in here.</textarea>"
+        }
+      ],
+      "states": ["sp-state-hover", "sp-state-focus", "sp-state-disabled"],
+      "modifiers": ["sp-small", "sp-large"]
+    },
+    {
+      "title": "Minimal Text Area",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "textarea",
+          "type": "box-target",
+          "classes": ".sp-minimal",
+          "content": "<textarea  class='qit-target'>This is a text area. A lot of text can go in here.</textarea>"
+        }
+      ],
+      "states": ["sp-state-hover", "sp-state-focus", "sp-state-disabled"],
+      "modifiers": ["sp-small", "sp-large"]
+    },
+    {
+      "title": "Check Boxes",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "input[type='checkbox']",
+          "type": "box-target",
+          "classes": "",
+          "content": "<input type='checkbox' class='qit-target'/><label>Label</label><input type='checkbox' class='qit-target' checked/><label>Label</label>"
+        }
+      ],
+      "states": ["sp-state-hover", "sp-state-focus", "sp-state-disabled"],
+      "modifiers": ["sp-small", "sp-large"]
+    },
+    {
+      "title": "Radios",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "input[type='radio']",
+          "type": "box-target",
+          "classes": "",
+          "content": "<input type='radio' class='qit-target'/><label>Label</label><input type='radio' class='qit-target' checked/><label>Label</label>"
+        }
+      ],
+      "states": ["sp-state-hover", "sp-state-focus", "sp-state-disabled"],
+      "modifiers": ["sp-small", "sp-large"]
+    },
+    {
+      "title": "Input & Form Element Colors",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "Various Examples",
+          "type": "box-target",
+          "classes": "sp-margin-vertical-2",
+          "content": "<input type='text' class='qit-target' value='Text Field'/><br><select class='qit-target'><option value='1'>Select 1</option><option value='2'>Select 2</option></select><label></label><br><input type='button' class='qit-target' value='Button'/><br><input type='checkbox' class='qit-target'/><label></label><input type='checkbox' class='qit-target' checked/><label></label><br><input type='radio' class='qit-target'/><label></label><input type='radio' class='qit-target' checked/><label></label>"
+        }
+      ],
+      "states": ["sp-small", "sp-large"],
+      "modifiers": ["sp-primary", "sp-success", "sp-warning", "sp-danger"]
+    },
+    {
+      "title": "Input & Form Element Modifiers",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "Various Examples",
+          "type": "box-target",
+          "classes": "sp-margin-vertical-2",
+          "content": "<input type='text' class='qit-target' value='Text Field'/><br><select class='qit-target'><option value='1'>Select 1</option><option value='2'>Select 2</option></select><label></label><br><input type='button' class='qit-target' value='Button'/><br><input type='checkbox' class='qit-target'/><label></label><input type='checkbox' class='qit-target' checked/><label></label><br><input type='radio' class='qit-target'/><label></label><input type='radio' class='qit-target' checked/><label></label>"
+        }
+      ],
+      "states": ["sp-small", "sp-large"],
+      "modifiers": ["sp-state-disabled", "sp-rounded", "sp-minimal", "sp-minimal sp-rounded", "sp-minimal sp-rounded sp-state-disabled"]
+    },
+    {
+      "title": "Input & Form Groups",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-group > input",
+          "type": "box-target",
+          "classes": "",
+          "content": "<div class='sp-group'><input type='text' class='qit-target' palceholder='Enter Name'/><select placeholder='Select An Option' class='qit-target'><option value='1'>Select 1</option><option value='2'>Select 2</option></select><label></label><input type='button' class='qit-target' value='Submit'/></div>"
+        }
+      ],
+      "states": ["sp-small", "sp-large"],
+      "modifiers": ["sp-state-disabled", "sp-rounded", "sp-minimal", "sp-minimal sp-rounded", "sp-minimal sp-rounded sp-state-disabled"]
+    }
+  ],
+  "scss": ["index.scss", "checks-radios.scss"],
+  "markdown": "index.md"
+}

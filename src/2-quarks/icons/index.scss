@@ -1,5 +1,6 @@
-@mixin sp-icon-styles {
-    content: "\F009";
+@import 'icon-list';
+
+@mixin sp-icon-styles($icon: unchecked) {
     font-family: 'Icon Font' !important;
     speak: none;
     font-style: normal;
@@ -14,6 +15,7 @@
 
     /* Better positioning */
     display: inline-block;
+    @extend %icon-#{$icon} !optional;
 }
 
 [class^='sp-icon-'], [class*=' sp-icon-'], .sp-icon {
@@ -33,9 +35,9 @@
   }
 }
 
-.sp-icon::before {
-  content: "\F009";
-}
+// .sp-icon::before {
+//   content: "\F009";
+// }
 
 @mixin sp-icon-size($size: null) {
   $key: 'sp-icon-size-base';
@@ -71,5 +73,3 @@
     }
   }
 }
-
-@import 'icon-list';

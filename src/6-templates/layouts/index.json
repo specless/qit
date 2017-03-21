@@ -1,0 +1,164 @@
+{
+  "title": "Layouts",
+  "description": "Text goes here.",
+  "examples": [
+  	{
+  		"title": "Basic View",
+  		"subTitle": "",
+  		"swatches" : [
+  			{
+  				"title": "",
+  				"type": "screen",
+  				"classes": "",
+  				"content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/layout_app_basic.html'></iframe>"
+  			}
+  		],
+  		"modifiers": []
+  	},
+    {
+      "title": "Basic View with Navigation",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/layout_app_basic_nav.html'></iframe>"
+        }
+      ],
+      "modifiers": []
+    },
+    {
+      "title": "Searchable Item View",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/layout_app_itemlist.html'></iframe>"
+        }
+      ],
+      "modifiers": []
+    },
+    {
+      "title": "Searchable Item View with Sub Categories",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/layout_app_itemlist_sub.html'></iframe>"
+        }
+      ],
+      "modifiers": []
+    },
+    {
+      "title": "Section Content View",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/layout_app_section.html'></iframe>"
+        }
+      ],
+      "modifiers": []
+    },
+    {
+      "title": "Section Content View with Sub Categories",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/layout_app_section_sub.html'></iframe>"
+        }
+      ],
+      "modifiers": []
+    },
+    {
+      "title": "Section Content View with Sub Categories and Navigation",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/layout_app_section_sub_nav.html'></iframe>"
+        }
+      ],
+      "modifiers": []
+    },
+    {
+      "title": "Technical View",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/layout_app_technical.html'></iframe>"
+        }
+      ],
+      "modifiers": []
+    },
+    {
+      "title": "Externally Facing Technical View",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/layout_app_technical_external.html'></iframe>"
+        }
+      ],
+      "modifiers": []
+    },
+    {
+      "title": "Article View",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/layout_article.html'></iframe>"
+        }
+      ],
+      "modifiers": []
+    },
+    {
+      "title": "Article View with Sub Categories",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/layout_article_sub.html'></iframe>"
+        }
+      ],
+      "modifiers": []
+    },
+    {
+      "title": "Article View with Navigation",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/layout_article_nav.html'></iframe>"
+        }
+      ],
+      "modifiers": []
+    }
+  ],
+  "scss": ["index.scss"],
+  "markdown": "index.md"
+}

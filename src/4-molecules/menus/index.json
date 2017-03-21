@@ -2,19 +2,19 @@
   "title": "Menus",
   "description": "Text goes here.",
   "examples": [
-  	{
-  		"title": "Vertical Menu",
-  		"subTitle": ".sp-container",
-  		"swatches" : [
-  			{
-  				"title": "No Class",
-  				"type": "box-target",
-  				"classes": "",
-  				"content": ["menu.html"]
+    {
+      "title": "Vertical Menu",
+      "subTitle": ".sp-container",
+      "swatches" : [
+        {
+          "title": "No Class",
+          "type": "box-target",
+          "classes": "",
+          "content": ["menu.html"]
         }
-  		],
-  		"modifiers": ["sp-small", "sp-large"]
-  	},
+      ],
+      "modifiers": ["sp-small", "sp-large"]
+    },
     {
       "title": "Vertical Menu Variations",
       "subTitle": "",

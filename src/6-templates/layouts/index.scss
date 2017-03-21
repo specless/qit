@@ -1,0 +1,42 @@
+.sp-app {
+	@include sp-bg-color('light-base');
+
+	&.sp-technical {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	// 	@include sp-bg-color('dark-darker');
+
+		> .sp-app-content {
+			flex-grow: 1;
+		}
+
+		> .sp-app-bar, > .sp-app-header, > .sp-app-menu, > .sp-app-footer {
+			flex-grow: 0;
+		}
+
+		.sp-app-footer {
+			@include sp-height(1);
+		}
+	}
+}
+
+.sp-app-bar {
+
+}
+
+.sp-app-header {
+
+}
+
+.sp-app-menu {
+
+}
+
+.sp-app-content {
+	@include sp-padding(4, top);
+}
+
+.sp-app-footer {
+
+}

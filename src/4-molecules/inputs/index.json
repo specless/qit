@@ -1,0 +1,21 @@
+{
+  "title": "Special Input Types",
+  "description": "Text goes here.",
+  "examples": [
+  	{
+  		"title": "Multi-Inputs",
+  		"subTitle": "",
+  		"swatches" : [
+  			{
+  				"title": ".sp-multi-input",
+  				"type": "box-target",
+  				"classes": "",
+  				"content": ["multi-inputs.html"]
+        }
+  		],
+  		"modifiers": ["sp-small", "sp-large"]
+  	}
+  ],
+  "scss": ["index.scss"],
+  "markdown": "index.md"
+}

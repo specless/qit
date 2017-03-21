@@ -78,8 +78,11 @@ select, input:not([type='button']):not([type='submit']):not([type='reset']):not(
 		@include sp-padding(2, horizontal);
 
 		@include sp-small {
+			box-sizing: border-box;
 			height: 31.66px;
+			max-height:31.66px;
 			min-width: 31.66px;
+			line-height: 3;
 			@include sp-padding(1, horizontal);
 
 			&.sp-rounded {
@@ -88,7 +91,9 @@ select, input:not([type='button']):not([type='submit']):not([type='reset']):not(
 		}
 
 		@include sp-large {
+			box-sizing: border-box;
 			height: 44.39px;
+			max-height:44.39px;
 			min-width: 44.39px;
 		}
 
@@ -184,6 +189,7 @@ select {
 	}
 	
 	@include sp-small {
+		line-height: 2 !important;
 		+ label {
 			&::before {
 				@include sp-font-size(small);

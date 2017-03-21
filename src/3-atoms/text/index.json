@@ -125,6 +125,6 @@
       "modifiers": ["sp-primary", "sp-success", "sp-warning", "sp-danger"]
     }
   ],
-  "scss": ["body.scss", "headers.scss", "links.scss", "paragraphs.scss", "blockquotes.scss"],
+  "scss": ["index.scss", "body.scss", "headers.scss", "links.scss", "paragraphs.scss", "blockquotes.scss"],
   "markdown": "index.md"
 }

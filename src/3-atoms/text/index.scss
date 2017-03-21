@@ -1,0 +1,37 @@
+.sp-spacer-horizontal {
+	display: inline-block;
+	height: 43.7px;
+	width: 0;
+	border-right: 1px solid $sp-shade-dark-2;
+
+	@include sp-state(dark) {
+	   border-right: 1px solid $sp-shade-light-2;
+	}
+
+	@include sp-margin(1, horizontal);
+
+	@include sp-small {
+		height: 31.66px;
+	}
+
+	@include sp-large {
+		height: 44.39px;
+		border-bottom-width: 2px;
+	}
+}
+
+.sp-spacer-vertical {
+	height: 0;
+	width: auto;
+	display: block;
+	border-bottom: 1px solid $sp-shade-dark-2;
+	@include sp-state(dark) {
+	   border-bottom: 1px solid $sp-shade-light-2;
+	}
+	@include sp-margin(1, vertical);
+
+	@include sp-large {
+		border-bottom-width: 2px;
+	}
+
+}

@@ -650,6 +650,7 @@ const uniCodeStart = 61440;
 
 		watch(options.assets, function(filename) {
 			copyAssets(function() {
+				var elements = registerElements('base');
 				createIconFont(function() {
 					renderScss(elements, function() {
 						console.log('Complete: Assets Folder Updated and Page Refreshed.');

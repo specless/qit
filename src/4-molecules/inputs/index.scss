@@ -1,0 +1,77 @@
+.sp-multi-input {
+	@include sp-input();
+	@include sp-shape(rectangle);
+	display: inline-block;
+	height: 43.7px;
+	min-width: 43.7px;
+	width: auto;
+	box-sizing: border-box;
+	@include sp-padding(2, horizontal);
+
+	> .sp-action-icon {
+		display: inline-block;
+		position: relative;
+		top: -3px;
+		opacity: 0.25;
+		@include sp-font-color(contrast);
+		&::before {
+			font-size: 16px;
+		}
+		@include sp-state(active) {
+			opacity: 1;
+		}
+
+		@include sp-state(hover) {
+			opacity: 1;
+			@include sp-font-color(primary);
+		}
+	}
+
+	@include sp-small {
+		height: 31.66px;
+		min-width: 31.66px;
+		@include sp-padding(1, horizontal);
+
+		> [class*="sp-icon-"]::before {
+	      top: 6px;
+	    }
+	}
+
+	> label {
+		opacity: 0.6;
+		@include sp-margin(1, right);
+	}
+
+	@include sp-large {
+		height: 44.39px;
+		min-width: 44.39px;
+
+		> [class*="sp-icon-"]::before {
+	      @include sp-margin(1, right);
+	      top: 8px;
+	    }
+	}
+
+	> [class^='sp-icon-'], > [class*=' sp-icon-'] {
+		&:before {
+			line-height: 0;
+    		@include sp-margin(1, right);
+    		position: relative;
+    		top: 7px;
+		}
+	}
+
+	> input, > select {
+		background: none !important;
+		background-color: transparent !important;
+		background-image: none !important;
+		box-shadow: none !important;
+		border: none !important;
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+	}
+
+	> select + label {
+		left: 0;
+	}
+}

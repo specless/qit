@@ -263,6 +263,7 @@
 		text-align: center;
 		height: 43.7px;
 		line-height: 2;
+		margin-bottom: -2px;
 		@include sp-state(hover) {
 	  		@include sp-font-color(contrast);
 	  		background-color: transparent;

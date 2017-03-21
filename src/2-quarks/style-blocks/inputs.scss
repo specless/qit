@@ -22,12 +22,14 @@
         @include sp-bg-overlay-dark(1);
         @include sp-border-overlay-dark(2);
         @include sp-shadow(none);
+        opacity: 0.5;
       }
 
       @include sp-state(dark) {
         @include sp-bg-overlay-dark(2);
         @include sp-border-overlay-dark(3);
-        @include sp-shadow(medium, inset 0 0 .4em .07em);
+        @include sp-shadow(none);
+        @include sp-shadow(low, inset 0 0 .4em .07em);
 
         @include sp-state(hover) {
           @include sp-bg-overlay-dark(3);
@@ -42,6 +44,7 @@
         @include sp-state(disabled) {
           @include sp-border-overlay-light(2);
           @include sp-shadow(none);
+          opacity: 0.5;
         }
       }
     }

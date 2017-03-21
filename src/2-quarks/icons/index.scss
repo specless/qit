@@ -19,7 +19,6 @@
 }
 
 [class^='sp-icon-'], [class*=' sp-icon-'], .sp-icon {
-  /* use !important to prevent issues with browser extensions that change fonts */
   &::before {
     @include sp-icon-styles;
   }
@@ -35,9 +34,6 @@
   }
 }
 
-// .sp-icon::before {
-//   content: "\F009";
-// }
 
 @mixin sp-icon-size($size: null) {
   $key: 'sp-icon-size-base';

@@ -1,5 +1,6 @@
 [class^='sp-logo-'], [class*=' sp-logo-'] {
   /* use !important to prevent issues with browser extensions that change fonts */
+  line-height: 1 !important;
 	&::before, &::after {
 		font-family: 'Icon Font' !important;
 		speak: none;
@@ -17,9 +18,10 @@
 .sp-logo-mark {
 	display: inline-block;
 	position: relative;
+	height: 100%;
 	
 	&:before {
-		content: "\F04E";
+		@extend %icon-logo-mark;
 		font-size: 40px;
 	}
 
@@ -71,7 +73,7 @@
 	display: inline-block;
 
 	&:before {
-		content: "\F04F";
+		@extend %icon-logo-name !optional;
 		font-size: 18px;
 	}
 
@@ -125,7 +127,7 @@
 	&:before {
 		display: block;
 		text-align: center;
-		content: "\F04E";
+		@extend %icon-logo-mark !optional;
 		font-size: 40px;
 		margin-bottom: 0.35em;
 	}
@@ -133,7 +135,7 @@
 	&:after {
 		display: block;
 		text-align: center;
-		content: "\F04F";
+		@extend %icon-logo-name !optional;
 		font-size: 18px;
 	}
 

@@ -64,3 +64,27 @@
     $i: $i + 1;
   }
 }
+
+.sp-padding-0 {
+  padding: 0 !important;
+}
+
+.sp-margin-o {
+  margin: 0 !important;
+}
+
+.sp-offset-half-down {
+  transform: translateY(50%);
+}
+
+.sp-offset-half-up {
+  transform: translateY(-50%);
+}
+
+.sp-offset-half-left {
+  transform: translateX(-50%);
+}
+
+.sp-offset-half-right {
+  transform: translateX(50%);
+}

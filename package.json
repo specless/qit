@@ -1,12 +1,12 @@
 {
-  "name": "Qit",
+  "name": "@specless/qit",
   "version": "1.0.0",
   "description": "Qit",
   "main": "index.html",
   "scripts": {
     "qit": "node ./index.js"
   },
-  "author": "",
+  "author": "Specless",
   "license": "ISC",
   "dependencies": {
     "@types/react": "^15.0.8",

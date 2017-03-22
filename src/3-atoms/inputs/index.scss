@@ -125,13 +125,20 @@ select, input:not([type='button']):not([type='submit']):not([type='reset']):not(
 			border-bottom-color: $sp-shade-dark-3;
 		}
 
-		@include sp-state(focus) {
-			@include sp-border-color(primary, bottom);
-		}
-
 		@include sp-state(dark) {
 			@include sp-state(hover) {
 				border-bottom-color: $sp-shade-light-3;
+			}
+		}
+
+		@include sp-state(focus) {
+			@include sp-border-color(primary, bottom);
+			@include sp-font-color(contrast);
+		}
+
+		@include sp-state(dark) {
+			@include sp-state(focus) {
+				@include sp-border-color(primary, bottom);
 			}
 		}
 

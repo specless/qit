@@ -22,6 +22,11 @@
 		.sp-app-footer {
 			@include sp-height(1);
 		}
+
+		> .sp-app-menu > .sp-row {
+			min-width: 1330px;
+		}
+
 	}
 }
 

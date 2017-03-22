@@ -88,6 +88,10 @@
   padding: 0.75em;
   box-sizing: border-box;
 
+  .sp-fluid & {
+    max-width: none;
+  }
+
   &:first-child {
     .sp-fluid & {
       @include sp-padding(3, left);

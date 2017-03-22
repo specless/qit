@@ -1978,7 +1978,7 @@ select + label::before, .sp-icon-dropdown::before, .sp-icon-after-dropdown::afte
 .sp-icon-location::before, .sp-icon-after-location::after {
   content: "\F04E"; }
 
-.sp-logo-mark:before, .sp-logo-lockup:before, .sp-icon-logo-mark::before, .sp-icon-after-logo-mark::after {
+.sp-logo-mark::before, .sp-logo-lockup:before, .sp-icon-logo-mark::before, .sp-icon-after-logo-mark::after {
   content: "\F04F"; }
 
 .sp-logo-name:before, .sp-logo-lockup:after, .sp-icon-logo-name::before, .sp-icon-after-logo-name::after {
@@ -2226,7 +2226,9 @@ select + label::before, .sp-icon-dropdown::before, .sp-icon-after-dropdown::afte
   display: inline-block;
   position: relative;
   height: 100%; }
-  .sp-logo-mark:before {
+  .sp-logo-mark::before {
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: none;
     font-size: 40px; }
   .sp-logo-mark.sp-small:before {
     font-size: 24px; }
@@ -2313,6 +2315,8 @@ select + label::before, .sp-icon-dropdown::before, .sp-icon-after-dropdown::afte
   .sp-logo-lockup:before {
     display: block;
     text-align: center;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: none;
     font-size: 40px;
     margin-bottom: 0.35em; }
   .sp-logo-lockup:after {
@@ -2347,40 +2351,28 @@ select + label::before, .sp-icon-dropdown::before, .sp-icon-after-dropdown::afte
     .sp-container-dark .sp-logo-lockup.sp-primary {
       color: #FFFFFF; }
     .sp-logo-lockup.sp-primary::before {
-      color: #0096a9; }
-      .sp-logo-lockup.sp-primary::before .sp-container-dark, .sp-logo-lockup.sp-primary::before.sp-container-dark,
-      .sp-container-dark .sp-logo-lockup.sp-primary::before {
-        color: #00C3DC; }
+      color: #00C3DC; }
   .sp-logo-lockup.sp-success {
     color: rgba(0, 0, 0, 0.8); }
     .sp-logo-lockup.sp-success .sp-container-dark, .sp-logo-lockup.sp-success.sp-container-dark,
     .sp-container-dark .sp-logo-lockup.sp-success {
       color: #FFFFFF; }
     .sp-logo-lockup.sp-success::before {
-      color: #00af71; }
-      .sp-logo-lockup.sp-success::before .sp-container-dark, .sp-logo-lockup.sp-success::before.sp-container-dark,
-      .sp-container-dark .sp-logo-lockup.sp-success::before {
-        color: #00EC99; }
+      color: #00EC99; }
   .sp-logo-lockup.sp-warning {
     color: rgba(0, 0, 0, 0.8); }
     .sp-logo-lockup.sp-warning .sp-container-dark, .sp-logo-lockup.sp-warning.sp-container-dark,
     .sp-container-dark .sp-logo-lockup.sp-warning {
       color: #FFFFFF; }
     .sp-logo-lockup.sp-warning::before {
-      color: #ff1c04; }
-      .sp-logo-lockup.sp-warning::before .sp-container-dark, .sp-logo-lockup.sp-warning::before.sp-container-dark,
-      .sp-container-dark .sp-logo-lockup.sp-warning::before {
-        color: #FF4A37; }
+      color: #FF4A37; }
   .sp-logo-lockup.sp-danger {
     color: rgba(0, 0, 0, 0.8); }
     .sp-logo-lockup.sp-danger .sp-container-dark, .sp-logo-lockup.sp-danger.sp-container-dark,
     .sp-container-dark .sp-logo-lockup.sp-danger {
       color: #FFFFFF; }
     .sp-logo-lockup.sp-danger::before {
-      color: #f00036; }
-      .sp-logo-lockup.sp-danger::before .sp-container-dark, .sp-logo-lockup.sp-danger::before.sp-container-dark,
-      .sp-container-dark .sp-logo-lockup.sp-danger::before {
-        color: #FF2455; }
+      color: #FF2455; }
   .sp-logo-lockup.sp-logo-horizontal::before {
     margin-bottom: 0;
     margin-right: 0.35em;
@@ -3757,7 +3749,7 @@ input[type='reset'] {
       line-height: 1;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%); }
+      transform: translate(-48%, -48%); }
   button.sp-small, .sp-small button,
   .sp-button.sp-small, .sp-small
   .sp-button,
@@ -6470,13 +6462,15 @@ blockquote {
     left: 0; }
 
 .sp-app {
-  background-color: #EAEAEA; }
+  background-color: #F5F5F5; }
   .sp-app.sp-technical {
     height: 100%;
     display: flex;
     flex-direction: column; }
     .sp-app.sp-technical > .sp-app-content {
       flex-grow: 1; }
+      .sp-app.sp-technical > .sp-app-content.sp-container-dark {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)); }
     .sp-app.sp-technical > .sp-app-bar, .sp-app.sp-technical > .sp-app-header, .sp-app.sp-technical > .sp-app-menu, .sp-app.sp-technical > .sp-app-footer {
       flex-grow: 0; }
     .sp-app.sp-technical .sp-app-footer {

@@ -1,5 +1,5 @@
 .sp-app {
-	@include sp-bg-color('light-base');
+	@include sp-bg-color('light-lighter');
 
 	&.sp-technical {
 		height: 100%;
@@ -9,6 +9,10 @@
 
 		> .sp-app-content {
 			flex-grow: 1;
+
+			&.sp-container-dark {
+				@include sp-bg-overlay-dark(2);
+			}
 		}
 
 		> .sp-app-bar, > .sp-app-header, > .sp-app-menu, > .sp-app-footer {

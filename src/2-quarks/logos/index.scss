@@ -20,7 +20,9 @@
 	position: relative;
 	height: 100%;
 	
-	&:before {
+	&::before {
+		-webkit-font-smoothing: none;
+        -moz-osx-font-smoothing: none;
 		@extend %icon-logo-mark;
 		font-size: 40px;
 	}
@@ -127,6 +129,8 @@
 	&:before {
 		display: block;
 		text-align: center;
+		-webkit-font-smoothing: none;
+        -moz-osx-font-smoothing: none;
 		@extend %icon-logo-mark !optional;
 		font-size: 40px;
 		margin-bottom: 0.35em;
@@ -178,7 +182,7 @@
 		@include sp-font-color(contrast);
 		
 		&::before {
-			@include sp-font-color(primary);
+			color: $sp-color-primary;
 		}
 	}
 
@@ -186,7 +190,7 @@
 		@include sp-font-color(contrast);
 
 		&::before {
-			@include sp-font-color(success);
+			color: $sp-color-success;
 		}
 	}
 
@@ -194,7 +198,7 @@
 		@include sp-font-color(contrast);
 
 		&::before {
-			@include sp-font-color(warning);
+			color: $sp-color-warning;
 		}
 	}
 
@@ -202,7 +206,7 @@
 		@include sp-font-color(contrast);
 
 		&::before {
-			@include sp-font-color(danger);
+			color: $sp-color-danger;
 		}
 	}
 

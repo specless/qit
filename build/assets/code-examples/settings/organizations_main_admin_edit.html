@@ -1,0 +1,387 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example</title>
+  <link rel="stylesheet" href="/qit.css">
+
+</head>
+
+<body class="sp-app">
+  <div class="sp-app-bar sp-container-dark sp-alt-one sp-wrapper">
+  	<div class="sp-row sp-vcenter sp-height-3">
+  		<div class="sp-col sp-span-6">
+  			<span class="sp-logo-lockup sp-small sp-primary sp-logo-horizontal"></span>
+  		</div>
+  		<div class="sp-col sp-span-6 sp-align-right">
+  			<button class="sp-rounded sp-small sp-minimal sp-icon-apps sp-margin-left-2"></button>
+  			<button class="sp-rounded sp-small sp-minimal sp-icon-circle-help sp-margin-left-2"></button>
+  			<button class="sp-rounded sp-small sp-minimal sp-icon-circle-user sp-margin-left-2"></button>
+  		</div>
+  	</div>
+  </div>
+  <div class="sp-app-header sp-container-dark sp-wrapper">
+  	<div class="sp-row sp-vcenter sp-height-4">
+  		<div class="sp-col sp-span-12">
+  			<button class="sp-rounded sp-icon-arrow-left sp-margin-right-2"></button>
+  			<h2 class="sp-inline sp-contrast">Settings</h2>
+  		</div>
+  	</div>
+  </div>
+  <div class="sp-app-menu sp-container-dark sp-wrapper">
+    <div class="sp-row sp-vbottom sp-height-2">
+      <div class="sp-col sp-span-10 sp-padding-0">
+        <a class="sp-menu-item sp-minimal sp-horizontal sp-label">Account Settings</a>
+        <a class="sp-menu-item sp-minimal sp-horizontal sp-label">Preferences</a>
+        <a class="sp-menu-item sp-minimal sp-horizontal sp-label sp-state-active">Organizations</a>
+        <a class="sp-menu-item sp-minimal sp-horizontal sp-label">Billing</a>
+      </div>
+      <div class="sp-col sp-span-2 sp-align-right sp-padding-0">
+        <!-- <button class="sp-rounded sp-primary sp-icon-circle-plus sp-offset-half-down sp-margin-left-2 sp-large"></button> -->
+      </div>
+    </div>
+  </div>
+  <div class="sp-app-content sp-wrapper">
+  	<div class="sp-wrapper">
+  		<div class="sp-row sp-border-bottom-base">
+  			<div class="sp-col sp-span-12 sp-small">
+  			</div>
+  		</div>
+  		<div class="sp-row sp-padding-top-3">
+        <div class="sp-col sp-span-2 sp-small">
+          <button class="sp-icon-circle-plus sp-small sp-block sp-margin-bottom-2">New Organization</button>
+          <div class="sp-menu-header">My Organizations</div>
+          <a class="sp-menu-item sp-state-active">NBC Universal</a>
+          <a class="sp-menu-item">Fusion Media Group</a>
+          <a class="sp-menu-item">About.com</a>
+          <a class="sp-menu-item">Viacom</a>
+          <a class="sp-menu-item">CBS Interactive</a>
+        </div>
+  			<div class="sp-col sp-span-8">
+          <div class="sp-padding-horizontal-3">
+    				<p class="sp-label">Organization Name</p>
+            <input type="text" class="sp-large sp-margin-top-2" value="NBC Universal" style="width: 100%;"/>
+            <p class="sp-label sp-margin-top-3">Description</p>
+            <textarea class="sp-large sp-margin-top-2" style="width: 100%; box-sizing: border-box; max-width: 100%; min-width: 100%">A description of this organization should go here. It can contain information about its purpose and who should be included.</textarea>
+            <p class="sp-label sp-margin-top-3">Specless Support</p>
+            <div class="sp-large sp-margin-top-2 sp-margin-bottom-3">
+              <input checked type="checkbox"/><label>Add Specless As Administrator For Support Purposes</label>
+            </div>
+            <div class="sp-row sp-margin-top-3">
+              <div class="sp-col sp-span-8 sp-flex sp-padding-0" style="align-items: flex-end;">
+                <p class="sp-label sp-margin-top-2">Members & Editing Permissions</p>
+              </div>
+              <div class="sp-col sp-span-4sp flex sp-padding-0" style="align-items: center;">
+                <button class="sp-icon-circle-plus sp-float-right sp-small sp-minimal sp-primary" style="opacity: 0; pointer-events: none">Add Member</button>
+              </div>
+            </div>
+            <div class="sp-margin-top-2 sp-container-light sp-contrast sp-wrapper">
+              <div class="sp-row sp-small sp-container">
+                <div class="sp-col sp-span-4">
+                  <p class="sp-label">User</p>
+                </div>
+                <div class="sp-col sp-span-8 sp-flex" style="justify-content: space-between;">
+                  <p class="sp-label sp-inline">Status</p>
+                  <p class="sp-label sp-inline">Admin</p>
+                  <p class="sp-label sp-inline">Creative</p>
+                  <p class="sp-label sp-inline">Formats</p>
+                  <p class="sp-label sp-inline">Templates</p>
+                  <p class="sp-label sp-inline">Tags</p>
+                  <p class="sp-label sp-inline">Reporting</p>
+                </div>
+              </div>
+
+              <div class="sp-row sp-small sp-org-member">
+                <div class="sp-col sp-height-3 sp-span-4 sp-flex" style="align-items: center">
+                  <div style="width:100%;">
+                    <img class="sp-width-1 sp-height-1 sp-margin-right-2 sp-rounded sp-overlay sp-float-left"/>
+                    <h6 class="sp-margin-0">Omar Yousef</h6>
+                    <p class="sp-muted">omar.yousef@nbcuniversal.com</p>
+                  </div>
+                </div>
+                <div class="sp-col sp-height-3 sp-span-8 sp-flex" style="justify-content: space-between; align-items: center">
+                  <div class="sp-inline sp-align-left sp-width-2">
+                    <p class="sp-margin-bottom-1">Active</p>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input checked type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input checked type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input checked type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input checked type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input checked type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input checked type="checkbox"/><label></label>
+                  </div>
+                </div>
+                <div class="sp-org-member-options">
+                  
+                  <button class="sp-icon-circle-close sp-float-right sp-small sp-minimal sp-margin-left-1 sp-danger"></button>
+                </div>
+              </div>
+
+              <div class="sp-row sp-small sp-org-member">
+                <div class="sp-col sp-height-3 sp-span-4 sp-flex" style="align-items: center">
+                  <div style="width:100%;">
+                    <img class="sp-width-1 sp-height-1 sp-margin-right-2 sp-rounded sp-overlay sp-float-left"/>
+                    <h6 class="sp-margin-0">Some User</h6>
+                    <p class="sp-muted">howling@themoon.com</p>
+                  </div>
+                </div>
+                <div class="sp-col sp-height-3 sp-span-8 sp-flex" style="justify-content: space-between; align-items: center">
+                  <div class="sp-inline sp-align-left sp-width-2">
+                    <p class="sp-margin-bottom-1">Invited</p>
+                    <a href="#">Resend</a>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input checked type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input checked type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input checked type="checkbox"/><label></label>
+                  </div>
+                </div>
+                <div class="sp-org-member-options">
+                  
+                  <button class="sp-icon-circle-close sp-float-right sp-small sp-minimal sp-margin-left-1 sp-danger"></button>
+                </div>
+              </div>
+
+              <div class="sp-row sp-small sp-org-member">
+                <div class="sp-col sp-height-3 sp-span-4 sp-flex" style="align-items: center">
+                  <div style="width:100%;">
+                    <img class="sp-width-1 sp-height-1 sp-margin-right-2 sp-rounded sp-overlay sp-float-left"/>
+                    <h6 class="sp-margin-0">Some User</h6>
+                    <p class="sp-muted">howling@themoon.com</p>
+                  </div>
+                </div>
+                <div class="sp-col sp-height-3 sp-span-8 sp-flex" style="justify-content: space-between; align-items: center">
+                  <div class="sp-inline sp-align-left sp-width-2">
+                    <p class="sp-margin-bottom-1">Active</p>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input checked type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input checked type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input checked type="checkbox"/><label></label>
+                  </div>
+                </div>
+                <div class="sp-org-member-options">
+                  
+                  <button class="sp-icon-circle-close sp-float-right sp-small sp-minimal sp-margin-left-1 sp-danger"></button>
+                </div>
+              </div>
+
+              <div class="sp-row sp-small sp-org-member">
+                <div class="sp-col sp-height-3 sp-span-4 sp-flex" style="align-items: center">
+                  <div style="width:100%;">
+                    <img class="sp-width-1 sp-height-1 sp-margin-right-2 sp-rounded sp-overlay sp-float-left"/>
+                    <h6 class="sp-margin-0">Some User</h6>
+                    <p class="sp-muted">howling@themoon.com</p>
+                  </div>
+                </div>
+                <div class="sp-col sp-height-3 sp-span-8 sp-flex" style="justify-content: space-between; align-items: center">
+                  <div class="sp-inline sp-align-left sp-width-2">
+                    <p class="sp-margin-bottom-1">Active</p>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input checked type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input checked type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input checked type="checkbox"/><label></label>
+                  </div>
+                </div>
+                <div class="sp-org-member-options">
+                  
+                  <button class="sp-icon-circle-close sp-float-right sp-small sp-minimal sp-margin-left-1 sp-danger"></button>
+                </div>
+              </div>
+
+              <div class="sp-row sp-small sp-org-member">
+                <div class="sp-col sp-height-3 sp-span-4 sp-flex" style="align-items: center">
+                  <div style="width:100%;">
+                    <img class="sp-width-1 sp-height-1 sp-margin-right-2 sp-rounded sp-overlay sp-float-left"/>
+                    <h6 class="sp-margin-0">Some User</h6>
+                    <p class="sp-muted">howling@themoon.com</p>
+                  </div>
+                </div>
+                <div class="sp-col sp-height-3 sp-span-8 sp-flex" style="justify-content: space-between; align-items: center">
+                  <div class="sp-inline sp-align-left sp-width-2">
+                    <p class="sp-margin-bottom-1">Active</p>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input checked type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input checked type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input checked type="checkbox"/><label></label>
+                  </div>
+                </div>
+                <div class="sp-org-member-options">
+                  
+                  <button class="sp-icon-circle-close sp-float-right sp-small sp-minimal sp-margin-left-1 sp-danger"></button>
+                </div>
+              </div>
+
+              <div class="sp-row sp-small sp-org-member">
+                <div class="sp-col sp-height-3 sp-span-4 sp-flex" style="align-items: center">
+                  <div style="width:100%;">
+                    <img class="sp-width-1 sp-height-1 sp-margin-right-2 sp-rounded sp-overlay sp-float-left"/>
+                    <h6 class="sp-margin-0">Some User</h6>
+                    <p class="sp-muted">howling@themoon.com</p>
+                  </div>
+                </div>
+                <div class="sp-col sp-height-3 sp-span-8 sp-flex" style="justify-content: space-between; align-items: center">
+                  <div class="sp-inline sp-align-left sp-width-2">
+                    <p class="sp-margin-bottom-1">Active</p>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input checked type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input checked type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input checked type="checkbox"/><label></label>
+                  </div>
+                </div>
+                <div class="sp-org-member-options">
+                  
+                  <button class="sp-icon-circle-close sp-float-right sp-small sp-minimal sp-margin-left-1 sp-danger"></button>
+                </div>
+              </div>
+
+              <div class="sp-row sp-small sp-org-member">
+                <div class="sp-col sp-height-3 sp-span-4 sp-flex" style="align-items: center">
+                  <div style="width:100%;">
+                    <img class="sp-width-1 sp-height-1 sp-margin-right-2 sp-rounded sp-overlay sp-float-left"/>
+                    <h6 class="sp-margin-0">Some User</h6>
+                    <p class="sp-muted">howling@themoon.com</p>
+                  </div>
+                </div>
+                <div class="sp-col sp-height-3 sp-span-8 sp-flex" style="justify-content: space-between; align-items: center">
+                  <div class="sp-inline sp-align-left sp-width-2">
+                    <p class="sp-margin-bottom-1">Active</p>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input checked type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input checked type="checkbox"/><label></label>
+                  </div>
+                  <div class="sp-inline sp-align-center sp-width-2">
+                    <input checked type="checkbox"/><label></label>
+                  </div>
+                </div>
+                <div class="sp-org-member-options">
+                  
+                  <button class="sp-icon-circle-close sp-float-right sp-small sp-minimal sp-margin-left-1 sp-danger"></button>
+                </div>
+              </div>
+
+              <!-- <div class="sp-width-5 sp-align-center sp-margin-2 sp-padding-2 sp-inline">
+                <img class="sp-width-2 sp-height-2 sp-margin-1 sp-rounded sp-overlay"/>
+                <p>Specless Support</p>
+                <p class="sp-margin-top-2 sp-small"><button class="sp-minimal sp-primary">Email</button></p>
+              </div>
+              <div class="sp-width-5 sp-align-center sp-margin-2 sp-padding-2 sp-inline">
+                <img class="sp-width-2 sp-height-2 sp-margin-1 sp-rounded sp-overlay"/>
+                <p>Omar Yousef</p>
+                <p class="sp-margin-top-2 sp-small"><button class="sp-minimal sp-primary">Email</button></p>
+              </div>
+              <div class="sp-width-5 sp-align-center sp-margin-2 sp-padding-2 sp-inline">
+                <img class="sp-width-2 sp-height-2 sp-margin-1 sp-rounded sp-overlay"/>
+                <p>Pawel Podgorski</p>
+                <p class="sp-margin-top-2 sp-small"><button class="sp-minimal sp-primary">Email</button></p>
+              </div>
+              <div class="sp-width-5 sp-align-center sp-margin-2 sp-padding-2 sp-inline">
+                <img class="sp-width-2 sp-height-2 sp-margin-1 sp-rounded sp-overlay"/>
+                <p>Diana Connelly</p>
+                <p class="sp-margin-top-2 sp-small"><button class="sp-minimal sp-primary">Email</button></p>
+              </div> -->
+            </div>
+          </div>
+  			</div>
+        <div class="sp-col sp-span-2">
+          <button class="sp-icon-edit sp-small sp-block sp-margin-bottom-2 sp-success">Save Edits</button>
+          <button class="sp-icon-circle-close sp-small sp-block sp-margin-bottom-2 sp-warning">Discard Edits</button>
+        </div>
+  		</div>
+  	</div>
+  </div>
+
+</body>
+</html>

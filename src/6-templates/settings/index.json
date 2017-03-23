@@ -1,0 +1,125 @@
+{
+  "title": "App Settings",
+  "description": "Text goes here.",
+  "examples": [
+    {
+      "title": "Account: Main View",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/settings/account_main.html'></iframe>"
+        }
+      ],
+      "modifiers": []
+    },
+    {
+      "title": "Account: Main View - Google Login",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/settings/account_main_google.html'></iframe>"
+        }
+      ],
+      "modifiers": []
+    },
+    {
+      "title": "Account: Edit Settings",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/settings/account_edit.html'></iframe>"
+        }
+      ],
+      "modifiers": []
+    },
+  	{
+  		"title": "Orgs: Member View",
+  		"subTitle": "",
+  		"swatches" : [
+  			{
+  				"title": "",
+  				"type": "screen",
+  				"classes": "",
+  				"content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/settings/organizations_main.html'></iframe>"
+  			}
+  		],
+  		"modifiers": []
+  	},
+    {
+      "title": "Orgs: Admin View",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/settings/organizations_admin.html'></iframe>"
+        }
+      ],
+      "modifiers": []
+    },
+    {
+      "title": "Orgs: Admin View - Edit Settings",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/settings/organizations_admin_edit.html'></iframe>"
+        }
+      ],
+      "modifiers": []
+    },
+    {
+      "title": "Orgs: Admin View - Edit Member",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/settings/organizations_admin_edit_member.html'></iframe>"
+        }
+      ],
+      "modifiers": []
+    },
+    {
+      "title": "Orgs: Admin View - Add Member",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/settings/organizations_admin_add_member.html'></iframe>"
+        }
+      ],
+      "modifiers": []
+    },
+    {
+      "title": "Billing: Main View",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/settings/billing_main.html'></iframe>"
+        }
+      ],
+      "modifiers": []
+    }
+  ],
+  "scss": ["index.scss"],
+  "markdown": "index.md"
+}

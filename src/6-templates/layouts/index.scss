@@ -9,6 +9,7 @@
 
 		> .sp-app-content {
 			flex-grow: 1;
+			padding: 0 !important;
 
 			&.sp-container-dark {
 				@include sp-bg-overlay-dark(2);
@@ -31,21 +32,23 @@
 }
 
 .sp-app-bar {
-
+	position: relative;
 }
 
 .sp-app-header {
-
+	position: relative;
 }
 
 .sp-app-menu {
-
+	position: relative;
 }
 
 .sp-app-content {
+	position: relative;
 	@include sp-padding(4, top);
+	@include sp-padding(5, bottom);
 }
 
 .sp-app-footer {
-
+	position: relative;
 }

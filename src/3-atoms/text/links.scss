@@ -1,4 +1,4 @@
-a:not(.sp-menu-item) {
+a:not(.sp-menu-item):not(.sp-button) {
 	@include sp-font-color(primary);
 
 	&:visited {

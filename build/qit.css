@@ -2232,8 +2232,7 @@ select + label::before, .sp-icon-dropdown::before, .sp-icon-after-dropdown::afte
 
 .sp-logo-mark {
   display: inline-block;
-  position: relative;
-  height: 100%; }
+  position: relative; }
   .sp-logo-mark::before {
     -webkit-font-smoothing: none;
     -moz-osx-font-smoothing: none;
@@ -6478,10 +6477,9 @@ blockquote {
     background-image: none !important;
     box-shadow: none !important;
     border: none !important;
-    padding-right: 0 !important;
     padding-left: 0 !important; }
   .sp-multi-input > select + label {
-    left: 0; }
+    left: -6px; }
 
 .sp-app {
   background-color: #F5F5F5; }

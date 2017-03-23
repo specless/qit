@@ -67,11 +67,11 @@
 		background-image: none !important;
 		box-shadow: none !important;
 		border: none !important;
-		padding-right: 0 !important;
+		// padding-right: 0 !important;
 		padding-left: 0 !important;
 	}
 
 	> select + label {
-		left: 0;
+		left: -6px;
 	}
 }

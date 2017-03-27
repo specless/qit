@@ -2,7 +2,7 @@
   "name": "@specless/qit",
   "version": "1.0.0",
   "description": "Qit",
-  "main": "index.html",
+  "main": "qit.js",
   "scripts": {
     "qit": "node ./index.js"
   },

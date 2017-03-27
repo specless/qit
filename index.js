@@ -13,6 +13,7 @@ const watch = require('node-watch');
 const livereload = require('livereload');
 const componentList = ['base', 'quarks', 'atoms', 'molecules', 'organisms', 'templates'];
 const uniCodeStart = 61440;
+var qitCore;
 
 
 (function() {
@@ -666,6 +667,14 @@ const uniCodeStart = 61440;
 		var elements = registerElements();
 		// var styleSheets = getStyleList(elements);
 		// var styleGuides = getGuideList(elements);
+
+		if (iconToggle == undefined) {
+			iconToggle = true;
+		}
+
+		if (assetToggle == undefined) {
+			assetToggle = true;
+		}
 		
 		if (assetToggle) {
 			copyAssets(function() {
@@ -720,9 +729,14 @@ const uniCodeStart = 61440;
 		}
 	}
 
+	qitCore = qit;
+
 	qit(function() {
 		startServer(options.serverPort);
 		listenForChanges();
 	}, true, true);
+
 	
 })();
+
+module.exports = qitCore;

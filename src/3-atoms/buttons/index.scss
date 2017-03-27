@@ -10,6 +10,7 @@
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
+  box-sizing: border-box;
 
   // fix icon position when nested inside button element
   i {

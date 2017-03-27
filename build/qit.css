@@ -3057,6 +3057,7 @@ input[type='reset'] {
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
+  box-sizing: border-box;
   color: rgba(0, 0, 0, 0.8);
   border-color: rgba(0, 0, 0, 0.22);
   border-style: solid;

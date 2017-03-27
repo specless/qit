@@ -1,0 +1,90 @@
+{
+  "title": "Login & Signup",
+  "description": "Text goes here.",
+  "examples": [
+    {
+      "title": "Login: Main Screen",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "Initial State",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/login/login_main.html'></iframe>"
+        },
+        {
+          "title": "Filled Out",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/login/login_main-active.html'></iframe>"
+        },
+        {
+          "title": "Wrong Password",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/login/login_main-wrong-password.html'></iframe>"
+        },
+        {
+          "title": "Invalid Email",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/login/login_main-invalid-email.html'></iframe>"
+        }
+      ],
+      "modifiers": []
+    },
+    {
+      "title": "Signup: Invited User",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "Initial State",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/login/signup_invited.html'></iframe>"
+        }
+      ],
+      "modifiers": []
+    },
+    {
+      "title": "Signup/Login: Invited to Organization",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "Log In",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/login/signup_invited-to-org.html'></iframe>"
+        },
+        {
+          "title": "Create New Account",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/login/signup_invited-to-org-create.html'></iframe>"
+        }
+      ],
+      "modifiers": []
+    },
+    {
+      "title": "Signup: More Info",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "Initial State",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/login/signup_invited-more.html'></iframe>"
+        },
+        {
+          "title": "Filled Out",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/login/signup_invited-more-active.html'></iframe>"
+        }
+      ],
+      "modifiers": []
+    }
+  ],
+  "scss": ["index.scss"],
+  "markdown": "index.md"
+}

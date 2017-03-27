@@ -1,0 +1,36 @@
+{
+  "title": "Modals & Dialog Boxes",
+  "description": "Text goes here.",
+  "examples": [
+  	{
+  		"title": "Dialog Boxes",
+  		"subTitle": "",
+  		"swatches" : [
+  			{
+  				"title": "Natural",
+  				"type": "box-target",
+  				"classes": "",
+  				"content": ["dialog.html"]
+  			}
+  		],
+      "states": ["sp-small", "sp-large"],
+  		"modifiers": ["sp-primary", "sp-success", "sp-warning", "sp-danger"]
+  	},
+    {
+      "title": "Modal Window",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "Natural",
+          "type": "box-target",
+          "classes": "",
+          "content": ["modal.html"]
+        }
+      ],
+      "states": [],
+      "modifiers": []
+    }
+  ],
+  "scss": ["index.scss"],
+  "markdown": "index.md"
+}

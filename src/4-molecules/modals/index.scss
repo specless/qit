@@ -1,0 +1,178 @@
+.sp-dialog {
+
+	@include sp-width(8);
+
+	.sp-dialog-icon {
+		@include sp-icon-size(huge);
+
+	}
+
+	.sp-dialog-header {
+		@include sp-bg-color(light-lighter);
+		@include sp-font-header(4);
+	}
+
+	@include sp-state(dark) {
+		.sp-dialog-header {
+			@include sp-bg-color(dark-lighter);
+		}
+
+		.sp-dialog-body {
+			@include sp-bg-overlay-dark(2);
+		}
+
+		.sp-dialog-footer {
+			@include sp-bg-overlay-dark(3);
+		}
+	}
+
+	@include sp-small {
+		@include sp-width(7);
+
+		.sp-dialog-header {
+			@include sp-font-header(6);
+		}
+
+		.sp-dialog-icon {
+			@include sp-icon-size(large);
+		}
+	}
+
+	@include sp-large {
+		@include sp-width(9);
+
+		.sp-dialog-header {
+			@include sp-font-header(3);
+		}
+	}
+
+	@include sp-primary {
+		.sp-dialog-header {
+			@include sp-bg-color(primary);
+			@include sp-font-color(white);
+		}
+	}
+
+	@include sp-success {
+		.sp-dialog-header {
+			@include sp-bg-color(success);
+			@include sp-font-color(white);
+		}
+
+		.sp-dialog-icon::before {
+			@extend %icon-circle-check;
+			@include sp-font-color(success);
+		}
+	}
+
+	@include sp-warning {
+		.sp-dialog-header {
+			@include sp-bg-color(warning);
+			@include sp-font-color(white);
+		}
+
+		.sp-dialog-icon::before {
+			@extend %icon-warning;
+			@include sp-font-color(warning);
+		}
+	}
+
+	@include sp-danger {
+		.sp-dialog-header {
+			@include sp-bg-color(danger);
+			@include sp-font-color(white);
+		}
+
+		.sp-dialog-icon::before {
+			@extend %icon-danger;
+			@include sp-font-color(danger);
+		}
+	}
+}
+
+
+.sp-modal {
+	@include sp-width(10);
+	@include sp-height(9);
+	display: flex;
+	flex-direction: column;
+	position: relative;
+
+	.sp-modal-header {
+		flex-grow: 0;
+		@include sp-padding(3, horizontal);
+		@include sp-shape(rectangle);
+
+		.sp-modal-icon {
+			position: relative;
+			top: 3px;
+		}
+
+		h2 {
+			display: inline-block;
+			@include sp-margin(2, left);
+		}
+	}
+
+	.sp-modal-menu {
+		flex-grow: 0;
+		padding-bottom: 0 !important;
+	}
+
+	.sp-modal-body {
+		flex-grow: 1;
+		@include sp-margin(3, horizontal);
+		overflow-x: hidden;
+		overflow-y: auto;
+		@include sp-padding(2, top);
+	}
+
+	.sp-modal-footer {
+		flex-grow: 0;
+
+		.sp-modal-footer-buttons {
+			display: flex;
+
+			> * {
+				flex-grow: 1;
+
+				@include sp-margin(1, horizontal);
+			}
+		}
+	}
+
+	.sp-modal-close {
+		position: absolute;
+		top: 0;
+		right: 0;
+		transform: translate(50%, -50%);
+	}
+
+	&.sp-modal-fullscreen {
+		width: 100vw;
+		height: 100vh;
+		box-sizing: border-box;
+		padding: 60px 80px!important;
+		border-radius: 0;
+
+		.sp-modal-close {
+			transform: none;
+			top: 20px;
+			right: 20px;
+		}
+
+		.sp-modal-header {
+			@include sp-margin(4, bottom);
+			h1 {
+				display: inline-block;
+				@include sp-margin(3, left);
+				@include sp-margin(0, vertical);
+			}
+		}
+
+
+		.sp-modal-icon {
+			top: 9px;
+		}
+	}
+}

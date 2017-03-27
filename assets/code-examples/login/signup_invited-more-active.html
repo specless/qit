@@ -1,0 +1,121 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example</title>
+  <link rel="stylesheet" href="/qit.css">
+</head>
+
+<body class="sp-app">
+    <div id="target" class="sp-app-overlay sp-hide">
+      <div class="sp-app-overlay-content">
+        <div class="sp-login">
+          <div class="sp-login-left sp-container-dark">
+            <div class="sp-logo-mark sp-contrast"></div>
+          </div>
+          <div class="sp-login-right"></div>
+          <div class="sp-login-overlay sp-overlay">
+              <div class="sp-login-content sp-wrapper">
+                <div class="sp-row">
+                  <div class="sp-col sp-span-12 sp-align-center">
+                    <div class="sp-label sp-padding-bottom-2">Almost Done!</div>
+                  </div>
+                </div>
+                <div class="sp-row">
+                  <div class="sp-col sp-span-12 sp-align-center">
+                    <span class="sp-label sp-width-5 sp-small sp-border-top-base sp-padding-2">Tell Us Some More About Yourself</span>
+                  </div>
+                </div>
+                <div class="sp-row">
+                  <div class="sp-col sp-span-12">
+                    <div tabindex="0" class="sp-multi-input">
+                      <span class="sp-icon-circle-user"></span>
+                      <label class="sp-login-field-label">First Name</label>
+                      <input class="sp-login-field" type="text" value="Omar"/>
+                    </div>
+                    <div class="sp-label sp-small sp-color-danger sp-align-right sp-margin-top-1"></div>
+                  </div>
+                </div>
+                <div class="sp-row">
+                  <div class="sp-col sp-span-12">
+                    <div tabindex="0" class="sp-multi-input">
+                      <span class="sp-icon-circle-user"></span>
+                      <label class="sp-login-field-label">Last Name</label>
+                      <input class="sp-login-field" type="text" value="Yousef"/>
+                    </div>
+                    <div class="sp-label sp-small sp-color-danger sp-align-right sp-margin-top-1"></div>
+                  </div>
+                </div>
+                <div class="sp-row">
+                  <div class="sp-col sp-span-12">
+                    <div tabindex="0" class="sp-multi-input">
+                      <span class="sp-icon-account"></span>
+                      <label class="sp-login-field-label">Title</label>
+                      <input class="sp-login-field" type="text" value="VP, Creative"/>
+                    </div>
+                    <div class="sp-label sp-small sp-color-danger sp-align-right sp-margin-top-1"></div>
+                  </div>
+                </div>
+                <div class="sp-row">
+                  <div class="sp-col sp-span-12">
+                    <div tabindex="0" class="sp-multi-input">
+                      <span class="sp-icon-account"></span>
+                      <label class="sp-login-field-label">Role</label>
+                      <select class="sp-login-field"  value="1">
+                        <option>Please Choose...</option>
+                        <option value="1">Designer</option>
+                        <option>Option 3</option>
+                        <option>Option 4</option>
+                      </select><label></label>
+                    </div>
+                    <div class="sp-label sp-small sp-color-danger sp-align-right sp-margin-top-1"></div>
+                  </div>
+                </div>
+                <div class="sp-row">
+                  <div class="sp-col sp-span-12">
+                    <div tabindex="0" class="sp-multi-input">
+                      <span class="sp-icon-organization"></span>
+                      <label class="sp-login-field-label">Company</label>
+                      <input class="sp-login-field" type="text" value="NBC Universal"/>
+                    </div>
+                    <div class="sp-label sp-small sp-color-danger sp-align-right sp-margin-top-1"></div>
+                  </div>
+                </div>
+                <div class="sp-row">
+                  <div class="sp-col sp-span-12">
+                    <div tabindex="0" class="sp-multi-input">
+                      <span class="sp-icon-organization"></span>
+                      <label class="sp-login-field-label">Type</label>
+                      <select class="sp-login-field" value="1">
+                        <option>Please Choose...</option>
+                        <option value="1">Publisher</option>
+                        <option>Option 3</option>
+                        <option>Option 4</option>
+                      </select><label></label>
+                    </div>
+                    <div class="sp-label sp-small sp-color-danger sp-align-right sp-margin-top-1"></div>
+                  </div>
+                </div>
+                <div class="sp-row">
+                  <div class="sp-col sp-span-12">
+                    <button class="sp-block sp-primary sp-margin-bottom-2">Complete Sign Up</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+var target = document.getElementById('target');
+
+setTimeout(function() {
+  target.setAttribute('class', 'sp-app-overlay');
+}, 500);
+
+</script>
+</body>
+</html>

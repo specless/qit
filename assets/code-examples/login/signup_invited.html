@@ -1,0 +1,106 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example</title>
+  <link rel="stylesheet" href="/qit.css">
+</head>
+
+<body class="sp-app">
+    <div id="target" class="sp-app-overlay sp-hide">
+      <div class="sp-app-overlay-content">
+        <div class="sp-login">
+          <div class="sp-login-left sp-container-dark">
+            <div class="sp-logo-mark sp-contrast"></div>
+          </div>
+          <div class="sp-login-right"></div>
+          <div class="sp-login-overlay sp-overlay">
+              <div class="sp-login-content sp-wrapper">
+                <div class="sp-row">
+                  <div class="sp-col sp-span-12 sp-align-center">
+                    <div class="sp-label sp-padding-bottom-2">Hi, Omar. Welcome to</div>
+                    <span class="sp-logo-name sp-margin-bottom-2 sp-primary"></span>
+                  </div>
+                </div>
+                <div class="sp-row">
+                  <div class="sp-col sp-span-12 sp-align-center">
+                    <span class="sp-label sp-width-5 sp-small sp-border-top-base sp-padding-2">Your Email</span>
+                  </div>
+                </div>
+                <div class="sp-row">
+                  <div class="sp-col sp-span-12">
+                    <div tabindex="0" class="sp-multi-input sp-state-disabled">
+                      <span class="sp-icon-circle-user"></span>
+                      <input class="sp-login-email" id="email" type="email" placeholder="Enter Email Address" value="omar.yousef@nbcuniversal.com"/>
+                    </div>
+                    <div class="sp-label sp-small sp-color-danger sp-align-right sp-margin-top-1"></div>
+                  </div>
+                </div>
+                <div class="sp-row">
+                  <div class="sp-col sp-span-12 sp-align-center">
+                    <span class="sp-label sp-width-5 sp-small sp-border-top-base sp-padding-2">Use Social Login</span>
+                  </div>
+                </div>
+                <div class="sp-row">
+                  <div class="sp-col sp-span-12">
+                    <button class="sp-icon-google sp-block">Log In With Google</button>
+                  </div>
+                </div>
+                <div class="sp-row">
+                  <div class="sp-col sp-span-12">
+                    <button class="sp-icon-linkedin sp-block sp-margin-bottom-2">Log In With LinkedIn</button>
+                  </div>
+                </div>
+                <div class="sp-row">
+                  <div class="sp-col sp-span-12 sp-align-center">
+                    <span class="sp-label sp-width-5 sp-small sp-border-top-base sp-padding-2">Or Create Password</span>
+                  </div>
+                </div>
+                <div class="sp-row">
+                  <div class="sp-col sp-span-12">
+                    <div tabindex="1" class="sp-multi-input ">
+                      <span class="sp-icon-key"></span>
+                      <input class="sp-login-password" id="pw" type="password" placeholder="Enter Password"/>
+                    </div>
+                    <div class="sp-label sp-small sp-color-danger sp-align-right sp-margin-top-1"></div>
+                  </div>
+                </div>
+                <div class="sp-row">
+                  <div class="sp-col sp-span-12">
+                    <div tabindex="1" class="sp-multi-input ">
+                      <span class="sp-icon-key"></span>
+                      <input class="sp-login-password" id="pw" type="password" placeholder="Verify Password"/>
+                    </div>
+                    <div class="sp-label sp-small sp-color-danger sp-align-right sp-margin-top-1"></div>
+                  </div>
+                </div>
+                <div class="sp-row">
+                  <div class="sp-col sp-span-12">
+                    <button class="sp-block sp-primary sp-margin-bottom-2 sp-state-disabled">Create My Account</button>
+                  </div>
+                </div>
+                <div class="sp-row">
+                  <div class="sp-col sp-span-12 sp-align-center">
+                    <div class="sp-margin-bottom-2">
+                      <input id="stay-signed" type="checkbox" checked class="sp-small"/><label for="stay-signed">Stay Signed In</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+var target = document.getElementById('target');
+
+setTimeout(function() {
+  target.setAttribute('class', 'sp-app-overlay');
+}, 500);
+
+</script>
+</body>
+</html>

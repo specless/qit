@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example</title>
+  <link rel="stylesheet" href="/qit.css">
+</head>
+
+<body class="sp-app">
+  <div id="target" class="sp-app-overlay sp-hide">
+    <div class="sp-app-overlay-content">
+      <div class="sp-modal sp-modal-fullscreen sp-container-light sp-contrast sp-rectangle sp-color-contrast sp-margin-2 sp-large">
+        <div class="sp-wrapper sp-modal-header">
+          <div class="sp-row">
+            <div class="sp-col sp-span-12">
+              <span class="sp-modal-icon sp-icon-settings sp-color-muted sp-huge"></span>
+              <h1>Headline</h1>
+            </div>
+          </div>
+        </div>
+        <div class="sp-wrapper sp-modal-menu sp-padding-bottom-2">
+          <div class="sp-row sp-border-bottom-base sp-margin-0">
+             <div class="sp-menu sp-col sp-span-12 sp-padding-0">
+               <a class="sp-menu-item sp-horizontal sp-state-active sp-minimal">Menu One</a>
+               <a class="sp-menu-item sp-horizontal sp-minimal">Menu Two</a>
+               <a class="sp-menu-item sp-horizontal sp-minimal">Menu Three</a>
+             </div>
+          </div>
+        </div>
+        <div class="sp-wrapper sp-modal-body sp-padding-bottom-2">
+          <div class="sp-row">
+             <div class="sp-col sp-span-12">
+               Content goes here.
+             </div>
+          </div>
+        </div>
+        <div class="sp-wrapper sp-border-top-base sp-modal-footer">
+          <div class="sp-row">
+             <div class="sp-col sp-span-12 sp-modal-footer-buttons">
+               <button class="sp-align-center">Button One</button>
+               <button class="sp-align-center">Button Two</button>
+               <button class="sp-align-center">Button Three</button>
+             </div>
+          </div>
+        </div>
+        <button class="sp-modal-close sp-icon-close sp-rounded sp-small"></button>
+      </div>
+    </div>
+  </div>
+
+<script>
+var target = document.getElementById('target');
+
+setTimeout(function() {
+  target.setAttribute('class', 'sp-app-overlay');
+}, 500);
+
+</script>
+</body>
+</html>

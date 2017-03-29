@@ -15,6 +15,7 @@
   "primaryFile" : "index.json",
   "elementPrefix" : "sp",
   "baseStyles" : "./src/qit.scss",
+  "externalStyles" : "./src/qit-external.scss",
   "baseJs" : "./src/index.tsx",
   "buildDir" : "./build",
   "icons" : "./icons",

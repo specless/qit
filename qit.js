@@ -217,7 +217,8 @@ var qitCore;
 	}
 
 	function renderScss(elements, callback) {
-		sass.render({
+
+		var config = {
 			file: options.baseStyles,
 			importer: function(url, prev, done) {
 				if (url == 'base' || url == 'quarks' || url == 'atoms' || url == 'molecules' || url == 'organisms' || url =='templates') {
@@ -283,10 +284,24 @@ var qitCore;
 			  		});
 			  	}
 			}
-		}, function(err, result) {
+		}
+
+		sass.render(config, function(err, result) {
 			if (!err) {
 				fs.writeFileSync(options.buildDir + '/qit.css', result.css);
 				console.log('Complete: SCSS Compiled.');
+
+				config.file = options.externalStyles;
+				
+				sass.render(config, function(err, result) {
+					if (!err) {
+						fs.writeFileSync(options.buildDir + '/qit-external.css', result.css);
+						console.log('Complete: External SCSS Compiled.');
+					} else {
+						console.log('Error Compiling Qit External SCSS');
+						console.error(err);
+					}
+				})
 			} else {
 				console.log('Error Compiling SCSS');
 				console.error(err);

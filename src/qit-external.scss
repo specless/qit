@@ -170,6 +170,8 @@ a:not(.btn):not(.brand) {
 	}
 
 	ul > li {
+		position: relative;
+		padding-left: 20px;
 		&:before {
 			content: "";
 			display: inline-block;
@@ -180,6 +182,9 @@ a:not(.btn):not(.brand) {
 			background-color: $sp-color-dark-base;
 			@include sp-bg-overlay-light(5);
 			border: 1px solid $sp-color-dark-base;
+			position: absolute;
+    		left: 0;
+    		top: 7px;
 		}
 	}
 

@@ -3237,16 +3237,22 @@ a:not(.btn):not(.brand) {
     counter-increment: ol-counter;
     display: inline-block;
     margin-right: 10px; }
-  #fullArticle ul > li:before {
-    content: "";
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    margin-right: 10px;
-    background-color: #384146;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85));
-    border: 1px solid #384146; }
+  #fullArticle ul > li {
+    position: relative;
+    padding-left: 20px; }
+    #fullArticle ul > li:before {
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin-right: 10px;
+      background-color: #384146;
+      background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85));
+      border: 1px solid #384146;
+      position: absolute;
+      left: 0;
+      top: 7px; }
   #fullArticle code {
     font-family: monospace; }
   #fullArticle b, #fullArticle strong {

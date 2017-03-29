@@ -3064,6 +3064,37 @@ a:not(.btn):not(.brand) {
   a:not(.btn):not(.brand):visited {
     color: #0096a9; }
 
+.contentWrapper h1 {
+  font-family: Source Sans Pro, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 2rem;
+  line-height: 2.53rem;
+  font-weight: 300;
+  padding-bottom: 10px !important;
+  border-bottom: 1px solid #00C3DC; }
+  .contentWrapper h1.sp-small, .sp-small .contentWrapper h1 {
+    font-size: .87rem;
+    line-height: 1.13rem; }
+  .contentWrapper h1.sp-large, .sp-large .contentWrapper h1 {
+    font-size: 1.2rem;
+    line-height: 1.8rem; }
+  .contentWrapper h1 .sp-container-dark, .contentWrapper h1.sp-container-dark,
+  .sp-container-dark .contentWrapper h1 {
+    color: rgba(255, 255, 255, 0.56); }
+  .contentWrapper h1 .sp-container-dark, .contentWrapper h1.sp-container-dark,
+  .sp-container-dark .contentWrapper h1 {
+    color: rgba(255, 255, 255, 0.56); }
+  .contentWrapper h1 .sp-container-dark, .contentWrapper h1.sp-container-dark,
+  .sp-container-dark .contentWrapper h1 {
+    color: #FFFFFF; }
+
 #fullArticle {
   font-family: Source Sans Pro, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -3117,7 +3148,9 @@ a:not(.btn):not(.brand) {
     color: rgba(0, 0, 0, 0.8);
     font-size: 2.66rem;
     line-height: 3.33rem;
-    font-weight: 300; }
+    font-weight: 300;
+    padding-bottom: 20px !important;
+    border-bottom: 1px solid #00C3DC; }
     #fullArticle h1 .sp-container-dark, #fullArticle h1.sp-container-dark,
     .sp-container-dark #fullArticle h1 {
       color: #FFFFFF; }

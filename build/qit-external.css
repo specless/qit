@@ -3323,7 +3323,7 @@ a:not(.btn):not(.brand) {
     .navbar .navbar-inner .container-fluid {
       height: 4.73rem; }
   .navbar .brand {
-    margin-top: 6px;
+    margin-top: 14px;
     color: inherit;
     position: relative;
     display: inline-block;
@@ -3337,7 +3337,7 @@ a:not(.btn):not(.brand) {
       margin-bottom: 0;
       margin-right: 0.35em;
       display: inline-block;
-      font-size: 40px;
+      font-size: 24px;
       color: #00C3DC; }
     .navbar .brand > img {
       display: none; }
@@ -3347,7 +3347,7 @@ a:not(.btn):not(.brand) {
       display: inline-block;
       position: relative;
       transform: translateY(-50%);
-      font-size: 18px;
+      font-size: 13px;
       color: #384146; }
   @media (max-width: 1110px) {
     .navbar .nav-collapse, .navbar .nav-collapse.collapse {

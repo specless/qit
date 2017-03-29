@@ -10,7 +10,7 @@
           "title": "",
           "type": "screen",
           "classes": "",
-          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/settings/account_main.html'></iframe>"
+          "content": "<iframe class='sp-shadow-medium' src='assets/code-examples/settings/account_main.html'></iframe>"
         }
       ],
       "modifiers": []
@@ -23,7 +23,7 @@
           "title": "",
           "type": "screen",
           "classes": "",
-          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/settings/account_main_google.html'></iframe>"
+          "content": "<iframe class='sp-shadow-medium' src='assets/code-examples/settings/account_main_google.html'></iframe>"
         }
       ],
       "modifiers": []
@@ -36,7 +36,7 @@
           "title": "",
           "type": "screen",
           "classes": "",
-          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/settings/account_edit.html'></iframe>"
+          "content": "<iframe class='sp-shadow-medium' src='assets/code-examples/settings/account_edit.html'></iframe>"
         }
       ],
       "modifiers": []
@@ -49,7 +49,7 @@
   				"title": "",
   				"type": "screen",
   				"classes": "",
-  				"content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/settings/organizations_main.html'></iframe>"
+  				"content": "<iframe class='sp-shadow-medium' src='assets/code-examples/settings/organizations_main.html'></iframe>"
   			}
   		],
   		"modifiers": []
@@ -62,7 +62,7 @@
           "title": "",
           "type": "screen",
           "classes": "",
-          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/settings/organizations_admin.html'></iframe>"
+          "content": "<iframe class='sp-shadow-medium' src='assets/code-examples/settings/organizations_admin.html'></iframe>"
         }
       ],
       "modifiers": []
@@ -75,7 +75,7 @@
           "title": "",
           "type": "screen",
           "classes": "",
-          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/settings/organizations_admin_edit.html'></iframe>"
+          "content": "<iframe class='sp-shadow-medium' src='assets/code-examples/settings/organizations_admin_edit.html'></iframe>"
         }
       ],
       "modifiers": []
@@ -88,7 +88,7 @@
           "title": "",
           "type": "screen",
           "classes": "",
-          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/settings/organizations_admin_edit_member.html'></iframe>"
+          "content": "<iframe class='sp-shadow-medium' src='assets/code-examples/settings/organizations_admin_edit_member.html'></iframe>"
         }
       ],
       "modifiers": []
@@ -101,7 +101,7 @@
           "title": "",
           "type": "screen",
           "classes": "",
-          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/settings/organizations_admin_add_member.html'></iframe>"
+          "content": "<iframe class='sp-shadow-medium' src='assets/code-examples/settings/organizations_admin_add_member.html'></iframe>"
         }
       ],
       "modifiers": []
@@ -114,7 +114,7 @@
           "title": "",
           "type": "screen",
           "classes": "",
-          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/settings/billing_main.html'></iframe>"
+          "content": "<iframe class='sp-shadow-medium' src='assets/code-examples/settings/billing_main.html'></iframe>"
         }
       ],
       "modifiers": []

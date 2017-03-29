@@ -1,6 +1,172 @@
 @import 'variables';
 @import 'base';
+@import 'quarks';
 
 body {
-	font-family: $sp-font-primary;
+	@include sp-font-body;
+  	@include sp-font-color;
+  	background-color: $sp-color-light-lighter;
+}
+
+a {
+	color: darken($sp-color-primary, 5%);
+
+	&:hover {
+		color: darken($sp-color-primary, 15%);
+	}
+
+	&:active {
+		color: $sp-color-primary;
+	}
+
+	&:visited {
+		color: darken($sp-color-primary, 10%);
+	}
+}
+
+#fullArticle {
+	@include sp-font-body;
+  	@include sp-font-color;
+
+  	p, ol, ul, li, div, dd {
+  		font-size: $sp-font-size-base;
+  	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@include sp-font-color;
+	  	@include sp-margin(2, vertical);
+	  	@include sp-padding(0);
+	}
+
+	h1 {
+		@include sp-font-color(contrast);
+	  	@include sp-font-header(h1);
+	}
+
+	h2 {
+		@include sp-font-color(contrast);
+	  	@include sp-font-header(h2);
+	}
+
+	h3 {
+		@include sp-font-color(contrast);
+	  	@include sp-font-header(h3);
+	}
+
+	h4 {
+	  	@include sp-font-header(h4);
+	}
+
+	h5 {
+	  @include sp-font-header(h5);
+	}
+
+	h6 {
+	  @include sp-font-header(h6);
+	}
+	.callout-yellow {
+		background-color: $sp-color-warning;
+		@include sp-bg-overlay-light(5);
+		border-color: $sp-color-warning;
+	}
+
+	.callout-blue {
+		background-color: $sp-color-primary;
+		@include sp-bg-overlay-light(5);
+		border-color: $sp-color-primary;
+	}
+
+	.callout-red {
+		background-color: $sp-color-danger;
+		@include sp-bg-overlay-light(5);
+		border-color: $sp-color-danger;
+	}
+
+	.callout-green {
+		background-color: $sp-color-success;
+		@include sp-bg-overlay-light(5);
+		border-color: $sp-color-success;
+	}
+
+	.callout {
+		background-color: $sp-color-grey;
+		@include sp-bg-overlay-light(5);
+		border-color: $sp-color-grey;
+	}
+
+	.callout, .callout-yellow, .callout-blue, .callout-red, .callout-green {
+		p, ol, ul, li, div, dd {
+  			font-size: $sp-font-size-base;
+  		}
+	}
+
+	pre {
+		background-color: $sp-color-white;
+		@include sp-font-size(small);
+	}
+
+	table {
+		background-color: $sp-color-white;
+		border: 1px solid $sp-color-light-darker;
+	}
+
+	table thead th {
+		font-weight: 600;
+		@include sp-font-color(contrast);
+	}
+
+	table.table-striped tbody> tr:nth-child(odd)> td, table.table-striped tbody>tr:nth-child(odd)>th {
+		background-color: $sp-color-light-lighter;
+	}
+
+	blockquote {
+		border-left-color: $sp-color-primary;
+		font-size: $sp-font-size-large;
+	}
+
+	dt {
+		background-color: $sp-color-primary;
+		color: $sp-color-primary;
+		@include sp-bg-overlay-light(5);
+		border: 2px solid $sp-color-primary;
+		line-height: 1.1em;
+		font-weight: 600;
+	}
+
+	ol {
+		counter-reset: ol-counter;
+	}
+
+	ol > li {
+		
+		&:before {
+			content: counter(ol-counter);
+			counter-increment: ol-counter;
+			display: inline-block;
+			margin-right: 10px;
+		}
+	}
+
+	ul > li {
+		&:before {
+			content: "";
+			display: inline-block;
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			margin-right: 10px;
+			background-color: $sp-color-dark-base;
+			@include sp-bg-overlay-light(5);
+			border: 1px solid $sp-color-dark-base;
+		}
+	}
+
+	code {
+		font-family: monospace;
+	}
 }

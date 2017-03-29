@@ -3207,6 +3207,8 @@ a:not(.btn):not(.brand) {
   #fullArticle pre {
     background-color: #FFFFFF;
     font-size: 0.87rem; }
+    #fullArticle pre.prettyprint.prettyprinted {
+      border: 1px solid #DDDDDD; }
   #fullArticle table {
     background-color: #FFFFFF;
     border: 1px solid #DDDDDD; }
@@ -3696,3 +3698,10 @@ a:not(.btn):not(.brand) {
   letter-spacing: .1em;
   font-weight: 700;
   text-transform: uppercase; }
+
+#sidebar .nav-list .active a {
+  font-weight: 600;
+  color: #0096a9; }
+  #sidebar .nav-list .active a .sp-container-dark, #sidebar .nav-list .active a.sp-container-dark,
+  .sp-container-dark #sidebar .nav-list .active a {
+    color: #00C3DC; }

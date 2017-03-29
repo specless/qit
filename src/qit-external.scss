@@ -121,6 +121,10 @@ a:not(.btn):not(.brand) {
 	pre {
 		background-color: $sp-color-white;
 		@include sp-font-size(small);
+
+		&.prettyprint.prettyprinted {
+			border: 1px solid $sp-color-light-darker;
+		}
 	}
 
 	table {
@@ -472,6 +476,11 @@ a:not(.btn):not(.brand) {
     letter-spacing: .1em;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+#sidebar .nav-list .active a {
+	font-weight: 600;
+	@include sp-font-color(primary);
 }
 
 // #mainNav .nav-collapse {

@@ -160,12 +160,18 @@ a:not(.btn):not(.brand) {
 	}
 
 	ol > li {
+		position: relative;
+		padding-left: 20px;
 		
 		&:before {
 			content: counter(ol-counter);
 			counter-increment: ol-counter;
 			display: inline-block;
 			margin-right: 10px;
+			position: absolute;
+    		left: 0;
+    		top: 7px;
+    		font-weight: 600;
 		}
 	}
 

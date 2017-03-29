@@ -3232,11 +3232,18 @@ a:not(.btn):not(.brand) {
     font-weight: 600; }
   #fullArticle ol {
     counter-reset: ol-counter; }
-  #fullArticle ol > li:before {
-    content: counter(ol-counter);
-    counter-increment: ol-counter;
-    display: inline-block;
-    margin-right: 10px; }
+  #fullArticle ol > li {
+    position: relative;
+    padding-left: 20px; }
+    #fullArticle ol > li:before {
+      content: counter(ol-counter);
+      counter-increment: ol-counter;
+      display: inline-block;
+      margin-right: 10px;
+      position: absolute;
+      left: 0;
+      top: 7px;
+      font-weight: 600; }
   #fullArticle ul > li {
     position: relative;
     padding-left: 20px; }

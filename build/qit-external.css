@@ -3214,5 +3214,5 @@ a {
     border: 1px solid #384146; }
   #fullArticle code {
     font-family: monospace; }
-  #fullArticle strong {
+  #fullArticle b, #fullArticle strong {
     font-weight: 600 !important; }

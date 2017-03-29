@@ -113,14 +113,14 @@
 	                        currentClass = 'sp-hidden';
 	                    }
 	                    return (React.createElement("li", null,
-	                        React.createElement("a", { className: currentClass + " qit-capitalize sp-icon-" + section, href: '/?' + section }, section),
+	                        React.createElement("a", { className: currentClass + " qit-capitalize sp-icon-" + section, href: '?' + section }, section),
 	                        React.createElement("ul", { id: 'nav-' + section }, theItems.map(function (item) {
 	                            if (section == category) {
 	                                return (React.createElement("li", null,
-	                                    React.createElement("a", { className: "sp-menu-item", href: '/?' + section + '#' + item.name }, item.title),
+	                                    React.createElement("a", { className: "sp-menu-item", href: '?' + section + '#' + item.name }, item.title),
 	                                    React.createElement("ul", { className: "qit-sub-items" }, item.examples.map(function (example) {
 	                                        return (React.createElement("li", null,
-	                                            React.createElement("a", { className: "sp-menu-item sp-small sp-minimal", href: '/?' + section + '#' + example.title }, example.title)));
+	                                            React.createElement("a", { className: "sp-menu-item sp-small sp-minimal", href: '?' + section + '#' + example.title }, example.title)));
 	                                    }))));
 	                            }
 	                        }))));

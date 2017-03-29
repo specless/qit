@@ -60,18 +60,18 @@ class Qit extends React.Component {
 			    	
 							return (
 								<li>
-							        <a className={currentClass + " qit-capitalize sp-icon-" + section} href={'/?' + section}>{section}</a>
+							        <a className={currentClass + " qit-capitalize sp-icon-" + section} href={'?' + section}>{section}</a>
 							        <ul id={'nav-' + section}>
 							        	{
 							        		theItems.map(function(item) {
 							        			if (section == category) {
 								        			return (
-								        				<li><a className="sp-menu-item" href={'/?' + section + '#' + item.name}>{item.title}</a>
+								        				<li><a className="sp-menu-item" href={'?' + section + '#' + item.name}>{item.title}</a>
 								        					<ul className="qit-sub-items">
 								        						{
 								        							item.examples.map(function(example) {
 									        							return (
-									        								<li><a className="sp-menu-item sp-small sp-minimal" href={'/?' + section + '#' + example.title}>{example.title}</a></li>
+									        								<li><a className="sp-menu-item sp-small sp-minimal" href={'?' + section + '#' + example.title}>{example.title}</a></li>
 									        							)
 									        						})
 								        						}

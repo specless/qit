@@ -203,9 +203,9 @@ html {
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 300;
-  src: url("/assets/fonts/source_sans_pro_light.eot?t=1488910176523");
+  src: url("assets/fonts/source_sans_pro_light.eot?t=1488910176523");
   /* IE9*/
-  src: url("/assets/fonts/source_sans_pro_light.eot?t=1488910176523#iefix") format("embedded-opentype"), url("/assets/fonts/source_sans_pro_light.woff?t=1488910176523") format("woff"), url("/assets/fonts/source_sans_pro_light.ttf?t=1488910176523") format("truetype"), url("/assets/fonts/source_sans_pro_light.svg?t=1488910176523#svg") format("svg");
+  src: url("assets/fonts/source_sans_pro_light.eot?t=1488910176523#iefix") format("embedded-opentype"), url("assets/fonts/source_sans_pro_light.woff?t=1488910176523") format("woff"), url("assets/fonts/source_sans_pro_light.ttf?t=1488910176523") format("truetype"), url("assets/fonts/source_sans_pro_light.svg?t=1488910176523#svg") format("svg");
   /* iOS 4.1- */ }
 
 /* Normal */
@@ -213,9 +213,9 @@ html {
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/source_sans_pro_regular.eot?t=1488910176523");
+  src: url("assets/fonts/source_sans_pro_regular.eot?t=1488910176523");
   /* IE9*/
-  src: url("/assets/fonts/source_sans_pro_regular.eot?t=1488910176523#iefix") format("embedded-opentype"), url("/assets/fonts/source_sans_pro_regular.woff?t=1488910176523") format("woff"), url("/assets/fonts/source_sans_pro_regular.ttf?t=1488910176523") format("truetype"), url("/assets/fonts/source_sans_pro_regular.svg?t=1488910176523#svg") format("svg");
+  src: url("assets/fonts/source_sans_pro_regular.eot?t=1488910176523#iefix") format("embedded-opentype"), url("assets/fonts/source_sans_pro_regular.woff?t=1488910176523") format("woff"), url("assets/fonts/source_sans_pro_regular.ttf?t=1488910176523") format("truetype"), url("assets/fonts/source_sans_pro_regular.svg?t=1488910176523#svg") format("svg");
   /* iOS 4.1- */ }
 
 /* Semi Bold */
@@ -223,9 +223,9 @@ html {
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 600;
-  src: url("/assets/fonts//assets/fonts/source_sans_pro_semibold.eot?t=1488910176523");
+  src: url("assets/fonts//assets/fonts/source_sans_pro_semibold.eot?t=1488910176523");
   /* IE9*/
-  src: url("/assets/fonts/source_sans_pro_semibold.eot?t=1488910176523#iefix") format("embedded-opentype"), url("/assets/fonts/source_sans_pro_semibold.woff?t=1488910176523") format("woff"), url("/assets/fonts/source_sans_pro_semibold.ttf?t=1488910176523") format("truetype"), url("/assets/fonts/source_sans_pro_semibold.svg?t=1488910176523#svg") format("svg");
+  src: url("assets/fonts/source_sans_pro_semibold.eot?t=1488910176523#iefix") format("embedded-opentype"), url("assets/fonts/source_sans_pro_semibold.woff?t=1488910176523") format("woff"), url("assets/fonts/source_sans_pro_semibold.ttf?t=1488910176523") format("truetype"), url("assets/fonts/source_sans_pro_semibold.svg?t=1488910176523#svg") format("svg");
   /* iOS 4.1- */ }
 
 /* Bold */
@@ -233,16 +233,16 @@ html {
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/source_sans_pro_bold.eot?t=1488910176523");
+  src: url("assets/fonts/source_sans_pro_bold.eot?t=1488910176523");
   /* IE9*/
-  src: url("/assets/fonts/source_sans_pro_bold.eot?t=1488910176523#iefix") format("embedded-opentype"), url("/assets/fonts/source_sans_pro_bold.woff?t=1488910176523") format("woff"), url("/assets/fonts/source_sans_pro_bold.ttf?t=1488910176523") format("truetype"), url("/assets/fonts/source_sans_pro_bold.svg?t=1488910176523#svg") format("svg");
+  src: url("assets/fonts/source_sans_pro_bold.eot?t=1488910176523#iefix") format("embedded-opentype"), url("assets/fonts/source_sans_pro_bold.woff?t=1488910176523") format("woff"), url("assets/fonts/source_sans_pro_bold.ttf?t=1488910176523") format("truetype"), url("assets/fonts/source_sans_pro_bold.svg?t=1488910176523#svg") format("svg");
   /* iOS 4.1- */ }
 
 @font-face {
   font-family: "Icon Font";
-  src: url("/assets/fonts/sp-icon-font/sp-icon-font.eot?t=1488910964013");
+  src: url("assets/fonts/sp-icon-font/sp-icon-font.eot?t=1488910964013");
   /* IE9*/
-  src: url("/assets/fonts/sp-icon-font/sp-icon-font.eot?t=1488910964013#iefix") format("embedded-opentype"), url("/assets/fonts/sp-icon-font/sp-icon-font.woff?t=1488910964013") format("woff"), url("/assets/fonts/sp-icon-font/sp-icon-font.ttf?t=1488910964013") format("truetype"), url("/assets/fonts/sp-icon-font/sp-icon-font.svg?t=1488910964013#iconfont") format("svg");
+  src: url("assets/fonts/sp-icon-font/sp-icon-font.eot?t=1488910964013#iefix") format("embedded-opentype"), url("assets/fonts/sp-icon-font/sp-icon-font.woff?t=1488910964013") format("woff"), url("assets/fonts/sp-icon-font/sp-icon-font.ttf?t=1488910964013") format("truetype"), url("assets/fonts/sp-icon-font/sp-icon-font.svg?t=1488910964013#iconfont") format("svg");
   /* iOS 4.1- */ }
 
 .sp-bg-color-black {

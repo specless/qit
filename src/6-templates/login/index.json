@@ -10,25 +10,25 @@
           "title": "Initial State",
           "type": "screen",
           "classes": "",
-          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/login/login_main.html'></iframe>"
+          "content": "<iframe class='sp-shadow-medium' src='assets/code-examples/login/login_main.html'></iframe>"
         },
         {
           "title": "Filled Out",
           "type": "screen",
           "classes": "",
-          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/login/login_main-active.html'></iframe>"
+          "content": "<iframe class='sp-shadow-medium' src='assets/code-examples/login/login_main-active.html'></iframe>"
         },
         {
           "title": "Wrong Password",
           "type": "screen",
           "classes": "",
-          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/login/login_main-wrong-password.html'></iframe>"
+          "content": "<iframe class='sp-shadow-medium' src='assets/code-examples/login/login_main-wrong-password.html'></iframe>"
         },
         {
           "title": "Invalid Email",
           "type": "screen",
           "classes": "",
-          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/login/login_main-invalid-email.html'></iframe>"
+          "content": "<iframe class='sp-shadow-medium' src='assets/code-examples/login/login_main-invalid-email.html'></iframe>"
         }
       ],
       "modifiers": []
@@ -41,7 +41,7 @@
           "title": "Initial State",
           "type": "screen",
           "classes": "",
-          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/login/signup_invited.html'></iframe>"
+          "content": "<iframe class='sp-shadow-medium' src='assets/code-examples/login/signup_invited.html'></iframe>"
         }
       ],
       "modifiers": []
@@ -54,13 +54,13 @@
           "title": "Log In",
           "type": "screen",
           "classes": "",
-          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/login/signup_invited-to-org.html'></iframe>"
+          "content": "<iframe class='sp-shadow-medium' src='assets/code-examples/login/signup_invited-to-org.html'></iframe>"
         },
         {
           "title": "Create New Account",
           "type": "screen",
           "classes": "",
-          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/login/signup_invited-to-org-create.html'></iframe>"
+          "content": "<iframe class='sp-shadow-medium' src='assets/code-examples/login/signup_invited-to-org-create.html'></iframe>"
         }
       ],
       "modifiers": []
@@ -73,13 +73,13 @@
           "title": "Initial State",
           "type": "screen",
           "classes": "",
-          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/login/signup_invited-more.html'></iframe>"
+          "content": "<iframe class='sp-shadow-medium' src='assets/code-examples/login/signup_invited-more.html'></iframe>"
         },
         {
           "title": "Filled Out",
           "type": "screen",
           "classes": "",
-          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/login/signup_invited-more-active.html'></iframe>"
+          "content": "<iframe class='sp-shadow-medium' src='assets/code-examples/login/signup_invited-more-active.html'></iframe>"
         }
       ],
       "modifiers": []

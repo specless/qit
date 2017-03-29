@@ -3055,13 +3055,13 @@ body {
   .sp-container-dark body {
     color: rgba(255, 255, 255, 0.56); }
 
-a {
+a:not(.btn) {
   color: #00acc3; }
-  a:hover {
+  a:not(.btn):hover {
     color: #007f90; }
-  a:active {
+  a:not(.btn):active {
     color: #00C3DC; }
-  a:visited {
+  a:not(.btn):visited {
     color: #0096a9; }
 
 #fullArticle {
@@ -3216,3 +3216,53 @@ a {
     font-family: monospace; }
   #fullArticle b, #fullArticle strong {
     font-weight: 600 !important; }
+
+.btn {
+  background-image: none;
+  color: #FFFFFF;
+  text-shadow: none;
+  font-weight: 600;
+  border-color: rgba(0, 0, 0, 0.22);
+  border-style: solid;
+  border-width: 1px;
+  background-color: #FFFFFF; }
+  .btn:hover, .btn.sp-state-hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.12); }
+    .btn:hover .sp-container-dark, .btn:hover.sp-container-dark,
+    .sp-container-dark .btn:hover, .btn.sp-state-hover .sp-container-dark, .btn.sp-state-hover.sp-container-dark,
+    .sp-container-dark .btn.sp-state-hover {
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.22); }
+  .btn:active, .btn.sp-state-active {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12));
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.22); }
+    .btn:active .sp-container-dark, .btn:active.sp-container-dark,
+    .sp-container-dark .btn:active, .btn.sp-state-active .sp-container-dark, .btn.sp-state-active.sp-container-dark,
+    .sp-container-dark .btn.sp-state-active {
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5); }
+  .btn:disabled, .btn.sp-state-disabled {
+    pointer-events: none;
+    background-color: #FFFFFF !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12));
+    border-color: rgba(0, 0, 0, 0.12); }
+  .btn .sp-container-dark, .btn.sp-container-dark,
+  .sp-container-dark .btn {
+    border-style: solid;
+    border-width: 1px;
+    background-color: #444A50;
+    border-color: rgba(0, 0, 0, 0.5); }
+    .btn .sp-container-dark:hover, .btn .sp-container-dark.sp-state-hover, .btn.sp-container-dark:hover, .btn.sp-container-dark.sp-state-hover,
+    .sp-container-dark .btn:hover,
+    .sp-container-dark .btn.sp-state-hover {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)); }
+    .btn .sp-container-dark:active, .btn .sp-container-dark.sp-state-active, .btn.sp-container-dark:active, .btn.sp-container-dark.sp-state-active,
+    .sp-container-dark .btn:active,
+    .sp-container-dark .btn.sp-state-active {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)); }
+    .btn .sp-container-dark:disabled, .btn .sp-container-dark.sp-state-disabled, .btn.sp-container-dark:disabled, .btn.sp-container-dark.sp-state-disabled,
+    .sp-container-dark .btn:disabled,
+    .sp-container-dark .btn.sp-state-disabled {
+      pointer-events: none;
+      background-color: #444A50 !important;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12));
+      border-color: rgba(0, 0, 0, 0.12); }

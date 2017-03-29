@@ -8,7 +8,7 @@ body {
   	background-color: $sp-color-light-lighter;
 }
 
-a {
+a:not(.btn) {
 	color: darken($sp-color-primary, 5%);
 
 	&:hover {
@@ -173,4 +173,13 @@ a {
 	b, strong {
 		font-weight: 600 !important;
 	}
+}
+
+.btn {
+	background-image: none;
+	color: $sp-color-white;
+	text-shadow: none;
+	font-weight: 600;
+	//@include sp-font-label;
+	@include sp-tactile(base, true);
 }

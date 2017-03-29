@@ -481,6 +481,11 @@ a:not(.btn):not(.brand) {
 #sidebar .nav-list .active a {
 	font-weight: 600;
 	@include sp-font-color(primary);
+
+	&:hover {
+		font-weight: 600;
+		color: darken($sp-color-primary, 15%);
+	}
 }
 
 // #mainNav .nav-collapse {

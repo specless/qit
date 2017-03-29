@@ -3705,3 +3705,6 @@ a:not(.btn):not(.brand) {
   #sidebar .nav-list .active a .sp-container-dark, #sidebar .nav-list .active a.sp-container-dark,
   .sp-container-dark #sidebar .nav-list .active a {
     color: #00C3DC; }
+  #sidebar .nav-list .active a:hover {
+    font-weight: 600;
+    color: #007f90; }

@@ -217,6 +217,10 @@
 	    ReactDOM.render(React.createElement(Qit, { items: items, category: name }), document.getElementById('root'), finalSteps());
 	};
 	var currentPath = window.location.search.split('?')[1];
+	if (!currentPath) {
+	    window.location.search = '?quarks';
+	    currentPath == 'quarks';
+	}
 	render(allItems[currentPath], currentPath);
 
 

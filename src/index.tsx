@@ -244,4 +244,9 @@ const render(items, name) {
 
 var currentPath = window.location.search.split('?')[1];
 
+if (!currentPath) {
+	window.location.search = '?quarks';
+	currentPath == 'quarks';
+}
+
 render(allItems[currentPath], currentPath);

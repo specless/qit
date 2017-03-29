@@ -6,22 +6,22 @@ select, input:not([type='button']):not([type='submit']):not([type='reset']):not(
 
 	&::-webkit-input-placeholder {
 	    font-color: inherit;
-	    opacity: 0.5;
+	    opacity: 0.85;
 	}
 
 	&:-moz-placeholder { /* Firefox 18- */
 	    font-color: inherit;
-	    opacity: 0.5;
+	    opacity: 0.85;
 	}
 
 	&::-moz-placeholder { /* Firefox 19+ */
 	    font-color: inherit;
-	    opacity: 0.5;
+	    opacity: 0.85;
 	}
 
 	&:-ms-input-placeholder {
 	    font-color: inherit;
-	    opacity: 0.5;
+	    opacity: 0.85;
 	}
 
 	// Default Styles

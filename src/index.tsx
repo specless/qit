@@ -60,7 +60,7 @@ class Qit extends React.Component {
 			    	
 							return (
 								<li>
-							        <a className={currentClass + " qit-capitalize sp-icon-" + section} href={'/' + section}>{section}</a>
+							        <a className={currentClass + " qit-capitalize sp-icon-" + section} href={'/?' + section}>{section}</a>
 							        <ul id={'nav-' + section}>
 							        	{
 							        		theItems.map(function(item) {
@@ -242,6 +242,6 @@ const render(items, name) {
 	);
 }
 
-var currentPath = window.location.pathname.split('/')[1];
+var currentPath = window.location.search.split('?')[1];
 
 render(allItems[currentPath], currentPath);

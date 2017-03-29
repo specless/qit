@@ -113,7 +113,7 @@
 	                        currentClass = 'sp-hidden';
 	                    }
 	                    return (React.createElement("li", null,
-	                        React.createElement("a", { className: currentClass + " qit-capitalize sp-icon-" + section, href: '/' + section }, section),
+	                        React.createElement("a", { className: currentClass + " qit-capitalize sp-icon-" + section, href: '/?' + section }, section),
 	                        React.createElement("ul", { id: 'nav-' + section }, theItems.map(function (item) {
 	                            if (section == category) {
 	                                return (React.createElement("li", null,
@@ -216,7 +216,7 @@
 	var render = function (items, name) {
 	    ReactDOM.render(React.createElement(Qit, { items: items, category: name }), document.getElementById('root'), finalSteps());
 	};
-	var currentPath = window.location.pathname.split('/')[1];
+	var currentPath = window.location.search.split('?')[1];
 	render(allItems[currentPath], currentPath);
 
 

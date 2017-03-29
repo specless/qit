@@ -8,7 +8,7 @@ body {
   	background-color: $sp-color-light-lighter;
 }
 
-a:not(.btn) {
+a:not(.btn):not(.brand) {
 	color: darken($sp-color-primary, 5%);
 
 	&:hover {
@@ -182,4 +182,172 @@ a:not(.btn) {
 	font-weight: 600;
 	//@include sp-font-label;
 	@include sp-tactile(base, true);
+}
+
+.navbar {
+	.navbar-inner {
+		background-color: $sp-color-white;
+		//border-bottom: 1px solid $sp-color-light-darker;
+		@include sp-height(3);
+	}
+
+	.brand {
+		margin-top: 4px;
+		color: inherit;
+		position: relative;
+		display: inline-block;
+		line-height: 1;
+
+		&:before {
+			font-family: "Icon Font";
+			display: block;
+			text-align: center;
+			-webkit-font-smoothing: none;
+	        -moz-osx-font-smoothing: none;
+			@extend %icon-logo-mark !optional;
+			margin-bottom: 0;
+			margin-right: 0.35em;
+			display: inline-block;
+			font-size: 40px;
+			color: $sp-color-primary;
+		}
+
+		> img {
+			display: none;
+		}
+
+		&:after {
+			font-family: "Icon Font";
+			text-align: center;
+			@extend %icon-logo-name !optional;
+			display: inline-block;
+			position: relative;
+			transform: translateY(-50%);
+			font-size: 18px;
+			color: $sp-color-dark-base;
+		}
+	}
+
+	@media (max-width: 1110px) {
+		.nav {
+			&::before {
+				padding-left: 20px;
+			}
+		}
+	}
+
+	@media (min-width: 769px) {
+		margin-bottom: 148px;
+
+		.nav {
+			box-sizing: border-box;
+			width: 100vw;
+			left: 50%;
+			transform: translateX(-50%);
+			padding-left: calc((100vw - 1080px)/2);
+			padding-right: calc((100vw - 1080px)/2);
+			min-height: 148px;
+			@include sp-font-size(small);
+			background-color: $sp-color-light-base;
+			position: absolute;
+			top: 100%;
+			text-align: left;
+			display: flex;
+			align-items: flex-end;
+			//flex-wrap: wrap;
+			padding-top: 98.08px;
+			justify-content: flex-start;
+			overflow-x: hidden;
+
+
+			&::before {
+				content: "Knowledge Base";
+				display: block;
+				box-sizing: border-box;
+				@include sp-height(4);
+				@include sp-font-color;
+	  			@include sp-padding(3, vertical);
+	  			//@include sp-padding(0);
+	  			@include sp-font-color(contrast);
+	  			@include sp-font-header(h2);
+	  			position: absolute;
+	  			width: 100%;
+	  			top: 0;
+	  			//padding-left: 20px;
+			}
+
+			> li {
+				line-height: 1em;
+				box-sizing: border-box;
+				height: 48px;
+				padding: 0;
+
+				&.active {
+					> a {
+						border-bottom: 3px solid $sp-color-primary;
+    					@include sp-font-color(contrast);
+					}
+				}
+
+				> a {
+					padding: auto;
+					height: 48px;
+					box-sizing: border-box;
+					white-space: nowrap;
+  					overflow: hidden;
+  					text-overflow: ellipsis;
+  					font-size: .8rem;
+    				line-height: 1rem;
+    				letter-spacing: .1em;
+    				text-transform: uppercase;
+    				font-weight: 700;
+    				@include sp-font-color(base);
+
+    				&:hover {
+    					@include sp-font-color(contrast);
+    				}
+
+    				&:visited {
+    					@include sp-font-color(base);
+    				}
+
+    				.caret {
+    					display: none !important;
+    				}
+				}
+			}
+		}
+	}
+}
+
+.twoCol h2 a:hover, .threeCol h2 a:hover {
+	border-color: transparent;
+}
+
+.twoCol .popArticles a:hover span, .threeCol .popArticles a:hover span, .most-pop-articles .popArticles a:hover span {
+    text-decoration: none;
+}
+
+.twoCol .collection, .threeCol .collection {
+	border: none;
+	@include sp-overlay;
+}
+
+#searchBar button {
+	@include sp-tactile(primary, true);
+	text-shadow: none;
+	font-size: .8rem;
+	line-height: 1rem;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	font-weight: 700;
+	top: 30px;
+
+	&:hover {
+		@include sp-tactile(primary, false);
+	}
+}
+
+#searchBar .search-query {
+	@include sp-input();
 }

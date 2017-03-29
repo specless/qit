@@ -3651,3 +3651,10 @@ a:not(.btn):not(.brand) {
   @media (max-width: 768px) {
     #docsSearch::before {
       background-size: 200% auto; } }
+
+#sidebar h3 {
+  font-size: .67rem;
+  line-height: 1.1;
+  letter-spacing: .1em;
+  font-weight: 700;
+  text-transform: uppercase; }

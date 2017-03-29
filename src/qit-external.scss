@@ -449,6 +449,14 @@ a:not(.btn):not(.brand) {
 	}
 }
 
+#sidebar h3 {
+	font-size: .67rem;
+    line-height: 1.1;
+    letter-spacing: .1em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 // #mainNav .nav-collapse {
 // 	@include sp-height(3);
 // 	&::before {

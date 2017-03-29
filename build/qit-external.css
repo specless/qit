@@ -3395,6 +3395,11 @@ a:not(.btn):not(.brand) {
             .navbar .nav > li.active > a .sp-container-dark, .navbar .nav > li.active > a.sp-container-dark,
             .sp-container-dark .navbar .nav > li.active > a {
               color: #FFFFFF; }
+            .navbar .nav > li.active > a:hover {
+              color: #0096a9; }
+              .navbar .nav > li.active > a:hover .sp-container-dark, .navbar .nav > li.active > a:hover.sp-container-dark,
+              .sp-container-dark .navbar .nav > li.active > a:hover {
+                color: #00C3DC; }
           .navbar .nav > li > a {
             padding: auto;
             height: 48px;

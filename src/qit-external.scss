@@ -336,6 +336,10 @@ a:not(.btn):not(.brand) {
 					> a {
 						border-bottom: 3px solid $sp-color-primary;
     					@include sp-font-color(contrast);
+
+    					&:hover {
+    						@include sp-font-color(primary);
+    					}
 					}
 				}
 

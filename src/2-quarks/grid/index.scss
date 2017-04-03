@@ -17,10 +17,7 @@
 }
 
 .sp-row {
-  margin: 0 auto;
-  max-width: #{$max-width}px;
-  width: 100%;
-  align-items: flex-start;
+  margin: 0;
   & > .column {
     margin: 0;
     padding: 0;
@@ -28,11 +25,6 @@
 
   &.sp-center {
     justify-content: center;
-  }
-
-  &.sp-fluid {
-    max-width: none !important;
-    box-sizing: border-box;
   }
 
   &.sp-space-between {
@@ -45,22 +37,6 @@
 
   &.sp-vcenter {
     align-items: center;
-  }
-
-  &.sp-vstretch {
-    align-items: stretch;
-  }
-
-  &.sp-vtop {
-    align-items: flex-start;
-  }
-
-  &.sp-vbottom {
-    align-items: flex-end;
-  }
-
-  &.sp-vbaseline {
-    align-items: baseline;
   }
 
   &.sp-column {
@@ -86,22 +62,6 @@
   flex-grow: 1;
   flex-shrink: 1;
   padding: 0.75em;
-  box-sizing: border-box;
-
-  .sp-fluid & {
-    max-width: none;
-  }
-
-  &:first-child {
-    .sp-fluid & {
-      @include sp-padding(3, left);
-    }
-  }
-  &:last-child {
-    .sp-fluid & {
-      @include sp-padding(3, right);
-    }
-  }
 
   @for $i from 1 through 12 {
     &.sp-span-#{$i} {
@@ -116,6 +76,52 @@
   }
 }
 
-.sp-flex-fill {
-  flex: 2 1 auto;
+@each $val in (flex-start, flex-end, center, space-between, space-around, space-evenly) {
+  .sp-flex-justify-content-#{$val} {
+    justify-content: #{$val};
+  }
+}
+
+@each $val in (flex-start, flex-end, center, baseline, stretch) {
+  .sp-flex-align-items-#{$val} {
+    align-items: #{$val};
+  }
+}
+
+@each $val in (flex-start, flex-end, center, space-between, space-around, space-evenly, stretch) {
+  .sp-flex-align-content-#{$val} {
+    align-content: $val;
+  }
+}
+
+@each $val in (nowrap, wrap, wrap-reverse) {
+  .sp-flex-#{$val} {
+    flex-wrap: #{$val};
+  }
+}
+
+@each $val in (row, row-reverse, column, column-reverse) {
+  .sp-flex-dir-#{$val} {
+    flex-direction: #{$val};
+  }
+}
+
+@for $i from 0 through 12 {
+  .sp-flex-grow-#{$i} {
+    flex-grow: $i;
+  }
+}
+
+@for $i from 0 through 12 {
+  .sp-flex-shrink-#{$i} {
+    flex-shrink: $i;
+  }
+}
+
+.sp-flex-basis-auto {
+  flex-basis: auto;
+}
+
+.sp-flex-basis-0 {
+  flex-basis: 0;
 }

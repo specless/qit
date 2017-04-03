@@ -17,10 +17,34 @@
 }
 
 .sp-row {
-  margin: 0;
+  margin: 0 auto;
+  max-width: #{$max-width}px;
+  width: 100%;
+  align-items: flex-start;
   & > .column {
     margin: 0;
     padding: 0;
+  }
+
+  &.sp-fluid {
+    max-width: none !important;
+    box-sizing: border-box;
+  }
+
+  &.sp-vstretch {
+    align-items: stretch;
+  }
+
+  &.sp-vtop {
+    align-items: flex-start;
+  }
+
+  &.sp-vbottom {
+    align-items: flex-end;
+  }
+
+  &.sp-vbaseline {
+    align-items: baseline;
   }
 
   &.sp-center {
@@ -61,6 +85,23 @@
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1;
+  padding: 0.75em;
+  box-sizing: border-box;
+
+  .sp-fluid & {
+    max-width: none;
+  }
+
+  &:first-child {
+    .sp-fluid & {
+      @include sp-padding(3, left);
+    }
+  }
+  &:last-child {
+    .sp-fluid & {
+      @include sp-padding(3, right);
+    }
+  }
 
   @for $i from 1 through 12 {
     &.sp-span-#{$i} {

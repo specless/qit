@@ -1566,10 +1566,24 @@ html {
     flex: 0 0 auto; }
 
 .sp-row {
-  margin: 0; }
+  margin: 0 auto;
+  max-width: 1260px;
+  width: 100%;
+  align-items: flex-start; }
   .sp-row > .column {
     margin: 0;
     padding: 0; }
+  .sp-row.sp-fluid {
+    max-width: none !important;
+    box-sizing: border-box; }
+  .sp-row.sp-vstretch {
+    align-items: stretch; }
+  .sp-row.sp-vtop {
+    align-items: flex-start; }
+  .sp-row.sp-vbottom {
+    align-items: flex-end; }
+  .sp-row.sp-vbaseline {
+    align-items: baseline; }
   .sp-row.sp-center {
     justify-content: center; }
   .sp-row.sp-space-between {
@@ -1595,7 +1609,14 @@ html {
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1;
-  padding: 0.75em; }
+  padding: 0.75em;
+  box-sizing: border-box; }
+  .sp-fluid .sp-col {
+    max-width: none; }
+  .sp-fluid .sp-col:first-child {
+    padding-left: 1.6rem; }
+  .sp-fluid .sp-col:last-child {
+    padding-right: 1.6rem; }
   .sp-col.sp-span-1 {
     flex: none;
     width: 8.33333%; }
@@ -6856,6 +6877,9 @@ blockquote {
     width: calc(50% + 150px);
     height: 100vh;
     background-color: #384146;
+    background-image: url(assets/img/abstract-ads.png);
+    background-size: cover;
+    background-position: center center;
     display: inline-block;
     position: absolute;
     top: 0;

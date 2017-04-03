@@ -6667,7 +6667,7 @@ blockquote {
     border-radius: 4px;
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
-  .sp-menu-dropdown::before {
+  .sp-menu-dropdown.sp-menu-arrow::before {
     content: "";
     display: inline-block;
     position: absolute;
@@ -6689,6 +6689,15 @@ blockquote {
     border-bottom-color: #F5F5F5; }
   .sp-menu-dropdown.sp-alt-two::before {
     border-bottom-color: #EAEAEA; }
+  .sp-menu-dropdown .sp-container-dark::before, .sp-menu-dropdown.sp-container-dark::before,
+  .sp-container-dark .sp-menu-dropdown::before {
+    border-bottom-color: #444A50; }
+  .sp-menu-dropdown .sp-container-dark.sp-alt-one::before, .sp-menu-dropdown.sp-container-dark.sp-alt-one::before,
+  .sp-container-dark .sp-menu-dropdown.sp-alt-one::before {
+    border-bottom-color: #384146; }
+  .sp-menu-dropdown .sp-container-dark.sp-alt-two::before, .sp-menu-dropdown.sp-container-dark.sp-alt-two::before,
+  .sp-container-dark .sp-menu-dropdown.sp-alt-two::before {
+    border-bottom-color: #35393E; }
 
 .sp-dialog {
   width: 24.8rem; }

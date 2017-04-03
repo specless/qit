@@ -14,7 +14,7 @@
 		border-top-right-radius: 0;
 	}
 
-	&::before {
+	&.sp-menu-arrow::before {
 		content: "";
 		display: inline-block;
 		position: absolute;
@@ -38,6 +38,26 @@
 
 		&::before {
 			border-bottom-color: $sp-color-light-base;
+		}
+	}
+
+	@include sp-state(dark) {
+		&::before {
+			border-bottom-color: $sp-color-dark-lighter;
+		}
+
+		&.sp-alt-one {
+
+			&::before {
+				border-bottom-color: $sp-color-dark-base;
+			}
+		}
+
+		&.sp-alt-two {
+
+			&::before {
+				border-bottom-color: $sp-color-dark-darker;
+			}
 		}
 	}
 }

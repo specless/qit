@@ -6,6 +6,7 @@
 	width: 250px;
 	height: 100%;
 	overflow-y: scroll;
+	padding-bottom: 100px;
 }
 
 .qit-sub-items {

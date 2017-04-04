@@ -14,7 +14,35 @@
         }
   		],
   		"modifiers": ["sp-small", "sp-large"]
-  	}
+  	},
+    {
+      "title": "Custom Select Inputs",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-selector > input[type='text'].sp-selector-trigger",
+          "type": "box-target",
+          "classes": "",
+          "content": ["select-inputs.html"]
+        }
+      ],
+      "states": ["sp-state-focus", "sp-state-active"],
+      "modifiers": ["sp-small", "sp-large"]
+    },
+    {
+      "title": "Custom Select Inputs: Options",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-selector > input[type='text'].sp-selector-trigger",
+          "type": "box-target",
+          "classes": "",
+          "content": ["select-inputs-options.html"]
+        }
+      ],
+      "states": [],
+      "modifiers": ["sp-small", "sp-large"]
+    }
   ],
   "scss": ["index.scss"],
   "markdown": "index.md"

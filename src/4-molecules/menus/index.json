@@ -68,18 +68,32 @@
       "modifiers": ["sp-alt-one", "sp-alt-two"]
     },
     {
-      "title": "Dropdown Menu With Arrow",
+      "title": "Dropdown Menu Directions",
       "subTitle": "",
       "swatches" : [
         {
-          "title": ".sp-menu-dropdown.sp-menu-arrow.sp-overlay",
+          "title": ".sp-menu-dropdown.sp-overlay",
           "type": "box-target",
-          "classes": "sp-menu-dropdown sp-menu-arrow sp-overlay",
+          "classes": "sp-menu-dropdown sp-overlay",
           "content": ["menu-arrow.html"]
         }
       ],
       "states": ["sp-alt-one", "sp-alt-two"],
-      "modifiers": ["sp-menu-arrow-top", "sp-menu-arrow-right", "sp-menu-arrow-bottom", "sp-menu-arrow-left"]
+      "modifiers": ["sp-menu-dropdown-above", "sp-menu-dropdown-right", "sp-menu-dropdown-below", "sp-menu-dropdown-left"]
+    },
+    {
+      "title": "Dropdown Menu Triggers",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-selector",
+          "type": "box-target",
+          "classes": "",
+          "content": ["menu-triggers.html"]
+        }
+      ],
+      "states": ["sp-menu-dropdown-above", "sp-menu-dropdown-right", "sp-menu-dropdown-below", "sp-menu-dropdown-left"],
+      "modifiers": ["sp-alt-one", "sp-alt-two"]
     }
   ],
   "scss": ["index.scss"],

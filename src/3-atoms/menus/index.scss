@@ -1,10 +1,10 @@
 .sp-menu-item {
-	height: 32px;
+	//height: 32px;
 	box-sizing: border-box;
 	text-align: left;
 	display: block;
 	position: relative;
-	line-height: 1.2;
+	line-height: 1.3;
 	border: none;
 	text-overflow: ellipsis;
   	white-space: nowrap;
@@ -16,7 +16,7 @@
 	}
 
 	@include sp-padding(1, vertical);
-  	@include sp-padding(3, horizontal);
+  	@include sp-padding(2, horizontal);
   	@include sp-font-color(base);
 
   	@include sp-state(hover) {
@@ -57,22 +57,27 @@
   		opacity: 0.25;
   	}
 
+  	&[class*="sp-icon-"], &[class*="sp-icon-after-"] {
+  		@include sp-padding(2, vertical);
+  	}
+
   	&[class*="sp-icon-"]::before {
 		line-height: 0;
 		@include sp-margin(1, right);
 		position: relative;
-		top: 7px;
+		top: 6px;
 	}
 
 	&[class*="sp-icon-after-"]::after {
 		line-height: 0;
 		@include sp-margin(1, left);
 		position: relative;
-		top: 7px;
+		top: 6px;
 	}
 
 	&:not(input):empty {
 		width: 32px;
+		height: 32px;
 		
 		&[class*="sp-icon-"]::before, &[class*="sp-icon-after-"]::after {
 		  @include sp-margin(0);
@@ -96,7 +101,9 @@
 		
 		&:not(input):empty {
 		  width: 30px;
+		  height: 30px;
 		}
+		//@include sp-padding(1, horizontal);
 	}
 
 	@include sp-large {
@@ -113,7 +120,9 @@
 		&
 		:not(input):empty {
 		  width: 37px;
+		  height: 37px;
 		}
+		@include sp-padding(3, horizontal);
 	}
 
 	&.sp-minimal {
@@ -147,9 +156,8 @@
 	}
 
   	&.sp-label {
-  		height: 43.7px;
   		@include sp-padding(2, vertical);
-		@include sp-padding(3, horizontal);
+		@include sp-padding(2, horizontal);
 		@include sp-font-label;
 		cursor: pointer;
   		position: relative;
@@ -190,7 +198,7 @@
 		    @include sp-padding(2, horizontal);
 		    padding-top: 0.6rem;
 		    padding-bottom: 0.6rem;
-		    height: 31.66px;
+		    // height: 31.66px;
 		    line-height: 1;
 		    &[class*="sp-icon-"]::before {
 		      top: 6px;
@@ -206,7 +214,7 @@
 		  @include sp-large {
 		    @include sp-padding(2, vertical);
 		    @include sp-padding(3, horizontal);
-		    height: 44.39px;
+		    // height: 44.39px;
 		    &[class*="sp-icon-"]::before {
 		      @include sp-margin(1, right);
 		      top: 8px;
@@ -222,18 +230,18 @@
   	}
 
   	@include sp-small {
-  		height: 30px;
+  		// height: 30px;
 
   		&.sp-label {
-	  		height: 31.66;
+	  		// height: 31.66;
 	  	}
   	}
 
   	@include sp-large {
-  		height: 37px;
+  		// height: 37px;
 
   		&.sp-label {
-	  		height: 44.39px;
+	  		// height: 44.39px;
 	  	}
   	}
 
@@ -301,7 +309,7 @@
 
 .sp-menu-header {
 	@include sp-font-label;
-	@include sp-padding(3, horizontal);
+	@include sp-padding(2, horizontal);
 	@include sp-padding(2, vertical);
 	@include sp-border(thin, solid, bottom);
 	opacity: 0.5;
@@ -310,5 +318,9 @@
 
 	@include sp-state(dark) {
 		border-color: $sp-shade-light-2;
+	}
+
+	@include sp-large {
+		@include sp-padding(3, horizontal);
 	}
 }

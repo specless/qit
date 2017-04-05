@@ -10,19 +10,19 @@
           "title": "Dialog Box: Regular Size",
           "type": "screen",
           "classes": "",
-          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/organisms/app-overlay_dialog.html'></iframe>"
+          "content": "<iframe class='sp-shadow-medium' src='assets/code-examples/organisms/app-overlay_dialog.html'></iframe>"
         },
         {
           "title": "Dialog Box: Small",
           "type": "screen",
           "classes": "",
-          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/organisms/app-overlay_dialog_small.html'></iframe>"
+          "content": "<iframe class='sp-shadow-medium' src='assets/code-examples/organisms/app-overlay_dialog_small.html'></iframe>"
         },
         {
           "title": "Dialog Box: Large",
           "type": "screen",
           "classes": "",
-          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/organisms/app-overlay_dialog_large.html'></iframe>"
+          "content": "<iframe class='sp-shadow-medium' src='assets/code-examples/organisms/app-overlay_dialog_large.html'></iframe>"
         }
   		],
       "states": [],
@@ -36,19 +36,19 @@
           "title": "Basic Modal",
           "type": "screen",
           "classes": "",
-          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/organisms/app-overlay_modal.html'></iframe>"
+          "content": "<iframe class='sp-shadow-medium' src='assets/code-examples/organisms/app-overlay_modal.html'></iframe>"
         },
         {
           "title": "Fullscreen Modal",
           "type": "screen",
           "classes": "",
-          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/organisms/app-overlay_modal_fullscreen.html'></iframe>"
+          "content": "<iframe class='sp-shadow-medium' src='assets/code-examples/organisms/app-overlay_modal_fullscreen.html'></iframe>"
         },
         {
           "title": "Fullscreen Modal - Dark",
           "type": "screen",
           "classes": "",
-          "content": "<iframe class='sp-shadow-medium' src='/assets/code-examples/organisms/app-overlay_modal_fullscreen_dark.html'></iframe>"
+          "content": "<iframe class='sp-shadow-medium' src='assets/code-examples/organisms/app-overlay_modal_fullscreen_dark.html'></iframe>"
         }
       ],
       "states": [],

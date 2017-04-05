@@ -1,0 +1,78 @@
+{
+  "title": "Helper UI Elements",
+  "description": "Text goes here.",
+  "examples": [
+    {
+      "title": "Tooltip: Standard",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-tooltip .sp-tooltip-overlay",
+          "type": "box-target",
+          "classes": "",
+          "content": ["tooltip.html"]
+        }
+      ],
+      "states": [],
+      "modifiers": ["sp-alt-one", "sp-alt-two", "sp-primary", "sp-success", "sp-warning", "sp-danger"]
+    },
+    {
+      "title": "Tooltip: Above",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-tooltip.sp-tooltip-above .sp-tooltip-overlay",
+          "type": "box-target",
+          "classes": "",
+          "content": ["tooltip-above.html"]
+        }
+      ],
+      "states": [],
+      "modifiers": ["sp-alt-one", "sp-alt-two", "sp-primary", "sp-success", "sp-warning", "sp-danger"]
+    },
+    {
+      "title": "Tooltip: Below",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-tooltip.sp-tooltip-below .sp-tooltip-overlay",
+          "type": "box-target",
+          "classes": "",
+          "content": ["tooltip-below.html"]
+        }
+      ],
+      "states": [],
+      "modifiers": ["sp-alt-one", "sp-alt-two", "sp-primary", "sp-success", "sp-warning", "sp-danger"]
+    },
+    {
+      "title": "Tooltip: Right",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-tooltip.sp-tooltip-right .sp-tooltip-overlay",
+          "type": "box-target",
+          "classes": "",
+          "content": ["tooltip-right.html"]
+        }
+      ],
+      "states": [],
+      "modifiers": ["sp-alt-one", "sp-alt-two", "sp-primary", "sp-success", "sp-warning", "sp-danger"]
+    },
+    {
+      "title": "Tooltip: Left",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-tooltip.sp-tooltip-left .sp-tooltip-overlay",
+          "type": "box-target",
+          "classes": "",
+          "content": ["tooltip-left.html"]
+        }
+      ],
+      "states": [],
+      "modifiers": ["sp-alt-one", "sp-alt-two", "sp-primary", "sp-success", "sp-warning", "sp-danger"]
+    }
+  ],
+  "scss": ["index.scss"],
+  "markdown": "index.md"
+}

@@ -1,6 +1,8 @@
 body {
   @include sp-font-body;
   @include sp-font-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 strong {

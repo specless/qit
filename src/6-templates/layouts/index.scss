@@ -52,3 +52,19 @@
 .sp-app-footer {
 	position: relative;
 }
+
+.sp-app-side-menu {
+	@include sp-width(7);
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left:0;
+	transform: none;
+	transition: 0.5s ease transform;
+	overflow-x: hidden;
+	overflow-y: auto;
+
+	&.sp-hidden {
+		transform: translateY(100%);
+	}
+}

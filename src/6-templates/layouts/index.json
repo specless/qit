@@ -16,6 +16,19 @@
   		"modifiers": []
   	},
     {
+      "title": "Basic View: Menu Showing",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='assets/code-examples/layout_app_basic-showmenu.html'></iframe>"
+        }
+      ],
+      "modifiers": []
+    },
+    {
       "title": "Basic View with Navigation",
       "subTitle": "",
       "swatches" : [

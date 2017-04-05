@@ -223,7 +223,7 @@ html {
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 600;
-  src: url("assets/fonts//assets/fonts/source_sans_pro_semibold.eot?t=1488910176523");
+  src: url("assets/fonts/source_sans_pro_semibold.eot?t=1488910176523");
   /* IE9*/
   src: url("assets/fonts/source_sans_pro_semibold.eot?t=1488910176523#iefix") format("embedded-opentype"), url("assets/fonts/source_sans_pro_semibold.woff?t=1488910176523") format("woff"), url("assets/fonts/source_sans_pro_semibold.ttf?t=1488910176523") format("truetype"), url("assets/fonts/source_sans_pro_semibold.svg?t=1488910176523#svg") format("svg");
   /* iOS 4.1- */ }

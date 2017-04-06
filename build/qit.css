@@ -7022,6 +7022,8 @@ blockquote {
       padding-right: 2.7em !important; }
       .sp-selector > input[type='text'].sp-selector-trigger.sp-minimal + .sp-selector-overlay > .sp-selector-label, .sp-custom-input > input[type='text'].sp-selector-trigger.sp-minimal + .sp-selector-overlay > .sp-selector-label {
         line-height: 2.5em !important; }
+    .sp-selector > input[type='text'].sp-selector-trigger + .sp-selector-overlay > .sp-menu-dropdown::before, .sp-custom-input > input[type='text'].sp-selector-trigger + .sp-selector-overlay > .sp-menu-dropdown::before {
+      display: none; }
     .sp-selector > input[type='text'].sp-selector-trigger + .sp-selector-overlay.sp-no-arrows::after, .sp-custom-input > input[type='text'].sp-selector-trigger + .sp-selector-overlay.sp-no-arrows::after {
       display: none; }
     .sp-selector > input[type='text'].sp-selector-trigger + .sp-selector-overlay::after, .sp-custom-input > input[type='text'].sp-selector-trigger + .sp-selector-overlay::after {

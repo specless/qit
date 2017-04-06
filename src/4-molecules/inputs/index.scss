@@ -201,7 +201,9 @@
 
 		+.sp-selector-overlay {
 			> .sp-menu-dropdown {
-				//width: 100%;
+				&::before {
+					display: none;
+				}
 			}
 
 			&.sp-no-arrows {

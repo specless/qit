@@ -3,7 +3,8 @@
 
 	.sp-tooltip-overlay {
 		@include sp-font-size(small);
-		@include sp-padding(2);
+		@include sp-padding(1, vertical);
+		@include sp-padding(2, horizontal);
 		@include sp-overlay;
 		@include sp-shape(rectangle);
 		display: inline-block;
@@ -21,7 +22,7 @@
     	box-sizing: border-box;
     	z-index: 100;
     	min-width: 38.59px;
-    	min-height: 38.59px;
+    	//min-height: 38.59px;
 
     	@include sp-primary {
 		    @include sp-overlay(primary);

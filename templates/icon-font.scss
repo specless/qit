@@ -1,6 +1,6 @@
 {{#each fonts}}
 
-%icon-{{this.name}}, .sp-icon-{{this.name}}::before, .sp-icon-after-{{this.name}}::after {
+%icon-{{this.name}}, .sp-icon-{{this.name}}::before, .sp-icon-after-{{this.name}}::after, .sp-inline-icon-{{this.name}}::before {
 	content: "\\{{this.hex}}";
 }
 

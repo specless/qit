@@ -29,7 +29,21 @@
   		],
       "states": [],
       "modifiers": []
-  	}
+  	},
+    {
+      "title": "Inline Icons",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-inline-icon-[name]",
+          "type": "box-target",
+          "classes": "",
+          "content": "<p class='qit-target'>This is some text and this: <i class='sp-inline-icon-settings'></i> is an inline icon.</p>"
+        }
+      ],
+      "states": ["sp-small", "sp-large", "sp-huge"],
+      "modifiers": ["sp-color-contrast", "sp-color-muted", "sp-color-primary", "sp-color-success", "sp-color-danger", "sp-color-warning"]
+    }
   ],
   "scss": ["index.scss"],
   "markdown": "index.md"

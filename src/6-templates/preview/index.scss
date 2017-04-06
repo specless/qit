@@ -1,0 +1,84 @@
+.sp-app-overlay {
+  .sp-login {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+
+    .sp-login-left {
+      width: calc(50% - 150px);
+      height: 100vh;
+      background-image: linear-gradient(to bottom, $sp-color-primary 0%, $sp-color-success 100%);
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: 0.5s ease left;
+      transition-delay: 0.25s;
+
+      > .sp-logo-mark {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .sp-login-right {
+      width: calc(50% + 150px);
+      height: 100vh;
+      background-color: $sp-color-dark-base;
+      background-image: url(assets/img/abstract-ads.png);
+      background-size: cover;
+      background-position: center center;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transition: 0.5s ease right;
+      transition-delay: 0.25s;
+    }
+  }
+
+  &.sp-hide {
+    .sp-login {
+      .sp-login-left {
+        left: -100%;
+      }
+
+      .sp-login-right {
+        right: -100%;
+      }
+    }
+  }
+}
+
+.sp-login-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @include sp-padding(3);
+  transform: translate(-50%, -50%);
+  @include sp-shape(rectangle);
+  @include sp-width(8);
+  max-height: 90vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.sp-login-content {
+  .sp-multi-input {
+    width: 100%;
+  }
+
+  .sp-login-email, .sp-login-password {
+    width: 85%;
+  }
+
+  .sp-login-field {
+    width: 200px;
+  }
+
+  .sp-login-field-label {
+    width: 90px;
+    display: inline-block;
+  }
+}

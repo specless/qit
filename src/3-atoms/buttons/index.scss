@@ -11,6 +11,7 @@
   overflow: hidden;
   display: inline-block;
   box-sizing: border-box;
+  min-width: 43.7px;
 
   // fix icon position when nested inside button element
   i {
@@ -88,6 +89,7 @@
     padding-bottom: 0.65rem;
     height: 31.66px;
     line-height: 1;
+    min-width: 31.66px;
     &[class*="sp-icon-"]::before {
       top: 6px;
     }
@@ -103,6 +105,7 @@
     @include sp-padding(2, vertical);
     @include sp-padding(3, horizontal);
     height: 44.39px;
+    min-width: 44.39px;
     &[class*="sp-icon-"]::before {
       @include sp-margin(1, right);
       top: 8px;

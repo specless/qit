@@ -76,7 +76,7 @@
 	}
 }
 
-.sp-selector {
+.sp-selector, .sp-custom-input {
 	// @include sp-input();
 	// @include sp-shape(rectangle);
 	position: relative;
@@ -91,20 +91,20 @@
 
 
 	@include sp-small {
-		> .sp-selector-overlay {
+		> .sp-selector-overlay, > .sp-custom-input-overlay {
 			&[class^='sp-icon-'], &[class*=' sp-icon-'] {
 				&::before {
 					@include sp-margin(1, left);
 				}
 
-				>.sp-selector-label {
+				>.sp-selector-label, >.sp-custom-input-label {
 					left: 1.5em;
 				}
 			}
 		}
 	}
 
-	> .sp-selector-overlay {
+	> .sp-selector-overlay, > .sp-custom-input-overlay {
 		width: 100%;
 		height: 100%;
 		position: absolute;
@@ -123,19 +123,27 @@
 				@include sp-margin(2, left);
 			}
 
-			>.sp-selector-label {
+			>.sp-selector-label, >.sp-custom-input-label {
 				position: absolute;
 				left: 2.1em;
 			}
 		}
 
-		>.sp-selector-label {
+		>.sp-selector-label, >.sp-custom-input-label {
 			position: absolute;
 			@include sp-margin(2, left);
-			width: $sp-length-5;
-			top: 47%;
-			transform: translateY(-50%);
+			//@include sp-padding(2, vertical);
+			//box-sizing: border-box;
+			line-height: 43.7px;
+			height: 43.7px;
+			width: 25%;
+			top: 0;
+			//transform: translateY(-50%);
 			opacity: 0.65;
+			text-align: left;
+			word-wrap: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
 		}
 
 		> .sp-menu-dropdown {
@@ -150,6 +158,8 @@
 			visibility: hidden;
 			pointer-events: none;
 			min-width: 100%;
+			max-height: 75vh;
+			overflow-y: auto;
 
 			&.sp-menu-dropdown-above {
 				top: auto;
@@ -176,9 +186,28 @@
 
 	> input[type='text'].sp-selector-trigger {
 		padding-right: 1.7em !important;
+		cursor: pointer;
+
+
+		&.sp-minimal {
+			padding-right: 2.7em !important;
+
+			+.sp-selector-overlay {
+				> .sp-selector-label {
+					line-height: 2.5em !important;
+				}
+			}
+		}
+
 		+.sp-selector-overlay {
 			> .sp-menu-dropdown {
 				//width: 100%;
+			}
+
+			&.sp-no-arrows {
+				&::after {
+					display: none;
+				}
 			}
 
 			&::after {
@@ -191,6 +220,14 @@
 				transform: translateY(-50%);
 			}
 		}
+	}
+
+	> input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger {
+		padding-right: 0.7em !important;
+
+	}
+
+	> input[type='text'].sp-selector-trigger, > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger {
 
 		&.sp-padding-icon-left {
 			padding-left: 3em !important;
@@ -205,38 +242,59 @@
 		}
 
 		&.sp-padding-label {
-			padding-left: 7em !important;
+			padding-left: 25% !important;
+			text-align: right;
 		}
 
 		&.sp-padding-label.sp-padding-icon-left {
-			padding-left: 9em !important;
+			padding-left: calc(25% + 3em) !important;
+
+			@include sp-small {
+				padding-left: calc(25% + 2.3em) !important;
+			}
+
+			@include sp-large {
+				padding-left: calc(25% + 2.5em) !important;
+			}
 		}
 
 		@include sp-small {
-			+.sp-selector-overlay {
+			+.sp-selector-overlay, +.sp-custom-input-overlay {
 				&::after {
 					@include sp-font-size(small);
+				}
+
+				> .sp-selector-label, > .sp-custom-input-label {
+					box-sizing: border-box;
+					line-height: 31.66px;
+					height: 31.66px;
 				}
 			}
 		}
 
 		@include sp-large {
-			+.sp-selector-overlay {
+			+.sp-selector-overlay, +.sp-custom-input-overlay {
 				&::after {
 					@include sp-font-size(large);
+				}
+
+				> .sp-selector-label, > .sp-custom-input-label {
+					box-sizing: border-box;
+					line-height: 44.39px;
+					height: 44.39px;
 				}
 			}
 		}
 	}
 
-	>.sp-selector-trigger {
+	>.sp-selector-trigger, >.sp-custom-input-trigger {
 		@include sp-state(focus) {
 			// > input {
 			// 	color: $sp-shade-dark-5 !important;
 			// }
 
-			+.sp-selector-overlay {
-				> .sp-selector-label {
+			+.sp-selector-overlay, +.sp-custom-input-overlay {
+				> .sp-selector-label, >.sp-custom-input-label {
 					color: $sp-shade-dark-5 !important;
 
 					@include sp-state(dark) {
@@ -285,7 +343,7 @@
 	}
 
 	@include sp-state(active) {
-		> .sp-selector-overlay {
+		> .sp-selector-overlay, > .sp-custom-input-overlay {
 			> .sp-menu-dropdown {
 				opacity: 1;
 				top: 100%;

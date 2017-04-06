@@ -1,0 +1,21 @@
+{
+  "title": "Preview Interface",
+  "description": "Text goes here.",
+  "examples": [
+    {
+      "title": "Preview: Design View Main",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='assets/code-examples/preview/preview_main.html'></iframe>"
+        }
+      ],
+      "modifiers": []
+    }
+  ],
+  "scss": ["index.scss"],
+  "markdown": "index.md"
+}

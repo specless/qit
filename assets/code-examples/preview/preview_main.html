@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Example</title>
-  <link rel="stylesheet" href="../../qit.css">
+  <link rel="stylesheet" href="../../../qit.css">
 </head>
 
 <body class="sp-app sp-technical">
@@ -53,13 +53,16 @@
   </div>
   <div class="sp-app-menu sp-container-dark sp-wrapper">
   	<div class="sp-row sp-fluid sp-height-2 sp-vcenter sp-padding-horizontal-3 sp-small">
-      <button class="sp-icon-reload"></button>
+      <span class="sp-tooltip sp-tooltip-below">
+        <button class="sp-icon-reload sp-tooltip sp-tooltip-below"></button>
+        <div class="sp-tooltip-overlay">Reload</div>
+      </span>
       <div class="sp-selector sp-margin-left-1">
         <input readonly class="sp-padding-icon-left sp-padding-label sp-selector-trigger sp-align-right sp-width-7" type="text" value="Primary Content"/>
         <div class="sp-selector-overlay sp-icon-panel">
           <div class="sp-selector-label">Panel</div>
           <div class="sp-menu-dropdown sp-overlay">
-            <a class="sp-menu-item">Expanded Content<i class="sp-inline-icon-circle-info sp-details-icon"></i></a>
+            <a class="sp-menu-item">Expanded Content<i class="sp-inline-icon-circle-info sp-detail-icon"></i></a>
             <a class="sp-menu-item sp-state-active">Primary Content<i class="sp-inline-icon-circle-info sp-detail-icon"></i></a>
             <a class="sp-menu-item">Alternative Content<i class="sp-inline-icon-circle-info sp-detail-icon"></i></a>
             <a class="sp-menu-item">Skin Left<i class="sp-inline-icon-circle-info sp-detail-icon"></i></a>
@@ -230,9 +233,21 @@
         </div>
       </div>
       <div class="sp-spacer-horizontal"></div>
-      <button class="sp-icon-undo"></button>
+      <span class="sp-tooltip sp-tooltip-below">
+        <button class="sp-icon-undo"></button>
+        <div class="sp-tooltip-overlay">Last View</div>
+      </span>
+      <span class="sp-tooltip sp-tooltip-below">
+        <button class="sp-icon-redo sp-margin-left-1"></button>
+        <div class="sp-tooltip-overlay">Next View</div>
+      </span>
+      <span class="sp-tooltip sp-tooltip-below">
+        <button class="sp-icon-external sp-margin-left-1"></button>
+        <div class="sp-tooltip-overlay">Open Permalink</div>
+      </span>
+      <!-- <button class="sp-icon-undo"></button>
       <button class="sp-margin-left-1 sp-icon-redo"></button>
-      <button class="sp-icon-external sp-margin-left-1"></button>
+      <button class="sp-icon-external sp-margin-left-1"></button> -->
     </div>
   </div>
   <div class="sp-container-dark sp-alt-one sp-app-content sp-wrapper">
@@ -240,7 +255,55 @@
   </div>
   <div class="sp-app-footer sp-container-dark">
   	<div class="sp-row sp-fluid sp-height-1">
-  		
+      <div class="sp-border-right-base">
+        <div class="sp-selector sp-margin-left-1 sp-small">
+          <input readonly class="sp-padding-icon-left sp-minimal sp-padding-label sp-selector-trigger sp-align-right sp-width-4 sp-small sp-height-1" type="text" value="xH8jkh"/>
+          <div class="sp-selector-overlay sp-icon-creative sp-no-arrows">
+            <div class="sp-selector-label">Creative</div>
+          </div>
+        </div>
+      </div>
+      <div class="sp-border-right-base">
+        <div class="sp-selector sp-margin-left-1 sp-small">
+          <input readonly class="sp-padding-icon-left sp-minimal sp-padding-label sp-selector-trigger sp-align-right sp-width-4 sp-small sp-height-1" type="text" value="0004 (Live)"/>
+          <div class="sp-selector-overlay sp-icon-version">
+            <div class="sp-selector-label">Version</div>
+            <div class="sp-menu-dropdown sp-menu-dropdown-above sp-overlay">
+              <a class="sp-menu-item">0005<i class="sp-inline-icon-circle-info sp-detail-icon"></i><span class="sp-details sp-margin-right-1">Latest</span></a>
+              <a class="sp-menu-item sp-state-active">0004<i class="sp-inline-icon-circle-info sp-detail-icon"></i><span class="sp-details sp-color-success sp-margin-right-1">Live</span></a>
+              <a class="sp-menu-item">0003<i class="sp-inline-icon-circle-info sp-detail-icon"></i></a>
+              <a class="sp-menu-item">0002<i class="sp-inline-icon-circle-info sp-detail-icon"></i></a>
+              <a class="sp-menu-item">0001<i class="sp-inline-icon-circle-info sp-detail-icon"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sp-border-right-base">
+        <div class="sp-selector sp-margin-left-1 sp-small">
+          <input readonly class="sp-padding-icon-left sp-minimal sp-selector-trigger sp-align-right sp-width-2 sp-small sp-height-1" type="text" value="100%"/>
+          <div class="sp-selector-overlay sp-icon-zoom-in">
+            <div class="sp-menu-dropdown sp-menu-dropdown-above sp-overlay">
+              <div class="sp-menu-header">Zoom Level</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sp-border-right-base sp-tooltip sp-tooltip-above">
+        <div class="sp-selector sp-margin-left-1 sp-small">
+          <input readonly class="sp-padding-icon-left sp-minimal sp-selector-trigger sp-align-right sp-small sp-height-1" type="text" value="1.0x" style="width:30px; padding-right: 15px !important"/>
+          <div class="sp-selector-overlay sp-icon-scale-to-fit sp-no-arrows">
+          </div>
+        </div>
+        <div class="sp-tooltip-overlay">Layout Scaling</div>
+      </div>
+      <div class="sp-border-right-base sp-tooltip sp-tooltip-above">
+        <div class="sp-selector sp-margin-left-1 sp-small">
+          <input readonly class="sp-padding-icon-left sp-minimal sp-selector-trigger sp-align-right sp-small sp-height-1" type="text" value="100%" style="width:40px; padding-right: 15px !important"/>
+          <div class="sp-selector-overlay sp-icon-circle-check sp-no-arrows">
+          </div>
+        </div>
+        <div class="sp-tooltip-overlay">Layout Accuracy</div>
+      </div>
   	</div>
   </div>
 

@@ -15,6 +15,22 @@
 		font-weight: 600;
 	}
 
+	.sp-detail-icon {
+		float: right;
+		opacity: 0;
+	}
+
+	.sp-details {
+		float: right;
+		font-weight: 400;
+	}
+
+	@include sp-state(hover) {
+		.sp-detail-icon {
+			opacity: 1;
+		}
+	}
+
 	@include sp-padding(1, vertical);
   	@include sp-padding(2, horizontal);
   	@include sp-font-color(base);

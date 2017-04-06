@@ -1899,436 +1899,436 @@ html {
 .sp-align-justify {
   text-align: justify !important; }
 
-.sp-icon-account::before, .sp-icon-after-account::after {
+.sp-icon-account::before, .sp-icon-after-account::after, .sp-inline-icon-account::before {
   content: "\F000"; }
 
-.sp-icon-advertiser::before, .sp-icon-after-advertiser::after {
+.sp-icon-advertiser::before, .sp-icon-after-advertiser::after, .sp-inline-icon-advertiser::before {
   content: "\F001"; }
 
-.sp-icon-apps::before, .sp-icon-after-apps::after {
+.sp-icon-apps::before, .sp-icon-after-apps::after, .sp-inline-icon-apps::before {
   content: "\F002"; }
 
-.sp-icon-arrow-down::before, .sp-icon-after-arrow-down::after {
+.sp-icon-arrow-down::before, .sp-icon-after-arrow-down::after, .sp-inline-icon-arrow-down::before {
   content: "\F003"; }
 
-.sp-icon-arrow-left::before, .sp-icon-after-arrow-left::after {
+.sp-icon-arrow-left::before, .sp-icon-after-arrow-left::after, .sp-inline-icon-arrow-left::before {
   content: "\F004"; }
 
-.sp-icon-arrow-right::before, .sp-icon-after-arrow-right::after {
+.sp-icon-arrow-right::before, .sp-icon-after-arrow-right::after, .sp-inline-icon-arrow-right::before {
   content: "\F005"; }
 
-.sp-icon-arrow-up::before, .sp-icon-after-arrow-up::after {
+.sp-icon-arrow-up::before, .sp-icon-after-arrow-up::after, .sp-inline-icon-arrow-up::before {
   content: "\F006"; }
 
-.sp-icon-aspect::before, .sp-icon-after-aspect::after {
+.sp-icon-aspect::before, .sp-icon-after-aspect::after, .sp-inline-icon-aspect::before {
   content: "\F007"; }
 
-.sp-icon-atoms::before, .sp-icon-after-atoms::after {
+.sp-icon-atoms::before, .sp-icon-after-atoms::after, .sp-inline-icon-atoms::before {
   content: "\F008"; }
 
-.sp-icon-box-checked::before, .sp-icon-after-box-checked::after {
+.sp-icon-box-checked::before, .sp-icon-after-box-checked::after, .sp-inline-icon-box-checked::before {
   content: "\F009"; }
 
-.sp-icon-box-unchecked::before, .sp-icon-after-box-unchecked::after {
+.sp-icon-box-unchecked::before, .sp-icon-after-box-unchecked::after, .sp-inline-icon-box-unchecked::before {
   content: "\F00A"; }
 
-.sp-icon-bug::before, .sp-icon-after-bug::after {
+.sp-icon-bug::before, .sp-icon-after-bug::after, .sp-inline-icon-bug::before {
   content: "\F00B"; }
 
-.sp-icon-bullseye::before, .sp-icon-after-bullseye::after {
+.sp-icon-bullseye::before, .sp-icon-after-bullseye::after, .sp-inline-icon-bullseye::before {
   content: "\F00C"; }
 
-.sp-icon-chart-bar::before, .sp-icon-after-chart-bar::after {
+.sp-icon-chart-bar::before, .sp-icon-after-chart-bar::after, .sp-inline-icon-chart-bar::before {
   content: "\F00D"; }
 
-[type='checkbox'] + label:before, .sp-icon-check::before, .sp-icon-after-check::after {
+[type='checkbox'] + label:before, .sp-icon-check::before, .sp-icon-after-check::after, .sp-inline-icon-check::before {
   content: "\F00E"; }
 
-.sp-dialog.sp-success .sp-dialog-icon::before, .sp-icon-circle-check::before, .sp-icon-after-circle-check::after {
+.sp-dialog.sp-success .sp-dialog-icon::before, .sp-icon-circle-check::before, .sp-icon-after-circle-check::after, .sp-inline-icon-circle-check::before {
   content: "\F00F"; }
 
-.sp-icon-circle-close::before, .sp-icon-after-circle-close::after {
+.sp-icon-circle-close::before, .sp-icon-after-circle-close::after, .sp-inline-icon-circle-close::before {
   content: "\F010"; }
 
-.sp-icon-circle-help::before, .sp-icon-after-circle-help::after {
+.sp-icon-circle-help::before, .sp-icon-after-circle-help::after, .sp-inline-icon-circle-help::before {
   content: "\F011"; }
 
-.sp-icon-circle-info::before, .sp-icon-after-circle-info::after {
+.sp-icon-circle-info::before, .sp-icon-after-circle-info::after, .sp-inline-icon-circle-info::before {
   content: "\F012"; }
 
-.sp-icon-circle-plus::before, .sp-icon-after-circle-plus::after {
+.sp-icon-circle-plus::before, .sp-icon-after-circle-plus::after, .sp-inline-icon-circle-plus::before {
   content: "\F013"; }
 
-.sp-icon-circle-sync::before, .sp-icon-after-circle-sync::after {
+.sp-icon-circle-sync::before, .sp-icon-after-circle-sync::after, .sp-inline-icon-circle-sync::before {
   content: "\F014"; }
 
-.sp-icon-circle-user::before, .sp-icon-after-circle-user::after {
+.sp-icon-circle-user::before, .sp-icon-after-circle-user::after, .sp-inline-icon-circle-user::before {
   content: "\F015"; }
 
-.sp-icon-client::before, .sp-icon-after-client::after {
+.sp-icon-client::before, .sp-icon-after-client::after, .sp-inline-icon-client::before {
   content: "\F016"; }
 
-.sp-icon-close::before, .sp-icon-after-close::after {
+.sp-icon-close::before, .sp-icon-after-close::after, .sp-inline-icon-close::before {
   content: "\F017"; }
 
-.sp-icon-code::before, .sp-icon-after-code::after {
+.sp-icon-code::before, .sp-icon-after-code::after, .sp-inline-icon-code::before {
   content: "\F018"; }
 
-.sp-icon-console::before, .sp-icon-after-console::after {
+.sp-icon-console::before, .sp-icon-after-console::after, .sp-inline-icon-console::before {
   content: "\F019"; }
 
-.sp-icon-content::before, .sp-icon-after-content::after {
+.sp-icon-content::before, .sp-icon-after-content::after, .sp-inline-icon-content::before {
   content: "\F01A"; }
 
-.sp-icon-copy::before, .sp-icon-after-copy::after {
+.sp-icon-copy::before, .sp-icon-after-copy::after, .sp-inline-icon-copy::before {
   content: "\F01B"; }
 
-.sp-icon-counter::before, .sp-icon-after-counter::after {
+.sp-icon-counter::before, .sp-icon-after-counter::after, .sp-inline-icon-counter::before {
   content: "\F01C"; }
 
-.sp-icon-creative::before, .sp-icon-after-creative::after {
+.sp-icon-creative::before, .sp-icon-after-creative::after, .sp-inline-icon-creative::before {
   content: "\F01D"; }
 
-.sp-dialog.sp-danger .sp-dialog-icon::before, .sp-icon-danger::before, .sp-icon-after-danger::after {
+.sp-dialog.sp-danger .sp-dialog-icon::before, .sp-icon-danger::before, .sp-icon-after-danger::after, .sp-inline-icon-danger::before {
   content: "\F01E"; }
 
-.sp-icon-dashboard::before, .sp-icon-after-dashboard::after {
+.sp-icon-dashboard::before, .sp-icon-after-dashboard::after, .sp-inline-icon-dashboard::before {
   content: "\F01F"; }
 
-.sp-icon-data::before, .sp-icon-after-data::after {
+.sp-icon-data::before, .sp-icon-after-data::after, .sp-inline-icon-data::before {
   content: "\F020"; }
 
-.sp-icon-design::before, .sp-icon-after-design::after {
+.sp-icon-design::before, .sp-icon-after-design::after, .sp-inline-icon-design::before {
   content: "\F021"; }
 
-.sp-icon-devices::before, .sp-icon-after-devices::after {
+.sp-icon-devices::before, .sp-icon-after-devices::after, .sp-inline-icon-devices::before {
   content: "\F022"; }
 
-.sp-icon-download::before, .sp-icon-after-download::after {
+.sp-icon-download::before, .sp-icon-after-download::after, .sp-inline-icon-download::before {
   content: "\F023"; }
 
-.sp-icon-drag-both::before, .sp-icon-after-drag-both::after {
+.sp-icon-drag-both::before, .sp-icon-after-drag-both::after, .sp-inline-icon-drag-both::before {
   content: "\F024"; }
 
-.sp-icon-drag-down::before, .sp-icon-after-drag-down::after {
+.sp-icon-drag-down::before, .sp-icon-after-drag-down::after, .sp-inline-icon-drag-down::before {
   content: "\F025"; }
 
-.sp-icon-drag-up::before, .sp-icon-after-drag-up::after {
+.sp-icon-drag-up::before, .sp-icon-after-drag-up::after, .sp-inline-icon-drag-up::before {
   content: "\F026"; }
 
-select + label::before, .sp-selector > input[type='text'].sp-selector-trigger + .sp-selector-overlay::after, .sp-icon-dropdown::before, .sp-icon-after-dropdown::after {
+select + label::before, .sp-selector > input[type='text'].sp-selector-trigger + .sp-selector-overlay::after, .sp-custom-input > input[type='text'].sp-selector-trigger + .sp-selector-overlay::after, .sp-icon-dropdown::before, .sp-icon-after-dropdown::after, .sp-inline-icon-dropdown::before {
   content: "\F027"; }
 
-.sp-icon-edit::before, .sp-icon-after-edit::after {
+.sp-icon-edit::before, .sp-icon-after-edit::after, .sp-inline-icon-edit::before {
   content: "\F028"; }
 
-.sp-icon-environment::before, .sp-icon-after-environment::after {
+.sp-icon-environment::before, .sp-icon-after-environment::after, .sp-inline-icon-environment::before {
   content: "\F029"; }
 
-.sp-icon-external::before, .sp-icon-after-external::after {
+.sp-icon-external::before, .sp-icon-after-external::after, .sp-inline-icon-external::before {
   content: "\F02A"; }
 
-.sp-icon-eye::before, .sp-icon-after-eye::after {
+.sp-icon-eye::before, .sp-icon-after-eye::after, .sp-inline-icon-eye::before {
   content: "\F02B"; }
 
-.sp-icon-file-2::before, .sp-icon-after-file-2::after {
+.sp-icon-file-2::before, .sp-icon-after-file-2::after, .sp-inline-icon-file-2::before {
   content: "\F02C"; }
 
-.sp-icon-file-cabinet::before, .sp-icon-after-file-cabinet::after {
+.sp-icon-file-cabinet::before, .sp-icon-after-file-cabinet::after, .sp-inline-icon-file-cabinet::before {
   content: "\F02D"; }
 
-.sp-icon-file-css::before, .sp-icon-after-file-css::after {
+.sp-icon-file-css::before, .sp-icon-after-file-css::after, .sp-inline-icon-file-css::before {
   content: "\F02E"; }
 
-.sp-icon-file-gif::before, .sp-icon-after-file-gif::after {
+.sp-icon-file-gif::before, .sp-icon-after-file-gif::after, .sp-inline-icon-file-gif::before {
   content: "\F02F"; }
 
-.sp-icon-file-html::before, .sp-icon-after-file-html::after {
+.sp-icon-file-html::before, .sp-icon-after-file-html::after, .sp-inline-icon-file-html::before {
   content: "\F030"; }
 
-.sp-icon-file-jpg::before, .sp-icon-after-file-jpg::after {
+.sp-icon-file-jpg::before, .sp-icon-after-file-jpg::after, .sp-inline-icon-file-jpg::before {
   content: "\F031"; }
 
-.sp-icon-file-js::before, .sp-icon-after-file-js::after {
+.sp-icon-file-js::before, .sp-icon-after-file-js::after, .sp-inline-icon-file-js::before {
   content: "\F032"; }
 
-.sp-icon-file-json::before, .sp-icon-after-file-json::after {
+.sp-icon-file-json::before, .sp-icon-after-file-json::after, .sp-inline-icon-file-json::before {
   content: "\F033"; }
 
-.sp-icon-file-otf::before, .sp-icon-after-file-otf::after {
+.sp-icon-file-otf::before, .sp-icon-after-file-otf::after, .sp-inline-icon-file-otf::before {
   content: "\F034"; }
 
-.sp-icon-file-png::before, .sp-icon-after-file-png::after {
+.sp-icon-file-png::before, .sp-icon-after-file-png::after, .sp-inline-icon-file-png::before {
   content: "\F035"; }
 
-.sp-icon-file-ttf::before, .sp-icon-after-file-ttf::after {
+.sp-icon-file-ttf::before, .sp-icon-after-file-ttf::after, .sp-inline-icon-file-ttf::before {
   content: "\F036"; }
 
-.sp-icon-file-video::before, .sp-icon-after-file-video::after {
+.sp-icon-file-video::before, .sp-icon-after-file-video::after, .sp-inline-icon-file-video::before {
   content: "\F037"; }
 
-.sp-icon-file-woff::before, .sp-icon-after-file-woff::after {
+.sp-icon-file-woff::before, .sp-icon-after-file-woff::after, .sp-inline-icon-file-woff::before {
   content: "\F038"; }
 
-.sp-icon-file::before, .sp-icon-after-file::after {
+.sp-icon-file::before, .sp-icon-after-file::after, .sp-inline-icon-file::before {
   content: "\F039"; }
 
-.sp-icon-filled-info::before, .sp-icon-after-filled-info::after {
+.sp-icon-filled-info::before, .sp-icon-after-filled-info::after, .sp-inline-icon-filled-info::before {
   content: "\F03A"; }
 
-.sp-icon-filter::before, .sp-icon-after-filter::after {
+.sp-icon-filter::before, .sp-icon-after-filter::after, .sp-inline-icon-filter::before {
   content: "\F03B"; }
 
-.sp-icon-flag::before, .sp-icon-after-flag::after {
+.sp-icon-flag::before, .sp-icon-after-flag::after, .sp-inline-icon-flag::before {
   content: "\F03C"; }
 
-.sp-icon-focus::before, .sp-icon-after-focus::after {
+.sp-icon-focus::before, .sp-icon-after-focus::after, .sp-inline-icon-focus::before {
   content: "\F03D"; }
 
-.sp-icon-folder::before, .sp-icon-after-folder::after {
+.sp-icon-folder::before, .sp-icon-after-folder::after, .sp-inline-icon-folder::before {
   content: "\F03E"; }
 
-.sp-icon-font::before, .sp-icon-after-font::after {
+.sp-icon-font::before, .sp-icon-after-font::after, .sp-inline-icon-font::before {
   content: "\F03F"; }
 
-.sp-icon-format::before, .sp-icon-after-format::after {
+.sp-icon-format::before, .sp-icon-after-format::after, .sp-inline-icon-format::before {
   content: "\F040"; }
 
-.sp-icon-gallery::before, .sp-icon-after-gallery::after {
+.sp-icon-gallery::before, .sp-icon-after-gallery::after, .sp-inline-icon-gallery::before {
   content: "\F041"; }
 
-.sp-icon-google::before, .sp-icon-after-google::after {
+.sp-icon-google::before, .sp-icon-after-google::after, .sp-inline-icon-google::before {
   content: "\F042"; }
 
-.sp-icon-grid::before, .sp-icon-after-grid::after {
+.sp-icon-grid::before, .sp-icon-after-grid::after, .sp-inline-icon-grid::before {
   content: "\F043"; }
 
-.sp-icon-height-scale::before, .sp-icon-after-height-scale::after {
+.sp-icon-height-scale::before, .sp-icon-after-height-scale::after, .sp-inline-icon-height-scale::before {
   content: "\F044"; }
 
-.sp-icon-height::before, .sp-icon-after-height::after {
+.sp-icon-height::before, .sp-icon-after-height::after, .sp-inline-icon-height::before {
   content: "\F045"; }
 
-.sp-icon-horizontal-grid::before, .sp-icon-after-horizontal-grid::after {
+.sp-icon-horizontal-grid::before, .sp-icon-after-horizontal-grid::after, .sp-inline-icon-horizontal-grid::before {
   content: "\F046"; }
 
-.sp-icon-image::before, .sp-icon-after-image::after {
+.sp-icon-image::before, .sp-icon-after-image::after, .sp-inline-icon-image::before {
   content: "\F047"; }
 
-.sp-icon-info::before, .sp-icon-after-info::after {
+.sp-icon-info::before, .sp-icon-after-info::after, .sp-inline-icon-info::before {
   content: "\F048"; }
 
-.sp-icon-interaction::before, .sp-icon-after-interaction::after {
+.sp-icon-interaction::before, .sp-icon-after-interaction::after, .sp-inline-icon-interaction::before {
   content: "\F049"; }
 
-.sp-icon-key::before, .sp-icon-after-key::after {
+.sp-icon-key::before, .sp-icon-after-key::after, .sp-inline-icon-key::before {
   content: "\F04A"; }
 
-.sp-icon-layers::before, .sp-icon-after-layers::after {
+.sp-icon-layers::before, .sp-icon-after-layers::after, .sp-inline-icon-layers::before {
   content: "\F04B"; }
 
-.sp-icon-layout::before, .sp-icon-after-layout::after {
+.sp-icon-layout::before, .sp-icon-after-layout::after, .sp-inline-icon-layout::before {
   content: "\F04C"; }
 
-.sp-icon-library::before, .sp-icon-after-library::after {
+.sp-icon-library::before, .sp-icon-after-library::after, .sp-inline-icon-library::before {
   content: "\F04D"; }
 
-.sp-icon-link::before, .sp-icon-after-link::after {
+.sp-icon-link::before, .sp-icon-after-link::after, .sp-inline-icon-link::before {
   content: "\F04E"; }
 
-.sp-icon-linkedin::before, .sp-icon-after-linkedin::after {
+.sp-icon-linkedin::before, .sp-icon-after-linkedin::after, .sp-inline-icon-linkedin::before {
   content: "\F04F"; }
 
-.sp-icon-list-detailed::before, .sp-icon-after-list-detailed::after {
+.sp-icon-list-detailed::before, .sp-icon-after-list-detailed::after, .sp-inline-icon-list-detailed::before {
   content: "\F050"; }
 
-.sp-icon-list::before, .sp-icon-after-list::after {
+.sp-icon-list::before, .sp-icon-after-list::after, .sp-inline-icon-list::before {
   content: "\F051"; }
 
-.sp-icon-live::before, .sp-icon-after-live::after {
+.sp-icon-live::before, .sp-icon-after-live::after, .sp-inline-icon-live::before {
   content: "\F052"; }
 
-.sp-icon-location::before, .sp-icon-after-location::after {
+.sp-icon-location::before, .sp-icon-after-location::after, .sp-inline-icon-location::before {
   content: "\F053"; }
 
-.sp-icon-locked::before, .sp-icon-after-locked::after {
+.sp-icon-locked::before, .sp-icon-after-locked::after, .sp-inline-icon-locked::before {
   content: "\F054"; }
 
-.sp-logo-mark::before, .sp-logo-lockup:before, .sp-icon-logo-mark::before, .sp-icon-after-logo-mark::after {
+.sp-logo-mark::before, .sp-logo-lockup:before, .sp-icon-logo-mark::before, .sp-icon-after-logo-mark::after, .sp-inline-icon-logo-mark::before {
   content: "\F055"; }
 
-.sp-logo-name:before, .sp-logo-lockup:after, .sp-icon-logo-name::before, .sp-icon-after-logo-name::after {
+.sp-logo-name:before, .sp-logo-lockup:after, .sp-icon-logo-name::before, .sp-icon-after-logo-name::after, .sp-inline-icon-logo-name::before {
   content: "\F056"; }
 
-.sp-icon-logout::before, .sp-icon-after-logout::after {
+.sp-icon-logout::before, .sp-icon-after-logout::after, .sp-inline-icon-logout::before {
   content: "\F057"; }
 
-.sp-icon-marker::before, .sp-icon-after-marker::after {
+.sp-icon-marker::before, .sp-icon-after-marker::after, .sp-inline-icon-marker::before {
   content: "\F058"; }
 
-.sp-icon-menu::before, .sp-icon-after-menu::after {
+.sp-icon-menu::before, .sp-icon-after-menu::after, .sp-inline-icon-menu::before {
   content: "\F059"; }
 
-.sp-icon-message::before, .sp-icon-after-message::after {
+.sp-icon-message::before, .sp-icon-after-message::after, .sp-inline-icon-message::before {
   content: "\F05A"; }
 
-.sp-icon-molecules::before, .sp-icon-after-molecules::after {
+.sp-icon-molecules::before, .sp-icon-after-molecules::after, .sp-inline-icon-molecules::before {
   content: "\F05B"; }
 
-.sp-icon-monitor::before, .sp-icon-after-monitor::after {
+.sp-icon-monitor::before, .sp-icon-after-monitor::after, .sp-inline-icon-monitor::before {
   content: "\F05C"; }
 
-.sp-icon-moon::before, .sp-icon-after-moon::after {
+.sp-icon-moon::before, .sp-icon-after-moon::after, .sp-inline-icon-moon::before {
   content: "\F05D"; }
 
-.sp-icon-more::before, .sp-icon-after-more::after {
+.sp-icon-more::before, .sp-icon-after-more::after, .sp-inline-icon-more::before {
   content: "\F05E"; }
 
-.sp-icon-notification::before, .sp-icon-after-notification::after {
+.sp-icon-notification::before, .sp-icon-after-notification::after, .sp-inline-icon-notification::before {
   content: "\F05F"; }
 
-.sp-icon-organisms::before, .sp-icon-after-organisms::after {
+.sp-icon-organisms::before, .sp-icon-after-organisms::after, .sp-inline-icon-organisms::before {
   content: "\F060"; }
 
-.sp-icon-organization::before, .sp-icon-after-organization::after {
+.sp-icon-organization::before, .sp-icon-after-organization::after, .sp-inline-icon-organization::before {
   content: "\F061"; }
 
-.sp-icon-panel::before, .sp-icon-after-panel::after {
+.sp-icon-panel::before, .sp-icon-after-panel::after, .sp-inline-icon-panel::before {
   content: "\F062"; }
 
-.sp-icon-paper-plane::before, .sp-icon-after-paper-plane::after {
+.sp-icon-paper-plane::before, .sp-icon-after-paper-plane::after, .sp-inline-icon-paper-plane::before {
   content: "\F063"; }
 
-.sp-icon-person::before, .sp-icon-after-person::after {
+.sp-icon-person::before, .sp-icon-after-person::after, .sp-inline-icon-person::before {
   content: "\F064"; }
 
-.sp-icon-plugin::before, .sp-icon-after-plugin::after {
+.sp-icon-plugin::before, .sp-icon-after-plugin::after, .sp-inline-icon-plugin::before {
   content: "\F065"; }
 
-.sp-icon-properties::before, .sp-icon-after-properties::after {
+.sp-icon-properties::before, .sp-icon-after-properties::after, .sp-inline-icon-properties::before {
   content: "\F066"; }
 
-.sp-icon-quarks::before, .sp-icon-after-quarks::after {
+.sp-icon-quarks::before, .sp-icon-after-quarks::after, .sp-inline-icon-quarks::before {
   content: "\F067"; }
 
-.sp-icon-rectangle-corners::before, .sp-icon-after-rectangle-corners::after {
+.sp-icon-rectangle-corners::before, .sp-icon-after-rectangle-corners::after, .sp-inline-icon-rectangle-corners::before {
   content: "\F068"; }
 
-.sp-icon-redo::before, .sp-icon-after-redo::after {
+.sp-icon-redo::before, .sp-icon-after-redo::after, .sp-inline-icon-redo::before {
   content: "\F069"; }
 
-.sp-icon-reload::before, .sp-icon-after-reload::after {
+.sp-icon-reload::before, .sp-icon-after-reload::after, .sp-inline-icon-reload::before {
   content: "\F06A"; }
 
-.sp-icon-replace::before, .sp-icon-after-replace::after {
+.sp-icon-replace::before, .sp-icon-after-replace::after, .sp-inline-icon-replace::before {
   content: "\F06B"; }
 
-.sp-icon-reset::before, .sp-icon-after-reset::after {
+.sp-icon-reset::before, .sp-icon-after-reset::after, .sp-inline-icon-reset::before {
   content: "\F06C"; }
 
-.sp-icon-resize::before, .sp-icon-after-resize::after {
+.sp-icon-resize::before, .sp-icon-after-resize::after, .sp-inline-icon-resize::before {
   content: "\F06D"; }
 
-.sp-icon-rotate-device::before, .sp-icon-after-rotate-device::after {
+.sp-icon-rotate-device::before, .sp-icon-after-rotate-device::after, .sp-inline-icon-rotate-device::before {
   content: "\F06E"; }
 
-.sp-icon-ruler::before, .sp-icon-after-ruler::after {
+.sp-icon-ruler::before, .sp-icon-after-ruler::after, .sp-inline-icon-ruler::before {
   content: "\F06F"; }
 
-.sp-icon-save::before, .sp-icon-after-save::after {
+.sp-icon-save::before, .sp-icon-after-save::after, .sp-inline-icon-save::before {
   content: "\F070"; }
 
-.sp-icon-scale-to-fit::before, .sp-icon-after-scale-to-fit::after {
+.sp-icon-scale-to-fit::before, .sp-icon-after-scale-to-fit::after, .sp-inline-icon-scale-to-fit::before {
   content: "\F071"; }
 
-.sp-icon-search::before, .sp-icon-after-search::after {
+.sp-icon-search::before, .sp-icon-after-search::after, .sp-inline-icon-search::before {
   content: "\F072"; }
 
-.sp-icon-settings::before, .sp-icon-after-settings::after {
+.sp-icon-settings::before, .sp-icon-after-settings::after, .sp-inline-icon-settings::before {
   content: "\F073"; }
 
-.sp-icon-share::before, .sp-icon-after-share::after {
+.sp-icon-share::before, .sp-icon-after-share::after, .sp-inline-icon-share::before {
   content: "\F074"; }
 
-.sp-icon-site::before, .sp-icon-after-site::after {
+.sp-icon-site::before, .sp-icon-after-site::after, .sp-inline-icon-site::before {
   content: "\F075"; }
 
-.sp-icon-size::before, .sp-icon-after-size::after {
+.sp-icon-size::before, .sp-icon-after-size::after, .sp-inline-icon-size::before {
   content: "\F076"; }
 
-.sp-icon-sort-down::before, .sp-icon-after-sort-down::after {
+.sp-icon-sort-down::before, .sp-icon-after-sort-down::after, .sp-inline-icon-sort-down::before {
   content: "\F077"; }
 
-.sp-icon-star::before, .sp-icon-after-star::after {
+.sp-icon-star::before, .sp-icon-after-star::after, .sp-inline-icon-star::before {
   content: "\F078"; }
 
-.sp-icon-states::before, .sp-icon-after-states::after {
+.sp-icon-states::before, .sp-icon-after-states::after, .sp-inline-icon-states::before {
   content: "\F079"; }
 
-.sp-icon-sun::before, .sp-icon-after-sun::after {
+.sp-icon-sun::before, .sp-icon-after-sun::after, .sp-inline-icon-sun::before {
   content: "\F07A"; }
 
-.sp-icon-sync::before, .sp-icon-after-sync::after {
+.sp-icon-sync::before, .sp-icon-after-sync::after, .sp-inline-icon-sync::before {
   content: "\F07B"; }
 
-.sp-icon-templates::before, .sp-icon-after-templates::after {
+.sp-icon-templates::before, .sp-icon-after-templates::after, .sp-inline-icon-templates::before {
   content: "\F07C"; }
 
-.sp-icon-time::before, .sp-icon-after-time::after {
+.sp-icon-time::before, .sp-icon-after-time::after, .sp-inline-icon-time::before {
   content: "\F07D"; }
 
-.sp-icon-timer::before, .sp-icon-after-timer::after {
+.sp-icon-timer::before, .sp-icon-after-timer::after, .sp-inline-icon-timer::before {
   content: "\F07E"; }
 
-.sp-icon-tools::before, .sp-icon-after-tools::after {
+.sp-icon-tools::before, .sp-icon-after-tools::after, .sp-inline-icon-tools::before {
   content: "\F07F"; }
 
-.sp-icon-tracker::before, .sp-icon-after-tracker::after {
+.sp-icon-tracker::before, .sp-icon-after-tracker::after, .sp-inline-icon-tracker::before {
   content: "\F080"; }
 
-.sp-icon-trash::before, .sp-icon-after-trash::after {
+.sp-icon-trash::before, .sp-icon-after-trash::after, .sp-inline-icon-trash::before {
   content: "\F081"; }
 
-.sp-icon-triangle-down::before, .sp-icon-after-triangle-down::after {
+.sp-icon-triangle-down::before, .sp-icon-after-triangle-down::after, .sp-inline-icon-triangle-down::before {
   content: "\F082"; }
 
-.sp-icon-undo::before, .sp-icon-after-undo::after {
+.sp-icon-undo::before, .sp-icon-after-undo::after, .sp-inline-icon-undo::before {
   content: "\F083"; }
 
-.sp-icon-unlink::before, .sp-icon-after-unlink::after {
+.sp-icon-unlink::before, .sp-icon-after-unlink::after, .sp-inline-icon-unlink::before {
   content: "\F084"; }
 
-.sp-icon-unlocked::before, .sp-icon-after-unlocked::after {
+.sp-icon-unlocked::before, .sp-icon-after-unlocked::after, .sp-inline-icon-unlocked::before {
   content: "\F085"; }
 
-.sp-icon-upload::before, .sp-icon-after-upload::after {
+.sp-icon-upload::before, .sp-icon-after-upload::after, .sp-inline-icon-upload::before {
   content: "\F086"; }
 
-.sp-icon-user-guide::before, .sp-icon-after-user-guide::after {
+.sp-icon-user-guide::before, .sp-icon-after-user-guide::after, .sp-inline-icon-user-guide::before {
   content: "\F087"; }
 
-.sp-icon-version::before, .sp-icon-after-version::after {
+.sp-icon-version::before, .sp-icon-after-version::after, .sp-inline-icon-version::before {
   content: "\F088"; }
 
-.sp-icon-video::before, .sp-icon-after-video::after {
+.sp-icon-video::before, .sp-icon-after-video::after, .sp-inline-icon-video::before {
   content: "\F089"; }
 
-.sp-dialog.sp-warning .sp-dialog-icon::before, .sp-icon-warning::before, .sp-icon-after-warning::after {
+.sp-dialog.sp-warning .sp-dialog-icon::before, .sp-icon-warning::before, .sp-icon-after-warning::after, .sp-inline-icon-warning::before {
   content: "\F08A"; }
 
-.sp-icon-weight::before, .sp-icon-after-weight::after {
+.sp-icon-weight::before, .sp-icon-after-weight::after, .sp-inline-icon-weight::before {
   content: "\F08B"; }
 
-.sp-icon-width-scale::before, .sp-icon-after-width-scale::after {
+.sp-icon-width-scale::before, .sp-icon-after-width-scale::after, .sp-inline-icon-width-scale::before {
   content: "\F08C"; }
 
-.sp-icon-width::before, .sp-icon-after-width::after {
+.sp-icon-width::before, .sp-icon-after-width::after, .sp-inline-icon-width::before {
   content: "\F08D"; }
 
-.sp-icon-zoom-in::before, .sp-icon-after-zoom-in::after {
+.sp-icon-zoom-in::before, .sp-icon-after-zoom-in::after, .sp-inline-icon-zoom-in::before {
   content: "\F08E"; }
 
-[class^='sp-icon-']::before, [class*=' sp-icon-']::before, .sp-icon::before {
+[class^='sp-icon-']::before, [class*=' sp-icon-']::before, [class^='sp-inline-icon-']::before, [class*=' sp-inline-icon-']::before, .sp-icon::before {
   font-family: 'Icon Font' !important;
   speak: none;
   font-style: normal;
@@ -2358,6 +2358,9 @@ select + label::before, .sp-selector > input[type='text'].sp-selector-trigger + 
   -moz-osx-font-smoothing: grayscale;
   /* Better positioning */
   display: inline-block; }
+
+[class^='sp-inline-icon-']::before, [class*=' sp-inline-icon-']::before {
+  transform: translateY(18%) scale(1.15); }
 
 [class*="sp-icon-"]:before, [class*="sp-icon-"].sp-base:before, .sp-base [class*="sp-icon-"]:before {
   font-size: 1.47rem; }
@@ -3232,6 +3235,7 @@ input[type='reset'] {
   overflow: hidden;
   display: inline-block;
   box-sizing: border-box;
+  min-width: 43.7px;
   color: rgba(0, 0, 0, 0.8);
   border-color: rgba(0, 0, 0, 0.22);
   border-style: solid;
@@ -3946,7 +3950,8 @@ input[type='reset'] {
     padding-top: 0.55rem;
     padding-bottom: 0.65rem;
     height: 31.66px;
-    line-height: 1; }
+    line-height: 1;
+    min-width: 31.66px; }
     button.sp-small[class*="sp-icon-"]::before, .sp-small button[class*="sp-icon-"]::before,
     .sp-button.sp-small[class*="sp-icon-"]::before, .sp-small
     .sp-button[class*="sp-icon-"]::before,
@@ -3990,7 +3995,8 @@ input[type='reset'] {
     padding-bottom: 0.8rem;
     padding-left: 1.6rem;
     padding-right: 1.6rem;
-    height: 44.39px; }
+    height: 44.39px;
+    min-width: 44.39px; }
     button.sp-large[class*="sp-icon-"]::before, .sp-large button[class*="sp-icon-"]::before,
     .sp-button.sp-large[class*="sp-icon-"]::before, .sp-large
     .sp-button[class*="sp-icon-"]::before,
@@ -5306,6 +5312,7 @@ select, input:not([type='button']):not([type='submit']):not([type='reset']):not(
     box-shadow: inset 0 0 0.4em 0.07em rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     height: 43.7px;
+    line-height: 43.7px;
     min-width: 43.7px;
     padding-left: 0.8rem;
     padding-right: 0.8rem; }
@@ -5417,10 +5424,10 @@ select, input:not([type='button']):not([type='submit']):not([type='reset']):not(
         border-color: #FF2455; }
     select:not(.sp-minimal).sp-small, .sp-small select:not(.sp-minimal), input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']):not(.sp-minimal).sp-small, .sp-small input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']):not(.sp-minimal) {
       box-sizing: border-box;
+      line-height: 31.66px;
       height: 31.66px;
       max-height: 31.66px;
       min-width: 31.66px;
-      line-height: 3;
       padding-left: 0.4rem;
       padding-right: 0.4rem; }
       select:not(.sp-minimal).sp-small.sp-rounded, .sp-small select:not(.sp-minimal).sp-rounded, input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']):not(.sp-minimal).sp-small.sp-rounded, .sp-small input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']):not(.sp-minimal).sp-rounded {
@@ -5428,6 +5435,7 @@ select, input:not([type='button']):not([type='submit']):not([type='reset']):not(
         padding-right: 0.8rem; }
     select:not(.sp-minimal).sp-large, .sp-large select:not(.sp-minimal), input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']):not(.sp-minimal).sp-large, .sp-large input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']):not(.sp-minimal) {
       box-sizing: border-box;
+      line-height: 44.39px;
       height: 44.39px;
       max-height: 44.39px;
       min-width: 44.39px; }
@@ -5922,6 +5930,14 @@ input[type='radio'] {
   color: rgba(0, 0, 0, 0.5); }
   .sp-menu-item:not(.sp-label) {
     font-weight: 600; }
+  .sp-menu-item .sp-detail-icon {
+    float: right;
+    opacity: 0; }
+  .sp-menu-item .sp-details {
+    float: right;
+    font-weight: 400; }
+  .sp-menu-item:hover .sp-detail-icon, .sp-menu-item.sp-state-hover .sp-detail-icon {
+    opacity: 1; }
   .sp-menu-item .sp-container-dark, .sp-menu-item.sp-container-dark,
   .sp-container-dark .sp-menu-item {
     color: rgba(255, 255, 255, 0.56); }
@@ -6543,7 +6559,10 @@ blockquote {
   position: relative; }
   .sp-tooltip .sp-tooltip-overlay {
     font-size: 0.87rem;
-    padding: 0.8rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
     box-shadow: 0 0 0.4em 0.27em rgba(0, 0, 0, 0.12);
     background-color: #FFFFFF;
     border-radius: 4px;
@@ -6560,8 +6579,7 @@ blockquote {
     white-space: nowrap;
     box-sizing: border-box;
     z-index: 100;
-    min-width: 38.59px;
-    min-height: 38.59px; }
+    min-width: 38.59px; }
     .sp-tooltip .sp-tooltip-overlay .sp-container-dark, .sp-tooltip .sp-tooltip-overlay.sp-container-dark,
     .sp-container-dark .sp-tooltip .sp-tooltip-overlay {
       box-shadow: 0 0 0.4em 0.27em rgba(0, 0, 0, 0.22); }
@@ -6932,38 +6950,43 @@ blockquote {
   .sp-multi-input > select + label {
     left: -6px; }
 
-.sp-selector {
+.sp-selector, .sp-custom-input {
   position: relative;
   display: inline-block; }
-  .sp-selector.sp-small > .sp-selector-overlay[class^='sp-icon-']::before, .sp-selector.sp-small > .sp-selector-overlay[class*=' sp-icon-']::before, .sp-small .sp-selector > .sp-selector-overlay[class^='sp-icon-']::before, .sp-small .sp-selector > .sp-selector-overlay[class*=' sp-icon-']::before {
+  .sp-selector.sp-small > .sp-selector-overlay[class^='sp-icon-']::before, .sp-selector.sp-small > .sp-selector-overlay[class*=' sp-icon-']::before, .sp-selector.sp-small > .sp-custom-input-overlay[class^='sp-icon-']::before, .sp-selector.sp-small > .sp-custom-input-overlay[class*=' sp-icon-']::before, .sp-small .sp-selector > .sp-selector-overlay[class^='sp-icon-']::before, .sp-small .sp-selector > .sp-selector-overlay[class*=' sp-icon-']::before, .sp-small .sp-selector > .sp-custom-input-overlay[class^='sp-icon-']::before, .sp-small .sp-selector > .sp-custom-input-overlay[class*=' sp-icon-']::before, .sp-custom-input.sp-small > .sp-selector-overlay[class^='sp-icon-']::before, .sp-custom-input.sp-small > .sp-selector-overlay[class*=' sp-icon-']::before, .sp-custom-input.sp-small > .sp-custom-input-overlay[class^='sp-icon-']::before, .sp-custom-input.sp-small > .sp-custom-input-overlay[class*=' sp-icon-']::before, .sp-small .sp-custom-input > .sp-selector-overlay[class^='sp-icon-']::before, .sp-small .sp-custom-input > .sp-selector-overlay[class*=' sp-icon-']::before, .sp-small .sp-custom-input > .sp-custom-input-overlay[class^='sp-icon-']::before, .sp-small .sp-custom-input > .sp-custom-input-overlay[class*=' sp-icon-']::before {
     margin-left: 0.4rem; }
-  .sp-selector.sp-small > .sp-selector-overlay[class^='sp-icon-'] > .sp-selector-label, .sp-selector.sp-small > .sp-selector-overlay[class*=' sp-icon-'] > .sp-selector-label, .sp-small .sp-selector > .sp-selector-overlay[class^='sp-icon-'] > .sp-selector-label, .sp-small .sp-selector > .sp-selector-overlay[class*=' sp-icon-'] > .sp-selector-label {
+  .sp-selector.sp-small > .sp-selector-overlay[class^='sp-icon-'] > .sp-selector-label, .sp-selector.sp-small > .sp-selector-overlay[class^='sp-icon-'] > .sp-custom-input-label, .sp-selector.sp-small > .sp-selector-overlay[class*=' sp-icon-'] > .sp-selector-label, .sp-selector.sp-small > .sp-selector-overlay[class*=' sp-icon-'] > .sp-custom-input-label, .sp-selector.sp-small > .sp-custom-input-overlay[class^='sp-icon-'] > .sp-selector-label, .sp-selector.sp-small > .sp-custom-input-overlay[class^='sp-icon-'] > .sp-custom-input-label, .sp-selector.sp-small > .sp-custom-input-overlay[class*=' sp-icon-'] > .sp-selector-label, .sp-selector.sp-small > .sp-custom-input-overlay[class*=' sp-icon-'] > .sp-custom-input-label, .sp-small .sp-selector > .sp-selector-overlay[class^='sp-icon-'] > .sp-selector-label, .sp-small .sp-selector > .sp-selector-overlay[class^='sp-icon-'] > .sp-custom-input-label, .sp-small .sp-selector > .sp-selector-overlay[class*=' sp-icon-'] > .sp-selector-label, .sp-small .sp-selector > .sp-selector-overlay[class*=' sp-icon-'] > .sp-custom-input-label, .sp-small .sp-selector > .sp-custom-input-overlay[class^='sp-icon-'] > .sp-selector-label, .sp-small .sp-selector > .sp-custom-input-overlay[class^='sp-icon-'] > .sp-custom-input-label, .sp-small .sp-selector > .sp-custom-input-overlay[class*=' sp-icon-'] > .sp-selector-label, .sp-small .sp-selector > .sp-custom-input-overlay[class*=' sp-icon-'] > .sp-custom-input-label, .sp-custom-input.sp-small > .sp-selector-overlay[class^='sp-icon-'] > .sp-selector-label, .sp-custom-input.sp-small > .sp-selector-overlay[class^='sp-icon-'] > .sp-custom-input-label, .sp-custom-input.sp-small > .sp-selector-overlay[class*=' sp-icon-'] > .sp-selector-label, .sp-custom-input.sp-small > .sp-selector-overlay[class*=' sp-icon-'] > .sp-custom-input-label, .sp-custom-input.sp-small > .sp-custom-input-overlay[class^='sp-icon-'] > .sp-selector-label, .sp-custom-input.sp-small > .sp-custom-input-overlay[class^='sp-icon-'] > .sp-custom-input-label, .sp-custom-input.sp-small > .sp-custom-input-overlay[class*=' sp-icon-'] > .sp-selector-label, .sp-custom-input.sp-small > .sp-custom-input-overlay[class*=' sp-icon-'] > .sp-custom-input-label, .sp-small .sp-custom-input > .sp-selector-overlay[class^='sp-icon-'] > .sp-selector-label, .sp-small .sp-custom-input > .sp-selector-overlay[class^='sp-icon-'] > .sp-custom-input-label, .sp-small .sp-custom-input > .sp-selector-overlay[class*=' sp-icon-'] > .sp-selector-label, .sp-small .sp-custom-input > .sp-selector-overlay[class*=' sp-icon-'] > .sp-custom-input-label, .sp-small .sp-custom-input > .sp-custom-input-overlay[class^='sp-icon-'] > .sp-selector-label, .sp-small .sp-custom-input > .sp-custom-input-overlay[class^='sp-icon-'] > .sp-custom-input-label, .sp-small .sp-custom-input > .sp-custom-input-overlay[class*=' sp-icon-'] > .sp-selector-label, .sp-small .sp-custom-input > .sp-custom-input-overlay[class*=' sp-icon-'] > .sp-custom-input-label {
     left: 1.5em; }
-  .sp-selector > .sp-selector-overlay {
+  .sp-selector > .sp-selector-overlay, .sp-selector > .sp-custom-input-overlay, .sp-custom-input > .sp-selector-overlay, .sp-custom-input > .sp-custom-input-overlay {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     pointer-events: none; }
-    .sp-selector > .sp-selector-overlay[class^='sp-icon-']::before, .sp-selector > .sp-selector-overlay[class*=' sp-icon-']::before {
+    .sp-selector > .sp-selector-overlay[class^='sp-icon-']::before, .sp-selector > .sp-selector-overlay[class*=' sp-icon-']::before, .sp-selector > .sp-custom-input-overlay[class^='sp-icon-']::before, .sp-selector > .sp-custom-input-overlay[class*=' sp-icon-']::before, .sp-custom-input > .sp-selector-overlay[class^='sp-icon-']::before, .sp-custom-input > .sp-selector-overlay[class*=' sp-icon-']::before, .sp-custom-input > .sp-custom-input-overlay[class^='sp-icon-']::before, .sp-custom-input > .sp-custom-input-overlay[class*=' sp-icon-']::before {
       display: inline-block;
       position: absolute;
       top: 50%;
       left: 0;
       transform: translateY(-50%);
       margin-left: 0.8rem; }
-    .sp-selector > .sp-selector-overlay[class^='sp-icon-'] > .sp-selector-label, .sp-selector > .sp-selector-overlay[class*=' sp-icon-'] > .sp-selector-label {
+    .sp-selector > .sp-selector-overlay[class^='sp-icon-'] > .sp-selector-label, .sp-selector > .sp-selector-overlay[class^='sp-icon-'] > .sp-custom-input-label, .sp-selector > .sp-selector-overlay[class*=' sp-icon-'] > .sp-selector-label, .sp-selector > .sp-selector-overlay[class*=' sp-icon-'] > .sp-custom-input-label, .sp-selector > .sp-custom-input-overlay[class^='sp-icon-'] > .sp-selector-label, .sp-selector > .sp-custom-input-overlay[class^='sp-icon-'] > .sp-custom-input-label, .sp-selector > .sp-custom-input-overlay[class*=' sp-icon-'] > .sp-selector-label, .sp-selector > .sp-custom-input-overlay[class*=' sp-icon-'] > .sp-custom-input-label, .sp-custom-input > .sp-selector-overlay[class^='sp-icon-'] > .sp-selector-label, .sp-custom-input > .sp-selector-overlay[class^='sp-icon-'] > .sp-custom-input-label, .sp-custom-input > .sp-selector-overlay[class*=' sp-icon-'] > .sp-selector-label, .sp-custom-input > .sp-selector-overlay[class*=' sp-icon-'] > .sp-custom-input-label, .sp-custom-input > .sp-custom-input-overlay[class^='sp-icon-'] > .sp-selector-label, .sp-custom-input > .sp-custom-input-overlay[class^='sp-icon-'] > .sp-custom-input-label, .sp-custom-input > .sp-custom-input-overlay[class*=' sp-icon-'] > .sp-selector-label, .sp-custom-input > .sp-custom-input-overlay[class*=' sp-icon-'] > .sp-custom-input-label {
       position: absolute;
       left: 2.1em; }
-    .sp-selector > .sp-selector-overlay > .sp-selector-label {
+    .sp-selector > .sp-selector-overlay > .sp-selector-label, .sp-selector > .sp-selector-overlay > .sp-custom-input-label, .sp-selector > .sp-custom-input-overlay > .sp-selector-label, .sp-selector > .sp-custom-input-overlay > .sp-custom-input-label, .sp-custom-input > .sp-selector-overlay > .sp-selector-label, .sp-custom-input > .sp-selector-overlay > .sp-custom-input-label, .sp-custom-input > .sp-custom-input-overlay > .sp-selector-label, .sp-custom-input > .sp-custom-input-overlay > .sp-custom-input-label {
       position: absolute;
       margin-left: 0.8rem;
-      width: 8.2rem;
-      top: 47%;
-      transform: translateY(-50%);
-      opacity: 0.65; }
-    .sp-selector > .sp-selector-overlay > .sp-menu-dropdown {
+      line-height: 43.7px;
+      height: 43.7px;
+      width: 25%;
+      top: 0;
+      opacity: 0.65;
+      text-align: left;
+      word-wrap: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .sp-selector > .sp-selector-overlay > .sp-menu-dropdown, .sp-selector > .sp-custom-input-overlay > .sp-menu-dropdown, .sp-custom-input > .sp-selector-overlay > .sp-menu-dropdown, .sp-custom-input > .sp-custom-input-overlay > .sp-menu-dropdown {
       position: absolute;
       top: 0;
       left: 50%;
@@ -6974,25 +6997,34 @@ blockquote {
       margin-top: 5px;
       visibility: hidden;
       pointer-events: none;
-      min-width: 100%; }
-      .sp-selector > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-above {
+      min-width: 100%;
+      max-height: 75vh;
+      overflow-y: auto; }
+      .sp-selector > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-selector > .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-custom-input > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-custom-input > .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-above {
         top: auto;
         bottom: 0%;
         transition: 0.25s ease bottom, 0.5s ease opacity, 0.5s ease visibility; }
-      .sp-selector > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-left {
+      .sp-selector > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-left, .sp-selector > .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-left, .sp-custom-input > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-left, .sp-custom-input > .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-left {
         top: 50%;
         transform: translateY(-50%);
         left: auto;
         right: 0%;
         transition: 0.25s ease right, 0.5s ease opacity, 0.5s ease visibility; }
-      .sp-selector > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-right {
+      .sp-selector > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-right, .sp-selector > .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-right, .sp-custom-input > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-right, .sp-custom-input > .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-right {
         top: 50%;
         transform: translateY(-50%);
         left: 0%;
         transition: 0.25s ease left, 0.5s ease opacity, 0.5s ease visibility; }
-  .sp-selector > input[type='text'].sp-selector-trigger {
-    padding-right: 1.7em !important; }
-    .sp-selector > input[type='text'].sp-selector-trigger + .sp-selector-overlay::after {
+  .sp-selector > input[type='text'].sp-selector-trigger, .sp-custom-input > input[type='text'].sp-selector-trigger {
+    padding-right: 1.7em !important;
+    cursor: pointer; }
+    .sp-selector > input[type='text'].sp-selector-trigger.sp-minimal, .sp-custom-input > input[type='text'].sp-selector-trigger.sp-minimal {
+      padding-right: 2.7em !important; }
+      .sp-selector > input[type='text'].sp-selector-trigger.sp-minimal + .sp-selector-overlay > .sp-selector-label, .sp-custom-input > input[type='text'].sp-selector-trigger.sp-minimal + .sp-selector-overlay > .sp-selector-label {
+        line-height: 2.5em !important; }
+    .sp-selector > input[type='text'].sp-selector-trigger + .sp-selector-overlay.sp-no-arrows::after, .sp-custom-input > input[type='text'].sp-selector-trigger + .sp-selector-overlay.sp-no-arrows::after {
+      display: none; }
+    .sp-selector > input[type='text'].sp-selector-trigger + .sp-selector-overlay::after, .sp-custom-input > input[type='text'].sp-selector-trigger + .sp-selector-overlay::after {
       font-family: 'Icon Font' !important;
       speak: none;
       font-style: normal;
@@ -7011,65 +7043,138 @@ blockquote {
       top: 50%;
       right: 0.25em;
       transform: translateY(-50%); }
-    .sp-selector > input[type='text'].sp-selector-trigger.sp-padding-icon-left {
-      padding-left: 3em !important; }
-      .sp-selector > input[type='text'].sp-selector-trigger.sp-padding-icon-left.sp-small, .sp-small .sp-selector > input[type='text'].sp-selector-trigger.sp-padding-icon-left {
-        padding-left: 2.3em !important; }
-      .sp-selector > input[type='text'].sp-selector-trigger.sp-padding-icon-left.sp-large, .sp-large .sp-selector > input[type='text'].sp-selector-trigger.sp-padding-icon-left {
-        padding-left: 2.5em !important; }
-    .sp-selector > input[type='text'].sp-selector-trigger.sp-padding-label {
-      padding-left: 7em !important; }
-    .sp-selector > input[type='text'].sp-selector-trigger.sp-padding-label.sp-padding-icon-left {
-      padding-left: 9em !important; }
-    .sp-selector > input[type='text'].sp-selector-trigger.sp-small + .sp-selector-overlay::after, .sp-small .sp-selector > input[type='text'].sp-selector-trigger + .sp-selector-overlay::after {
-      font-size: 0.87rem; }
-    .sp-selector > input[type='text'].sp-selector-trigger.sp-large + .sp-selector-overlay::after, .sp-large .sp-selector > input[type='text'].sp-selector-trigger + .sp-selector-overlay::after {
-      font-size: 1.2rem; }
-  .sp-selector > .sp-selector-trigger:focus + .sp-selector-overlay > .sp-selector-label, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-selector-label {
+  .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger, .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger {
+    padding-right: 0.7em !important; }
+  .sp-selector > input[type='text'].sp-selector-trigger.sp-padding-icon-left, .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-padding-icon-left, .sp-custom-input > input[type='text'].sp-selector-trigger.sp-padding-icon-left, .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-padding-icon-left {
+    padding-left: 3em !important; }
+    .sp-selector > input[type='text'].sp-selector-trigger.sp-padding-icon-left.sp-small, .sp-small .sp-selector > input[type='text'].sp-selector-trigger.sp-padding-icon-left, .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-padding-icon-left.sp-small, .sp-small .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-padding-icon-left, .sp-custom-input > input[type='text'].sp-selector-trigger.sp-padding-icon-left.sp-small, .sp-small .sp-custom-input > input[type='text'].sp-selector-trigger.sp-padding-icon-left, .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-padding-icon-left.sp-small, .sp-small .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-padding-icon-left {
+      padding-left: 2.3em !important; }
+    .sp-selector > input[type='text'].sp-selector-trigger.sp-padding-icon-left.sp-large, .sp-large .sp-selector > input[type='text'].sp-selector-trigger.sp-padding-icon-left, .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-padding-icon-left.sp-large, .sp-large .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-padding-icon-left, .sp-custom-input > input[type='text'].sp-selector-trigger.sp-padding-icon-left.sp-large, .sp-large .sp-custom-input > input[type='text'].sp-selector-trigger.sp-padding-icon-left, .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-padding-icon-left.sp-large, .sp-large .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-padding-icon-left {
+      padding-left: 2.5em !important; }
+  .sp-selector > input[type='text'].sp-selector-trigger.sp-padding-label, .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-padding-label, .sp-custom-input > input[type='text'].sp-selector-trigger.sp-padding-label, .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-padding-label {
+    padding-left: 25% !important;
+    text-align: right; }
+  .sp-selector > input[type='text'].sp-selector-trigger.sp-padding-label.sp-padding-icon-left, .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-padding-label.sp-padding-icon-left, .sp-custom-input > input[type='text'].sp-selector-trigger.sp-padding-label.sp-padding-icon-left, .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-padding-label.sp-padding-icon-left {
+    padding-left: calc(25% + 3em) !important; }
+    .sp-selector > input[type='text'].sp-selector-trigger.sp-padding-label.sp-padding-icon-left.sp-small, .sp-small .sp-selector > input[type='text'].sp-selector-trigger.sp-padding-label.sp-padding-icon-left, .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-padding-label.sp-padding-icon-left.sp-small, .sp-small .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-padding-label.sp-padding-icon-left, .sp-custom-input > input[type='text'].sp-selector-trigger.sp-padding-label.sp-padding-icon-left.sp-small, .sp-small .sp-custom-input > input[type='text'].sp-selector-trigger.sp-padding-label.sp-padding-icon-left, .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-padding-label.sp-padding-icon-left.sp-small, .sp-small .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-padding-label.sp-padding-icon-left {
+      padding-left: calc(25% + 2.3em) !important; }
+    .sp-selector > input[type='text'].sp-selector-trigger.sp-padding-label.sp-padding-icon-left.sp-large, .sp-large .sp-selector > input[type='text'].sp-selector-trigger.sp-padding-label.sp-padding-icon-left, .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-padding-label.sp-padding-icon-left.sp-large, .sp-large .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-padding-label.sp-padding-icon-left, .sp-custom-input > input[type='text'].sp-selector-trigger.sp-padding-label.sp-padding-icon-left.sp-large, .sp-large .sp-custom-input > input[type='text'].sp-selector-trigger.sp-padding-label.sp-padding-icon-left, .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-padding-label.sp-padding-icon-left.sp-large, .sp-large .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-padding-label.sp-padding-icon-left {
+      padding-left: calc(25% + 2.5em) !important; }
+  .sp-selector > input[type='text'].sp-selector-trigger.sp-small + .sp-selector-overlay::after, .sp-selector > input[type='text'].sp-selector-trigger.sp-small + .sp-custom-input-overlay::after, .sp-small .sp-selector > input[type='text'].sp-selector-trigger + .sp-selector-overlay::after, .sp-small .sp-selector > input[type='text'].sp-selector-trigger + .sp-custom-input-overlay::after, .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-small + .sp-selector-overlay::after, .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-small + .sp-custom-input-overlay::after, .sp-small .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger + .sp-selector-overlay::after, .sp-small .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger + .sp-custom-input-overlay::after, .sp-custom-input > input[type='text'].sp-selector-trigger.sp-small + .sp-selector-overlay::after, .sp-custom-input > input[type='text'].sp-selector-trigger.sp-small + .sp-custom-input-overlay::after, .sp-small .sp-custom-input > input[type='text'].sp-selector-trigger + .sp-selector-overlay::after, .sp-small .sp-custom-input > input[type='text'].sp-selector-trigger + .sp-custom-input-overlay::after, .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-small + .sp-selector-overlay::after, .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-small + .sp-custom-input-overlay::after, .sp-small .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger + .sp-selector-overlay::after, .sp-small .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger + .sp-custom-input-overlay::after {
+    font-size: 0.87rem; }
+  .sp-selector > input[type='text'].sp-selector-trigger.sp-small + .sp-selector-overlay > .sp-selector-label, .sp-selector > input[type='text'].sp-selector-trigger.sp-small + .sp-selector-overlay > .sp-custom-input-label, .sp-selector > input[type='text'].sp-selector-trigger.sp-small + .sp-custom-input-overlay > .sp-selector-label, .sp-selector > input[type='text'].sp-selector-trigger.sp-small + .sp-custom-input-overlay > .sp-custom-input-label, .sp-small .sp-selector > input[type='text'].sp-selector-trigger + .sp-selector-overlay > .sp-selector-label, .sp-small .sp-selector > input[type='text'].sp-selector-trigger + .sp-selector-overlay > .sp-custom-input-label, .sp-small .sp-selector > input[type='text'].sp-selector-trigger + .sp-custom-input-overlay > .sp-selector-label, .sp-small .sp-selector > input[type='text'].sp-selector-trigger + .sp-custom-input-overlay > .sp-custom-input-label, .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-small + .sp-selector-overlay > .sp-selector-label, .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-small + .sp-selector-overlay > .sp-custom-input-label, .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-small + .sp-custom-input-overlay > .sp-selector-label, .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-small + .sp-custom-input-overlay > .sp-custom-input-label, .sp-small .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger + .sp-selector-overlay > .sp-selector-label, .sp-small .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger + .sp-selector-overlay > .sp-custom-input-label, .sp-small .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger + .sp-custom-input-overlay > .sp-selector-label, .sp-small .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger + .sp-custom-input-overlay > .sp-custom-input-label, .sp-custom-input > input[type='text'].sp-selector-trigger.sp-small + .sp-selector-overlay > .sp-selector-label, .sp-custom-input > input[type='text'].sp-selector-trigger.sp-small + .sp-selector-overlay > .sp-custom-input-label, .sp-custom-input > input[type='text'].sp-selector-trigger.sp-small + .sp-custom-input-overlay > .sp-selector-label, .sp-custom-input > input[type='text'].sp-selector-trigger.sp-small + .sp-custom-input-overlay > .sp-custom-input-label, .sp-small .sp-custom-input > input[type='text'].sp-selector-trigger + .sp-selector-overlay > .sp-selector-label, .sp-small .sp-custom-input > input[type='text'].sp-selector-trigger + .sp-selector-overlay > .sp-custom-input-label, .sp-small .sp-custom-input > input[type='text'].sp-selector-trigger + .sp-custom-input-overlay > .sp-selector-label, .sp-small .sp-custom-input > input[type='text'].sp-selector-trigger + .sp-custom-input-overlay > .sp-custom-input-label, .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-small + .sp-selector-overlay > .sp-selector-label, .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-small + .sp-selector-overlay > .sp-custom-input-label, .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-small + .sp-custom-input-overlay > .sp-selector-label, .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-small + .sp-custom-input-overlay > .sp-custom-input-label, .sp-small .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger + .sp-selector-overlay > .sp-selector-label, .sp-small .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger + .sp-selector-overlay > .sp-custom-input-label, .sp-small .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger + .sp-custom-input-overlay > .sp-selector-label, .sp-small .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger + .sp-custom-input-overlay > .sp-custom-input-label {
+    box-sizing: border-box;
+    line-height: 31.66px;
+    height: 31.66px; }
+  .sp-selector > input[type='text'].sp-selector-trigger.sp-large + .sp-selector-overlay::after, .sp-selector > input[type='text'].sp-selector-trigger.sp-large + .sp-custom-input-overlay::after, .sp-large .sp-selector > input[type='text'].sp-selector-trigger + .sp-selector-overlay::after, .sp-large .sp-selector > input[type='text'].sp-selector-trigger + .sp-custom-input-overlay::after, .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-large + .sp-selector-overlay::after, .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-large + .sp-custom-input-overlay::after, .sp-large .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger + .sp-selector-overlay::after, .sp-large .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger + .sp-custom-input-overlay::after, .sp-custom-input > input[type='text'].sp-selector-trigger.sp-large + .sp-selector-overlay::after, .sp-custom-input > input[type='text'].sp-selector-trigger.sp-large + .sp-custom-input-overlay::after, .sp-large .sp-custom-input > input[type='text'].sp-selector-trigger + .sp-selector-overlay::after, .sp-large .sp-custom-input > input[type='text'].sp-selector-trigger + .sp-custom-input-overlay::after, .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-large + .sp-selector-overlay::after, .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-large + .sp-custom-input-overlay::after, .sp-large .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger + .sp-selector-overlay::after, .sp-large .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger + .sp-custom-input-overlay::after {
+    font-size: 1.2rem; }
+  .sp-selector > input[type='text'].sp-selector-trigger.sp-large + .sp-selector-overlay > .sp-selector-label, .sp-selector > input[type='text'].sp-selector-trigger.sp-large + .sp-selector-overlay > .sp-custom-input-label, .sp-selector > input[type='text'].sp-selector-trigger.sp-large + .sp-custom-input-overlay > .sp-selector-label, .sp-selector > input[type='text'].sp-selector-trigger.sp-large + .sp-custom-input-overlay > .sp-custom-input-label, .sp-large .sp-selector > input[type='text'].sp-selector-trigger + .sp-selector-overlay > .sp-selector-label, .sp-large .sp-selector > input[type='text'].sp-selector-trigger + .sp-selector-overlay > .sp-custom-input-label, .sp-large .sp-selector > input[type='text'].sp-selector-trigger + .sp-custom-input-overlay > .sp-selector-label, .sp-large .sp-selector > input[type='text'].sp-selector-trigger + .sp-custom-input-overlay > .sp-custom-input-label, .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-large + .sp-selector-overlay > .sp-selector-label, .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-large + .sp-selector-overlay > .sp-custom-input-label, .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-large + .sp-custom-input-overlay > .sp-selector-label, .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-large + .sp-custom-input-overlay > .sp-custom-input-label, .sp-large .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger + .sp-selector-overlay > .sp-selector-label, .sp-large .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger + .sp-selector-overlay > .sp-custom-input-label, .sp-large .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger + .sp-custom-input-overlay > .sp-selector-label, .sp-large .sp-selector > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger + .sp-custom-input-overlay > .sp-custom-input-label, .sp-custom-input > input[type='text'].sp-selector-trigger.sp-large + .sp-selector-overlay > .sp-selector-label, .sp-custom-input > input[type='text'].sp-selector-trigger.sp-large + .sp-selector-overlay > .sp-custom-input-label, .sp-custom-input > input[type='text'].sp-selector-trigger.sp-large + .sp-custom-input-overlay > .sp-selector-label, .sp-custom-input > input[type='text'].sp-selector-trigger.sp-large + .sp-custom-input-overlay > .sp-custom-input-label, .sp-large .sp-custom-input > input[type='text'].sp-selector-trigger + .sp-selector-overlay > .sp-selector-label, .sp-large .sp-custom-input > input[type='text'].sp-selector-trigger + .sp-selector-overlay > .sp-custom-input-label, .sp-large .sp-custom-input > input[type='text'].sp-selector-trigger + .sp-custom-input-overlay > .sp-selector-label, .sp-large .sp-custom-input > input[type='text'].sp-selector-trigger + .sp-custom-input-overlay > .sp-custom-input-label, .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-large + .sp-selector-overlay > .sp-selector-label, .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-large + .sp-selector-overlay > .sp-custom-input-label, .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-large + .sp-custom-input-overlay > .sp-selector-label, .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger.sp-large + .sp-custom-input-overlay > .sp-custom-input-label, .sp-large .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger + .sp-selector-overlay > .sp-selector-label, .sp-large .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger + .sp-selector-overlay > .sp-custom-input-label, .sp-large .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger + .sp-custom-input-overlay > .sp-selector-label, .sp-large .sp-custom-input > input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-custom-input-trigger + .sp-custom-input-overlay > .sp-custom-input-label {
+    box-sizing: border-box;
+    line-height: 44.39px;
+    height: 44.39px; }
+  .sp-selector > .sp-selector-trigger:focus + .sp-selector-overlay > .sp-selector-label, .sp-selector > .sp-selector-trigger:focus + .sp-selector-overlay > .sp-custom-input-label, .sp-selector > .sp-selector-trigger:focus + .sp-custom-input-overlay > .sp-selector-label, .sp-selector > .sp-selector-trigger:focus + .sp-custom-input-overlay > .sp-custom-input-label, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-selector-label, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-custom-input-label, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-selector-label, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-custom-input-label, .sp-selector > .sp-custom-input-trigger:focus + .sp-selector-overlay > .sp-selector-label, .sp-selector > .sp-custom-input-trigger:focus + .sp-selector-overlay > .sp-custom-input-label, .sp-selector > .sp-custom-input-trigger:focus + .sp-custom-input-overlay > .sp-selector-label, .sp-selector > .sp-custom-input-trigger:focus + .sp-custom-input-overlay > .sp-custom-input-label, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay > .sp-selector-label, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay > .sp-custom-input-label, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-selector-label, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-custom-input-label, .sp-custom-input > .sp-selector-trigger:focus + .sp-selector-overlay > .sp-selector-label, .sp-custom-input > .sp-selector-trigger:focus + .sp-selector-overlay > .sp-custom-input-label, .sp-custom-input > .sp-selector-trigger:focus + .sp-custom-input-overlay > .sp-selector-label, .sp-custom-input > .sp-selector-trigger:focus + .sp-custom-input-overlay > .sp-custom-input-label, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-selector-label, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-custom-input-label, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-selector-label, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-custom-input-label, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-selector-overlay > .sp-selector-label, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-selector-overlay > .sp-custom-input-label, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-custom-input-overlay > .sp-selector-label, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-custom-input-overlay > .sp-custom-input-label, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay > .sp-selector-label, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay > .sp-custom-input-label, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-selector-label, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-custom-input-label {
     color: rgba(0, 0, 0, 0.8) !important; }
     .sp-selector > .sp-selector-trigger:focus + .sp-selector-overlay > .sp-selector-label .sp-container-dark, .sp-selector > .sp-selector-trigger:focus + .sp-selector-overlay > .sp-selector-label.sp-container-dark,
-    .sp-container-dark .sp-selector > .sp-selector-trigger:focus + .sp-selector-overlay > .sp-selector-label, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-selector-label .sp-container-dark, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-selector-label.sp-container-dark,
-    .sp-container-dark .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-selector-label {
+    .sp-container-dark .sp-selector > .sp-selector-trigger:focus + .sp-selector-overlay > .sp-selector-label, .sp-selector > .sp-selector-trigger:focus + .sp-selector-overlay > .sp-custom-input-label .sp-container-dark, .sp-selector > .sp-selector-trigger:focus + .sp-selector-overlay > .sp-custom-input-label.sp-container-dark,
+    .sp-container-dark .sp-selector > .sp-selector-trigger:focus + .sp-selector-overlay > .sp-custom-input-label, .sp-selector > .sp-selector-trigger:focus + .sp-custom-input-overlay > .sp-selector-label .sp-container-dark, .sp-selector > .sp-selector-trigger:focus + .sp-custom-input-overlay > .sp-selector-label.sp-container-dark,
+    .sp-container-dark .sp-selector > .sp-selector-trigger:focus + .sp-custom-input-overlay > .sp-selector-label, .sp-selector > .sp-selector-trigger:focus + .sp-custom-input-overlay > .sp-custom-input-label .sp-container-dark, .sp-selector > .sp-selector-trigger:focus + .sp-custom-input-overlay > .sp-custom-input-label.sp-container-dark,
+    .sp-container-dark .sp-selector > .sp-selector-trigger:focus + .sp-custom-input-overlay > .sp-custom-input-label, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-selector-label .sp-container-dark, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-selector-label.sp-container-dark,
+    .sp-container-dark .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-selector-label, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-custom-input-label .sp-container-dark, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-custom-input-label.sp-container-dark,
+    .sp-container-dark .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-custom-input-label, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-selector-label .sp-container-dark, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-selector-label.sp-container-dark,
+    .sp-container-dark .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-selector-label, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-custom-input-label .sp-container-dark, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-custom-input-label.sp-container-dark,
+    .sp-container-dark .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-custom-input-label, .sp-selector > .sp-custom-input-trigger:focus + .sp-selector-overlay > .sp-selector-label .sp-container-dark, .sp-selector > .sp-custom-input-trigger:focus + .sp-selector-overlay > .sp-selector-label.sp-container-dark,
+    .sp-container-dark .sp-selector > .sp-custom-input-trigger:focus + .sp-selector-overlay > .sp-selector-label, .sp-selector > .sp-custom-input-trigger:focus + .sp-selector-overlay > .sp-custom-input-label .sp-container-dark, .sp-selector > .sp-custom-input-trigger:focus + .sp-selector-overlay > .sp-custom-input-label.sp-container-dark,
+    .sp-container-dark .sp-selector > .sp-custom-input-trigger:focus + .sp-selector-overlay > .sp-custom-input-label, .sp-selector > .sp-custom-input-trigger:focus + .sp-custom-input-overlay > .sp-selector-label .sp-container-dark, .sp-selector > .sp-custom-input-trigger:focus + .sp-custom-input-overlay > .sp-selector-label.sp-container-dark,
+    .sp-container-dark .sp-selector > .sp-custom-input-trigger:focus + .sp-custom-input-overlay > .sp-selector-label, .sp-selector > .sp-custom-input-trigger:focus + .sp-custom-input-overlay > .sp-custom-input-label .sp-container-dark, .sp-selector > .sp-custom-input-trigger:focus + .sp-custom-input-overlay > .sp-custom-input-label.sp-container-dark,
+    .sp-container-dark .sp-selector > .sp-custom-input-trigger:focus + .sp-custom-input-overlay > .sp-custom-input-label, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay > .sp-selector-label .sp-container-dark, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay > .sp-selector-label.sp-container-dark,
+    .sp-container-dark .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay > .sp-selector-label, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay > .sp-custom-input-label .sp-container-dark, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay > .sp-custom-input-label.sp-container-dark,
+    .sp-container-dark .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay > .sp-custom-input-label, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-selector-label .sp-container-dark, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-selector-label.sp-container-dark,
+    .sp-container-dark .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-selector-label, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-custom-input-label .sp-container-dark, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-custom-input-label.sp-container-dark,
+    .sp-container-dark .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-custom-input-label, .sp-custom-input > .sp-selector-trigger:focus + .sp-selector-overlay > .sp-selector-label .sp-container-dark, .sp-custom-input > .sp-selector-trigger:focus + .sp-selector-overlay > .sp-selector-label.sp-container-dark,
+    .sp-container-dark .sp-custom-input > .sp-selector-trigger:focus + .sp-selector-overlay > .sp-selector-label, .sp-custom-input > .sp-selector-trigger:focus + .sp-selector-overlay > .sp-custom-input-label .sp-container-dark, .sp-custom-input > .sp-selector-trigger:focus + .sp-selector-overlay > .sp-custom-input-label.sp-container-dark,
+    .sp-container-dark .sp-custom-input > .sp-selector-trigger:focus + .sp-selector-overlay > .sp-custom-input-label, .sp-custom-input > .sp-selector-trigger:focus + .sp-custom-input-overlay > .sp-selector-label .sp-container-dark, .sp-custom-input > .sp-selector-trigger:focus + .sp-custom-input-overlay > .sp-selector-label.sp-container-dark,
+    .sp-container-dark .sp-custom-input > .sp-selector-trigger:focus + .sp-custom-input-overlay > .sp-selector-label, .sp-custom-input > .sp-selector-trigger:focus + .sp-custom-input-overlay > .sp-custom-input-label .sp-container-dark, .sp-custom-input > .sp-selector-trigger:focus + .sp-custom-input-overlay > .sp-custom-input-label.sp-container-dark,
+    .sp-container-dark .sp-custom-input > .sp-selector-trigger:focus + .sp-custom-input-overlay > .sp-custom-input-label, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-selector-label .sp-container-dark, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-selector-label.sp-container-dark,
+    .sp-container-dark .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-selector-label, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-custom-input-label .sp-container-dark, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-custom-input-label.sp-container-dark,
+    .sp-container-dark .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-custom-input-label, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-selector-label .sp-container-dark, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-selector-label.sp-container-dark,
+    .sp-container-dark .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-selector-label, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-custom-input-label .sp-container-dark, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-custom-input-label.sp-container-dark,
+    .sp-container-dark .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-custom-input-label, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-selector-overlay > .sp-selector-label .sp-container-dark, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-selector-overlay > .sp-selector-label.sp-container-dark,
+    .sp-container-dark .sp-custom-input > .sp-custom-input-trigger:focus + .sp-selector-overlay > .sp-selector-label, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-selector-overlay > .sp-custom-input-label .sp-container-dark, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-selector-overlay > .sp-custom-input-label.sp-container-dark,
+    .sp-container-dark .sp-custom-input > .sp-custom-input-trigger:focus + .sp-selector-overlay > .sp-custom-input-label, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-custom-input-overlay > .sp-selector-label .sp-container-dark, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-custom-input-overlay > .sp-selector-label.sp-container-dark,
+    .sp-container-dark .sp-custom-input > .sp-custom-input-trigger:focus + .sp-custom-input-overlay > .sp-selector-label, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-custom-input-overlay > .sp-custom-input-label .sp-container-dark, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-custom-input-overlay > .sp-custom-input-label.sp-container-dark,
+    .sp-container-dark .sp-custom-input > .sp-custom-input-trigger:focus + .sp-custom-input-overlay > .sp-custom-input-label, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay > .sp-selector-label .sp-container-dark, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay > .sp-selector-label.sp-container-dark,
+    .sp-container-dark .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay > .sp-selector-label, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay > .sp-custom-input-label .sp-container-dark, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay > .sp-custom-input-label.sp-container-dark,
+    .sp-container-dark .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay > .sp-custom-input-label, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-selector-label .sp-container-dark, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-selector-label.sp-container-dark,
+    .sp-container-dark .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-selector-label, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-custom-input-label .sp-container-dark, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-custom-input-label.sp-container-dark,
+    .sp-container-dark .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-custom-input-label {
       color: #FFFFFF !important; }
-  .sp-selector > .sp-selector-trigger:focus + .sp-selector-overlay > .sp-menu-dropdown, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-menu-dropdown {
+  .sp-selector > .sp-selector-trigger:focus + .sp-selector-overlay > .sp-menu-dropdown, .sp-selector > .sp-selector-trigger:focus + .sp-custom-input-overlay > .sp-menu-dropdown, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-menu-dropdown, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-menu-dropdown, .sp-selector > .sp-custom-input-trigger:focus + .sp-selector-overlay > .sp-menu-dropdown, .sp-selector > .sp-custom-input-trigger:focus + .sp-custom-input-overlay > .sp-menu-dropdown, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay > .sp-menu-dropdown, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-menu-dropdown, .sp-custom-input > .sp-selector-trigger:focus + .sp-selector-overlay > .sp-menu-dropdown, .sp-custom-input > .sp-selector-trigger:focus + .sp-custom-input-overlay > .sp-menu-dropdown, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-menu-dropdown, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-menu-dropdown, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-selector-overlay > .sp-menu-dropdown, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-custom-input-overlay > .sp-menu-dropdown, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay > .sp-menu-dropdown, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-menu-dropdown {
     opacity: 1;
     top: 100%;
     visibility: visible;
     pointer-events: auto; }
-    .sp-selector > .sp-selector-trigger:focus + .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-above {
+    .sp-selector > .sp-selector-trigger:focus + .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-selector > .sp-selector-trigger:focus + .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-selector > .sp-custom-input-trigger:focus + .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-selector > .sp-custom-input-trigger:focus + .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-custom-input > .sp-selector-trigger:focus + .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-custom-input > .sp-selector-trigger:focus + .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-above {
       top: auto;
       bottom: 100%; }
-    .sp-selector > .sp-selector-trigger:focus + .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-left, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-left {
+    .sp-selector > .sp-selector-trigger:focus + .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-left, .sp-selector > .sp-selector-trigger:focus + .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-left, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-left, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-left, .sp-selector > .sp-custom-input-trigger:focus + .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-left, .sp-selector > .sp-custom-input-trigger:focus + .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-left, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-left, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-left, .sp-custom-input > .sp-selector-trigger:focus + .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-left, .sp-custom-input > .sp-selector-trigger:focus + .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-left, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-left, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-left, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-left, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-left, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-left, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-left {
       top: 50%;
       transform: translateY(-50%);
       left: auto;
       right: 100%; }
-    .sp-selector > .sp-selector-trigger:focus + .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-right, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-right {
+    .sp-selector > .sp-selector-trigger:focus + .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-right, .sp-selector > .sp-selector-trigger:focus + .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-right, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-right, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-right, .sp-selector > .sp-custom-input-trigger:focus + .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-right, .sp-selector > .sp-custom-input-trigger:focus + .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-right, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-right, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-right, .sp-custom-input > .sp-selector-trigger:focus + .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-right, .sp-custom-input > .sp-selector-trigger:focus + .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-right, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-right, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-right, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-right, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-right, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-right, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-right {
       top: 50%;
       transform: translateY(-50%);
       left: 100%; }
-  .sp-selector > .sp-selector-trigger:focus + .sp-selector-overlay[class^='sp-icon-']::before, .sp-selector > .sp-selector-trigger:focus + .sp-selector-overlay[class*=' sp-icon-']::before, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay[class^='sp-icon-']::before, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay[class*=' sp-icon-']::before {
+  .sp-selector > .sp-selector-trigger:focus + .sp-selector-overlay[class^='sp-icon-']::before, .sp-selector > .sp-selector-trigger:focus + .sp-selector-overlay[class*=' sp-icon-']::before, .sp-selector > .sp-selector-trigger:focus + .sp-custom-input-overlay[class^='sp-icon-']::before, .sp-selector > .sp-selector-trigger:focus + .sp-custom-input-overlay[class*=' sp-icon-']::before, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay[class^='sp-icon-']::before, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay[class*=' sp-icon-']::before, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay[class^='sp-icon-']::before, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay[class*=' sp-icon-']::before, .sp-selector > .sp-custom-input-trigger:focus + .sp-selector-overlay[class^='sp-icon-']::before, .sp-selector > .sp-custom-input-trigger:focus + .sp-selector-overlay[class*=' sp-icon-']::before, .sp-selector > .sp-custom-input-trigger:focus + .sp-custom-input-overlay[class^='sp-icon-']::before, .sp-selector > .sp-custom-input-trigger:focus + .sp-custom-input-overlay[class*=' sp-icon-']::before, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay[class^='sp-icon-']::before, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay[class*=' sp-icon-']::before, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay[class^='sp-icon-']::before, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay[class*=' sp-icon-']::before, .sp-custom-input > .sp-selector-trigger:focus + .sp-selector-overlay[class^='sp-icon-']::before, .sp-custom-input > .sp-selector-trigger:focus + .sp-selector-overlay[class*=' sp-icon-']::before, .sp-custom-input > .sp-selector-trigger:focus + .sp-custom-input-overlay[class^='sp-icon-']::before, .sp-custom-input > .sp-selector-trigger:focus + .sp-custom-input-overlay[class*=' sp-icon-']::before, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay[class^='sp-icon-']::before, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay[class*=' sp-icon-']::before, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay[class^='sp-icon-']::before, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay[class*=' sp-icon-']::before, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-selector-overlay[class^='sp-icon-']::before, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-selector-overlay[class*=' sp-icon-']::before, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-custom-input-overlay[class^='sp-icon-']::before, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-custom-input-overlay[class*=' sp-icon-']::before, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay[class^='sp-icon-']::before, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay[class*=' sp-icon-']::before, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay[class^='sp-icon-']::before, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay[class*=' sp-icon-']::before {
     color: rgba(0, 0, 0, 0.8) !important; }
   .sp-selector > .sp-selector-trigger:focus + .sp-selector-overlay[class^='sp-icon-'] .sp-container-dark::before, .sp-selector > .sp-selector-trigger:focus + .sp-selector-overlay[class^='sp-icon-'].sp-container-dark::before,
   .sp-container-dark .sp-selector > .sp-selector-trigger:focus + .sp-selector-overlay[class^='sp-icon-']::before, .sp-selector > .sp-selector-trigger:focus + .sp-selector-overlay[class*=' sp-icon-'] .sp-container-dark::before, .sp-selector > .sp-selector-trigger:focus + .sp-selector-overlay[class*=' sp-icon-'].sp-container-dark::before,
-  .sp-container-dark .sp-selector > .sp-selector-trigger:focus + .sp-selector-overlay[class*=' sp-icon-']::before, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay[class^='sp-icon-'] .sp-container-dark::before, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay[class^='sp-icon-'].sp-container-dark::before,
+  .sp-container-dark .sp-selector > .sp-selector-trigger:focus + .sp-selector-overlay[class*=' sp-icon-']::before, .sp-selector > .sp-selector-trigger:focus + .sp-custom-input-overlay[class^='sp-icon-'] .sp-container-dark::before, .sp-selector > .sp-selector-trigger:focus + .sp-custom-input-overlay[class^='sp-icon-'].sp-container-dark::before,
+  .sp-container-dark .sp-selector > .sp-selector-trigger:focus + .sp-custom-input-overlay[class^='sp-icon-']::before, .sp-selector > .sp-selector-trigger:focus + .sp-custom-input-overlay[class*=' sp-icon-'] .sp-container-dark::before, .sp-selector > .sp-selector-trigger:focus + .sp-custom-input-overlay[class*=' sp-icon-'].sp-container-dark::before,
+  .sp-container-dark .sp-selector > .sp-selector-trigger:focus + .sp-custom-input-overlay[class*=' sp-icon-']::before, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay[class^='sp-icon-'] .sp-container-dark::before, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay[class^='sp-icon-'].sp-container-dark::before,
   .sp-container-dark .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay[class^='sp-icon-']::before, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay[class*=' sp-icon-'] .sp-container-dark::before, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay[class*=' sp-icon-'].sp-container-dark::before,
-  .sp-container-dark .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay[class*=' sp-icon-']::before {
+  .sp-container-dark .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay[class*=' sp-icon-']::before, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay[class^='sp-icon-'] .sp-container-dark::before, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay[class^='sp-icon-'].sp-container-dark::before,
+  .sp-container-dark .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay[class^='sp-icon-']::before, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay[class*=' sp-icon-'] .sp-container-dark::before, .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay[class*=' sp-icon-'].sp-container-dark::before,
+  .sp-container-dark .sp-selector > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay[class*=' sp-icon-']::before, .sp-selector > .sp-custom-input-trigger:focus + .sp-selector-overlay[class^='sp-icon-'] .sp-container-dark::before, .sp-selector > .sp-custom-input-trigger:focus + .sp-selector-overlay[class^='sp-icon-'].sp-container-dark::before,
+  .sp-container-dark .sp-selector > .sp-custom-input-trigger:focus + .sp-selector-overlay[class^='sp-icon-']::before, .sp-selector > .sp-custom-input-trigger:focus + .sp-selector-overlay[class*=' sp-icon-'] .sp-container-dark::before, .sp-selector > .sp-custom-input-trigger:focus + .sp-selector-overlay[class*=' sp-icon-'].sp-container-dark::before,
+  .sp-container-dark .sp-selector > .sp-custom-input-trigger:focus + .sp-selector-overlay[class*=' sp-icon-']::before, .sp-selector > .sp-custom-input-trigger:focus + .sp-custom-input-overlay[class^='sp-icon-'] .sp-container-dark::before, .sp-selector > .sp-custom-input-trigger:focus + .sp-custom-input-overlay[class^='sp-icon-'].sp-container-dark::before,
+  .sp-container-dark .sp-selector > .sp-custom-input-trigger:focus + .sp-custom-input-overlay[class^='sp-icon-']::before, .sp-selector > .sp-custom-input-trigger:focus + .sp-custom-input-overlay[class*=' sp-icon-'] .sp-container-dark::before, .sp-selector > .sp-custom-input-trigger:focus + .sp-custom-input-overlay[class*=' sp-icon-'].sp-container-dark::before,
+  .sp-container-dark .sp-selector > .sp-custom-input-trigger:focus + .sp-custom-input-overlay[class*=' sp-icon-']::before, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay[class^='sp-icon-'] .sp-container-dark::before, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay[class^='sp-icon-'].sp-container-dark::before,
+  .sp-container-dark .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay[class^='sp-icon-']::before, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay[class*=' sp-icon-'] .sp-container-dark::before, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay[class*=' sp-icon-'].sp-container-dark::before,
+  .sp-container-dark .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay[class*=' sp-icon-']::before, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay[class^='sp-icon-'] .sp-container-dark::before, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay[class^='sp-icon-'].sp-container-dark::before,
+  .sp-container-dark .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay[class^='sp-icon-']::before, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay[class*=' sp-icon-'] .sp-container-dark::before, .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay[class*=' sp-icon-'].sp-container-dark::before,
+  .sp-container-dark .sp-selector > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay[class*=' sp-icon-']::before, .sp-custom-input > .sp-selector-trigger:focus + .sp-selector-overlay[class^='sp-icon-'] .sp-container-dark::before, .sp-custom-input > .sp-selector-trigger:focus + .sp-selector-overlay[class^='sp-icon-'].sp-container-dark::before,
+  .sp-container-dark .sp-custom-input > .sp-selector-trigger:focus + .sp-selector-overlay[class^='sp-icon-']::before, .sp-custom-input > .sp-selector-trigger:focus + .sp-selector-overlay[class*=' sp-icon-'] .sp-container-dark::before, .sp-custom-input > .sp-selector-trigger:focus + .sp-selector-overlay[class*=' sp-icon-'].sp-container-dark::before,
+  .sp-container-dark .sp-custom-input > .sp-selector-trigger:focus + .sp-selector-overlay[class*=' sp-icon-']::before, .sp-custom-input > .sp-selector-trigger:focus + .sp-custom-input-overlay[class^='sp-icon-'] .sp-container-dark::before, .sp-custom-input > .sp-selector-trigger:focus + .sp-custom-input-overlay[class^='sp-icon-'].sp-container-dark::before,
+  .sp-container-dark .sp-custom-input > .sp-selector-trigger:focus + .sp-custom-input-overlay[class^='sp-icon-']::before, .sp-custom-input > .sp-selector-trigger:focus + .sp-custom-input-overlay[class*=' sp-icon-'] .sp-container-dark::before, .sp-custom-input > .sp-selector-trigger:focus + .sp-custom-input-overlay[class*=' sp-icon-'].sp-container-dark::before,
+  .sp-container-dark .sp-custom-input > .sp-selector-trigger:focus + .sp-custom-input-overlay[class*=' sp-icon-']::before, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay[class^='sp-icon-'] .sp-container-dark::before, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay[class^='sp-icon-'].sp-container-dark::before,
+  .sp-container-dark .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay[class^='sp-icon-']::before, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay[class*=' sp-icon-'] .sp-container-dark::before, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay[class*=' sp-icon-'].sp-container-dark::before,
+  .sp-container-dark .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-selector-overlay[class*=' sp-icon-']::before, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay[class^='sp-icon-'] .sp-container-dark::before, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay[class^='sp-icon-'].sp-container-dark::before,
+  .sp-container-dark .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay[class^='sp-icon-']::before, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay[class*=' sp-icon-'] .sp-container-dark::before, .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay[class*=' sp-icon-'].sp-container-dark::before,
+  .sp-container-dark .sp-custom-input > .sp-selector-trigger.sp-state-focus + .sp-custom-input-overlay[class*=' sp-icon-']::before, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-selector-overlay[class^='sp-icon-'] .sp-container-dark::before, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-selector-overlay[class^='sp-icon-'].sp-container-dark::before,
+  .sp-container-dark .sp-custom-input > .sp-custom-input-trigger:focus + .sp-selector-overlay[class^='sp-icon-']::before, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-selector-overlay[class*=' sp-icon-'] .sp-container-dark::before, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-selector-overlay[class*=' sp-icon-'].sp-container-dark::before,
+  .sp-container-dark .sp-custom-input > .sp-custom-input-trigger:focus + .sp-selector-overlay[class*=' sp-icon-']::before, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-custom-input-overlay[class^='sp-icon-'] .sp-container-dark::before, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-custom-input-overlay[class^='sp-icon-'].sp-container-dark::before,
+  .sp-container-dark .sp-custom-input > .sp-custom-input-trigger:focus + .sp-custom-input-overlay[class^='sp-icon-']::before, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-custom-input-overlay[class*=' sp-icon-'] .sp-container-dark::before, .sp-custom-input > .sp-custom-input-trigger:focus + .sp-custom-input-overlay[class*=' sp-icon-'].sp-container-dark::before,
+  .sp-container-dark .sp-custom-input > .sp-custom-input-trigger:focus + .sp-custom-input-overlay[class*=' sp-icon-']::before, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay[class^='sp-icon-'] .sp-container-dark::before, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay[class^='sp-icon-'].sp-container-dark::before,
+  .sp-container-dark .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay[class^='sp-icon-']::before, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay[class*=' sp-icon-'] .sp-container-dark::before, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay[class*=' sp-icon-'].sp-container-dark::before,
+  .sp-container-dark .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-selector-overlay[class*=' sp-icon-']::before, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay[class^='sp-icon-'] .sp-container-dark::before, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay[class^='sp-icon-'].sp-container-dark::before,
+  .sp-container-dark .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay[class^='sp-icon-']::before, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay[class*=' sp-icon-'] .sp-container-dark::before, .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay[class*=' sp-icon-'].sp-container-dark::before,
+  .sp-container-dark .sp-custom-input > .sp-custom-input-trigger.sp-state-focus + .sp-custom-input-overlay[class*=' sp-icon-']::before {
     color: #FFFFFF !important; }
-  .sp-selector:active > .sp-selector-overlay > .sp-menu-dropdown, .sp-selector.sp-state-active > .sp-selector-overlay > .sp-menu-dropdown {
+  .sp-selector:active > .sp-selector-overlay > .sp-menu-dropdown, .sp-selector:active > .sp-custom-input-overlay > .sp-menu-dropdown, .sp-selector.sp-state-active > .sp-selector-overlay > .sp-menu-dropdown, .sp-selector.sp-state-active > .sp-custom-input-overlay > .sp-menu-dropdown, .sp-custom-input:active > .sp-selector-overlay > .sp-menu-dropdown, .sp-custom-input:active > .sp-custom-input-overlay > .sp-menu-dropdown, .sp-custom-input.sp-state-active > .sp-selector-overlay > .sp-menu-dropdown, .sp-custom-input.sp-state-active > .sp-custom-input-overlay > .sp-menu-dropdown {
     opacity: 1;
     top: 100%;
     visibility: visible;
     pointer-events: auto; }
-    .sp-selector:active > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-selector.sp-state-active > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-above {
+    .sp-selector:active > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-selector:active > .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-selector.sp-state-active > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-selector.sp-state-active > .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-custom-input:active > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-custom-input:active > .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-custom-input.sp-state-active > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-custom-input.sp-state-active > .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-above {
       top: auto;
       bottom: 100%; }
-    .sp-selector:active > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-left, .sp-selector.sp-state-active > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-left {
+    .sp-selector:active > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-left, .sp-selector:active > .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-left, .sp-selector.sp-state-active > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-left, .sp-selector.sp-state-active > .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-left, .sp-custom-input:active > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-left, .sp-custom-input:active > .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-left, .sp-custom-input.sp-state-active > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-left, .sp-custom-input.sp-state-active > .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-left {
       top: 50%;
       transform: translateY(-50%);
       left: auto;
       right: 100%; }
-    .sp-selector:active > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-right, .sp-selector.sp-state-active > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-right {
+    .sp-selector:active > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-right, .sp-selector:active > .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-right, .sp-selector.sp-state-active > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-right, .sp-selector.sp-state-active > .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-right, .sp-custom-input:active > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-right, .sp-custom-input:active > .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-right, .sp-custom-input.sp-state-active > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-right, .sp-custom-input.sp-state-active > .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-right {
       top: 50%;
       transform: translateY(-50%);
       left: 100%; }
@@ -7267,7 +7372,9 @@ blockquote {
   .sp-app.sp-technical {
     height: 100%;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    max-height: 100vh;
+    overflow: hidden; }
     .sp-app.sp-technical > .sp-app-content {
       flex-grow: 1;
       padding: 0 !important; }
@@ -7278,7 +7385,7 @@ blockquote {
     .sp-app.sp-technical .sp-app-footer {
       height: 2.13rem; }
     .sp-app.sp-technical > .sp-app-menu > .sp-row {
-      min-width: 1330px; }
+      min-width: 1360px; }
 
 .sp-app-bar {
   position: relative; }
@@ -7309,6 +7416,69 @@ blockquote {
   overflow-y: auto; }
   .sp-app-side-menu.sp-hidden {
     transform: translateY(100%); }
+
+.sp-app-overlay .sp-login {
+  width: 100vw;
+  height: 100vh;
+  position: relative; }
+  .sp-app-overlay .sp-login .sp-login-left {
+    width: calc(50% - 150px);
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #00C3DC 0%, #00EC99 100%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.5s ease left;
+    transition-delay: 0.25s; }
+    .sp-app-overlay .sp-login .sp-login-left > .sp-logo-mark {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .sp-app-overlay .sp-login .sp-login-right {
+    width: calc(50% + 150px);
+    height: 100vh;
+    background-color: #384146;
+    background-image: url(assets/img/abstract-ads.png);
+    background-size: cover;
+    background-position: center center;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 0.5s ease right;
+    transition-delay: 0.25s; }
+
+.sp-app-overlay.sp-hide .sp-login .sp-login-left {
+  left: -100%; }
+
+.sp-app-overlay.sp-hide .sp-login .sp-login-right {
+  right: -100%; }
+
+.sp-login-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 1.6rem;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+  width: 24.8rem;
+  max-height: 90vh;
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+.sp-login-content .sp-multi-input {
+  width: 100%; }
+
+.sp-login-content .sp-login-email, .sp-login-content .sp-login-password {
+  width: 85%; }
+
+.sp-login-content .sp-login-field {
+  width: 200px; }
+
+.sp-login-content .sp-login-field-label {
+  width: 90px;
+  display: inline-block; }
 
 .sp-app-overlay .sp-login {
   width: 100vw;

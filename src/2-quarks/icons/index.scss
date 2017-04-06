@@ -18,7 +18,7 @@
     @extend %icon-#{$icon} !optional;
 }
 
-[class^='sp-icon-'], [class*=' sp-icon-'], .sp-icon {
+[class^='sp-icon-'], [class*=' sp-icon-'], [class^='sp-inline-icon-'], [class*=' sp-inline-icon-'], .sp-icon {
   &::before {
     @include sp-icon-styles;
   }
@@ -31,6 +31,12 @@
 
   &::after {
     @include sp-icon-styles;
+  }
+}
+
+[class^='sp-inline-icon-'], [class*=' sp-inline-icon-'] {
+  &::before {
+    transform: translateY(18%) scale(1.15);
   }
 }
 

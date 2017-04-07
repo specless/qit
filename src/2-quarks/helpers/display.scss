@@ -45,3 +45,18 @@
 .sp-no-overflow {
   @include sp-no-overflow;
 }
+
+.sp-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sp-full-width {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.sp-scroll-vertical {
+  overflow-y: auto;
+}

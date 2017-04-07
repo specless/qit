@@ -149,6 +149,50 @@ input[type='reset'] {
     box-shadow: none !important;
     @include sp-font-color(contrast);
 
+    &.sp-simple-icon {
+      background-color: transparent !important;
+      background-image: none !important;
+      border-color: transparent !important;
+      opacity: 0.75;
+
+      @include sp-state(hover) {
+        opacity: 1;
+      }
+
+      @include sp-state(active) {
+        opacity: 1;
+        @include sp-font-color(contrast);
+      }
+
+      @include sp-primary {
+        @include sp-font-color(base);
+        @include sp-state(active) {
+          @include sp-font-color(primary);
+        }
+      }
+
+      @include sp-success {
+        @include sp-font-color(base);
+        @include sp-state(active) {
+          @include sp-font-color(success);
+        }
+      }
+
+      @include sp-warning {
+        @include sp-font-color(base);
+        @include sp-state(active) {
+          @include sp-font-color(warning);
+        }
+      }
+
+      @include sp-danger {
+        @include sp-font-color(base);
+        @include sp-state(active) {
+          @include sp-font-color(danger);
+        }
+      }
+    }
+
     @include sp-tactile-minimal;
 
     &.sp-rounded {

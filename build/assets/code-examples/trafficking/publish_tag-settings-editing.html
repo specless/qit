@@ -59,19 +59,19 @@
     </div>
   </div>
   <div class="sp-app-menu sp-container-dark sp-wrapper">
-    <div class="sp-row sp-vbottom sp-height-2">
-      <div class="sp-col sp-span-10 sp-padding-0">
-        <a class="sp-menu-item sp-minimal sp-horizontal sp-label">Overview</a>
-        <a class="sp-menu-item sp-minimal sp-horizontal sp-label">Panels & Assets</a>
-        <a class="sp-menu-item sp-minimal sp-horizontal sp-label sp-state-active">Publish</a>
-        <a class="sp-menu-item sp-minimal sp-horizontal sp-label">Versions</a>
+  	<div class="sp-row sp-vbottom sp-height-2">
+  		<div class="sp-col sp-span-10 sp-padding-0">
+	  		<a class="sp-menu-item sp-minimal sp-horizontal sp-label">Overview</a>
+	  		<a class="sp-menu-item sp-minimal sp-horizontal sp-label">Panels & Assets</a>
+	  		<a class="sp-menu-item sp-minimal sp-horizontal sp-label sp-state-active">Publish</a>
+	  		<a class="sp-menu-item sp-minimal sp-horizontal sp-label">Versions</a>
         <a class="sp-menu-item sp-minimal sp-horizontal sp-label">Reports</a>
         <a class="sp-menu-item sp-minimal sp-horizontal sp-label">Tearsheets</a>
-      </div>
-      <div class="sp-col sp-span-2 sp-align-right sp-padding-0">
-        <button class="sp-rounded sp-primary sp-icon-more sp-offset-half-down sp-margin-left-2 sp-large"></button>
-      </div>
-    </div>
+	  	</div>
+	  	<div class="sp-col sp-span-2 sp-align-right sp-padding-0">
+	  		<button class="sp-rounded sp-primary sp-icon-more sp-offset-half-down sp-margin-left-2 sp-large"></button>
+  		</div>
+  	</div>
   </div>
   <div class="sp-app-content sp-wrapper">
     <div class="sp-wrapper">
@@ -1111,10 +1111,10 @@
           </div>
           <div class="sp-row">
             <div class="sp-col sp-span-6">
-              <button class="sp-block sp-primary sp-icon-save sp-small sp-state-disabled">Save Changes</button>
+              <button class="sp-block sp-primary sp-icon-save sp-small">Save Changes</button>
             </div>
             <div class="sp-col sp-span-6">
-              <button class="sp-block sp-warning sp-icon-circle-close sp-small sp-state-disabled">Discard Changes</button>
+              <button class="sp-block sp-warning sp-icon-circle-close sp-small">Discard Changes</button>
             </div>
           </div>
           <div class="sp-row">
@@ -1127,15 +1127,21 @@
           </div>
           <div class="sp-row">
             <div class="sp-col sp-span-12">
-              <textarea readonly class="sp-full-width sp-height-6 sp-small sp-margin-top-1" style="min-width: 100%; max-width: 100%; font-family: monospace">&lt;!-- Tag Code Goes Here --&gt;</textarea>
+              <textarea readonly class="sp-full-width sp-height-6 sp-margin-top-1" disabled style="min-width: 100%; max-width: 100%; font-family: monospace">&lt;!-- Tag Code Goes Here --&gt;</textarea>
             </div>
           </div>
           <div class="sp-row">
             <div class="sp-col sp-span-12">
               <div class="sp-group sp-flex">
-                <button class="qit-target sp-small" style="flex-grow:1;">Copy to Clipboard</button>
-                <button class="qit-target sp-small" style="flex-grow:1;">Download Tag</button>
+                <button class="qit-target sp-small sp-state-disabled" style="flex-grow:1;">Copy to Clipboard</button>
+                <button class="qit-target sp-small sp-state-disabled" style="flex-grow:1;">Download Tag</button>
               </div>
+            </div>
+          </div>
+          <div class="sp-row">
+            <div class="sp-col sp-span-12">
+              <div class="sp-label sp-small"></div>
+            </div>
           </div>
         </div>
       </div>

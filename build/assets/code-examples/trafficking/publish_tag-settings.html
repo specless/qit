@@ -59,19 +59,19 @@
     </div>
   </div>
   <div class="sp-app-menu sp-container-dark sp-wrapper">
-  	<div class="sp-row sp-vbottom sp-height-2">
-  		<div class="sp-col sp-span-10 sp-padding-0">
-	  		<a class="sp-menu-item sp-minimal sp-horizontal sp-label">Overview</a>
-	  		<a class="sp-menu-item sp-minimal sp-horizontal sp-label">Panels & Assets</a>
-	  		<a class="sp-menu-item sp-minimal sp-horizontal sp-label sp-state-active">Publish</a>
-	  		<a class="sp-menu-item sp-minimal sp-horizontal sp-label">Versions</a>
+    <div class="sp-row sp-vbottom sp-height-2">
+      <div class="sp-col sp-span-10 sp-padding-0">
+        <a class="sp-menu-item sp-minimal sp-horizontal sp-label">Overview</a>
+        <a class="sp-menu-item sp-minimal sp-horizontal sp-label">Panels & Assets</a>
+        <a class="sp-menu-item sp-minimal sp-horizontal sp-label sp-state-active">Publish</a>
+        <a class="sp-menu-item sp-minimal sp-horizontal sp-label">Versions</a>
         <a class="sp-menu-item sp-minimal sp-horizontal sp-label">Reports</a>
         <a class="sp-menu-item sp-minimal sp-horizontal sp-label">Tearsheets</a>
-	  	</div>
-	  	<div class="sp-col sp-span-2 sp-align-right sp-padding-0">
-	  		<button class="sp-rounded sp-primary sp-icon-circle-plus sp-offset-half-down sp-margin-left-2 sp-large"></button>
-  		</div>
-  	</div>
+      </div>
+      <div class="sp-col sp-span-2 sp-align-right sp-padding-0">
+        <button class="sp-rounded sp-primary sp-icon-more sp-offset-half-down sp-margin-left-2 sp-large"></button>
+      </div>
+    </div>
   </div>
   <div class="sp-app-content sp-wrapper">
     <div class="sp-wrapper">
@@ -101,7 +101,7 @@
           <a class="sp-menu-item">Dynamic Data</a>
           <a class="sp-menu-item">Advanced</a>
         </div>
-        <div class="sp-col sp-span-7">
+        <div class="sp-col sp-span-6">
           <div class="sp-row sp-rectangle">
             <div class="sp-col sp-span-12 sp-padding-0">
               <h4>Basic Setup</h4>
@@ -114,11 +114,11 @@
                 <div class="sp-row">
                   <div class="sp-col sp-span-6">
                     <div class="sp-label sp-margin-bottom-2 sp-margin-top-1">Tag Name</div>
-                    <input type="text" class="sp-full-width" value="Tag Name Goes Here"/>
+                    <input type="text" class="sp-full-width sp-small" value="Tag Name Goes Here"/>
                   </div>
                   <div class="sp-col sp-span-6">
                     <div class="sp-label sp-margin-bottom-2 sp-margin-top-1">Campaign</div>
-                    <div class="sp-selector sp-full-width">
+                    <div class="sp-selector sp-full-width sp-small">
                       <input type="text" class="sp-full-width sp-selector-trigger" value="My Awesome Campaign"/>
                       <div class="sp-selector-overlay">
                         <div class="sp-menu-dropdown sp-overlay">
@@ -135,7 +135,7 @@
                 <div class="sp-row">
                   <div class="sp-col sp-span-6">
                     <div class="sp-label sp-margin-bottom-2 sp-margin-top-1 sp-rectangle">Tag Labels</div>
-                    <div class="sp-selector sp-full-width sp-margin-bottom-2">
+                    <div class="sp-selector sp-full-width sp-margin-bottom-2 sp-small">
                       <input type="text" class="sp-padding-icon-left sp-full-width sp-selector-trigger" placeholder="Enter or Choose A Custom Label"/>
                       <div class="sp-selector-overlay sp-icon-circle-plus">
                         <div class="sp-menu-dropdown sp-overlay">
@@ -160,7 +160,7 @@
                   </div>
                   <div class="sp-col sp-span-6">
                   <div class="sp-label sp-margin-bottom-2 sp-margin-top-1 sp-rectangle">Tag Type / Ad Server</div>
-                    <div class="sp-selector sp-full-width">
+                    <div class="sp-selector sp-full-width sp-small">
                       <input readonly type="text" class="sp-full-width sp-selector-trigger" value="DoubleClick For Publishers"/>
                       <div class="sp-selector-overlay">
                         <div class="sp-menu-dropdown sp-overlay">
@@ -206,6 +206,19 @@
                       <a class="sp-menu-item">Static Size Display Unit</a>
                       <a class="sp-menu-item sp-state-active">Fluid Width Display Unit</a>
                       <a class="sp-menu-item">Fluid Display Unit</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="sp-row">
+                  <div class="sp-col sp-span-12">
+                    <div class="sp-label sp-margin-bottom-2 sp-margin-top-1">Format Description</div>
+                    <p>This unit has a fixed height but will fill any ad slot width.</p>
+                  </div>
+                </div>
+                <div class="sp-row">
+                  <div class="sp-col sp-span-12">
+                    <div class="sp-margin-bottom-2 sp-margin-top-1">
+                      <button class="sp-block sp-small">View Format Details</button>
                     </div>
                   </div>
                 </div>
@@ -273,6 +286,124 @@
                   </div>
                 </div>
               </div>
+
+              <div class="sp-wrapper sp-overlay sp-margin-bottom-3 sp-rectangle sp-padding-horizontal-2 sp-padding-bottom-2">
+                <div class="sp-row sp-border-bottom-base">
+                  <div class="sp-col sp-span-12">
+                    <h5><i class="sp-inline-icon-settings sp-margin-right-2"></i>Setup Click-Throughs</h5>
+                  </div>
+                </div>
+                <div class="sp-row sp-vcenter">
+                  <div class="sp-col sp-span-3 sp-align-right">
+                    <div class="sp-label sp-margin-bottom-2 sp-margin-top-1">Exit Name</div>
+                  </div>
+                  <div class="sp-col sp-span-1 sp-align-center">
+                   
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <div class="sp-label sp-margin-bottom-2 sp-margin-top-1">Destination URL / Click Tracker URL</div>
+                  </div>
+                </div>
+
+                <div class="sp-row sp-vcenter sp-border-bottom-base">
+                  <div class="sp-col sp-span-3 sp-align-right">
+                    <h6>Default</h6>
+                  </div>
+                  <div class="sp-col sp-span-1 sp-align-center">
+                    <div class="sp-icon-circle-arrow-right"></div>
+                  </div>
+                  <div class="sp-col sp-span-3">
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Custom"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-state-active">Custom</a>
+                          <a class="sp-menu-item">Global Trafficking Value</a>
+                          <a class="sp-menu-item">None</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sp-col sp-span-5">
+                    <input type="text" class="sp-full-width sp-small" value="http://www.somesite.com"/>
+                  </div>
+                </div>
+
+                <div class="sp-row sp-vcenter">
+                  <div class="sp-col sp-span-3 sp-align-right">
+                    <h6>Facebook Page</h6>
+                  </div>
+                  <div class="sp-col sp-span-1 sp-align-center">
+                    <div class="sp-icon-circle-arrow-right"></div>
+                  </div>
+                  <div class="sp-col sp-span-3">
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Custom"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-state-active">Custom</a>
+                          <a class="sp-menu-item">Global Trafficking Value</a>
+                          <a class="sp-menu-item">None</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sp-col sp-span-5">
+                    <input type="text" class="sp-full-width sp-small" value="http://www.somesite.com"/>
+                  </div>
+                </div>
+
+                <div class="sp-row sp-vcenter">
+                  <div class="sp-col sp-span-3 sp-align-right">
+                    <h6>Homepage</h6>
+                  </div>
+                  <div class="sp-col sp-span-1 sp-align-center">
+                    <div class="sp-icon-circle-arrow-right"></div>
+                  </div>
+                  <div class="sp-col sp-span-3">
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Custom"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-state-active">Custom</a>
+                          <a class="sp-menu-item">Global Trafficking Value</a>
+                          <a class="sp-menu-item">None</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sp-col sp-span-5">
+                    <input type="text" class="sp-full-width sp-small" value="http://www.somesite.com"/>
+                  </div>
+                </div>
+
+                <div class="sp-row sp-vcenter">
+                  <div class="sp-col sp-span-3 sp-align-right">
+                    <h6>Main CTA</h6>
+                  </div>
+                  <div class="sp-col sp-span-1 sp-align-center">
+                    <div class="sp-icon-circle-arrow-right"></div>
+                  </div>
+                  <div class="sp-col sp-span-3">
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Custom"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-state-active">Custom</a>
+                          <a class="sp-menu-item">Global Trafficking Value</a>
+                          <a class="sp-menu-item">None</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sp-col sp-span-5">
+                    <input type="text" class="sp-full-width sp-small" value="http://www.somesite.com"/>
+                  </div>
+                </div>
+
+              </div>
+
+
               <div class="sp-margin-top-4">
                 <h4>Other Settings</h4>
               </div>
@@ -280,16 +411,6 @@
                 <div class="sp-row sp-border-bottom-base">
                   <div class="sp-col sp-span-12">
                     <h5><i class="sp-inline-icon-settings sp-margin-right-2"></i>Format Settings</h5>
-                  </div>
-                </div>
-                <div class="sp-row">
-                  <div class="sp-col sp-span-6">
-                    <div class="sp-label sp-margin-bottom-2 sp-margin-top-1">Selected Format</div>
-                    <p>Fluid Width Display Unit</p>
-                  </div>
-                  <div class="sp-col sp-span-6">
-                    <div class="sp-label sp-margin-bottom-2 sp-margin-top-1">Format Description</div>
-                    <p>This unit has a fixed height but will fill any ad slot width.</p>
                   </div>
                 </div>
                 <div class="sp-row sp-vcenter">
@@ -414,29 +535,73 @@
                   </div>
                 </div>
               </div>
-              
+
 
               <div class="sp-wrapper sp-overlay sp-margin-bottom-3 sp-rectangle sp-padding-horizontal-2 sp-padding-bottom-2">
                 <div class="sp-row sp-border-bottom-base">
                   <div class="sp-col sp-span-12">
-                    <h5><i class="sp-inline-icon-settings sp-margin-right-2"></i>Setup Click-Throughs</h5>
+                    <h5><i class="sp-inline-icon-settings sp-margin-right-2"></i>Tracking</h5>
                   </div>
                 </div>
+
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-12">
+                    <div class="sp-label sp-margin-bottom-2 sp-margin-top-1 sp-rectangle">Add 3rd Party Tracking Pixels</div>
+                  </div>
+                </div>
+                
                 <div class="sp-row sp-vcenter">
                   <div class="sp-col sp-span-3 sp-align-right">
-                    <div class="sp-label sp-margin-bottom-2 sp-margin-top-1">Exit Name</div>
+                    <h6>some_event</h6>
                   </div>
                   <div class="sp-col sp-span-1 sp-align-center">
-                   
+                    <div class="sp-icon-circle-arrow-right"></div>
                   </div>
-                  <div class="sp-col sp-span-8">
-                    <div class="sp-label sp-margin-bottom-2 sp-margin-top-1">Destination URL / Click Tracker URL</div>
+                  <div class="sp-col sp-span-3">
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Custom"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-state-active">Custom</a>
+                          <a class="sp-menu-item">Global Trafficking Value</a>
+                          <a class="sp-menu-item">None</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sp-col sp-span-5">
+                    <input type="text" class="sp-full-width sp-small" value="http://www.somesite.com/1x1.gif"/>
+                  </div>
+                </div>
+
+                <div class="sp-row sp-vcenter">
+                  <div class="sp-col sp-span-3 sp-align-right">
+                    <h6>Fire Pixel</h6>
+                  </div>
+                  <div class="sp-col sp-span-1 sp-align-center">
+                    <div class="sp-icon-circle-arrow-right"></div>
+                  </div>
+                  <div class="sp-col sp-span-3">
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Custom"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-state-active">Custom</a>
+                          <a class="sp-menu-item">Global Trafficking Value</a>
+                          <a class="sp-menu-item">None</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sp-col sp-span-5">
+                    <input type="text" class="sp-full-width sp-small" value="http://www.somesite.com/1x1.gif"/>
                   </div>
                 </div>
 
                 <div class="sp-row sp-vcenter sp-border-bottom-base">
                   <div class="sp-col sp-span-3 sp-align-right">
-                    <h6>Default</h6>
+                    <h6>Viewable Impression</h6>
                   </div>
                   <div class="sp-col sp-span-1 sp-align-center">
                     <div class="sp-icon-circle-arrow-right"></div>
@@ -454,89 +619,524 @@
                     </div>
                   </div>
                   <div class="sp-col sp-span-5">
-                    <input type="text" class="sp-full-width sp-small" value="http://www.somesite.com"/>
+                    <input type="text" class="sp-full-width sp-small" value="http://www.somesite.com/1x1.gif"/>
                   </div>
                 </div>
 
                 <div class="sp-row sp-vcenter">
                   <div class="sp-col sp-span-3 sp-align-right">
-                    <h6>Facebook Page</h6>
-                  </div>
-                  <div class="sp-col sp-span-1 sp-align-center">
-                    <div class="sp-icon-circle-arrow-right"></div>
-                  </div>
-                  <div class="sp-col sp-span-3">
                     <div class="sp-selector sp-full-width sp-small">
-                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Custom"/>
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Impression"/>
                       <div class="sp-selector-overlay">
                         <div class="sp-menu-dropdown sp-overlay">
-                          <a class="sp-menu-item sp-state-active">Custom</a>
-                          <a class="sp-menu-item">Global Trafficking Value</a>
-                          <a class="sp-menu-item">None</a>
+                          <a class="sp-menu-item sp-state-active">Impression</a>
+                          <a class="sp-menu-item">Viewable Impression</a>
+                          <a class="sp-menu-item">Interacted Impression</a>
+                          <a class="sp-menu-item">Video Impression</a>
+                          <a class="sp-menu-item">Initial Load Complete</a>
+                          <a class="sp-menu-item">Sub Load Start</a>
+                          <a class="sp-menu-item">Sub Load Complete</a>
+                          <a class="sp-menu-item">User Load Start</a>
+                          <a class="sp-menu-item">User Load Complete</a>
+                          <a class="sp-menu-item">Expand Start</a>
+                          <a class="sp-menu-item">Close Start</a>
+                          <a class="sp-menu-item">Ad Unload</a>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="sp-col sp-span-5">
-                    <input type="text" class="sp-full-width sp-small" value="http://www.somesite.com"/>
+                  <div class="sp-col sp-span-1 sp-align-center">
+                    <div class="sp-icon-circle-arrow-right"></div>
+                  </div>
+                  <div class="sp-col sp-span-7" style="padding-right: 0">
+                    <input type="text" class="sp-full-width sp-small" value="http://www.somesite.com/1x1.gif"/>
+                  </div>
+                  <div class="sp-col sp-span-1">
+                    <button class="sp-icon-circle-close sp-danger sp-small"></button>
                   </div>
                 </div>
 
-                <div class="sp-row sp-vcenter">
-                  <div class="sp-col sp-span-3 sp-align-right">
-                    <h6>Homepage</h6>
-                  </div>
-                  <div class="sp-col sp-span-1 sp-align-center">
-                    <div class="sp-icon-circle-arrow-right"></div>
-                  </div>
-                  <div class="sp-col sp-span-3">
-                    <div class="sp-selector sp-full-width sp-small">
-                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Custom"/>
-                      <div class="sp-selector-overlay">
-                        <div class="sp-menu-dropdown sp-overlay">
-                          <a class="sp-menu-item sp-state-active">Custom</a>
-                          <a class="sp-menu-item">Global Trafficking Value</a>
-                          <a class="sp-menu-item">None</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="sp-col sp-span-5">
-                    <input type="text" class="sp-full-width sp-small" value="http://www.somesite.com"/>
+                <div class="sp-row">
+                  <div class="sp-col sp-span-12">
+                    <button class="sp-block sp-small">Add Another 3rd Party Tracker</button>
                   </div>
                 </div>
 
-                <div class="sp-row sp-vcenter">
-                  <div class="sp-col sp-span-3 sp-align-right">
-                    <h6>Main CTA</h6>
-                  </div>
-                  <div class="sp-col sp-span-1 sp-align-center">
-                    <div class="sp-icon-circle-arrow-right"></div>
-                  </div>
-                  <div class="sp-col sp-span-3">
-                    <div class="sp-selector sp-full-width sp-small">
-                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Custom"/>
-                      <div class="sp-selector-overlay">
-                        <div class="sp-menu-dropdown sp-overlay">
-                          <a class="sp-menu-item sp-state-active">Custom</a>
-                          <a class="sp-menu-item">Global Trafficking Value</a>
-                          <a class="sp-menu-item">None</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="sp-col sp-span-5">
-                    <input type="text" class="sp-full-width sp-small" value="http://www.somesite.com"/>
-                  </div>
-                </div>
 
               </div>
+
+              <div class="sp-wrapper sp-overlay sp-margin-bottom-3 sp-rectangle sp-padding-horizontal-2 sp-padding-bottom-2">
+                <div class="sp-row sp-border-bottom-base">
+                  <div class="sp-col sp-span-12">
+                    <h5><i class="sp-inline-icon-settings sp-margin-right-2"></i>Assets & Compression</h5>
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-12">
+                    <div class="sp-label sp-margin-bottom-2 sp-margin-top-1 sp-rectangle">Compress Assets</div>
+                  </div>
+                </div>
+
+
+                <div class="sp-row sp-vcenter sp-border-bottom-base">
+                  <div class="sp-col sp-span-3 sp-align-right">
+                    <h6>Primary Content</h6>
+                  </div>
+                </div>
+                <div class="sp-row sp-vcenter">
+                  <div class="sp-col sp-span-3 sp-align-right">
+                    JPEG Images
+                  </div>
+                  <div class="sp-col sp-span-1 sp-align-center">
+                    <div class="sp-icon-circle-arrow-right"></div>
+                  </div>
+                  <div class="sp-col sp-span-3">
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Auto (Uses Creative Settings)"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-state-active">Auto (Uses Creative Settings)</a>
+                          <a class="sp-menu-item">Explicit Value</a>
+                          <a class="sp-menu-item">Additive Value</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sp-col sp-span-5">
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Determined by Creative Settings" disabled/>
+                      <!-- <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-state-active">Custom</a>
+                          <a class="sp-menu-item">Global Trafficking Value</a>
+                          <a class="sp-menu-item">None</a>
+                        </div>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="sp-row sp-vcenter">
+                  <div class="sp-col sp-span-3 sp-align-right">
+                    PNG Images
+                  </div>
+                  <div class="sp-col sp-span-1 sp-align-center">
+                    <div class="sp-icon-circle-arrow-right"></div>
+                  </div>
+                  <div class="sp-col sp-span-3">
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Explicit Value"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item">Auto (Uses Creative Settings)</a>
+                          <a class="sp-menu-item sp-state-active">Explicit Value</a>
+                          <a class="sp-menu-item">Additive Value</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sp-col sp-span-5">
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="80%"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item">100%</a>
+                          <a class="sp-menu-item">90%</a>
+                          <a class="sp-menu-item sp-state-active">80%</a>
+                          <a class="sp-menu-item">70%</a>
+                          <a class="sp-menu-item">60%</a>
+                          <a class="sp-menu-item">50%</a>
+                          <a class="sp-menu-item">40%</a>
+                          <a class="sp-menu-item">30%</a>
+                          <a class="sp-menu-item">20%</a>
+                          <a class="sp-menu-item">10%</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sp-row sp-vcenter">
+                  <div class="sp-col sp-span-3 sp-align-right">
+                    GIF Images
+                  </div>
+                  <div class="sp-col sp-span-1 sp-align-center">
+                    <div class="sp-icon-circle-arrow-right"></div>
+                  </div>
+                  <div class="sp-col sp-span-3">
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Explicit Value"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item">Auto (Uses Creative Settings)</a>
+                          <a class="sp-menu-item sp-state-active">Explicit Value</a>
+                          <a class="sp-menu-item">Additive Value</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sp-col sp-span-5">
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="80%"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item">100%</a>
+                          <a class="sp-menu-item">90%</a>
+                          <a class="sp-menu-item sp-state-active">80%</a>
+                          <a class="sp-menu-item">70%</a>
+                          <a class="sp-menu-item">60%</a>
+                          <a class="sp-menu-item">50%</a>
+                          <a class="sp-menu-item">40%</a>
+                          <a class="sp-menu-item">30%</a>
+                          <a class="sp-menu-item">20%</a>
+                          <a class="sp-menu-item">10%</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sp-row sp-vcenter">
+                  <div class="sp-col sp-span-3 sp-align-right">
+                    WEBP Images
+                  </div>
+                  <div class="sp-col sp-span-1 sp-align-center">
+                    <div class="sp-icon-circle-arrow-right"></div>
+                  </div>
+                  <div class="sp-col sp-span-3">
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Additive Value"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item">Auto (Uses Creative Settings)</a>
+                          <a class="sp-menu-item">Explicit Value</a>
+                          <a class="sp-menu-item sp-state-active">Additive Value</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sp-col sp-span-5">
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="80% of Creative Setting"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item">100%</a>
+                          <a class="sp-menu-item">90%</a>
+                          <a class="sp-menu-item sp-state-active">80%</a>
+                          <a class="sp-menu-item">70%</a>
+                          <a class="sp-menu-item">60%</a>
+                          <a class="sp-menu-item">50%</a>
+                          <a class="sp-menu-item">40%</a>
+                          <a class="sp-menu-item">30%</a>
+                          <a class="sp-menu-item">20%</a>
+                          <a class="sp-menu-item">10%</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sp-row sp-vcenter">
+                  <div class="sp-col sp-span-3 sp-align-right">
+                    Videos
+                  </div>
+                  <div class="sp-col sp-span-1 sp-align-center">
+                    <div class="sp-icon-circle-arrow-right"></div>
+                  </div>
+                  <div class="sp-col sp-span-3">
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Explicit Value"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item">Auto (Uses Creative Settings)</a>
+                          <a class="sp-menu-item sp-state-active">Explicit Value</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sp-col sp-span-5">
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Medium Quality"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item">Original Asset</a>
+                          <a class="sp-menu-item">High Quality</a>
+                          <a class="sp-menu-item sp-state-active">Medium Quality</a>
+                          <a class="sp-menu-item">Low Quality</a>
+                          <a class="sp-menu-item">Minimal Quality</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sp-row sp-vcenter sp-border-bottom-base">
+                  <div class="sp-col sp-span-3 sp-align-right">
+                    <h6>Expanded Content</h6>
+                  </div>
+                </div>
+                <div class="sp-row sp-vcenter">
+                  <div class="sp-col sp-span-3 sp-align-right">
+                    JPEG Images
+                  </div>
+                  <div class="sp-col sp-span-1 sp-align-center">
+                    <div class="sp-icon-circle-arrow-right"></div>
+                  </div>
+                  <div class="sp-col sp-span-3">
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Auto (Uses Creative Settings)"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-state-active">Auto (Uses Creative Settings)</a>
+                          <a class="sp-menu-item">Explicit Value</a>
+                          <a class="sp-menu-item">Additive Value</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sp-col sp-span-5">
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Determined by Creative Settings" disabled/>
+                      <!-- <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-state-active">Custom</a>
+                          <a class="sp-menu-item">Global Trafficking Value</a>
+                          <a class="sp-menu-item">None</a>
+                        </div>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="sp-row sp-vcenter">
+                  <div class="sp-col sp-span-3 sp-align-right">
+                    PNG Images
+                  </div>
+                  <div class="sp-col sp-span-1 sp-align-center">
+                    <div class="sp-icon-circle-arrow-right"></div>
+                  </div>
+                  <div class="sp-col sp-span-3">
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Explicit Value"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item">Auto (Uses Creative Settings)</a>
+                          <a class="sp-menu-item sp-state-active">Explicit Value</a>
+                          <a class="sp-menu-item">Additive Value</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sp-col sp-span-5">
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="80%"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item">100%</a>
+                          <a class="sp-menu-item">90%</a>
+                          <a class="sp-menu-item sp-state-active">80%</a>
+                          <a class="sp-menu-item">70%</a>
+                          <a class="sp-menu-item">60%</a>
+                          <a class="sp-menu-item">50%</a>
+                          <a class="sp-menu-item">40%</a>
+                          <a class="sp-menu-item">30%</a>
+                          <a class="sp-menu-item">20%</a>
+                          <a class="sp-menu-item">10%</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sp-row sp-vcenter">
+                  <div class="sp-col sp-span-3 sp-align-right">
+                    GIF Images
+                  </div>
+                  <div class="sp-col sp-span-1 sp-align-center">
+                    <div class="sp-icon-circle-arrow-right"></div>
+                  </div>
+                  <div class="sp-col sp-span-3">
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Explicit Value"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item">Auto (Uses Creative Settings)</a>
+                          <a class="sp-menu-item sp-state-active">Explicit Value</a>
+                          <a class="sp-menu-item">Additive Value</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sp-col sp-span-5">
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="80%"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item">100%</a>
+                          <a class="sp-menu-item">90%</a>
+                          <a class="sp-menu-item sp-state-active">80%</a>
+                          <a class="sp-menu-item">70%</a>
+                          <a class="sp-menu-item">60%</a>
+                          <a class="sp-menu-item">50%</a>
+                          <a class="sp-menu-item">40%</a>
+                          <a class="sp-menu-item">30%</a>
+                          <a class="sp-menu-item">20%</a>
+                          <a class="sp-menu-item">10%</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sp-row sp-vcenter">
+                  <div class="sp-col sp-span-3 sp-align-right">
+                    WEBP Images
+                  </div>
+                  <div class="sp-col sp-span-1 sp-align-center">
+                    <div class="sp-icon-circle-arrow-right"></div>
+                  </div>
+                  <div class="sp-col sp-span-3">
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Additive Value"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item">Auto (Uses Creative Settings)</a>
+                          <a class="sp-menu-item">Explicit Value</a>
+                          <a class="sp-menu-item sp-state-active">Additive Value</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sp-col sp-span-5">
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="80% of Creative Setting"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item">100%</a>
+                          <a class="sp-menu-item">90%</a>
+                          <a class="sp-menu-item sp-state-active">80%</a>
+                          <a class="sp-menu-item">70%</a>
+                          <a class="sp-menu-item">60%</a>
+                          <a class="sp-menu-item">50%</a>
+                          <a class="sp-menu-item">40%</a>
+                          <a class="sp-menu-item">30%</a>
+                          <a class="sp-menu-item">20%</a>
+                          <a class="sp-menu-item">10%</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sp-row sp-vcenter">
+                  <div class="sp-col sp-span-3 sp-align-right">
+                    Videos
+                  </div>
+                  <div class="sp-col sp-span-1 sp-align-center">
+                    <div class="sp-icon-circle-arrow-right"></div>
+                  </div>
+                  <div class="sp-col sp-span-3">
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Explicit Value"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item">Auto (Uses Creative Settings)</a>
+                          <a class="sp-menu-item sp-state-active">Explicit Value</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sp-col sp-span-5">
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Medium Quality"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item">Original Asset</a>
+                          <a class="sp-menu-item">High Quality</a>
+                          <a class="sp-menu-item sp-state-active">Medium Quality</a>
+                          <a class="sp-menu-item">Low Quality</a>
+                          <a class="sp-menu-item">Minimal Quality</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="sp-wrapper sp-overlay sp-margin-bottom-3 sp-rectangle sp-padding-horizontal-2 sp-padding-bottom-2">
+                <div class="sp-row sp-border-bottom-base">
+                  <div class="sp-col sp-span-12">
+                    <h5><i class="sp-inline-icon-settings sp-margin-right-2"></i>Dynamic Data</h5>
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-12">
+                    <div class="sp-label sp-margin-bottom-2 sp-margin-top-1 sp-rectangle">Data Feeds</div>
+                  </div>
+                </div>
+
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-12">
+                    <button class="sp-block sp-small">Add A Data Feed</button>
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="sp-wrapper sp-overlay sp-margin-bottom-3 sp-rectangle sp-padding-horizontal-2 sp-padding-bottom-2">
+                <div class="sp-row sp-border-bottom-base">
+                  <div class="sp-col sp-span-12">
+                    <h5><i class="sp-inline-icon-settings sp-margin-right-2"></i>Advanced</h5>
+                  </div>
+                </div>
+              </div>
+
 
             </div>
           </div>
         </div>
-        <div class="sp-col sp-span-3">
-        Test
+        <div class="sp-col sp-span-4">
+          <div class="sp-row">
+            <div class="sp-col sp-span-12">
+              <button class="sp-block sp-icon-eye sp-small">Preview With Current Settings</button>
+            </div>
+          </div>
+          <div class="sp-row">
+            <div class="sp-col sp-span-6">
+              <button class="sp-block sp-primary sp-icon-save sp-small sp-state-disabled">Save Changes</button>
+            </div>
+            <div class="sp-col sp-span-6">
+              <button class="sp-block sp-warning sp-icon-circle-close sp-small sp-state-disabled">Discard Changes</button>
+            </div>
+          </div>
+          <div class="sp-row">
+            <div class="sp-col sp-span-12 sp-small">
+              <div class="sp-border-bottom-base">
+                <a class="sp-menu-item sp-horizontal sp-label sp-state-active">View Tag</a>
+                <a class="sp-menu-item sp-horizontal sp-label">Activity Feed</a>
+              </div>
+            </div>
+          </div>
+          <div class="sp-row">
+            <div class="sp-col sp-span-12">
+              <textarea readonly class="sp-full-width sp-height-6 sp-small sp-margin-top-1" style="min-width: 100%; max-width: 100%; font-family: monospace">&lt;!-- Tag Code Goes Here --&gt;</textarea>
+            </div>
+          </div>
+          <div class="sp-row">
+            <div class="sp-col sp-span-12">
+              <div class="sp-group sp-flex">
+                <button class="qit-target sp-small" style="flex-grow:1;">Copy to Clipboard</button>
+                <button class="qit-target sp-small" style="flex-grow:1;">Download Tag</button>
+              </div>
+          </div>
         </div>
       </div>
     </div>

@@ -22,7 +22,7 @@
   position: relative;
   width: 100%;
   align-items: flex-start;
-  & > .column {
+  & > .sp-col {
     margin: 0;
     padding: 0;
   }
@@ -80,6 +80,12 @@
 
   &.sp-col {
     flex-direction: column;
+  }
+
+  > .sp-col {
+    @include mobile {
+      width: 100%;
+    }
   }
 
   @include mobile {

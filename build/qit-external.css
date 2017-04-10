@@ -1571,7 +1571,7 @@ html {
   position: relative;
   width: 100%;
   align-items: flex-start; }
-  .sp-row > .column {
+  .sp-row > .sp-col {
     margin: 0;
     padding: 0; }
   .sp-row.sp-row-hover:hover {
@@ -1607,6 +1607,9 @@ html {
     align-items: center; }
   .sp-row.sp-col {
     flex-direction: column; }
+  @media (max-width: 480px) {
+    .sp-row > .sp-col {
+      width: 100%; } }
   @media (max-width: 480px) {
     .sp-row {
       display: block;

@@ -1592,11 +1592,12 @@ html {
     flex-wrap: wrap; }
   .sp-row.sp-vcenter {
     align-items: center; }
-  .sp-row.sp-column {
+  .sp-row.sp-col {
     flex-direction: column; }
   @media (max-width: 480px) {
     .sp-row {
-      display: block; } }
+      display: block;
+      width: 100%; } }
   @media (min-width: 481px) {
     .sp-row {
       display: flex; } }

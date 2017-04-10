@@ -63,12 +63,13 @@
     align-items: center;
   }
 
-  &.sp-column {
+  &.sp-col {
     flex-direction: column;
   }
 
   @include mobile {
     display: block;
+    width: 100%;
   }
 
   @include tablet {

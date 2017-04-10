@@ -69,7 +69,7 @@
         <a class="sp-menu-item sp-minimal sp-horizontal sp-label">Tearsheets</a>
 	  	</div>
 	  	<div class="sp-col sp-span-2 sp-align-right sp-padding-0">
-	  		<a href="publish_tags-create.html" class="sp-button sp-rounded sp-primary sp-icon-circle-plus sp-offset-half-down sp-margin-left-2 sp-large"></a>
+	  		<button class="sp-rounded sp-primary sp-icon-circle-plus sp-offset-half-down sp-margin-left-2 sp-large"></button>
   		</div>
   	</div>
   </div>
@@ -137,7 +137,7 @@
                         <a class="sp-menu-item sp-icon-data">View Reporting</a>
                         <div class="sp-spacer-vertical"></div>
                         <a class="sp-menu-item sp-icon-copy">Duplicate Tag</a>
-                        <a href="publish_tag-settings.html" class="sp-menu-item sp-icon-settings">Tag Settings</a>
+                        <a class="sp-menu-item sp-icon-edit">Edit Tag Settings</a>
                         <a class="sp-menu-item sp-icon-circle-close">Delete Tag</a>
                       </div>
                     </div>
@@ -163,7 +163,7 @@
                         <a class="sp-menu-item sp-icon-data">View Reporting</a>
                         <div class="sp-spacer-vertical"></div>
                         <a class="sp-menu-item sp-icon-copy">Duplicate Tag</a>
-                        <a href="publish_tag-settings.html" class="sp-menu-item sp-icon-settings">Tag Settings</a>
+                        <a class="sp-menu-item sp-icon-edit">Edit Tag Settings</a>
                         <a class="sp-menu-item sp-icon-circle-close">Delete Tag</a>
                       </div>
                     </div>
@@ -189,7 +189,7 @@
                         <a class="sp-menu-item sp-icon-data">View Reporting</a>
                         <div class="sp-spacer-vertical"></div>
                         <a class="sp-menu-item sp-icon-copy">Duplicate Tag</a>
-                        <a href="publish_tag-settings.html" class="sp-menu-item sp-icon-settings">Tag Settings</a>
+                        <a class="sp-menu-item sp-icon-edit">Edit Tag Settings</a>
                         <a class="sp-menu-item sp-icon-circle-close">Delete Tag</a>
                       </div>
                     </div>
@@ -214,7 +214,7 @@
                         <a class="sp-menu-item sp-icon-data">View Reporting</a>
                         <div class="sp-spacer-vertical"></div>
                         <a class="sp-menu-item sp-icon-copy">Duplicate Tag</a>
-                        <a href="publish_tag-settings.html" class="sp-menu-item sp-icon-settings">Tag Settings</a>
+                        <a class="sp-menu-item sp-icon-edit">Edit Tag Settings</a>
                         <a class="sp-menu-item sp-icon-circle-close">Delete Tag</a>
                       </div>
                     </div>
@@ -241,7 +241,7 @@
                         <a class="sp-menu-item sp-icon-data">View Reporting</a>
                         <div class="sp-spacer-vertical"></div>
                         <a class="sp-menu-item sp-icon-copy">Duplicate Tag</a>
-                        <a href="publish_tag-settings.html" class="sp-menu-item sp-icon-settings">Tag Settings</a>
+                        <a class="sp-menu-item sp-icon-edit">Edit Tag Settings</a>
                         <a class="sp-menu-item sp-icon-circle-close">Delete Tag</a>
                       </div>
                     </div>
@@ -260,6 +260,123 @@
       </div>
     </div>
   </div>
+  <div id="target" class="sp-app-overlay sp-hide">
+    <div class="sp-app-overlay-content">
+      <div class="sp-modal sp-overlay sp-rectangle sp-color-contrast sp-margin-2">
+        <div class="sp-wrapper sp-container-light sp-alt-two sp-modal-header">
+          <div class="sp-row">
+            <div class="sp-col sp-span-12">
+<!--               <span class="sp-modal-icon sp-icon-settings sp-color-muted sp-large"></span> -->
+              <h3><i class="sp-inline-icon-code sp-margin-right-2"></i>Create Tag <span class="sp-margin-left-1 sp-color-base">Tag Name Goes Here</span></h3>
+            </div>
+          </div>
+        </div>
+        <div class="sp-wrapper sp-container-light sp-alt-two sp-modal-menu sp-padding-bottom-2">
+          <div class="sp-row sp-border-bottom-base sp-margin-0">
+             <div class="sp-menu sp-col sp-span-12 sp-padding-0 sp-flex">
+               <a href="publish_tags-create.html" class="sp-menu-item sp-horizontal sp-state-active" style="flex-grow:1">1. Enter Tag Details</a>
+               <a href="publish_tags-create-2.html" class="sp-menu-item sp-horizontal sp-state-disabled" style="flex-grow:1">2. Choose Format</a>
+               <a href="publish_tags-create-3.html" class="sp-menu-item sp-horizontal sp-state-disabled" style="flex-grow:1">3. Choose Panels</a>
+               <a href="publish_tags-create-4.html" class="sp-menu-item sp-horizontal sp-state-disabled" style="flex-grow:1">4. Setup Click-Throughs</a>
+             </div>
+          </div>
+        </div>
+        <div class="sp-wrapper sp-modal-body sp-padding-bottom-2">
+          <div class="sp-row">
+             <div class="sp-col sp-span-12">
+               <div class="sp-wrapper">
+                <!-- <div class="sp-row sp-border-bottom-base">
+                  <div class="sp-col sp-span-12">
+                    <h5><i class="sp-inline-icon-code sp-margin-right-2"></i>Tag Details</h5>
+                  </div>
+                </div> -->
+                <div class="sp-row">
+                  <div class="sp-col sp-span-6">
+                    <div class="sp-label sp-margin-bottom-2 sp-margin-top-1">Tag Name</div>
+                    <input type="text" class="sp-full-width sp-small" value="Tag Name Goes Here"/>
+                  </div>
+                  <div class="sp-col sp-span-6">
+                    <div class="sp-label sp-margin-bottom-2 sp-margin-top-1">Campaign</div>
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input type="text" class="sp-full-width sp-selector-trigger" value="My Awesome Campaign"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-icon-circle-plus">Create: "My Awesome Campaign"</a>
+                          <div class="sp-spacer-vertical"></div>
+                          <a class="sp-menu-item">Some Campaign</a>
+                          <a class="sp-menu-item">Another Campaign</a>
+                          <a class="sp-menu-item">Yet Another Campaign</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sp-row">
+                  <div class="sp-col sp-span-6">
+                    <div class="sp-label sp-margin-bottom-2 sp-margin-top-1 sp-rectangle">Tag Labels</div>
+                    <div class="sp-selector sp-full-width sp-margin-bottom-2 sp-small">
+                      <input type="text" class="sp-padding-icon-left sp-full-width sp-selector-trigger" placeholder="Enter or Choose A Custom Label"/>
+                      <div class="sp-selector-overlay sp-icon-circle-plus">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-icon-circle-plus">Add Label: "Whatever I entered above goes here..."</a>
+                          <div class="sp-spacer-vertical"></div>
+                          <a class="sp-menu-item">CPG</a>
+                          <a class="sp-menu-item">Direct Sale</a>
+                          <a class="sp-menu-item">Custom</a>
+                          <a class="sp-menu-item">Whatever</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sp-padding-2 sp-container-light sp-alt-two">
+                      <div class="sp-tag sp-primary">Campaign: My Awesome Campaign</div>
+                      <div class="sp-tag sp-success">Advertiser: Budweiser</div>
+                      <div class="sp-tag sp-warning">Client: OMD</div>
+                      <div class="sp-tag">CPG<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+                      <div class="sp-tag">Direct Sale<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+                      <div class="sp-tag">Custom<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+                      <div class="sp-tag">Whatever<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+                    </div>
+                  </div>
+                  <div class="sp-col sp-span-6">
+                  <div class="sp-label sp-margin-bottom-2 sp-margin-top-1 sp-rectangle">Tag Type / Ad Server</div>
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="DoubleClick For Publishers"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item">DoubleClick For Publishers</a>
+                          <a class="sp-menu-item">Freewheel</a>
+                          <a class="sp-menu-item">None (Use Placeholder Macros)</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             </div>
+          </div>
+        </div>
+        <div class="sp-wrapper sp-border-top-base sp-modal-footer">
+          <div class="sp-row">
+             <div class="sp-col sp-span-12 sp-modal-footer-buttons">
+               <a href="publish_tags.html" class="sp-button sp-align-center sp-icon-circle-close">Cancel</a>
+               <a href="publish_tags-create.html" class="sp-button sp-align-center sp-icon-circle-arrow-left sp-state-disabled">Previous</a>
+               <a href="publish_tags-create-2.html" class="sp-button sp-align-center sp-icon-after-circle-arrow-right sp-primary">Next</a>
+             </div>
+          </div>
+        </div>
+        <!-- <button class="sp-modal-close sp-icon-close sp-rounded sp-small"></button> -->
+      </div>
+    </div>
+  </div>
+
+<script>
+var target = document.getElementById('target');
+
+setTimeout(function() {
+  target.setAttribute('class', 'sp-app-overlay');
+}, 500);
+
+</script>
 
 </body>
 </html>

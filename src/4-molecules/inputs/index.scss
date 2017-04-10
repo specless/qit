@@ -158,8 +158,6 @@
 			visibility: hidden;
 			pointer-events: none;
 			min-width: 100%;
-			max-height: 75vh;
-			overflow-y: auto;
 
 			&.sp-menu-dropdown-above {
 				top: auto;
@@ -201,6 +199,8 @@
 
 		+.sp-selector-overlay {
 			> .sp-menu-dropdown {
+				max-height: 75vh;
+				overflow-y: auto;
 				&::before {
 					display: none;
 				}

@@ -19,11 +19,26 @@
 .sp-row {
   margin: 0 auto;
   max-width: #{$max-width}px;
+  position: relative;
   width: 100%;
   align-items: flex-start;
   & > .column {
     margin: 0;
     padding: 0;
+  }
+
+  &.sp-row-hover {
+    &:hover {
+      left: -15px;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 100%;
+      z-index: 10;
+      //background-color: inherit;
+      border-color: transparent;
+      @include sp-shadow(medium, 0 0 .4em .07em);
+      @include sp-shape(rectangle);
+    }
   }
 
   &.sp-fluid {

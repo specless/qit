@@ -296,3 +296,40 @@ textarea {
 		@include sp-font-color(contrast);
 	}
 }
+
+.sp-tag {
+  @include sp-font-label;
+  @include sp-tactile;
+  @include sp-shape(rounded);
+  box-sizing: border-box;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 2px 5px !important;
+  font-size: 10px !important;
+  display: inline-block;
+  line-height: 1 !important;
+  margin: 2px;
+  //margin-right: -1em;
+
+  > i::before {
+  	transform: scale(1.4) translateY(1px);
+  }
+
+  @include sp-primary {
+  	color: $sp-color-white;
+  }
+
+  @include sp-success {
+  	color: $sp-color-white;
+  }
+
+  @include sp-warning {
+  	color: $sp-color-white;
+  }
+
+  @include sp-danger {
+  	color: $sp-color-white;
+  }
+}

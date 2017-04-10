@@ -1,0 +1,432 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example</title>
+  <link rel="stylesheet" href="../../../qit.css">
+</head>
+
+<body class="sp-app">
+  <div class="sp-app-bar sp-container-dark sp-alt-one sp-wrapper">
+    <div class="sp-row sp-vcenter sp-height-3">
+      <div class="sp-col sp-span-6 sp-flex sp-flex-align-items-center">
+        <a class="sp-menu-item sp-minimal sp-icon-menu sp-padding-0"></a>
+        <div class="sp-spacer-horizontal"></div>
+        <div class="sp-logo-lockup sp-small sp-primary sp-logo-horizontal sp-margin-left-2"></div>
+      </div>
+      <div class="sp-col sp-span-6 sp-flex sp-flex-justify-content-flex-end sp-flex-align-items-center">
+        <div class="sp-selector sp-margin-left-2">
+          <button class="sp-selector-trigger sp-icon-after-circle-user sp-rounded sp-small sp-minimal">Stephen C.</button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <div class="sp-menu-header sp-small">User Details</div>
+              <a class="sp-menu-item sp-icon-account">Account</a>
+              <a class="sp-menu-item sp-icon-settings">Preferences</a>
+              <a class="sp-menu-item sp-icon-organization">Organizations</a>
+              <a class="sp-menu-item sp-icon-account">Billing</a>
+              <div class="sp-spacer-vertical sp-margin-0"></div>
+              <a class="sp-menu-item sp-icon-logout">Log Out</a>
+            </div>
+          </div>
+        </div>
+        <div class="sp-selector sp-margin-left-2">
+          <button class="sp-selector-trigger sp-icon-after-circle-help sp-rounded sp-small sp-minimal"></button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <div class="sp-menu-header sp-small">Search For Help</div>
+              <div class="sp-padding-horizontal-2 sp-padding-vertical-1" style="position: relative;">
+                <input type="search" class="sp-small sp-rounded" placeholder="Enter Search Term" style="width: 100%"/>
+                <button class="sp-small sp-rounded sp-icon-search sp-primary sp-margin-top-1 sp-margin-right-2" style="position: absolute; top:0; right: 0;border-bottom-left-radius: 0;border-top-left-radius: 0;"></button>
+              </div>
+              <div class="sp-menu-header sp-small">Help Center</div>
+              <a class="sp-menu-item sp-icon-account">Contact Support</a>
+              <a class="sp-menu-item sp-icon-settings">Report a Bug</a>
+              <a class="sp-menu-item sp-icon-organization">Tutorials</a>
+              <a class="sp-menu-item sp-icon-account">Knowledge Base</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sp-app-header sp-container-dark sp-wrapper">
+    <div class="sp-row sp-vcenter sp-height-4">
+      <div class="sp-col sp-span-12 sp-flex sp-flex-align-items-center">
+        <button class="sp-rounded sp-icon-arrow-left sp-margin-right-2"></button>
+        <h2 class="sp-inline sp-contrast">Creative Name Goes Here</h2>
+      </div>
+    </div>
+  </div>
+  <div class="sp-app-menu sp-container-dark sp-wrapper">
+  	<div class="sp-row sp-vbottom sp-height-2">
+  		<div class="sp-col sp-span-10 sp-padding-0">
+	  		<a class="sp-menu-item sp-minimal sp-horizontal sp-label">Overview</a>
+	  		<a class="sp-menu-item sp-minimal sp-horizontal sp-label">Panels & Assets</a>
+	  		<a class="sp-menu-item sp-minimal sp-horizontal sp-label sp-state-active">Publish</a>
+	  		<a class="sp-menu-item sp-minimal sp-horizontal sp-label">Versions</a>
+        <a class="sp-menu-item sp-minimal sp-horizontal sp-label">Reports</a>
+        <a class="sp-menu-item sp-minimal sp-horizontal sp-label">Tearsheets</a>
+	  	</div>
+	  	<div class="sp-col sp-span-2 sp-align-right sp-padding-0">
+	  		<button class="sp-rounded sp-primary sp-icon-circle-plus sp-offset-half-down sp-margin-left-2 sp-large"></button>
+  		</div>
+  	</div>
+  </div>
+  <div class="sp-app-content sp-wrapper">
+    <div class="sp-wrapper">
+      <div class="sp-row sp-border-bottom-base">
+        <div class="sp-col sp-span-6 sp-small sp-padding-0">
+          <a class="sp-menu-item sp-horizontal sp-label sp-state-active">Tags</a>
+          <a class="sp-menu-item sp-horizontal sp-label">Trafficking Settings</a>
+        </div>
+        <div class="sp-col sp-span-6 sp-small sp-padding-0">
+          <div class="sp-custom-input sp-float-right" style="top: -8px;">
+            <input type="text" placeholder="Search Tags" class="sp-padding-icon-left sp-selector-trigger"/>
+            <div class="sp-custom-input-overlay sp-icon-search">
+              <div class="sp-menu-dropdown sp-overlay">
+                <div class="sp-menu-header">Match</div>
+                <a class="sp-menu-item sp-state-active">All</a>
+                <a class="sp-menu-item">Name</a>
+                <a class="sp-menu-item">Status</a>
+                <a class="sp-menu-item">Format</a>
+                <a class="sp-menu-item">Type</a>
+                <a class="sp-menu-item">Labels</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sp-row sp-padding-top-3">
+        <div class="sp-col sp-span-2 sp-small">
+          <div class="sp-menu-header">Campaigns</div>
+          <a class="sp-menu-item sp-state-active sp-border-bottom-base">All Campaigns</a>
+          <a class="sp-menu-item">Some Campaign</a>
+          <a class="sp-menu-item">Another Campaign</a>
+          <a class="sp-menu-item">Yet Another Campaign</a>
+        </div>
+        <div class="sp-col sp-span-10">
+          <table class="sp-block">
+            <tbody class="sp-wrapper sp-container-light sp-contrast sp-rectangle">
+              <tr class="sp-row sp-container sp-small sp-vcenter sp-height-2">
+                <th class="sp-col sp-label">Status<i class="sp-margin-left-1 sp-inline-icon-dropdown"></i></th>
+                <th class="sp-col sp-label sp-span-4 sp-align-left">Tag Name<i class="sp-margin-left-1 sp-inline-icon-dropdown"></i></th>
+                <th class="sp-col sp-label sp-span-2 sp-align-left">Format<i class="sp-margin-left-1 sp-inline-icon-dropdown"></i></th>
+                <th class="sp-col sp-label sp-span-1 sp-align-left">Type<i class="sp-margin-left-1 sp-inline-icon-dropdown"></i></th>
+                <th class="sp-col sp-label sp-span-3 sp-align-left">Labels<i class="sp-margin-left-1 sp-inline-icon-dropdown"></i></th>
+                <th class="sp-col sp-label sp-align-right sp-span-1"></th>
+              </tr>
+              <tr class="sp-row sp-vcenter sp-bg-color-white sp-row-hover sp-border-bottom-base sp-row-hover">
+                <th class="sp-col"><div class="sp-tactile sp-rounded sp-inline sp-tooltip sp-tooltip-below" style="width: 12px; height: 12px"><div class="sp-tooltip-overlay">Idle</div></div></th>
+                <th class="sp-col sp-span-4 sp-align-left sp-tooltip"><h6 class="sp-ellipsis">This is a really long title name that overflows the content area and is too big.</h6><div class="sp-tooltip-overlay">This is a really long title name that overflows the content area and is too big.</div></th>
+                <th class="sp-col sp-span-2 sp-align-left sp-ellipsis">Superhero</th>
+                <th class="sp-col sp-span-1 sp-align-left sp-ellipsis">DFP</th>
+                <th class="sp-col sp-span-3 sp-align-left">
+                  <div class="sp-tag sp-small sp-primary">Campaign: Yet Another Campaign</div>
+                  <div class="sp-tag sp-small">cpg</div>
+                  <div class="sp-tag sp-small">direct sold</div>
+                  <div class="sp-tag sp-small">custom</div>
+                  <div class="sp-tag sp-small">whatever</div>
+                </th>
+                <th class="sp-col sp-align-right sp-span-1">
+                  <div class="sp-selector">
+                    <button tabindex="0" class="sp-selector-trigger sp-icon-more sp-minimal sp-simple-icon sp-small sp-primary"></button>
+                    <div class="sp-selector-overlay">
+                      <div class="sp-menu-dropdown sp-overlay sp-menu-dropdown-below sp-small">
+                        <a class="sp-menu-item sp-icon-eye">Preview Tag</a>
+                        <a class="sp-menu-item sp-icon-data">View Reporting</a>
+                        <div class="sp-spacer-vertical"></div>
+                        <a class="sp-menu-item sp-icon-copy">Duplicate Tag</a>
+                        <a class="sp-menu-item sp-icon-edit">Edit Tag Settings</a>
+                        <a class="sp-menu-item sp-icon-circle-close">Delete Tag</a>
+                      </div>
+                    </div>
+                </th>
+              </tr>
+              <tr class="sp-row sp-vcenter sp-bg-color-white sp-row-hover sp-border-bottom-base">
+                <th class="sp-col"><div class="sp-tactile sp-rounded sp-inline sp-tooltip sp-tooltip-below" style="width: 12px; height: 12px"><div class="sp-tooltip-overlay">Idle</div></div></th>
+                <th class="sp-col sp-span-4 sp-align-left"><h6 class="sp-ellipsis">Some Tag Name</h6></th>
+                <th class="sp-col sp-span-2 sp-align-left sp-ellipsis">Superhero</th>
+                <th class="sp-col sp-span-1 sp-align-left sp-ellipsis">DFP</th>
+                <th class="sp-col sp-span-3 sp-align-left">
+                  <div class="sp-tag sp-small">cpg</div>
+                  <div class="sp-tag sp-small">direct sold</div>
+                  <div class="sp-tag sp-small">custom</div>
+                  <div class="sp-tag sp-small">whatever</div>
+                </th>
+                <th class="sp-col sp-align-right sp-span-1">
+                  <div class="sp-selector">
+                    <button tabindex="0" class="sp-selector-trigger sp-icon-more sp-minimal sp-simple-icon sp-small sp-primary"></button>
+                    <div class="sp-selector-overlay">
+                      <div class="sp-menu-dropdown sp-overlay sp-menu-dropdown-below sp-small">
+                        <a class="sp-menu-item sp-icon-eye">Preview Tag</a>
+                        <a class="sp-menu-item sp-icon-data">View Reporting</a>
+                        <div class="sp-spacer-vertical"></div>
+                        <a class="sp-menu-item sp-icon-copy">Duplicate Tag</a>
+                        <a class="sp-menu-item sp-icon-edit">Edit Tag Settings</a>
+                        <a class="sp-menu-item sp-icon-circle-close">Delete Tag</a>
+                      </div>
+                    </div>
+                </th>
+              </tr>
+              <tr class="sp-row sp-vcenter sp-bg-color-white sp-row-hover sp-border-bottom-base">
+                <th class="sp-col"><div class="sp-tactile sp-rounded sp-inline sp-tooltip sp-tooltip-below sp-success" style="width: 12px; height: 12px"><div class="sp-tooltip-overlay">Serving</div></div></th>
+                <th class="sp-col sp-span-4 sp-align-left"><h6 class="sp-ellipsis">Some Tag Name</h6></th>
+                <th class="sp-col sp-span-2 sp-align-left sp-ellipsis">Superhero</th>
+                <th class="sp-col sp-span-1 sp-align-left sp-ellipsis">DFP</th>
+                <th class="sp-col sp-span-3 sp-align-left">
+                  <div class="sp-tag sp-small">cpg</div>
+                  <div class="sp-tag sp-small">direct sold</div>
+                  <div class="sp-tag sp-small">custom</div>
+                  <div class="sp-tag sp-small">whatever</div>
+                </th>
+                <th class="sp-col sp-align-right sp-span-1">
+                  <div class="sp-selector">
+                    <button tabindex="0" class="sp-selector-trigger sp-icon-more sp-minimal sp-simple-icon sp-small sp-primary"></button>
+                    <div class="sp-selector-overlay">
+                      <div class="sp-menu-dropdown sp-overlay sp-menu-dropdown-below sp-small">
+                        <a class="sp-menu-item sp-icon-eye">Preview Tag</a>
+                        <a class="sp-menu-item sp-icon-data">View Reporting</a>
+                        <div class="sp-spacer-vertical"></div>
+                        <a class="sp-menu-item sp-icon-copy">Duplicate Tag</a>
+                        <a class="sp-menu-item sp-icon-edit">Edit Tag Settings</a>
+                        <a class="sp-menu-item sp-icon-circle-close">Delete Tag</a>
+                      </div>
+                    </div>
+                </th>
+              </tr>
+              <tr class="sp-row sp-vcenter sp-bg-color-white sp-row-hover sp-border-bottom-base">
+                <th class="sp-col"><div class="sp-tactile sp-rounded sp-inline sp-tooltip sp-tooltip-below" style="width: 12px; height: 12px"><div class="sp-tooltip-overlay">Idle</div></div></th>
+                <th class="sp-col sp-span-4 sp-align-left"><h6 class="sp-ellipsis">Some Tag Name</h6></th>
+                <th class="sp-col sp-span-2 sp-align-left sp-ellipsis">Superhero</th>
+                <th class="sp-col sp-span-1 sp-align-left sp-ellipsis">DFP</th>
+                <th class="sp-col sp-span-3 sp-align-left">
+                  <div class="sp-tag sp-small sp-primary">Campaign: Some Campaign</div>
+                  <div class="sp-tag sp-small">cpg</div>
+                  <div class="sp-tag sp-small">direct sold</div>
+                </th>
+                <th class="sp-col sp-align-right sp-span-1">
+                  <div class="sp-selector">
+                    <button tabindex="0" class="sp-selector-trigger sp-icon-more sp-minimal sp-simple-icon sp-small sp-primary"></button>
+                    <div class="sp-selector-overlay">
+                      <div class="sp-menu-dropdown sp-overlay sp-menu-dropdown-below sp-small">
+                        <a class="sp-menu-item sp-icon-eye">Preview Tag</a>
+                        <a class="sp-menu-item sp-icon-data">View Reporting</a>
+                        <div class="sp-spacer-vertical"></div>
+                        <a class="sp-menu-item sp-icon-copy">Duplicate Tag</a>
+                        <a class="sp-menu-item sp-icon-edit">Edit Tag Settings</a>
+                        <a class="sp-menu-item sp-icon-circle-close">Delete Tag</a>
+                      </div>
+                    </div>
+                </th>
+              </tr>
+              <tr class="sp-row sp-vcenter sp-bg-color-white sp-row-hover sp-border-bottom-base">
+                <th class="sp-col"><div class="sp-tactile sp-rounded sp-inline sp-tooltip sp-tooltip-below" style="width: 12px; height: 12px"><div class="sp-tooltip-overlay">Idle</div></div></th>
+                <th class="sp-col sp-span-4 sp-align-left"><h6 class="sp-ellipsis">Some Tag Name</h6></th>
+                <th class="sp-col sp-span-2 sp-align-left sp-ellipsis">Superhero</th>
+                <th class="sp-col sp-span-1 sp-align-left sp-ellipsis">DFP</th>
+                <th class="sp-col sp-span-3 sp-align-left">
+                  <div class="sp-tag sp-small sp-primary">Campaign: Another Campaign</div>
+                  <div class="sp-tag sp-small">cpg</div>
+                  <div class="sp-tag sp-small">direct sold</div>
+                  <div class="sp-tag sp-small">custom</div>
+                  <div class="sp-tag sp-small">whatever</div>
+                </th>
+                <th class="sp-col sp-align-right sp-span-1">
+                  <div class="sp-selector">
+                    <button tabindex="0" class="sp-selector-trigger sp-icon-more sp-minimal sp-simple-icon sp-small sp-primary"></button>
+                    <div class="sp-selector-overlay">
+                      <div class="sp-menu-dropdown sp-overlay sp-menu-dropdown-below sp-small">
+                        <a class="sp-menu-item sp-icon-eye">Preview Tag</a>
+                        <a class="sp-menu-item sp-icon-data">View Reporting</a>
+                        <div class="sp-spacer-vertical"></div>
+                        <a class="sp-menu-item sp-icon-copy">Duplicate Tag</a>
+                        <a class="sp-menu-item sp-icon-edit">Edit Tag Settings</a>
+                        <a class="sp-menu-item sp-icon-circle-close">Delete Tag</a>
+                      </div>
+                    </div>
+                </th>
+              </tr>
+              <tr class="sp-row sp-vcenter sp-bg-color-white">
+                <th class="sp-col"></th>
+                <th class="sp-col sp-span-4 sp-align-left"></th>
+                <th class="sp-col sp-span-2 sp-align-left sp-ellipsis"></th>
+                <th class="sp-col sp-span-3 sp-align-left"></th>
+                <th class="sp-col sp-align-right sp-span-1"></th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="target" class="sp-app-overlay">
+    <div class="sp-app-overlay-content">
+      <div class="sp-modal sp-overlay sp-rectangle sp-color-contrast sp-margin-2">
+        <div class="sp-wrapper sp-container-light sp-alt-two sp-modal-header">
+          <div class="sp-row">
+            <div class="sp-col sp-span-12">
+              <h3><i class="sp-inline-icon-code sp-margin-right-2"></i>Create Tag <span class="sp-margin-left-1 sp-color-base">Tag Name Goes Here</span></h3>
+            </div>
+          </div>
+        </div>
+        <div class="sp-wrapper sp-container-light sp-alt-two sp-modal-menu sp-padding-bottom-2">
+          <div class="sp-row sp-border-bottom-base sp-margin-0">
+             <div class="sp-menu sp-col sp-span-12 sp-padding-0 sp-flex">
+               <a href="publish_tags-create.html" class="sp-menu-item sp-horizontal" style="flex-grow:1">1. Enter Tag Details</a>
+               <a href="publish_tags-create-2.html" class="sp-menu-item sp-horizontal" style="flex-grow:1">2. Choose Format</a>
+               <a href="publish_tags-create-3.html" class="sp-menu-item sp-horizontal" style="flex-grow:1">3. Choose Panels</a>
+               <a href="publish_tags-create-4.html" class="sp-menu-item sp-horizontal sp-state-active" style="flex-grow:1">4. Setup Click-Throughs</a>
+             </div>
+          </div>
+        </div>
+        <div class="sp-wrapper sp-modal-body sp-padding-bottom-2">
+          <div class="sp-row">
+             <div class="sp-col sp-span-12">
+              <div class="sp-wrapper">
+                <div class="sp-row sp-vcenter">
+                  <div class="sp-col sp-span-3 sp-align-right">
+                    <div class="sp-label sp-margin-bottom-2 sp-margin-top-1">Exit Name</div>
+                  </div>
+                  <div class="sp-col sp-span-1 sp-align-center">
+                   
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <div class="sp-label sp-margin-bottom-2 sp-margin-top-1">Destination URL / Click Tracker URL</div>
+                  </div>
+                </div>
+
+                <div class="sp-row sp-vcenter sp-border-bottom-base">
+                  <div class="sp-col sp-span-3 sp-align-right">
+                    <h6>Default</h6>
+                  </div>
+                  <div class="sp-col sp-span-1 sp-align-center">
+                    <div class="sp-icon-circle-arrow-right"></div>
+                  </div>
+                  <div class="sp-col sp-span-3">
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Custom"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-state-active">Custom</a>
+                          <a class="sp-menu-item">Global Trafficking Value</a>
+                          <a class="sp-menu-item">None</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sp-col sp-span-5">
+                    <input type="text" class="sp-full-width sp-small" value="http://www.somesite.com"/>
+                  </div>
+                </div>
+
+                <div class="sp-row sp-vcenter">
+                  <div class="sp-col sp-span-3 sp-align-right">
+                    <h6>Facebook Page</h6>
+                  </div>
+                  <div class="sp-col sp-span-1 sp-align-center">
+                    <div class="sp-icon-circle-arrow-right"></div>
+                  </div>
+                  <div class="sp-col sp-span-3">
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Custom"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-state-active">Custom</a>
+                          <a class="sp-menu-item">Global Trafficking Value</a>
+                          <a class="sp-menu-item">None</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sp-col sp-span-5">
+                    <input type="text" class="sp-full-width sp-small" value="http://www.somesite.com"/>
+                  </div>
+                </div>
+
+                <div class="sp-row sp-vcenter">
+                  <div class="sp-col sp-span-3 sp-align-right">
+                    <h6>Homepage</h6>
+                  </div>
+                  <div class="sp-col sp-span-1 sp-align-center">
+                    <div class="sp-icon-circle-arrow-right"></div>
+                  </div>
+                  <div class="sp-col sp-span-3">
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Custom"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-state-active">Custom</a>
+                          <a class="sp-menu-item">Global Trafficking Value</a>
+                          <a class="sp-menu-item">None</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sp-col sp-span-5">
+                    <input type="text" class="sp-full-width sp-small" value="http://www.somesite.com"/>
+                  </div>
+                </div>
+
+                <div class="sp-row sp-vcenter">
+                  <div class="sp-col sp-span-3 sp-align-right">
+                    <h6>Main CTA</h6>
+                  </div>
+                  <div class="sp-col sp-span-1 sp-align-center">
+                    <div class="sp-icon-circle-arrow-right"></div>
+                  </div>
+                  <div class="sp-col sp-span-3">
+                    <div class="sp-selector sp-full-width sp-small">
+                      <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Custom"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-state-active">Custom</a>
+                          <a class="sp-menu-item">Global Trafficking Value</a>
+                          <a class="sp-menu-item">None</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sp-col sp-span-5">
+                    <input type="text" class="sp-full-width sp-small" value="http://www.somesite.com"/>
+                  </div>
+                </div>
+
+              </div>
+             </div>
+          </div>
+        </div>
+        <div class="sp-wrapper sp-border-top-base sp-modal-footer">
+          <div class="sp-row">
+             <div class="sp-col sp-span-12 sp-modal-footer-buttons">
+               <a href="publish_tags.html" class="sp-button sp-align-center sp-icon-circle-close">Cancel</a>
+               <a href="publish_tags-create-3.html" class="sp-button sp-align-center sp-icon-circle-arrow-left">Previous</a>
+               <div class="sp-selector">
+                  <button tabindex="0" class="sp-selector-trigger sp-block sp-selector-target sp-button sp-align-center sp-icon-save sp-success">Save</button>
+                  <div class="sp-selector-overlay">
+                    <div class="sp-menu-dropdown sp-overlay">
+                      <a href="publish_tags.html" class="sp-menu-item">Save and Return to Tags</a>
+                      <a href="publish_tag-settings.html" class="sp-menu-item">Save and Go To Settings</a>
+                      <a href="publish_tags-create.html" class="sp-menu-item">Save and Create Another Tag</a>
+                    </div>
+                  </div>
+                </div>
+             </div>
+          </div>
+        </div>
+        <!-- <button class="sp-modal-close sp-icon-close sp-rounded sp-small"></button> -->
+      </div>
+    </div>
+  </div>
+
+<script>
+var target = document.getElementById('target');
+
+setTimeout(function() {
+  target.setAttribute('class', 'sp-app-overlay');
+}, 500);
+
+</script>
+
+</body>
+</html>

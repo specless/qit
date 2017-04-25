@@ -8,17 +8,17 @@
 light-base, light-lighter, light-darker, grey,
 primary, success, warning, danger) {
   .sp-bg-color-#{$color} {
-    @include sp-bg-color($color)
+    @include sp-bg-color($color, true)
   }
 }
 
 @for $i from 1 to 6 {
   .sp-bg-overlay-dark-#{$i} {
-    @include sp-bg-overlay-dark($i)
+    @include sp-bg-overlay-dark($i, true)
   }
 
   .sp-bg-overlay-light-#{$i} {
-    @include sp-bg-overlay-light($i)
+    @include sp-bg-overlay-light($i, true)
   }
 }
 
@@ -38,7 +38,7 @@ primary, success, warning, danger) {
     }
     $class: #{$class}-#{$color};
     #{$class} {
-      @include sp-border-color($color, $location);
+      @include sp-border-color($color, $location, true);
     }
   }
 }
@@ -55,11 +55,11 @@ primary, success, warning, danger) {
     $classL: #{$classL}-#{$i};
 
     #{$classD} {
-      @include sp-border-overlay-dark($i)
+      @include sp-border-overlay-dark($i, $location, true)
     }
 
     #{$classL} {
-      @include sp-border-overlay-light($i)
+      @include sp-border-overlay-light($i, $location, true)
     }
   }
 }

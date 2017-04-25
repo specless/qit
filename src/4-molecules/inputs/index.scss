@@ -1,7 +1,8 @@
 .sp-multi-input {
 	@include sp-input();
 	@include sp-shape(rectangle);
-	display: inline-block;
+	display: flex;
+	align-items: center;
 	height: 43.7px;
 	min-width: 43.7px;
 	width: auto;
@@ -80,7 +81,7 @@
 	// @include sp-input();
 	// @include sp-shape(rectangle);
 	position: relative;
-	display: inline-block;
+	// display: inline-block;
 	// > input {
 	// 	pointer-events: none !important;
 	// 	background-color: none !important;

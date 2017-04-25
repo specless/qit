@@ -1,8 +1,8 @@
 @each $i in ('none', 'low', 'medium', 'high') {
     .sp-shadow-#{$i} {
-      @include sp-shadow($i, 0 0 .4em .07em);
+      @include sp-shadow($i, 0 0 .4em .07em, true);
     }
     .sp-shadow-#{$i}-inset {
-      @include sp-shadow($i, inset 0 0 .4em .07em);
+      @include sp-shadow($i, inset 0 0 .4em .07em, true);
     }
 }

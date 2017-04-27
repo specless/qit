@@ -71,37 +71,37 @@ primary, success, warning, danger) {
 /////////////////////////
 
 .sp-color-base {
-  @include sp-font-color(base);
+  @include sp-font-color(base, true);
 }
 
 .sp-color-contrast {
-  @include sp-font-color(contrast)
+  @include sp-font-color(contrast, true);
 }
 
 .sp-color-muted {
-  @include sp-font-color(muted)
+  @include sp-font-color(muted, true);
 }
 
 .sp-color-grey {
-  @include sp-font-color(grey)
+  @include sp-font-color(grey, true);
 }
 
 .sp-color-primary {
-  @include sp-font-color(primary)
+  @include sp-font-color(primary, true);
 }
 
 .sp-color-success {
-  @include sp-font-color(success)
+  @include sp-font-color(success, true);
 }
 
 .sp-color-warning {
-  @include sp-font-color(warning)
+  @include sp-font-color(warning, true);
 }
 
 .sp-color-danger {
-  @include sp-font-color(danger)
+  @include sp-font-color(danger, true);
 }
 
 .sp-color-grey {
-  @include sp-font-color(grey)
+  @include sp-font-color(grey, true);
 }

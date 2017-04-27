@@ -38,48 +38,64 @@
 //                     //
 /////////////////////////
 
-@mixin sp-font-color($color: null) {
+@mixin sp-font-color($color: null, $override: false) {
+  $val: $color;
   @if ($color == inherit or $color == initial) {
-    color: $color;
+    $val: $color;
+    color: if($override, $val !important, $val);
   } @else if ($color == null or $color == base or $color == '') {
-    color: $sp-shade-dark-4;
+    $val: $sp-shade-dark-4;
+    color: if($override, $val !important, $val);
     @include sp-state-dark {
-      color: $sp-shade-light-4;
+      $val: $sp-shade-light-4;
+      color: if($override, $val !important, $val);
     }
   } @else if ($color == contrast) {
-    color: $sp-shade-dark-5;
+    $val: $sp-shade-dark-5;
+    color: if($override, $val !important, $val);
     @include sp-state-dark {
-      color: $sp-color-white;
+      $val: $sp-color-white;
+      color: if($override, $val !important, $val);
     }
   } @else if ($color == muted) {
-    color: $sp-shade-dark-3;
+    $val: $sp-shade-dark-3;
+    color: if($override, $val !important, $val);
     @include sp-state-dark {
-      color: $sp-shade-light-2;
+      $val: $sp-shade-light-2;
+      color: if($override, $val !important, $val);
     }
   } @else if ($color == success) {
-    color: darken($sp-color-success, 12%);
+    $val: darken($sp-color-success, 12%);
+    color: if($override, $val !important, $val);
     @include sp-state-dark {
-      color: $sp-color-success;
+      $val: $sp-color-success;
+      color: if($override, $val !important, $val);
     }
   } @else if ($color == primary) {
-    color: darken($sp-color-primary, 10%);
+    $val: darken($sp-color-primary, 10%);
+    color: if($override, $val !important, $val);
     @include sp-state-dark {
-      color: $sp-color-primary;
+      $val: $sp-color-primary;
+      color: if($override, $val !important, $val);
     }
   } @else if ($color == warning) {
-    color: darken($sp-color-warning, 10%);
+    $val: darken($sp-color-warning, 10%);
+    color: if($override, $val !important, $val);
     @include sp-state-dark {
-      color: $sp-color-warning;
+      $val: $sp-color-warning;
+      color: if($override, $val !important, $val);
     }
   } @else if ($color == danger) {
-    color: darken($sp-color-danger, 10%);
+    $val: darken($sp-color-danger, 10%);
+    color: if($override, $val !important, $val);
     @include sp-state-dark {
-      color: $sp-color-danger;
+      $val: $sp-color-danger;
+      color: if($override, $val !important, $val);
     }
   } @else {
     @if (map-has-key($sp-color, 'sp-color-#{$color}')) {
       $val: map-get($sp-color, 'sp-color-#{$color}');
-      color: $val;
+      color: if($override, $val !important, $val);
     }
   }
 }

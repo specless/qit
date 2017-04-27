@@ -675,52 +675,52 @@ html {
   border-left-color: rgba(255, 255, 255, 0.85) !important; }
 
 .sp-color-base {
-  color: rgba(0, 0, 0, 0.5); }
+  color: rgba(0, 0, 0, 0.5) !important; }
   .sp-color-base .sp-container-dark, .sp-color-base.sp-container-dark,
   .sp-container-dark .sp-color-base {
-    color: rgba(255, 255, 255, 0.56); }
+    color: rgba(255, 255, 255, 0.56) !important; }
 
 .sp-color-contrast {
-  color: rgba(0, 0, 0, 0.8); }
+  color: rgba(0, 0, 0, 0.8) !important; }
   .sp-color-contrast .sp-container-dark, .sp-color-contrast.sp-container-dark,
   .sp-container-dark .sp-color-contrast {
-    color: #FFFFFF; }
+    color: #FFFFFF !important; }
 
 .sp-color-muted {
-  color: rgba(0, 0, 0, 0.22); }
+  color: rgba(0, 0, 0, 0.22) !important; }
   .sp-color-muted .sp-container-dark, .sp-color-muted.sp-container-dark,
   .sp-container-dark .sp-color-muted {
-    color: rgba(255, 255, 255, 0.19); }
+    color: rgba(255, 255, 255, 0.19) !important; }
 
 .sp-color-grey {
-  color: #848895; }
+  color: #848895 !important; }
 
 .sp-color-primary {
-  color: #0096a9; }
+  color: #0096a9 !important; }
   .sp-color-primary .sp-container-dark, .sp-color-primary.sp-container-dark,
   .sp-container-dark .sp-color-primary {
-    color: #00C3DC; }
+    color: #00C3DC !important; }
 
 .sp-color-success {
-  color: #00af71; }
+  color: #00af71 !important; }
   .sp-color-success .sp-container-dark, .sp-color-success.sp-container-dark,
   .sp-container-dark .sp-color-success {
-    color: #00EC99; }
+    color: #00EC99 !important; }
 
 .sp-color-warning {
-  color: #ff1c04; }
+  color: #ff1c04 !important; }
   .sp-color-warning .sp-container-dark, .sp-color-warning.sp-container-dark,
   .sp-container-dark .sp-color-warning {
-    color: #FF4A37; }
+    color: #FF4A37 !important; }
 
 .sp-color-danger {
-  color: #f00036; }
+  color: #f00036 !important; }
   .sp-color-danger .sp-container-dark, .sp-color-danger.sp-container-dark,
   .sp-container-dark .sp-color-danger {
-    color: #FF2455; }
+    color: #FF2455 !important; }
 
 .sp-color-grey {
-  color: #848895; }
+  color: #848895 !important; }
 
 .sp-width-0 {
   width: 0 !important; }

@@ -7927,7 +7927,8 @@ blockquote {
   overflow-x: hidden;
   overflow-y: auto; }
   .sp-app-side-menu.sp-hidden {
-    transform: translateY(100%); }
+    transform: translateX(-100%);
+    display: block; }
 
 .sp-app-overlay .sp-login {
   width: 100vw;

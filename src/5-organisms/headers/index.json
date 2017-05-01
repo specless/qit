@@ -1,0 +1,103 @@
+{
+  "title": "Header Elements",
+  "description": "Text goes here.",
+  "examples": [
+  	{
+      "title": "App Header Bar",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "Standard App Bar",
+          "type": "box-target",
+          "classes": "",
+          "content": ["bar.html"]
+        },
+        {
+          "title": "Technical App Bar",
+          "type": "box-target",
+          "classes": "",
+          "content": ["bar-technical.html"]
+        }
+      ],
+      "modifiers": []
+    },
+    {
+      "title": "Organization Label Header",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "Standard",
+          "type": "box-target",
+          "classes": "",
+          "content": ["org-label.html"]
+        }
+      ],
+      "modifiers": []
+    },
+    {
+      "title": "Title Header",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "Standard",
+          "type": "box-target",
+          "classes": "",
+          "content": ["title.html"]
+        },
+        {
+          "title": "Standard with Button",
+          "type": "box-target",
+          "classes": "",
+          "content": ["title-button.html"]
+        },
+        {
+          "title": "Search Title Header",
+          "type": "box-target",
+          "classes": "",
+          "content": ["title-search.html"]
+        }
+      ],
+      "modifiers": []
+    },
+    {
+      "title": "Header Menu",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "Standard",
+          "type": "box-target",
+          "classes": "",
+          "content": ["nav.html"]
+        },
+        {
+          "title": "Standard with Action Button",
+          "type": "box-target",
+          "classes": "",
+          "content": ["nav-button.html"]
+        },
+        {
+          "title": "Technical Menu",
+          "type": "box-target",
+          "classes": "",
+          "content": ["nav-technical.html"]
+        }
+      ],
+      "modifiers": []
+    },
+    {
+      "title": "Side Menu",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "Standard",
+          "type": "box-target",
+          "classes": "",
+          "content": ["side-menu.html"]
+        }
+      ],
+      "modifiers": []
+    }
+  ],
+  "scss": ["index.scss"],
+  "markdown": "index.md"
+}

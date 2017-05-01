@@ -1,0 +1,54 @@
+{
+  "title": "Content Blocks",
+  "description": "Text goes here.",
+  "examples": [
+  	{
+  		"title": "Standard Content Area",
+  		"subTitle": "",
+  		"swatches" : [
+  			{
+          "title": "Content Block",
+          "type": "box-target",
+          "classes": "",
+          "content": ["content.html"]
+        },
+        {
+          "title": "Content Block with Left Sidebar",
+          "type": "box-target",
+          "classes": "",
+          "content": ["content-left.html"]
+        },
+        {
+          "title": "Content Block with Left and Right Sidebar",
+          "type": "box-target",
+          "classes": "",
+          "content": ["content-left-right.html"]
+        },
+        {
+          "title": "Content Block with Left and Large Right Sidebar",
+          "type": "box-target",
+          "classes": "",
+          "content": ["content-left-right-large.html"]
+        }
+  		],
+      "states": [],
+  		"modifiers": []
+  	},
+    {
+      "title": "Technical Content Area",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "Content Block",
+          "type": "box-target",
+          "classes": "",
+          "content": ["content-technical.html"]
+        }
+      ],
+      "states": [],
+      "modifiers": []
+    }
+  ],
+  "scss": ["index.scss"],
+  "markdown": "index.md"
+}

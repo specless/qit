@@ -22,11 +22,6 @@
   position: relative;
   width: 100%;
   align-items: flex-start;
-  & > .column {
-    margin: 0;
-    padding: 0;
-  }
-
   &.sp-row-hover {
     &:hover {
       left: -15px;
@@ -78,12 +73,19 @@
     align-items: center;
   }
 
-  &.sp-column {
+  &.sp-col {
     flex-direction: column;
+  }
+
+  > .sp-col, .sp-col[class*='sp-span-'] {
+    @include mobile {
+      width: 100%;
+    }
   }
 
   @include mobile {
     display: block;
+    width: 100%;
   }
 
   @include tablet {

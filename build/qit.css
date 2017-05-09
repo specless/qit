@@ -7505,8 +7505,7 @@ blockquote {
       transition: 0.25s ease top, 0.5s ease opacity, 0.5s ease visibility;
       margin-top: 5px;
       visibility: hidden;
-      pointer-events: none;
-      min-width: 100%; }
+      pointer-events: none; }
       .sp-selector > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-selector > .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-custom-input > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-custom-input > .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-above {
         top: auto;
         bottom: 0%;

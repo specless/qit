@@ -18,3 +18,99 @@ ul, ol, li {
   @include sp-margin(0);
   list-style: none
 }
+
+.sp-app-scroll-area {
+	&::-webkit-scrollbar {
+	  width: 10px;
+	  height: 10px;
+	}
+
+	&.sp-container-dark, .sp-container-dark & {
+		&::-webkit-scrollbar-thumb {
+			background-color: $sp-color-dark-lighter;
+			background-image: none;
+			border-radius: 50px;
+			//border: 2px solid transparent;
+		}
+
+		&::-webkit-scrollbar-track {
+			background-image: none;
+			//border: 2px solid transparent;
+		}
+	}
+
+
+}
+
+
+body {
+	::-webkit-scrollbar {
+	  width: 6px;
+	  height: 6px;
+	}
+	::-webkit-scrollbar-button {
+	  width: 0px;
+	  height: 0px;
+	}
+	::-webkit-scrollbar-thumb {
+	  background: transparent;
+	  @include sp-bg-overlay-dark(3);
+	  border: 0px none #ffffff;
+	  border-radius: 0;
+	  opacity:0.5;
+	  border-radius: 50px;
+	}
+	::-webkit-scrollbar-thumb:hover {
+	  background: transparent;
+	  @include sp-bg-overlay-dark(4);
+	  opacity:0.75;
+	}
+	::-webkit-scrollbar-thumb:active {
+	  background: transparent;
+	  @include sp-bg-overlay-dark(4);
+	  opacity:1;
+	}
+	::-webkit-scrollbar-track {
+		background: transparent;
+	  @include sp-bg-overlay-dark(1);
+	  border: 0px none #ffffff;
+	  border-radius: 0;
+	}
+	::-webkit-scrollbar-track:hover {
+		background: transparent;
+	  @include sp-bg-overlay-dark(1);
+	}
+	::-webkit-scrollbar-track:active {
+		background: transparent;
+	  @include sp-bg-overlay-dark(1);
+	}
+	::-webkit-scrollbar-corner {
+	  background: transparent;
+	}
+
+	&.sp-container-dark, .sp-container-dark {
+		&::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb {
+	  		@include sp-bg-overlay-light(3);
+	  	}
+
+	  	::-webkit-scrollbar-thumb:hover, &::-webkit-scrollbar-thumb:hover {
+	  		@include sp-bg-overlay-light(4);
+	  	}
+
+	  	::-webkit-scrollbar-thumb:active, &::-webkit-scrollbar-thumb:active {
+	  		@include sp-bg-overlay-light(4);
+	  	}
+
+	  	::-webkit-scrollbar-track, &::-webkit-scrollbar-track {
+	  		@include sp-bg-overlay-light(1);
+	  	}
+
+	  	::-webkit-scrollbar-track:hover, &::-webkit-scrollbar-track:hover {
+	  		@include sp-bg-overlay-light(1);
+	  	}
+
+	  	::-webkit-scrollbar-track:active, &::-webkit-scrollbar-track:active {
+	  		@include sp-bg-overlay-light(1);
+	  	}
+	}
+}

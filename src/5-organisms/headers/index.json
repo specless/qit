@@ -93,6 +93,12 @@
           "type": "box-target",
           "classes": "",
           "content": ["side-menu.html"]
+        },
+        {
+          "title": "Collapsed",
+          "type": "box-target",
+          "classes": "",
+          "content": ["side-menu-hidden.html"]
         }
       ],
       "modifiers": []

@@ -1,0 +1,21 @@
+{
+  "title": "Specless Sync UI",
+  "description": "Text goes here.",
+  "examples": [
+    {
+      "title": "Main UI",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='assets/code-examples/sync/sync_main.html'></iframe>"
+        }
+      ],
+      "modifiers": []
+    }
+  ],
+  "scss": ["index.scss"],
+  "markdown": "index.md"
+}

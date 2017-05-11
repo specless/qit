@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="#000000"><path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans" d="M 6 3 L 6 4 L 6 28 L 6 29 L 7 29 L 25 29 L 26 29 L 26 28 L 26 15.4375 L 27.71875 13.71875 L 28 13.40625 L 28 13 L 28 4 L 28 3 L 27 3 L 24 3 L 23 3 L 7 3 L 6 3 z M 8 5 L 22 5 L 22 13 L 22 13.40625 L 22.28125 13.71875 L 24 15.4375 L 24 27 L 8 27 L 8 5 z M 24 5 L 26 5 L 26 12.5625 L 25 13.5625 L 24 12.5625 L 24 5 z" color="#000" overflow="visible" font-family="Bitstream Vera Sans" fill="#000000"/></svg>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<path d="M3,27h1h24h1v-1V8V7h-1H15.4l-1.7-1.7L13.4,5H13H4H3v1v3v1v16V27z M5,25V11h8h0.4l0.3-0.3L15.4,9H27v16H5z M5,9V7h7.6l1,1
+	l-1,1H5z"/>
+</svg>

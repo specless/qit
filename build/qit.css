@@ -8268,7 +8268,7 @@ blockquote {
 
 .sp-sync-content-header-details {
   flex: 1;
-  max-width: calc(100% - 98px);
+  max-width: calc(100% - 118px);
   padding-left: 0.8rem; }
   .sp-sync-content-header-details h6 {
     max-width: 100%; }

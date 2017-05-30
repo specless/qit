@@ -16,6 +16,32 @@
   		"modifiers": []
   	},
     {
+      "title": "Basic View: System-Wide Notification",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='assets/code-examples/layout_app_basic-notifications-system.html'></iframe>"
+        }
+      ],
+      "modifiers": []
+    },
+    {
+      "title": "Basic View: Notifications",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "",
+          "type": "screen",
+          "classes": "",
+          "content": "<iframe class='sp-shadow-medium' src='assets/code-examples/layout_app_basic-notifications.html'></iframe>"
+        }
+      ],
+      "modifiers": []
+    },
+    {
       "title": "Basic View: Menu Showing",
       "subTitle": "",
       "swatches" : [

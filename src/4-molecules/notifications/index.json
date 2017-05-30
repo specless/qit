@@ -1,0 +1,50 @@
+{
+  "title": "Notifications",
+  "description": "Text goes here.",
+  "examples": [
+  	{
+  		"title": "Standard Notifications",
+  		"subTitle": "",
+  		"swatches" : [
+  			{
+  				"title": "Natural",
+  				"type": "box-target",
+  				"classes": "",
+  				"content": ["notifications.html"]
+  			}
+  		],
+      "states": ["sp-small", "sp-large"],
+  		"modifiers": ["sp-primary", "sp-success", "sp-warning", "sp-danger"]
+  	},
+    {
+      "title": "Standard Notifications: Task Processsing",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "Natural",
+          "type": "box-target",
+          "classes": "",
+          "content": ["process-notifications.html"]
+        }
+      ],
+      "states": ["sp-small", "sp-large"],
+      "modifiers": ["sp-primary", "sp-success", "sp-warning", "sp-danger"]
+    },
+    {
+      "title": "System-Wide Notifications",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": "Natural",
+          "type": "box-target",
+          "classes": "",
+          "content": ["system-notifications.html"]
+        }
+      ],
+      "states": ["sp-small", "sp-large"],
+      "modifiers": ["sp-primary", "sp-success", "sp-warning", "sp-danger"]
+    }
+  ],
+  "scss": ["index.scss"],
+  "markdown": "index.md"
+}

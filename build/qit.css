@@ -1985,7 +1985,7 @@ html {
 .sp-icon-circle-arrow-up::before, .sp-icon-after-circle-arrow-up::after, .sp-inline-icon-circle-arrow-up::before {
   content: "\F013"; }
 
-.sp-dialog.sp-success .sp-dialog-icon::before, .sp-icon-circle-check::before, .sp-icon-after-circle-check::after, .sp-inline-icon-circle-check::before {
+.sp-dialog.sp-success .sp-dialog-icon::before, .sp-notification.sp-success .sp-icon-placeholder::before, .sp-icon-circle-check::before, .sp-icon-after-circle-check::after, .sp-inline-icon-circle-check::before {
   content: "\F014"; }
 
 .sp-icon-circle-close::before, .sp-icon-after-circle-close::after, .sp-inline-icon-circle-close::before {
@@ -1994,7 +1994,7 @@ html {
 .sp-icon-circle-help::before, .sp-icon-after-circle-help::after, .sp-inline-icon-circle-help::before {
   content: "\F016"; }
 
-.sp-icon-circle-info::before, .sp-icon-after-circle-info::after, .sp-inline-icon-circle-info::before {
+.sp-notification .sp-icon-placeholder::before, .sp-notification.sp-primary .sp-icon-placeholder::before, .sp-icon-circle-info::before, .sp-icon-after-circle-info::after, .sp-inline-icon-circle-info::before {
   content: "\F017"; }
 
 .sp-icon-circle-plus::before, .sp-icon-after-circle-plus::after, .sp-inline-icon-circle-plus::before {
@@ -2033,7 +2033,7 @@ html {
 .sp-icon-creative::before, .sp-icon-after-creative::after, .sp-inline-icon-creative::before {
   content: "\F023"; }
 
-.sp-dialog.sp-danger .sp-dialog-icon::before, .sp-icon-danger::before, .sp-icon-after-danger::after, .sp-inline-icon-danger::before {
+.sp-dialog.sp-danger .sp-dialog-icon::before, .sp-notification.sp-danger .sp-icon-placeholder::before, .sp-icon-danger::before, .sp-icon-after-danger::after, .sp-inline-icon-danger::before {
   content: "\F024"; }
 
 .sp-icon-dashboard::before, .sp-icon-after-dashboard::after, .sp-inline-icon-dashboard::before {
@@ -2369,7 +2369,7 @@ select + label::before, .sp-selector > input[type='text'].sp-selector-trigger + 
 .sp-icon-video::before, .sp-icon-after-video::after, .sp-inline-icon-video::before {
   content: "\F093"; }
 
-.sp-dialog.sp-warning .sp-dialog-icon::before, .sp-icon-warning::before, .sp-icon-after-warning::after, .sp-inline-icon-warning::before {
+.sp-dialog.sp-warning .sp-dialog-icon::before, .sp-notification.sp-warning .sp-icon-placeholder::before, .sp-icon-warning::before, .sp-icon-after-warning::after, .sp-inline-icon-warning::before {
   content: "\F094"; }
 
 .sp-icon-weight::before, .sp-icon-after-weight::after, .sp-inline-icon-weight::before {
@@ -7949,6 +7949,296 @@ blockquote {
     .sp-modal.sp-modal-fullscreen .sp-modal-icon {
       top: 9px; }
 
+.sp-notification {
+  display: flex;
+  padding: 0.8rem;
+  position: relative;
+  border-radius: 4px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.27));
+  width: 500px;
+  margin-bottom: 10px; }
+  .sp-notification.sp-small, .sp-small .sp-notification {
+    width: 400px; }
+  .sp-notification.sp-large, .sp-large .sp-notification {
+    width: 600px; }
+  .sp-notification.sp-primary {
+    color: #0096a9; }
+    .sp-notification.sp-primary .sp-container-dark, .sp-notification.sp-primary.sp-container-dark,
+    .sp-container-dark .sp-notification.sp-primary {
+      color: #00C3DC; }
+    .sp-notification.sp-primary button {
+      border-color: #00C3DC;
+      color: #0096a9; }
+      .sp-notification.sp-primary button:hover, .sp-notification.sp-primary button.sp-state-hover {
+        background-color: #00C3DC;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)); }
+      .sp-notification.sp-primary button:active, .sp-notification.sp-primary button.sp-state-active {
+        background-color: #00C3DC;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.19), rgba(255, 255, 255, 0.19)); }
+      .sp-notification.sp-primary button .sp-container-dark:hover, .sp-notification.sp-primary button .sp-container-dark.sp-state-hover, .sp-notification.sp-primary button.sp-container-dark:hover, .sp-notification.sp-primary button.sp-container-dark.sp-state-hover,
+      .sp-container-dark .sp-notification.sp-primary button:hover,
+      .sp-container-dark .sp-notification.sp-primary button.sp-state-hover {
+        background-color: #00C3DC;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); }
+      .sp-notification.sp-primary button .sp-container-dark:active, .sp-notification.sp-primary button .sp-container-dark.sp-state-active, .sp-notification.sp-primary button.sp-container-dark:active, .sp-notification.sp-primary button.sp-container-dark.sp-state-active,
+      .sp-container-dark .sp-notification.sp-primary button:active,
+      .sp-container-dark .sp-notification.sp-primary button.sp-state-active {
+        background-color: #00C3DC;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)); }
+      .sp-notification.sp-primary button .sp-container-dark, .sp-notification.sp-primary button.sp-container-dark,
+      .sp-container-dark .sp-notification.sp-primary button {
+        color: #00C3DC; }
+  .sp-notification.sp-success {
+    color: #00af71; }
+    .sp-notification.sp-success .sp-container-dark, .sp-notification.sp-success.sp-container-dark,
+    .sp-container-dark .sp-notification.sp-success {
+      color: #00EC99; }
+    .sp-notification.sp-success button {
+      border-color: #00EC99;
+      color: #00af71; }
+      .sp-notification.sp-success button:hover, .sp-notification.sp-success button.sp-state-hover {
+        background-color: #00d388;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)); }
+      .sp-notification.sp-success button:active, .sp-notification.sp-success button.sp-state-active {
+        background-color: #00d388;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.19), rgba(255, 255, 255, 0.19)); }
+      .sp-notification.sp-success button .sp-container-dark:hover, .sp-notification.sp-success button .sp-container-dark.sp-state-hover, .sp-notification.sp-success button.sp-container-dark:hover, .sp-notification.sp-success button.sp-container-dark.sp-state-hover,
+      .sp-container-dark .sp-notification.sp-success button:hover,
+      .sp-container-dark .sp-notification.sp-success button.sp-state-hover {
+        background-color: #00d388;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); }
+      .sp-notification.sp-success button .sp-container-dark:active, .sp-notification.sp-success button .sp-container-dark.sp-state-active, .sp-notification.sp-success button.sp-container-dark:active, .sp-notification.sp-success button.sp-container-dark.sp-state-active,
+      .sp-container-dark .sp-notification.sp-success button:active,
+      .sp-container-dark .sp-notification.sp-success button.sp-state-active {
+        background-color: #00d388;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)); }
+      .sp-notification.sp-success button .sp-container-dark, .sp-notification.sp-success button.sp-container-dark,
+      .sp-container-dark .sp-notification.sp-success button {
+        color: #00EC99; }
+  .sp-notification.sp-warning {
+    color: #ff1c04; }
+    .sp-notification.sp-warning .sp-container-dark, .sp-notification.sp-warning.sp-container-dark,
+    .sp-container-dark .sp-notification.sp-warning {
+      color: #FF4A37; }
+    .sp-notification.sp-warning button {
+      border-color: #FF4A37;
+      color: #ff1c04; }
+      .sp-notification.sp-warning button:hover, .sp-notification.sp-warning button.sp-state-hover {
+        background-color: #FF4A37;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)); }
+      .sp-notification.sp-warning button:active, .sp-notification.sp-warning button.sp-state-active {
+        background-color: #FF4A37;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.19), rgba(255, 255, 255, 0.19)); }
+      .sp-notification.sp-warning button .sp-container-dark:hover, .sp-notification.sp-warning button .sp-container-dark.sp-state-hover, .sp-notification.sp-warning button.sp-container-dark:hover, .sp-notification.sp-warning button.sp-container-dark.sp-state-hover,
+      .sp-container-dark .sp-notification.sp-warning button:hover,
+      .sp-container-dark .sp-notification.sp-warning button.sp-state-hover {
+        background-color: #FF4A37;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); }
+      .sp-notification.sp-warning button .sp-container-dark:active, .sp-notification.sp-warning button .sp-container-dark.sp-state-active, .sp-notification.sp-warning button.sp-container-dark:active, .sp-notification.sp-warning button.sp-container-dark.sp-state-active,
+      .sp-container-dark .sp-notification.sp-warning button:active,
+      .sp-container-dark .sp-notification.sp-warning button.sp-state-active {
+        background-color: #FF4A37;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)); }
+      .sp-notification.sp-warning button .sp-container-dark, .sp-notification.sp-warning button.sp-container-dark,
+      .sp-container-dark .sp-notification.sp-warning button {
+        color: #FF4A37; }
+  .sp-notification.sp-danger {
+    color: #f00036; }
+    .sp-notification.sp-danger .sp-container-dark, .sp-notification.sp-danger.sp-container-dark,
+    .sp-container-dark .sp-notification.sp-danger {
+      color: #FF2455; }
+    .sp-notification.sp-danger button {
+      border-color: #FF2455;
+      color: #f00036; }
+      .sp-notification.sp-danger button:hover, .sp-notification.sp-danger button.sp-state-hover {
+        background-color: #FF2455;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)); }
+      .sp-notification.sp-danger button:active, .sp-notification.sp-danger button.sp-state-active {
+        background-color: #FF2455;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.19), rgba(255, 255, 255, 0.19)); }
+      .sp-notification.sp-danger button .sp-container-dark:hover, .sp-notification.sp-danger button .sp-container-dark.sp-state-hover, .sp-notification.sp-danger button.sp-container-dark:hover, .sp-notification.sp-danger button.sp-container-dark.sp-state-hover,
+      .sp-container-dark .sp-notification.sp-danger button:hover,
+      .sp-container-dark .sp-notification.sp-danger button.sp-state-hover {
+        background-color: #FF2455;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); }
+      .sp-notification.sp-danger button .sp-container-dark:active, .sp-notification.sp-danger button .sp-container-dark.sp-state-active, .sp-notification.sp-danger button.sp-container-dark:active, .sp-notification.sp-danger button.sp-container-dark.sp-state-active,
+      .sp-container-dark .sp-notification.sp-danger button:active,
+      .sp-container-dark .sp-notification.sp-danger button.sp-state-active {
+        background-color: #FF2455;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)); }
+      .sp-notification.sp-danger button .sp-container-dark, .sp-notification.sp-danger button.sp-container-dark,
+      .sp-container-dark .sp-notification.sp-danger button {
+        color: #FF2455; }
+
+.sp-notification-content {
+  padding-right: 1.6rem;
+  position: relative;
+  height: 98px;
+  flex: 1;
+  overflow: hidden; }
+  .sp-notification-content.sp-small, .sp-small .sp-notification-content {
+    height: 73px; }
+    .sp-notification-content.sp-small .sp-notification-image, .sp-small .sp-notification-content .sp-notification-image {
+      width: 73px; }
+  .sp-notification-content.sp-large, .sp-large .sp-notification-content {
+    height: 96px; }
+    .sp-notification-content.sp-large .sp-notification-image, .sp-large .sp-notification-content .sp-notification-image {
+      width: 96px; }
+
+.sp-notification-image {
+  float: left;
+  position: relative;
+  height: 100%;
+  width: 98px;
+  margin-right: 0.8rem;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.27));
+  border-radius: 4px; }
+  .sp-notification-image[class*=' sp-icon-']::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; }
+
+.sp-notification-title {
+  font-weight: 600;
+  font-size: 1.15em;
+  margin-bottom: 0.25em; }
+
+.sp-notification-actions {
+  display: flex;
+  flex-direction: column; }
+  .sp-notification-actions button {
+    text-align: center; }
+    .sp-notification-actions button:first-child {
+      margin-bottom: 8px; }
+
+.sp-notification.sp-persistent {
+  width: 100vw;
+  border-radius: 0;
+  box-shadow: inset 0px -2px 9px -2px rgba(0, 0, 0, 0.63);
+  box-sizing: border-box;
+  border-top: 4px solid #444A50;
+  margin-bottom: 0; }
+  .sp-notification.sp-persistent.sp-primary {
+    border-color: #00acc3; }
+  .sp-notification.sp-persistent.sp-success {
+    border-color: #00b978; }
+  .sp-notification.sp-persistent.sp-warning {
+    border-color: #ff331e; }
+  .sp-notification.sp-persistent.sp-danger {
+    border-color: #ff0b41; }
+  .sp-notification.sp-persistent .sp-notification-content {
+    flex: 1; }
+  .sp-notification.sp-persistent .sp-notification-title {
+    font-size: 1.23rem;
+    line-height: 1.53rem;
+    font-weight: 600; }
+  .sp-notification.sp-persistent .sp-notification-title, .sp-notification.sp-persistent .sp-notification-description {
+    width: auto; }
+
+.sp-notification.sp-processing .sp-notification-image > .sk-cube-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  opacity: 0.5; }
+
+.sp-notification.sp-processing .sp-notification-image {
+  background-image: none;
+  width: 60px; }
+  .sp-notification.sp-processing .sp-notification-image[class*=' sp-icon-']::before {
+    font-size: 2.25rem; }
+
+.sp-notification.sp-processing.sp-small .sp-notification-image, .sp-small .sp-notification.sp-processing .sp-notification-image {
+  width: 50px; }
+
+.sp-notification.sp-processing.sp-small .sp-notification-content, .sp-small .sp-notification.sp-processing .sp-notification-content {
+  height: 50px; }
+
+.sp-notification.sp-processing.sp-large .sp-notification-image, .sp-large .sp-notification.sp-processing .sp-notification-image {
+  width: 75px; }
+
+.sp-notification.sp-processing.sp-large .sp-notification-content, .sp-large .sp-notification.sp-processing .sp-notification-content {
+  height: 75px; }
+
+.sp-notification.sp-processing .sp-notification-content {
+  height: 60px; }
+
+.sp-notification.sp-processing button {
+  margin-bottom: 0 !important; }
+
+.sp-notification.sp-processing:not(.sp-primary):not(.sp-success):not(.sp-warning):not(.sp-danger) .sp-notification-image > .sk-cube-grid {
+  opacity: 0.05; }
+
+.sp-notification.sp-processing:not(.sp-primary):not(.sp-success):not(.sp-warning):not(.sp-danger) .sp-notification-image > .sk-cube-grid .sk-cube {
+  background-color: #000000; }
+
+.sk-cube-grid {
+  width: 100%;
+  height: 100%;
+  margin: 100px auto; }
+
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: #ffffff;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; }
+
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s; }
+
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s; }
+
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s; }
+
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s; }
+
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s; }
+
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s; }
+
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s; }
+
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s; }
+
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1); }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1); } }
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1); }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1); } }
+
 .sp-app-overlay {
   position: fixed;
   top: 0;
@@ -8030,6 +8320,15 @@ blockquote {
 
 .sp-app-bar {
   position: relative; }
+
+.sp-app-notifications {
+  display: inline-block;
+  position: absolute;
+  top: 75px;
+  right: 10px;
+  overflow: visible;
+  max-height: 0;
+  z-index: 10; }
 
 .sp-app-header {
   position: relative; }

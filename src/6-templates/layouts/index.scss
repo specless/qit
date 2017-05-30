@@ -57,6 +57,16 @@
 	position: relative;
 }
 
+.sp-app-notifications {
+	display: inline-block;
+	position: absolute;
+	top: 75px;
+	right: 10px;
+	overflow: visible;
+	max-height: 0;
+	z-index: 10;
+}
+
 .sp-app-header {
 	position: relative;
 }

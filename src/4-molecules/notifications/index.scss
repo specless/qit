@@ -1,0 +1,307 @@
+.sp-notification {
+	display: flex;
+	@include sp-padding(2);
+	position: relative;
+	@include sp-shape(rectangle);
+	@include sp-bg-overlay-light(3);
+	width: 500px;
+	margin-bottom: 10px;
+
+	@include sp-small {
+		width: 400px;
+	}
+
+	@include sp-large {
+		width: 600px;
+	}
+
+	.sp-icon-placeholder::before {
+		@extend %icon-circle-info;
+	}
+
+	@include sp-primary {
+		@include sp-font-color(primary);
+		.sp-icon-placeholder::before {
+			@extend %icon-circle-info;
+		}
+
+		button {
+			@include sp-tactile-minimal(primary, false);
+			@include sp-font-color(primary);
+		}
+	}
+
+	@include sp-success {
+		@include sp-font-color(success);
+		.sp-icon-placeholder::before {
+			@extend %icon-circle-check;
+		}
+
+		button {
+			@include sp-tactile-minimal(success, false);
+			@include sp-font-color(success);
+		}
+
+	}
+
+	@include sp-warning {
+		@include sp-font-color(warning);
+		.sp-icon-placeholder::before {
+			@extend %icon-warning;
+		}
+
+		button {
+			@include sp-tactile-minimal(warning, false);
+			@include sp-font-color(warning);
+		}
+
+	}
+
+	@include sp-danger {
+		@include sp-font-color(danger);
+		.sp-icon-placeholder::before {
+			@extend %icon-danger;
+		}
+
+		button {
+			@include sp-tactile-minimal(danger, false);
+			@include sp-font-color(danger);
+		}
+
+	}
+}
+
+.sp-notification-content {
+	@include sp-padding(3, right);
+	position: relative;
+	height: 98px;
+	flex: 1;
+	overflow: hidden;
+
+
+	@include sp-small {
+		height: 73px;
+		.sp-notification-image {
+			width: 73px;
+		}
+	}
+
+	@include sp-large {
+		height: 96px;
+		.sp-notification-image {
+			width: 96px;
+		}
+	}
+}
+
+.sp-notification-image {
+	float: left;
+	position: relative;
+	height: 100%;
+	width: 98px;
+	@include sp-margin(2, right);
+	@include sp-bg-overlay-light(3);
+	@include sp-shape(rectangle);
+
+	&[class*=' sp-icon-']::before {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 10;
+	}
+}
+
+.sp-notification-title {
+	font-weight: 600;
+	font-size: 1.15em;
+	margin-bottom: 0.25em;
+}
+
+.sp-notification-description {
+
+}
+
+// .sp-notification-title, .sp-notification-description {
+// 	width: 325px;
+
+// 	@include sp-small {
+// 		width: 250px;
+// 	}
+
+// 	@include sp-large {
+// 		width: 360px;
+// 	}
+// }
+
+
+
+.sp-notification-actions {
+	display: flex;
+	flex-direction: column;
+
+	button {
+		text-align: center;
+		&:first-child {
+			margin-bottom: 8px;
+		}
+	}
+}
+
+
+.sp-notification.sp-persistent {
+	width: 100vw;
+	border-radius: 0;
+	box-shadow: inset 0px -2px 9px -2px rgba(0,0,0,0.63);
+	box-sizing: border-box;
+	border-top: 4px solid $sp-color-dark-lighter;
+	margin-bottom: 0;
+
+	@include sp-primary {
+		border-color: darken($sp-color-primary, 5%);
+	}
+
+	@include sp-success {
+		border-color: darken($sp-color-success, 10%);
+	}
+
+	@include sp-warning {
+		border-color: darken($sp-color-warning, 5%);
+	}
+
+	@include sp-danger {
+		border-color: darken($sp-color-danger, 5%);
+	}
+
+	.sp-notification-content {
+		flex: 1;
+	}
+
+	.sp-notification-title {
+		@include sp-font-header(5);
+	}
+
+	.sp-notification-title, .sp-notification-description {
+		width: auto;
+	}
+}
+
+.sp-notification.sp-processing {
+	.sp-notification-image > .sk-cube-grid {
+		position: absolute;
+		top: 0;
+		left: 0;
+		margin: 0;
+		opacity: 0.5;
+	}
+
+	.sp-notification-image {
+		background-image: none;
+		width: 60px;
+
+		&[class*=' sp-icon-']::before {
+			font-size: 2.25rem;
+		}
+	}
+
+	@include sp-small {
+		.sp-notification-image {
+			width: 50px;
+		}
+
+		.sp-notification-content {
+			height: 50px;
+		}
+	}
+
+
+	@include sp-large {
+		.sp-notification-image {
+			width: 75px;
+		}
+
+		.sp-notification-content {
+			height: 75px;
+		}
+	}
+
+	.sp-notification-content {
+		height: 60px;
+	}
+
+	button {
+		margin-bottom: 0 !important;
+	}
+
+	&:not(.sp-primary):not(.sp-success):not(.sp-warning):not(.sp-danger) {
+		.sp-notification-image > .sk-cube-grid {
+			opacity: 0.05;
+		}
+		.sp-notification-image > .sk-cube-grid .sk-cube {
+			background-color: #000000;
+
+		}
+	}
+}
+
+.sk-cube-grid {
+  width: 100%;
+  height: 100%;
+  margin: 100px auto;
+}
+
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: #ffffff;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+}
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1); 
+  }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1);
+  }
+}

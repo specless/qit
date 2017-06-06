@@ -1,7 +1,8 @@
 .sp-multi-input {
 	@include sp-input();
 	@include sp-shape(rectangle);
-	display: inline-block;
+	display: flex;
+	align-items: center;
 	height: 43.7px;
 	min-width: 43.7px;
 	width: auto;
@@ -52,15 +53,6 @@
 	    }
 	}
 
-	> [class^='sp-icon-'], > [class*=' sp-icon-'] {
-		&:before {
-			line-height: 0;
-    		@include sp-margin(1, right);
-    		position: relative;
-    		top: 7px;
-		}
-	}
-
 	> input, > select {
 		background: none !important;
 		background-color: transparent !important;
@@ -80,7 +72,7 @@
 	// @include sp-input();
 	// @include sp-shape(rectangle);
 	position: relative;
-	display: inline-block;
+	// display: inline-block;
 	// > input {
 	// 	pointer-events: none !important;
 	// 	background-color: none !important;
@@ -157,7 +149,6 @@
 			margin-top: 5px;
 			visibility: hidden;
 			pointer-events: none;
-			min-width: 100%;
 
 			&.sp-menu-dropdown-above {
 				top: auto;

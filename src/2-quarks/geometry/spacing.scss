@@ -4,7 +4,7 @@
 //                     //
 /////////////////////////
 
-@mixin sp-spacing-helper($level, $root, $orientation: '') {
+@mixin sp-spacing-helper($level, $root, $orientation: '', $override: false) {
   @if (round($level) != $level) {
     @error 'Please supply a integer'
   }
@@ -29,19 +29,20 @@
 
   @if (map-has-key($sp-spacing, $key)) {
     @each $a in $attr {
-      #{$a}: map-get($sp-spacing, $key);
+      $val: map-get($sp-spacing, $key);
+      #{$a}: if($override, $val !important, $val);
     }
   } @else {
     @error '#{$key} does not exist in map $sp-spacing';
   }
 }
 
-@mixin sp-margin($level, $orientation: '') {
-  @include sp-spacing-helper($level, margin, $orientation)
+@mixin sp-margin($level, $orientation: '', $override: false) {
+  @include sp-spacing-helper($level, margin, $orientation, $override)
 }
 
-@mixin sp-padding($level, $orientation: '') {
-  @include sp-spacing-helper($level, padding, $orientation)
+@mixin sp-padding($level, $orientation: '', $override: false) {
+  @include sp-spacing-helper($level, padding, $orientation, $override)
 }
 
 @each $pos in ('', 'top', 'right', 'bottom', 'left', 'vertical', 'horizontal') {
@@ -56,10 +57,10 @@
     $key: nth($spacing, 1);
     $val: nth($spacing, 2);
     #{$classM} {
-      @include sp-margin($i, $pos);
+      @include sp-margin($i, $pos, true);
     }
     #{$classP} {
-      @include sp-padding($i, $pos);
+      @include sp-padding($i, $pos, true);
     }
     $i: $i + 1;
   }

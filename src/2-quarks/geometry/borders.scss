@@ -14,7 +14,7 @@
 //                     //
 /////////////////////////
 
-@mixin sp-border-width($val: medium, $location: null) {
+@mixin sp-border-width($val: medium, $location: null, $override: false) {
   $attr: 'border-width';
   @if $location == top or
       $location == right or
@@ -24,14 +24,14 @@
   }
 
   @if ($val == thin) {
-    #{$attr}: 1px;
+    #{$attr}: if($override, 1px !important, 1px);
   } @else if ($val == thick) {
-    #{$attr}: 3px;
+    #{$attr}: if($override, 3px !important, 3px);
   } @else if ($val == medium or $val == null) {
-    #{$attr}: 2px;
+    #{$attr}: if($override, 2px !important, 2px);
   } @else {
     // Arbitrary border width
-    #{$attr}: $val;
+    #{$attr}: if($override, $val !important, $val);
   }
 }
 
@@ -41,7 +41,7 @@
 //                     //
 /////////////////////////
 
-@mixin sp-border-style($val: solid, $location: null) {
+@mixin sp-border-style($val: solid, $location: null, $override: false) {
   $attr: 'border-style';
   @if $location == top or
       $location == right or
@@ -51,7 +51,8 @@
   }
   $key: sp-border-style-#{$val};
   @if map-has-key($sp-border-style, $key) {
-    #{$attr}: map-get($sp-border-style, $key)
+    $val: map-get($sp-border-style, $key);
+    #{$attr}: if($override, $val !important, $val)
   } @else {
     @error 'Invalid value for border-style'
   }
@@ -63,9 +64,9 @@
 //    *convenience*    //
 /////////////////////////
 
-@mixin sp-border($thickness, $style, $loc: null) {
-  @include sp-border-width($thickness, $loc);
-  @include sp-border-style($style, $loc);
+@mixin sp-border($thickness, $style, $loc: null, $override: false) {
+  @include sp-border-width($thickness, $loc, $override);
+  @include sp-border-style($style, $loc, $override);
 }
 
 
@@ -78,7 +79,7 @@
       $class: '#{$class}-#{$thickness}';
     }
     #{$class} {
-      @include sp-border-width($thickness, $loc)
+      @include sp-border-width($thickness, $loc, true)
     }
   }
 }
@@ -92,7 +93,7 @@
       $class: '#{$class}-#{$bstyle}';
     }
     #{$class} {
-      @include sp-border-style($bstyle, $loc)
+      @include sp-border-style($bstyle, $loc, true)
     }
   }
 }
@@ -113,7 +114,7 @@
         $class: '#{$class}-#{$thickness}-#{$style}';
       }
       #{$class} {
-        @include sp-border($thickness, $style, $loc)
+        @include sp-border($thickness, $style, $loc, true)
       }
     }
   }
@@ -131,7 +132,7 @@
       $class: '#{$class}-#{$item}'
     }
     #{$class} {
-      @include sp-border-style($item);
+      @include sp-border-style($item, $loc, true);
     }
   }
 }

@@ -4,32 +4,33 @@
 //                     //
 /////////////////////////
 
-@mixin sp-sizing-helper($level, $attr) {
+@mixin sp-sizing-helper($level, $attr, $override: false) {
   @if ($level == 0) {
-    #{$attr}: 0;
+    #{$attr}: if($override, 0 !important, 0);
   } @else {
     $key: sp-length-#{$level};
     @if (map-has-key($sp-length, $key)) {
-      #{$attr}: map-get($sp-length, $key);
+      $val: map-get($sp-length, $key);
+      #{$attr}: if($override, $val !important, $val);
     } @else {
       @error "#{$key} does not exist in map $length";
     }
   }
 }
 
-@mixin sp-width($level) {
-  @include sp-sizing-helper($level, width)
+@mixin sp-width($level, $override: false) {
+  @include sp-sizing-helper($level, width, $override)
 }
 
-@mixin sp-height($level) {
-  @include sp-sizing-helper($level, height)
+@mixin sp-height($level, $override: false) {
+  @include sp-sizing-helper($level, height, $override)
 }
 
 @for $i from 0 to 11 {
   .sp-width-#{$i}{
-    @include sp-width($i);
+    @include sp-width($i, true);
   }
   .sp-height-#{$i}{
-    @include sp-height($i);
+    @include sp-height($i, true);
   }
 }

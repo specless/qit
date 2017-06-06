@@ -53,15 +53,6 @@
 	    }
 	}
 
-	> [class^='sp-icon-'], > [class*=' sp-icon-'] {
-		&:before {
-			line-height: 0;
-    		@include sp-margin(1, right);
-    		position: relative;
-    		top: 7px;
-		}
-	}
-
 	> input, > select {
 		background: none !important;
 		background-color: transparent !important;

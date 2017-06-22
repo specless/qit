@@ -1909,8 +1909,8 @@ html {
   text-overflow: ellipsis; }
 
 .sp-full-width {
-  box-sizing: border-box;
-  width: 100%; }
+  box-sizing: border-box !important;
+  width: 100% !important; }
 
 .sp-scroll-vertical {
   overflow-y: auto; }

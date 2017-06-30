@@ -1,0 +1,451 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example</title>
+  <link rel="stylesheet" href="../../../qit.css">
+</head>
+
+<body class="sp-app sp-technical">
+  <div class="sp-app-bar sp-container-dark sp-alt-one sp-wrapper">
+    <div class="sp-row sp-fluid sp-vcenter sp-height-3">
+      <div class="sp-col sp-span-6 sp-flex sp-flex-align-items-center">
+        <a class="sp-menu-item sp-minimal sp-icon-menu sp-padding-0"></a>
+        <div class="sp-spacer-horizontal"></div>
+        <div class="sp-logo-lockup sp-small sp-primary sp-logo-horizontal sp-margin-left-2"></div>
+      </div>
+      <div class="sp-col sp-span-6 sp-flex sp-flex-justify-content-flex-end sp-flex-align-items-center">
+        <div class="sp-selector sp-margin-left-2">
+          <button class="sp-selector-trigger sp-icon-after-circle-user sp-rounded sp-small sp-minimal">Stephen C.</button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <div class="sp-menu-header sp-small">User Details</div>
+              <a class="sp-menu-item sp-icon-account">Account</a>
+              <a class="sp-menu-item sp-icon-settings">Preferences</a>
+              <a class="sp-menu-item sp-icon-organization">Organizations</a>
+              <a class="sp-menu-item sp-icon-account">Billing</a>
+              <div class="sp-spacer-vertical sp-margin-0"></div>
+              <a class="sp-menu-item sp-icon-logout">Log Out</a>
+            </div>
+          </div>
+        </div>
+        <div class="sp-selector sp-margin-left-2">
+          <button class="sp-selector-trigger sp-icon-after-circle-help sp-rounded sp-small sp-minimal"></button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <div class="sp-menu-header sp-small">Search For Help</div>
+              <div class="sp-padding-horizontal-2 sp-padding-vertical-1" style="position: relative;">
+                <input type="search" class="sp-small sp-rounded" placeholder="Enter Search Term" style="width: 100%"/>
+                <button class="sp-small sp-rounded sp-icon-search sp-primary sp-margin-top-1 sp-margin-right-2" style="position: absolute; top:0; right: 0;border-bottom-left-radius: 0;border-top-left-radius: 0;"></button>
+              </div>
+              <div class="sp-menu-header sp-small">Help Center</div>
+              <a class="sp-menu-item sp-icon-account">Contact Support</a>
+              <a class="sp-menu-item sp-icon-settings">Report a Bug</a>
+              <a class="sp-menu-item sp-icon-organization">Tutorials</a>
+              <a class="sp-menu-item sp-icon-account">Knowledge Base</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sp-app-org-label sp-container-dark sp-wrapper sp-fluid">
+    <div class="sp-row sp-padding-2 sp-padding-left-3 sp-fluid">
+      <div class="sp-label sp-small">Organizations <span class="sp-inline-icon-arrow-right"></span> <a href="#" class="sp-color-white">Org Name Goes Here</a></div>
+    </div>
+  </div>
+  <!-- <div class="sp-app-header sp-container-dark sp-alt-two sp-wrapper sp-fluid">
+    <div class="sp-row sp-vcenter sp-fluid">
+      <div class="sp-col sp-span-12 sp-flex sp-flex-align-items-center">
+        <h5 class="sp-inline sp-contrast sp-inline">
+          <i class="sp-inline-icon-data sp-color-primary sp-margin-right-1"></i>
+          Analytics Explorer
+        </h5>
+      </div>
+    </div>
+  </div> -->
+  <div class="sp-app-menu sp-container-light sp-border-bottom-base sp-fluid sp-wrapper">
+    <div class="sp-container sp-padding-1 sp-contrast sp-flex sp-border-bottom-base">
+      <span class="sp-padding-1 sp-label sp-color-contrast" style="flex:1; align-items: center">
+        <i class="sp-inline-icon-filter sp-color-primary"></i>
+        Custom Query
+      </span>
+      <div class="sp-small" style="position: absolute; top:5px; right: 10px;">
+        <button class="sp-icon-circle-arrow-up sp-small"></button>
+        <!-- <button class="sp-margin-left-1">Load Query</button>
+        <button class="sp-margin-left-1">Save Query</button> -->
+      </div>
+    </div>
+    <div style="">
+      <div class=" sp-margin-left-2 sp-padding-top-1 sp-border-left-base" style="">
+        <div class="sp-small sp-flex sp-padding-vertical-1" style="align-items: center">
+          <span class="sp-border-top-base" style="height:0; width: 15px;"></span>
+          <div class="sp-form-tactile sp-no-edit sp-minimal">All Ads Served From 'NBC Universal'</div>
+          <span class="sp-border-top-base" style="height:0; width: 15px;"></span>
+          <div class="sp-form-tactile sp-primary">Over the last 30 days<i class="sp-inline-icon-edit sp-margin-left-1"></i></div>
+          
+        </div>
+        <div class="sp-small sp-flex sp-padding-vertical-1" style="align-items: center">
+          <span class="sp-border-top-base" style="height:0; width: 15px;"></span>
+          <div class="sp-form-tactile sp-minimal sp-no-edit">And Creative Is</div>
+          <!-- <span class="sp-border-top-base" style="height:0; width: 15px;"></span>
+          <div class="sp-form-tactile >is</div> -->
+          <span class="sp-border-top-base" style="height:0; width: 15px;"></span>
+          <div class="sp-form-tactile"><i class="sp-inline-icon-edit sp-margin-right-1"></i>Some Creative<i class="sp-inline-icon-circle-close sp-margin-left-1"></i></div>
+          <span class="sp-border-top-base" style="height:0; width: 15px;"></span>
+          <div class="sp-form-tactile sp-minimal sp-no-edit">Or</div>
+          <span class="sp-border-top-base" style="height:0; width: 15px;"></span>
+          <div class="sp-form-tactile"><i class="sp-inline-icon-edit sp-margin-right-1"></i>Some Creative<i class="sp-inline-icon-circle-close sp-margin-left-1"></i></div>
+          <span class="sp-border-top-base" style="height:0; width: 15px;"></span>
+          <div class="sp-form-tactile sp-primary"><i class="sp-inline-icon-circle-plus sp-margin-right-1"></i>Or</div>
+        </div>
+        <div class="sp-small sp-flex sp-padding-vertical-1" style="align-items: center">
+          <span class="sp-border-top-base" style="height:0; width: 15px;"></span>
+          <div class="sp-form-tactile sp-primary"><i class="sp-inline-icon-circle-plus sp-margin-right-1"></i>Add Query Parameter</div>
+        </div>
+        <div class="sp-small sp-flex sp-padding-vertical-1" style="align-items: center">
+          <span class="sp-border-top-base" style="height:0; width: 15px;"></span>
+          <div class="sp-form-tactile sp-no-edit sp-minimal">Broken Out By</div>
+          <span class="sp-border-top-base" style="height:0; width: 15px;"></span>
+          <div class="sp-form-tactile">Device Type<i class="sp-inline-icon-edit sp-margin-left-1"></i></div>
+          <span class="sp-border-top-base" style="height:0; width: 15px;"></span>
+          <div class="sp-form-tactile sp-primary"><i class="sp-inline-icon-circle-plus sp-margin-right-1"></i>Add Sub-Dimension</div>
+        </div>
+        <div class="sp-small sp-flex sp-padding-vertical-1" style="align-items: center">
+          <span class="sp-border-top-base" style="height:0; width: 15px;"></span>
+          <div class="sp-form-tactile sp-success"><i class="sp-inline-icon-sync sp-margin-right-1"></i>Update Report</div>
+        </div>
+      </div>
+    </div>
+    <div class="sp-container sp-padding-1 sp-contrast sp-flex sp-border-top-base" style="position: relative">
+      <span class="sp-padding-1 sp-label sp-color-contrast" style="flex:1; align-items: center">
+        <i class="sp-inline-icon-data sp-color-primary"></i>
+        Custom Report
+      </span>
+      <div class="sp-small" style="position: absolute; top:5px; right: 10px;">
+        <button class="sp-margin-left-1">Columns</button>
+        <button class="sp-margin-left-1">Visualizations</button>
+        <button class="sp-margin-left-1 sp-icon-save">Save As Report</button>
+      </div>
+    </div>
+  </div>
+  <div class="sp-app-content sp-container-light sp-alt-one" style="background-image:none">
+
+    <div class="sp-padding-2">
+      <div class="sp-overlay">
+        <table class="sp-data-table sp-small" style="min-width: 100%;">
+          <tr class="sp-data-table-head">
+            <th></th>
+            <th class="sp-data-table-requested">Requested Impressions</th>
+            <th class="sp-data-table-delivered">Delivered Impressions</th>
+            <th class="sp-data-table-plugin">Video Impressions</th>
+            <th class="sp-data-table-measurable">Measurable Impressions</th>
+            <th class="sp-data-table-enhanced">Enhanced Analytics Impressions</th>
+            <th ></th>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr class="sp-data-table-total">
+            <td>Total</td>
+            <td>900,000</td>
+            <td>800,000</td>
+            <td>700,000</td>
+            <td>600,000</td>
+            <td>500,000</td>
+            <td>400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+          </tr>
+          <tr class="sp-data-table-category sp-border-bottom-base">
+            <td>Device Type</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="sp-data-table-nested-1">
+            <td><i class="sp-inline-icon-placeholder sp-margin-right-1"></i>Desktop/Laptop</td>
+            <td>900,000</td>
+            <td>800,000</td>
+            <td>700,000</td>
+            <td>600,000</td>
+            <td>500,000</td>
+            <td>400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+          </tr>
+          <tr class="sp-data-table-nested-1">
+            <td><i class="sp-inline-icon-placeholder sp-margin-right-1"></i>Tablet</td>
+            <td>900,000</td>
+            <td>800,000</td>
+            <td>700,000</td>
+            <td>600,000</td>
+            <td>500,000</td>
+            <td>400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+          </tr>
+          <tr class="sp-data-table-nested-1 sp-data-table-row-expanded">
+            <td><i class="sp-inline-icon-placeholder sp-margin-right-1"></i>Smartphone</td>
+            <td>900,000</td>
+            <td>800,000</td>
+            <td>700,000</td>
+            <td>600,000</td>
+            <td>500,000</td>
+            <td>400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+          </tr>
+          <tr class="sp-data-table-nested-2 sp-data-table-category sp-border-bottom-base">
+            <td>IAB Viewability</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="sp-data-table-nested-2">
+            <td>IAB Viewable Impressions</td>
+            <td>900,000</td>
+            <td>800,000</td>
+            <td>700,000</td>
+            <td>600,000</td>
+            <td>500,000</td>
+            <td>400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+          </tr>
+          <tr class="sp-data-table-nested-2">
+            <td>IAB Unviewable Impressions</td>
+            <td>900,000</td>
+            <td>800,000</td>
+            <td>700,000</td>
+            <td>600,000</td>
+            <td>500,000</td>
+            <td>400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+          </tr>
+          <tr class="sp-data-table-nested-2">
+            <td>Unreported (Unmeasurable Impressions)</td>
+            <td>900,000</td>
+            <td>800,000</td>
+            <td>700,000</td>
+            <td>600,000</td>
+            <td>500,000</td>
+            <td>400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+          </tr>
+          <tr class="sp-data-table-nested-2">
+            <td>Unreported (Interupted Impressions)</td>
+            <td>900,000</td>
+            <td>800,000</td>
+            <td>700,000</td>
+            <td>600,000</td>
+            <td>500,000</td>
+            <td>400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+          </tr>
+          <tr class="sp-data-table-nested-1">
+            <td><i class="sp-inline-icon-placeholder sp-margin-right-1"></i>Other Device Type</td>
+            <td>900,000</td>
+            <td>800,000</td>
+            <td>700,000</td>
+            <td>600,000</td>
+            <td>500,000</td>
+            <td>400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+          </tr>
+          <tr class="sp-data-table-nested-1">
+            <td><i class="sp-inline-icon-placeholder sp-margin-right-1"></i>Unidentified</td>
+            <td>900,000</td>
+            <td>800,000</td>
+            <td>700,000</td>
+            <td>600,000</td>
+            <td>500,000</td>
+            <td>400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- <div class="sp-app-content-sidebar sp-container sp-border-right-base">
+      <div>
+        <div class="sp-container sp-padding-1 sp-contrast sp-flex">
+          <span class="sp-padding-1 sp-label sp-color-contrast" style="flex:1; align-items: center">
+            <i class="sp-inline-icon-calendar sp-color-primary"></i>
+            Date Range
+          </span>
+        </div>
+        <div class="sp-padding-bottom-1 sp-padding-horizontal-1">
+          <div class="sp-selector qit-target sp-small sp-inline sp-margin-top-1">
+            <input readonly="" class="qit-target sp-selector-trigger sp-small" type="text" value="Custom Range" style="width:245px;">
+            <div class="sp-selector-overlay">
+              <div class="sp-menu-dropdown sp-overlay">
+                <a class="sp-menu-item sp-state-active">Custom Range</a>
+              </div>
+            </div>
+          </div>
+          <div class="sp-small sp-font-weight-semi-bold sp-padding-1">Start Date</div>
+          <div class="sp-selector qit-target sp-small sp-inline">
+            <input readonly="" class="qit-target sp-selector-trigger sp-small" type="text" value="Menu Item 2" style="width:160px;">
+            <div class="sp-selector-overlay">
+              <div class="sp-menu-dropdown sp-overlay">
+                <a class="sp-menu-item">Menu Item 1</a>
+              </div>
+            </div>
+          </div>
+          <div class="sp-selector qit-target sp-small sp-inline">
+            <input readonly="" class="qit-target sp-selector-trigger sp-small" type="text" value="Menu Item 2" style="width:80px;">
+            <div class="sp-selector-overlay">
+              <div class="sp-menu-dropdown sp-overlay">
+                <a class="sp-menu-item">Menu Item 1</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sp-padding-bottom-1 sp-padding-horizontal-1">
+          <div class="sp-small sp-font-weight-semi-bold sp-padding-1">End Date</div>
+          <div class="sp-selector qit-target sp-small sp-inline">
+            <input readonly="" class="qit-target sp-selector-trigger sp-small" type="text" value="Menu Item 2" style="width:160px;">
+            <div class="sp-selector-overlay">
+              <div class="sp-menu-dropdown sp-overlay">
+                <a class="sp-menu-item">Menu Item 1</a>
+              </div>
+            </div>
+          </div>
+          <div class="sp-selector qit-target sp-small sp-inline">
+            <input readonly="" class="qit-target sp-selector-trigger sp-small" type="text" value="Menu Item 2" style="width:80px;">
+            <div class="sp-selector-overlay">
+              <div class="sp-menu-dropdown sp-overlay">
+                <a class="sp-menu-item">Menu Item 1</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="sp-container sp-padding-1 sp-contrast sp-flex">
+          <span class="sp-padding-1 sp-label sp-color-contrast" style="flex:1; align-items: center">
+            <i class="sp-inline-icon-filter sp-color-primary"></i>
+            Query Parameters
+          </span>
+          <button tabindex="0" class="sp-icon-circle-sync sp-minimal sp-simple-icon sp-small sp-primary"></button>
+          <button tabindex="0" class="sp-icon-circle-plus sp-minimal sp-simple-icon sp-small sp-primary"></button>
+        </div>
+        <div class="sp-padding-bottom-1 sp-padding-horizontal-1">
+          <div class="sp-small sp-font-weight-semi-bold sp-padding-1">Creative</div>
+          <div class="sp-tag">My Awesome Ad<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+          <div class="sp-tag">Some Other Awesome Ad<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+        </div>
+        <div class="sp-padding-bottom-1 sp-padding-horizontal-1">
+          <div class="sp-small sp-font-weight-semi-bold sp-padding-1">Format</div>
+          <div class="sp-tag">Mobile Parallax<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+          <div class="sp-tag">Mobile Scroller<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+        </div>
+      </div>
+      <div>
+
+      <div>
+        <div class="sp-container sp-padding-1 sp-contrast sp-flex">
+          <span class="sp-padding-1 sp-label sp-color-contrast" style="flex:1; align-items: center">
+            <i class="sp-inline-icon-dimensions sp-color-primary"></i>
+            Dimensions
+          </span>
+          <button tabindex="0" class="sp-icon-circle-sync sp-minimal sp-simple-icon sp-small sp-primary"></button>
+        </div>
+
+        <div class="sp-padding-bottom-2 sp-padding-horizontal-1">
+          <div class="sp-small sp-font-weight-semi-bold sp-padding-1">Primary Dimension</div>
+          <div class="sp-selector qit-target sp-small">
+            <input readonly="" class="qit-target sp-selector-trigger sp-small" type="text" value="Menu Item 2" style="width:245px;">
+            <div class="sp-selector-overlay">
+              <div class="sp-menu-dropdown sp-overlay">
+                <a class="sp-menu-item">Menu Item 1</a>
+                <a class="sp-menu-item sp-state-active">Menu Item 2</a>
+                <a class="sp-menu-item">Menu Item 3</a>
+                <a class="sp-menu-item sp-state-disabled">Menu Item 4</a>
+                <div class="sp-menu-header">Section Header</div>
+                <a class="sp-menu-item">Menu Item 5</a>
+                <a class="sp-menu-item">Menu Item 6</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sp-padding-bottom-2 sp-padding-horizontal-1">
+          <div class="sp-small sp-font-weight-semi-bold sp-padding-1">Secondary Dimension</div>
+          <div class="sp-selector qit-target sp-small">
+            <input readonly="" class="qit-target sp-selector-trigger sp-small" type="text" value="Menu Item 2" style="width:245px;">
+            <div class="sp-selector-overlay">
+              <div class="sp-menu-dropdown sp-overlay">
+                <a class="sp-menu-item">Menu Item 1</a>
+                <a class="sp-menu-item sp-state-active">Menu Item 2</a>
+                <a class="sp-menu-item">Menu Item 3</a>
+                <a class="sp-menu-item sp-state-disabled">Menu Item 4</a>
+                <div class="sp-menu-header">Section Header</div>
+                <a class="sp-menu-item">Menu Item 5</a>
+                <a class="sp-menu-item">Menu Item 6</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    
+      </div>
+    </div> -->
+      <!-- <div>
+        <div class="sp-container sp-padding-1 sp-contrast sp-flex">
+          <span class="sp-padding-1 sp-label sp-color-contrast" style="flex:1; align-items: center">
+            <i class="sp-inline-icon-metric sp-color-primary"></i>
+            Metrics
+          </span>
+          <button tabindex="0" class="sp-icon-circle-sync sp-minimal sp-simple-icon sp-small sp-primary"></button>
+          <button tabindex="0" class="sp-icon-circle-plus sp-minimal sp-simple-icon sp-small sp-primary"></button>
+        </div>
+        <div class="sp-padding-bottom-1 sp-padding-horizontal-1">
+          <div class="sp-selector qit-target sp-small sp-inline sp-margin-top-1">
+            <input readonly="" class="qit-target sp-selector-trigger sp-small" type="text" value="Custom Metric Set" style="width:245px;">
+            <div class="sp-selector-overlay">
+              <div class="sp-menu-dropdown sp-overlay">
+                <a class="sp-menu-item">Basic Performance</a>
+                <a class="sp-menu-item">Video Performance</a>
+                <a class="sp-menu-item">Engagement</a>
+                <a class="sp-menu-item">User Experience</a>
+                <a class="sp-menu-item sp-state-active">Custom Metric Set</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sp-padding-bottom-1 sp-padding-horizontal-1">
+          <div class="sp-small sp-font-weight-semi-bold sp-padding-1">Impression Types</div>
+          <div class="sp-tag">Delivered Impressions<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+          <div class="sp-tag">Video Impressions<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+        </div>
+
+        <div class="sp-padding-bottom-1 sp-padding-horizontal-1">
+          <div class="sp-small sp-font-weight-semi-bold sp-padding-1">Interactions</div>
+          <div class="sp-tag">Click Throughs (Exits)<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+        </div>
+      </div>
+    </div> -->
+    <!-- <div class="sp-app-content-main sp-container-light sp-alt-one">
+      <div class=""></div>
+    </div> -->
+  </div>
+
+</body>
+</html>

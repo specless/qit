@@ -95,7 +95,7 @@
               <a class="sp-menu-item sp-icon-circle">001 - Version Descriptive Name</a>
               <a class="sp-menu-item sp-icon-circle">000 - Initial Version</a>
               <div class="sp-menu-header sp-small">Unpublished Versions</div>
-              <a class="sp-menu-item sp-icon-lightning sp-state-disabled">Specless Sync</a>
+              <a class="sp-menu-item sp-icon-lightning" href="layout-working-version-with-sync.html">Specless Sync</a>
               <a class="sp-menu-item sp-icon-github sp-state-disabled">Github Sync</a>
               <a class="sp-menu-item sp-icon-link sp-state-disabled">Externally Hosted</a>
               <!-- <div class="sp-align-center sp-container sp-alt-one sp-rectangle">
@@ -109,7 +109,7 @@
             </div>
           </div>
         </div>
-        <button class="sp-icon-edit sp-small sp-primary sp-font-color-white sp-margin-left-1">Edit</button>
+        <a class="sp-button sp-icon-edit sp-small sp-primary sp-font-color-white sp-margin-left-1" href="layout-working-version-no-sync.html">Edit</a>
       </div>
     </div>
   </div>
@@ -117,141 +117,131 @@
     <div class="sp-app-content-sidebar sp-flex">
       <div class="sp-app-content-sidebar-icon-menu sp-container-dark sp-contrast sp-border-top-base">
         <a href="settings.html" class="sp-button sp-minimal sp-simple-icon sp-icon-circle-info sp-primary"></a>
-        <a href="layout-published-version-with-sync.html" class="sp-button sp-minimal sp-simple-icon sp-icon-design sp-primary sp-state-active"></a>
-        <a href="simulator.html"  class="sp-button sp-minimal sp-simple-icon sp-icon-monitor sp-primary"></a>
+        <a href="layout-published-version-with-sync.html" class="sp-button sp-minimal sp-simple-icon sp-icon-design sp-primary"></a>
+        <a href="simulator.html" class="sp-button sp-minimal sp-simple-icon sp-icon-monitor sp-primary sp-state-active"></a>
         <a class="sp-button sp-minimal sp-simple-icon sp-icon-file-cabinet sp-primary"></a>
         <a class="sp-button sp-minimal sp-simple-icon sp-icon-paper-plane sp-primary"></a>
         <a class="sp-button sp-minimal sp-simple-icon sp-icon-data sp-primary"></a>
       </div>
-      <div class="sp-app-content-sidebar-menu sp-container-dark sp-alt-one sp-shadow-medium " style="width:135px;">
+      <div class="sp-app-content-sidebar-menu sp-container-dark sp-alt-one sp-shadow-medium " style="width:400px;">
         <div class="sp-padding-1 sp-container sp-label sp-color-contrast sp-flex sp-border-bottom-base">
-          <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Panels</span>
-          <button tabindex="0" class="sp-icon-placeholder sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+          <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Simulator Settings</span>
+          <!-- <button tabindex="0" class="sp-icon-circle-arrow-left sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
         </div>
-        <div class="sp-app-content-sidebar-menu-content">
-          <div class="sp-menu-header sp-small sp-align-center">Display</div>
-          <div class="sp-padding-2">
-            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/400x150/0096a9/0096a9);">
-              <div tabindex="0" class="sp-button sp-icon-code sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
-              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+        <div class="sp-app-content-sidebar-menu-content sp-small">
+          <div class="sp-menu-header">Format Category</div>
+          <div class="sp-padding-1">
+            <div class="sp-selector sp-full-width sp-small">
+              <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Default Formats: Standard"/>
+              <div class="sp-selector-overlay">
+                <div class="sp-menu-dropdown sp-overlay">
+                  <div class="sp-menu-header">Default Formats</div>
+                  <a class="sp-menu-item sp-state-active">Standard</a>
+                  <a class="sp-menu-item">Basic Rich Media</a>
+                  <a class="sp-menu-item">Premium Formats</a>
+                  <a class="sp-menu-item">Other</a>
+                  <div class="sp-menu-header">NBC Universal</div>
+                  <a class="sp-menu-item">Standard</a>
+                  <a class="sp-menu-item">Basic Rich Media</a>
+                  <a class="sp-menu-item">Premium Formats</a>
+                  <a class="sp-menu-item">Other</a>
+                  <div class="sp-menu-header">Personal Workspace</div>
+                  <a class="sp-menu-item">Standard</a>
+                  <a class="sp-menu-item">Basic Rich Media</a>
+                  <a class="sp-menu-item">Premium Formats</a>
+                  <a class="sp-menu-item">Other</a>
+                </div>
+              </div>
             </div>
-            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold"><i class="sp-inline-icon-star-filled"></i>Primary</div>
           </div>
-          <div class="sp-padding-2">
-            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/350x100/0096a9/0096a9);">
-              <div tabindex="0" class="sp-button sp-icon-photoshop sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
-              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+          <div class="sp-menu-header">Choose A Format</div>
+          <div class="sp-padding-1">
+            <div class="sp-container sp-alt-one sp-height-7 sp-scroll-vertical sp-small sp-input sp-rectangle">
+              <a class="sp-menu-item">Static Size Display Unit</a>
+              <a class="sp-menu-item sp-state-active">Fluid Width Display Unit</a>
+              <a class="sp-menu-item">Fluid Display Unit</a>
+              <a class="sp-menu-item">Static Size Display Unit</a>
+              <a class="sp-menu-item">Fluid Width Display Unit</a>
+              <a class="sp-menu-item">Fluid Display Unit</a>
+              <a class="sp-menu-item">Static Size Display Unit</a>
+              <a class="sp-menu-item">Fluid Width Display Unit</a>
+              <a class="sp-menu-item">Fluid Display Unit</a>
+              <a class="sp-menu-item">Static Size Display Unit</a>
+              <a class="sp-menu-item">Fluid Width Display Unit</a>
+              <a class="sp-menu-item">Fluid Display Unit</a>
+              <a class="sp-menu-item">Static Size Display Unit</a>
+              <a class="sp-menu-item">Fluid Width Display Unit</a>
+              <a class="sp-menu-item">Fluid Display Unit</a>
             </div>
-            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Skin Left</div>
           </div>
-          <div class="sp-padding-2">
-            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/350x200/0096a9/0096a9);">
-              <div tabindex="0" class="sp-button sp-icon-photoshop sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
-              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+          <div class="sp-menu-header">Choose Panels</div>
+          <div class="sp-row sp-vcenter">
+            <div class="sp-col sp-span-5 sp-align-right">
+              <span class="sp-font-weight-semi-bold">Main Panel</span>
+              <i class="sp-inline-icon-circle-arrow-right sp-margin-left-2 sp-margin-bottom-1 sp-margin-top-1 sp-float-right"></i>
+              <br>(Display)
             </div>
-            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Skin Right</div>
+            <div class="sp-col sp-span-7">
+              <div class="sp-selector sp-full-width sp-small">
+                <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Primary Panel"/>
+                <div class="sp-selector-overlay">
+                  <div class="sp-menu-dropdown sp-overlay">
+                    <a class="sp-menu-item sp-state-active">Primary Panel</a>
+                    <a class="sp-menu-item">Expanded Panel</a>
+                    <a class="sp-menu-item">Another Panel</a>
+                    <a class="sp-menu-item sp-state-disabled">Native Panel</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="sp-padding-2">
-            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/350x70/0096a9/0096a9);">
-              <div tabindex="0" class="sp-button sp-icon-hype sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
-              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+          <div class="sp-row sp-vcenter">
+            <div class="sp-col sp-span-5 sp-align-right">
+              <span class="sp-font-weight-semi-bold">Expanded Panel</span>
+              <i class="sp-inline-icon-circle-arrow-right sp-margin-left-2 sp-margin-bottom-1 sp-margin-top-1 sp-float-right"></i>
+              <br>(Display)
             </div>
-            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Test Hype Panel</div>
+            <div class="sp-col sp-span-7">
+              <div class="sp-selector sp-full-width sp-small">
+                <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Expanded Panel"/>
+                <div class="sp-selector-overlay">
+                  <div class="sp-menu-dropdown sp-overlay">
+                    <a class="sp-menu-item">Primary Panel</a>
+                    <a class="sp-menu-item sp-state-active">Expanded Panel</a>
+                    <a class="sp-menu-item">Another Panel</a>
+                    <a class="sp-menu-item sp-state-disabled">Native Panel</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="sp-padding-2 sp-bg-overlay-light-1 sp-color-primary sp-state-active">
-            <div class="sp-creative-thumbnail sp-height-3 sp-border-solid sp-border-thin sp-border-color-primary" style="background-image: url(http://via.placeholder.com/350x150/0096a9/0096a9);">
-              <div tabindex="0" class="sp-button sp-icon-code sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
-              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+          <div class="sp-menu-header">Format Settings</div>
+          <div class="sp-row sp-vcenter">
+            <div class="sp-col sp-span-5 sp-align-right">
+              <span class="sp-font-weight-semi-bold">Dropdown Setting</span>
+              
             </div>
-            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Secondary</div>
-          </div>
-          <div class="sp-menu-header sp-small sp-align-center">Native</div>
-          <div class="sp-padding-2">
-            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/400x150/0096a9/0096a9);">
-              <div tabindex="0" class="sp-button sp-icon-native-ad sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
-              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            <div class="sp-col sp-span-7">
+              <div class="sp-selector sp-full-width sp-small">
+                <input readonly type="text" class="sp-full-width sp-selector-trigger" value="two"/>
+                <div class="sp-selector-overlay">
+                  <div class="sp-menu-dropdown sp-overlay">
+                    <a class="sp-menu-item">one</a>
+                    <a class="sp-menu-item sp-state-active">two</a>
+                    <a class="sp-menu-item">three</a>
+                    <a class="sp-menu-item sp-state-disabled">four</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold"><i class="sp-inline-icon-star-filled"></i>Native</div>
-          </div>
-          <div class="sp-padding-2">
-            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/350x350/0096a9/0096a9);">
-              <div tabindex="0" class="sp-button sp-icon-native-ad sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
-              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
-            </div>
-            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Native Panel</div>
-          </div>
-          <div class="sp-menu-header sp-small sp-align-center">Video</div>
-          <div class="sp-padding-2">
-            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/400x150/0096a9/0096a9);">
-              <div tabindex="0" class="sp-button sp-icon-video sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
-              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
-            </div>
-            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold"><i class="sp-inline-icon-star-filled"></i>Video</div>
-          </div>
-          <div class="sp-padding-2">
-            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/16x9/0096a9/0096a9);">
-              <div tabindex="0" class="sp-button sp-icon-video sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
-              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
-            </div>
-            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Video Panel</div>
-          </div>
-        </div>
-      </div>
-      <div class="sp-app-content-sidebar-menu sp-container-dark sp-alt-one sp-shadow-medium" style="width:135px;">
-        <div class="sp-padding-1 sp-container sp-label sp-color-contrast sp-flex sp-border-bottom-base">
-          <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Layouts</span>
-          <button tabindex="0" class="sp-icon-placeholder sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
-        </div>
-        <div class="sp-app-content-sidebar-menu-content">
-          <div class="sp-padding-2"">
-            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/400x150/0096a9/0096a9);">
-              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
-            </div>
-            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Default (No Layout)</div>
-          </div>
-          <div class="sp-padding-2"">
-            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/400x150/0096a9/0096a9);">
-              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
-            </div>
-            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Medium</div>
-          </div>
-          <div class="sp-padding-2">
-            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/350x150/0096a9/0096a9);">
-              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
-            </div>
-            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Large</div>
-          </div>
-          <div class="sp-padding-2">
-            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/350x100/0096a9/0096a9);">
-              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
-            </div>
-            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Extra Large</div>
-          </div>
-          <div class="sp-padding-2">
-            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/350x200/0096a9/0096a9);">
-              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
-            </div>
-            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Small</div>
-          </div>
-          <div class="sp-padding-2 sp-bg-overlay-light-1 sp-color-primary sp-state-active">
-            <div class="sp-creative-thumbnail sp-height-3 sp-border-solid sp-border-thin sp-border-color-primary" style="background-image: url(http://via.placeholder.com/350x70/0096a9/0096a9);">
-              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
-            </div>
-            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Vertical</div>
-          </div>
-          <div class="sp-padding-2">
-            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/350x350/0096a9/0096a9);">
-              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
-            </div>
-            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Horizontal</div>
           </div>
         </div>
       </div>
     </div>
     <div class="sp-app-content-main sp-container-light">
       <div class="sp-padding-1 sp-container sp-label sp-color-contrast sp-flex sp-bg-overlay-light-4">
-        <button tabindex="0" class="sp-icon-unlocked sp-minimal sp-simple-icon sp-small sp-primary sp-float-left"></button>
-        <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Secondary<i class="sp-inline-icon-arrow-right sp-margin-left-1 sp-margin-right-1"></i>Vertical</span>
+        <button tabindex="0" class="sp-icon-circle-arrow-left sp-minimal sp-simple-icon sp-small sp-primary sp-float-left"></button>
+        <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Fluid Width Display Unit</span>
        <!--  <button tabindex="0" class="sp-icon-eye sp-minimal sp-simple-icon sp-small sp-primary sp-float-right sp-state-active"></button> -->
         <!-- <button tabindex="0" class="sp-icon-panel sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
         <button tabindex="0" class="sp-icon-layout sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
@@ -402,7 +392,7 @@
           <div class="sp-preview-panel-down sp-overlay sp-icon-drag-both"></div>
           <div class="sp-preview-panel-right sp-overlay sp-icon-drag-both"></div>
           <div class="sp-preview-panel-diag sp-overlay sp-icon-resize"></div>
-          <div class="sp-preview-panel-content sp-shadow-low-inset" style="width: 300px; height: 250px">
+          <div class="sp-preview-panel-content sp-shadow-low-inset" style="width: 1024px; height: 768px">
             <div class="sp-preview-panel-grid"></div>
             <div class="sp-preview-panel-ad"><!-- iFrame Goes here--></div>
           </div>

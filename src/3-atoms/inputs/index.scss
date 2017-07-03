@@ -333,3 +333,44 @@ textarea {
   	color: $sp-color-white;
   }
 }
+
+.sp-form-tactile {
+	@include sp-tactile;
+	@include sp-shape(rectangle);
+	font-weight: 600;
+	font-size: 12px;
+	padding: 3px 8px;
+	cursor: pointer;
+	white-space: nowrap;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+
+  	&.sp-minimal {
+  		background-color: transparent;
+  	}
+
+	&.sp-no-edit {
+		pointer-events: none;
+		opacity: 0.9;
+	}
+
+	> i::before {
+		transform: scale(1.4) translateY(2px);
+	}
+
+	@include sp-primary {
+		color: $sp-color-white;
+	}
+
+	@include sp-success {
+		color: $sp-color-white;
+	}
+
+	@include sp-warning {
+		color: $sp-color-white;
+	}
+
+	@include sp-danger {
+		color: $sp-color-white;
+	}
+}

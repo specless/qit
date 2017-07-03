@@ -40,6 +40,12 @@
   }
 }
 
+.sp-inline-icon-solid-lock, .sp-inline-icon-solid-unlock {
+  &::before {
+    transform: translateY(18%) scale(0.8);
+  }
+}
+
 
 @mixin sp-icon-size($size: null) {
   $key: 'sp-icon-size-base';

@@ -91,7 +91,7 @@
     <div class="sp-app-content-sidebar sp-flex">
       <div class="sp-app-content-sidebar-icon-menu sp-container-dark sp-contrast sp-border-top-base">
         <a href="settings.html" class="sp-button sp-minimal sp-simple-icon sp-icon-circle-info sp-primary sp-state-active"></a>
-        <a href="layout-published-version-with-sync.html" class="sp-button sp-minimal sp-simple-icon sp-icon-design sp-primary"></a>
+        <a href="layout-published-version-with-sync.html" class="sp-button sp-minimal sp-simple-icon sp-icon-eye sp-primary"></a>
         <a href="simulator.html" class="sp-button sp-minimal sp-simple-icon sp-icon-monitor sp-primary"></a>
         <a class="sp-button sp-minimal sp-simple-icon sp-icon-file-cabinet sp-primary"></a>
         <a class="sp-button sp-minimal sp-simple-icon sp-icon-paper-plane sp-primary"></a>
@@ -157,37 +157,157 @@
         </div>
       </div> -->
     </div>
+    <div class="sp-app-content-sidebar sp-flex">
+      <div class="sp-app-content-sidebar-menu sp-container-light sp-alt-two sp-shadow-medium " style="width:300px;">
+        <div class="sp-padding-1 sp-container sp-label sp-contrast sp-color-contrast sp-flex sp-border-bottom-base">
+          <button tabindex="0" class="sp-icon-circle-info sp-minimal sp-simple-icon sp-small sp-primary sp-float-left"></button>
+          <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Overview</span>
+          <!-- <button tabindex="0" class="sp-icon-circle-arrow-left sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
+        </div>
+        <div class="sp-app-content-sidebar-menu-content sp-small">
+          <div class="sp-menu-header sp-color-contrast">Panels</div>
+          <div class="sp-padding-1" style="z-index:1; position: relative">
+            <div class="sp-creative-thumbnail sp-height-5 sp-border-base" style="background-image: url(http://via.placeholder.com/400x300/0096a9/0096a9);">
+              <a class="sp-button sp-icon-code sp-simple-icon sp-minimal sp-small sp-float-left sp-margin-left-1 sp-primary"></a>
+              <a class="sp-button sp-icon-eye sp-simple-icon sp-minimal sp-small sp-float-right sp-margin-left-1 sp-primary"></a>
+            </div>
+            <div class="sp-align-center">
+              <a class="sp-button sp-icon-arrow-right sp-simple-icon sp-minimal sp-small sp-float-right sp-margin-left-1 sp-primary"></a>
+              <span style="line-height:2.5">Primary Panel</span>
+              <a class="sp-button sp-icon-arrow-left sp-simple-icon sp-minimal sp-small sp-float-left sp-margin-left-1 sp-primary"></a>
+            </div>
+          </div>
+          <div class="sp-menu-header sp-color-contrast">Details</div>
+          <div class="sp-wrapper">
+            <div class="sp-row">
+              <h6 class="sp-col sp-span-9 sp-margin-0">Status</h6>
+              <h6 class="sp-col sp-span-3 sp-margin-0 sp-align-right">13</h6>
+            </div>
+            <div class="sp-row">
+              <h6 class="sp-col sp-span-9 sp-margin-0">Creative ID</h6>
+              <h6 class="sp-col sp-span-3 sp-margin-0 sp-align-right">2</h6>
+            </div>
+            <div class="sp-row">
+              <h6 class="sp-col sp-span-9 sp-margin-0">Live Version</h6>
+              <h6 class="sp-col sp-span-3 sp-margin-0 sp-align-right">2</h6>
+            </div>
+            <div class="sp-row">
+              <h6 class="sp-col sp-span-9 sp-margin-0">Created By</h6>
+              <h6 class="sp-col sp-span-3 sp-margin-0 sp-align-right">2</h6>
+            </div>
+            <div class="sp-row">
+              <h6 class="sp-col sp-span-9 sp-margin-0">Created On</h6>
+              <h6 class="sp-col sp-span-3 sp-margin-0 sp-align-right">2</h6>
+            </div>
+            <div class="sp-row">
+              <h6 class="sp-col sp-span-9 sp-margin-0">Last Updated</h6>
+              <h6 class="sp-col sp-span-3 sp-margin-0 sp-align-right">2</h6>
+            </div>
+          </div>
+          <div class="sp-menu-header sp-color-contrast">Performance Snapshot</div>
+          <div class="sp-wrapper">
+            <div class="sp-row">
+              <h6 class="sp-col sp-span-9 sp-margin-0">Requested Impressions</h6>
+              <h6 class="sp-col sp-span-3 sp-margin-0 sp-align-right">92</h6>
+            </div>
+            <div class="sp-row">
+              <h6 class="sp-col sp-span-9 sp-margin-0">Delivery Rate</h6>
+              <h6 class="sp-col sp-span-3 sp-margin-0 sp-align-right">31</h6>
+            </div>
+            <div class="sp-row">
+              <h6 class="sp-col sp-span-9 sp-margin-0">Viewability Rate</h6>
+              <h6 class="sp-col sp-span-3 sp-margin-0 sp-align-right">31</h6>
+            </div>
+            <div class="sp-row">
+              <h6 class="sp-col sp-span-9 sp-margin-0">Interaction Rate</h6>
+              <h6 class="sp-col sp-span-3 sp-margin-0 sp-align-right">31</h6>
+            </div>
+            <div class="sp-row">
+              <h6 class="sp-col sp-span-9 sp-margin-0">CTR</h6>
+              <h6 class="sp-col sp-span-3 sp-margin-0 sp-align-right">31</h6>
+            </div>
+            <div class="sp-row">
+              <h6 class="sp-col sp-span-9 sp-margin-0">Video Completion Rate</h6>
+              <h6 class="sp-col sp-span-3 sp-margin-0 sp-align-right">31</h6>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
     <div class="sp-app-content-main sp-container-light">
-      <div class="sp-padding-1 sp-container sp-label sp-color-contrast sp-flex sp-bg-overlay-light-4 sp-border-bottom-base">
-        <button tabindex="0" class="sp-icon-settings sp-state-disabled sp-minimal sp-simple-icon sp-small sp-primary sp-float-left"></button>
-        <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Creative Settings</span>
+      <div class="sp-padding-1 sp-container sp-color-contrast sp-flex sp-bg-overlay-light-4 sp-border-bottom-base">
+        <!-- <button tabindex="0" class="sp-icon-circle-arrow-left sp-minimal sp-simple-icon sp-small sp-primary sp-float-left"></button> -->
+        <span class="sp-border-right-base sp-float-right sp-margin-right-1">
+          <!-- <button tabindex="0" class="sp-icon-edit sp-small sp-margin-left-1"></button> -->
+          <button tabindex="0" class="sp-icon-circle-info sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-active"></button>
+        </span>
+        <button tabindex="0" class="sp-icon-settings sp-minimal sp-simple-icon sp-small sp-primary"></button>
+        <span class="sp-padding-vertical-1 sp-padding-left-1 sp-label" style="flex:1">Creative Settings</span>
        <!--  <button tabindex="0" class="sp-icon-eye sp-minimal sp-simple-icon sp-small sp-primary sp-float-right sp-state-active"></button> -->
         <!-- <button tabindex="0" class="sp-icon-panel sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
         <button tabindex="0" class="sp-icon-layout sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
-        <!-- <button tabindex="0" class="sp-icon-location sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
-        <button tabindex="0" class="sp-icon-data sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
-        <button tabindex="0" class="sp-icon-console sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
-        <button tabindex="0" class="sp-icon-code sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
-        <span class="sp-float-right sp-margin-left-1">
+        <button tabindex="0" class="sp-icon-time sp-minimal sp-simple-icon sp-small sp-primary sp-float-right sp-state-active"></button>
+        <!-- <button tabindex="0" class="sp-icon-code sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
+        <span class="sp-border-left-base sp-float-right sp-margin-left-1">
           <!-- <button tabindex="0" class="sp-icon-edit sp-small sp-margin-left-1"></button> -->
-          <button tabindex="0" class="sp-icon-more sp-small sp-float-right sp-margin-left-1"></button>
+          <!-- <button tabindex="0" class="sp-icon-more sp-small sp-float-right sp-margin-left-1"></button> -->
+          <div class="sp-selector sp-small">
+              <button tabindex="0" class="sp-icon-more sp-small sp-float-right sp-margin-left-1 sp-selector-trigger"></button>
+              <div class="sp-selector-overlay">
+                <div class="sp-menu-dropdown sp-overlay" style="left: auto; right: 0; transform: none;">
+                  <a class="sp-menu-item sp-icon-share">Sharing</a>
+                  <div class="sp-spacer-vertical"></div>
+                  <a class="sp-menu-item sp-icon-copy">Duplicate Creative</a>
+                  <a class="sp-menu-item sp-icon-file-cabinet">Archive Creative</a>
+                  <a class="sp-menu-item sp-icon-locked">Lock Creative</a>
+                  <a class="sp-menu-item sp-icon-unlocked sp-state-disabled">Unlock Creative</a>
+                  <div class="sp-spacer-vertical"></div>
+                  <a class="sp-menu-item sp-icon-trash">Delete Creative</a>
+                </div>
+              </div>
+            </div>
         </span>
       </div>
     
       <div class="sp-app-content-main-scroll">
         <!-- <h4 class="sp-color-contrast">Basic Info</h4> -->
-        <div class="sp-wrapper sp-overlay sp-margin-bottom-3 sp-rectangle sp-padding-horizontal-2 sp-padding-bottom-2 ">
+        <div class="sp-wrapper sp-overlay sp-margin-bottom-3 sp-rectangle sp-padding-horizontal-2 sp-padding-bottom-2">
           <div class="sp-row sp-fluid sp-border-bottom-base">
             <div class="sp-col sp-span-12">
               <h5><i class="sp-inline-icon-list sp-margin-right-2"></i>Details</h5>
             </div>
           </div>
           <div class="sp-row sp-fluid">
-            <div class="sp-col">
+            <div class="sp-col sp-span-6">
               <p class="sp-label sp-margin-top-3">Creative Name</p>
               <p class="sp-large sp-margin-top-2">Creative Name Goes Here</p>
               <p class="sp-label sp-margin-top-3">Advertiser</p>
               <p class="sp-large sp-margin-top-2">Coca-Cola</p>
+              <div class="sp-label sp-margin-bottom-2 sp-margin-top-3 sp-rectangle">Custom Labels</div>
+              <div class="sp-selector sp-full-width sp-margin-bottom-2 sp-small">
+                <input type="text" class="sp-padding-icon-left sp-full-width sp-selector-trigger" placeholder="Enter or Choose A Custom Label"/>
+                <div class="sp-selector-overlay sp-icon-circle-plus">
+                  <div class="sp-menu-dropdown sp-overlay">
+                    <a class="sp-menu-item sp-icon-circle-plus">Add Label: "Whatever I entered above goes here..."</a>
+                    <div class="sp-spacer-vertical"></div>
+                    <a class="sp-menu-item">CPG</a>
+                    <a class="sp-menu-item">Direct Sale</a>
+                    <a class="sp-menu-item">Custom</a>
+                    <a class="sp-menu-item">Whatever</a>
+                  </div>
+                </div>
+              </div>
+              <div class="sp-padding-2 sp-container-light sp-alt-two">
+                <div class="sp-tag sp-success">Advertiser: Coca-Cola</div>
+                <div class="sp-tag sp-warning">Client: Some Client</div>
+                <div class="sp-tag">CPG<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+                <div class="sp-tag">Direct Sale<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+                <div class="sp-tag">Custom<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+                <div class="sp-tag">Whatever<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+              </div>
+            </div>
+            <div class="sp-col sp-span-6">
               <p class="sp-label sp-margin-top-3">Client</p>
               <p class="sp-large sp-margin-top-2">Some Client</p>
               <p class="sp-label sp-margin-top-3">Label Color</p>
@@ -212,28 +332,7 @@
                 </div>
               </p>
               
-              <div class="sp-label sp-margin-bottom-2 sp-margin-top-3 sp-rectangle">Custom Labels</div>
-              <div class="sp-selector sp-full-width sp-margin-bottom-2 sp-small">
-                <input type="text" class="sp-padding-icon-left sp-full-width sp-selector-trigger" placeholder="Enter or Choose A Custom Label"/>
-                <div class="sp-selector-overlay sp-icon-circle-plus">
-                  <div class="sp-menu-dropdown sp-overlay">
-                    <a class="sp-menu-item sp-icon-circle-plus">Add Label: "Whatever I entered above goes here..."</a>
-                    <div class="sp-spacer-vertical"></div>
-                    <a class="sp-menu-item">CPG</a>
-                    <a class="sp-menu-item">Direct Sale</a>
-                    <a class="sp-menu-item">Custom</a>
-                    <a class="sp-menu-item">Whatever</a>
-                  </div>
-                </div>
-              </div>
-              <div class="sp-padding-2 sp-container-light sp-alt-two">
-                <div class="sp-tag sp-success">Advertiser: Coca-Cola</div>
-                <div class="sp-tag sp-warning">Client: Some Client</div>
-                <div class="sp-tag">CPG<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
-                <div class="sp-tag">Direct Sale<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
-                <div class="sp-tag">Custom<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
-                <div class="sp-tag">Whatever<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -428,7 +527,7 @@
               <div class="sp-col sp-span-1 sp-align-center">
                 <div class="sp-icon-circle-arrow-right"></div>
               </div>
-              <div class="sp-col sp-span-7" style="padding-right: 0">
+              <div class="sp-col sp-span-7">
                 <input type="text" class="sp-full-width sp-small" value="http://www.somesite.com/1x1.gif"/>
               </div>
               <div class="sp-col sp-span-1">
@@ -452,79 +551,179 @@
     <div class="sp-app-content-sidebar sp-flex">
       <div class="sp-app-content-sidebar-menu sp-container-light sp-alt-two sp-shadow-medium " style="width:300px;">
         <div class="sp-padding-1 sp-container sp-label sp-contrast sp-color-contrast sp-flex sp-border-bottom-base">
-          <button tabindex="0" class="sp-icon-circle-arrow-right sp-minimal sp-simple-icon sp-small sp-primary sp-float-left"></button>
-          <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Overview</span>
+          <button tabindex="0" class="sp-icon-time sp-minimal sp-simple-icon sp-small sp-primary sp-float-left "></button>
+          <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Activity & Versions</span>
           <!-- <button tabindex="0" class="sp-icon-circle-arrow-left sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
         </div>
         <div class="sp-app-content-sidebar-menu-content sp-small">
-          <div class="sp-menu-header">Panels</div>
-          <div class="sp-padding-1" style="z-index:1; position: relative">
-            <div class="sp-creative-thumbnail sp-height-5 sp-border-base" style="background-image: url(http://via.placeholder.com/400x300/0096a9/0096a9);">
-              <a class="sp-button sp-icon-code sp-simple-icon sp-minimal sp-small sp-float-left sp-margin-left-1 sp-primary"></a>
-              <a class="sp-button sp-icon-eye sp-simple-icon sp-minimal sp-small sp-float-right sp-margin-left-1 sp-primary"></a>
-            </div>
-            <div class="sp-align-center">
-              <a class="sp-button sp-icon-arrow-right sp-simple-icon sp-minimal sp-small sp-float-right sp-margin-left-1 sp-primary"></a>
-              <span style="line-height:2.5">Primary Panel</span>
-              <a class="sp-button sp-icon-arrow-left sp-simple-icon sp-minimal sp-small sp-float-left sp-margin-left-1 sp-primary"></a>
+          <div class="sp-border-bottom-base sp-align-center">
+            <div class="sp-menu-item sp-horizontal sp-label sp-state-active">Versions</div>
+            <div class="sp-menu-item sp-horizontal sp-label">Activity Feed</div>
+          </div>
+          <div class="sp-menu-header sp-small">Published Versions</div>
+
+          <div class="sp-flex sp-vcenter sp-padding-1">
+            <button class="sp-icon-version sp-minimal sp-simple-icon sp-small sp-primary"></button>
+            <div class="sp-font-weight-semi-bold sp-padding-1" style="flex:1">004 - Version Name</div>
+            <div class="sp-selector sp-small">
+              <button class="sp-icon-more sp-minimal sp-simple-icon sp-small sp-primary sp-selector-trigger"></button>
+              <div class="sp-selector-overlay">
+                <div class="sp-menu-dropdown sp-overlay" style="left: auto; right: 0; transform: none;">
+                  <a class="sp-menu-item sp-icon-star">Set As Live Version</a>
+                  <div class="sp-spacer-vertical"></div>
+                  <a class="sp-menu-item sp-icon-eye">Preview Version</a>
+                  <a class="sp-menu-item sp-icon-monitor">Open Version in Simulator</a>
+                  <a class="sp-menu-item sp-icon-data">View Data</a>
+                  <a class="sp-menu-item sp-icon-info">Show Version Notes</a>
+                  <div class="sp-spacer-vertical"></div>
+                  <a class="sp-menu-item sp-icon-trash">Delete Version</a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="sp-menu-header">Overview</div>
-          <div class="sp-wrapper">
-            <div class="sp-row">
-              <h6 class="sp-col sp-span-9 sp-margin-0">Status</h6>
-              <h6 class="sp-col sp-span-3 sp-margin-0 sp-align-right">13</h6>
-            </div>
-            <div class="sp-row">
-              <h6 class="sp-col sp-span-9 sp-margin-0">Creative ID</h6>
-              <h6 class="sp-col sp-span-3 sp-margin-0 sp-align-right">2</h6>
-            </div>
-            <div class="sp-row">
-              <h6 class="sp-col sp-span-9 sp-margin-0">Live Version</h6>
-              <h6 class="sp-col sp-span-3 sp-margin-0 sp-align-right">2</h6>
-            </div>
-            <div class="sp-row">
-              <h6 class="sp-col sp-span-9 sp-margin-0">Created By</h6>
-              <h6 class="sp-col sp-span-3 sp-margin-0 sp-align-right">2</h6>
-            </div>
-            <div class="sp-row">
-              <h6 class="sp-col sp-span-9 sp-margin-0">Created On</h6>
-              <h6 class="sp-col sp-span-3 sp-margin-0 sp-align-right">2</h6>
-            </div>
-            <div class="sp-row">
-              <h6 class="sp-col sp-span-9 sp-margin-0">Last Updated</h6>
-              <h6 class="sp-col sp-span-3 sp-margin-0 sp-align-right">2</h6>
+
+
+          <div class="sp-flex sp-vcenter sp-padding-1">
+            <button class="sp-icon-star sp-minimal sp-simple-icon sp-small sp-success sp-state-active"></button>
+            <div class="sp-font-weight-semi-bold sp-padding-1" style="flex:1">003 (Live) - Version Name</div>
+            <div class="sp-selector sp-small">
+              <button class="sp-icon-more sp-minimal sp-simple-icon sp-small sp-primary sp-selector-trigger"></button>
+              <div class="sp-selector-overlay">
+                <div class="sp-menu-dropdown sp-overlay" style="left: auto; right: 0; transform: none;">
+                  <a class="sp-menu-item sp-icon-star sp-state-disabled">Set As Live Version</a>
+                  <div class="sp-spacer-vertical"></div>
+                  <a class="sp-menu-item sp-icon-eye">Preview Version</a>
+                  <a class="sp-menu-item sp-icon-monitor">Open Version in Simulator</a>
+                  <a class="sp-menu-item sp-icon-data">View Data</a>
+                  <a class="sp-menu-item sp-icon-info">Show Version Notes</a>
+                  <div class="sp-spacer-vertical"></div>
+                  <a class="sp-menu-item sp-icon-trash">Delete Version</a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="sp-menu-header">Performance Snapshot</div>
-          <div class="sp-wrapper">
-            <div class="sp-row">
-              <h6 class="sp-col sp-span-9 sp-margin-0">Requested Impressions</h6>
-              <h6 class="sp-col sp-span-3 sp-margin-0 sp-align-right">92</h6>
-            </div>
-            <div class="sp-row">
-              <h6 class="sp-col sp-span-9 sp-margin-0">Delivery Rate</h6>
-              <h6 class="sp-col sp-span-3 sp-margin-0 sp-align-right">31</h6>
-            </div>
-            <div class="sp-row">
-              <h6 class="sp-col sp-span-9 sp-margin-0">Viewability Rate</h6>
-              <h6 class="sp-col sp-span-3 sp-margin-0 sp-align-right">31</h6>
-            </div>
-            <div class="sp-row">
-              <h6 class="sp-col sp-span-9 sp-margin-0">Interaction Rate</h6>
-              <h6 class="sp-col sp-span-3 sp-margin-0 sp-align-right">31</h6>
-            </div>
-            <div class="sp-row">
-              <h6 class="sp-col sp-span-9 sp-margin-0">CTR</h6>
-              <h6 class="sp-col sp-span-3 sp-margin-0 sp-align-right">31</h6>
-            </div>
-            <div class="sp-row">
-              <h6 class="sp-col sp-span-9 sp-margin-0">Video Completion Rate</h6>
-              <h6 class="sp-col sp-span-3 sp-margin-0 sp-align-right">31</h6>
+
+
+          <div class="sp-flex sp-vcenter sp-padding-1">
+            <button class="sp-icon-version sp-minimal sp-simple-icon sp-small sp-primary"></button>
+            <div class="sp-font-weight-semi-bold sp-padding-1" style="flex:1">002 - Version Name</div>
+            <div class="sp-selector sp-small">
+              <button class="sp-icon-more sp-minimal sp-simple-icon sp-small sp-primary sp-selector-trigger"></button>
+              <div class="sp-selector-overlay">
+                <div class="sp-menu-dropdown sp-overlay" style="left: auto; right: 0; transform: none;">
+                  <a class="sp-menu-item sp-icon-star">Set As Live Version</a>
+                  <div class="sp-spacer-vertical"></div>
+                  <a class="sp-menu-item sp-icon-eye">Preview Version</a>
+                  <a class="sp-menu-item sp-icon-monitor">Open Version in Simulator</a>
+                  <a class="sp-menu-item sp-icon-data">View Data</a>
+                  <a class="sp-menu-item sp-icon-info">Show Version Notes</a>
+                  <div class="sp-spacer-vertical"></div>
+                  <a class="sp-menu-item sp-icon-trash">Delete Version</a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="sp-menu-header">Activity Feed</div>
-          <img src="../../img/activity-feed.png" style="width:100%"/>
+
+
+          <div class="sp-flex sp-vcenter sp-padding-1">
+            <button class="sp-icon-version sp-minimal sp-simple-icon sp-small sp-primary"></button>
+            <div class="sp-font-weight-semi-bold sp-padding-1" style="flex:1">001 - Version Name</div>
+            <div class="sp-selector sp-small">
+              <button class="sp-icon-more sp-minimal sp-simple-icon sp-small sp-primary sp-selector-trigger"></button>
+              <div class="sp-selector-overlay">
+                <div class="sp-menu-dropdown sp-overlay" style="left: auto; right: 0; transform: none;">
+                  <a class="sp-menu-item sp-icon-star">Set As Live Version</a>
+                  <div class="sp-spacer-vertical"></div>
+                  <a class="sp-menu-item sp-icon-eye">Preview Version</a>
+                  <a class="sp-menu-item sp-icon-monitor">Open Version in Simulator</a>
+                  <a class="sp-menu-item sp-icon-data">View Data</a>
+                  <a class="sp-menu-item sp-icon-info">Show Version Notes</a>
+                  <div class="sp-spacer-vertical"></div>
+                  <a class="sp-menu-item sp-icon-trash">Delete Version</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="sp-flex sp-vcenter sp-padding-1">
+            <button class="sp-icon-version sp-minimal sp-simple-icon sp-small sp-primary"></button>
+            <div class="sp-font-weight-semi-bold sp-padding-1" style="flex:1">000 - Initial Name</div>
+            <div class="sp-selector sp-small">
+              <button class="sp-icon-more sp-minimal sp-simple-icon sp-small sp-primary sp-selector-trigger"></button>
+              <div class="sp-selector-overlay">
+                <div class="sp-menu-dropdown sp-overlay" style="left: auto; right: 0; transform: none;">
+                  <a class="sp-menu-item sp-icon-star">Set As Live Version</a>
+                  <div class="sp-spacer-vertical"></div>
+                  <a class="sp-menu-item sp-icon-eye">Preview Version</a>
+                  <a class="sp-menu-item sp-icon-monitor">Open Version in Simulator</a>
+                  <a class="sp-menu-item sp-icon-data">View Data</a>
+                  <a class="sp-menu-item sp-icon-info">Show Version Notes</a>
+                  <div class="sp-spacer-vertical"></div>
+                  <a class="sp-menu-item sp-icon-trash">Delete Version</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="sp-menu-header sp-small">Unpublished Versions</div>
+          <div class="sp-flex sp-vcenter sp-padding-1">
+            <button class="sp-icon-lightning sp-minimal sp-simple-icon sp-small sp-primary"></button>
+            <div class="sp-font-weight-semi-bold sp-padding-1" style="flex:1">Specless Sync</div>
+            <div class="sp-selector sp-small">
+              <button class="sp-icon-more sp-minimal sp-simple-icon sp-small sp-primary sp-selector-trigger"></button>
+              <div class="sp-selector-overlay">
+                <div class="sp-menu-dropdown sp-overlay" style="left: auto; right: 0; transform: none;">
+                  <a class="sp-menu-item sp-icon-upload">Publish</a>
+                  <div class="sp-spacer-vertical"></div>
+                  <a class="sp-menu-item sp-icon-eye">Preview Version</a>
+                  <a class="sp-menu-item sp-icon-monitor">Open Version in Simulator</a>
+                  <div class="sp-spacer-vertical"></div>
+                  <a class="sp-menu-item sp-icon-export">Export S-Kit Package</a>
+                  <a class="sp-menu-item sp-icon-import">Import S-Kit Package</a>
+                  <a class="sp-menu-item sp-icon-download">Override With Published Version</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sp-flex sp-vcenter sp-padding-1">
+            <button class="sp-icon-github sp-minimal sp-simple-icon sp-small sp-primary"></button>
+            <div class="sp-font-weight-semi-bold sp-padding-1" style="flex:1">Github Sync</div>
+            <div class="sp-selector sp-small">
+              <button class="sp-icon-more sp-minimal sp-simple-icon sp-small sp-primary sp-selector-trigger"></button>
+              <div class="sp-selector-overlay">
+                <div class="sp-menu-dropdown sp-overlay" style="left: auto; right: 0; transform: none;">
+                  <a class="sp-menu-item sp-icon-upload">Publish</a>
+                  <div class="sp-spacer-vertical"></div>
+                  <a class="sp-menu-item sp-icon-eye">Preview Version</a>
+                  <a class="sp-menu-item sp-icon-monitor">Open Version in Simulator</a>
+                  <div class="sp-spacer-vertical"></div>
+                  <a class="sp-menu-item sp-icon-link">Link to Repository</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sp-flex sp-vcenter sp-padding-1">
+            <button class="sp-icon-link sp-minimal sp-simple-icon sp-small sp-primary"></button>
+            <div class="sp-font-weight-semi-bold sp-padding-1" style="flex:1">Externally Hosted</div>
+            <div class="sp-selector sp-small">
+              <button class="sp-icon-more sp-minimal sp-simple-icon sp-small sp-primary sp-selector-trigger"></button>
+              <div class="sp-selector-overlay">
+                <div class="sp-menu-dropdown sp-overlay" style="left: auto; right: 0; transform: none;">
+                  <a class="sp-menu-item sp-icon-upload">Publish</a>
+                  <div class="sp-spacer-vertical"></div>
+                  <a class="sp-menu-item sp-icon-eye">Preview Version</a>
+                  <a class="sp-menu-item sp-icon-monitor">Open Version in Simulator</a>
+                  <div class="sp-spacer-vertical"></div>
+                  <a class="sp-menu-item sp-icon-link">Link to URL</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
 
         </div>
       </div>

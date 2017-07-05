@@ -8664,6 +8664,12 @@ blockquote {
         .sp-container-dark .sp-preview-panel .sp-preview-panel-right:hover::before, .sp-preview-panel .sp-preview-panel-diag:hover::before .sp-container-dark, .sp-preview-panel .sp-preview-panel-diag:hover::before.sp-container-dark,
         .sp-container-dark .sp-preview-panel .sp-preview-panel-diag:hover::before {
           color: #00C3DC; }
+  .sp-preview-panel .sp-preview-panel-header {
+    margin-top: -4px;
+    font-size: 12px;
+    padding-bottom: 3px; }
+    .sp-preview-panel .sp-preview-panel-header .sp-preview-panel-header-middle {
+      flex: 1; }
   .sp-preview-panel .sp-preview-panel-down {
     width: 100px;
     max-width: 100%;

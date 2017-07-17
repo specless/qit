@@ -1,0 +1,741 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example</title>
+  <link rel="stylesheet" href="../../../qit.css">
+</head>
+
+<body class="sp-app sp-technical">
+  <div class="sp-app-bar sp-container-dark sp-alt-one sp-wrapper">
+    <div class="sp-row sp-vcenter sp-height-3 sp-fluid">
+      <div class="sp-col sp-span-6 sp-flex sp-flex-align-items-center">
+        <a class="sp-menu-item sp-minimal sp-icon-menu sp-padding-0"></a>
+        <div class="sp-spacer-horizontal"></div>
+        <div class="sp-logo-lockup sp-small sp-primary sp-logo-horizontal sp-margin-left-2"></div>
+      </div>
+      <div class="sp-col sp-span-6 sp-flex sp-flex-justify-content-flex-end sp-flex-align-items-center">
+        <div class="sp-selector sp-margin-left-2">
+          <button class="sp-selector-trigger sp-icon-after-circle-user sp-rounded sp-small sp-minimal">Stephen C.</button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <div class="sp-menu-header sp-small">User Details</div>
+              <a class="sp-menu-item sp-icon-account">Account</a>
+              <a class="sp-menu-item sp-icon-settings">Preferences</a>
+              <a class="sp-menu-item sp-icon-organization">Organizations</a>
+              <a class="sp-menu-item sp-icon-account">Billing</a>
+              <div class="sp-spacer-vertical sp-margin-0"></div>
+              <a class="sp-menu-item sp-icon-logout">Log Out</a>
+            </div>
+          </div>
+        </div>
+        <div class="sp-selector sp-margin-left-2">
+          <button class="sp-selector-trigger sp-icon-after-circle-help sp-rounded sp-small sp-minimal"></button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <div class="sp-menu-header sp-small">Search For Help</div>
+              <div class="sp-padding-horizontal-2 sp-padding-vertical-1" style="position: relative;">
+                <input type="search" class="sp-small sp-rounded" placeholder="Enter Search Term" style="width: 100%"/>
+                <button class="sp-small sp-rounded sp-icon-search sp-primary sp-margin-top-1 sp-margin-right-2" style="position: absolute; top:0; right: 0;border-bottom-left-radius: 0;border-top-left-radius: 0;"></button>
+              </div>
+              <div class="sp-menu-header sp-small">Help Center</div>
+              <a class="sp-menu-item sp-icon-account">Contact Support</a>
+              <a class="sp-menu-item sp-icon-settings">Report a Bug</a>
+              <a class="sp-menu-item sp-icon-organization">Tutorials</a>
+              <a class="sp-menu-item sp-icon-account">Knowledge Base</a>
+            </div>
+          </div>
+        </div>
+        <div class="sp-selector sp-margin-left-2">
+          <button class="sp-selector-trigger sp-icon-after-lightning sp-rounded sp-small sp-minimal sp-success"></button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <div class="sp-menu-header sp-small">Connection</div>
+              <div class="sp-padding-horizontal-2 sp-padding-vertical-1" style="position: relative;">
+                <div class="sp-label">Status <span class="sp-color-success sp-float-right">Active</span></div>
+              </div>
+              <div class="sp-menu-header sp-small">Settings</div>
+              <a class="sp-menu-item">Live Reload</a>
+              <a class="sp-menu-item">Listen on Port</a>
+              <div class="sp-menu-header sp-small">Recent Creatives</div>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Some Creative<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>My Awesome Ad<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Another Creative<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Coca-Cola Ad<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Samsung Galaxy Note 8<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sp-app-org-label sp-container-dark sp-wrapper">
+    <div class="sp-row sp-padding-2 sp-padding-left-3 sp-fluid">
+      <div class="sp-label sp-small">NBC Universal <span class="sp-inline-icon-arrow-right"></span> <a href="-creatives.html" class="sp-color-white">Creatives</a> <span class="sp-inline-icon-arrow-right"></span> <a href="-creatives-overview.html" class="sp-color-white">Creative Name Goes here</a></div>
+    </div>
+  </div>
+  
+
+  <div class="sp-app-header sp-container-dark sp-alt-two sp-wrapper sp-fluid sp-border-bottom-base">
+    <div class="sp-row sp-vcenter sp-fluid">
+      <div class="sp-col sp-span-12 sp-flex sp-flex-align-items-center">
+        <h5 class="sp-inline sp-contrast sp-inline sp-flex" style="flex: 1; position: relative">
+          <i class="sp-inline-icon-creative sp-color-primary sp-margin-right-1"></i>
+          <!-- <span class="sp-color-muted">dhC897 /</span> -->
+          Creative Explorer
+          <!-- <span class="sp-color-muted sp-small" style="position: absolute; bottom: -15px; left: 32px;">/ dhC897</span> -->
+        </h5>
+        <div class="sp-selector sp-margin-left-2 sp-small">
+          <button class="sp-selector-trigger sp-icon-status sp-small sp-font-color-white sp-sync-enabled">Live Version</button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-width-8 sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <a class="sp-menu-item sp-icon-status sp-state-active">Live Version</a>
+              <a class="sp-menu-item sp-icon-circle">Draft Version</a>
+              <a class="sp-menu-item sp-icon-lightning">Specless Sync</a>
+              <a class="sp-menu-item sp-icon-github sp-state-disabled">Github Sync</a>
+              <!-- <div class="sp-align-center sp-container sp-alt-one sp-rectangle">
+                <a class="sp-button sp-icon-upload sp-success sp-rounded sp-small sp-margin-1">Publish Working Version</a>
+              </div> -->
+              <!-- <div class="sp-align-center sp-container sp-alt-one sp-rectangle">
+                <a class="sp-button sp-icon-upload sp-primary sp-rounded sp-small sp-margin-1">Upload S-Kit Package</a>
+              </div> -->
+              <!-- <div class="sp-spacer-vertical sp-margin-0"></div>
+              <a class="sp-menu-item sp-icon-logout">Log Out</a> -->
+            </div>
+          </div>
+        </div>
+        <!-- <button class="sp-icon-folder sp-small sp-primary sp-font-color-white sp-margin-left-1"></button> -->
+        <!-- <button class="sp-icon-upload sp-small sp-success sp-font-color-white sp-margin-left-1">Publish</button> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="sp-app-menu sp-container-dark sp-alt-two sp-wrapper sp-border-bottom-base">
+    <div class="sp-row sp-vbottom sp-height-2 sp-fluid">
+      <div class="sp-col sp-span-10 sp-padding-0" style="margin-bottom: 11px">
+        <a href="-creatives-overview.html" class="sp-menu-item sp-horizontal sp-label">Overview</a>
+        <a href="-creatives-explorer.html" class="sp-menu-item sp-horizontal sp-label sp-state-active">Creative Explorer</a>
+        <a href="-creatives-trafficking.html" class="sp-menu-item sp-horizontal sp-label">Trafficking</a>
+        <a href="-creatives-reporting.html" class="sp-menu-item sp-horizontal sp-label">Reporting</a>
+        <a class="sp-menu-item sp-minimal sp-horizontal sp-label sp-icon-more"></a>
+        
+      </div>
+      <div class="sp-col sp-span-2 sp-align-right sp-padding-0">
+        
+      </div>
+    </div>
+  </div> -->
+
+  <div class="sp-app-content sp-flex">
+    <div class="sp-app-content-sidebar sp-flex">
+      <div class="sp-app-content-sidebar-icon-menu sp-container-dark sp-contrast sp-border-top-base">
+        <a href="-creatives-explorer.html" class="sp-button sp-minimal sp-simple-icon sp-icon-eye sp-primary sp-state-active"></a>
+        <a href="-creatives-explorer-simulate.html" class="sp-button sp-minimal sp-simple-icon sp-icon-monitor sp-primary"></a>
+        <a href="-creatives-explorer-assets.html" class="sp-button sp-minimal sp-simple-icon sp-icon-file-cabinet sp-primary"></a>
+      </div>
+      <div class="sp-app-content-sidebar-menu sp-container-dark sp-alt-one sp-shadow-medium " style="width:135px;">
+        <div class="sp-padding-1 sp-container sp-label sp-color-contrast sp-flex sp-border-bottom-base">
+          <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Panels</span>
+          <button tabindex="0" class="sp-icon-circle-plus sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+        </div>
+        <div class="sp-app-content-sidebar-menu-content">
+          <div class="sp-menu-header sp-small sp-align-center sp-color-contrast">Display</div>
+          <div class="sp-padding-2">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/400x150/0096a9/0096a9);">
+              <div tabindex="0" class="sp-button sp-icon-code sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold"><i class="sp-inline-icon-star-filled"></i>Primary</div>
+          </div>
+          <div class="sp-padding-2">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/350x100/0096a9/0096a9);">
+              <div tabindex="0" class="sp-button sp-icon-photoshop sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Skin Left</div>
+          </div>
+          <div class="sp-padding-2">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/350x200/0096a9/0096a9);">
+              <div tabindex="0" class="sp-button sp-icon-photoshop sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Skin Right</div>
+          </div>
+          <div class="sp-padding-2">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/350x70/0096a9/0096a9);">
+              <div tabindex="0" class="sp-button sp-icon-hype sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Test Hype Panel</div>
+          </div>
+          <div class="sp-padding-2 sp-bg-overlay-light-1 sp-color-primary sp-state-active">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-solid sp-border-thin sp-border-color-primary" style="background-image: url(http://via.placeholder.com/350x150/0096a9/0096a9);">
+              <div tabindex="0" class="sp-button sp-icon-code sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Secondary</div>
+          </div>
+          <div class="sp-menu-header sp-color-contrast sp-small sp-align-center">Native</div>
+          <div class="sp-padding-2">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/400x150/0096a9/0096a9);">
+              <div tabindex="0" class="sp-button sp-icon-native-ad sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold"><i class="sp-inline-icon-star-filled"></i>Native</div>
+          </div>
+          <div class="sp-padding-2">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/350x350/0096a9/0096a9);">
+              <div tabindex="0" class="sp-button sp-icon-native-ad sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Native Panel</div>
+          </div>
+          <div class="sp-menu-header sp-small sp-color-contrast sp-align-center">Video</div>
+          <div class="sp-padding-2">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/400x150/0096a9/0096a9);">
+              <div tabindex="0" class="sp-button sp-icon-video sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold"><i class="sp-inline-icon-star-filled"></i>Video</div>
+          </div>
+          <div class="sp-padding-2">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/16x9/0096a9/0096a9);">
+              <div tabindex="0" class="sp-button sp-icon-video sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Video Panel</div>
+          </div>
+        </div>
+      </div>
+      <div class="sp-app-content-sidebar-menu sp-container-dark sp-alt-one sp-shadow-medium" style="width:135px;">
+        <div class="sp-padding-1 sp-container sp-label sp-color-contrast sp-flex sp-border-bottom-base">
+          <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Layouts</span>
+          <button tabindex="0" class="sp-icon-circle-plus sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+        </div>
+        <div class="sp-app-content-sidebar-menu-content">
+          <div class="sp-padding-2"">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/400x150/0096a9/0096a9);">
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Default (No Layout)</div>
+          </div>
+          <div class="sp-padding-2"">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/400x150/0096a9/0096a9);">
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Medium</div>
+          </div>
+          <div class="sp-padding-2">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/350x150/0096a9/0096a9);">
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Large</div>
+          </div>
+          <div class="sp-padding-2">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/350x100/0096a9/0096a9);">
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Extra Large</div>
+          </div>
+          <div class="sp-padding-2">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/350x200/0096a9/0096a9);">
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Small</div>
+          </div>
+          <div class="sp-padding-2 sp-bg-overlay-light-1 sp-color-primary sp-state-active">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-solid sp-border-thin sp-border-color-primary" style="background-image: url(http://via.placeholder.com/350x70/0096a9/0096a9);">
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Vertical</div>
+          </div>
+          <div class="sp-padding-2">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/350x350/0096a9/0096a9);">
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Horizontal</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sp-app-content-main sp-container-light">
+      <div class="sp-padding-1 sp-container sp-color-contrast sp-flex sp-bg-overlay-light-4">
+        <!-- <button tabindex="0" class="sp-icon-circle-arrow-left sp-minimal sp-simple-icon sp-small sp-primary sp-float-left"></button> -->
+        <span class="sp-border-right-base sp-float-right sp-margin-right-1">
+          <!-- <button tabindex="0" class="sp-icon-edit sp-small sp-margin-left-1"></button> -->
+          <button tabindex="0" class="sp-icon-panel sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-active"></button>
+          <button tabindex="0" class="sp-icon-layout sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-active"></button>
+        </span>
+        <button tabindex="0" class="sp-icon-eye sp-minimal sp-simple-icon sp-small sp-primary"></button>
+        <span class="sp-padding-vertical-1 sp-padding-left-1 sp-label" style="flex:1">Panel Preview</span>
+       <!--  <button tabindex="0" class="sp-icon-eye sp-minimal sp-simple-icon sp-small sp-primary sp-float-right sp-state-active"></button> -->
+        <!-- <button tabindex="0" class="sp-icon-panel sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+        <button tabindex="0" class="sp-icon-layout sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
+        <button id="contexts-toggle" tabindex="0" class="sp-icon-location sp-minimal sp-simple-icon sp-small sp-primary sp-float-right "></button>
+        <button id="reporting-toggle" tabindex="0" class="sp-icon-data sp-minimal sp-simple-icon sp-small sp-primary sp-float-right "></button>
+        <button id="activity-toggle" tabindex="0" class="sp-icon-console sp-minimal sp-simple-icon sp-small sp-primary sp-float-right "></button>
+        <!-- <button tabindex="0" class="sp-icon-code sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
+        <span class="sp-border-left-base sp-float-right sp-margin-left-1">
+          <!-- <button tabindex="0" class="sp-icon-edit sp-small sp-margin-left-1"></button> -->
+          <div class="sp-selector sp-small">
+              <button tabindex="0" class="sp-icon-external sp-small sp-float-right sp-margin-left-1 sp-selector-trigger"></button>
+              <div class="sp-selector-overlay">
+                <div class="sp-menu-dropdown sp-overlay" style="left: auto; right: 0; transform: none;">
+                  <!-- <a class="sp-menu-item sp-icon-share">Sharing</a>
+                  <div class="sp-spacer-vertical"></div> -->
+                  <a class="sp-menu-item sp-icon-eye">Open Simple Preview</a>
+                  <a class="sp-menu-item sp-icon-link">Generate Custom Permalink</a>
+                  <div class="sp-spacer-vertical"></div>
+                  <a class="sp-menu-item sp-icon-external sp-sate-disabled">Open in Text Editor</a>
+                  <a class="sp-menu-item sp-icon-folder sp-state-disabled">Open S-Kit Project Folder</a>
+                  <a class="sp-menu-item sp-icon-folder sp-state-disabled">Open S-Kit Asset Folder</a>
+                </div>
+              </div>
+            </div>
+        </span>
+      </div>
+      <div class="sp-padding-1 sp-container sp-border-top-base sp-border-bottom-base sp-flex sp-small sp-font-weight-semi-bold" style="font-size: 12px;">
+        <div style="flex:1" class="sp-align-right sp-padding-horizontal-2">
+          <div class="sp-selector sp-margin-left-1 sp-inline">
+            <input readonly class="sp-minimal sp-selector-trigger sp-align-right" type="text" value="Custom View" style="width: 300px; font-weight: 600"/>
+            <div class="sp-selector-overlay">
+              <div class="sp-menu-dropdown sp-overlay">
+                <a class="sp-menu-item">Some Custom Size<span class="sp-details">728 x 90</span></a>
+                <a class="sp-menu-item">Some Saved Size<span class="sp-details">728 x 90</span></a>
+                <div class="sp-menu-header">Shared With Organization</div>
+                <a class="sp-menu-item">Superhero<span class="sp-details">Fluid x 700</span></a>
+                <div class="sp-menu-header">IAB Portfolio Aspect Ratios</div>
+                <a class="sp-menu-item">1:1</a>
+                <a class="sp-menu-item">1:2</a>
+                <a class="sp-menu-item">1:3</a>
+                <a class="sp-menu-item">1:4</a>
+                <a class="sp-menu-item">2:1</a>
+                <a class="sp-menu-item">3:1</a>
+                <a class="sp-menu-item">4:1</a>
+                <a class="sp-menu-item">6:1</a>
+                <a class="sp-menu-item">8:1</a>
+                <a class="sp-menu-item">10:1</a>
+                <div class="sp-menu-header">Common Ad Slot Sizes</div>
+                <a class="sp-menu-item">Leaderboard<span class="sp-details">728 x 90</span></a>
+                <a class="sp-menu-item">Mobile Leaderboard<span class="sp-details">320 x 50</span></a>
+                <a class="sp-menu-item">Large Leaderboard<span class="sp-details">728 x 210</span></a>
+                <a class="sp-menu-item">X-Large Leaderboard<span class="sp-details">728 x 300</span></a>
+                <a class="sp-menu-item">Super Leaderboard<span class="sp-details">970 x 90</span></a>
+                <a class="sp-menu-item">Billboard<span class="sp-details">970 x 250</span></a>
+                <a class="sp-menu-item">Large Billboard<span class="sp-details">970 x 415</span></a>
+                <a class="sp-menu-item">Square<span class="sp-details">250 x 250</span></a>
+                <a class="sp-menu-item">Small Square<span class="sp-details">200 x 200</span></a>
+                <a class="sp-menu-item">Button<span class="sp-details">125 x 125</span></a>
+                <a class="sp-menu-item">Small Button<span class="sp-details">120 x 60</span></a>
+                <a class="sp-menu-item">Medium Button<span class="sp-details">120 x 90</span></a>
+                <a class="sp-menu-item">Small Rectangle<span class="sp-details">180 x 150</span></a>
+                <a class="sp-menu-item">Medium Rectangle<span class="sp-details">300 x 250</span></a>
+                <a class="sp-menu-item">Large Rectangle<span class="sp-details">336 x 280</span></a>
+                <a class="sp-menu-item">Full Banner<span class="sp-details">468 x 60</span></a>
+                <a class="sp-menu-item">Half Banner<span class="sp-details">234 x 60</span></a>
+                <a class="sp-menu-item">Sky Scraper<span class="sp-details">120 x 600</span></a>
+                <a class="sp-menu-item">Wide Scraper<span class="sp-details">160 x 600</span></a>
+                <a class="sp-menu-item">Half Page<span class="sp-details">300 x 600</span></a>
+                <div class="sp-menu-header">Responsive Sizes</div>
+                <a class="sp-menu-item">Small Responsive Banner<span class="sp-details">Fluid x 50</span></a>
+                <a class="sp-menu-item">Responsive Banner<span class="sp-details">Fluid x 90</span></a>
+                <a class="sp-menu-item">Large Responsive Banner<span class="sp-details">Fluid x 180</span></a>
+                <a class="sp-menu-item">Responsive Billboard<span class="sp-details">Fluid x 250</span></a>
+                <a class="sp-menu-item">Large Responsive Billboard<span class="sp-details">Fluid x 415</span></a>
+                <a class="sp-menu-item">X-Large Responsive Billboard<span class="sp-details">Fluid x 600</span></a>
+                <a class="sp-menu-item">Full Viewport<span class="sp-details">Fluid x Fluid</span></a>
+                <div class="sp-menu-header">Common Viewport Sizes</div>
+                <a class="sp-menu-item">iPhone 4s<span class="sp-details">728 x 90</span></a>
+                <a class="sp-menu-item">iPhone 5/5s<span class="sp-details">728 x 90</span></a>
+                <a class="sp-menu-item">iPhone 6/6s/7<span class="sp-details">728 x 90</span></a>
+                <a class="sp-menu-item">iPhone 6/6s/7 Plus<span class="sp-details">728 x 90</span></a>
+                <a class="sp-menu-item">iPad<span class="sp-details">728 x 90</span></a>
+                <a class="sp-menu-item">iPad Mini<span class="sp-details">728 x 90</span></a>
+                <a class="sp-menu-item">iPad Pro<span class="sp-details">728 x 90</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sp-align-center sp-padding-horizontal-2 sp-border-left-base sp-border-right-base">
+          <span class="sp-bg-overlay-light-4 sp-padding-horizontal-1">
+            <i class="sp-inline-icon-solid-unlock sp-color-muted"></i>
+            <div class="sp-custom-input">
+              <input class="sp-minimal sp-custom-input-trigger sp-align-right sp-minimal" type="number" value="300" style="width: 35px; background-image: none !important; font-weight: 600"/>
+              <div class="sp-custom-input-overlay">
+                <div class="sp-menu-dropdown sp-overlay sp-width-6">
+                  <div class="sp-menu-header">Min/Max Width</div>
+                  <div class="sp-padding-horizontal-2">
+                    <div class="sp-margin-top-1"><input id="width-min" type="checkbox" checked class="sp-small"/><label for="width-min" style="margin-left: 0">Min</label><input type="number" value="50" class="sp-small sp-minimal sp-align-right" style="width: 70px; font-weight: 600"/></div>
+                    <div class="sp-margin-top-1"><input id="width-max" type="checkbox" class="sp-small"/><label for="width-max" style="margin-left: 0">Max</label><input type="number" value="9999" class="sp-small sp-minimal sp-align-right" style="width: 70px; font-weight: 600"/></div>
+                  </div>
+                  <div class="sp-menu-header">Common Ad Widths</div>
+                  <a class="sp-menu-item">300</a>
+                  <a class="sp-menu-item">320</a>
+                  <a class="sp-menu-item">728</a>
+                  <a class="sp-menu-item">970</a>
+                  <a class="sp-menu-item">1080</a>
+                  <div class="sp-menu-header">Common Device Widths</div>
+                  <a class="sp-menu-item">Match Current Viewport</a>
+                  <a class="sp-menu-item">iPhone 4s</a>
+                  <a class="sp-menu-item">iPhone 5/5s</a>
+                  <a class="sp-menu-item">iPhone 6/6s/7</a>
+                  <a class="sp-menu-item">iPhone 6/6s/7 Plus</a>
+                  <a class="sp-menu-item">iPad</a>
+                  <a class="sp-menu-item">iPad Mini</a>
+                  <a class="sp-menu-item">iPad Pro</a>
+                </div>
+              </div>
+            </div>
+          </span>
+          <span class="sp-padding-horizontal-1 sp-color-muted"><i class="sp-inline-icon-close"></i></span>
+          <span class="sp-bg-overlay-light-4 sp-padding-horizontal-1">
+            <div class="sp-custom-input sp-margin-left-1">
+              <input class="sp-minimal sp-custom-input-trigger sp-align-left sp-minimal" type="number" value="250" style="width: 35px; background-image: none !important; font-weight: 600"/>
+              <div class="sp-custom-input-overlay">
+                <div class="sp-menu-dropdown sp-overlay sp-width-6">
+                  <div class="sp-menu-header">Min/Max Height</div>
+                  <div class="sp-padding-horizontal-2">
+                    <div class="sp-margin-top-1"><input id="height-min" type="checkbox" checked class="sp-small"/><label for="height-min" style="margin-left: 0">Min</label><input type="number" value="50" class="sp-small sp-minimal sp-align-right" style="width: 70px; font-weight: 600"/></div>
+                    <div class="sp-margin-top-1"><input id="height-max" type="checkbox" class="sp-small"/><label for="height-max" style="margin-left: 0">Max</label><input type="number" value="9999" class="sp-small sp-minimal sp-align-right" style="width: 70px; font-weight: 600"/></div>
+                  </div>
+                  <div class="sp-menu-header">Common Ad Heights</div>
+                  <a class="sp-menu-item">50</a>
+                  <a class="sp-menu-item">80</a>
+                  <a class="sp-menu-item">90</a>
+                  <a class="sp-menu-item">250</a>
+                  <a class="sp-menu-item">300</a>
+                  <a class="sp-menu-item">415</a>
+                  <a class="sp-menu-item">600</a>
+                  <a class="sp-menu-item">1080</a>
+                  <div class="sp-menu-header">Common Device Heights</div>
+                  <a class="sp-menu-item">Match Current Viewport</a>
+                  <a class="sp-menu-item">iPhone 4s</a>
+                  <a class="sp-menu-item">iPhone 5/5s</a>
+                  <a class="sp-menu-item">iPhone 6/6s/7</a>
+                  <a class="sp-menu-item">iPhone 6/6s/7 Plus</a>
+                  <a class="sp-menu-item">iPad</a>
+                  <a class="sp-menu-item">iPad Mini</a>
+                  <a class="sp-menu-item">iPad Pro</a>
+                </div>
+              </div>
+            </div>
+            <i class="sp-inline-icon-solid-unlock sp-color-muted"></i>
+          </span>
+        </div>
+        <div class="sp-padding-horizontal-2" style="flex:1">
+          <span class="sp-padding-right-2 sp-color-muted">Aspect Ratio<span class="sp-margin-left-1 sp-color-base">2:1</span><i class="sp-margin-left-1 sp-inline-icon-solid-unlock"></i></span>
+          <span class="sp-padding-horizontal-2 sp-border-left-base sp-color-muted">Layout Scaling<span class="sp-margin-left-1 sp-color-base">0.5x</span><i class="sp-margin-left-1 sp-inline-icon-solid-unlock"></i></span>
+        </div>
+      </div>
+      <div class="sp-app-content-main-scroll sp-container sp-alt-one">
+        <div class="sp-preview-panel sp-overlay sp-rectangle sp-contrast">
+          <div class="sp-preview-panel-header sp-font-weight-semi-bold sp-flex">
+            <div class="sp-preview-panel-header-left sp-inline-icon-sync"></div>
+            <div class="sp-preview-panel-header-middle sp-align-center"><span class="sp-color-muted">Secondary<i class="sp-inline-icon-arrow-right"></i> Vertical</span><i class="sp-margin-left-1 sp-inline-icon-solid-unlock sp-color-muted"></i></div>
+            <div class="sp-preview-panel-header-right sp-inline-icon-more"></div>
+          </div>
+          <div class="sp-preview-panel-down sp-overlay sp-icon-drag-both"></div>
+          <div class="sp-preview-panel-right sp-overlay sp-icon-drag-both"></div>
+          <div class="sp-preview-panel-diag sp-overlay sp-icon-resize"></div>
+          <div class="sp-preview-panel-content sp-shadow-low-inset" style="width: 300px; height: 250px">
+            <div class="sp-preview-panel-grid"></div>
+            <div class="sp-preview-panel-ad"><!-- iFrame Goes here--></div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="sp-app-content-main-footer sp-container">
+        Test
+      </div> -->
+    </div>
+    <div id="contexts" style="display:none" class="sp-app-content-sidebar sp-flex">
+      <div class="sp-app-content-sidebar-menu sp-container-dark sp-alt-one sp-shadow-medium " style="width:220px;">
+        <div class="sp-padding-1 sp-container sp-label sp-color-contrast sp-flex sp-border-bottom-base">
+          <button tabindex="0" class="sp-icon-location sp-minimal sp-simple-icon sp-primary sp-small sp-primary sp-float-left"></button>
+          <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Context Queries</span>
+          <!-- <button tabindex="0" class="sp-icon-circle-close sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
+        </div>
+        <div class="sp-app-content-sidebar-menu-content sp-small">
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Referenced Contexts</div>
+          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base" style="font-size: 12px">
+            <div><i class="sp-inline-icon-edit sp-margin-right-1 sp-color-muted"></i>device-type<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 75px" value="desktop"/></div>
+            <div><i class="sp-inline-icon-edit sp-margin-right-1 sp-color-muted"></i>location-city<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 75px" value="chicago"/></div>
+            <div class="sp-color-warning"><i class="sp-inline-icon-reset sp-margin-right-1"></i>time-day-index<input class="sp-minimal sp-align-right sp-float-right" style="width: 75px" value="3"/></div>
+          </div>
+
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Rules</div>
+
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-flex">
+              <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-down sp-margin-right-1"></i>Unnamed Rule 1</div>
+              <div class="sp-font-weight-semi-bold sp-color-success">Matched</div>
+            </div>
+            <div class="sp-padding-left-1">
+                <div><i class="sp-inline-icon-circle-check sp-color-success sp-margin-right-1"></i>device-type<span class="sp-font-weight-semi-bold sp-margin-left-1 sp-margin-right-1">is</span>desktop</div>
+                <div><i class="sp-inline-icon-circle-check sp-color-success sp-margin-right-1"></i>location-city<span class="sp-font-weight-semi-bold sp-margin-left-1 sp-margin-right-1">is</span>chicago</div>
+                <div><i class="sp-inline-icon-circle-check sp-color-success sp-margin-right-1"></i>time-day-index<span class="sp-font-weight-semi-bold sp-margin-left-1 sp-margin-right-1">></span>5</div>
+            </div>
+          </div>
+
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-flex">
+              <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-down sp-margin-right-1"></i>My Rule</div>
+              <div class="sp-font-weight-semi-bold sp-color-muted">Unmatched</div>
+            </div>
+            <div class="sp-padding-left-1">
+                <div class="sp-color-muted" style="text-decoration: line-through"><i class="sp-inline-icon-circle-close sp-color-danger sp-margin-right-1"></i>device-type<span class="sp-font-weight-semi-bold sp-margin-left-1 sp-margin-right-1">is</span>tablet</div>
+                <div><i class="sp-inline-icon-circle-check sp-color-success sp-margin-right-1"></i>location-city<span class="sp-font-weight-semi-bold sp-margin-left-1 sp-margin-right-1">is</span>chicago</div>
+                <div><i class="sp-inline-icon-circle-check sp-color-success sp-margin-right-1"></i>time-day-index<span class="sp-font-weight-semi-bold sp-margin-left-1 sp-margin-right-1">></span>5</div>
+            </div>
+          </div>
+
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-flex">
+              <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Unnamed Rule 2</div>
+              <div class="sp-font-weight-semi-bold sp-color-success">Matched</div>
+            </div>
+          </div>
+
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">All Contexts</div>
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Environment</div>
+          </div>
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-down sp-margin-right-1"></i>Location</div>
+            <div class="sp-padding-left-1 sp-font-weight-semi-bold sp-flex">
+                <div style="flex:1"><i class="sp-inline-icon-info sp-margin-right-1 sp-color-muted"></i>location-city</div>
+                <div class="sp-align-right">chicago</div>
+            </div>
+            <div class="sp-padding-left-1 sp-font-weight-semi-bold sp-flex">
+                <div style="flex:1"><i class="sp-inline-icon-info sp-margin-right-1 sp-color-muted"></i>location-state</div>
+                <div class="sp-align-right">illinois</div>
+            </div>
+            <div class="sp-padding-left-1 sp-font-weight-semi-bold sp-flex">
+                <div style="flex:1"><i class="sp-inline-icon-info sp-margin-right-1 sp-color-muted"></i>location-country</div>
+                <div class="sp-align-right">usa</div>
+            </div>
+          </div>
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>User</div>
+          </div>
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Input</div>
+          </div>
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Device</div>
+          </div>
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Site</div>
+          </div>
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Format</div>
+          </div>
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Panel</div>
+          </div>
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Custom</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div id="reporting" style="display:none" class="sp-app-content-sidebar sp-flex">
+      <div class="sp-app-content-sidebar-menu sp-container-dark sp-alt-one sp-shadow-medium " style="width:220px;">
+        <div class="sp-padding-1 sp-container sp-label sp-color-contrast sp-flex sp-border-bottom-base">
+          <button tabindex="0" class="sp-icon-data sp-minimal sp-simple-icon sp-primary sp-small sp-primary sp-float-left"></button>
+          <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Reporting</span>
+          <!-- <button tabindex="0" class="sp-icon-circle-close sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
+        </div>
+        <div class="sp-app-content-sidebar-menu-content sp-small">
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Dimensions</div>
+          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base" style="font-size: 12px">
+            <div><i class="sp-inline-icon-info sp-margin-right-1"></i>Requested Impression</div>
+            <div><i class="sp-inline-icon-info sp-margin-right-1"></i>Delivered Impression</div>
+            <div><i class="sp-inline-icon-info sp-margin-right-1"></i>Measurable Impression</div>
+          </div>
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Interactions</div>
+          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base" style="font-size: 12px">
+            <div>Logo Click<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 40px" value="1"/></div>
+            <div>Exit: Home Page<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 40px" value="2"/></div>
+            <div>Exit: Facebook Page<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 40px" value="1"/></div>
+          </div>
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Counters</div>
+          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base" style="font-size: 12px">
+            <div>Image Load Counter<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 40px" value="1"/></div>
+            <div>Some Counter<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 40px" value="2"/></div>
+            <div>Another Counter<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 40px" value="1"/></div>
+          </div>
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Timers</div>
+          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base" style="font-size: 12px">
+            <div>Video Watched<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 40px" value="0:24"/></div>
+            <div>Mouse Hover<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 40px" value="1:01"/></div>
+            <div>Custom Timer<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 40px" value="0:01"/></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="activity" class="sp-app-content-sidebar sp-flex" style="display:none">
+      <div class="sp-app-content-sidebar-menu sp-container-dark sp-alt-one sp-shadow-medium " style="width:350px;">
+        <div class="sp-padding-1 sp-container sp-label sp-color-contrast sp-flex sp-border-bottom-base">
+          <button tabindex="0" class="sp-icon-console sp-minimal sp-simple-icon sp-primary sp-small sp-primary sp-float-left"></button>
+          <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Activity Console</span>
+          <!-- <button tabindex="0" class="sp-icon-circle-close sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
+        </div>
+        <div class="sp-app-content-sidebar-menu-content sp-small">
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Ad Lifespan</div>
+          <div class="sp-padding-1" style="font-size: 12px;">
+            <div class="sp-input sp-rectangle sp-padding-2">
+              <div class="sp-log-entry">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Event Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Event Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Event Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry sp-color-warning">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Warning Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Event Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry sp-color-danger">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Error Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Event Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+            </div>
+          </div>
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Specless Sync</div>
+          <div class="sp-padding-1" style="font-size: 12px;">
+            <div class="sp-input sp-rectangle sp-padding-2">
+              <div class="sp-log-entry">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Event Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Event Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Event Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry sp-color-warning">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Warning Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Event Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry sp-color-danger">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Error Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Event Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var contexts = document.getElementById('contexts-toggle');
+    var reporting = document.getElementById('reporting-toggle');
+    var activity = document.getElementById('activity-toggle');
+
+    contexts.addEventListener('click', function() {
+      document.getElementById('contexts').setAttribute('style', 'display:block');
+      contexts.setAttribute('class', 'sp-icon-location sp-minimal sp-simple-icon sp-small sp-primary sp-float-right sp-state-active');
+      document.querySelector('#contexts-toggle.sp-state-active').addEventListener('click', function() {
+        document.getElementById('contexts').setAttribute('style', 'display:none')
+        contexts.setAttribute('class', 'sp-icon-location sp-minimal sp-simple-icon sp-small sp-primary sp-float-right');
+      });
+    });
+
+    reporting.addEventListener('click', function() {
+      document.getElementById('reporting').setAttribute('style', 'display:block');
+      reporting.setAttribute('class', 'sp-icon-data sp-minimal sp-simple-icon sp-small sp-primary sp-float-right sp-state-active');
+      document.querySelector('#reporting-toggle.sp-state-active').addEventListener('click', function() {
+        document.getElementById('reporting').setAttribute('style', 'display:none')
+        reporting.setAttribute('class', 'sp-icon-data sp-minimal sp-simple-icon sp-small sp-primary sp-float-right');
+      });
+    });
+
+    activity.addEventListener('click', function() {
+      document.getElementById('activity').setAttribute('style', 'display:block');
+      activity.setAttribute('class', 'sp-icon-console sp-minimal sp-simple-icon sp-small sp-primary sp-float-right sp-state-active');
+      document.querySelector('#activity-toggle.sp-state-active').addEventListener('click', function() {
+        document.getElementById('activity').setAttribute('style', 'display:none')
+        activity.setAttribute('class', 'sp-icon-console sp-minimal sp-simple-icon sp-small sp-primary sp-float-right');
+      });
+    });
+
+
+    
+
+
+      
+    </script>
+
+  
+
+</body>
+</html>

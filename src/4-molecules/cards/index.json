@@ -1,0 +1,22 @@
+{
+  "title": "Cards & Lists",
+  "description": "Text goes here.",
+  "examples": [
+  	{
+  		"title": "Cards",
+  		"subTitle": "",
+  		"swatches" : [
+  			{
+  				"title": "Natural",
+  				"type": "box-target",
+  				"classes": "",
+  				"content": ["cards.html"]
+  			}
+  		],
+      "states": ["sp-small", "sp-large"],
+  		"modifiers": ["sp-primary", "sp-success", "sp-warning", "sp-danger"]
+  	}
+  ],
+  "scss": ["index.scss"],
+  "markdown": "index.md"
+}

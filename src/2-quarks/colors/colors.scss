@@ -6,7 +6,7 @@
 
 @each $color in (black, dark-base, dark-darker, dark-lighter, white,
 light-base, light-lighter, light-darker, grey,
-primary, success, warning, danger) {
+primary, success, warning, danger, transparent) {
   .sp-bg-color-#{$color} {
     @include sp-bg-color($color, true)
   }

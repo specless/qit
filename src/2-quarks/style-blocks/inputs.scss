@@ -127,6 +127,10 @@
       @include sp-input-minimal(danger, false)
     }
   }
+
+  &.sp-minimal {
+    @content;
+  }
 }
 
 .sp-input:not(.sp-minimal) {

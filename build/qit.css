@@ -284,6 +284,9 @@ html {
 .sp-bg-color-danger {
   background-color: #FF2455 !important; }
 
+.sp-bg-color-transparent {
+  background-color: transparent !important; }
+
 .sp-bg-overlay-dark-1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)) !important; }
 
@@ -1635,76 +1638,76 @@ html {
     padding-right: 1.6rem; }
   .sp-col.sp-span-1 {
     flex: none;
-    width: 8.33333%; }
+    width: 8.33333% !important; }
   .sp-col.sp-offset-1 {
     flex: none;
-    margin-left: 8.33333%; }
+    margin-left: 8.33333% !important; }
   .sp-col.sp-span-2 {
     flex: none;
-    width: 16.66667%; }
+    width: 16.66667% !important; }
   .sp-col.sp-offset-2 {
     flex: none;
-    margin-left: 16.66667%; }
+    margin-left: 16.66667% !important; }
   .sp-col.sp-span-3 {
     flex: none;
-    width: 25%; }
+    width: 25% !important; }
   .sp-col.sp-offset-3 {
     flex: none;
-    margin-left: 25%; }
+    margin-left: 25% !important; }
   .sp-col.sp-span-4 {
     flex: none;
-    width: 33.33333%; }
+    width: 33.33333% !important; }
   .sp-col.sp-offset-4 {
     flex: none;
-    margin-left: 33.33333%; }
+    margin-left: 33.33333% !important; }
   .sp-col.sp-span-5 {
     flex: none;
-    width: 41.66667%; }
+    width: 41.66667% !important; }
   .sp-col.sp-offset-5 {
     flex: none;
-    margin-left: 41.66667%; }
+    margin-left: 41.66667% !important; }
   .sp-col.sp-span-6 {
     flex: none;
-    width: 50%; }
+    width: 50% !important; }
   .sp-col.sp-offset-6 {
     flex: none;
-    margin-left: 50%; }
+    margin-left: 50% !important; }
   .sp-col.sp-span-7 {
     flex: none;
-    width: 58.33333%; }
+    width: 58.33333% !important; }
   .sp-col.sp-offset-7 {
     flex: none;
-    margin-left: 58.33333%; }
+    margin-left: 58.33333% !important; }
   .sp-col.sp-span-8 {
     flex: none;
-    width: 66.66667%; }
+    width: 66.66667% !important; }
   .sp-col.sp-offset-8 {
     flex: none;
-    margin-left: 66.66667%; }
+    margin-left: 66.66667% !important; }
   .sp-col.sp-span-9 {
     flex: none;
-    width: 75%; }
+    width: 75% !important; }
   .sp-col.sp-offset-9 {
     flex: none;
-    margin-left: 75%; }
+    margin-left: 75% !important; }
   .sp-col.sp-span-10 {
     flex: none;
-    width: 83.33333%; }
+    width: 83.33333% !important; }
   .sp-col.sp-offset-10 {
     flex: none;
-    margin-left: 83.33333%; }
+    margin-left: 83.33333% !important; }
   .sp-col.sp-span-11 {
     flex: none;
-    width: 91.66667%; }
+    width: 91.66667% !important; }
   .sp-col.sp-offset-11 {
     flex: none;
-    margin-left: 91.66667%; }
+    margin-left: 91.66667% !important; }
   .sp-col.sp-span-12 {
     flex: none;
-    width: 100%; }
+    width: 100% !important; }
   .sp-col.sp-offset-12 {
     flex: none;
-    margin-left: 100%; }
+    margin-left: 100% !important; }
 
 .sp-flex-justify-content-flex-start {
   justify-content: flex-start; }
@@ -6007,10 +6010,20 @@ textarea {
   border-width: 1px;
   border-style: solid;
   box-shadow: inset 0 0 0.4em 0.07em rgba(0, 0, 0, 0.12);
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-style: dashed;
+  border-color: transparent;
+  background-image: none;
   border-radius: 4px; }
   textarea .sp-container-dark, textarea.sp-container-dark,
   .sp-container-dark textarea {
     color: rgba(255, 255, 255, 0.56); }
+  textarea:not(.sp-minimal) {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.22);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.56), rgba(255, 255, 255, 0.56)); }
   textarea::-webkit-input-placeholder {
     font-color: inherit;
     opacity: 0.5; }
@@ -6079,12 +6092,52 @@ textarea {
     border-color: #FF4A37; }
   textarea.sp-danger {
     border-color: #FF2455; }
+  textarea:hover, textarea.sp-state-hover {
+    border-color: rgba(0, 0, 0, 0.22); }
+  textarea:focus, textarea.sp-state-focus {
+    border-color: #00C3DC; }
+  textarea:disabled, textarea.sp-state-disabled {
+    pointer-events: none;
+    border-color: transparent; }
+  textarea .sp-container-dark:hover, textarea .sp-container-dark.sp-state-hover, textarea.sp-container-dark:hover, textarea.sp-container-dark.sp-state-hover,
+  .sp-container-dark textarea:hover,
+  .sp-container-dark textarea.sp-state-hover {
+    border-color: rgba(255, 255, 255, 0.27); }
+  textarea .sp-container-dark:focus, textarea .sp-container-dark.sp-state-focus, textarea.sp-container-dark:focus, textarea.sp-container-dark.sp-state-focus,
+  .sp-container-dark textarea:focus,
+  .sp-container-dark textarea.sp-state-focus {
+    border-color: #00C3DC; }
+  textarea .sp-container-dark:disabled, textarea .sp-container-dark.sp-state-disabled, textarea.sp-container-dark:disabled, textarea.sp-container-dark.sp-state-disabled,
+  .sp-container-dark textarea:disabled,
+  .sp-container-dark textarea.sp-state-disabled {
+    pointer-events: none;
+    border-color: transparent; }
+  textarea.sp-primary:focus, textarea.sp-primary.sp-state-focus {
+    border-color: #00C3DC; }
+  textarea.sp-success:focus, textarea.sp-success.sp-state-focus {
+    border-color: #00EC99; }
+  textarea.sp-warning:focus, textarea.sp-warning.sp-state-focus {
+    border-color: #FF4A37; }
+  textarea.sp-danger:focus, textarea.sp-danger.sp-state-focus {
+    border-color: #FF2455; }
+  textarea.sp-minimal {
+    background-image: none;
+    box-shadow: none;
+    color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    padding: 0;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted; }
+    textarea.sp-minimal:disabled, textarea.sp-minimal.sp-state-disabled {
+      pointer-events: none; }
   textarea.sp-primary {
-    color: #0096a9; }
+    color: rgba(0, 0, 0, 0.8); }
     textarea.sp-primary .sp-container-dark, textarea.sp-primary.sp-container-dark,
     .sp-container-dark textarea.sp-primary {
-      color: #00C3DC; }
+      color: #FFFFFF; }
     textarea.sp-primary:hover, textarea.sp-primary.sp-state-hover {
+      border-color: #00C3DC; }
+    textarea.sp-primary:focus, textarea.sp-primary.sp-state-focus {
       border-color: #00C3DC; }
   textarea.sp-success {
     color: #00af71; }
@@ -6113,12 +6166,6 @@ textarea {
       border-color: #FF2455; }
     textarea.sp-danger:focus, textarea.sp-danger.sp-state-focus {
       border-color: #FF2455; }
-  textarea:focus, textarea.sp-state-focus {
-    color: rgba(0, 0, 0, 0.8); }
-    textarea:focus .sp-container-dark, textarea:focus.sp-container-dark,
-    .sp-container-dark textarea:focus, textarea.sp-state-focus .sp-container-dark, textarea.sp-state-focus.sp-container-dark,
-    .sp-container-dark textarea.sp-state-focus {
-      color: #FFFFFF; }
 
 .sp-tag {
   font-family: Source Sans Pro, sans-serif;

@@ -1,300 +1,315 @@
 select, input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']) {
-	text-align: left;
-	display: inline-block;
-	position: relative;
-	@include sp-font-color(base);
+  text-align: left;
+  display: inline-block;
+  position: relative;
+  @include sp-font-color(base);
 
-	&::-webkit-input-placeholder {
-	    font-color: inherit;
-	    opacity: 0.85;
-	}
+  &::-webkit-input-placeholder {
+    font-color: inherit;
+    opacity: 0.85;
+  }
 
-	&:-moz-placeholder { /* Firefox 18- */
-	    font-color: inherit;
-	    opacity: 0.85;
-	}
+  &:-moz-placeholder { /* Firefox 18- */
+    font-color: inherit;
+    opacity: 0.85;
+  }
 
-	&::-moz-placeholder { /* Firefox 19+ */
-	    font-color: inherit;
-	    opacity: 0.85;
-	}
+  &::-moz-placeholder { /* Firefox 19+ */
+    font-color: inherit;
+    opacity: 0.85;
+  }
 
-	&:-ms-input-placeholder {
-	    font-color: inherit;
-	    opacity: 0.85;
-	}
+  &:-ms-input-placeholder {
+    font-color: inherit;
+    opacity: 0.85;
+  }
 
-	// Default Styles
-	&:not(.sp-minimal) {
-		@include sp-input;
-		@include sp-shape(rectangle);
+  // Default Styles
+  &:not(.sp-minimal) {
+    @include sp-input;
+    @include sp-shape(rectangle);
 
-		@include sp-primary {
-			@include sp-font-color(primary);
+    @include sp-primary {
+      @include sp-font-color(primary);
 
-			@include sp-state(hover) {
-				@include sp-border-color(primary);
-			}
-		}
+      @include sp-state(hover) {
+        @include sp-border-color(primary);
+      }
+    }
 
-		@include sp-success {
-			@include sp-font-color(success);
+    @include sp-success {
+      @include sp-font-color(success);
 
-			@include sp-state(hover) {
-				@include sp-border-color(success);
-			}
+      @include sp-state(hover) {
+        @include sp-border-color(success);
+      }
 
-			@include sp-state(focus) {
-				@include sp-border-color(success);
-			}
-		}
+      @include sp-state(focus) {
+        @include sp-border-color(success);
+      }
+    }
 
-		@include sp-warning {
-			@include sp-font-color(warning);
+    @include sp-warning {
+      @include sp-font-color(warning);
 
-			@include sp-state(hover) {
-				@include sp-border-color(warning);
-			}
+      @include sp-state(hover) {
+        @include sp-border-color(warning);
+      }
 
-			@include sp-state(focus) {
-				@include sp-border-color(warning);
-			}
-		}
+      @include sp-state(focus) {
+        @include sp-border-color(warning);
+      }
+    }
 
-		@include sp-danger {
-			@include sp-font-color(danger);
+    @include sp-danger {
+      @include sp-font-color(danger);
 
-			@include sp-state(hover) {
-				@include sp-border-color(danger);
-			}
+      @include sp-state(hover) {
+        @include sp-border-color(danger);
+      }
 
-			@include sp-state(focus) {
-				@include sp-border-color(danger);
-			}
-		}
+      @include sp-state(focus) {
+        @include sp-border-color(danger);
+      }
+    }
 
-		height: 43.7px;
-		line-height: 43.7px;
-		min-width: 43.7px;
-		@include sp-padding(2, horizontal);
+    height: 43.7px;
+    line-height: 43.7px;
+    min-width: 43.7px;
+    @include sp-padding(2, horizontal);
 
-		@include sp-small {
-			box-sizing: border-box;
-			line-height: 31.66px;
-			height: 31.66px;
-			max-height:31.66px;
-			min-width: 31.66px;
-			// line-height: 3;
-			@include sp-padding(1, horizontal);
+    @include sp-small {
+      box-sizing: border-box;
+      line-height: 31.66px;
+      height: 31.66px;
+      max-height: 31.66px;
+      min-width: 31.66px;
+      // line-height: 3;
+      @include sp-padding(1, horizontal);
 
-			&.sp-rounded {
-				@include sp-padding(2, horizontal);
-			}
-		}
+      &.sp-rounded {
+        @include sp-padding(2, horizontal);
+      }
+    }
 
-		@include sp-large {
-			box-sizing: border-box;
-			line-height: 44.39px;
-			height: 44.39px;
-			max-height:44.39px;
-			min-width: 44.39px;
-		}
+    @include sp-large {
+      box-sizing: border-box;
+      line-height: 44.39px;
+      height: 44.39px;
+      max-height: 44.39px;
+      min-width: 44.39px;
+    }
 
-		&.sp-rounded {
-			@include sp-shape(rounded);
-			@include sp-padding(3, horizontal);
+    &.sp-rounded {
+      @include sp-shape(rounded);
+      @include sp-padding(3, horizontal);
 
-			.sp-group & {
-				@include sp-shape(base);
-			}
-		}
+      .sp-group & {
+        @include sp-shape(base);
+      }
+    }
 
-		@include sp-state(focus) {
-			@include sp-font-color(contrast);
-		}
+    @include sp-state(focus) {
+      @include sp-font-color(contrast);
+    }
 
-		@include sp-state(dark) {
-			
-		}
-	}
+    @include sp-state(dark) {
 
-	// Minimal Styles
-	&.sp-minimal {
-		min-width: 0;
-		@include sp-border(thin, dotted, bottom);
-		border-bottom-color: transparent;
-		border-radius: 0 !important;
-		@include sp-state(hover) {
-			border-bottom-color: $sp-shade-dark-3;
-		}
+    }
+  }
 
-		@include sp-state(dark) {
-			@include sp-state(hover) {
-				border-bottom-color: $sp-shade-light-3;
-			}
-		}
+  // Minimal Styles
+  &.sp-minimal {
+    min-width: 0;
+    @include sp-border(thin, dotted, bottom);
+    border-bottom-color: transparent;
+    border-radius: 0 !important;
+    @include sp-state(hover) {
+      border-bottom-color: $sp-shade-dark-3;
+    }
 
-		@include sp-state(focus) {
-			@include sp-border-color(primary, bottom);
-			@include sp-font-color(contrast);
-		}
+    @include sp-state(dark) {
+      @include sp-state(hover) {
+        border-bottom-color: $sp-shade-light-3;
+      }
+    }
 
-		@include sp-state(dark) {
-			@include sp-state(focus) {
-				@include sp-border-color(primary, bottom);
-			}
-		}
+    @include sp-state(focus) {
+      @include sp-border-color(primary, bottom);
+      @include sp-font-color(contrast);
+    }
 
-		@include sp-state(disabled) {
+    @include sp-state(dark) {
+      @include sp-state(focus) {
+        @include sp-border-color(primary, bottom);
+      }
+    }
 
-		}
+    @include sp-state(disabled) {
 
-	}
+    }
 
-	.sp-group & {
-	    @include sp-shape(base);
-	    @include sp-margin(0);
-	  }
+  }
+
+  .sp-group & {
+    @include sp-shape(base);
+    @include sp-margin(0);
+  }
 }
 
 select {
-	padding-right: 2em !important;
+  padding-right: 2em !important;
 
-	@include sp-primary {
-		+ label {
-			@include sp-font-color(primary);
-		}
-	}
+  @include sp-primary {
+    + label {
+      @include sp-font-color(primary);
+    }
+  }
 
-	@include sp-success {
-		+ label {
-			@include sp-font-color(success);
-		}
-	}
+  @include sp-success {
+    + label {
+      @include sp-font-color(success);
+    }
+  }
 
-	@include sp-warning {
-		+ label {
-			@include sp-font-color(warning);
-		}
-	}
+  @include sp-warning {
+    + label {
+      @include sp-font-color(warning);
+    }
+  }
 
-	@include sp-danger {
-		+ label {
-			@include sp-font-color(danger);
-		}
-	}
+  @include sp-danger {
+    + label {
+      @include sp-font-color(danger);
+    }
+  }
 
+  + label {
+    pointer-events: none;
+    width: 0;
+    height: 43.7px;
+    display: inline-block;
+    left: -20px;
+    top: 0.2em;
+    position: relative;
+    &::before {
+      @include sp-icon-styles(dropdown);
+      @include sp-font-size(base);
+    }
+  }
 
-	+ label {
-		pointer-events: none;
-		width: 0;
-		height: 43.7px;
-		display: inline-block;
-		left: -20px;
-		top: 0.2em;
-		position: relative;
-		&::before {
-			@include sp-icon-styles(dropdown);
-			@include sp-font-size(base);
-		}
-	}
-	
-	@include sp-small {
-		line-height: 2 !important;
-		+ label {
-			&::before {
-				@include sp-font-size(small);
-			}
-		}
-	}
-	@include sp-large {
-		+ label {
-			left: -1.66em;
-			&::before {
-				@include sp-font-size(large);
-			}
-		}
-	}
+  @include sp-small {
+    line-height: 2 !important;
+    + label {
+      &::before {
+        @include sp-font-size(small);
+      }
+    }
+  }
+  @include sp-large {
+    + label {
+      left: -1.66em;
+      &::before {
+        @include sp-font-size(large);
+      }
+    }
+  }
 }
 
 textarea {
-	text-align: left;
-	display: inline-block;
-	position: relative;
-	width: auto;
-	height: auto;
-	@include sp-padding(2);
-	@include sp-font-color(base);
+  text-align: left;
+  display: inline-block;
+  position: relative;
+  width: auto;
+  height: auto;
+  @include sp-padding(2);
+  @include sp-font-color(base);
 
-	&::-webkit-input-placeholder {
-	    font-color: inherit;
-	    opacity: 0.5;
-	}
+  &:not(.sp-minimal) {
+    @include sp-border(thin, solid);
+    @include sp-border-overlay-dark(3);
+    @include sp-bg-overlay-light(4);
+  }
 
-	&:-moz-placeholder { /* Firefox 18- */
-	    font-color: inherit;
-	    opacity: 0.5;
-	}
+  &::-webkit-input-placeholder {
+    font-color: inherit;
+    opacity: 0.5;
+  }
 
-	&::-moz-placeholder { /* Firefox 19+ */
-	    font-color: inherit;
-	    opacity: 0.5;
-	}
+  &:-moz-placeholder { /* Firefox 18- */
+    font-color: inherit;
+    opacity: 0.5;
+  }
 
-	&:-ms-input-placeholder {
-	    font-color: inherit;
-	    opacity: 0.5;
-	}
-	@include sp-input;
-	@include sp-shape(rectangle);
+  &::-moz-placeholder { /* Firefox 19+ */
+    font-color: inherit;
+    opacity: 0.5;
+  }
 
-	@include sp-primary {
-		@include sp-font-color(primary);
+  &:-ms-input-placeholder {
+    font-color: inherit;
+    opacity: 0.5;
+  }
+  @include sp-input;
+  @include sp-input-minimal() {
+    background-image: none;
+    box-shadow: none;
+    color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    @include sp-padding(0);
+    @include sp-state(disabled);
+    @include sp-border(thin, dotted, bottom);
+  }
+;
+  @include sp-shape(rectangle);
 
-		@include sp-state(hover) {
-			@include sp-border-color(primary);
-		}
-	}
+  @include sp-primary {
+    @include sp-font-color(contrast);
 
-	@include sp-success {
-		@include sp-font-color(success);
+    @include sp-state(hover) {
+      @include sp-border-color(primary);
+    }
 
-		@include sp-state(hover) {
-			@include sp-border-color(success);
-		}
+    @include sp-state(focus) {
+      @include sp-border-color(primary);
+    }
+  }
 
-		@include sp-state(focus) {
-			@include sp-border-color(success);
-		}
-	}
+  @include sp-success {
+    @include sp-font-color(success);
 
-	@include sp-warning {
-		@include sp-font-color(warning);
+    @include sp-state(hover) {
+      @include sp-border-color(success);
+    }
 
-		@include sp-state(hover) {
-			@include sp-border-color(warning);
-		}
+    @include sp-state(focus) {
+      @include sp-border-color(success);
+    }
+  }
 
-		@include sp-state(focus) {
-			@include sp-border-color(warning);
-		}
-	}
+  @include sp-warning {
+    @include sp-font-color(warning);
 
-	@include sp-danger {
-		@include sp-font-color(danger);
+    @include sp-state(hover) {
+      @include sp-border-color(warning);
+    }
 
-		@include sp-state(hover) {
-			@include sp-border-color(danger);
-		}
+    @include sp-state(focus) {
+      @include sp-border-color(warning);
+    }
+  }
 
-		@include sp-state(focus) {
-			@include sp-border-color(danger);
-		}
-	}
+  @include sp-danger {
+    @include sp-font-color(danger);
 
-	@include sp-state(focus) {
-		@include sp-font-color(contrast);
-	}
+    @include sp-state(hover) {
+      @include sp-border-color(danger);
+    }
+
+    @include sp-state(focus) {
+      @include sp-border-color(danger);
+    }
+  }
 }
 
 .sp-tag {
@@ -314,63 +329,63 @@ textarea {
   //margin-right: -1em;
 
   > i::before {
-  	transform: scale(1.4) translateY(1px);
+    transform: scale(1.4) translateY(1px);
   }
 
   @include sp-primary {
-  	color: $sp-color-white;
+    color: $sp-color-white;
   }
 
   @include sp-success {
-  	color: $sp-color-white;
+    color: $sp-color-white;
   }
 
   @include sp-warning {
-  	color: $sp-color-white;
+    color: $sp-color-white;
   }
 
   @include sp-danger {
-  	color: $sp-color-white;
+    color: $sp-color-white;
   }
 }
 
 .sp-form-tactile {
-	@include sp-tactile;
-	@include sp-shape(rectangle);
-	font-weight: 600;
-	font-size: 12px;
-	padding: 3px 8px;
-	cursor: pointer;
-	white-space: nowrap;
-  	overflow: hidden;
-  	text-overflow: ellipsis;
+  @include sp-tactile;
+  @include sp-shape(rectangle);
+  font-weight: 600;
+  font-size: 12px;
+  padding: 3px 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
-  	&.sp-minimal {
-  		background-color: transparent;
-  	}
+  &.sp-minimal {
+    background-color: transparent;
+  }
 
-	&.sp-no-edit {
-		pointer-events: none;
-		opacity: 0.9;
-	}
+  &.sp-no-edit {
+    pointer-events: none;
+    opacity: 0.9;
+  }
 
-	> i::before {
-		transform: scale(1.4) translateY(2px);
-	}
+  > i::before {
+    transform: scale(1.4) translateY(2px);
+  }
 
-	@include sp-primary {
-		color: $sp-color-white;
-	}
+  @include sp-primary {
+    color: $sp-color-white;
+  }
 
-	@include sp-success {
-		color: $sp-color-white;
-	}
+  @include sp-success {
+    color: $sp-color-white;
+  }
 
-	@include sp-warning {
-		color: $sp-color-white;
-	}
+  @include sp-warning {
+    color: $sp-color-white;
+  }
 
-	@include sp-danger {
-		color: $sp-color-white;
-	}
+  @include sp-danger {
+    color: $sp-color-white;
+  }
 }

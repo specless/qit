@@ -72,7 +72,7 @@
   </div>
   <div class="sp-app-org-label sp-container-dark sp-wrapper">
     <div class="sp-row sp-padding-2 sp-padding-left-3 sp-fluid">
-      <div class="sp-label sp-small">NBC Universal <span class="sp-inline-icon-arrow-right"></span> <a href="-creatives.html" class="sp-color-white">Creatives</a> <span class="sp-inline-icon-arrow-right"></span> <a href="-creatives-overview.html" class="sp-color-white">Creative Name Goes here</a></div>
+      <div class="sp-label sp-small">Example Organization <span class="sp-inline-icon-arrow-right"></span> <a href="-creatives.html" class="sp-color-white">Creatives</a> <span class="sp-inline-icon-arrow-right"></span> <a href="-creatives-overview.html" class="sp-color-white">Creative Name Goes here</a></div>
     </div>
   </div>
   
@@ -90,10 +90,11 @@
           <button class="sp-selector-trigger sp-icon-status sp-small sp-font-color-white sp-sync-enabled">Live Version</button>
           <div class="sp-selector-overlay">
             <div class="sp-menu-dropdown sp-overlay sp-width-8 sp-color-contrast" style="left: auto; right: 0; transform: none;">
-              <a class="sp-menu-item sp-icon-status sp-state-active">Live Version</a>
-              <a class="sp-menu-item sp-icon-circle">Draft Version</a>
-              <a class="sp-menu-item sp-icon-lightning">Specless Sync</a>
-              <a class="sp-menu-item sp-icon-github sp-state-disabled">Github Sync</a>
+              <a href="-creatives-explorer.html" class="sp-menu-item sp-icon-status sp-state-active">Live Version</a>
+              <a href="-creatives-explorer-staging.html" class="sp-menu-item sp-icon-circle">Staging Version</a>
+              <a href="-creatives-explorer-sync.html" class="sp-menu-item sp-icon-lightning">Specless Sync</a>
+              <a href="-creatives-explorer-github.html" class="sp-menu-item sp-icon-github">Github Sync</a>
+              <a href="-creatives-explorer-vhistory.html" class="sp-menu-item sp-icon-version sp-border-top-base">Select From Version History...</a>
               <!-- <div class="sp-align-center sp-container sp-alt-one sp-rectangle">
                 <a class="sp-button sp-icon-upload sp-success sp-rounded sp-small sp-margin-1">Publish Working Version</a>
               </div> -->
@@ -102,6 +103,15 @@
               </div> -->
               <!-- <div class="sp-spacer-vertical sp-margin-0"></div>
               <a class="sp-menu-item sp-icon-logout">Log Out</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="sp-selector sp-small">
+          <button class="sp-selector-trigger sp-icon-download sp-small sp-primary sp-font-color-white sp-margin-left-1"></button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <a class="sp-menu-item sp-icon-download">Download and Overwrite Sync Project</a>
+              <a class="sp-menu-item sp-icon-file">Download S-Kit Project</a>
             </div>
           </div>
         </div>
@@ -287,7 +297,7 @@
                   <a class="sp-menu-item sp-icon-eye">Open Simple Preview</a>
                   <a class="sp-menu-item sp-icon-link">Generate Custom Permalink</a>
                   <div class="sp-spacer-vertical"></div>
-                  <a class="sp-menu-item sp-icon-external sp-sate-disabled">Open in Text Editor</a>
+                  <a class="sp-menu-item sp-icon-external sp-state-disabled">Open in Text Editor</a>
                   <a class="sp-menu-item sp-icon-folder sp-state-disabled">Open S-Kit Project Folder</a>
                   <a class="sp-menu-item sp-icon-folder sp-state-disabled">Open S-Kit Asset Folder</a>
                 </div>

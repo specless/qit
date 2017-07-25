@@ -116,7 +116,7 @@
     <div class="sp-app-content-sidebar sp-flex">
       <div class="sp-app-content-sidebar-icon-menu sp-container-dark sp-contrast sp-border-top-base">
         <a href="settings.html" class="sp-button sp-minimal sp-simple-icon sp-icon-circle-info sp-primary"></a>
-        <a href="layout.html" class="sp-button sp-minimal sp-simple-icon sp-icon-design sp-primary sp-state-active"></a>
+        <a href="layout.html" class="sp-button sp-minimal sp-simple-icon sp-icon-eye sp-primary sp-state-active"></a>
         <a class="sp-button sp-minimal sp-simple-icon sp-icon-monitor sp-primary"></a>
         <a class="sp-button sp-minimal sp-simple-icon sp-icon-file-cabinet sp-primary"></a>
         <a class="sp-button sp-minimal sp-simple-icon sp-icon-paper-plane sp-primary"></a>
@@ -128,7 +128,7 @@
           <button tabindex="0" class="sp-icon-circle-plus sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
         </div>
         <div class="sp-app-content-sidebar-menu-content">
-          <div class="sp-menu-header sp-small sp-align-center">Display</div>
+          <div class="sp-menu-header sp-small sp-align-center sp-color-contrast">Display</div>
           <div class="sp-padding-2">
             <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/400x150/0096a9/0096a9);">
               <div tabindex="0" class="sp-button sp-icon-code sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
@@ -164,7 +164,7 @@
             </div>
             <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Secondary</div>
           </div>
-          <div class="sp-menu-header sp-small sp-align-center">Native</div>
+          <div class="sp-menu-header sp-color-contrast sp-small sp-align-center">Native</div>
           <div class="sp-padding-2">
             <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/400x150/0096a9/0096a9);">
               <div tabindex="0" class="sp-button sp-icon-native-ad sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
@@ -179,7 +179,7 @@
             </div>
             <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Native Panel</div>
           </div>
-          <div class="sp-menu-header sp-small sp-align-center">Video</div>
+          <div class="sp-menu-header sp-small sp-color-contrast sp-align-center">Video</div>
           <div class="sp-padding-2">
             <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/400x150/0096a9/0096a9);">
               <div tabindex="0" class="sp-button sp-icon-video sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
@@ -248,19 +248,39 @@
       </div>
     </div>
     <div class="sp-app-content-main sp-container-light">
-      <div class="sp-padding-1 sp-container sp-label sp-color-contrast sp-flex sp-bg-overlay-light-4">
-        <button tabindex="0" class="sp-icon-unlocked sp-minimal sp-simple-icon sp-small sp-primary sp-float-left"></button>
-        <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Secondary<i class="sp-inline-icon-arrow-right sp-margin-left-1 sp-margin-right-1"></i>Vertical</span>
+      <div class="sp-padding-1 sp-container sp-color-contrast sp-flex sp-bg-overlay-light-4">
+        <!-- <button tabindex="0" class="sp-icon-circle-arrow-left sp-minimal sp-simple-icon sp-small sp-primary sp-float-left"></button> -->
+        <span class="sp-border-right-base sp-float-right sp-margin-right-1">
+          <!-- <button tabindex="0" class="sp-icon-edit sp-small sp-margin-left-1"></button> -->
+          <button tabindex="0" class="sp-icon-panel sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-active"></button>
+          <button tabindex="0" class="sp-icon-layout sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-active"></button>
+        </span>
+        <button tabindex="0" class="sp-icon-eye sp-minimal sp-simple-icon sp-small sp-primary"></button>
+        <span class="sp-padding-vertical-1 sp-padding-left-1 sp-label" style="flex:1">Design Preview</span>
        <!--  <button tabindex="0" class="sp-icon-eye sp-minimal sp-simple-icon sp-small sp-primary sp-float-right sp-state-active"></button> -->
         <!-- <button tabindex="0" class="sp-icon-panel sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
         <button tabindex="0" class="sp-icon-layout sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
-        <button tabindex="0" class="sp-icon-location sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
-        <button tabindex="0" class="sp-icon-data sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
-        <button tabindex="0" class="sp-icon-console sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
-        <button tabindex="0" class="sp-icon-code sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+        <button tabindex="0" class="sp-icon-location sp-minimal sp-simple-icon sp-small sp-primary sp-float-right sp-state-active"></button>
+        <button tabindex="0" class="sp-icon-data sp-minimal sp-simple-icon sp-small sp-primary sp-float-right sp-state-active"></button>
+        <button tabindex="0" class="sp-icon-console sp-minimal sp-simple-icon sp-small sp-primary sp-float-right sp-state-active"></button>
+        <!-- <button tabindex="0" class="sp-icon-code sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
         <span class="sp-border-left-base sp-float-right sp-margin-left-1">
-          <button tabindex="0" class="sp-icon-edit sp-small sp-margin-left-1"></button>
-          <button tabindex="0" class="sp-icon-external sp-small sp-float-right sp-margin-left-1"></button>
+          <!-- <button tabindex="0" class="sp-icon-edit sp-small sp-margin-left-1"></button> -->
+          <div class="sp-selector sp-small">
+              <button tabindex="0" class="sp-icon-external sp-small sp-float-right sp-margin-left-1 sp-selector-trigger"></button>
+              <div class="sp-selector-overlay">
+                <div class="sp-menu-dropdown sp-overlay" style="left: auto; right: 0; transform: none;">
+                  <!-- <a class="sp-menu-item sp-icon-share">Sharing</a>
+                  <div class="sp-spacer-vertical"></div> -->
+                  <a class="sp-menu-item sp-icon-eye">Open Simple Preview</a>
+                  <a class="sp-menu-item sp-icon-link">Generate Custom Permalink</a>
+                  <div class="sp-spacer-vertical"></div>
+                  <a class="sp-menu-item sp-icon-external sp-sate-disabled">Open in Text Editor</a>
+                  <a class="sp-menu-item sp-icon-folder sp-state-disabled">Open S-Kit Project Folder</a>
+                  <a class="sp-menu-item sp-icon-folder sp-state-disabled">Open S-Kit Asset Folder</a>
+                </div>
+              </div>
+            </div>
         </span>
       </div>
       <div class="sp-padding-1 sp-container sp-border-top-base sp-border-bottom-base sp-flex sp-small sp-font-weight-semi-bold" style="font-size: 12px;">
@@ -398,6 +418,11 @@
       </div>
       <div class="sp-app-content-main-scroll sp-container sp-alt-one">
         <div class="sp-preview-panel sp-overlay sp-rectangle sp-contrast">
+          <div class="sp-preview-panel-header sp-font-weight-semi-bold sp-flex">
+            <div class="sp-preview-panel-header-left sp-inline-icon-sync"></div>
+            <div class="sp-preview-panel-header-middle sp-align-center"><span class="sp-color-muted">Secondary<i class="sp-inline-icon-arrow-right"></i> Vertical</span><i class="sp-margin-left-1 sp-inline-icon-solid-unlock sp-color-muted"></i></div>
+            <div class="sp-preview-panel-header-right sp-inline-icon-more"></div>
+          </div>
           <div class="sp-preview-panel-down sp-overlay sp-icon-drag-both"></div>
           <div class="sp-preview-panel-right sp-overlay sp-icon-drag-both"></div>
           <div class="sp-preview-panel-diag sp-overlay sp-icon-resize"></div>
@@ -410,6 +435,252 @@
       <!-- <div class="sp-app-content-main-footer sp-container">
         Test
       </div> -->
+    </div>
+    <div class="sp-app-content-sidebar sp-flex">
+      <div class="sp-app-content-sidebar-menu sp-container-dark sp-alt-one sp-shadow-medium " style="width:220px;">
+        <div class="sp-padding-1 sp-container sp-label sp-color-contrast sp-flex sp-border-bottom-base">
+          <button tabindex="0" class="sp-icon-location sp-minimal sp-simple-icon sp-primary sp-small sp-primary sp-float-left"></button>
+          <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Context Queries</span>
+          <!-- <button tabindex="0" class="sp-icon-circle-close sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
+        </div>
+        <div class="sp-app-content-sidebar-menu-content sp-small">
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Referenced Contexts</div>
+          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base" style="font-size: 12px">
+            <div><i class="sp-inline-icon-edit sp-margin-right-1 sp-color-muted"></i>device-type<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 75px" value="desktop"/></div>
+            <div><i class="sp-inline-icon-edit sp-margin-right-1 sp-color-muted"></i>location-city<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 75px" value="chicago"/></div>
+            <div class="sp-color-warning"><i class="sp-inline-icon-reset sp-margin-right-1"></i>time-day-index<input class="sp-minimal sp-align-right sp-float-right" style="width: 75px" value="3"/></div>
+          </div>
+
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Rules</div>
+
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-flex">
+              <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-down sp-margin-right-1"></i>Unnamed Rule 1</div>
+              <div class="sp-font-weight-semi-bold sp-color-success">Matched</div>
+            </div>
+            <div class="sp-padding-left-1">
+                <div><i class="sp-inline-icon-circle-check sp-color-success sp-margin-right-1"></i>device-type<span class="sp-font-weight-semi-bold sp-margin-left-1 sp-margin-right-1">is</span>desktop</div>
+                <div><i class="sp-inline-icon-circle-check sp-color-success sp-margin-right-1"></i>location-city<span class="sp-font-weight-semi-bold sp-margin-left-1 sp-margin-right-1">is</span>chicago</div>
+                <div><i class="sp-inline-icon-circle-check sp-color-success sp-margin-right-1"></i>time-day-index<span class="sp-font-weight-semi-bold sp-margin-left-1 sp-margin-right-1">></span>5</div>
+            </div>
+          </div>
+
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-flex">
+              <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-down sp-margin-right-1"></i>My Rule</div>
+              <div class="sp-font-weight-semi-bold sp-color-muted">Unmatched</div>
+            </div>
+            <div class="sp-padding-left-1">
+                <div class="sp-color-muted" style="text-decoration: line-through"><i class="sp-inline-icon-circle-close sp-color-danger sp-margin-right-1"></i>device-type<span class="sp-font-weight-semi-bold sp-margin-left-1 sp-margin-right-1">is</span>tablet</div>
+                <div><i class="sp-inline-icon-circle-check sp-color-success sp-margin-right-1"></i>location-city<span class="sp-font-weight-semi-bold sp-margin-left-1 sp-margin-right-1">is</span>chicago</div>
+                <div><i class="sp-inline-icon-circle-check sp-color-success sp-margin-right-1"></i>time-day-index<span class="sp-font-weight-semi-bold sp-margin-left-1 sp-margin-right-1">></span>5</div>
+            </div>
+          </div>
+
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-flex">
+              <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Unnamed Rule 2</div>
+              <div class="sp-font-weight-semi-bold sp-color-success">Matched</div>
+            </div>
+          </div>
+
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">All Contexts</div>
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Environment</div>
+          </div>
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-down sp-margin-right-1"></i>Location</div>
+            <div class="sp-padding-left-1 sp-font-weight-semi-bold sp-flex">
+                <div style="flex:1"><i class="sp-inline-icon-info sp-margin-right-1 sp-color-muted"></i>location-city</div>
+                <div class="sp-align-right">chicago</div>
+            </div>
+            <div class="sp-padding-left-1 sp-font-weight-semi-bold sp-flex">
+                <div style="flex:1"><i class="sp-inline-icon-info sp-margin-right-1 sp-color-muted"></i>location-state</div>
+                <div class="sp-align-right">illinois</div>
+            </div>
+            <div class="sp-padding-left-1 sp-font-weight-semi-bold sp-flex">
+                <div style="flex:1"><i class="sp-inline-icon-info sp-margin-right-1 sp-color-muted"></i>location-country</div>
+                <div class="sp-align-right">usa</div>
+            </div>
+          </div>
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>User</div>
+          </div>
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Input</div>
+          </div>
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Device</div>
+          </div>
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Site</div>
+          </div>
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Format</div>
+          </div>
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Panel</div>
+          </div>
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Custom</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="sp-app-content-sidebar sp-flex">
+      <div class="sp-app-content-sidebar-menu sp-container-dark sp-alt-one sp-shadow-medium " style="width:220px;">
+        <div class="sp-padding-1 sp-container sp-label sp-color-contrast sp-flex sp-border-bottom-base">
+          <button tabindex="0" class="sp-icon-data sp-minimal sp-simple-icon sp-primary sp-small sp-primary sp-float-left"></button>
+          <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Reporting</span>
+          <!-- <button tabindex="0" class="sp-icon-circle-close sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
+        </div>
+        <div class="sp-app-content-sidebar-menu-content sp-small">
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Dimensions</div>
+          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base" style="font-size: 12px">
+            <div><i class="sp-inline-icon-info sp-margin-right-1"></i>Requested Impression</div>
+            <div><i class="sp-inline-icon-info sp-margin-right-1"></i>Delivered Impression</div>
+            <div><i class="sp-inline-icon-info sp-margin-right-1"></i>Measurable Impression</div>
+          </div>
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Interactions</div>
+          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base" style="font-size: 12px">
+            <div>Logo Click<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 40px" value="1"/></div>
+            <div>Exit: Home Page<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 40px" value="2"/></div>
+            <div>Exit: Facebook Page<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 40px" value="1"/></div>
+          </div>
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Counters</div>
+          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base" style="font-size: 12px">
+            <div>Image Load Counter<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 40px" value="1"/></div>
+            <div>Some Counter<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 40px" value="2"/></div>
+            <div>Another Counter<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 40px" value="1"/></div>
+          </div>
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Timers</div>
+          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base" style="font-size: 12px">
+            <div>Video Watched<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 40px" value="0:24"/></div>
+            <div>Mouse Hover<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 40px" value="1:01"/></div>
+            <div>Custom Timer<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 40px" value="0:01"/></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sp-app-content-sidebar sp-flex">
+      <div class="sp-app-content-sidebar-menu sp-container-dark sp-alt-one sp-shadow-medium " style="width:350px;">
+        <div class="sp-padding-1 sp-container sp-label sp-color-contrast sp-flex sp-border-bottom-base">
+          <button tabindex="0" class="sp-icon-console sp-minimal sp-simple-icon sp-primary sp-small sp-primary sp-float-left"></button>
+          <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Activity Console</span>
+          <!-- <button tabindex="0" class="sp-icon-circle-close sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
+        </div>
+        <div class="sp-app-content-sidebar-menu-content sp-small">
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Ad Lifespan</div>
+          <div class="sp-padding-1" style="font-size: 12px;">
+            <div class="sp-input sp-rectangle sp-padding-2">
+              <div class="sp-log-entry">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Event Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Event Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Event Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry sp-color-warning">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Warning Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Event Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry sp-color-danger">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Error Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Event Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+            </div>
+          </div>
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Specless Sync</div>
+          <div class="sp-padding-1" style="font-size: 12px;">
+            <div class="sp-input sp-rectangle sp-padding-2">
+              <div class="sp-log-entry">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Event Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Event Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Event Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry sp-color-warning">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Warning Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Event Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry sp-color-danger">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Error Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Event Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 

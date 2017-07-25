@@ -128,7 +128,7 @@
           <button tabindex="0" class="sp-icon-circle-plus sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
         </div>
         <div class="sp-app-content-sidebar-menu-content">
-          <div class="sp-menu-header sp-small sp-align-center sp-color-contrast">Display</div>
+          <div class="sp-menu-header sp-small sp-align-center sp-color-contrast" style="opacity: 1;">Display</div>
           <div class="sp-padding-2">
             <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/400x150/0096a9/0096a9);">
               <div tabindex="0" class="sp-button sp-icon-code sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
@@ -164,7 +164,7 @@
             </div>
             <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Secondary</div>
           </div>
-          <div class="sp-menu-header sp-color-contrast sp-small sp-align-center">Native</div>
+          <div class="sp-menu-header sp-color-contrast sp-small sp-align-center" style="opacity: 1;">Native</div>
           <div class="sp-padding-2">
             <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/400x150/0096a9/0096a9);">
               <div tabindex="0" class="sp-button sp-icon-native-ad sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
@@ -179,7 +179,7 @@
             </div>
             <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Native Panel</div>
           </div>
-          <div class="sp-menu-header sp-small sp-color-contrast sp-align-center">Video</div>
+          <div class="sp-menu-header sp-small sp-color-contrast sp-align-center" style="opacity: 1;">Video</div>
           <div class="sp-padding-2">
             <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/400x150/0096a9/0096a9);">
               <div tabindex="0" class="sp-button sp-icon-video sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
@@ -194,6 +194,97 @@
             </div>
             <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Video Panel</div>
           </div>
+        </div>
+      </div>
+      <div class="sp-app-content-sidebar-menu sp-container-dark sp-alt-two sp-shadow-medium" style="width:320px; z-index:10;">
+        <div class="sp-padding-1 sp-label sp-color-contrast sp-container sp-flex sp-border-bottom-base">
+          <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Panel Settings</span>
+          <!-- <button tabindex="0" class="sp-icon-circle-close sp-minimal sp-simple-icon sp-small sp-danger sp-float-right"></button> -->
+        </div>
+        <div class="sp-app-content-sidebar-menu-content sp-small">
+
+          <div class="sp-row sp-vcenter">
+            <div class="sp-col sp-span-5 sp-align-right">
+              <span class="sp-font-weight-semi-bold sp-color-contrast">Panel Name</span>
+            </div>
+            <div class="sp-col sp-span-7">
+              <input type="text" class="sp-full-width" value="Secondary"/>
+            </div>
+          </div>
+
+          <div class="sp-row sp-vcenter">
+            <div class="sp-col sp-span-5 sp-align-right">
+              <span class="sp-font-weight-semi-bold sp-color-contrast">Panel Type</span>
+            </div>
+            <div class="sp-col sp-span-7">
+              <span>Display</span>
+            </div>
+          </div>
+
+          <div class="sp-row sp-vcenter">
+            <div class="sp-col sp-span-5 sp-align-right">
+              <span class="sp-font-weight-semi-bold sp-color-contrast">Content Type</span>
+            </div>
+            <div class="sp-col sp-span-7">
+              <span><i class="sp-inline-icon-code sp-margin-right-1"></i>S-Kit</span>
+            </div>
+          </div>
+
+          <div class="sp-row sp-vcenter">
+            <div class="sp-col sp-span-5 sp-align-right">
+              <span class="sp-font-weight-semi-bold sp-color-contrast">Default Display Panel</span>
+            </div>
+            <div class="sp-col sp-span-7">
+              <button class="sp-icon-star sp-minimal sp-primary sp-block">Make Default</button>
+            </div>
+          </div>
+
+          <div class="sp-row sp-vcenter sp-border-bottom-base">
+            <div class="sp-col sp-span-12 sp-align-right">
+            <button class="sp-icon-trash sp-minimal sp-danger sp-block">Delete Panel</button>
+            </div>
+          </div>
+
+          <div class="sp-row sp-vcenter">
+            <div class="sp-col sp-span-12">
+              <div class="sp-font-weight-semi-bold sp-padding-top-1 sp-border-bottom-base sp-color-contrast">Setting One</div>
+              <div class="sp-padding-vertical-1" style="font-size: 12px">Descriptive Text Goes here.</div>
+              <div class="sp-selector sp-full-width sp-small">
+                <input readonly type="text" class="sp-full-width sp-selector-trigger" value="two"/>
+                <div class="sp-selector-overlay">
+                  <div class="sp-menu-dropdown sp-overlay">
+                    <a class="sp-menu-item">one</a>
+                    <a class="sp-menu-item sp-state-active">two</a>
+                    <a class="sp-menu-item">three</a>
+                    <a class="sp-menu-item sp-state-disabled">four</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="sp-row sp-vcenter">
+            <div class="sp-col sp-span-12">
+              <div class="sp-font-weight-semi-bold sp-padding-top-1 sp-border-bottom-base sp-color-contrast">Setting Two</div>
+              <div class="sp-padding-vertical-1" style="font-size: 12px">Descriptive Text Goes here.</div>
+              <div class="sp-selector sp-full-width sp-small">
+                <input readonly type="text" class="sp-full-width sp-selector-trigger" value="two"/>
+                <div class="sp-selector-overlay">
+                  <div class="sp-menu-dropdown sp-overlay">
+                    <a class="sp-menu-item">one</a>
+                    <a class="sp-menu-item sp-state-active">two</a>
+                    <a class="sp-menu-item">three</a>
+                    <a class="sp-menu-item sp-state-disabled">four</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sp-padding-1 sp-container sp-label sp-color-contrast sp-flex sp-group">
+          <button class="sp-small sp-block sp-margin-right-1">Cancel</button>
+          <button class="sp-primary sp-small sp-block">Apply Changes</button>
+          <!-- <button tabindex="0" class="sp-icon-circle-arrow-left sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
         </div>
       </div>
       <div class="sp-app-content-sidebar-menu sp-container-dark sp-alt-one sp-shadow-medium" style="width:135px;">
@@ -244,6 +335,107 @@
             </div>
             <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Horizontal</div>
           </div>
+        </div>
+      </div>
+      <div class="sp-app-content-sidebar-menu sp-container-dark sp-alt-two sp-shadow-medium" style="width:250px; z-index:10;">
+        <div class="sp-padding-1 sp-label sp-color-contrast sp-container sp-flex sp-border-bottom-base">
+          <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Layout Settings</span>
+          <!-- <button tabindex="0" class="sp-icon-circle-close sp-minimal sp-simple-icon sp-small sp-danger sp-float-right"></button> -->
+        </div>
+        <div class="sp-app-content-sidebar-menu-content sp-small">
+
+          <div class="sp-row sp-vcenter sp-border-bottom-base">
+            <div class="sp-col sp-span-5 sp-align-right">
+              <span class="sp-font-weight-semi-bold sp-color-contrast">Layout Name</span>
+            </div>
+            <div class="sp-col sp-span-7">
+              <input type="text" class="sp-full-width" value="Vertical"/>
+            </div>
+          </div>
+
+          <div class="sp-row sp-vcenter">
+            <div class="sp-col sp-span-5 sp-align-right">
+              <span class="sp-font-weight-semi-bold sp-color-contrast">Width</span>
+            </div>
+            <div class="sp-col sp-span-7">
+              <input type="text" class="sp-full-width" value="300"/>
+            </div>
+          </div>
+
+          <div class="sp-row sp-vcenter">
+            <div class="sp-col sp-span-5 sp-align-right">
+              <span class="sp-font-weight-semi-bold sp-color-contrast">Min-Width</span>
+            </div>
+            <div class="sp-col sp-span-7">
+              <input type="text" class="sp-full-width" value="300"/>
+            </div>
+          </div>
+
+          <div class="sp-row sp-vcenter sp-border-bottom-base">
+            <div class="sp-col sp-span-5 sp-align-right">
+              <span class="sp-font-weight-semi-bold sp-color-contrast">Max-Width</span>
+            </div>
+            <div class="sp-col sp-span-7">
+              <input type="text" class="sp-full-width" value="300"/>
+            </div>
+          </div>
+
+          <div class="sp-row sp-vcenter">
+            <div class="sp-col sp-span-5 sp-align-right">
+              <span class="sp-font-weight-semi-bold sp-color-contrast">Height</span>
+            </div>
+            <div class="sp-col sp-span-7">
+              <input type="text" class="sp-full-width" value="250"/>
+            </div>
+          </div>
+
+          <div class="sp-row sp-vcenter">
+            <div class="sp-col sp-span-5 sp-align-right">
+              <span class="sp-font-weight-semi-bold sp-color-contrast">Min-Height</span>
+            </div>
+            <div class="sp-col sp-span-7">
+              <input type="text" class="sp-full-width" value="250"/>
+            </div>
+          </div>
+
+          <div class="sp-row sp-vcenter sp-border-bottom-base">
+            <div class="sp-col sp-span-5 sp-align-right">
+              <span class="sp-font-weight-semi-bold sp-color-contrast">Max-Height</span>
+            </div>
+            <div class="sp-col sp-span-7">
+              <input type="text" class="sp-full-width" value="250"/>
+            </div>
+          </div>
+
+          <div class="sp-row sp-vcenter">
+            <div class="sp-col sp-span-5 sp-align-right">
+              <span class="sp-font-weight-semi-bold sp-color-contrast">Min-Scale</span>
+            </div>
+            <div class="sp-col sp-span-7">
+              <input type="text" class="sp-full-width" value="0.5"/>
+            </div>
+          </div>
+
+          <div class="sp-row sp-vcenter sp-border-bottom-base">
+            <div class="sp-col sp-span-5 sp-align-right">
+              <span class="sp-font-weight-semi-bold sp-color-contrast">Max-Scale</span>
+            </div>
+            <div class="sp-col sp-span-7">
+              <input type="text" class="sp-full-width" value="3"/>
+            </div>
+          </div>
+
+          <div class="sp-row sp-vcenter sp-border-bottom-base">
+            <div class="sp-col sp-span-12 sp-align-right">
+            <button class="sp-icon-trash sp-minimal sp-danger sp-block">Delete Layout</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="sp-padding-1 sp-container sp-label sp-color-contrast sp-flex sp-group">
+          <button class="sp-small sp-block sp-margin-right-1">Cancel</button>
+          <button class="sp-primary sp-small sp-block">Apply Changes</button>
+          <!-- <button tabindex="0" class="sp-icon-circle-arrow-left sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
         </div>
       </div>
     </div>

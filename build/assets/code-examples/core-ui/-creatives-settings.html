@@ -1,0 +1,591 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example</title>
+  <link rel="stylesheet" href="../../../qit.css">
+</head>
+
+<body class="sp-app">
+  <div class="sp-app-bar sp-container-dark sp-alt-one sp-wrapper">
+    <div class="sp-row sp-vcenter sp-height-3">
+      <div class="sp-col sp-span-6 sp-flex sp-flex-align-items-center">
+        <a class="sp-menu-item sp-minimal sp-icon-menu sp-padding-0"></a>
+        <div class="sp-spacer-horizontal"></div>
+        <div class="sp-logo-lockup sp-small sp-primary sp-logo-horizontal sp-margin-left-2"></div>
+      </div>
+      <div class="sp-col sp-span-6 sp-flex sp-flex-justify-content-flex-end sp-flex-align-items-center">
+        <div class="sp-selector sp-margin-right-1">
+          <button class="sp-selector-trigger sp-rounded sp-small sp-minimal sp-simple-icon">Stephen C.<i class="sp-margin-left-2 sp-inline-icon-circle-user" style="display: inline-block;transform: scale(2) translateY(-1px)"></i></button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <div class="sp-menu-header sp-small">User Details</div>
+              <a class="sp-menu-item sp-icon-account">Account</a>
+              <a class="sp-menu-item sp-icon-settings">Preferences</a>
+              <a class="sp-menu-item sp-icon-organization">Organizations</a>
+              <a class="sp-menu-item sp-icon-account">Billing</a>
+              <div class="sp-spacer-vertical sp-margin-0"></div>
+              <a class="sp-menu-item sp-icon-logout">Log Out</a>
+            </div>
+          </div>
+        </div>
+        <div class="sp-selector">
+          <button class="sp-selector-trigger sp-icon-after-circle-help sp-rounded sp-simple-icon sp-minimal sp-large"></button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <div class="sp-menu-header sp-small">Search For Help</div>
+              <div class="sp-padding-horizontal-2 sp-padding-vertical-1" style="position: relative;">
+                <input type="search" class="sp-small sp-rounded" placeholder="Enter Search Term" style="width: 100%"/>
+                <button class="sp-small sp-rounded sp-icon-search sp-primary sp-margin-top-1 sp-margin-right-2" style="position: absolute; top:0; right: 0;border-bottom-left-radius: 0;border-top-left-radius: 0;"></button>
+              </div>
+              <div class="sp-menu-header sp-small">Help Center</div>
+              <a class="sp-menu-item sp-icon-account">Contact Support</a>
+              <a class="sp-menu-item sp-icon-settings">Report a Bug</a>
+              <a class="sp-menu-item sp-icon-organization">Tutorials</a>
+              <a class="sp-menu-item sp-icon-account">Knowledge Base</a>
+            </div>
+          </div>
+        </div>
+        <div class="sp-selector">
+          <button class="sp-selector-trigger sp-icon-after-lightning sp-rounded sp-simple-icon sp-minimal sp-large sp-success sp-state-active"></button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <div class="sp-menu-header sp-small">Connection</div>
+              <div class="sp-padding-horizontal-2 sp-padding-vertical-1" style="position: relative;">
+                <div class="sp-label">Status <span class="sp-color-success sp-float-right">Active</span></div>
+              </div>
+              <div class="sp-menu-header sp-small">Settings</div>
+              <a class="sp-menu-item">Live Reload</a>
+              <a class="sp-menu-item">Listen on Port</a>
+              <div class="sp-menu-header sp-small">Recent Creatives</div>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Some Creative<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>My Awesome Ad<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Another Creative<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Coca-Cola Ad<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Samsung Galaxy Note 8<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sp-app-org-label sp-container-dark sp-wrapper">
+    <div class="sp-row sp-padding-2 sp-padding-left-3">
+      <div class="sp-label sp-small">NBC Universal <span class="sp-inline-icon-arrow-right"></span> <a href="-creatives.html" class="sp-color-white">Creatives</a></div>
+    </div>
+  </div>
+  <div class="sp-app-header sp-container-dark sp-alt-two sp-wrapper">
+    <div class="sp-row sp-vcenter">
+      <div class="sp-col sp-span-12 sp-flex sp-flex-align-items-center">
+        <h5 class="sp-inline sp-contrast sp-inline" style="flex: 1; position: relative">
+          <i class="sp-inline-icon-creative sp-color-primary sp-margin-right-1"></i>
+          <!-- <span class="sp-color-muted">dhC897:</span> -->
+          Creative Name Goes Here
+          <!-- <span class="sp-color-muted sp-small" style="position: absolute; bottom: -15px; left: 32px;">/ dhC897</span> -->
+        </h5>
+        <div>
+          <a href="-creatives-explorer.html" class="sp-button sp-primary sp-icon-eye sp-small sp-rounded">Launch Creative Explorer</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sp-app-menu sp-container-dark sp-alt-two sp-wrapper">
+    <div class="sp-row">
+      <div class="sp-col sp-span-10 sp-padding-0" style="margin-bottom: 3px">
+        <a href="-creatives-overview.html" class="sp-menu-item sp-horizontal sp-label">Overview</a>
+        <a href="-creatives-settings.html" class="sp-menu-item sp-horizontal sp-label sp-state-active">Settings</a>
+        <!-- <a href="-creatives-explorer.html" class="sp-menu-item sp-horizontal sp-label">Creative Explorer</a> -->
+        <a href="-creatives-publish.html" class="sp-menu-item sp-horizontal sp-label">Publish</a>
+        <a href="-creatives-reporting.html" class="sp-menu-item sp-horizontal sp-label">Reporting</a>
+        <a class="sp-menu-item sp-minimal sp-horizontal sp-label sp-icon-more"></a>
+        <!-- <a class="sp-menu-item sp-horizontal sp-label sp-icon-more sp-minimal"></a> -->
+      </div>
+      <div class="sp-col sp-span-2 sp-align-right sp-padding-0">
+        <!-- <button class="sp-rounded sp-primary sp-icon-more sp-offset-half-down sp-margin-left-2 sp-large"></button> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="sp-app-content sp-wrapper">
+    <div class="sp-wrapper">
+      <div class="sp-row">
+        <div class="sp-col sp-span-3 sp-margin-top-1">
+          <h5 class="sp-contrast sp-border-bottom-base sp-padding-bottom-2 sp-label sp-margin-top-2">Settings</h5>
+          <a class="sp-col sp-span-12 sp-menu-item">Click-Throughs</a>
+          <a class="sp-col sp-span-12 sp-menu-item">Tracking</a>
+          <a class="sp-col sp-span-12 sp-menu-item">Version Control & Change Log</a>
+        </div> 
+        <div class="sp-col sp-span-9">
+          <h5 class="sp-contrast sp-border-bottom-base sp-padding-bottom-2">Global Trafficking Settings<a class="sp-button sp-small sp-float-right sp-icon-save sp-success sp-state-disabled">Save</a><a class="sp-button sp-small sp-float-right sp-icon-circle-close sp-margin-right-1 sp-warning sp-state-disabled">Discard Edits</a></h5>
+          <div class="sp-wrapper sp-overlay sp-margin-bottom-3 sp-rectangle sp-padding-horizontal-2 sp-padding-bottom-2 sp-margin-top-3">
+            <div class="sp-row sp-fluid sp-border-bottom-base">
+              <div class="sp-col sp-span-12">
+                <h5><i class="sp-inline-icon-interaction sp-margin-right-2"></i>Click-Throughs</h5>
+              </div>
+            </div>
+            <div class="sp-row sp-fluid sp-vcenter">
+              <div class="sp-col sp-span-3 sp-align-right">
+                <div class="sp-label sp-margin-bottom-2 sp-margin-top-1">Exit Name</div>
+              </div>
+              <div class="sp-col sp-span-1 sp-align-center">
+               
+              </div>
+              <div class="sp-col sp-span-8">
+                <div class="sp-label sp-margin-bottom-2 sp-margin-top-1">Destination URL / Click Tracker URL</div>
+              </div>
+            </div>
+
+            <div class="sp-row sp-vcenter sp-fluid sp-border-bottom-base">
+              <div class="sp-col sp-span-3 sp-align-right">
+                <h6>Default</h6>
+              </div>
+              <div class="sp-col sp-span-1 sp-align-center">
+                <div class="sp-icon-circle-arrow-right"></div>
+              </div>
+              <!-- <div class="sp-col sp-span-3">
+                <div class="sp-selector sp-full-width sp-small">
+                  <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Custom"/>
+                  <div class="sp-selector-overlay">
+                    <div class="sp-menu-dropdown sp-overlay">
+                      <a class="sp-menu-item sp-state-active">Custom</a>
+                      <a class="sp-menu-item">Global Trafficking Value</a>
+                      <a class="sp-menu-item">None</a>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              <div class="sp-col sp-span-7">
+                <input type="text" class="sp-full-width sp-small" value="http://www.somesite.com"/>
+              </div>
+            </div>
+
+            <div class="sp-row sp-vcenter sp-fluid">
+              <div class="sp-col sp-span-3 sp-align-right">
+                <h6>Facebook Page</h6>
+              </div>
+              <div class="sp-col sp-span-1 sp-align-center">
+                <div class="sp-icon-circle-arrow-right"></div>
+              </div>
+              <!-- <div class="sp-col sp-span-3">
+                <div class="sp-selector sp-full-width sp-small">
+                  <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Custom"/>
+                  <div class="sp-selector-overlay">
+                    <div class="sp-menu-dropdown sp-overlay">
+                      <a class="sp-menu-item sp-state-active">Custom</a>
+                      <a class="sp-menu-item">Global Trafficking Value</a>
+                      <a class="sp-menu-item">None</a>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              <div class="sp-col sp-span-7">
+                <input type="text" class="sp-full-width sp-small" value="http://www.somesite.com"/>
+              </div>
+            </div>
+
+            <div class="sp-row sp-vcenter sp-fluid">
+              <div class="sp-col sp-span-3 sp-align-right">
+                <h6>Homepage</h6>
+              </div>
+              <div class="sp-col sp-span-1 sp-align-center">
+                <div class="sp-icon-circle-arrow-right"></div>
+              </div>
+              <!-- <div class="sp-col sp-span-3">
+                <div class="sp-selector sp-full-width sp-small">
+                  <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Custom"/>
+                  <div class="sp-selector-overlay">
+                    <div class="sp-menu-dropdown sp-overlay">
+                      <a class="sp-menu-item sp-state-active">Custom</a>
+                      <a class="sp-menu-item">Global Trafficking Value</a>
+                      <a class="sp-menu-item">None</a>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              <div class="sp-col sp-span-7">
+                <input type="text" class="sp-full-width sp-small" value="http://www.somesite.com"/>
+              </div>
+            </div>
+
+            <div class="sp-row sp-vcenter sp-fluid">
+              <div class="sp-col sp-span-3 sp-align-right">
+                <h6>Main CTA</h6>
+              </div>
+              <div class="sp-col sp-span-1 sp-align-center">
+                <div class="sp-icon-circle-arrow-right"></div>
+              </div>
+              <!-- <div class="sp-col sp-span-3">
+                <div class="sp-selector sp-full-width sp-small">
+                  <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Custom"/>
+                  <div class="sp-selector-overlay">
+                    <div class="sp-menu-dropdown sp-overlay">
+                      <a class="sp-menu-item sp-state-active">Custom</a>
+                      <a class="sp-menu-item">Global Trafficking Value</a>
+                      <a class="sp-menu-item">None</a>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              <div class="sp-col sp-span-7">
+                <input type="text" class="sp-full-width sp-small" value="http://www.somesite.com"/>
+              </div>
+            </div>
+          </div>
+          <div class="sp-wrapper sp-overlay sp-margin-bottom-3 sp-rectangle sp-padding-horizontal-2 sp-padding-bottom-2">
+              <div class="sp-row sp-fluid sp-border-bottom-base">
+                <div class="sp-col sp-span-12">
+                  <h5><i class="sp-inline-icon-bullseye sp-margin-right-2"></i>Tracking</h5>
+                </div>
+              </div>
+
+
+              <div class="sp-row sp-fluid">
+                <div class="sp-col sp-span-12">
+                  <div class="sp-label sp-margin-bottom-2 sp-margin-top-1 sp-rectangle">Add 3rd Party Tracking Pixels</div>
+                </div>
+              </div>
+              
+              <div class="sp-row sp-vcenter sp-fluid">
+                <div class="sp-col sp-span-3 sp-align-right">
+                  <h6>some_event</h6>
+                </div>
+                <div class="sp-col sp-span-1 sp-align-center">
+                  <div class="sp-icon-circle-arrow-right"></div>
+                </div>
+                <div class="sp-col sp-span-7">
+                  <input type="text" class="sp-full-width sp-small" value="http://www.somesite.com/1x1.gif"/>
+                </div>
+              </div>
+
+              <div class="sp-row sp-vcenter sp-fluid">
+                <div class="sp-col sp-span-3 sp-align-right">
+                  <h6>Fire Pixel</h6>
+                </div>
+                <div class="sp-col sp-span-1 sp-align-center">
+                  <div class="sp-icon-circle-arrow-right"></div>
+                </div>
+                <div class="sp-col sp-span-7">
+                  <input type="text" class="sp-full-width sp-small" value="http://www.somesite.com/1x1.gif"/>
+                </div>
+              </div>
+
+              <div class="sp-row sp-vcenter sp-fluid sp-border-bottom-base">
+                <div class="sp-col sp-span-3 sp-align-right">
+                  <h6>Viewable Impression</h6>
+                </div>
+                <div class="sp-col sp-span-1 sp-align-center">
+                  <div class="sp-icon-circle-arrow-right"></div>
+                </div>
+                <div class="sp-col sp-span-7">
+                  <input type="text" class="sp-full-width sp-small" value="http://www.somesite.com/1x1.gif"/>
+                </div>
+              </div>
+
+              <div class="sp-row sp-vcenter sp-fluid">
+                <div class="sp-col sp-span-3 sp-align-right">
+                  <div class="sp-selector sp-full-width sp-small">
+                    <input readonly type="text" class="sp-full-width sp-selector-trigger" value="Impression"/>
+                    <div class="sp-selector-overlay">
+                      <div class="sp-menu-dropdown sp-overlay">
+                        <a class="sp-menu-item sp-state-active">Impression</a>
+                        <a class="sp-menu-item">Viewable Impression</a>
+                        <a class="sp-menu-item">Interacted Impression</a>
+                        <a class="sp-menu-item">Video Impression</a>
+                        <a class="sp-menu-item">Initial Load Complete</a>
+                        <a class="sp-menu-item">Sub Load Start</a>
+                        <a class="sp-menu-item">Sub Load Complete</a>
+                        <a class="sp-menu-item">User Load Start</a>
+                        <a class="sp-menu-item">User Load Complete</a>
+                        <a class="sp-menu-item">Expand Start</a>
+                        <a class="sp-menu-item">Close Start</a>
+                        <a class="sp-menu-item">Ad Unload</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sp-col sp-span-1 sp-align-center">
+                  <div class="sp-icon-circle-arrow-right"></div>
+                </div>
+                <div class="sp-col sp-span-7">
+                  <input type="text" class="sp-full-width sp-small" value="http://www.somesite.com/1x1.gif"/>
+                </div>
+                <div class="sp-col sp-span-1">
+                  <button class="sp-icon-circle-close sp-danger sp-small"></button>
+                </div>
+              </div>
+
+              <div class="sp-row">
+                <div class="sp-col sp-span-12">
+                  <button class="sp-block sp-small">Add Another 3rd Party Tracker</button>
+                </div>
+              </div>
+
+
+            </div>
+      
+          <h5 class="sp-contrast sp-border-bottom-base sp-padding-bottom-2">Version Control & Change Log</h5>
+          <div class="sp-wrapper sp-overlay sp-margin-bottom-3 sp-rectangle sp-padding-2 sp-margin-top-3 sp-small">
+            <div class="sp-row sp-color-contrast sp-font-weight-semi-bold sp-border-bottom-base">
+              <div class="sp-col sp-span-1">Ver. ID</div>
+              <div class="sp-col sp-span-2">Date Created</div>
+              <div class="sp-col sp-span-2">Time</div>
+              <div class="sp-col sp-span-3">Created By</div>
+              <div class="sp-col sp-span-1 sp-align-center">Live</div>
+              <div class="sp-col sp-span-1 sp-align-center">Staging</div>
+              <div class="sp-col sp-span-2 sp-align-right"></div>
+            </div>
+
+
+            <div class="sp-row sp-vcenter">
+              <div class="sp-col sp-span-1">Cndj</div>
+              <div class="sp-col sp-span-2">Jan. 1, 2017</div>
+              <div class="sp-col sp-span-2">12:53pm</div>
+              <div class="sp-col sp-span-3">Stephen Corby</div>
+              <div class="sp-col sp-span-1 sp-align-center"></div>
+              <div class="sp-col sp-span-1 sp-align-center">
+                <button class="sp-selector-trigger sp-icon-status sp-minimal sp-simple-icon sp-minimal sp-warning sp-state-active"></button>
+              </div>
+              <div class="sp-col sp-span-2 sp-align-right">
+                <button class="sp-icon-eye sp-minimal sp-simple-icon"></button>
+                <div class="sp-tooltip sp-tooltip-below sp-inline">
+                  <button class="sp-icon-file sp-minimal sp-simple-icon"></button>
+                  <div class="sp-tooltip-overlay">Description of the updates goes here.</div>
+                </div>
+                <div class="sp-selector sp-small">
+                  <button class="sp-selector-trigger sp-icon-more sp-minimal sp-simple-icon"></button>
+                  <div class="sp-selector-overlay">
+                    <div class="sp-menu-dropdown sp-overlay">
+                      <a class="sp-menu-item">Set As Live Version</a>
+                      <a class="sp-menu-item">Set As Staging Version</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="sp-row sp-vcenter">
+              <div class="sp-col sp-span-1">Cndj</div>
+              <div class="sp-col sp-span-2">Jan. 1, 2017</div>
+              <div class="sp-col sp-span-2">12:53pm</div>
+              <div class="sp-col sp-span-3">Stephen Corby</div>
+              <div class="sp-col sp-span-1 sp-align-center">
+                <button class="sp-selector-trigger sp-icon-status sp-minimal sp-simple-icon sp-minimal sp-success sp-state-active"></button>
+              </div>
+              <div class="sp-col sp-span-1 sp-align-center"></div>
+              <div class="sp-col sp-span-2 sp-align-right">
+                <button class="sp-icon-eye sp-minimal sp-simple-icon"></button>
+                <div class="sp-tooltip sp-tooltip-below sp-inline">
+                  <button class="sp-icon-file sp-minimal sp-simple-icon"></button>
+                  <div class="sp-tooltip-overlay">Description of the updates goes here.</div>
+                </div>
+                <div class="sp-selector sp-small">
+                  <button class="sp-selector-trigger sp-icon-more sp-minimal sp-simple-icon"></button>
+                  <div class="sp-selector-overlay">
+                    <div class="sp-menu-dropdown sp-overlay">
+                      <a class="sp-menu-item">Set As Live Version</a>
+                      <a class="sp-menu-item">Set As Staging Version</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div class="sp-row sp-vcenter">
+              <div class="sp-col sp-span-1">Cndj</div>
+              <div class="sp-col sp-span-2">Jan. 1, 2017</div>
+              <div class="sp-col sp-span-2">12:53pm</div>
+              <div class="sp-col sp-span-3">Stephen Corby</div>
+              <div class="sp-col sp-span-1 sp-align-center"></div>
+              <div class="sp-col sp-span-1 sp-align-center"></div>
+              <div class="sp-col sp-span-2 sp-align-right">
+                <button class="sp-icon-eye sp-minimal sp-simple-icon"></button>
+                <div class="sp-tooltip sp-tooltip-below sp-inline">
+                  <button class="sp-icon-file sp-minimal sp-simple-icon"></button>
+                  <div class="sp-tooltip-overlay">Description of the updates goes here.</div>
+                </div>
+                <div class="sp-selector sp-small">
+                  <button class="sp-selector-trigger sp-icon-more sp-minimal sp-simple-icon"></button>
+                  <div class="sp-selector-overlay">
+                    <div class="sp-menu-dropdown sp-overlay">
+                      <a class="sp-menu-item">Set As Live Version</a>
+                      <a class="sp-menu-item">Set As Staging Version</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="sp-row sp-vcenter">
+              <div class="sp-col sp-span-1">Cndj</div>
+              <div class="sp-col sp-span-2">Jan. 1, 2017</div>
+              <div class="sp-col sp-span-2">12:53pm</div>
+              <div class="sp-col sp-span-3">Stephen Corby</div>
+              <div class="sp-col sp-span-1 sp-align-center"></div>
+              <div class="sp-col sp-span-1 sp-align-center"></div>
+              <div class="sp-col sp-span-2 sp-align-right">
+                <button class="sp-icon-eye sp-minimal sp-simple-icon"></button>
+                <div class="sp-tooltip sp-tooltip-below sp-inline">
+                  <button class="sp-icon-file sp-minimal sp-simple-icon"></button>
+                  <div class="sp-tooltip-overlay">Description of the updates goes here.</div>
+                </div>
+                <div class="sp-selector sp-small">
+                  <button class="sp-selector-trigger sp-icon-more sp-minimal sp-simple-icon"></button>
+                  <div class="sp-selector-overlay">
+                    <div class="sp-menu-dropdown sp-overlay">
+                      <a class="sp-menu-item">Set As Live Version</a>
+                      <a class="sp-menu-item">Set As Staging Version</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="sp-row sp-vcenter">
+              <div class="sp-col sp-span-1">Cndj</div>
+              <div class="sp-col sp-span-2">Jan. 1, 2017</div>
+              <div class="sp-col sp-span-2">12:53pm</div>
+              <div class="sp-col sp-span-3">Stephen Corby</div>
+              <div class="sp-col sp-span-1 sp-align-center"></div>
+              <div class="sp-col sp-span-1 sp-align-center"></div>
+              <div class="sp-col sp-span-2 sp-align-right">
+                <button class="sp-icon-eye sp-minimal sp-simple-icon"></button>
+                <div class="sp-tooltip sp-tooltip-below sp-inline">
+                  <button class="sp-icon-file sp-minimal sp-simple-icon"></button>
+                  <div class="sp-tooltip-overlay">Description of the updates goes here.</div>
+                </div>
+                <div class="sp-selector sp-small">
+                  <button class="sp-selector-trigger sp-icon-more sp-minimal sp-simple-icon"></button>
+                  <div class="sp-selector-overlay">
+                    <div class="sp-menu-dropdown sp-overlay">
+                      <a class="sp-menu-item">Set As Live Version</a>
+                      <a class="sp-menu-item">Set As Staging Version</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="sp-row sp-vcenter">
+              <div class="sp-col sp-span-1">Cndj</div>
+              <div class="sp-col sp-span-2">Jan. 1, 2017</div>
+              <div class="sp-col sp-span-2">12:53pm</div>
+              <div class="sp-col sp-span-3">Stephen Corby</div>
+              <div class="sp-col sp-span-1 sp-align-center"></div>
+              <div class="sp-col sp-span-1 sp-align-center"></div>
+              <div class="sp-col sp-span-2 sp-align-right">
+                <button class="sp-icon-eye sp-minimal sp-simple-icon"></button>
+                <div class="sp-tooltip sp-tooltip-below sp-inline">
+                  <button class="sp-icon-file sp-minimal sp-simple-icon"></button>
+                  <div class="sp-tooltip-overlay">Description of the updates goes here.</div>
+                </div>
+                <div class="sp-selector sp-small">
+                  <button class="sp-selector-trigger sp-icon-more sp-minimal sp-simple-icon"></button>
+                  <div class="sp-selector-overlay">
+                    <div class="sp-menu-dropdown sp-overlay">
+                      <a class="sp-menu-item">Set As Live Version</a>
+                      <a class="sp-menu-item">Set As Staging Version</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="sp-row sp-vcenter">
+              <div class="sp-col sp-span-1">Cndj</div>
+              <div class="sp-col sp-span-2">Jan. 1, 2017</div>
+              <div class="sp-col sp-span-2">12:53pm</div>
+              <div class="sp-col sp-span-3">Stephen Corby</div>
+              <div class="sp-col sp-span-1 sp-align-center"></div>
+              <div class="sp-col sp-span-1 sp-align-center"></div>
+              <div class="sp-col sp-span-2 sp-align-right">
+                <button class="sp-icon-eye sp-minimal sp-simple-icon"></button>
+                <div class="sp-tooltip sp-tooltip-below sp-inline">
+                  <button class="sp-icon-file sp-minimal sp-simple-icon"></button>
+                  <div class="sp-tooltip-overlay">Description of the updates goes here.</div>
+                </div>
+                <div class="sp-selector sp-small">
+                  <button class="sp-selector-trigger sp-icon-more sp-minimal sp-simple-icon"></button>
+                  <div class="sp-selector-overlay">
+                    <div class="sp-menu-dropdown sp-overlay">
+                      <a class="sp-menu-item">Set As Live Version</a>
+                      <a class="sp-menu-item">Set As Staging Version</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="sp-row sp-vcenter">
+              <div class="sp-col sp-span-1">Cndj</div>
+              <div class="sp-col sp-span-2">Jan. 1, 2017</div>
+              <div class="sp-col sp-span-2">12:53pm</div>
+              <div class="sp-col sp-span-3">Stephen Corby</div>
+              <div class="sp-col sp-span-1 sp-align-center"></div>
+              <div class="sp-col sp-span-1 sp-align-center"></div>
+              <div class="sp-col sp-span-2 sp-align-right">
+                <button class="sp-icon-eye sp-minimal sp-simple-icon"></button>
+                <div class="sp-tooltip sp-tooltip-below sp-inline">
+                  <button class="sp-icon-file sp-minimal sp-simple-icon"></button>
+                  <div class="sp-tooltip-overlay">Description of the updates goes here.</div>
+                </div>
+                <div class="sp-selector sp-small">
+                  <button class="sp-selector-trigger sp-icon-more sp-minimal sp-simple-icon"></button>
+                  <div class="sp-selector-overlay">
+                    <div class="sp-menu-dropdown sp-overlay">
+                      <a class="sp-menu-item">Set As Live Version</a>
+                      <a class="sp-menu-item">Set As Staging Version</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="sp-row sp-vcenter">
+              <div class="sp-col sp-span-1">Cndj</div>
+              <div class="sp-col sp-span-2">Jan. 1, 2017</div>
+              <div class="sp-col sp-span-2">12:53pm</div>
+              <div class="sp-col sp-span-3">Stephen Corby</div>
+              <div class="sp-col sp-span-1 sp-align-center"></div>
+              <div class="sp-col sp-span-1 sp-align-center"></div>
+              <div class="sp-col sp-span-2 sp-align-right">
+                <button class="sp-icon-eye sp-minimal sp-simple-icon"></button>
+                <div class="sp-tooltip sp-tooltip-below sp-inline">
+                  <button class="sp-icon-file sp-minimal sp-simple-icon"></button>
+                  <div class="sp-tooltip-overlay">Description of the updates goes here.</div>
+                </div>
+                <div class="sp-selector sp-small">
+                  <button class="sp-selector-trigger sp-icon-more sp-minimal sp-simple-icon"></button>
+                  <div class="sp-selector-overlay">
+                    <div class="sp-menu-dropdown sp-overlay">
+                      <a class="sp-menu-item">Set As Live Version</a>
+                      <a class="sp-menu-item">Set As Staging Version</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+               
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

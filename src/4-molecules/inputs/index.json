@@ -2,6 +2,20 @@
   "title": "Special Input Types",
   "description": "Text goes here.",
   "examples": [
+    {
+      "title": "Input Group",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-input-group",
+          "type": "box-target",
+          "classes": "",
+          "content": ["input-group.html"]
+        }
+      ],
+      "states": ["sp-primary", "sp-success", "sp-warning", "sp-danger"],
+      "modifiers": ["sp-small", "sp-large"]
+    },
   	{
   		"title": "Multi-Inputs",
   		"subTitle": "",

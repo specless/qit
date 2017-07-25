@@ -1506,9 +1506,7 @@ html {
 
 .sp-circle {
   border-radius: 50%;
-  height: auto;
-  position: relative;
-  padding-top: 100%; }
+  position: relative; }
   .sp-circle > * {
     position: absolute;
     top: 0;

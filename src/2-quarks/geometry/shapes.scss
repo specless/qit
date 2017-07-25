@@ -27,9 +27,9 @@
       background-color: transparent !important;
   } @else if ($shape == 'circle') {
       @include sp-border-radius($sp-circle-radius);
-      height: auto;
+      //height: auto;
       position: relative;
-      padding-top: 100%;
+      //padding-top: 100%;
 
       > * {
         position: absolute;

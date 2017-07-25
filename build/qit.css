@@ -1506,9 +1506,7 @@ html {
 
 .sp-circle {
   border-radius: 50%;
-  height: auto;
-  position: relative;
-  padding-top: 100%; }
+  position: relative; }
   .sp-circle > * {
     position: absolute;
     top: 0;
@@ -3403,9 +3401,7 @@ input[type='reset'] {
   input[type='reset'].sp-circle {
     max-height: unset;
     border-radius: 50%;
-    height: auto;
-    position: relative;
-    padding-top: 100%; }
+    position: relative; }
     button.sp-circle > *,
     .sp-button.sp-circle > *,
     input[type='button'].sp-circle > *,
@@ -4003,9 +3999,7 @@ input[type='reset'] {
   input[type='reset'].sp-circle {
     max-height: unset;
     border-radius: 50%;
-    height: auto;
-    position: relative;
-    padding-top: 100%; }
+    position: relative; }
     button.sp-circle > *,
     .sp-button.sp-circle > *,
     input[type='button'].sp-circle > *,
@@ -4203,9 +4197,9 @@ input[type='reset'] {
     input[type='button'].sp-minimal.sp-simple-icon,
     input[type='submit'].sp-minimal.sp-simple-icon,
     input[type='reset'].sp-minimal.sp-simple-icon {
-      background-color: transparent !important;
-      background-image: none !important;
-      border-color: transparent !important;
+      background-color: transparent;
+      background-image: none;
+      border-color: transparent;
       opacity: 0.75; }
       button.sp-minimal.sp-simple-icon:hover, button.sp-minimal.sp-simple-icon.sp-state-hover,
       .sp-button.sp-minimal.sp-simple-icon:hover,
@@ -5132,9 +5126,7 @@ input[type='reset'] {
     input[type='reset'].sp-minimal.sp-circle {
       max-height: unset;
       border-radius: 50%;
-      height: auto;
-      position: relative;
-      padding-top: 100%; }
+      position: relative; }
       button.sp-minimal.sp-circle > *,
       .sp-button.sp-minimal.sp-circle > *,
       input[type='button'].sp-minimal.sp-circle > *,

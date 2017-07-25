@@ -150,9 +150,9 @@ input[type='reset'] {
     @include sp-font-color(contrast);
 
     &.sp-simple-icon {
-      background-color: transparent !important;
-      background-image: none !important;
-      border-color: transparent !important;
+      background-color: transparent;
+      background-image: none;
+      border-color: transparent;
       opacity: 0.75;
 
       @include sp-state(hover) {

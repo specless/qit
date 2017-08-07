@@ -7,10 +7,17 @@
   <title>Example</title>
   <link rel="stylesheet" href="../../../qit.css">
   <style>
+
+    .header {
+      width: 100%;
+      height: 50px;
+      background-color: black;
+    }
     .ad-masthead {
       width: 100%;
       overflow: hidden;
       position: relative;
+      height: 700px;
     }
 
     .ad-masthead div, .ad-page-break div, .ad-in-post div {
@@ -74,6 +81,9 @@
     }
 
     @media screen and (max-width: 600px) {
+      .ad-masthead {
+        height: auto;
+      }
       .ad-masthead::before {
         padding-top: 100%;
       }
@@ -108,15 +118,16 @@
   
 
   <div id="scrollWrapper" class="sp-app-content">
-    <!-- <div class="ad-masthead">
+    <div class="ad-masthead">
       <div>
         <div>
           <div>
-            <iframe src="fmg-ad-one.html"></iframe>
+            <iframe src="fmg-ad-top.html"></iframe>
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
+    <div class="header"></div>
     <div class="sp-wrapper">
       <div class="sp-row sp-height-6">
 

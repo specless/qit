@@ -1,0 +1,253 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example</title>
+  <link rel="stylesheet" href="../../../qit.css">
+</head>
+
+<body class="sp-app">
+  
+  <div class="sp-app-content">
+
+    <div class="sp-wrapper">
+      <div class="sp-row">
+        <div class="sp-col sp-span-12">
+        <h2>Reporting Dimensions</h2>
+        </div>
+      </div>
+      <div class="sp-row">
+          <div class="sp-col sp-span-4">
+            <h4>Categories</h4>
+            <div id="categories" class="sp-rectangle sp-input" style="overflow-y: scroll; height: 400px;">
+              
+            </div>
+          </div>
+          <div class="sp-col sp-span-4">
+            <h4>Dimensions</h4>
+            <div id="dimensions" class="sp-rectangle sp-input" style="overflow-y: scroll; height: 400px;">
+              
+            </div>
+          </div>
+          <div class="sp-col sp-span-4">
+            <h4>Facets (Rows)</h4>
+            <div id="facets" class="sp-rectangle sp-input" style="overflow-y: scroll; height: 400px;">
+              
+            </div>
+          </div>
+      </div>
+      <div class="sp-row">
+        <div class="sp-col sp-span-12">
+        <h2>Definition</h2>
+        </div>
+      </div>
+      <div class="sp-row">
+        <div id="definitions" class="sp-col sp-span-12">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script>
+
+var uniq = function(a) {
+    var prims = {"boolean":{}, "number":{}, "string":{}}, objs = [];
+
+    return a.filter(function(item) {
+        var type = typeof item;
+        if(type in prims)
+            return prims[type].hasOwnProperty(item) ? false : (prims[type][item] = true);
+        else
+            return objs.indexOf(item) >= 0 ? false : objs.push(item);
+    });
+}
+
+var getCategories = function(records) {
+  var categories = [];
+  for ( var i = 0; i < records.length; i++) { 
+    categories.push(records[i].fields.category);
+  }
+  categories = uniq(categories);
+  return categories
+}
+
+var makeHtml = function(categories) {
+  var html = '';
+  for ( var i = 0; i < categories.length; i++) {
+    var category = categories[i];
+    html = html + '<a class="sp-menu-item" data-item="' + category + '">' + category + '</a>';
+  }
+  return html;
+}
+
+var getDimensions = function(records, category) {
+  var dimensions = [];
+  for ( var i = 0; i < records.length; i++) { 
+    if (records[i].fields.category == category) {
+      dimensions.push(records[i].fields.name)
+    }
+  }
+  return dimensions;
+}
+
+var getFacets = function(records, facetRecords, dimensionName) {
+  var facets;
+  var finalList = [];
+  for ( var i = 0; i < records.length; i++) { 
+    if (records[i].fields.name == dimensionName) {
+      if (records[i].fields.facets) {
+        if (records[i].fields.facets.length) {
+          facets = records[i].fields.facets;
+          for ( var j = 0; j < facets.length; j++) {
+            console.log("Looking For: " + facets[j]);
+            for (var k = 0; k < facetRecords.length; k++) {
+              //console.log(facetRecords[k].id, facetRecords[k].fields.Alias);
+              if (facetRecords[k].id == facets[j]) {
+                console.log(facetRecords[k].id, facets[j]);
+                // console.log(facetRecords[k].id)
+                finalList.push(facetRecords[k].fields.Alias);
+              }
+            }
+          }
+        }
+      }
+      if (records[i].fields.remainder_facets) {
+        finalList = finalList.concat(records[i].fields.remainder_facets);
+      }
+    }
+  }
+  return(finalList);
+}
+
+var getDefinitions = function(records, facetRecords, dimensionName) {
+  var facets = getFacets(records, facetRecords, dimensionName);
+
+  var definitions = [];
+
+  for ( var i = 0; i < facets.length; i++) {
+    for (var k = 0; k < facetRecords.length; k++) {
+      if (facets[i] == facetRecords[k].fields.Alias) {
+        var entry = {
+          name: facetRecords[k].fields.Alias,
+          def: facetRecords[k].fields.definition,
+        }
+        definitions.push(entry);
+      }
+    }
+  }
+  return definitions;
+}
+
+var getDefinition = function(records, facet) {
+  var result = {
+    name: facet,
+    def: "This is a remainder amount, reflective of impressions that do not match a dimension facet due to the specified reason."
+  };
+  
+  for (var k = 0; k < records.length; k++) {
+    if (facet == records[k].fields.Alias) {
+      result = {
+        name: records[k].fields.Alias,
+        def: records[k].fields.def
+      }
+    }
+  }
+
+  return result;
+}
+
+var pullData = function(type, callback) {
+  var url;
+  if (type == 'facets') {
+    url = "https://api.airtable.com/v0/appSaTuaGsC6a801O/Facets?api_key=keykRqlZRIbXJ7GRy";
+  } else if (type == 'dimensions') {
+    url = "https://api.airtable.com/v0/appSaTuaGsC6a801O/Dimensions?api_key=keykRqlZRIbXJ7GRy";
+  }
+  
+  $.getJSON( url, function( data ) {
+    var dimensions = data;
+
+    if (data.offset) {
+      $.getJSON(url + '&offset=' + data.offset, function( nextData ) {
+        dimensions.records = dimensions.records.concat(nextData.records);
+        if (nextData.offset) {
+          $.getJSON(url + '&offset=' + nextData.offset, function( finalData ) {
+            dimensions.records = dimensions.records.concat(finalData.records);
+            callback(dimensions);
+          });
+        } else {
+          callback(dimensions);
+        }
+      });
+    } else {
+      callback(dimensions);
+    }
+  });
+}
+
+var categoryContainer = document.getElementById('categories');
+var dimensionContainer = document.getElementById('dimensions');
+var facetContainer = document.getElementById('facets');
+
+
+var data = {}
+
+pullData('dimensions', function(dimensions) {
+  data.dimensions = dimensions;
+  console.log(data.dimensions.records);
+
+  pullData('facets', function( facets ) {
+    data.facets = facets;
+    var categories = getCategories(data.dimensions.records);
+    var categoryHtml = makeHtml(categories);
+
+    categoryContainer.innerHTML = categoryHtml;
+
+    $('#categories > .sp-menu-item').click(function() {
+      $('#categories > .sp-menu-item').removeClass('sp-state-active');
+      $(this).addClass('sp-state-active');
+      var cat = $(this).attr('data-item');
+      var dimensions = getDimensions(data.dimensions.records, cat);
+      var dimensionHtml = makeHtml(dimensions);
+      dimensionContainer.innerHTML = dimensionHtml;
+      facetContainer.innerHTML = '';
+
+      $('#dimensions > .sp-menu-item').click(function() {
+        $('#dimensions > .sp-menu-item').removeClass('sp-state-active');
+        $(this).addClass('sp-state-active');
+        var dimen = $(this).attr('data-item');
+        var facets = getFacets(data.dimensions.records, data.facets.records, dimen);
+        var facetHtml = makeHtml(facets);
+        facetContainer.innerHTML = facetHtml;
+        // var definitions = getDefinitions(data.dimensions.records, data.facets.records, dimen);
+        // var defHtml = '';
+        // for ( var i = 0; i < definitions.length; i++) {
+        //   defHtml = defHtml + '<h4>' + definitions[i].name + '</h2><p>' + definitions[i].def + '</p>';
+        //   $('#definitions').html(defHtml);
+        // }
+
+        $('#facets > .sp-menu-item').click(function() {
+          $('#facets > .sp-menu-item').removeClass('sp-state-active');
+          $(this).addClass('sp-state-active');
+          var facet = $(this).attr('data-item');
+          var definition = getDefinition(data.facets.records, facet);
+            $('#definitions').html('<h4>' + definition.name + '</h2><p>' + definition.def + '</p>');
+        });
+      });
+
+    });
+
+  });
+});
+
+
+</script>
+
+</body>
+</html>

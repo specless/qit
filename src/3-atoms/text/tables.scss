@@ -1,5 +1,6 @@
 .sp-data-table {
 	border-collapse:collapse;border-spacing:0;
+
 	.sp-data-table-head {
 		@include sp-bg-overlay-dark(3);
 		th {
@@ -25,6 +26,7 @@
 		td {
 			padding-top: 3px;
 			padding-bottom: 3px;
+			@include sp-font-color(contrast);
 		}
 
 		td:first-child {
@@ -38,6 +40,21 @@
 		.sp-inline-icon-placeholder::before {
 			@extend %icon-circle-arrow-down;
 		}
+	}
+
+	tr:not(.sp-data-table-category):not(.sp-data-table-total):not(.sp-data-table-head) {
+		&:hover {
+			@include sp-font-color(contrast);
+			@include sp-shadow(high, 0 0 .4em .07em);
+			
+			> td {
+				background-color: white;
+			}
+		}
+	}
+
+	tr > td:first-child {
+		@include sp-font-weight(semi-bold);
 	}
 
 	.sp-data-table-nested-1 {
@@ -72,7 +89,7 @@
 	}
 
 	.sp-data-table-delivered {
-		@include sp-bg-color(primary);
+		
 	}
 
 	.sp-data-table-plugin {

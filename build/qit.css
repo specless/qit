@@ -8883,16 +8883,17 @@ blockquote {
   0% {
     transform: translateX(-100%); }
   100% {
-    transform: translateX(100%); } }
+    transform: translateX(125%); } }
 
 .sp-app-loader {
   height: 0px;
   transition: 0.5s ease height;
   overflow: visible;
   position: relative;
-  z-index: 100; }
+  z-index: 100;
+  background-color: black !important; }
   .sp-app-loader:active, .sp-app-loader.sp-state-active {
-    height: 5px; }
+    height: 4px; }
     .sp-app-loader:active .sp-app-loader-message, .sp-app-loader.sp-state-active .sp-app-loader-message {
       opacity: 1; }
   .sp-app-loader .sp-app-loader-message {
@@ -8908,13 +8909,14 @@ blockquote {
     border-top-right-radius: 0;
     border-top-left-radius: 0; }
   .sp-app-loader .sp-app-loader-bar {
-    width: 100%;
+    width: 75%;
     height: 100%;
     animation-name: loader;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
+    animation-direction: alternate;
     animation-timing-function: linear;
-    background: linear-gradient(to right, rgba(0, 195, 220, 0) 0%, #00c3dc 15%, #00c3dc 85%, rgba(0, 195, 220, 0) 100%); }
+    background: linear-gradient(to right, rgba(0, 195, 220, 0) 1%, #00c3dc 9%, #00ec99 51%, #00c4da 93%, rgba(0, 195, 220, 0.86) 94%, rgba(0, 195, 220, 0) 100%); }
 
 .sp-app-bar {
   position: relative;

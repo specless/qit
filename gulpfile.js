@@ -2,7 +2,6 @@ const gulp = require('gulp');
 const replace = require('gulp-replace');
 const qit = require('./qit.js');
 
-
 gulp.task('pre', (done) => {
   qit(() => {done()}, true, true, false);
 });
@@ -17,7 +16,20 @@ gulp.task('copy', () => {
     .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('build', gulp.series('pre','copy', 'sass'));
+gulp.task('deploy', () => {
+    return gulp.src('./dist/**/*')
+        .pipe(gulp.dest('../styleguide/packages/qit-components/assets'))
+        .pipe(gulp.dest('../styleguide/packages/qit-pages/assets'))
+        .pipe(gulp.dest('../styleguide/packages/site/assets'));
+});
+
+gulp.task('build', gulp.series('pre','copy', 'sass', 'deploy'));
 gulp.task('build:watch', () => {
   return gulp.watch('./src/**/*.scss', gulp.series('build'));
 });
+
+gulp.task('compile', gulp.series('build'));
+gulp.task('compile:watch', () => {
+    return gulp.watch('./src/**/*.scss', gulp.series('build'));
+});
+

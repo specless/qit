@@ -2366,86 +2366,89 @@ select + label::before, .sp-selector > input[type='text'].sp-selector-trigger + 
 .sp-icon-sort-up::before, .sp-icon-after-sort-up::after, .sp-inline-icon-sort-up::before {
   content: "\F092"; }
 
-.sp-icon-star-filled::before, .sp-icon-after-star-filled::after, .sp-inline-icon-star-filled::before {
+.sp-icon-speed::before, .sp-icon-after-speed::after, .sp-inline-icon-speed::before {
   content: "\F093"; }
 
-.sp-input-group.sp-required .sp-input-group-label::before, .sp-icon-star::before, .sp-icon-after-star::after, .sp-inline-icon-star::before {
+.sp-icon-star-filled::before, .sp-icon-after-star-filled::after, .sp-inline-icon-star-filled::before {
   content: "\F094"; }
 
-.sp-icon-states::before, .sp-icon-after-states::after, .sp-inline-icon-states::before {
+.sp-input-group.sp-required .sp-input-group-label::before, .sp-icon-star::before, .sp-icon-after-star::after, .sp-inline-icon-star::before {
   content: "\F095"; }
 
-.sp-icon-status::before, .sp-icon-after-status::after, .sp-inline-icon-status::before {
+.sp-icon-states::before, .sp-icon-after-states::after, .sp-inline-icon-states::before {
   content: "\F096"; }
 
-.sp-icon-sun::before, .sp-icon-after-sun::after, .sp-inline-icon-sun::before {
+.sp-icon-status::before, .sp-icon-after-status::after, .sp-inline-icon-status::before {
   content: "\F097"; }
 
-.sp-icon-sync::before, .sp-icon-after-sync::after, .sp-inline-icon-sync::before {
+.sp-icon-sun::before, .sp-icon-after-sun::after, .sp-inline-icon-sun::before {
   content: "\F098"; }
 
-.sp-icon-templates::before, .sp-icon-after-templates::after, .sp-inline-icon-templates::before {
+.sp-icon-sync::before, .sp-icon-after-sync::after, .sp-inline-icon-sync::before {
   content: "\F099"; }
 
-.sp-icon-text::before, .sp-icon-after-text::after, .sp-inline-icon-text::before {
+.sp-icon-templates::before, .sp-icon-after-templates::after, .sp-inline-icon-templates::before {
   content: "\F09A"; }
 
-.sp-icon-time::before, .sp-icon-after-time::after, .sp-inline-icon-time::before {
+.sp-icon-text::before, .sp-icon-after-text::after, .sp-inline-icon-text::before {
   content: "\F09B"; }
 
-.sp-icon-timer::before, .sp-icon-after-timer::after, .sp-inline-icon-timer::before {
+.sp-icon-time::before, .sp-icon-after-time::after, .sp-inline-icon-time::before {
   content: "\F09C"; }
 
-.sp-icon-tools::before, .sp-icon-after-tools::after, .sp-inline-icon-tools::before {
+.sp-icon-timer::before, .sp-icon-after-timer::after, .sp-inline-icon-timer::before {
   content: "\F09D"; }
 
-.sp-icon-tracker::before, .sp-icon-after-tracker::after, .sp-inline-icon-tracker::before {
+.sp-icon-tools::before, .sp-icon-after-tools::after, .sp-inline-icon-tools::before {
   content: "\F09E"; }
 
-.sp-icon-trash::before, .sp-icon-after-trash::after, .sp-inline-icon-trash::before {
+.sp-icon-tracker::before, .sp-icon-after-tracker::after, .sp-inline-icon-tracker::before {
   content: "\F09F"; }
 
-.sp-icon-triangle-down::before, .sp-icon-after-triangle-down::after, .sp-inline-icon-triangle-down::before {
+.sp-icon-trash::before, .sp-icon-after-trash::after, .sp-inline-icon-trash::before {
   content: "\F0A0"; }
 
-.sp-icon-undo::before, .sp-icon-after-undo::after, .sp-inline-icon-undo::before {
+.sp-icon-triangle-down::before, .sp-icon-after-triangle-down::after, .sp-inline-icon-triangle-down::before {
   content: "\F0A1"; }
 
-.sp-icon-unlink::before, .sp-icon-after-unlink::after, .sp-inline-icon-unlink::before {
+.sp-icon-undo::before, .sp-icon-after-undo::after, .sp-inline-icon-undo::before {
   content: "\F0A2"; }
 
-.sp-icon-unlocked::before, .sp-icon-after-unlocked::after, .sp-inline-icon-unlocked::before {
+.sp-icon-unlink::before, .sp-icon-after-unlink::after, .sp-inline-icon-unlink::before {
   content: "\F0A3"; }
 
-.sp-icon-upload::before, .sp-icon-after-upload::after, .sp-inline-icon-upload::before {
+.sp-icon-unlocked::before, .sp-icon-after-unlocked::after, .sp-inline-icon-unlocked::before {
   content: "\F0A4"; }
 
-.sp-icon-user-guide::before, .sp-icon-after-user-guide::after, .sp-inline-icon-user-guide::before {
+.sp-icon-upload::before, .sp-icon-after-upload::after, .sp-inline-icon-upload::before {
   content: "\F0A5"; }
 
-.sp-icon-version::before, .sp-icon-after-version::after, .sp-inline-icon-version::before {
+.sp-icon-user-guide::before, .sp-icon-after-user-guide::after, .sp-inline-icon-user-guide::before {
   content: "\F0A6"; }
 
-.sp-icon-video::before, .sp-icon-after-video::after, .sp-inline-icon-video::before {
+.sp-icon-version::before, .sp-icon-after-version::after, .sp-inline-icon-version::before {
   content: "\F0A7"; }
 
-.sp-dialog.sp-warning .sp-dialog-icon::before, .sp-notification.sp-warning .sp-icon-placeholder::before, .sp-icon-warning::before, .sp-icon-after-warning::after, .sp-inline-icon-warning::before {
+.sp-icon-video::before, .sp-icon-after-video::after, .sp-inline-icon-video::before {
   content: "\F0A8"; }
 
-.sp-icon-weight::before, .sp-icon-after-weight::after, .sp-inline-icon-weight::before {
+.sp-dialog.sp-warning .sp-dialog-icon::before, .sp-notification.sp-warning .sp-icon-placeholder::before, .sp-icon-warning::before, .sp-icon-after-warning::after, .sp-inline-icon-warning::before {
   content: "\F0A9"; }
 
-.sp-icon-width-scale::before, .sp-icon-after-width-scale::after, .sp-inline-icon-width-scale::before {
+.sp-icon-weight::before, .sp-icon-after-weight::after, .sp-inline-icon-weight::before {
   content: "\F0AA"; }
 
-.sp-icon-width::before, .sp-icon-after-width::after, .sp-inline-icon-width::before {
+.sp-icon-width-scale::before, .sp-icon-after-width-scale::after, .sp-inline-icon-width-scale::before {
   content: "\F0AB"; }
 
-.sp-icon-workspace::before, .sp-icon-after-workspace::after, .sp-inline-icon-workspace::before {
+.sp-icon-width::before, .sp-icon-after-width::after, .sp-inline-icon-width::before {
   content: "\F0AC"; }
 
-.sp-icon-zoom-in::before, .sp-icon-after-zoom-in::after, .sp-inline-icon-zoom-in::before {
+.sp-icon-workspace::before, .sp-icon-after-workspace::after, .sp-inline-icon-workspace::before {
   content: "\F0AD"; }
+
+.sp-icon-zoom-in::before, .sp-icon-after-zoom-in::after, .sp-inline-icon-zoom-in::before {
+  content: "\F0AE"; }
 
 [class^='sp-icon-']::before, [class*=' sp-icon-']::before, [class^='sp-inline-icon-']::before, [class*=' sp-inline-icon-']::before, .sp-icon::before {
   font-family: 'Icon Font' !important;

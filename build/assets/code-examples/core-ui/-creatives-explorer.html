@@ -284,6 +284,7 @@
         <button tabindex="0" class="sp-icon-layout sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
         <button id="contexts-toggle" tabindex="0" class="sp-icon-location sp-minimal sp-simple-icon sp-small sp-primary sp-float-right "></button>
         <button id="reporting-toggle" tabindex="0" class="sp-icon-data sp-minimal sp-simple-icon sp-small sp-primary sp-float-right "></button>
+        <button id="performance-toggle" tabindex="0" class="sp-icon-speed sp-minimal sp-simple-icon sp-small sp-primary sp-float-right "></button>
         <button id="activity-toggle" tabindex="0" class="sp-icon-console sp-minimal sp-simple-icon sp-small sp-primary sp-float-right "></button>
         <!-- <button tabindex="0" class="sp-icon-code sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
         <span class="sp-border-left-base sp-float-right sp-margin-left-1">
@@ -585,6 +586,160 @@
         </div>
       </div>
     </div>
+    <div id="performance" class="sp-app-content-sidebar sp-flex" style="display:none">
+      <div class="sp-app-content-sidebar-menu sp-container-dark sp-alt-one sp-shadow-medium " style="width:220px;">
+        <div class="sp-padding-1 sp-container sp-label sp-color-contrast sp-flex sp-border-bottom-base">
+          <button tabindex="0" class="sp-icon-speed sp-minimal sp-simple-icon sp-primary sp-small sp-primary sp-float-left"></button>
+          <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Performance Snapshot</span>
+          <!-- <button tabindex="0" class="sp-icon-circle-close sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
+        </div>
+        <div class="sp-app-content-sidebar-menu-content sp-small">
+          <div class="sp-align-center sp-padding-vertical-2 sp-border-bottom-base">
+            <button class="sp-primary sp-margin-left-1">
+              Take New Snapshot
+            </button>
+          </div>
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Current Snapshot</div>
+          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base sp-color-contrast" style="font-size: 12px">
+            <div><i class="sp-inline-icon-time sp-margin-right-1"></i>Time Taken<span class="sp-float-right">3:32:12pm</span></div>
+            <div><i class="sp-inline-icon-width sp-margin-right-1"></i>Panel Width<span class="sp-float-right">300px</span></div>
+            <div><i class="sp-inline-icon-height sp-margin-right-1"></i>Panel Height<span class="sp-float-right">250px</span></div>
+          </div>
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Initial Load<span class="sp-float-right sp-width-3 sp-align-right sp-font-color-contrast" style="position: relative; text-transform: none">194kb</span></div>
+          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base sp-color-contrast" style="font-size: 12px">
+            <div><i class="sp-inline-icon-circle-arrow-down sp-margin-right-1"></i>Images
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 60%; top: 0; right: 0" class="sp-bg-color-primary"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">102kb</span>
+              </span>
+            </div>
+            <div class="sp-padding-1 sp-padding-left-2 sp-margin-vertical-1 sp-font-weight-semi-bold sp-bg-overlay-dark-2 sp-border-base" style="font-size: 12px">
+              <div>
+                <span><i class="sp-inline-icon-external sp-margin-right-1"></i>logo.png</span>
+                <span class="sp-float-right">12kb</span>
+              </div>
+              <div>
+                <span><i class="sp-inline-icon-external sp-margin-right-1"></i>background.jpg</span>
+                <span class="sp-float-right">60kb</span>
+              </div>
+              <div>
+                <span><i class="sp-inline-icon-external sp-margin-right-1"></i>button.svg</span>
+                <span class="sp-float-right">1kb</span>
+              </div>
+              <div>
+                <span><i class="sp-inline-icon-external sp-margin-right-1"></i>logo-large.png</span>
+                <span class="sp-float-right">22kb</span>
+              </div>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Video
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 12%; top: 0; right: 0" class="sp-bg-color-success"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">57kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Fonts
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 8%; top: 0; right: 0" class="sp-bg-color-warning"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">12kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Code
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 4%; top: 0; right: 0" class="sp-bg-color-danger"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">18kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Other
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 6%; top: 0; right: 0" class="sp-bg-overlay-dark-4"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">5kb</span>
+              </span>
+            </div>
+            <div class="sp-color-muted"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>White-Labeled
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-base">60kb</span>
+              </span>
+            </div>
+          </div>
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Subload<span class="sp-float-right sp-width-3 sp-align-right sp-font-color-contrast" style="position: relative; text-transform: none">194kb</span></div>
+          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base sp-color-contrast" style="font-size: 12px">
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Images
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 60%; top: 0; right: 0" class="sp-bg-color-primary"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">102kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Video
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 12%; top: 0; right: 0" class="sp-bg-color-success"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">57kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Fonts
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 8%; top: 0; right: 0" class="sp-bg-color-warning"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">12kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Code
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 4%; top: 0; right: 0" class="sp-bg-color-danger"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">18kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Other
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 6%; top: 0; right: 0" class="sp-bg-overlay-dark-4"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">5kb</span>
+              </span>
+            </div>
+            <div class="sp-color-muted"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>White-Labeled
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-base">60kb</span>
+              </span>
+            </div>
+          </div>
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Post-Interaction<span class="sp-float-right sp-width-3 sp-align-right sp-font-color-contrast" style="position: relative; text-transform: none">194kb</span></div>
+          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base sp-color-contrast" style="font-size: 12px">
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Images
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 60%; top: 0; right: 0" class="sp-bg-color-primary"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">102kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Video
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 12%; top: 0; right: 0" class="sp-bg-color-success"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">57kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Fonts
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 8%; top: 0; right: 0" class="sp-bg-color-warning"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">12kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Code
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 4%; top: 0; right: 0" class="sp-bg-color-danger"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">18kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Other
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 6%; top: 0; right: 0" class="sp-bg-overlay-dark-4"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">5kb</span>
+              </span>
+            </div>
+            <div class="sp-color-muted"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>White-Labeled
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-base">60kb</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="activity" class="sp-app-content-sidebar sp-flex" style="display:none">
       <div class="sp-app-content-sidebar-menu sp-container-dark sp-alt-one sp-shadow-medium " style="width:350px;">
         <div class="sp-padding-1 sp-container sp-label sp-color-contrast sp-flex sp-border-bottom-base">
@@ -710,6 +865,7 @@
     var contexts = document.getElementById('contexts-toggle');
     var reporting = document.getElementById('reporting-toggle');
     var activity = document.getElementById('activity-toggle');
+    var performance = document.getElementById('performance-toggle');
 
     contexts.addEventListener('click', function() {
       document.getElementById('contexts').setAttribute('style', 'display:block');
@@ -735,6 +891,15 @@
       document.querySelector('#activity-toggle.sp-state-active').addEventListener('click', function() {
         document.getElementById('activity').setAttribute('style', 'display:none')
         activity.setAttribute('class', 'sp-icon-console sp-minimal sp-simple-icon sp-small sp-primary sp-float-right');
+      });
+    });
+
+    performance.addEventListener('click', function() {
+      document.getElementById('performance').setAttribute('style', 'display:block');
+      performance.setAttribute('class', 'sp-icon-speed sp-minimal sp-simple-icon sp-small sp-primary sp-float-right sp-state-active');
+      document.querySelector('#performance-toggle.sp-state-active').addEventListener('click', function() {
+        document.getElementById('performance').setAttribute('style', 'display:none')
+        activity.setAttribute('class', 'sp-icon-speed sp-minimal sp-simple-icon sp-small sp-primary sp-float-right');
       });
     });
 

@@ -14,7 +14,7 @@
     <div class="sp-wrapper">
       <div class="sp-row">
         <div class="sp-col sp-span-12">
-        <h2>Reporting Dimensions</h2>
+        <h2 class="sp-border-bottom-base">Reporting Dimensions</h2>
         </div>
       </div>
       <div class="sp-row">
@@ -36,18 +36,72 @@
               
             </div>
           </div>
+          <!-- <div class="sp-col sp-span-3">
+            <h4>Definition</h4>
+            <div class="sp-rectangle sp-input" style="overflow-y: scroll; height: 400px;">
+              <div id="definitions" class="sp-padding-2 sp-large">
+
+              </div>
+            </div>
+          </div> -->
       </div>
       <div class="sp-row">
         <div class="sp-col sp-span-12">
-        <h2>Definition</h2>
+        <h3 class="sp-border-bottom-base">Dimension & Facet Definitions</h3>
         </div>
       </div>
       <div class="sp-row">
-        <div id="definitions" class="sp-col sp-span-12">
+        <div id="dimension-def" class="sp-col sp-span-6 sp-large">
+          
+        </div>
+
+        <div id="definitions" class="sp-col sp-span-6 sp-large">
           
         </div>
       </div>
-    </div>
+      <div class="sp-row">
+        <div class="sp-col sp-span-12">
+          <h2 class="sp-border-bottom-base">Reporting Metrics</h2>
+        </div>
+      </div>
+      <div class="sp-row">
+        <div class="sp-col sp-span-6">
+          <h4>Categories</h4>
+          <div id="metric-categories" class="sp-rectangle sp-input" style="overflow-y: scroll; height: 400px;">
+            
+          </div>
+        </div>
+        <div class="sp-col sp-span-6">
+          <h4>Metrics (Columns)</h4>
+          <div id="metrics" class="sp-rectangle sp-input" style="overflow-y: scroll; height: 400px;">
+            
+          </div>
+        </div>
+      </div>
+      <div class="sp-row">
+        <div class="sp-col sp-span-12">
+          <h3 class="sp-border-bottom-base">Metric Definition</h3>
+        </div>
+      </div>
+      <div class="sp-row">
+        <div class="sp-col sp-span-12">
+          <div class="sp-label sp-large">Metric Name</div>
+          <h4 id="metric-name" class="sp-color-contrast"></h4>
+
+          <div class="sp-label sp-large sp-margin-top-3">Metric ID</div>
+          <h4 id="metric-id" class="sp-color-contrast"></h4>
+
+          <div class="sp-label sp-large sp-margin-top-3">Metric Type</div>
+          <h4 id="metric-type" class="sp-color-contrast"></h4>
+
+          <div class="sp-label sp-large sp-margin-top-3">Metric Formula</div>
+          <h4 class="sp-color-contrast"><span id="first-part"></span><span id="operator" class="sp-margin-horizontal-2"></span><span id="second-part"></span></h4>
+
+          <div class="sp-label sp-large sp-margin-bottom-2 sp-margin-top-3">Definition</div>
+          <p id="metric-def" class="sp-large"></p>
+        </div>
+      </div>
+
   </div>
 
 <script
@@ -105,11 +159,10 @@ var getFacets = function(records, facetRecords, dimensionName) {
         if (records[i].fields.facets.length) {
           facets = records[i].fields.facets;
           for ( var j = 0; j < facets.length; j++) {
-            console.log("Looking For: " + facets[j]);
+            
             for (var k = 0; k < facetRecords.length; k++) {
               //console.log(facetRecords[k].id, facetRecords[k].fields.Alias);
               if (facetRecords[k].id == facets[j]) {
-                console.log(facetRecords[k].id, facets[j]);
                 // console.log(facetRecords[k].id)
                 finalList.push(facetRecords[k].fields.Alias);
               }
@@ -145,21 +198,34 @@ var getDefinitions = function(records, facetRecords, dimensionName) {
 }
 
 var getDefinition = function(records, facet) {
-  var result = {
-    name: facet,
-    def: "This is a remainder amount, reflective of impressions that do not match a dimension facet due to the specified reason."
-  };
   
   for (var k = 0; k < records.length; k++) {
     if (facet == records[k].fields.Alias) {
-      result = {
+      return {
         name: records[k].fields.Alias,
-        def: records[k].fields.def
+        def: records[k].fields.definition
       }
     }
   }
+}
 
-  return result;
+var getDimensionDefinition = function(records, dimen) {
+  
+  for (var k = 0; k < records.length; k++) {
+    if (dimen == records[k].fields.name) {
+      return {
+        name: records[k].fields.name,
+        def: records[k].fields.definition,
+        reporting: records[k].fields.reporting_stage,
+        data: records[k].fields.data_requirement,
+        id: records[k].fields.id,
+        type: records[k].fields.type,
+        form1: records[k].fields.formula_one, 
+        form2: records[k].fields.formula_two,
+        operator: records[k].fields.formula_operator
+      }
+    }
+  }
 }
 
 var pullData = function(type, callback) {
@@ -168,6 +234,8 @@ var pullData = function(type, callback) {
     url = "https://api.airtable.com/v0/appSaTuaGsC6a801O/Facets?api_key=keykRqlZRIbXJ7GRy";
   } else if (type == 'dimensions') {
     url = "https://api.airtable.com/v0/appSaTuaGsC6a801O/Dimensions?api_key=keykRqlZRIbXJ7GRy";
+  } else if (type == 'metrics') {
+    url = "https://api.airtable.com/v0/appSaTuaGsC6a801O/Metrics?api_key=keykRqlZRIbXJ7GRy";
   }
   
   $.getJSON( url, function( data ) {
@@ -200,7 +268,6 @@ var data = {}
 
 pullData('dimensions', function(dimensions) {
   data.dimensions = dimensions;
-  console.log(data.dimensions.records);
 
   pullData('facets', function( facets ) {
     data.facets = facets;
@@ -217,6 +284,8 @@ pullData('dimensions', function(dimensions) {
       var dimensionHtml = makeHtml(dimensions);
       dimensionContainer.innerHTML = dimensionHtml;
       facetContainer.innerHTML = '';
+      $('#dimension-def').html('');
+      $('#definitions').html('');
 
       $('#dimensions > .sp-menu-item').click(function() {
         $('#dimensions > .sp-menu-item').removeClass('sp-state-active');
@@ -231,18 +300,59 @@ pullData('dimensions', function(dimensions) {
         //   defHtml = defHtml + '<h4>' + definitions[i].name + '</h2><p>' + definitions[i].def + '</p>';
         //   $('#definitions').html(defHtml);
         // }
+        var def = getDimensionDefinition(data.dimensions.records, dimen);
+        $('#dimension-def').html('<div class="sp-label">Dimension</div><h4 class="sp-color-contrast">' + def.name + '</h4><div class="sp-label sp-margin-top-3">Reporting Stage</div><h4 class="sp-color-contrast" style="text-transform:capitalize">' + def.reporting + '</h4><div class="sp-label sp-margin-top-3">Reporting Requirement</div><h4 class="sp-color-contrast" style="text-transform:capitalize">' + def.data + '</h4><div class="sp-label sp-margin-top-3 sp-margin-bottom-2">Definition</div><p>' + def.def + '</p>');
+        $('#definitions').html('');
 
         $('#facets > .sp-menu-item').click(function() {
           $('#facets > .sp-menu-item').removeClass('sp-state-active');
           $(this).addClass('sp-state-active');
           var facet = $(this).attr('data-item');
           var definition = getDefinition(data.facets.records, facet);
-            $('#definitions').html('<h4>' + definition.name + '</h2><p>' + definition.def + '</p>');
+          $('#definitions').html('<div class="sp-label">Facet</div><h4 class="sp-color-contrast">' + definition.name + '</h4><div class="sp-label sp-margin-top-3 sp-margin-bottom-2">Definition</div><p>' + definition.def + '</p>');
         });
       });
 
     });
 
+  });
+});
+
+pullData('metrics', function(metrics) {
+  var categories = getCategories(metrics.records);
+  var categoryHtml = makeHtml(categories);
+  $('#metric-categories').html(categoryHtml);
+
+  $('#metric-categories > .sp-menu-item').click(function() {
+    $('#metric-categories > .sp-menu-item').removeClass('sp-state-active');
+    $(this).addClass('sp-state-active');
+    var cat = $(this).attr('data-item');
+    var metricList = getDimensions(metrics.records, cat);
+    var metricHtml = makeHtml(metricList);
+    $('#metrics').html(metricHtml);
+    $('#metrics > .sp-menu-item').click(function() {
+      $('#metrics > .sp-menu-item').removeClass('sp-state-active');
+      $(this).addClass('sp-state-active');
+      var met = $(this).attr('data-item');
+      var def = getDimensionDefinition(metrics.records, met);
+
+      $('#metric-name').html('');
+      $('#metric-id').html('');
+      $('#metric-type').html('');
+      $('#operator').html('');
+      $('#metric-def').html('');
+      $('#first-part').html('');
+      $('#second-part').html('');
+      
+      $('#metric-name').html(def.name);
+      $('#metric-id').html(def.id);
+      $('#metric-type').html(def.type);
+      $('#operator').html(def.operator);
+      $('#metric-def').html(def.def);
+      $('#first-part').html(def.form1);
+      $('#second-part').html(def.form2);
+
+    });
   });
 });
 

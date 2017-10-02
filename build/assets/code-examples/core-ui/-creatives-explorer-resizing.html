@@ -5,6 +5,95 @@
   <meta charset="utf-8">
   <title>Example</title>
   <link rel="stylesheet" href="../../../qit.css">
+  <style>
+    #container {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  position: relative;
+}
+
+.is-draggable, .is-resizable {
+  cursor: grab;
+  cursor: -webkit-grab;
+}
+
+.dragging .is-draggable {
+  cursor: grabbing !important;
+  cursor: -webkit-grabbing !important;
+}
+
+*:not(.is-draggable, .is-resizable) {
+  cursor: auto;
+}
+
+#canvas {
+  width: 10000px;
+  height: 10000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#content {
+  width: 300px;
+  height: 250px;
+  position: absolute;
+  top: calc(100vh + 50px);
+  left: calc(100vw + 50px);
+  cursor: auto;
+  background-color: blue;
+}
+
+/*.ui-resizable-handle {
+  transform: scale(3);
+}*/
+
+#container {
+  position: relative;
+}
+
+#preview {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255,255,255,0.15);
+  border: 2px solid rgba(255,255,255,0.15);
+}
+
+#viewable {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: rgba(255,255,255,0.25);
+  border: 2px solid rgba(255,255,255,0.25);
+}
+
+#box {
+  background-color: #00C3DC;
+  width: 3px;
+  height: 2.5px;
+  position: absolute;
+}
+
+#preview #recenter {
+  opacity: 0;
+  transition: 0.5s ease opacity;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+}
+
+#preview:hover #recenter {
+  opacity: 1;
+}
+  </style>
 </head>
 
 <body class="sp-app sp-technical">
@@ -137,7 +226,7 @@
     </div>
   </div> -->
 
-  <div class="sp-app-content sp-flex">
+  <div class="sp-app-content sp-flex" style="overflow: hidden">
     <div class="sp-app-content-sidebar sp-flex">
       <div class="sp-app-content-sidebar-icon-menu sp-container-dark sp-contrast sp-border-top-base">
         <a href="-creatives-explorer.html" class="sp-button sp-minimal sp-simple-icon sp-icon-eye sp-primary sp-state-active"></a>
@@ -432,22 +521,54 @@
           <span class="sp-padding-horizontal-2 sp-border-left-base sp-color-muted">Layout Scaling<span class="sp-margin-left-1 sp-color-base">0.5x</span><i class="sp-margin-left-1 sp-inline-icon-solid-unlock"></i></span>
         </div>
       </div>
-      <div class="sp-app-content-main-scroll sp-container sp-alt-one">
-        <div class="sp-preview-panel sp-overlay sp-rectangle sp-contrast">
-          <div class="sp-preview-panel-header sp-font-weight-semi-bold sp-flex">
-            <div class="sp-preview-panel-header-left sp-inline-icon-sync"></div>
-            <div class="sp-preview-panel-header-middle sp-align-center"><span class="sp-color-muted">Secondary<i class="sp-inline-icon-arrow-right"></i> Vertical</span><i class="sp-margin-left-1 sp-inline-icon-solid-unlock sp-color-muted"></i></div>
-            <div class="sp-preview-panel-header-right sp-inline-icon-more"></div>
+      <div class="sp-app-content-main-scroll sp-container sp-alt-one" style="padding: 0">
+        <div style="width: 100%;height: 100%; position: relative">
+          <div id="container">
+            <div id="canvas" class="canvas is-draggable">
+              <div id="content">
+                <div class="sp-preview-panel sp-overlay sp-rectangle sp-contrast" style="width: calc(100% + 14px); height: calc(100% + 27px); top: -20px; left: -7px; box-sizing: border-box">
+                  <div class="sp-preview-panel-header sp-font-weight-semi-bold sp-flex">
+                    <div class="sp-preview-panel-header-left sp-inline-icon-sync" style="cursor:pointer"></div>
+                    <div class="sp-preview-panel-header-middle sp-align-center is-draggable" style="cursor: grab; cursor: -webkit-grab;"><span class="sp-color-muted is-draggable">Secondary<i class="sp-inline-icon-arrow-right is-draggable"></i> Vertical</span><i class="sp-margin-left-1 sp-inline-icon-solid-unlock sp-color-muted" style="cursor:pointer"></i></div>
+                    <div class="sp-preview-panel-header-right sp-inline-icon-more" style="cursor:pointer"></div>
+                  </div>
+                  <!-- <div class="sp-preview-panel-down sp-overlay sp-icon-drag-both"></div>
+                  <div class="sp-preview-panel-right sp-overlay sp-icon-drag-both"></div>
+                  <div class="sp-preview-panel-diag sp-overlay sp-icon-resize"></div> -->
+                </div>
+                <div class="sp-preview-panel-content sp-shadow-low-inset" style="width: 100%; height: 100%">
+                  <div class="sp-preview-panel-grid"></div>
+                  <div class="sp-preview-panel-ad"><!-- AD GOES HERE --></div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="sp-preview-panel-down sp-overlay sp-icon-drag-both"></div>
-          <div class="sp-preview-panel-right sp-overlay sp-icon-drag-both"></div>
-          <div class="sp-preview-panel-diag sp-overlay sp-icon-resize"></div>
-          <div class="sp-preview-panel-content sp-shadow-low-inset" style="width: 300px; height: 250px">
-            <div class="sp-preview-panel-grid"></div>
-            <div class="sp-preview-panel-ad"><!-- iFrame Goes here--></div>
+          <div id="preview">
+            <div id="viewable">
+            </div>
+            <div id="box">
+
+            </div>
+            <button id="recenter" class="sp-icon-center-target sp-rounded sp-minimal"></button>
           </div>
         </div>
       </div>
+        <!-- <div id="canvas" class="sp-app-content-main-scroll sp-container sp-alt-one">
+          <div class="sp-preview-panel sp-overlay sp-rectangle sp-contrast">
+            <div class="sp-preview-panel-header sp-font-weight-semi-bold sp-flex">
+              <div class="sp-preview-panel-header-left sp-inline-icon-sync"></div>
+              <div class="sp-preview-panel-header-middle sp-align-center"><span class="sp-color-muted">Secondary<i class="sp-inline-icon-arrow-right"></i> Vertical</span><i class="sp-margin-left-1 sp-inline-icon-solid-unlock sp-color-muted"></i></div>
+              <div class="sp-preview-panel-header-right sp-inline-icon-more"></div>
+            </div>
+            <div class="sp-preview-panel-down sp-overlay sp-icon-drag-both"></div>
+            <div class="sp-preview-panel-right sp-overlay sp-icon-drag-both"></div>
+            <div class="sp-preview-panel-diag sp-overlay sp-icon-resize"></div>
+            <div id="content" class="sp-preview-panel-content sp-shadow-low-inset" style="width: 300px; height: 250px">
+              <div class="sp-preview-panel-grid"></div>
+              <div class="sp-preview-panel-ad"></div>
+            </div>
+          </div>
+        </div> -->
       <!-- <div class="sp-app-content-main-footer sp-container">
         Test
       </div> -->
@@ -853,7 +974,105 @@
       </div>
     </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script>
+    var container = document.getElementById('container'),
+    canvas = document.getElementById('canvas'),
+    content = document.getElementById('content'),
+    recenter = document.getElementById('recenter');
 
+    function setPosition(recenter) {
+      $(canvas).css('width', $(window).width() + 5000);
+      $(canvas).css('height', $(window).height() + 5000);
+      $(content).css('top', $(window).height() + 50 + 'px');
+      $(content).css('left', $(window).width() + 50 + 'px');
+      
+      if (recenter) {
+        container.scrollTop = $(window).height();
+        container.scrollLeft = $(window).width();
+      }
+    }
+
+    $(recenter).click(function() {
+      setPosition(true);
+    });
+
+    function updatePreview() {
+      
+      $('#preview').width($(canvas).width()/100);
+      $('#preview').height($(canvas).height()/100);
+      $('#viewable').width($(container).width()/100);
+      $('#viewable').height($(container).height()/100);
+      $('#viewable').css('top', container.scrollTop/100 + 'px');
+      $('#viewable').css('left', container.scrollLeft/100 + 'px');
+      $('#box').width($(content).width()/100);
+      $('#box').height($(content).height()/100);
+      $('#box').css('top', ($(window).height() + 50)/100);
+      $('#box').css('left', ($(window).width() + 50)/100);
+      
+    }
+
+    $(window).resize(function() {
+      setPosition();
+      updatePreview();
+    });
+
+    $(container).scroll(function() {
+      updatePreview();
+    });
+
+    setPosition(true);
+    updatePreview();
+
+
+    $(content).resizable({
+      containment: container,
+      handles: "e, s, se",
+      minWidth: 20,
+      minHeight: 20,
+      maxWidth: 5000,
+      maxHeight: 5000,
+      classes: {
+        "ui-resizable-se": "sp-preview-panel-diag sp-overlay sp-icon-resize is-resizable",
+        "ui-resizable-s": "sp-preview-panel-down sp-overlay sp-icon-drag-both is-resizable",
+        "ui-resizable-e": "sp-preview-panel-right sp-overlay sp-icon-drag-both is-resizable"
+      }
+    });
+
+    function drag() {
+      var isDragging = false;
+      var isCanvas = false
+      var prevX;
+      var prevY;
+      $(canvas)
+      .mousedown(function(event) {
+          isDragging = true;
+          isCanvas = $(event.target).hasClass('is-draggable');
+          prevX = event.screenX;
+          prevY = event.screenY;
+          $(container).addClass('dragging');
+      })
+      .mousemove(function(event) {
+          if (isDragging && isCanvas) {
+           var distanceX = event.screenX - prevX;
+           var distanceY = event.screenY - prevY;
+           container.scrollTop = container.scrollTop - distanceY;
+           container.scrollLeft = container.scrollLeft - distanceX;
+           prevX = event.screenX;
+           prevY = event.screenY;
+           $(container).addClass('dragging');
+          }
+       })
+      .mouseup(function(event) {
+          isDragging = false;
+          isCanvas = false;
+          $(container).removeClass('dragging');
+      });
+    }
+
+    drag();
+  </script>
   <script>
     var contexts = document.getElementById('contexts-toggle');
     var reporting = document.getElementById('reporting-toggle');

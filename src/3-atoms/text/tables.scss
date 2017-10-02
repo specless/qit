@@ -6,6 +6,7 @@
 		th {
 			font-weight: 600;
 			text-align: left;
+			@include sp-font-color(contrast);
 			@include sp-padding(1);
 			&:first-child {
 				text-align: left;
@@ -15,7 +16,8 @@
 
 	.sp-data-table-total {
 		@include sp-bg-overlay-dark(2);
-
+		@include sp-font-color(contrast);
+		border-bottom: 2px solid rgba(0,0,0,0.5);
 		td:first-child {
 			font-weight: 600;
 			text-align: left;

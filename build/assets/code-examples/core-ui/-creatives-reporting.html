@@ -112,13 +112,10 @@
     <div class="sp-wrapper">
       <div class="sp-row">
         <div class="sp-col sp-span-3 sp-margin-top-1">
-          <h5 class="sp-contrast sp-border-bottom-base sp-padding-bottom-2 sp-label sp-margin-top-2">Snapshots</h5>
-          <a class="sp-col sp-span-12 sp-menu-item sp-state-active">Overview</a>
-          <a class="sp-col sp-span-12 sp-menu-item">Reports</a>
-          <a class="sp-col sp-span-12 sp-menu-item">Tags</a>
-          <a class="sp-col sp-span-12 sp-menu-item">Campaigns</a>
-          <a class="sp-col sp-span-12 sp-menu-item">Ad Server Line Items</a>
-        </div> 
+          <h5 class="sp-contrast sp-border-bottom-base sp-padding-bottom-2 sp-label sp-margin-top-2">Reporting</h5>
+          <a href="-creatives-reporting.html" class="sp-col sp-span-12 sp-menu-item sp-state-active">Performance Overview</a>
+          <a href="-creatives-reporting-reports.html" class="sp-col sp-span-12 sp-menu-item">Saved Reports</a>
+        </div>
         <div class="sp-col sp-span-9">
           <h5 class="sp-contrast sp-border-bottom-base sp-padding-bottom-2">Overview to Date</h5>
           <!-- <div class="sp-overlay sp-rectangle">
@@ -146,7 +143,7 @@
             </table>
           </div> -->
 
-          <div class="sp-row sp-container-dark sp-rectangle" style="transform: scale(0.75)">
+          <div class="sp-row sp-container-dark sp-rectangle">
             <div class="sp-col sp-span-4 sp-color-contrast">
               <div class="sp-overlay">
                 <div class="sp-label sp-padding-2 sp-small">Requested Impressions<br><br></div>
@@ -186,86 +183,426 @@
           </div>
 
 
-
-          <h5 class="sp-contrast sp-border-bottom-base sp-padding-bottom-2">Saved Reports</h5>
-          <div class="sp-overlay sp-rectangle">
-            <table class="sp-data-table sp-small" style="min-width: 100%;">
-              <tr class="sp-data-table-head">
-                <th  style="min-width: 200px;"></th>
-                <th class="sp-data-table-requested">Requested Impressions</th>
-                <th class="sp-data-table-delivered">Delivery Rate</th>
-                <th class="sp-data-table-plugin">Viewability Rate</th>
-                <th class="sp-data-table-measurable">CTR</th>
-                <th class="sp-data-table-enhanced">Interaction Rate</th>
-                <th>Video Completion Rate</th>
-                <th></th>
-              </tr>
-              <tr class="">
-                <td style="min-width: 200px;">Example Report</td>
-                <td>900,000</td>
-                <td>94.6%</td>
-                <td>81.4%</td>
-                <td>3.8%</td>
-                <td>11%</td>
-                <td>14%</td>
-                <td><a href="-data-viewer.html" class="sp-button sp-small sp-float-right sp-icon-data sp-primary"></a></td>
-              </tr>
-              <tr class="">
-                <td style="min-width: 200px;">Another Example Report</td>
-                <td>900,000</td>
-                <td>94.6%</td>
-                <td>81.4%</td>
-                <td>3.8%</td>
-                <td>11%</td>
-                <td>14%</td>
-                <td><a href="-data-viewer.html" class="sp-button sp-small sp-float-right sp-icon-data sp-primary"></a></td>
-              </tr>
-              <tr class="">
-                <td style="min-width: 200px;">Example Report 2</td>
-                <td>900,000</td>
-                <td>94.6%</td>
-                <td>81.4%</td>
-                <td>3.8%</td>
-                <td>11%</td>
-                <td>14%</td>
-                <td><a href="-data-viewer.html" class="sp-button sp-small sp-float-right sp-icon-data sp-primary"></a></td>
-              </tr>
-              <tr class="">
-                <td style="min-width: 200px;">Yet Another Example Report</td>
-                <td>900,000</td>
-                <td>94.6%</td>
-                <td>81.4%</td>
-                <td>3.8%</td>
-                <td>11%</td>
-                <td>14%</td>
-                <td><a href="-data-viewer.html" class="sp-button sp-small sp-float-right sp-icon-data sp-primary"></a></td>
-              </tr>
-              <tr class="">
-                <td style="min-width: 200px;">Example Report 3</td>
-                <td>900,000</td>
-                <td>94.6%</td>
-                <td>81.4%</td>
-                <td>3.8%</td>
-                <td>11%</td>
-                <td>14%</td>
-                <td><a href="-data-viewer.html" class="sp-button sp-small sp-float-right sp-icon-data sp-primary"></a></td>
-              </tr>
-              <tr class="">
-                <td style="min-width: 200px;">Example Report 4</td>
-                <td>900,000</td>
-                <td>94.6%</td>
-                <td>81.4%</td>
-                <td>3.8%</td>
-                <td>11%</td>
-                <td>14%</td>
-                <td><a href="-data-viewer.html" class="sp-button sp-small sp-float-right sp-icon-data sp-primary"></a></td>
-              </tr>
-            </table>
+          <div class="sp-flex sp-border-bottom-base sp-margin-top-3 sp-margin-bottom-3" style="align-items: center">
+            <h5 class="sp-color-contrast" style="flex:1">Snapshots</h5>
+            <div class="sp-margin-top-3 sp-float-right sp-small">
+              <a class="sp-horizontal sp-menu-item sp-state-active">By Tag</a>
+              <a class="sp-horizontal sp-menu-item">By Campaign</a>
+              <a class="sp-horizontal sp-menu-item">By Format</a>
+              <a class="sp-horizontal sp-menu-item">By Ad Server Line Item</a>
+            </div>
           </div>
+
+          <div class="sp-row sp-overlay sp-rectangle" style="max-height:85px; margin-bottom: 85px !important;">
+            <span style="display: inline-block;position: absolute; top: 8px; right:8px">
+              <a href="-creatives-publish-tag.html" class="sp-button sp-small sp-icon-paper-plane sp-margin-right-1">View Tag</a>
+              <a href="-data-viewer.html" class="sp-button sp-small sp-icon-data">View Data</a>
+            </span>
+            <div class="sp-col sp-span-3">
+              <div class="sp-large sp-color-contrast sp-ellipsis" style="min-width: 300%">
+               Tag Name
+              </div>
+              <div class="sp-small sp-padding-vertical-2">
+                <i class="sp-inline-icon-circle sp-margin-right-1"></i>Status
+              </div>
+            </div>
+            <div class="sp-col sp-span-9">
+              <div class="sp-row sp-rectangle" style="width: 150%;transform: scale(0.65) translate(-25%, 20px)">
+                <div class="sp-col sp-span-4 sp-color-contrast">
+                  <div class="sp-overlay">
+                    <div class="sp-label sp-padding-2 sp-small">Requested Impressions<br><br></div>
+                    <div class="sp-padding-2 sp-bg-overlay-light-1 "><h1 class="sp-margin-0">1,234,567<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)"></sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col sp-color-contrast" style="width:13.2%">
+                  <div class="sp-overlay sp-primary">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-primary sp-align-right">Delivery<br>Rate</div>
+                    <div class="sp-padding-2 sp-bg-overlay-dark-5 sp-color-primary sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col sp-color-contrast" style="width:13.2%">
+                  <div class="sp-overlay sp-success">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-success sp-align-right" style="min-">CTR<br><br></div>
+                    <div class="sp-padding-2 sp-bg-overlay-dark-4 sp-color-success sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col sp-color-contrast" style="width:13.2%">
+                  <div class="sp-overlay sp-warning">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-warning sp-align-right">Viewability<br>Rate</div>
+                    <div class="sp-padding-2 sp-bg-overlay-dark-4 sp-color-warning sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col sp-color-contrast" style="width:13.2%">
+                  <div class="sp-overlay sp-danger">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-danger sp-align-right">Interaction<br>Rate</div>
+                    <div class="sp-padding-2 sp-bg-overlay-dark-4 sp-color-danger sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col" style="width:13.2%">
+                  <div class="sp-overlay sp-bg-color-grey">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-grey sp-align-right sp-color-contrast">Video<br>Compl. Rate</div>
+                    <div class="sp-padding-2 sp-bg-color-grey sp-bg-overlay-dark-3 sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sp-row sp-overlay sp-rectangle" style="max-height:85px; margin-bottom: 85px !important;">
+            <span style="display: inline-block;position: absolute; top: 8px; right:8px">
+              <a href="-creatives-publish-tag.html" class="sp-button sp-small sp-icon-paper-plane sp-margin-right-1">View Tag</a>
+              <a href="-data-viewer.html" class="sp-button sp-small sp-icon-data">View Data</a>
+            </span>
+            <div class="sp-col sp-span-3">
+              <div class="sp-large sp-color-contrast sp-ellipsis" style="min-width: 300%">
+                This is a really really long tag name and it is long on purpose to overflow the bounds.
+              </div>
+              <div class="sp-small sp-padding-vertical-2">
+                <i class="sp-inline-icon-circle sp-margin-right-1"></i>Status
+              </div>
+            </div>
+            <div class="sp-col sp-span-9">
+              <div class="sp-row sp-rectangle" style="width: 150%;transform: scale(0.65) translate(-25%, 20px)">
+                <div class="sp-col sp-span-4 sp-color-contrast">
+                  <div class="sp-overlay">
+                    <div class="sp-label sp-padding-2 sp-small">Requested Impressions<br><br></div>
+                    <div class="sp-padding-2 sp-bg-overlay-light-1 "><h1 class="sp-margin-0">1,234,567<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)"></sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col sp-color-contrast" style="width:13.2%">
+                  <div class="sp-overlay sp-primary">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-primary sp-align-right">Delivery<br>Rate</div>
+                    <div class="sp-padding-2 sp-bg-overlay-dark-4 sp-color-primary sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col sp-color-contrast" style="width:13.2%">
+                  <div class="sp-overlay sp-success">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-success sp-align-right" style="min-">CTR<br><br></div>
+                    <div class="sp-padding-2 sp-bg-overlay-dark-4 sp-color-success sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col sp-color-contrast" style="width:13.2%">
+                  <div class="sp-overlay sp-warning">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-warning sp-align-right">Viewability<br>Rate</div>
+                    <div class="sp-padding-2 sp-bg-overlay-dark-4 sp-color-warning sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col sp-color-contrast" style="width:13.2%">
+                  <div class="sp-overlay sp-danger">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-danger sp-align-right">Interaction<br>Rate</div>
+                    <div class="sp-padding-2 sp-bg-overlay-dark-4 sp-color-danger sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col" style="width:13.2%">
+                  <div class="sp-overlay sp-bg-color-grey">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-grey sp-align-right sp-color-contrast">Video<br>Compl. Rate</div>
+                    <div class="sp-padding-2 sp-bg-color-grey sp-bg-overlay-dark-3 sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sp-row sp-overlay sp-rectangle" style="max-height:85px; margin-bottom: 85px !important;">
+            <span style="display: inline-block;position: absolute; top: 8px; right:8px">
+              <a href="-creatives-publish-tag.html" class="sp-button sp-small sp-icon-paper-plane sp-margin-right-1">View Tag</a>
+              <a href="-data-viewer.html" class="sp-button sp-small sp-icon-data">View Data</a>
+            </span>
+            <div class="sp-col sp-span-3">
+              <div class="sp-large sp-color-contrast sp-ellipsis" style="min-width: 300%">
+               Tag Name
+              </div>
+              <div class="sp-small sp-padding-vertical-2">
+                <i class="sp-inline-icon-circle sp-margin-right-1"></i>Status
+              </div>
+            </div>
+            <div class="sp-col sp-span-9">
+              <div class="sp-row sp-rectangle" style="width: 150%;transform: scale(0.65) translate(-25%, 20px)">
+                <div class="sp-col sp-span-4 sp-color-contrast">
+                  <div class="sp-overlay">
+                    <div class="sp-label sp-padding-2 sp-small">Requested Impressions<br><br></div>
+                    <div class="sp-padding-2 sp-bg-overlay-light-1 "><h1 class="sp-margin-0">1,234,567<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)"></sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col sp-color-contrast" style="width:13.2%">
+                  <div class="sp-overlay sp-primary">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-primary sp-align-right">Delivery<br>Rate</div>
+                    <div class="sp-padding-2 sp-bg-overlay-dark-4 sp-color-primary sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col sp-color-contrast" style="width:13.2%">
+                  <div class="sp-overlay sp-success">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-success sp-align-right" style="min-">CTR<br><br></div>
+                    <div class="sp-padding-2 sp-bg-overlay-dark-4 sp-color-success sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col sp-color-contrast" style="width:13.2%">
+                  <div class="sp-overlay sp-warning">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-warning sp-align-right">Viewability<br>Rate</div>
+                    <div class="sp-padding-2 sp-bg-overlay-dark-4 sp-color-warning sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col sp-color-contrast" style="width:13.2%">
+                  <div class="sp-overlay sp-danger">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-danger sp-align-right">Interaction<br>Rate</div>
+                    <div class="sp-padding-2 sp-bg-overlay-dark-4 sp-color-danger sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col" style="width:13.2%">
+                  <div class="sp-overlay sp-bg-color-grey">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-grey sp-align-right sp-color-contrast">Video<br>Compl. Rate</div>
+                    <div class="sp-padding-2 sp-bg-color-grey sp-bg-overlay-dark-3 sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sp-row sp-overlay sp-rectangle" style="max-height:85px; margin-bottom: 85px !important;">
+            <span style="display: inline-block;position: absolute; top: 8px; right:8px">
+              <a href="-creatives-publish-tag.html" class="sp-button sp-small sp-icon-paper-plane sp-margin-right-1">View Tag</a>
+              <a href="-data-viewer.html" class="sp-button sp-small sp-icon-data">View Data</a>
+            </span>
+            <div class="sp-col sp-span-3">
+              <div class="sp-large sp-color-contrast sp-ellipsis" style="min-width: 300%">
+               Tag Name
+              </div>
+              <div class="sp-small sp-padding-vertical-2">
+                <i class="sp-inline-icon-circle sp-margin-right-1"></i>Status
+              </div>
+            </div>
+            <div class="sp-col sp-span-9">
+              <div class="sp-row sp-rectangle" style="width: 150%;transform: scale(0.65) translate(-25%, 20px)">
+                <div class="sp-col sp-span-4 sp-color-contrast">
+                  <div class="sp-overlay">
+                    <div class="sp-label sp-padding-2 sp-small">Requested Impressions<br><br></div>
+                    <div class="sp-padding-2 sp-bg-overlay-light-1 "><h1 class="sp-margin-0">1,234,567<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)"></sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col sp-color-contrast" style="width:13.2%">
+                  <div class="sp-overlay sp-primary">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-primary sp-align-right">Delivery<br>Rate</div>
+                    <div class="sp-padding-2 sp-bg-overlay-dark-4 sp-color-primary sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col sp-color-contrast" style="width:13.2%">
+                  <div class="sp-overlay sp-success">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-success sp-align-right" style="min-">CTR<br><br></div>
+                    <div class="sp-padding-2 sp-bg-overlay-dark-4 sp-color-success sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col sp-color-contrast" style="width:13.2%">
+                  <div class="sp-overlay sp-warning">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-warning sp-align-right">Viewability<br>Rate</div>
+                    <div class="sp-padding-2 sp-bg-overlay-dark-4 sp-color-warning sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col sp-color-contrast" style="width:13.2%">
+                  <div class="sp-overlay sp-danger">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-danger sp-align-right">Interaction<br>Rate</div>
+                    <div class="sp-padding-2 sp-bg-overlay-dark-4 sp-color-danger sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col" style="width:13.2%">
+                  <div class="sp-overlay sp-bg-color-grey">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-grey sp-align-right sp-color-contrast">Video<br>Compl. Rate</div>
+                    <div class="sp-padding-2 sp-bg-color-grey sp-bg-overlay-dark-3 sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sp-row sp-overlay sp-rectangle" style="max-height:85px; margin-bottom: 85px !important;">
+            <span style="display: inline-block;position: absolute; top: 8px; right:8px">
+              <a href="-creatives-publish-tag.html" class="sp-button sp-small sp-icon-paper-plane sp-margin-right-1">View Tag</a>
+              <a href="-data-viewer.html" class="sp-button sp-small sp-icon-data">View Data</a>
+            </span>
+            <div class="sp-col sp-span-3">
+              <div class="sp-large sp-color-contrast sp-ellipsis" style="min-width: 300%">
+               Tag Name
+              </div>
+              <div class="sp-small sp-padding-vertical-2">
+                <i class="sp-inline-icon-circle sp-margin-right-1"></i>Status
+              </div>
+            </div>
+            <div class="sp-col sp-span-9">
+              <div class="sp-row sp-rectangle" style="width: 150%;transform: scale(0.65) translate(-25%, 20px)">
+                <div class="sp-col sp-span-4 sp-color-contrast">
+                  <div class="sp-overlay">
+                    <div class="sp-label sp-padding-2 sp-small">Requested Impressions<br><br></div>
+                    <div class="sp-padding-2 sp-bg-overlay-light-1 "><h1 class="sp-margin-0">1,234,567<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)"></sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col sp-color-contrast" style="width:13.2%">
+                  <div class="sp-overlay sp-primary">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-primary sp-align-right">Delivery<br>Rate</div>
+                    <div class="sp-padding-2 sp-bg-overlay-dark-4 sp-color-primary sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col sp-color-contrast" style="width:13.2%">
+                  <div class="sp-overlay sp-success">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-success sp-align-right" style="min-">CTR<br><br></div>
+                    <div class="sp-padding-2 sp-bg-overlay-dark-4 sp-color-success sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col sp-color-contrast" style="width:13.2%">
+                  <div class="sp-overlay sp-warning">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-warning sp-align-right">Viewability<br>Rate</div>
+                    <div class="sp-padding-2 sp-bg-overlay-dark-4 sp-color-warning sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col sp-color-contrast" style="width:13.2%">
+                  <div class="sp-overlay sp-danger">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-danger sp-align-right">Interaction<br>Rate</div>
+                    <div class="sp-padding-2 sp-bg-overlay-dark-4 sp-color-danger sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col" style="width:13.2%">
+                  <div class="sp-overlay sp-bg-color-grey">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-grey sp-align-right sp-color-contrast">Video<br>Compl. Rate</div>
+                    <div class="sp-padding-2 sp-bg-color-grey sp-bg-overlay-dark-3 sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sp-row sp-overlay sp-rectangle" style="max-height:85px; margin-bottom: 85px !important;">
+            <span style="display: inline-block;position: absolute; top: 8px; right:8px">
+              <a href="-creatives-publish-tag.html" class="sp-button sp-small sp-icon-paper-plane sp-margin-right-1">View Tag</a>
+              <a href="-data-viewer.html" class="sp-button sp-small sp-icon-data">View Data</a>
+            </span>
+            <div class="sp-col sp-span-3">
+              <div class="sp-large sp-color-contrast sp-ellipsis" style="min-width: 300%">
+               Tag Name
+              </div>
+              <div class="sp-small sp-padding-vertical-2">
+                <i class="sp-inline-icon-circle sp-margin-right-1"></i>Status
+              </div>
+            </div>
+            <div class="sp-col sp-span-9">
+              <div class="sp-row sp-rectangle" style="width: 150%;transform: scale(0.65) translate(-25%, 20px)">
+                <div class="sp-col sp-span-4 sp-color-contrast">
+                  <div class="sp-overlay">
+                    <div class="sp-label sp-padding-2 sp-small">Requested Impressions<br><br></div>
+                    <div class="sp-padding-2 sp-bg-overlay-light-1 "><h1 class="sp-margin-0">1,234,567<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)"></sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col sp-color-contrast" style="width:13.2%">
+                  <div class="sp-overlay sp-primary">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-primary sp-align-right">Delivery<br>Rate</div>
+                    <div class="sp-padding-2 sp-bg-overlay-dark-4 sp-color-primary sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col sp-color-contrast" style="width:13.2%">
+                  <div class="sp-overlay sp-success">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-success sp-align-right" style="min-">CTR<br><br></div>
+                    <div class="sp-padding-2 sp-bg-overlay-dark-4 sp-color-success sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col sp-color-contrast" style="width:13.2%">
+                  <div class="sp-overlay sp-warning">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-warning sp-align-right">Viewability<br>Rate</div>
+                    <div class="sp-padding-2 sp-bg-overlay-dark-4 sp-color-warning sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col sp-color-contrast" style="width:13.2%">
+                  <div class="sp-overlay sp-danger">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-danger sp-align-right">Interaction<br>Rate</div>
+                    <div class="sp-padding-2 sp-bg-overlay-dark-4 sp-color-danger sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col" style="width:13.2%">
+                  <div class="sp-overlay sp-bg-color-grey">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-grey sp-align-right sp-color-contrast">Video<br>Compl. Rate</div>
+                    <div class="sp-padding-2 sp-bg-color-grey sp-bg-overlay-dark-3 sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sp-row sp-overlay sp-rectangle" style="max-height:85px; margin-bottom: 85px !important;">
+            <span style="display: inline-block;position: absolute; top: 8px; right:8px">
+              <a href="-creatives-publish-tag.html" class="sp-button sp-small sp-icon-paper-plane sp-margin-right-1">View Tag</a>
+              <a href="-data-viewer.html" class="sp-button sp-small sp-icon-data">View Data</a>
+            </span>
+            <div class="sp-col sp-span-3">
+              <div class="sp-large sp-color-contrast sp-ellipsis" style="min-width: 300%">
+               Tag Name
+              </div>
+              <div class="sp-small sp-padding-vertical-2">
+                <i class="sp-inline-icon-circle sp-margin-right-1"></i>Status
+              </div>
+            </div>
+            <div class="sp-col sp-span-9">
+              <div class="sp-row sp-rectangle" style="width: 150%;transform: scale(0.65) translate(-25%, 20px)">
+                <div class="sp-col sp-span-4 sp-color-contrast">
+                  <div class="sp-overlay">
+                    <div class="sp-label sp-padding-2 sp-small">Requested Impressions<br><br></div>
+                    <div class="sp-padding-2 sp-bg-overlay-light-1 "><h1 class="sp-margin-0">1,234,567<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)"></sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col sp-color-contrast" style="width:13.2%">
+                  <div class="sp-overlay sp-primary">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-primary sp-align-right">Delivery<br>Rate</div>
+                    <div class="sp-padding-2 sp-bg-overlay-dark-4 sp-color-primary sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col sp-color-contrast" style="width:13.2%">
+                  <div class="sp-overlay sp-success">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-success sp-align-right" style="min-">CTR<br><br></div>
+                    <div class="sp-padding-2 sp-bg-overlay-dark-4 sp-color-success sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col sp-color-contrast" style="width:13.2%">
+                  <div class="sp-overlay sp-warning">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-warning sp-align-right">Viewability<br>Rate</div>
+                    <div class="sp-padding-2 sp-bg-overlay-dark-4 sp-color-warning sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col sp-color-contrast" style="width:13.2%">
+                  <div class="sp-overlay sp-danger">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-danger sp-align-right">Interaction<br>Rate</div>
+                    <div class="sp-padding-2 sp-bg-overlay-dark-4 sp-color-danger sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+                <div class="sp-col" style="width:13.2%">
+                  <div class="sp-overlay sp-bg-color-grey">
+                    <div class="sp-label sp-padding-2 sp-small sp-bg-color-grey sp-align-right sp-color-contrast">Video<br>Compl. Rate</div>
+                    <div class="sp-padding-2 sp-bg-color-grey sp-bg-overlay-dark-3 sp-align-right"><h1 class="sp-margin-0">100<sup style="font-size:16px;font-weight:700;display: inline-block; transform: translateY(-18px)">%</sup></h1></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
         </div>
       </div>
     </div>
   </div>
+  <script>
+    var grid = document.getElementById('grid');
+    var list = document.getElementById('list');
+    var target = document.getElementById('list-toggle');
 
+    grid.addEventListener('click', function() {
+      target.setAttribute('class', 'sp-row sp-padding-top-3');
+      grid.setAttribute('class', 'sp-minimal sp-simple-icon sp-primary sp-icon-grid sp-state-active');
+      list.setAttribute('class', 'sp-minimal sp-simple-icon sp-primary sp-icon-list');
+    });
+
+
+    list.addEventListener('click', function() {
+      target.setAttribute('class', 'sp-row sp-padding-top-3 sp-list');
+      grid.setAttribute('class', 'sp-minimal sp-simple-icon sp-primary sp-icon-grid');
+      list.setAttribute('class', 'sp-minimal sp-simple-icon sp-primary sp-icon-list sp-state-active');
+    });
+
+
+      
+    </script>
 </body>
 </html>

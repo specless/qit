@@ -1,4 +1,5 @@
 /////////////////////////
+/////////////////////////
 //                     //
 //       family        //
 //                     //
@@ -227,4 +228,8 @@
 
 .sp-label {
   @include sp-font-label;
+}
+
+.sp-line-through {
+  text-decoration: line-through !important;
 }

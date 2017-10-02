@@ -1867,28 +1867,28 @@ html {
   flex-basis: 0; }
 
 .sp-block {
-  display: block; }
+  display: block !important; }
 
 .sp-flex {
-  display: flex; }
+  display: flex !important; }
 
 .sp-inline {
-  display: inline-block; }
+  display: inline-block !important; }
 
 .sp-inline-flex {
-  display: inline-flex; }
+  display: inline-flex !important; }
 
 .sp-absolute {
-  position: absolute; }
+  position: absolute !important; }
 
 .sp-relative {
-  position: relative; }
+  position: relative !important; }
 
 .sp-fixed {
-  position: fixed; }
+  position: fixed !important; }
 
 .sp-hidden, *[hidden] {
-  display: none; }
+  display: none !important; }
 
 .sp-clearfix {
   content: "";
@@ -3331,6 +3331,9 @@ html {
     line-height: 1.1;
     letter-spacing: .067em;
     font-weight: 600; }
+
+.sp-line-through {
+  text-decoration: line-through !important; }
 
 body {
   font-family: Source Sans Pro, sans-serif;

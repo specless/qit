@@ -1,33 +1,65 @@
-@mixin sp-block {
-  display: block;
+@mixin sp-block($force: false) {
+  @if($force) {
+    display: block !important;
+  } @else {
+    display: block;
+  }
 }
 
-@mixin sp-flex {
-  display: flex;
+@mixin sp-flex($force: false) {
+  @if($force) {
+    display: flex !important;
+  } @else {
+    display: flex;
+  }
 }
 
-@mixin sp-inline {
-  display: inline-block;
+@mixin sp-inline($force: false) {
+  @if($force) {
+    display: inline-block !important;
+  } @else {
+    display: inline-block;
+  }
 }
 
-@mixin sp-inline-flex {
-  display: inline-flex;
+@mixin sp-inline-flex($force: false) {
+  @if($force) {
+    display: inline-flex !important;
+  } @else {
+    display: inline-flex;
+  }
 }
 
-@mixin sp-absolute {
-  position: absolute;
+@mixin sp-absolute($force: false) {
+  @if($force) {
+    position: absolute !important;
+  } @else {
+    position: absolute;
+  }
 }
 
-@mixin sp-relative {
-  position: relative;
+@mixin sp-relative($force: false) {
+  @if($force) {
+    position: relative !important;
+  } @else {
+    position: relative;
+  }
 }
 
-@mixin sp-fixed {
-  position: fixed;
+@mixin sp-fixed($force: false) {
+  @if($force) {
+    position: fixed !important;
+  } @else {
+    position: fixed;
+  }
 }
 
-@mixin sp-hidden {
-  display: none;
+@mixin sp-hidden($force: false) {
+  @if($force) {
+    display: none !important;
+  } @else {
+    display: none;
+  }
 }
 
 @mixin sp-clearfix {

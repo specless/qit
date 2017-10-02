@@ -1,33 +1,33 @@
 .sp-block {
-  @include sp-block;
+  @include sp-block(true);
 }
 
 .sp-flex {
-  @include sp-flex;
+  @include sp-flex(true);
 }
 
 .sp-inline {
-  @include sp-inline;
+  @include sp-inline(true);
 }
 
 .sp-inline-flex {
-  @include sp-inline-flex;
+  @include sp-inline-flex(true);
 }
 
 .sp-absolute {
-  @include sp-absolute;
+  @include sp-absolute(true);
 }
 
 .sp-relative {
-  @include sp-relative;
+  @include sp-relative(true);
 }
 
 .sp-fixed {
-  @include sp-fixed;
+  @include sp-fixed(true);
 }
 
 .sp-hidden, *[hidden] {
-  @include sp-hidden;
+  @include sp-hidden(true);
 }
 
 .sp-clearfix {

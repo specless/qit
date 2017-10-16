@@ -48,43 +48,16 @@
           </div>
         </div>
         <div class="sp-selector sp-margin-left-2">
-          <button class="sp-selector-trigger sp-icon-after-lightning sp-rounded sp-small sp-minimal sp-success"></button>
+          <button class="sp-selector-trigger sp-icon-after-lightning sp-rounded sp-small sp-minimal sp-danger"></button>
           <div class="sp-selector-overlay">
             <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
-              <div class="sp-menu-header sp-small" style="opacity: 1">Specless Sync<span class="sp-color-success sp-float-right">Connected</span></div>
+              <div class="sp-menu-header sp-small" style="opacity: 1">Specless Sync<span class="sp-color-danger sp-float-right">Disconnected</span></div>
               <!-- <a class="sp-menu-item">Live Reload</a> -->
-              <a class="sp-menu-item sp-small">Live Reload<input id="live-reload" type="checkbox" checked class="sp-align-right"/><label for="live-reload" class="sp-float-right sp-padding-0" style="margin-right: 20px"></label></a>
               <a class="sp-menu-item sp-small">Listen on Port<input type="text" value="8080" class="sp-align-right sp-width-3 sp-margin-left-3"/><div class="sp-button sp-primary sp-float-right sp-icon-reload"></div></a>
-              <!-- <div class="sp-menu-item sp-small"><div class="sp-button sp-block">Install Specless Sync</div></div> -->
-              <div class="sp-menu-header sp-small">Recently Modified Creatives</div>
-              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Some Creative<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
-              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>My Awesome Ad<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
-              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Another Creative<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
-              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Coca-Cola Ad<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
-              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Samsung Galaxy Note 8<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <div class="sp-menu-item sp-small"><div class="sp-button sp-block">Install Specless Sync</div></div>
             </div>
           </div>
         </div>
-        <!-- <div class="sp-selector sp-margin-left-2">
-          <button class="sp-selector-trigger sp-icon-after-lightning sp-rounded sp-small sp-minimal sp-success"></button>
-          <div class="sp-selector-overlay">
-            <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
-              <div class="sp-menu-header sp-small">Connection</div>
-              <div class="sp-padding-horizontal-2 sp-padding-vertical-1" style="position: relative;">
-                <div class="sp-label">Status <span class="sp-color-success sp-float-right">Active</span></div>
-              </div>
-              <div class="sp-menu-header sp-small">Settings</div>
-              <a class="sp-menu-item">Live Reload</a>
-              <a class="sp-menu-item">Listen on Port</a>
-              <div class="sp-menu-header sp-small">Recent Creatives</div>
-              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Some Creative<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
-              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>My Awesome Ad<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
-              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Another Creative<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
-              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Coca-Cola Ad<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
-              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Samsung Galaxy Note 8<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
-            </div>
-          </div>
-        </div> -->
       </div>
     </div>
   </div>
@@ -106,12 +79,12 @@
         </h5>
         <div class="sp-selector sp-margin-left-2 sp-small">
           <!-- <span class="">Test</span> -->
-          <button class="sp-selector-trigger sp-icon-lightning sp-small sp-font-color-white sp-sync-enabled">Specless Sync<i class="sp-inline-icon-dropdown sp-margin-left-1" style="position: relative; top: -1px"></i></button>
+          <button class="sp-selector-trigger sp-icon-status sp-small sp-font-color-white sp-sync-enabled">Live Version<i class="sp-inline-icon-dropdown sp-margin-left-1" style="position: relative; top: -1px"></i></button>
           <div class="sp-selector-overlay">
             <div class="sp-menu-dropdown sp-overlay sp-width-8 sp-color-contrast" style="left: auto; right: 0; transform: none;">
-              <a href="-creatives-explorer.html" class="sp-menu-item sp-icon-status">Live Version</a>
-              <a href="-creatives-explorer-draft.html" class="sp-menu-item sp-icon-circle">Draft Version</a>
-              <a href="-creatives-explorer-sync.html" class="sp-menu-item sp-icon-lightning sp-state-active">Specless Sync</a>
+              <a href="-creatives-explorer.html" class="sp-menu-item sp-icon-status sp-state-active">Live Version</a>
+              <a href="-creatives-explorer-staging.html" class="sp-menu-item sp-icon-circle">Draft Version</a>
+              <a href="-creatives-explorer-sync.html" class="sp-menu-item sp-icon-lightning sp-state-disabled">Specless Sync</a>
               <a href="-creatives-explorer-github.html" class="sp-menu-item sp-icon-branch sp-state-disabled">Git Sync</a>
               <a href="-creatives-explorer-vhistory.html" class="sp-menu-item sp-icon-version sp-border-top-base">Select From Version History...</a>
               <!-- <div class="sp-align-center sp-container sp-alt-one sp-rectangle">
@@ -125,29 +98,12 @@
             </div>
           </div>
         </div>
-        <!-- <button class="sp-icon-upload sp-small sp-success sp-font-color-white sp-margin-left-1">Push To Draft</button> -->
         <div class="sp-selector sp-small">
-          <button class="sp-selector-trigger sp-icon-folder sp-small sp-primary sp-font-color-white sp-margin-left-1"></button>
-          <div class="sp-selector-overlay">
-            <div class="sp-menu-dropdown sp-overlay sp-color-contrast sp-width-6" style="left: auto; right: 0; transform: none;">
-              <div class="sp-menu-header">Open in Finder...</div>
-              <a class="sp-menu-item sp-icon-folder">Root Project Folder</a>
-              <a class="sp-menu-item sp-icon-folder">Assets Folder</a>
-              <a class="sp-menu-item sp-icon-folder">Panels Folder</a>
-              <div class="sp-menu-header">Open in Application...</div>
-              <a class="sp-menu-item sp-icon-edit">Text Editor</a>
-            </div>
-          </div>
-        </div>
-        <div class="sp-selector sp-small">
-          <button class="sp-selector-trigger sp-icon-sync sp-small sp-success sp-font-color-white sp-margin-left-1"></button>
+          <button class="sp-selector-trigger sp-icon-download sp-small sp-primary sp-font-color-white sp-margin-left-1"></button>
           <div class="sp-selector-overlay">
             <div class="sp-menu-dropdown sp-overlay sp-color-contrast" style="left: auto; right: 0; transform: none;">
-              <a class="sp-menu-item sp-icon-upload">Push to Draft Version</a>
-              <div class="sp-spacer-vertical"></div>
-              <a class="sp-menu-item sp-icon-download">Overwrite with Live Version</a>
-              <a class="sp-menu-item sp-icon-download">Overwrite with Draft Version</a>
-              <a class="sp-menu-item sp-icon-download">Overwrite Project with Other Version...</a>
+              <a class="sp-menu-item sp-icon-download sp-state-disabled">Overwrite Local Sync Version</a>
+              <a class="sp-menu-item sp-icon-file">Download S-Kit Package</a>
             </div>
           </div>
         </div>

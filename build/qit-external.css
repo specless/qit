@@ -1961,509 +1961,527 @@ html {
 .sp-icon-atoms::before, .sp-icon-after-atoms::after, .sp-inline-icon-atoms::before {
   content: "\F00B"; }
 
-.sp-icon-box-checked::before, .sp-icon-after-box-checked::after, .sp-inline-icon-box-checked::before {
+.sp-icon-blog::before, .sp-icon-after-blog::after, .sp-inline-icon-blog::before {
   content: "\F00C"; }
 
-.sp-icon-box-unchecked::before, .sp-icon-after-box-unchecked::after, .sp-inline-icon-box-unchecked::before {
+.sp-icon-box-checked::before, .sp-icon-after-box-checked::after, .sp-inline-icon-box-checked::before {
   content: "\F00D"; }
 
-.sp-icon-branch::before, .sp-icon-after-branch::after, .sp-inline-icon-branch::before {
+.sp-icon-box-unchecked::before, .sp-icon-after-box-unchecked::after, .sp-inline-icon-box-unchecked::before {
   content: "\F00E"; }
 
-.sp-icon-bug::before, .sp-icon-after-bug::after, .sp-inline-icon-bug::before {
+.sp-icon-branch::before, .sp-icon-after-branch::after, .sp-inline-icon-branch::before {
   content: "\F00F"; }
 
-.sp-icon-bullseye::before, .sp-icon-after-bullseye::after, .sp-inline-icon-bullseye::before {
+.sp-icon-bug::before, .sp-icon-after-bug::after, .sp-inline-icon-bug::before {
   content: "\F010"; }
 
-.sp-icon-calendar::before, .sp-icon-after-calendar::after, .sp-inline-icon-calendar::before {
+.sp-icon-bullseye::before, .sp-icon-after-bullseye::after, .sp-inline-icon-bullseye::before {
   content: "\F011"; }
 
-.sp-icon-center-target::before, .sp-icon-after-center-target::after, .sp-inline-icon-center-target::before {
+.sp-icon-calendar::before, .sp-icon-after-calendar::after, .sp-inline-icon-calendar::before {
   content: "\F012"; }
 
-.sp-icon-chart-bar::before, .sp-icon-after-chart-bar::after, .sp-inline-icon-chart-bar::before {
+.sp-icon-center-target::before, .sp-icon-after-center-target::after, .sp-inline-icon-center-target::before {
   content: "\F013"; }
 
-.sp-icon-check::before, .sp-icon-after-check::after, .sp-inline-icon-check::before {
+.sp-icon-chart-bar::before, .sp-icon-after-chart-bar::after, .sp-inline-icon-chart-bar::before {
   content: "\F014"; }
 
-.sp-icon-circle-arrow-down::before, .sp-icon-after-circle-arrow-down::after, .sp-inline-icon-circle-arrow-down::before {
+.sp-icon-check::before, .sp-icon-after-check::after, .sp-inline-icon-check::before {
   content: "\F015"; }
 
-.sp-icon-circle-arrow-left::before, .sp-icon-after-circle-arrow-left::after, .sp-inline-icon-circle-arrow-left::before {
+.sp-icon-circle-arrow-down::before, .sp-icon-after-circle-arrow-down::after, .sp-inline-icon-circle-arrow-down::before {
   content: "\F016"; }
 
-.sp-icon-circle-arrow-right::before, .sp-icon-after-circle-arrow-right::after, .sp-inline-icon-circle-arrow-right::before {
+.sp-icon-circle-arrow-left::before, .sp-icon-after-circle-arrow-left::after, .sp-inline-icon-circle-arrow-left::before {
   content: "\F017"; }
 
-.sp-icon-circle-arrow-up::before, .sp-icon-after-circle-arrow-up::after, .sp-inline-icon-circle-arrow-up::before {
+.sp-icon-circle-arrow-right::before, .sp-icon-after-circle-arrow-right::after, .sp-inline-icon-circle-arrow-right::before {
   content: "\F018"; }
 
-.sp-icon-circle-check::before, .sp-icon-after-circle-check::after, .sp-inline-icon-circle-check::before {
+.sp-icon-circle-arrow-up::before, .sp-icon-after-circle-arrow-up::after, .sp-inline-icon-circle-arrow-up::before {
   content: "\F019"; }
 
-.sp-icon-circle-close::before, .sp-icon-after-circle-close::after, .sp-inline-icon-circle-close::before {
+.sp-icon-circle-check::before, .sp-icon-after-circle-check::after, .sp-inline-icon-circle-check::before {
   content: "\F01A"; }
 
-.sp-icon-circle-dot::before, .sp-icon-after-circle-dot::after, .sp-inline-icon-circle-dot::before {
+.sp-icon-circle-close::before, .sp-icon-after-circle-close::after, .sp-inline-icon-circle-close::before {
   content: "\F01B"; }
 
-.navbar .nav::before, .sp-icon-circle-help::before, .sp-icon-after-circle-help::after, .sp-inline-icon-circle-help::before {
+.sp-icon-circle-dot::before, .sp-icon-after-circle-dot::after, .sp-inline-icon-circle-dot::before {
   content: "\F01C"; }
 
-.sp-icon-circle-info::before, .sp-icon-after-circle-info::after, .sp-inline-icon-circle-info::before {
+.navbar .nav::before, .sp-icon-circle-help::before, .sp-icon-after-circle-help::after, .sp-inline-icon-circle-help::before {
   content: "\F01D"; }
 
-.sp-icon-circle-plus::before, .sp-icon-after-circle-plus::after, .sp-inline-icon-circle-plus::before {
+.sp-icon-circle-info::before, .sp-icon-after-circle-info::after, .sp-inline-icon-circle-info::before {
   content: "\F01E"; }
 
-.sp-icon-circle-sync::before, .sp-icon-after-circle-sync::after, .sp-inline-icon-circle-sync::before {
+.sp-icon-circle-plus::before, .sp-icon-after-circle-plus::after, .sp-inline-icon-circle-plus::before {
   content: "\F01F"; }
 
-.sp-icon-circle-user::before, .sp-icon-after-circle-user::after, .sp-inline-icon-circle-user::before {
+.sp-icon-circle-sync::before, .sp-icon-after-circle-sync::after, .sp-inline-icon-circle-sync::before {
   content: "\F020"; }
 
-.sp-icon-circle::before, .sp-icon-after-circle::after, .sp-inline-icon-circle::before {
+.sp-icon-circle-user::before, .sp-icon-after-circle-user::after, .sp-inline-icon-circle-user::before {
   content: "\F021"; }
 
-.sp-icon-client::before, .sp-icon-after-client::after, .sp-inline-icon-client::before {
+.sp-icon-circle::before, .sp-icon-after-circle::after, .sp-inline-icon-circle::before {
   content: "\F022"; }
 
-.sp-icon-clock::before, .sp-icon-after-clock::after, .sp-inline-icon-clock::before {
+.sp-icon-client::before, .sp-icon-after-client::after, .sp-inline-icon-client::before {
   content: "\F023"; }
 
-.sp-icon-close::before, .sp-icon-after-close::after, .sp-inline-icon-close::before {
+.sp-icon-clock::before, .sp-icon-after-clock::after, .sp-inline-icon-clock::before {
   content: "\F024"; }
 
-.sp-icon-code::before, .sp-icon-after-code::after, .sp-inline-icon-code::before {
+.sp-icon-close::before, .sp-icon-after-close::after, .sp-inline-icon-close::before {
   content: "\F025"; }
 
-.sp-icon-console::before, .sp-icon-after-console::after, .sp-inline-icon-console::before {
+.sp-icon-code::before, .sp-icon-after-code::after, .sp-inline-icon-code::before {
   content: "\F026"; }
 
-.sp-icon-content::before, .sp-icon-after-content::after, .sp-inline-icon-content::before {
+.sp-icon-console::before, .sp-icon-after-console::after, .sp-inline-icon-console::before {
   content: "\F027"; }
 
-.sp-icon-copy::before, .sp-icon-after-copy::after, .sp-inline-icon-copy::before {
+.sp-icon-content::before, .sp-icon-after-content::after, .sp-inline-icon-content::before {
   content: "\F028"; }
 
-.sp-icon-counter::before, .sp-icon-after-counter::after, .sp-inline-icon-counter::before {
+.sp-icon-conversation::before, .sp-icon-after-conversation::after, .sp-inline-icon-conversation::before {
   content: "\F029"; }
 
-.sp-icon-creative::before, .sp-icon-after-creative::after, .sp-inline-icon-creative::before {
+.sp-icon-copy::before, .sp-icon-after-copy::after, .sp-inline-icon-copy::before {
   content: "\F02A"; }
 
-.sp-icon-danger::before, .sp-icon-after-danger::after, .sp-inline-icon-danger::before {
+.sp-icon-counter::before, .sp-icon-after-counter::after, .sp-inline-icon-counter::before {
   content: "\F02B"; }
 
-.sp-icon-dashboard::before, .sp-icon-after-dashboard::after, .sp-inline-icon-dashboard::before {
+.sp-icon-creative::before, .sp-icon-after-creative::after, .sp-inline-icon-creative::before {
   content: "\F02C"; }
 
-.sp-icon-data::before, .sp-icon-after-data::after, .sp-inline-icon-data::before {
+.sp-icon-danger::before, .sp-icon-after-danger::after, .sp-inline-icon-danger::before {
   content: "\F02D"; }
 
-.sp-icon-design::before, .sp-icon-after-design::after, .sp-inline-icon-design::before {
+.sp-icon-dashboard::before, .sp-icon-after-dashboard::after, .sp-inline-icon-dashboard::before {
   content: "\F02E"; }
 
-.sp-icon-devices::before, .sp-icon-after-devices::after, .sp-inline-icon-devices::before {
+.sp-icon-data::before, .sp-icon-after-data::after, .sp-inline-icon-data::before {
   content: "\F02F"; }
 
-.sp-icon-dimensions::before, .sp-icon-after-dimensions::after, .sp-inline-icon-dimensions::before {
+.sp-icon-design::before, .sp-icon-after-design::after, .sp-inline-icon-design::before {
   content: "\F030"; }
 
-.sp-icon-download-cloud::before, .sp-icon-after-download-cloud::after, .sp-inline-icon-download-cloud::before {
+.sp-icon-devices::before, .sp-icon-after-devices::after, .sp-inline-icon-devices::before {
   content: "\F031"; }
 
-.sp-icon-download::before, .sp-icon-after-download::after, .sp-inline-icon-download::before {
+.sp-icon-dimensions::before, .sp-icon-after-dimensions::after, .sp-inline-icon-dimensions::before {
   content: "\F032"; }
 
-.sp-icon-drag-both::before, .sp-icon-after-drag-both::after, .sp-inline-icon-drag-both::before {
+.sp-icon-download-cloud::before, .sp-icon-after-download-cloud::after, .sp-inline-icon-download-cloud::before {
   content: "\F033"; }
 
-.sp-icon-drag-down::before, .sp-icon-after-drag-down::after, .sp-inline-icon-drag-down::before {
+.sp-icon-download::before, .sp-icon-after-download::after, .sp-inline-icon-download::before {
   content: "\F034"; }
 
-.sp-icon-drag-up::before, .sp-icon-after-drag-up::after, .sp-inline-icon-drag-up::before {
+.sp-icon-drag-both::before, .sp-icon-after-drag-both::after, .sp-inline-icon-drag-both::before {
   content: "\F035"; }
 
-.sp-icon-dropdown::before, .sp-icon-after-dropdown::after, .sp-inline-icon-dropdown::before {
+.sp-icon-drag-down::before, .sp-icon-after-drag-down::after, .sp-inline-icon-drag-down::before {
   content: "\F036"; }
 
-.sp-icon-edit::before, .sp-icon-after-edit::after, .sp-inline-icon-edit::before {
+.sp-icon-drag-up::before, .sp-icon-after-drag-up::after, .sp-inline-icon-drag-up::before {
   content: "\F037"; }
 
-.sp-icon-environment::before, .sp-icon-after-environment::after, .sp-inline-icon-environment::before {
+.sp-icon-dropdown::before, .sp-icon-after-dropdown::after, .sp-inline-icon-dropdown::before {
   content: "\F038"; }
 
-.sp-icon-export::before, .sp-icon-after-export::after, .sp-inline-icon-export::before {
+.sp-icon-edit::before, .sp-icon-after-edit::after, .sp-inline-icon-edit::before {
   content: "\F039"; }
 
-.sp-icon-external::before, .sp-icon-after-external::after, .sp-inline-icon-external::before {
+.sp-icon-environment::before, .sp-icon-after-environment::after, .sp-inline-icon-environment::before {
   content: "\F03A"; }
 
-.sp-icon-eye::before, .sp-icon-after-eye::after, .sp-inline-icon-eye::before {
+.sp-icon-export::before, .sp-icon-after-export::after, .sp-inline-icon-export::before {
   content: "\F03B"; }
 
-.sp-icon-file-2::before, .sp-icon-after-file-2::after, .sp-inline-icon-file-2::before {
+.sp-icon-external::before, .sp-icon-after-external::after, .sp-inline-icon-external::before {
   content: "\F03C"; }
 
-.sp-icon-file-cabinet::before, .sp-icon-after-file-cabinet::after, .sp-inline-icon-file-cabinet::before {
+.sp-icon-eye::before, .sp-icon-after-eye::after, .sp-inline-icon-eye::before {
   content: "\F03D"; }
 
-.sp-icon-file-css::before, .sp-icon-after-file-css::after, .sp-inline-icon-file-css::before {
+.sp-icon-file-2::before, .sp-icon-after-file-2::after, .sp-inline-icon-file-2::before {
   content: "\F03E"; }
 
-.sp-icon-file-gif::before, .sp-icon-after-file-gif::after, .sp-inline-icon-file-gif::before {
+.sp-icon-file-cabinet::before, .sp-icon-after-file-cabinet::after, .sp-inline-icon-file-cabinet::before {
   content: "\F03F"; }
 
-.sp-icon-file-html::before, .sp-icon-after-file-html::after, .sp-inline-icon-file-html::before {
+.sp-icon-file-css::before, .sp-icon-after-file-css::after, .sp-inline-icon-file-css::before {
   content: "\F040"; }
 
-.sp-icon-file-jpg::before, .sp-icon-after-file-jpg::after, .sp-inline-icon-file-jpg::before {
+.sp-icon-file-gif::before, .sp-icon-after-file-gif::after, .sp-inline-icon-file-gif::before {
   content: "\F041"; }
 
-.sp-icon-file-js::before, .sp-icon-after-file-js::after, .sp-inline-icon-file-js::before {
+.sp-icon-file-html::before, .sp-icon-after-file-html::after, .sp-inline-icon-file-html::before {
   content: "\F042"; }
 
-.sp-icon-file-json::before, .sp-icon-after-file-json::after, .sp-inline-icon-file-json::before {
+.sp-icon-file-jpg::before, .sp-icon-after-file-jpg::after, .sp-inline-icon-file-jpg::before {
   content: "\F043"; }
 
-.sp-icon-file-otf::before, .sp-icon-after-file-otf::after, .sp-inline-icon-file-otf::before {
+.sp-icon-file-js::before, .sp-icon-after-file-js::after, .sp-inline-icon-file-js::before {
   content: "\F044"; }
 
-.sp-icon-file-png::before, .sp-icon-after-file-png::after, .sp-inline-icon-file-png::before {
+.sp-icon-file-json::before, .sp-icon-after-file-json::after, .sp-inline-icon-file-json::before {
   content: "\F045"; }
 
-.sp-icon-file-ttf::before, .sp-icon-after-file-ttf::after, .sp-inline-icon-file-ttf::before {
+.sp-icon-file-otf::before, .sp-icon-after-file-otf::after, .sp-inline-icon-file-otf::before {
   content: "\F046"; }
 
-.sp-icon-file-video::before, .sp-icon-after-file-video::after, .sp-inline-icon-file-video::before {
+.sp-icon-file-png::before, .sp-icon-after-file-png::after, .sp-inline-icon-file-png::before {
   content: "\F047"; }
 
-.sp-icon-file-woff::before, .sp-icon-after-file-woff::after, .sp-inline-icon-file-woff::before {
+.sp-icon-file-ttf::before, .sp-icon-after-file-ttf::after, .sp-inline-icon-file-ttf::before {
   content: "\F048"; }
 
-.sp-icon-file::before, .sp-icon-after-file::after, .sp-inline-icon-file::before {
+.sp-icon-file-video::before, .sp-icon-after-file-video::after, .sp-inline-icon-file-video::before {
   content: "\F049"; }
 
-.sp-icon-filled-info::before, .sp-icon-after-filled-info::after, .sp-inline-icon-filled-info::before {
+.sp-icon-file-woff::before, .sp-icon-after-file-woff::after, .sp-inline-icon-file-woff::before {
   content: "\F04A"; }
 
-.sp-icon-filter::before, .sp-icon-after-filter::after, .sp-inline-icon-filter::before {
+.sp-icon-file::before, .sp-icon-after-file::after, .sp-inline-icon-file::before {
   content: "\F04B"; }
 
-.sp-icon-flag::before, .sp-icon-after-flag::after, .sp-inline-icon-flag::before {
+.sp-icon-filled-info::before, .sp-icon-after-filled-info::after, .sp-inline-icon-filled-info::before {
   content: "\F04C"; }
 
-.sp-icon-focus::before, .sp-icon-after-focus::after, .sp-inline-icon-focus::before {
+.sp-icon-filter::before, .sp-icon-after-filter::after, .sp-inline-icon-filter::before {
   content: "\F04D"; }
 
-.sp-icon-folder::before, .sp-icon-after-folder::after, .sp-inline-icon-folder::before {
+.sp-icon-flag::before, .sp-icon-after-flag::after, .sp-inline-icon-flag::before {
   content: "\F04E"; }
 
-.sp-icon-font::before, .sp-icon-after-font::after, .sp-inline-icon-font::before {
+.sp-icon-focus::before, .sp-icon-after-focus::after, .sp-inline-icon-focus::before {
   content: "\F04F"; }
 
-.sp-icon-format::before, .sp-icon-after-format::after, .sp-inline-icon-format::before {
+.sp-icon-folder::before, .sp-icon-after-folder::after, .sp-inline-icon-folder::before {
   content: "\F050"; }
 
-.sp-icon-gallery::before, .sp-icon-after-gallery::after, .sp-inline-icon-gallery::before {
+.sp-icon-font::before, .sp-icon-after-font::after, .sp-inline-icon-font::before {
   content: "\F051"; }
 
-.sp-icon-github::before, .sp-icon-after-github::after, .sp-inline-icon-github::before {
+.sp-icon-format::before, .sp-icon-after-format::after, .sp-inline-icon-format::before {
   content: "\F052"; }
 
-.sp-icon-google::before, .sp-icon-after-google::after, .sp-inline-icon-google::before {
+.sp-icon-gallery::before, .sp-icon-after-gallery::after, .sp-inline-icon-gallery::before {
   content: "\F053"; }
 
-.sp-icon-grid::before, .sp-icon-after-grid::after, .sp-inline-icon-grid::before {
+.sp-icon-github::before, .sp-icon-after-github::after, .sp-inline-icon-github::before {
   content: "\F054"; }
 
-.sp-icon-height-scale::before, .sp-icon-after-height-scale::after, .sp-inline-icon-height-scale::before {
+.sp-icon-google::before, .sp-icon-after-google::after, .sp-inline-icon-google::before {
   content: "\F055"; }
 
-.sp-icon-height::before, .sp-icon-after-height::after, .sp-inline-icon-height::before {
+.sp-icon-grid::before, .sp-icon-after-grid::after, .sp-inline-icon-grid::before {
   content: "\F056"; }
 
-.sp-icon-horizontal-grid::before, .sp-icon-after-horizontal-grid::after, .sp-inline-icon-horizontal-grid::before {
+.sp-icon-height-scale::before, .sp-icon-after-height-scale::after, .sp-inline-icon-height-scale::before {
   content: "\F057"; }
 
-.sp-icon-hype::before, .sp-icon-after-hype::after, .sp-inline-icon-hype::before {
+.sp-icon-height::before, .sp-icon-after-height::after, .sp-inline-icon-height::before {
   content: "\F058"; }
 
-.sp-icon-image::before, .sp-icon-after-image::after, .sp-inline-icon-image::before {
+.sp-icon-horizontal-grid::before, .sp-icon-after-horizontal-grid::after, .sp-inline-icon-horizontal-grid::before {
   content: "\F059"; }
 
-.sp-icon-import::before, .sp-icon-after-import::after, .sp-inline-icon-import::before {
+.sp-icon-hype::before, .sp-icon-after-hype::after, .sp-inline-icon-hype::before {
   content: "\F05A"; }
 
-.sp-icon-info::before, .sp-icon-after-info::after, .sp-inline-icon-info::before {
+.sp-icon-image::before, .sp-icon-after-image::after, .sp-inline-icon-image::before {
   content: "\F05B"; }
 
-.sp-icon-interaction::before, .sp-icon-after-interaction::after, .sp-inline-icon-interaction::before {
+.sp-icon-import::before, .sp-icon-after-import::after, .sp-inline-icon-import::before {
   content: "\F05C"; }
 
-.sp-icon-key::before, .sp-icon-after-key::after, .sp-inline-icon-key::before {
+.sp-icon-info::before, .sp-icon-after-info::after, .sp-inline-icon-info::before {
   content: "\F05D"; }
 
-.sp-icon-layers::before, .sp-icon-after-layers::after, .sp-inline-icon-layers::before {
+.sp-icon-interaction::before, .sp-icon-after-interaction::after, .sp-inline-icon-interaction::before {
   content: "\F05E"; }
 
-.sp-icon-layout::before, .sp-icon-after-layout::after, .sp-inline-icon-layout::before {
+.sp-icon-key::before, .sp-icon-after-key::after, .sp-inline-icon-key::before {
   content: "\F05F"; }
 
-.sp-icon-library::before, .sp-icon-after-library::after, .sp-inline-icon-library::before {
+.sp-icon-knowledge::before, .sp-icon-after-knowledge::after, .sp-inline-icon-knowledge::before {
   content: "\F060"; }
 
-.sp-icon-lightning::before, .sp-icon-after-lightning::after, .sp-inline-icon-lightning::before {
+.sp-icon-layers::before, .sp-icon-after-layers::after, .sp-inline-icon-layers::before {
   content: "\F061"; }
 
-.sp-icon-link::before, .sp-icon-after-link::after, .sp-inline-icon-link::before {
+.sp-icon-layout::before, .sp-icon-after-layout::after, .sp-inline-icon-layout::before {
   content: "\F062"; }
 
-.sp-icon-linkedin::before, .sp-icon-after-linkedin::after, .sp-inline-icon-linkedin::before {
+.sp-icon-library::before, .sp-icon-after-library::after, .sp-inline-icon-library::before {
   content: "\F063"; }
 
-.sp-icon-list-detailed::before, .sp-icon-after-list-detailed::after, .sp-inline-icon-list-detailed::before {
+.sp-icon-lightning::before, .sp-icon-after-lightning::after, .sp-inline-icon-lightning::before {
   content: "\F064"; }
 
-.sp-icon-list::before, .sp-icon-after-list::after, .sp-inline-icon-list::before {
+.sp-icon-link::before, .sp-icon-after-link::after, .sp-inline-icon-link::before {
   content: "\F065"; }
 
-.sp-icon-live::before, .sp-icon-after-live::after, .sp-inline-icon-live::before {
+.sp-icon-linkedin::before, .sp-icon-after-linkedin::after, .sp-inline-icon-linkedin::before {
   content: "\F066"; }
 
-.sp-icon-location::before, .sp-icon-after-location::after, .sp-inline-icon-location::before {
+.sp-icon-list-detailed::before, .sp-icon-after-list-detailed::after, .sp-inline-icon-list-detailed::before {
   content: "\F067"; }
 
-.sp-icon-locked::before, .sp-icon-after-locked::after, .sp-inline-icon-locked::before {
+.sp-icon-list::before, .sp-icon-after-list::after, .sp-inline-icon-list::before {
   content: "\F068"; }
 
-.sp-logo-mark::before, .sp-logo-lockup:before, .navbar .brand:before, .sp-icon-logo-mark::before, .sp-icon-after-logo-mark::after, .sp-inline-icon-logo-mark::before {
+.sp-icon-live::before, .sp-icon-after-live::after, .sp-inline-icon-live::before {
   content: "\F069"; }
 
-.sp-logo-name:before, .sp-logo-lockup:after, .navbar .brand:after, .sp-icon-logo-name::before, .sp-icon-after-logo-name::after, .sp-inline-icon-logo-name::before {
+.sp-icon-location::before, .sp-icon-after-location::after, .sp-inline-icon-location::before {
   content: "\F06A"; }
 
-.sp-icon-logout::before, .sp-icon-after-logout::after, .sp-inline-icon-logout::before {
+.sp-icon-locked::before, .sp-icon-after-locked::after, .sp-inline-icon-locked::before {
   content: "\F06B"; }
 
-.sp-icon-marker::before, .sp-icon-after-marker::after, .sp-inline-icon-marker::before {
+.sp-logo-mark::before, .sp-logo-lockup:before, .navbar .brand:before, .sp-icon-logo-mark::before, .sp-icon-after-logo-mark::after, .sp-inline-icon-logo-mark::before {
   content: "\F06C"; }
 
-.sp-icon-menu::before, .sp-icon-after-menu::after, .sp-inline-icon-menu::before {
+.sp-logo-name:before, .sp-logo-lockup:after, .navbar .brand:after, .sp-icon-logo-name::before, .sp-icon-after-logo-name::after, .sp-inline-icon-logo-name::before {
   content: "\F06D"; }
 
-.sp-icon-message::before, .sp-icon-after-message::after, .sp-inline-icon-message::before {
+.sp-icon-logout::before, .sp-icon-after-logout::after, .sp-inline-icon-logout::before {
   content: "\F06E"; }
 
-.sp-icon-metric::before, .sp-icon-after-metric::after, .sp-inline-icon-metric::before {
+.sp-icon-marker::before, .sp-icon-after-marker::after, .sp-inline-icon-marker::before {
   content: "\F06F"; }
 
-.sp-icon-molecules::before, .sp-icon-after-molecules::after, .sp-inline-icon-molecules::before {
+.sp-icon-menu::before, .sp-icon-after-menu::after, .sp-inline-icon-menu::before {
   content: "\F070"; }
 
-.sp-icon-monitor::before, .sp-icon-after-monitor::after, .sp-inline-icon-monitor::before {
+.sp-icon-message::before, .sp-icon-after-message::after, .sp-inline-icon-message::before {
   content: "\F071"; }
 
-.sp-icon-moon::before, .sp-icon-after-moon::after, .sp-inline-icon-moon::before {
+.sp-icon-metric::before, .sp-icon-after-metric::after, .sp-inline-icon-metric::before {
   content: "\F072"; }
 
-.sp-icon-more::before, .sp-icon-after-more::after, .sp-inline-icon-more::before {
+.sp-icon-molecules::before, .sp-icon-after-molecules::after, .sp-inline-icon-molecules::before {
   content: "\F073"; }
 
-.sp-icon-native-ad::before, .sp-icon-after-native-ad::after, .sp-inline-icon-native-ad::before {
+.sp-icon-monitor::before, .sp-icon-after-monitor::after, .sp-inline-icon-monitor::before {
   content: "\F074"; }
 
-.sp-icon-notification::before, .sp-icon-after-notification::after, .sp-inline-icon-notification::before {
+.sp-icon-moon::before, .sp-icon-after-moon::after, .sp-inline-icon-moon::before {
   content: "\F075"; }
 
-.sp-icon-organisms::before, .sp-icon-after-organisms::after, .sp-inline-icon-organisms::before {
+.sp-icon-more::before, .sp-icon-after-more::after, .sp-inline-icon-more::before {
   content: "\F076"; }
 
-.sp-icon-organization::before, .sp-icon-after-organization::after, .sp-inline-icon-organization::before {
+.sp-icon-native-ad::before, .sp-icon-after-native-ad::after, .sp-inline-icon-native-ad::before {
   content: "\F077"; }
 
-.sp-icon-paint::before, .sp-icon-after-paint::after, .sp-inline-icon-paint::before {
+.sp-icon-notification::before, .sp-icon-after-notification::after, .sp-inline-icon-notification::before {
   content: "\F078"; }
 
-.sp-icon-panel::before, .sp-icon-after-panel::after, .sp-inline-icon-panel::before {
+.sp-icon-organisms::before, .sp-icon-after-organisms::after, .sp-inline-icon-organisms::before {
   content: "\F079"; }
 
-.sp-icon-paper-plane::before, .sp-icon-after-paper-plane::after, .sp-inline-icon-paper-plane::before {
+.sp-icon-organization::before, .sp-icon-after-organization::after, .sp-inline-icon-organization::before {
   content: "\F07A"; }
 
-.sp-icon-person::before, .sp-icon-after-person::after, .sp-inline-icon-person::before {
+.sp-icon-paint::before, .sp-icon-after-paint::after, .sp-inline-icon-paint::before {
   content: "\F07B"; }
 
-.sp-icon-photoshop::before, .sp-icon-after-photoshop::after, .sp-inline-icon-photoshop::before {
+.sp-icon-panel::before, .sp-icon-after-panel::after, .sp-inline-icon-panel::before {
   content: "\F07C"; }
 
-.sp-icon-pie-chart::before, .sp-icon-after-pie-chart::after, .sp-inline-icon-pie-chart::before {
+.sp-icon-paper-plane::before, .sp-icon-after-paper-plane::after, .sp-inline-icon-paper-plane::before {
   content: "\F07D"; }
 
-.sp-icon-plugin::before, .sp-icon-after-plugin::after, .sp-inline-icon-plugin::before {
+.sp-icon-person::before, .sp-icon-after-person::after, .sp-inline-icon-person::before {
   content: "\F07E"; }
 
-.sp-icon-properties::before, .sp-icon-after-properties::after, .sp-inline-icon-properties::before {
+.sp-icon-photoshop::before, .sp-icon-after-photoshop::after, .sp-inline-icon-photoshop::before {
   content: "\F07F"; }
 
-.sp-icon-quarks::before, .sp-icon-after-quarks::after, .sp-inline-icon-quarks::before {
+.sp-icon-pie-chart::before, .sp-icon-after-pie-chart::after, .sp-inline-icon-pie-chart::before {
   content: "\F080"; }
 
-.sp-icon-recent::before, .sp-icon-after-recent::after, .sp-inline-icon-recent::before {
+.sp-icon-plugin::before, .sp-icon-after-plugin::after, .sp-inline-icon-plugin::before {
   content: "\F081"; }
 
-.sp-icon-rectangle-corners::before, .sp-icon-after-rectangle-corners::after, .sp-inline-icon-rectangle-corners::before {
+.sp-icon-properties::before, .sp-icon-after-properties::after, .sp-inline-icon-properties::before {
   content: "\F082"; }
 
-.sp-icon-redo::before, .sp-icon-after-redo::after, .sp-inline-icon-redo::before {
+.sp-icon-quarks::before, .sp-icon-after-quarks::after, .sp-inline-icon-quarks::before {
   content: "\F083"; }
 
-.sp-icon-reload::before, .sp-icon-after-reload::after, .sp-inline-icon-reload::before {
+.sp-icon-recent::before, .sp-icon-after-recent::after, .sp-inline-icon-recent::before {
   content: "\F084"; }
 
-.sp-icon-replace::before, .sp-icon-after-replace::after, .sp-inline-icon-replace::before {
+.sp-icon-rectangle-corners::before, .sp-icon-after-rectangle-corners::after, .sp-inline-icon-rectangle-corners::before {
   content: "\F085"; }
 
-.sp-icon-reset::before, .sp-icon-after-reset::after, .sp-inline-icon-reset::before {
+.sp-icon-redo::before, .sp-icon-after-redo::after, .sp-inline-icon-redo::before {
   content: "\F086"; }
 
-.sp-icon-resize::before, .sp-icon-after-resize::after, .sp-inline-icon-resize::before {
+.sp-icon-reload::before, .sp-icon-after-reload::after, .sp-inline-icon-reload::before {
   content: "\F087"; }
 
-.sp-icon-rotate-device::before, .sp-icon-after-rotate-device::after, .sp-inline-icon-rotate-device::before {
+.sp-icon-replace::before, .sp-icon-after-replace::after, .sp-inline-icon-replace::before {
   content: "\F088"; }
 
-.sp-icon-ruler::before, .sp-icon-after-ruler::after, .sp-inline-icon-ruler::before {
+.sp-icon-reset::before, .sp-icon-after-reset::after, .sp-inline-icon-reset::before {
   content: "\F089"; }
 
-.sp-icon-save::before, .sp-icon-after-save::after, .sp-inline-icon-save::before {
+.sp-icon-resize::before, .sp-icon-after-resize::after, .sp-inline-icon-resize::before {
   content: "\F08A"; }
 
-.sp-icon-scale-to-fit::before, .sp-icon-after-scale-to-fit::after, .sp-inline-icon-scale-to-fit::before {
+.sp-icon-rotate-device::before, .sp-icon-after-rotate-device::after, .sp-inline-icon-rotate-device::before {
   content: "\F08B"; }
 
-.sp-icon-search::before, .sp-icon-after-search::after, .sp-inline-icon-search::before {
+.sp-icon-ruler::before, .sp-icon-after-ruler::after, .sp-inline-icon-ruler::before {
   content: "\F08C"; }
 
-.sp-icon-settings::before, .sp-icon-after-settings::after, .sp-inline-icon-settings::before {
+.sp-icon-save::before, .sp-icon-after-save::after, .sp-inline-icon-save::before {
   content: "\F08D"; }
 
-.sp-icon-share::before, .sp-icon-after-share::after, .sp-inline-icon-share::before {
+.sp-icon-scale-to-fit::before, .sp-icon-after-scale-to-fit::after, .sp-inline-icon-scale-to-fit::before {
   content: "\F08E"; }
 
-.sp-icon-site::before, .sp-icon-after-site::after, .sp-inline-icon-site::before {
+.sp-icon-search::before, .sp-icon-after-search::after, .sp-inline-icon-search::before {
   content: "\F08F"; }
 
-.sp-icon-size::before, .sp-icon-after-size::after, .sp-inline-icon-size::before {
+.sp-icon-settings::before, .sp-icon-after-settings::after, .sp-inline-icon-settings::before {
   content: "\F090"; }
 
-.sp-icon-sketch::before, .sp-icon-after-sketch::after, .sp-inline-icon-sketch::before {
+.sp-icon-share::before, .sp-icon-after-share::after, .sp-inline-icon-share::before {
   content: "\F091"; }
 
-.sp-icon-solid-lock::before, .sp-icon-after-solid-lock::after, .sp-inline-icon-solid-lock::before {
+.sp-icon-site::before, .sp-icon-after-site::after, .sp-inline-icon-site::before {
   content: "\F092"; }
 
-.sp-icon-solid-max::before, .sp-icon-after-solid-max::after, .sp-inline-icon-solid-max::before {
+.sp-icon-size::before, .sp-icon-after-size::after, .sp-inline-icon-size::before {
   content: "\F093"; }
 
-.sp-icon-solid-min::before, .sp-icon-after-solid-min::after, .sp-inline-icon-solid-min::before {
+.sp-icon-sketch::before, .sp-icon-after-sketch::after, .sp-inline-icon-sketch::before {
   content: "\F094"; }
 
-.sp-icon-solid-unlock::before, .sp-icon-after-solid-unlock::after, .sp-inline-icon-solid-unlock::before {
+.sp-icon-solid-horizontal::before, .sp-icon-after-solid-horizontal::after, .sp-inline-icon-solid-horizontal::before {
   content: "\F095"; }
 
-.sp-icon-sort-down::before, .sp-icon-after-sort-down::after, .sp-inline-icon-sort-down::before {
+.sp-icon-solid-lock::before, .sp-icon-after-solid-lock::after, .sp-inline-icon-solid-lock::before {
   content: "\F096"; }
 
-.sp-icon-sort-up::before, .sp-icon-after-sort-up::after, .sp-inline-icon-sort-up::before {
+.sp-icon-solid-max::before, .sp-icon-after-solid-max::after, .sp-inline-icon-solid-max::before {
   content: "\F097"; }
 
-.sp-icon-speed::before, .sp-icon-after-speed::after, .sp-inline-icon-speed::before {
+.sp-icon-solid-min::before, .sp-icon-after-solid-min::after, .sp-inline-icon-solid-min::before {
   content: "\F098"; }
 
-.sp-icon-star-filled::before, .sp-icon-after-star-filled::after, .sp-inline-icon-star-filled::before {
+.sp-icon-solid-target::before, .sp-icon-after-solid-target::after, .sp-inline-icon-solid-target::before {
   content: "\F099"; }
 
-.sp-icon-star::before, .sp-icon-after-star::after, .sp-inline-icon-star::before {
+.sp-icon-solid-unlock::before, .sp-icon-after-solid-unlock::after, .sp-inline-icon-solid-unlock::before {
   content: "\F09A"; }
 
-.sp-icon-states::before, .sp-icon-after-states::after, .sp-inline-icon-states::before {
+.sp-icon-solid-vertical::before, .sp-icon-after-solid-vertical::after, .sp-inline-icon-solid-vertical::before {
   content: "\F09B"; }
 
-.sp-icon-status::before, .sp-icon-after-status::after, .sp-inline-icon-status::before {
+.sp-icon-sort-down::before, .sp-icon-after-sort-down::after, .sp-inline-icon-sort-down::before {
   content: "\F09C"; }
 
-.sp-icon-sun::before, .sp-icon-after-sun::after, .sp-inline-icon-sun::before {
+.sp-icon-sort-up::before, .sp-icon-after-sort-up::after, .sp-inline-icon-sort-up::before {
   content: "\F09D"; }
 
-.sp-icon-sync::before, .sp-icon-after-sync::after, .sp-inline-icon-sync::before {
+.sp-icon-speed::before, .sp-icon-after-speed::after, .sp-inline-icon-speed::before {
   content: "\F09E"; }
 
-.sp-icon-templates::before, .sp-icon-after-templates::after, .sp-inline-icon-templates::before {
+.sp-icon-star-filled::before, .sp-icon-after-star-filled::after, .sp-inline-icon-star-filled::before {
   content: "\F09F"; }
 
-.sp-icon-text::before, .sp-icon-after-text::after, .sp-inline-icon-text::before {
+.sp-icon-star::before, .sp-icon-after-star::after, .sp-inline-icon-star::before {
   content: "\F0A0"; }
 
-.sp-icon-time::before, .sp-icon-after-time::after, .sp-inline-icon-time::before {
+.sp-icon-states::before, .sp-icon-after-states::after, .sp-inline-icon-states::before {
   content: "\F0A1"; }
 
-.sp-icon-timer::before, .sp-icon-after-timer::after, .sp-inline-icon-timer::before {
+.sp-icon-status::before, .sp-icon-after-status::after, .sp-inline-icon-status::before {
   content: "\F0A2"; }
 
-.sp-icon-tools::before, .sp-icon-after-tools::after, .sp-inline-icon-tools::before {
+.sp-icon-sun::before, .sp-icon-after-sun::after, .sp-inline-icon-sun::before {
   content: "\F0A3"; }
 
-.sp-icon-tracker::before, .sp-icon-after-tracker::after, .sp-inline-icon-tracker::before {
+.sp-icon-sync::before, .sp-icon-after-sync::after, .sp-inline-icon-sync::before {
   content: "\F0A4"; }
 
-.sp-icon-trash::before, .sp-icon-after-trash::after, .sp-inline-icon-trash::before {
+.sp-icon-templates::before, .sp-icon-after-templates::after, .sp-inline-icon-templates::before {
   content: "\F0A5"; }
 
-.sp-icon-triangle-down::before, .sp-icon-after-triangle-down::after, .sp-inline-icon-triangle-down::before {
+.sp-icon-text::before, .sp-icon-after-text::after, .sp-inline-icon-text::before {
   content: "\F0A6"; }
 
-.sp-icon-undo::before, .sp-icon-after-undo::after, .sp-inline-icon-undo::before {
+.sp-icon-time::before, .sp-icon-after-time::after, .sp-inline-icon-time::before {
   content: "\F0A7"; }
 
-.sp-icon-unlink::before, .sp-icon-after-unlink::after, .sp-inline-icon-unlink::before {
+.sp-icon-timer::before, .sp-icon-after-timer::after, .sp-inline-icon-timer::before {
   content: "\F0A8"; }
 
-.sp-icon-unlocked::before, .sp-icon-after-unlocked::after, .sp-inline-icon-unlocked::before {
+.sp-icon-tools::before, .sp-icon-after-tools::after, .sp-inline-icon-tools::before {
   content: "\F0A9"; }
 
-.sp-icon-upload::before, .sp-icon-after-upload::after, .sp-inline-icon-upload::before {
+.sp-icon-tracker::before, .sp-icon-after-tracker::after, .sp-inline-icon-tracker::before {
   content: "\F0AA"; }
 
-.sp-icon-user-guide::before, .sp-icon-after-user-guide::after, .sp-inline-icon-user-guide::before {
+.sp-icon-trash::before, .sp-icon-after-trash::after, .sp-inline-icon-trash::before {
   content: "\F0AB"; }
 
-.sp-icon-version::before, .sp-icon-after-version::after, .sp-inline-icon-version::before {
+.sp-icon-triangle-down::before, .sp-icon-after-triangle-down::after, .sp-inline-icon-triangle-down::before {
   content: "\F0AC"; }
 
-.sp-icon-video::before, .sp-icon-after-video::after, .sp-inline-icon-video::before {
+.sp-icon-undo::before, .sp-icon-after-undo::after, .sp-inline-icon-undo::before {
   content: "\F0AD"; }
 
-.sp-icon-warning::before, .sp-icon-after-warning::after, .sp-inline-icon-warning::before {
+.sp-icon-unlink::before, .sp-icon-after-unlink::after, .sp-inline-icon-unlink::before {
   content: "\F0AE"; }
 
-.sp-icon-weight::before, .sp-icon-after-weight::after, .sp-inline-icon-weight::before {
+.sp-icon-unlocked::before, .sp-icon-after-unlocked::after, .sp-inline-icon-unlocked::before {
   content: "\F0AF"; }
 
-.sp-icon-width-scale::before, .sp-icon-after-width-scale::after, .sp-inline-icon-width-scale::before {
+.sp-icon-upload::before, .sp-icon-after-upload::after, .sp-inline-icon-upload::before {
   content: "\F0B0"; }
 
-.sp-icon-width::before, .sp-icon-after-width::after, .sp-inline-icon-width::before {
+.sp-icon-user-guide::before, .sp-icon-after-user-guide::after, .sp-inline-icon-user-guide::before {
   content: "\F0B1"; }
 
-.sp-icon-workspace::before, .sp-icon-after-workspace::after, .sp-inline-icon-workspace::before {
+.sp-icon-version::before, .sp-icon-after-version::after, .sp-inline-icon-version::before {
   content: "\F0B2"; }
 
-.sp-icon-zoom-in::before, .sp-icon-after-zoom-in::after, .sp-inline-icon-zoom-in::before {
+.sp-icon-video::before, .sp-icon-after-video::after, .sp-inline-icon-video::before {
   content: "\F0B3"; }
+
+.sp-icon-warning::before, .sp-icon-after-warning::after, .sp-inline-icon-warning::before {
+  content: "\F0B4"; }
+
+.sp-icon-weight::before, .sp-icon-after-weight::after, .sp-inline-icon-weight::before {
+  content: "\F0B5"; }
+
+.sp-icon-width-scale::before, .sp-icon-after-width-scale::after, .sp-inline-icon-width-scale::before {
+  content: "\F0B6"; }
+
+.sp-icon-width::before, .sp-icon-after-width::after, .sp-inline-icon-width::before {
+  content: "\F0B7"; }
+
+.sp-icon-workspace::before, .sp-icon-after-workspace::after, .sp-inline-icon-workspace::before {
+  content: "\F0B8"; }
+
+.sp-icon-zoom-in::before, .sp-icon-after-zoom-in::after, .sp-inline-icon-zoom-in::before {
+  content: "\F0B9"; }
 
 [class^='sp-icon-']::before, [class*=' sp-icon-']::before, [class^='sp-inline-icon-']::before, [class*=' sp-inline-icon-']::before, .sp-icon::before {
   font-family: 'Icon Font' !important;

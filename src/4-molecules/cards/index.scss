@@ -100,6 +100,13 @@
 		padding: 6px;
 	}
 
+	.sp-card-main-action {
+		position: absolute;
+		top: 75%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
 	.sp-card-hover-actions {
 		box-shadow: none;
 
@@ -114,6 +121,10 @@
 		transform: translateY(-50%);
 		text-align: center;
 		width: 100%;
+
+		.sp-preview-button {
+			display: none;
+		}
 
 		> button, > * > button {
 			@include sp-shape(rounded);
@@ -278,6 +289,10 @@
 				// transform: scale(0.75);
 				// transform-origin: center right;
 
+				.sp-card-main-action {
+					display: none;
+				}
+
 				.sp-card-hover-action-icons {
 					> button, > * > button {
 						transform: scale(0.75);
@@ -292,6 +307,11 @@
 							border-color: $sp-color-primary !important;
 							transform: scale(0.85);
 						}
+
+					}
+
+					> .sp-preview-button {
+							display: inline-block !important;
 					}
 				}
 

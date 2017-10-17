@@ -91,6 +91,54 @@
 		top: 6px;
 	}
 
+	@include sp-primary {
+		&[class*="sp-icon-"]::before, &[class*="sp-icon-after-"]::after {
+			@include sp-font-color(primary);
+		}
+
+		&:hover {
+			&[class*="sp-icon-"]::before, &[class*="sp-icon-after-"]::after {
+				@include sp-font-color(white);
+			}
+		}
+	}
+
+	@include sp-success {
+		&[class*="sp-icon-"]::before, &[class*="sp-icon-after-"]::after {
+			@include sp-font-color(success);
+		}
+
+		&:hover {
+			&[class*="sp-icon-"]::before, &[class*="sp-icon-after-"]::after {
+				@include sp-font-color(white);
+			}
+		}
+	}
+
+	@include sp-warning {
+		&[class*="sp-icon-"]::before, &[class*="sp-icon-after-"]::after {
+			@include sp-font-color(warning);
+		}
+
+		&:hover {
+			&[class*="sp-icon-"]::before, &[class*="sp-icon-after-"]::after {
+				@include sp-font-color(white);
+			}
+		}
+	}
+
+	@include sp-danger {
+		&[class*="sp-icon-"]::before, &[class*="sp-icon-after-"]::after {
+			@include sp-font-color(danger);
+		}
+
+		&:hover {
+			&[class*="sp-icon-"]::before, &[class*="sp-icon-after-"]::after {
+				@include sp-font-color(white);
+			}
+		}
+	}
+
 	&:not(input):empty {
 		width: 32px;
 		height: 32px;

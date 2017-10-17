@@ -2453,35 +2453,41 @@ html {
 .sp-icon-unlocked::before, .sp-icon-after-unlocked::after, .sp-inline-icon-unlocked::before {
   content: "\F0AF"; }
 
-.sp-icon-upload::before, .sp-icon-after-upload::after, .sp-inline-icon-upload::before {
+.sp-icon-up-down::before, .sp-icon-after-up-down::after, .sp-inline-icon-up-down::before {
   content: "\F0B0"; }
 
-.sp-icon-user-guide::before, .sp-icon-after-user-guide::after, .sp-inline-icon-user-guide::before {
+.sp-icon-upload-arrow::before, .sp-icon-after-upload-arrow::after, .sp-inline-icon-upload-arrow::before {
   content: "\F0B1"; }
 
-.sp-icon-version::before, .sp-icon-after-version::after, .sp-inline-icon-version::before {
+.sp-icon-upload::before, .sp-icon-after-upload::after, .sp-inline-icon-upload::before {
   content: "\F0B2"; }
 
-.sp-icon-video::before, .sp-icon-after-video::after, .sp-inline-icon-video::before {
+.sp-icon-user-guide::before, .sp-icon-after-user-guide::after, .sp-inline-icon-user-guide::before {
   content: "\F0B3"; }
 
-.sp-icon-warning::before, .sp-icon-after-warning::after, .sp-inline-icon-warning::before {
+.sp-icon-version::before, .sp-icon-after-version::after, .sp-inline-icon-version::before {
   content: "\F0B4"; }
 
-.sp-icon-weight::before, .sp-icon-after-weight::after, .sp-inline-icon-weight::before {
+.sp-icon-video::before, .sp-icon-after-video::after, .sp-inline-icon-video::before {
   content: "\F0B5"; }
 
-.sp-icon-width-scale::before, .sp-icon-after-width-scale::after, .sp-inline-icon-width-scale::before {
+.sp-icon-warning::before, .sp-icon-after-warning::after, .sp-inline-icon-warning::before {
   content: "\F0B6"; }
 
-.sp-icon-width::before, .sp-icon-after-width::after, .sp-inline-icon-width::before {
+.sp-icon-weight::before, .sp-icon-after-weight::after, .sp-inline-icon-weight::before {
   content: "\F0B7"; }
 
-.sp-icon-workspace::before, .sp-icon-after-workspace::after, .sp-inline-icon-workspace::before {
+.sp-icon-width-scale::before, .sp-icon-after-width-scale::after, .sp-inline-icon-width-scale::before {
   content: "\F0B8"; }
 
-.sp-icon-zoom-in::before, .sp-icon-after-zoom-in::after, .sp-inline-icon-zoom-in::before {
+.sp-icon-width::before, .sp-icon-after-width::after, .sp-inline-icon-width::before {
   content: "\F0B9"; }
+
+.sp-icon-workspace::before, .sp-icon-after-workspace::after, .sp-inline-icon-workspace::before {
+  content: "\F0BA"; }
+
+.sp-icon-zoom-in::before, .sp-icon-after-zoom-in::after, .sp-inline-icon-zoom-in::before {
+  content: "\F0BB"; }
 
 [class^='sp-icon-']::before, [class*=' sp-icon-']::before, [class^='sp-inline-icon-']::before, [class*=' sp-inline-icon-']::before, .sp-icon::before {
   font-family: 'Icon Font' !important;

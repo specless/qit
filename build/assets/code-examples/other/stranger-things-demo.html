@@ -1,0 +1,232 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Example</title>
+  <link rel="stylesheet" href="../../../qit.css">
+  <style>
+
+    .header {
+      width: 100%;
+      height: 50px;
+      background-color: black;
+    }
+    /*.ad-masthead {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      height: 700px;
+    }
+
+    .ad-masthead div, .ad-page-break div, .ad-in-post div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .ad-masthead iframe, .ad-page-break iframe, .ad-in-post iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .ad-masthead::before, .ad-page-break::before, .ad-in-post::before {
+      content: "";
+      display: inline-block;
+      width: 100%;
+      padding-top: 50%;
+    }*/
+
+    /*.ad-in-post::before {
+      padding-top: 33%;
+    }*/
+
+    .ad-in-post {
+      width: 100%;
+      height: 400px;
+      margin-top: 50px;
+      margin-bottom: 30px;
+      position: relative;
+      border: 1px solid rgba(0,0,0,0.25);
+    }
+
+.ad-in-post iframe {
+  width: 100%;
+  height: 400px;
+}
+
+.ad-page-break iframe {
+  width: 100%;
+  height: 500px;
+}
+
+.ad-top iframe {
+  width: 100%;
+  height: 500px;
+}
+    .ad-page-break {
+      width: 100%;
+      height: 500px;
+      margin-top: 100px;
+      position: relative;
+    }
+
+    .ad-top {
+      width: 100%;
+      height: 500px;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    p {
+      margin-top: 20px;
+    }
+
+    @media screen and (max-width: 970px) {
+      .sp-span-3 {
+        display: none;
+      }
+
+      .sp-span-9 {
+        width: 100% !important;
+      }
+
+      .ad-in-post::before {
+        padding-top: 50%;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .ad-masthead {
+        height: auto;
+      }
+      .ad-masthead::before {
+        padding-top: 100%;
+      }
+      .ad-page-break::before, .ad-in-post::before {
+        padding-top: 65%;
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+
+      .ad-masthead::before, .ad-page-break::before {
+        padding-top: 33%;
+      }
+    }
+
+    @media screen and (min-width: 1500px) {
+
+      .ad-masthead::before, .ad-page-break::before {
+        padding-top: 25%;
+      }
+
+      .ad-in-post::before {
+        padding-top: 50%;
+      }
+    }
+
+
+  </style>
+</head>
+
+<body class="sp-app sp-technical">
+  
+
+  <div id="scrollWrapper" class="sp-app-content">
+    <!-- <div class="ad-masthead">
+      <div>
+        <div>
+          <div>
+            <iframe src="fmg-ad-top.html"></iframe>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="header"></div>
+    <div class="ad-top">
+      <!-- <div>
+        <div> -->
+          <div>
+            <iframe src="test-ad-top.html"></iframe>
+          </div>
+        <!-- </div>
+      </div> -->
+    </div>
+    <div class="sp-wrapper">
+      <div class="sp-row sp-height-6">
+
+      </div>
+      <div class="sp-row">
+        <div class="sp-col sp-span-3"></div>
+        <div class="sp-col sp-span-9 sp-large">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget orci in lectus placerat imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas magna ex, luctus id augue eu, lobortis dapibus mauris. Aliquam porttitor, nibh a laoreet auctor, sapien leo congue mauris, a vehicula nisi justo vitae erat. Sed malesuada nec orci at vehicula. Curabitur dui dolor, fermentum vitae pellentesque quis, blandit congue mauris. Morbi ut ipsum eu ex placerat vestibulum. Aenean sagittis ex nulla, eu pharetra libero pellentesque ac. Etiam hendrerit fringilla rhoncus. Praesent porttitor massa et purus maximus tincidunt. Fusce ut turpis semper mi pellentesque finibus. Ut non tristique elit.</p>
+
+          <p>Vestibulum sed ante ante. In sodales facilisis dapibus. Phasellus cursus feugiat metus eget accumsan. Nulla et libero at tellus ultricies tincidunt. Nam mi quam, molestie id varius quis, egestas sit amet leo. Vivamus dignissim risus sodales suscipit gravida. Nunc non odio sed felis blandit scelerisque.</p>
+
+          <p>Aenean dignissim est at magna pharetra consequat. Morbi vitae enim vel nisl interdum lacinia. Cras sed elit sit amet magna euismod elementum eget in turpis. Pellentesque ipsum diam, consequat eu commodo id, fringilla a ex. Integer interdum varius porta. Nunc et nisi tincidunt, mattis elit non, molestie lacus. Nunc in mauris eu nisl venenatis bibendum ac at ipsum. Proin elit tellus, dictum vitae augue ut, sollicitudin finibus dui. Nam egestas non odio quis malesuada. Maecenas finibus eleifend nisi, vel tristique orci suscipit quis. Phasellus sed nisi in erat efficitur pellentesque. Praesent felis lectus, fringilla euismod mollis at, vestibulum in ex. Etiam vel sapien at urna rhoncus sodales.</p>
+
+          <p>Donec ut egestas metus. Curabitur mollis massa nunc, eu fringilla felis vulputate vel. Nam a elit fringilla, varius sapien id, bibendum felis. Vestibulum vitae ante nibh. Nunc vitae iaculis diam. In eget mi nec nunc pulvinar volutpat non sed libero. Praesent vel mi eros. Donec semper ex augue. Sed at sem lacinia felis ullamcorper malesuada luctus non tortor. Sed vitae volutpat massa. Ut lacinia blandit interdum. Pellentesque eget tortor purus. Nullam eget felis gravida, suscipit ipsum in, rhoncus arcu. In a mauris dictum, lacinia libero nec, commodo dui. Aenean fringilla ipsum sit amet elit suscipit maximus. Sed rhoncus semper sapien, id molestie nisi dignissim ac.</p>
+
+          <p>Nulla pretium molestie accumsan. Mauris commodo lorem id felis laoreet, id suscipit est facilisis. Sed eget mauris eu tellus placerat viverra. Phasellus tempus condimentum risus a interdum. Duis posuere semper interdum. Morbi sed faucibus augue, eget tempor diam. Integer cursus accumsan quam, et volutpat odio congue ut. Curabitur in urna vitae dui laoreet pulvinar. Morbi interdum nibh sit amet ultricies tristique. Pellentesque rhoncus eleifend pretium. Vivamus luctus risus velit, sit amet faucibus turpis feugiat a. Nullam dictum lobortis suscipit. Mauris vitae nisi odio. Sed felis magna, maximus sed volutpat vitae, fringilla vel turpis.</p>
+
+          <div class="ad-in-post">
+            <!-- <div>
+              <div> -->
+                <div>
+                  <iframe src="test-ad-one.html"></iframe>
+                </div>
+              <!-- </div>
+            </div> -->
+          </div>
+
+          <p>Nulla eget dapibus massa. Nullam volutpat mauris vel lacus ullamcorper semper. Duis a orci neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas a velit id massa fermentum pretium dapibus vitae eros. Nam sit amet blandit felis. Suspendisse potenti. Praesent augue urna, faucibus quis viverra et, pretium vitae tellus. Sed suscipit, tortor id mattis pulvinar, nunc nibh iaculis lacus, non blandit lacus mauris quis nibh. Curabitur porttitor mi non faucibus varius.</p>
+
+          <p>Donec elementum commodo turpis, eget iaculis sem accumsan nec. Nam congue, nisi eu sagittis dictum, dolor risus fringilla neque, sed luctus justo mauris venenatis est. Morbi porta massa in accumsan placerat. Curabitur ut rutrum eros. Vivamus malesuada lacinia faucibus. Integer finibus magna purus, quis elementum mauris laoreet ultricies. Duis magna odio, placerat vel finibus ut, volutpat at sem. Proin interdum sapien a nisi malesuada, at bibendum neque consequat. Aliquam erat volutpat. Nulla quis elementum ipsum, a tincidunt justo. Nulla pretium finibus tortor ut ultricies.</p>
+
+          <p>Morbi urna mi, convallis non orci ut, lobortis consectetur sapien. Etiam hendrerit nisl euismod magna ullamcorper molestie. Nulla sagittis enim vel erat mollis, vel rutrum dolor ultrices. Fusce suscipit, metus non euismod molestie, sapien eros commodo eros, non congue sem mauris at felis. Integer tincidunt interdum risus at fringilla. Praesent turpis mauris, tempor eu tristique quis, tincidunt ac lectus. Maecenas non pellentesque nunc.</p>
+        </div>
+      </div>
+    </div>
+    <div class="ad-page-break">
+      <!-- <div>
+        <div> -->
+          <div>
+            <iframe src="test-ad-one.html"></iframe>
+          </div>
+        <!-- </div>
+      </div> -->
+    </div>
+    <div class="sp-wrapper">
+      <div class="sp-row sp-height-6">
+
+      </div>
+      <div class="sp-row">
+        <div class="sp-col sp-span-3"></div>
+        <div class="sp-col sp-span-9 sp-large">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget orci in lectus placerat imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas magna ex, luctus id augue eu, lobortis dapibus mauris. Aliquam porttitor, nibh a laoreet auctor, sapien leo congue mauris, a vehicula nisi justo vitae erat. Sed malesuada nec orci at vehicula. Curabitur dui dolor, fermentum vitae pellentesque quis, blandit congue mauris. Morbi ut ipsum eu ex placerat vestibulum. Aenean sagittis ex nulla, eu pharetra libero pellentesque ac. Etiam hendrerit fringilla rhoncus. Praesent porttitor massa et purus maximus tincidunt. Fusce ut turpis semper mi pellentesque finibus. Ut non tristique elit.</p>
+
+          <p>Vestibulum sed ante ante. In sodales facilisis dapibus. Phasellus cursus feugiat metus eget accumsan. Nulla et libero at tellus ultricies tincidunt. Nam mi quam, molestie id varius quis, egestas sit amet leo. Vivamus dignissim risus sodales suscipit gravida. Nunc non odio sed felis blandit scelerisque.</p>
+
+          <p>Aenean dignissim est at magna pharetra consequat. Morbi vitae enim vel nisl interdum lacinia. Cras sed elit sit amet magna euismod elementum eget in turpis. Pellentesque ipsum diam, consequat eu commodo id, fringilla a ex. Integer interdum varius porta. Nunc et nisi tincidunt, mattis elit non, molestie lacus. Nunc in mauris eu nisl venenatis bibendum ac at ipsum. Proin elit tellus, dictum vitae augue ut, sollicitudin finibus dui. Nam egestas non odio quis malesuada. Maecenas finibus eleifend nisi, vel tristique orci suscipit quis. Phasellus sed nisi in erat efficitur pellentesque. Praesent felis lectus, fringilla euismod mollis at, vestibulum in ex. Etiam vel sapien at urna rhoncus sodales.</p>
+
+          <p>Donec ut egestas metus. Curabitur mollis massa nunc, eu fringilla felis vulputate vel. Nam a elit fringilla, varius sapien id, bibendum felis. Vestibulum vitae ante nibh. Nunc vitae iaculis diam. In eget mi nec nunc pulvinar volutpat non sed libero. Praesent vel mi eros. Donec semper ex augue. Sed at sem lacinia felis ullamcorper malesuada luctus non tortor. Sed vitae volutpat massa. Ut lacinia blandit interdum. Pellentesque eget tortor purus. Nullam eget felis gravida, suscipit ipsum in, rhoncus arcu. In a mauris dictum, lacinia libero nec, commodo dui. Aenean fringilla ipsum sit amet elit suscipit maximus. Sed rhoncus semper sapien, id molestie nisi dignissim ac.</p>
+
+          <p>Nulla pretium molestie accumsan. Mauris commodo lorem id felis laoreet, id suscipit est facilisis. Sed eget mauris eu tellus placerat viverra. Phasellus tempus condimentum risus a interdum. Duis posuere semper interdum. Morbi sed faucibus augue, eget tempor diam. Integer cursus accumsan quam, et volutpat odio congue ut. Curabitur in urna vitae dui laoreet pulvinar. Morbi interdum nibh sit amet ultricies tristique. Pellentesque rhoncus eleifend pretium. Vivamus luctus risus velit, sit amet faucibus turpis feugiat a. Nullam dictum lobortis suscipit. Mauris vitae nisi odio. Sed felis magna, maximus sed volutpat vitae, fringilla vel turpis.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</body>
+</html>

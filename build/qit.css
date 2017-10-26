@@ -9557,10 +9557,11 @@ body {
     opacity: 1; }
 
 .sp-app.sp-loading-content .sp-hide-content-while-loading > * {
-  opacity: 0 !important;
+  visibility: hidden !important;
   pointer-events: none; }
 
 .sp-app.sp-loading-content .sp-hide-content-while-loading::after {
+  visibility: visible;
   display: inline-block !important;
   position: absolute;
   font-family: 'Icon Font' !important;

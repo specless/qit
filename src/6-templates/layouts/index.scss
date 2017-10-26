@@ -678,11 +678,12 @@ body {
 
 	.sp-hide-content-while-loading {
 		> * {
-			opacity: 0 !important;
+			visibility: hidden !important;
 			pointer-events: none;
 		}
 
 		&::after {
+			visibility: visible;
 			display: inline-block !important;
 			position: absolute;
 			@include sp-icon-styles(loading-spinner);

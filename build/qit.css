@@ -9069,10 +9069,10 @@ blockquote {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   opacity: 1;
   transition: 0.5s ease opacity; }
-  .sp-app-overlay.sp-hide-overlay {
+  .sp-app-overlay.sp-hide, .sp-app-overlay.sp-hidden, .sp-app.sp-hide-overlay .sp-app-overlay {
     top: -100%;
     opacity: 0; }
-    .sp-app-overlay.sp-hide-overlay > .sp-app-overlay-content {
+    .sp-app-overlay.sp-hide > .sp-app-overlay-content, .sp-app-overlay.sp-hidden > .sp-app-overlay-content, .sp-app.sp-hide-overlay .sp-app-overlay > .sp-app-overlay-content {
       transform: translate(-50%, -50%) scale(0); }
   .sp-app-overlay > .sp-app-overlay-content {
     transition: 0.25s ease transform;
@@ -9185,9 +9185,9 @@ body {
   position: relative;
   z-index: 100;
   background-color: black !important; }
-  .sp-app.sp-app-loading .sp-app-loader {
+  .sp-app.sp-loading .sp-app-loader {
     height: 4px; }
-    .sp-app.sp-app-loading .sp-app-loader .sp-app-loader-message {
+    .sp-app.sp-loading .sp-app-loader .sp-app-loader-message {
       opacity: 1; }
   .sp-app-loader:active, .sp-app-loader.sp-state-active {
     height: 4px; }
@@ -9226,6 +9226,8 @@ body {
   transition: 0.5s ease transform, 0.5s ease opacity;
   opacity: 1;
   transform: none; }
+  .sp-app.sp-hide-org-label .sp-app-org-label {
+    display: none; }
 
 .sp-app-notifications {
   display: inline-block;
@@ -9242,12 +9244,16 @@ body {
   transition: 0.5s ease transform, 0.5s ease opacity;
   opacity: 1;
   transform: none; }
+  .sp-app.sp-hide-header .sp-app-header {
+    display: none; }
 
 .sp-app-menu {
   position: relative;
   transition: 0.5s ease transform, 0.5s ease opacity;
   opacity: 1;
   transform: none; }
+  .sp-app.sp-hide-app-menu .sp-app-menu {
+    display: none; }
 
 .sp-app-content {
   position: relative;
@@ -9337,7 +9343,7 @@ body {
   overflow-x: hidden;
   overflow-y: auto; }
   .sp-app-side-menu.sp-hidden, .sp-app.sp-hide-menu .sp-app-side-menu {
-    transform: translateY(100%); }
+    transform: translateX(-110%); }
 
 .sp-creative-thumbnail {
   position: relative;

@@ -162,7 +162,7 @@ body {
 	z-index: 100;
 	background-color: black !important;
 
-	.sp-app.sp-app-loading & {
+	.sp-app.sp-loading & {
 		height: 4px;
 
 		.sp-app-loader-message {
@@ -231,6 +231,10 @@ body {
 	transition: 0.5s ease transform, 0.5s ease opacity;
 	opacity: 1;
 	transform: none;
+
+	.sp-app.sp-hide-org-label & {
+		display: none;
+	}
 }
 
 .sp-app-notifications {
@@ -249,6 +253,10 @@ body {
 	transition: 0.5s ease transform, 0.5s ease opacity;
 	opacity: 1;
 	transform: none;
+
+	.sp-app.sp-hide-header & {
+		display: none;
+	}
 }
 
 .sp-app-menu {
@@ -256,6 +264,10 @@ body {
 	transition: 0.5s ease transform, 0.5s ease opacity;
 	opacity: 1;
 	transform: none;
+
+	.sp-app.sp-hide-app-menu & {
+		display: none;
+	}
 }
 
 .sp-app-content {
@@ -389,7 +401,7 @@ body {
 	overflow-y: auto;
 
 	&.sp-hidden, .sp-app.sp-hide-menu & {
-		transform: translateY(100%);
+		transform: translateX(-110%);
 	}
 }
 

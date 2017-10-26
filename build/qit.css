@@ -9178,6 +9178,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+  .sp-app-loading-logo .sp-app.sp-hide-content {
+    opacity: 0; }
 
 .sp-app-loader {
   height: 0px;
@@ -9264,6 +9266,8 @@ body {
   transition: 0.5s ease transform, 0.5s ease opacity;
   opacity: 1;
   transform: none; }
+  .sp-app.sp-hide-content .sp-app-content {
+    display: none; }
 
 .sp-app-content-sidebar {
   min-width: 2.13rem; }

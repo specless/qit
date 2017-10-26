@@ -151,6 +151,10 @@ body {
 		left: 50%;
 		transform: translate(-50%,-50%);
 	}
+
+	.sp-app.sp-hide-content {
+		opacity: 0;
+	}
 }
 
 
@@ -279,6 +283,10 @@ body {
 	transition: 0.5s ease transform, 0.5s ease opacity;
 	opacity: 1;
 	transform: none;
+
+	.sp-app.sp-hide-content & {
+		display: none;
+	}
 }
 
 .sp-app-content-sidebar {

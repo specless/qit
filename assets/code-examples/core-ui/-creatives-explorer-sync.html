@@ -195,11 +195,11 @@
 
   <div class="sp-app-content sp-flex" style="overflow: hidden">
     <div class="sp-app-content-sidebar sp-flex">
-      <div class="sp-app-content-sidebar-icon-menu sp-container-dark sp-contrast sp-border-top-base">
+      <!-- <div class="sp-app-content-sidebar-icon-menu sp-container-dark sp-contrast sp-border-top-base">
         <a href="-creatives-explorer.html" class="sp-button sp-minimal sp-simple-icon sp-icon-eye sp-primary sp-state-active"></a>
         <a href="-creatives-explorer-simulate.html" class="sp-button sp-minimal sp-simple-icon sp-icon-monitor sp-primary"></a>
         <a href="-creatives-explorer-assets.html" class="sp-button sp-minimal sp-simple-icon sp-icon-file-cabinet sp-primary"></a>
-      </div>
+      </div> -->
       <div class="sp-app-content-sidebar-menu sp-container-dark sp-alt-one sp-shadow-medium " style="width:135px;">
         <div class="sp-padding-1 sp-container sp-label sp-color-contrast sp-flex sp-border-bottom-base">
           <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Panels</span>
@@ -353,16 +353,12 @@
                   <div class="sp-spacer-vertical"></div> -->
                   <a class="sp-menu-item sp-icon-eye">Open Simple Preview</a>
                   <a class="sp-menu-item sp-icon-link">Generate Custom Permalink</a>
-                  <div class="sp-spacer-vertical"></div>
-                  <a class="sp-menu-item sp-icon-external sp-state-disabled">Open in Text Editor</a>
-                  <a class="sp-menu-item sp-icon-folder sp-state-disabled">Open S-Kit Project Folder</a>
-                  <a class="sp-menu-item sp-icon-folder sp-state-disabled">Open S-Kit Asset Folder</a>
                 </div>
               </div>
             </div>
         </span>
       </div>
-      <div class="sp-padding-1 sp-container sp-border-top-base sp-border-bottom-base sp-flex sp-small sp-font-weight-semi-bold" style="font-size: 12px;">
+      <div class="sp-padding-1 sp-container sp-border-top-base sp-border-bottom-base sp-flex sp-small sp-font-weight-semi-bold sp-no-wrap" style="font-size: 12px;">
         <div style="flex:1" class="sp-align-right sp-padding-horizontal-2">
           <div class="sp-selector sp-margin-left-1 sp-inline">
             <input readonly class="sp-minimal sp-selector-trigger sp-align-right" type="text" value="Custom View" style="width: 300px; font-weight: 600"/>
@@ -539,9 +535,123 @@
             </div>
           </div>
         </div> -->
-      <!-- <div class="sp-app-content-main-footer sp-container">
-        Test
-      </div> -->
+      <div class="sp-app-content-main-footer sp-container">
+        <div class="sp-padding-1 sp-container sp-border-top-base sp-border-bottom-base sp-small sp-font-weight-semi-bold sp-flex sp-flex-align-items-center" style="font-size: 12px; justify-content: center">
+
+          <!-- <span class="sp-padding-horizontal-2 sp-color-danger sp-tooltip sp-tooltip-above sp-state-hover">
+            <span>Sync Disconnected</span><i class="sp-inline-icon-solid-circle-close sp-margin-left-1"></i>
+            <div class="sp-tooltip-overlay sp-pointer-events-auto sp-width-7 sp-color-base">
+              <div class="sp-padding-bottom-1 sp-border-bottom-base sp-ellipsis sp-color-danger"><i class="sp-inline-icon-lightning sp-margin-right-1"></i>Specless Sync: No Connection<span class="sp-float-right sp-font-weight-base" style="font-size: 12px;"></span></div>
+              <p class="sp-overflow-wrap sp-font-weight-base sp-margin-top-1">Could not establish a connection with Specless Sync.</p>
+              <p class="sp-overflow-wrap sp-margin-top-1 sp-margin-bottom-1">How would you like to proceed?</p>
+              <div class="sp-padding-top-1">
+                <a class="sp-button sp-small sp-icon-circle-dot sp-block" style="flex: 1">Switch to Live Version</a>
+              </div>
+              <div class="sp-padding-top-1">
+                <a class="sp-button sp-small sp-icon-circle sp-block" style="flex: 1">Switch to Draft Version</a>
+              </div>
+              <div class="sp-padding-top-1">
+                <a class="sp-button sp-small sp-icon-version sp-block" style="flex: 1">Switch to Other Version</a>
+              </div>
+              <div class="sp-padding-top-1">
+                <a class="sp-button sp-small sp-icon-circle-help sp-block" style="flex: 1">Troubleshooting</a>
+              </div>
+            </div>
+          </span> -->
+
+          <!-- <span class="sp-padding-horizontal-2 sp-color-danger sp-tooltip sp-tooltip-above sp-state-hover">
+            <span>No Local Project</span><i class="sp-inline-icon-solid-circle-close sp-margin-left-1"></i>
+            <div class="sp-tooltip-overlay sp-pointer-events-auto sp-width-7 sp-color-base">
+              <div class="sp-padding-bottom-1 sp-border-bottom-base sp-ellipsis sp-color-danger"><i class="sp-inline-icon-lightning sp-margin-right-1"></i>Specless Sync: No Local Copy<span class="sp-float-right sp-font-weight-base" style="font-size: 12px;"></span></div>
+              <p class="sp-overflow-wrap sp-font-weight-base sp-margin-top-1">A copy of this creative could not be found in your Local Project Directory.</p>
+              <p class="sp-overflow-wrap sp-margin-top-1 sp-margin-bottom-1">Would you like to download a local copy?</p>
+              <div class="sp-padding-top-1">
+                <a class="sp-button sp-small sp-success sp-icon-download sp-block" style="flex: 1">Download Live Version</a>
+              </div>
+              <div class="sp-padding-top-1">
+                <a class="sp-button sp-small sp-success sp-icon-download sp-block" style="flex: 1">Download Draft Version</a>
+              </div>
+              <div class="sp-padding-top-1">
+                <a class="sp-button sp-small sp-success sp-icon-version sp-block" style="flex: 1">Select from Version History</a>
+              </div>
+            </div>
+          </span> -->
+
+          <!-- <span class="sp-padding-horizontal-2">
+            <span>Previously Compiled</span><i class="sp-inline-icon-solid-circle-check sp-margin-left-1"></i>
+          </span> -->
+
+          <!-- <span class="sp-padding-horizontal-2 sp-color-primary">
+            <span>Compiling</span><i class="sp-inline-icon-solid-sync sp-margin-left-1"></i>
+          </span> -->
+
+          <span class="sp-padding-horizontal-2 sp-color-success">
+            <span>Compiled Successfully</span><i class="sp-inline-icon-solid-circle-check sp-margin-left-1"></i>
+          </span>
+
+          <!-- <span class="sp-padding-horizontal-2 sp-color-warning">
+            <span>Compiled With Warnings</span><i class="sp-inline-icon-solid-warning sp-margin-left-1"></i>
+          </span> -->
+
+          <!-- <span class="sp-padding-horizontal-2 sp-color-danger">
+            <span>Failed to Compile</span><i class="sp-inline-icon-solid-error sp-margin-left-1"></i>
+          </span> -->
+
+          <!-- <span class="sp-padding-horizontal-2 sp-color-danger sp-tooltip sp-tooltip-above sp-state-hover">
+            <span>Failed to Compile</span><i class="sp-inline-icon-solid-error sp-margin-left-1"></i>
+            <div class="sp-tooltip-overlay sp-pointer-events-auto sp-danger sp-width-7">
+              <div class="sp-padding-bottom-1 sp-border-bottom-base sp-ellipsis">Compile Error<span class="sp-float-right sp-font-weight-base" style="font-size: 12px;">index.css:233</span></div>
+              <div class="sp-padding-top-1 sp-flex">
+                <a class="sp-button sp-small sp-danger sp-icon-circle-info sp-margin-right-1" style="flex: 1">Details</a>
+                <a class="sp-button sp-small sp-danger sp-icon-reload" style="flex: 1">Retry</a>
+              </div>
+            </div>
+          </span> -->
+          
+          <span class="sp-padding-horizontal-2 sp-border-right-base sp-border-left-base sp-color-muted">
+            <i class="sp-inline-icon-solid-log sp-margin-right-1"></i><span class="sp-margin-right-2">0</span>
+            <i class="sp-inline-icon-solid-warning sp-margin-right-1"></i><span class="sp-margin-right-2">0</span>
+            <i class="sp-inline-icon-solid-error sp-margin-right-1"></i><span class="">0</span>
+          </span>
+
+          <!-- <span class="sp-padding-horizontal-2 sp-color-primary">
+            <i class="sp-inline-icon-solid-sync sp-margin-right-1"></i><span>Loading</span>
+          </span> -->
+
+          <!-- <span class="sp-padding-horizontal-2 sp-color-primary">
+            <i class="sp-inline-icon-solid-sync sp-margin-right-1"></i><span>Reloading</span>
+          </span> -->
+
+          <!-- <span class="sp-padding-horizontal-2 sp-color-primary">
+            <i class="sp-inline-icon-solid-sync sp-margin-right-1"></i><span>Updating</span>
+          </span> -->
+
+          <span class="sp-padding-horizontal-2">
+            <i class="sp-inline-icon-solid-circle-check sp-margin-right-1"></i><span>Panel Ready</span>
+          </span>
+
+          <!-- <span class="sp-padding-horizontal-2 sp-color-danger">
+            <i class="sp-inline-icon-solid-error sp-margin-right-1"></i><span>Error Loading Panel</span>
+          </span> -->
+
+          <!-- <span class="sp-padding-horizontal-2 sp-color-danger sp-tooltip sp-tooltip-above sp-state-hover">
+            <i class="sp-inline-icon-solid-error sp-margin-right-1"></i><span>Error Loading Panel</span>
+            <div class="sp-tooltip-overlay sp-pointer-events-auto sp-danger sp-width-7">
+              <div class="sp-padding-bottom-1 sp-border-bottom-base sp-ellipsis">Could Not Connect to Sync<span class="sp-float-right sp-font-weight-base" style="font-size: 12px;">Error: 204</span></div>
+              <div class="sp-padding-top-1 sp-flex">
+                <a class="sp-button sp-small sp-danger sp-icon-circle-info" style="flex: 1">Details</a>
+              </div>
+            </div>
+          </span> -->
+
+          <!-- <span class="sp-padding-horizontal-2 sp-color-danger">
+            <i class="sp-inline-icon-solid-error sp-margin-right-1"></i><span>Error Loading Panel</span>
+          </span> -->
+
+
+
+        </div>
+      </div>
     </div>
     <div id="contexts" style="display:none" class="sp-app-content-sidebar sp-flex">
       <div class="sp-app-content-sidebar-menu sp-container-dark sp-alt-one sp-shadow-medium " style="width:220px;">
@@ -591,26 +701,8 @@
             </div>
           </div>
 
-          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">All Contexts</div>
-          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
-            <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Environment</div>
-          </div>
-          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
-            <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-down sp-margin-right-1"></i>Location</div>
-            <div class="sp-padding-left-1 sp-font-weight-semi-bold sp-flex">
-                <div style="flex:1"><i class="sp-inline-icon-info sp-margin-right-1 sp-color-muted"></i>location-city</div>
-                <div class="sp-align-right">chicago</div>
-            </div>
-            <div class="sp-padding-left-1 sp-font-weight-semi-bold sp-flex">
-                <div style="flex:1"><i class="sp-inline-icon-info sp-margin-right-1 sp-color-muted"></i>location-state</div>
-                <div class="sp-align-right">illinois</div>
-            </div>
-            <div class="sp-padding-left-1 sp-font-weight-semi-bold sp-flex">
-                <div style="flex:1"><i class="sp-inline-icon-info sp-margin-right-1 sp-color-muted"></i>location-country</div>
-                <div class="sp-align-right">usa</div>
-            </div>
-          </div>
-          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+          
+          <!-- <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
             <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>User</div>
           </div>
           <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
@@ -630,7 +722,7 @@
           </div>
           <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
             <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Custom</div>
-          </div>
+          </div> -->
 
         </div>
       </div>
@@ -643,29 +735,35 @@
           <!-- <button tabindex="0" class="sp-icon-circle-close sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
         </div>
         <div class="sp-app-content-sidebar-menu-content sp-small">
-          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Dimensions</div>
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Impression Data</div>
           <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base" style="font-size: 12px">
-            <div><i class="sp-inline-icon-info sp-margin-right-1"></i>Requested Impression</div>
-            <div><i class="sp-inline-icon-info sp-margin-right-1"></i>Delivered Impression</div>
-            <div><i class="sp-inline-icon-info sp-margin-right-1"></i>Measurable Impression</div>
+            <div><a href="http://specless.readme.io" target="_new"><i class="sp-inline-icon-info sp-margin-right-1"></i></a>Requested Impression<i class="sp-inline-icon-circle-check sp-margin-right-1 sp-float-right sp-color-success"></i></div>
+            <div><a href="http://specless.readme.io" target="_new"><i class="sp-inline-icon-info sp-margin-right-1"></i></a>Delivered Impression<i class="sp-inline-icon-circle-check sp-margin-right-1 sp-float-right sp-color-success"></i></div>
+            <div><a href="http://specless.readme.io" target="_new"><i class="sp-inline-icon-info sp-margin-right-1 sp-success"></i></a>Measurable Impression<i class="sp-inline-icon-circle-check sp-margin-right-1 sp-float-right sp-color-success"></i></div>
+            <div><a href="http://specless.readme.io" target="_new"><i class="sp-inline-icon-info sp-margin-right-1"></i></a>Viewable Impression<i class="sp-inline-icon-circle-check sp-margin-right-1 sp-float-right sp-color-success"></i></div>
+            <div class="sp-color-muted"><a href="http://specless.readme.io" target="_new"><i class="sp-inline-icon-info sp-margin-right-1"></i></a>Interacted Impression</div>
+            <div class="sp-color-muted"><a href="http://specless.readme.io" target="_new"><i class="sp-inline-icon-info sp-margin-right-1"></i></a>Video Impression</div>
+          </div>
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Exits (Click-Throughs)</div>
+          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base" style="font-size: 12px">
+            <div>My Exit<span class="sp-margin-right-1 sp-float-right sp-color-success">2</span></div>
+            <div>My Other Exit<span class="sp-margin-right-1 sp-float-right">0</span></div>
+            <div>Another Exit<span class="sp-margin-right-1 sp-float-right sp-color-success">2</span></div>
+            <div>Yet Another Exit<span class="sp-margin-right-1 sp-float-right">0</span></div>
+          </div>
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Trackers</div>
+          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base" style="font-size: 12px">
+            <div>My Tracker<span class="sp-margin-right-1 sp-float-right sp-color-success">2</span></div>
+            <div>My Other Tracker<span class="sp-margin-right-1 sp-float-right">0</span></div>
+            <div>Another Tracker<span class="sp-margin-right-1 sp-float-right sp-color-success">2</span></div>
+            <div>Yet Another Tracker<span class="sp-margin-right-1 sp-float-right">0</span></div>
           </div>
           <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Interactions</div>
           <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base" style="font-size: 12px">
-            <div>Logo Click<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 40px" value="1"/></div>
-            <div>Exit: Home Page<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 40px" value="2"/></div>
-            <div>Exit: Facebook Page<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 40px" value="1"/></div>
-          </div>
-          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Counters</div>
-          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base" style="font-size: 12px">
-            <div>Image Load Counter<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 40px" value="1"/></div>
-            <div>Some Counter<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 40px" value="2"/></div>
-            <div>Another Counter<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 40px" value="1"/></div>
-          </div>
-          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Timers</div>
-          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base" style="font-size: 12px">
-            <div>Video Watched<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 40px" value="0:24"/></div>
-            <div>Mouse Hover<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 40px" value="1:01"/></div>
-            <div>Custom Timer<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 40px" value="0:01"/></div>
+            <div>Click: element-id<span class="sp-margin-right-1 sp-float-right sp-color-success">2</span></div>
+            <div>Click: Element Alias<span class="sp-margin-right-1 sp-float-right">0</span></div>
+            <div>Click: Another Element<span class="sp-margin-right-1 sp-float-right sp-color-success">2</span></div>
+            <div>Click: Yet Another Element<span class="sp-margin-right-1 sp-float-right">0</span></div>
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../../../qit.css">
 </head>
 
-<body class="sp-app sp-technical">
+<body class="sp-app sp-technical sp-loading-content">
   <div class="sp-app-bar sp-container-dark sp-alt-one sp-wrapper">
     <div class="sp-row sp-vcenter sp-height-3 sp-fluid">
       <div class="sp-col sp-span-6 sp-flex sp-flex-align-items-center">
@@ -106,12 +106,12 @@
         </h5>
         <div class="sp-selector sp-margin-left-2 sp-small">
           <!-- <span class="">Test</span> -->
-          <button class="sp-selector-trigger sp-icon-status sp-small sp-font-color-white sp-sync-enabled">Live Version<i class="sp-inline-icon-dropdown sp-margin-left-1" style="position: relative; top: -1px"></i></button>
+          <button class="sp-selector-trigger sp-icon-lightning sp-small sp-font-color-white sp-sync-enabled">Specless Sync<i class="sp-inline-icon-dropdown sp-margin-left-1" style="position: relative; top: -1px"></i></button>
           <div class="sp-selector-overlay">
             <div class="sp-menu-dropdown sp-overlay sp-width-8 sp-color-contrast" style="left: auto; right: 0; transform: none;">
-              <a href="-creatives-explorer.html" class="sp-menu-item sp-icon-status sp-state-active">Live Version</a>
+              <a href="-creatives-explorer.html" class="sp-menu-item sp-icon-status">Live Version</a>
               <a href="-creatives-explorer-draft.html" class="sp-menu-item sp-icon-circle">Draft Version</a>
-              <a href="-creatives-explorer-sync.html" class="sp-menu-item sp-icon-lightning">Specless Sync</a>
+              <a href="-creatives-explorer-sync.html" class="sp-menu-item sp-icon-lightning sp-state-active">Specless Sync</a>
               <a href="-creatives-explorer-github.html" class="sp-menu-item sp-icon-branch sp-state-disabled">Git Sync</a>
               <a href="-creatives-explorer-vhistory.html" class="sp-menu-item sp-icon-version sp-border-top-base">Select From Version History...</a>
               <!-- <div class="sp-align-center sp-container sp-alt-one sp-rectangle">
@@ -125,15 +125,52 @@
             </div>
           </div>
         </div>
+        <!-- <button class="sp-icon-upload sp-small sp-success sp-font-color-white sp-margin-left-1">Push To Draft</button> -->
+        
         <div class="sp-selector sp-small">
-          <button class="sp-selector-trigger sp-icon-download sp-small sp-primary sp-font-color-white sp-margin-left-1"></button>
+          <button class="sp-selector-trigger sp-icon-up-down sp-small sp-success sp-font-color-white sp-margin-left-1">Push/Pull</button>
           <div class="sp-selector-overlay">
             <div class="sp-menu-dropdown sp-overlay sp-color-contrast" style="left: auto; right: 0; transform: none;">
-              <a class="sp-menu-item sp-icon-lightning">Download to Specless Sync</a>
-              <a class="sp-menu-item sp-icon-download">Download S-Kit Package</a>
+              <!-- <a class="sp-menu-item sp-icon-upload">Push to Draft Version</a>
+              <div class="sp-spacer-vertical"></div> -->
+              <div class="sp-menu-header">Push To Specless</div>
+              <a class="sp-menu-item sp-icon-upload-arrow sp-success">Upload to Draft Version</a>
+              <a class="sp-menu-item sp-icon-upload-arrow sp-success">Upload to New (Non-Draft) Version</a>
+              <div class="sp-menu-header">Pull From Specless</div>
+              <a class="sp-menu-item sp-icon-download sp-danger">Overwrite with Live Version</a>
+              <a class="sp-menu-item sp-icon-download sp-danger">Overwrite with Draft Version</a>
+              <a class="sp-menu-item sp-icon-download sp-danger">Overwrite with Specific Version</a>
+              <div class="sp-menu-header">Other</div>
+              <a class="sp-menu-item sp-icon-branch">Overwrite from Git Repository</a>
+              <a class="sp-menu-item sp-icon-file">Replace with S-Kit Package</a>
             </div>
           </div>
         </div>
+        <div class="sp-selector sp-small">
+          <button class="sp-selector-trigger sp-icon-folder sp-small sp-primary sp-font-color-white sp-margin-left-1"></button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-color-contrast sp-width-6" style="left: auto; right: 0; transform: none;">
+              <div class="sp-menu-header">Open in Finder...</div>
+              <a class="sp-menu-item sp-icon-folder">Root Project Folder</a>
+              <a class="sp-menu-item sp-icon-folder">Assets Folder</a>
+              <a class="sp-menu-item sp-icon-folder">Panels Folder</a>
+              <div class="sp-menu-header">Open in Application...</div>
+              <a class="sp-menu-item sp-icon-edit">Text Editor</a>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="sp-selector sp-small">
+          <button class="sp-selector-trigger sp-icon-replace sp-small sp-danger sp-font-color-white sp-margin-left-1">Overwrite</button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <a class="sp-menu-item sp-icon-upload">Push to Draft Version</a>
+              <div class="sp-spacer-vertical"></div>
+              <a class="sp-menu-item sp-icon-download">Overwrite with Live Version</a>
+              <a class="sp-menu-item sp-icon-download">Overwrite with Draft Version</a>
+              <a class="sp-menu-item sp-icon-download">Overwrite with Other Version...</a>
+            </div>
+          </div>
+        </div> -->
         <!-- <button class="sp-icon-folder sp-small sp-primary sp-font-color-white sp-margin-left-1"></button> -->
         <!-- <button class="sp-icon-upload sp-small sp-success sp-font-color-white sp-margin-left-1">Publish</button> -->
       </div>
@@ -158,11 +195,11 @@
 
   <div class="sp-app-content sp-flex" style="overflow: hidden">
     <div class="sp-app-content-sidebar sp-flex">
-      <div class="sp-app-content-sidebar-icon-menu sp-container-dark sp-contrast sp-border-top-base">
+      <!-- <div class="sp-app-content-sidebar-icon-menu sp-container-dark sp-contrast sp-border-top-base">
         <a href="-creatives-explorer.html" class="sp-button sp-minimal sp-simple-icon sp-icon-eye sp-primary sp-state-active"></a>
         <a href="-creatives-explorer-simulate.html" class="sp-button sp-minimal sp-simple-icon sp-icon-monitor sp-primary"></a>
         <a href="-creatives-explorer-assets.html" class="sp-button sp-minimal sp-simple-icon sp-icon-file-cabinet sp-primary"></a>
-      </div>
+      </div> -->
       <div class="sp-app-content-sidebar-menu sp-container-dark sp-alt-one sp-shadow-medium " style="width:135px;">
         <div class="sp-padding-1 sp-container sp-label sp-color-contrast sp-flex sp-border-bottom-base">
           <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Panels</span>
@@ -315,14 +352,13 @@
                   <!-- <a class="sp-menu-item sp-icon-share">Sharing</a>
                   <div class="sp-spacer-vertical"></div> -->
                   <a class="sp-menu-item sp-icon-eye">Open Simple Preview</a>
-                  <a class="sp-menu-item sp-icon-link">Generate Sharable Permalink</a>
-                  
+                  <a class="sp-menu-item sp-icon-link">Generate Custom Permalink</a>
                 </div>
               </div>
             </div>
         </span>
       </div>
-      <div class="sp-padding-1 sp-container sp-border-top-base sp-border-bottom-base sp-flex sp-small sp-font-weight-semi-bold" style="font-size: 12px;">
+      <div class="sp-padding-1 sp-container sp-border-top-base sp-border-bottom-base sp-flex sp-small sp-font-weight-semi-bold sp-no-wrap" style="font-size: 12px;">
         <div style="flex:1" class="sp-align-right sp-padding-horizontal-2">
           <div class="sp-selector sp-margin-left-1 sp-inline">
             <input readonly class="sp-minimal sp-selector-trigger sp-align-right" type="text" value="Custom View" style="width: 300px; font-weight: 600"/>
@@ -499,9 +535,123 @@
             </div>
           </div>
         </div> -->
-      <!-- <div class="sp-app-content-main-footer sp-container">
-        Test
-      </div> -->
+      <div class="sp-app-content-main-footer sp-container">
+        <div class="sp-padding-1 sp-container sp-border-top-base sp-border-bottom-base sp-small sp-font-weight-semi-bold sp-flex sp-flex-align-items-center" style="font-size: 12px; justify-content: center">
+
+          <span class="sp-padding-horizontal-2 sp-color-danger sp-tooltip sp-tooltip-above sp-state-hover">
+            <span>Sync Disconnected</span><i class="sp-inline-icon-solid-circle-close sp-margin-left-1"></i>
+            <div class="sp-tooltip-overlay sp-pointer-events-auto sp-width-7 sp-color-base">
+              <div class="sp-padding-bottom-1 sp-border-bottom-base sp-ellipsis sp-color-danger"><i class="sp-inline-icon-lightning sp-margin-right-1"></i>Specless Sync: No Connection<span class="sp-float-right sp-font-weight-base" style="font-size: 12px;"></span></div>
+              <p class="sp-overflow-wrap sp-font-weight-base sp-margin-top-1">Could not establish a connection with Specless Sync.</p>
+              <p class="sp-overflow-wrap sp-margin-top-1 sp-margin-bottom-1">How would you like to proceed?</p>
+              <div class="sp-padding-top-1">
+                <a class="sp-button sp-small sp-icon-circle-dot sp-block" style="flex: 1">Switch to Live Version</a>
+              </div>
+              <div class="sp-padding-top-1">
+                <a class="sp-button sp-small sp-icon-circle sp-block" style="flex: 1">Switch to Draft Version</a>
+              </div>
+              <div class="sp-padding-top-1">
+                <a class="sp-button sp-small sp-icon-version sp-block" style="flex: 1">Switch to Other Version</a>
+              </div>
+              <div class="sp-padding-top-1">
+                <a class="sp-button sp-small sp-icon-circle-help sp-block" style="flex: 1">Troubleshooting</a>
+              </div>
+            </div>
+          </span>
+
+          <!-- <span class="sp-padding-horizontal-2 sp-color-danger sp-tooltip sp-tooltip-above sp-state-hover">
+            <span>No Local Project</span><i class="sp-inline-icon-solid-circle-close sp-margin-left-1"></i>
+            <div class="sp-tooltip-overlay sp-pointer-events-auto sp-width-7 sp-color-base">
+              <div class="sp-padding-bottom-1 sp-border-bottom-base sp-ellipsis sp-color-danger"><i class="sp-inline-icon-lightning sp-margin-right-1"></i>Specless Sync: No Local Copy<span class="sp-float-right sp-font-weight-base" style="font-size: 12px;"></span></div>
+              <p class="sp-overflow-wrap sp-font-weight-base sp-margin-top-1">A copy of this creative could not be found in your Local Project Directory.</p>
+              <p class="sp-overflow-wrap sp-margin-top-1 sp-margin-bottom-1">Would you like to download a local copy?</p>
+              <div class="sp-padding-top-1">
+                <a class="sp-button sp-small sp-success sp-icon-download sp-block" style="flex: 1">Download Live Version</a>
+              </div>
+              <div class="sp-padding-top-1">
+                <a class="sp-button sp-small sp-success sp-icon-download sp-block" style="flex: 1">Download Draft Version</a>
+              </div>
+              <div class="sp-padding-top-1">
+                <a class="sp-button sp-small sp-success sp-icon-version sp-block" style="flex: 1">Select from Version History</a>
+              </div>
+            </div>
+          </span> -->
+
+          <!-- <span class="sp-padding-horizontal-2">
+            <span>Previously Compiled</span><i class="sp-inline-icon-solid-circle-check sp-margin-left-1"></i>
+          </span> -->
+
+          <!-- <span class="sp-padding-horizontal-2 sp-color-primary">
+            <span>Compiling</span><i class="sp-inline-icon-solid-sync sp-margin-left-1"></i>
+          </span> -->
+
+          <!-- <span class="sp-padding-horizontal-2 sp-color-success">
+            <span>Compiled Successfully</span><i class="sp-inline-icon-solid-circle-check sp-margin-left-1"></i>
+          </span> -->
+
+          <!-- <span class="sp-padding-horizontal-2 sp-color-warning">
+            <span>Compiled With Warnings</span><i class="sp-inline-icon-solid-warning sp-margin-left-1"></i>
+          </span> -->
+
+          <!-- <span class="sp-padding-horizontal-2 sp-color-danger">
+            <span>Failed to Compile</span><i class="sp-inline-icon-solid-error sp-margin-left-1"></i>
+          </span> -->
+
+          <!-- <span class="sp-padding-horizontal-2 sp-color-danger sp-tooltip sp-tooltip-above sp-state-hover">
+            <span>Failed to Compile</span><i class="sp-inline-icon-solid-error sp-margin-left-1"></i>
+            <div class="sp-tooltip-overlay sp-pointer-events-auto sp-danger sp-width-7">
+              <div class="sp-padding-bottom-1 sp-border-bottom-base sp-ellipsis">Compile Error<span class="sp-float-right sp-font-weight-base" style="font-size: 12px;">index.css:233</span></div>
+              <div class="sp-padding-top-1 sp-flex">
+                <a class="sp-button sp-small sp-danger sp-icon-circle-info sp-margin-right-1" style="flex: 1">Details</a>
+                <a class="sp-button sp-small sp-danger sp-icon-reload" style="flex: 1">Retry</a>
+              </div>
+            </div>
+          </span> -->
+          
+          <span class="sp-padding-horizontal-2 sp-border-right-base sp-border-left-base sp-color-muted">
+            <i class="sp-inline-icon-solid-log sp-margin-right-1"></i><span class="sp-margin-right-2">0</span>
+            <i class="sp-inline-icon-solid-warning sp-margin-right-1"></i><span class="sp-margin-right-2">0</span>
+            <i class="sp-inline-icon-solid-error sp-margin-right-1"></i><span class="">0</span>
+          </span>
+
+          <!-- <span class="sp-padding-horizontal-2 sp-color-primary">
+            <i class="sp-inline-icon-solid-sync sp-margin-right-1"></i><span>Loading</span>
+          </span> -->
+
+          <!-- <span class="sp-padding-horizontal-2 sp-color-primary">
+            <i class="sp-inline-icon-solid-sync sp-margin-right-1"></i><span>Reloading</span>
+          </span> -->
+
+          <!-- <span class="sp-padding-horizontal-2 sp-color-primary">
+            <i class="sp-inline-icon-solid-sync sp-margin-right-1"></i><span>Updating</span>
+          </span> -->
+
+          <!-- <span class="sp-padding-horizontal-2">
+            <i class="sp-inline-icon-solid-circle-check sp-margin-right-1"></i><span>Panel Ready</span>
+          </span> -->
+
+          <!-- <span class="sp-padding-horizontal-2 sp-color-danger">
+            <i class="sp-inline-icon-solid-error sp-margin-right-1"></i><span>Error Loading Panel</span>
+          </span> -->
+
+          <!-- <span class="sp-padding-horizontal-2 sp-color-danger sp-tooltip sp-tooltip-above sp-state-hover">
+            <i class="sp-inline-icon-solid-error sp-margin-right-1"></i><span>Error Loading Panel</span>
+            <div class="sp-tooltip-overlay sp-pointer-events-auto sp-danger sp-width-7">
+              <div class="sp-padding-bottom-1 sp-border-bottom-base sp-ellipsis">Could Not Connect to Sync<span class="sp-float-right sp-font-weight-base" style="font-size: 12px;">Error: 204</span></div>
+              <div class="sp-padding-top-1 sp-flex">
+                <a class="sp-button sp-small sp-danger sp-icon-circle-info" style="flex: 1">Details</a>
+              </div>
+            </div>
+          </span> -->
+
+          <span class="sp-padding-horizontal-2 sp-color-danger">
+            <i class="sp-inline-icon-solid-error sp-margin-right-1"></i><span>Error Loading Panel</span>
+          </span>
+
+
+
+        </div>
+      </div>
     </div>
     <div id="contexts" style="display:none" class="sp-app-content-sidebar sp-flex">
       <div class="sp-app-content-sidebar-menu sp-container-dark sp-alt-one sp-shadow-medium " style="width:220px;">

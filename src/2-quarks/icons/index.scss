@@ -18,9 +18,31 @@
     @extend %icon-#{$icon} !optional;
 }
 
+@mixin sp-icon-spin {
+  animation: iconSpin;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  //animation-direction: alternate;
+}
+
+@mixin sp-inline-icon-spin {
+  animation: inlineIconSpin;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  //animation-direction: alternate;
+}
+
 [class^='sp-icon-'], [class*=' sp-icon-'], [class^='sp-inline-icon-'], [class*=' sp-inline-icon-'], .sp-icon {
   &::before {
     @include sp-icon-styles;
+  }
+
+  &.sp-icon-spin {
+    &::before {
+      @include sp-icon-spin();
+    }
   }
 }
 
@@ -34,9 +56,35 @@
   }
 }
 
+@keyframes iconSpin {
+ 0% {
+  transform: rotate(0deg);
+ }
+
+ 100% {
+  transform: rotate(360deg);
+ }
+}
+
+@keyframes inlineIconSpin {
+ 0% {
+  transform: translateY(18%) scale(1.15) rotate(0deg);
+ }
+
+ 100% {
+  transform: translateY(18%) scale(1.15) rotate(360deg);
+ }
+}
+
 [class^='sp-inline-icon-'], [class*=' sp-inline-icon-'] {
   &::before {
     transform: translateY(18%) scale(1.15);
+  }
+
+  &.sp-icon-spin {
+    &::before {
+      @include sp-inline-icon-spin();
+    }
   }
 }
 

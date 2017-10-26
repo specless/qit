@@ -211,10 +211,16 @@
 	@include sp-padding(3);
 	flex: 1;
 	overflow: auto;
+	z-index: 3;
 }
+
 
 .sp-app-footer {
 	position: relative;
+}
+
+.sp-app-content-main-footer {
+	z-index: 10;
 }
 
 .sp-app-side-menu {
@@ -475,5 +481,100 @@
 
 	#preview:hover #recenter {
 	  	opacity: 1;
+	}
+}
+
+.sp-app.sp-loading-content {
+
+
+	&.sp-technical {
+		.sp-app-content {
+			&::after {
+				display: inline-block;
+				content: "";
+				position: absolute;
+				background-color: rgba(0,0,0,0.25);
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				z-index: 6;
+			}
+
+			.sp-app-content-sidebar {
+				.sp-app-content-sidebar-menu-content {
+					position: relative;
+					
+					> div {
+						display: none !important;
+					}
+
+					&::after {
+						display: inline-block;
+						position: absolute;
+						@include sp-icon-styles(loading-spinner);
+						@include sp-icon-spin();
+						top: 50%;
+						left: 50%;
+						font-size: 40px !important;
+						margin-left: -20px;
+						z-index: 10;
+						opacity: 0.5;
+					}
+				}
+			}
+
+			.sp-app-content-main #content {
+				display: none;
+			}
+
+			.sp-app-content-main {
+				position: relative;
+				&::after {
+					display: inline-block;
+					position: absolute;
+					@include sp-icon-styles(loading-spinner);
+					@include sp-icon-spin();
+					top: 50%;
+					left: 50%;
+					font-size: 40px !important;
+					margin-left: -20px;
+					z-index: 10;
+					opacity: 0.5;
+				}
+
+				#content {
+					display: none;
+				}
+
+				> div {
+					&:first-child, &:nth-child(2) {
+						> * {
+							opacity: 0.25;
+						}
+					}
+					&:last-child {
+
+					}
+				}
+
+				.sp-app-content-main-footer {
+					position: relative;
+					&::after {
+						display: inline-block;
+						content: "";
+						position: absolute;
+						background-color: rgba(0,0,0,0.25);
+						width: 100%;
+						height: 100%;
+						top: 0;
+						left: 0;
+						z-index: 6;
+					}
+				}
+
+				
+			}
+		}
 	}
 }

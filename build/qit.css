@@ -2270,7 +2270,7 @@ select + label::before, .sp-selector > input[type='text'].sp-selector-trigger + 
 .sp-icon-live::before, .sp-icon-after-live::after, .sp-inline-icon-live::before {
   content: "\F069"; }
 
-.sp-app.sp-loading-content.sp-technical .sp-app-content .sp-app-content-sidebar .sp-app-content-sidebar-menu-content::after, .sp-app.sp-loading-content.sp-technical .sp-app-content .sp-app-content-main::after, .sp-icon-loading-spinner::before, .sp-icon-after-loading-spinner::after, .sp-inline-icon-loading-spinner::before {
+.sp-app.sp-loading-content .sp-hide-content-while-loading::after, .sp-app.sp-loading-content.sp-technical .sp-app-content .sp-app-content-sidebar .sp-app-content-sidebar-menu-content::after, .sp-app.sp-loading-content.sp-technical .sp-app-content .sp-app-content-main::after, .sp-icon-loading-spinner::before, .sp-icon-after-loading-spinner::after, .sp-inline-icon-loading-spinner::before {
   content: "\F06A"; }
 
 .sp-icon-location::before, .sp-icon-after-location::after, .sp-inline-icon-location::before {
@@ -9589,11 +9589,12 @@ blockquote {
   height: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   opacity: 1;
-  transition: 0.5s ease opacity; }
-  .sp-app-overlay.sp-hide {
+  transition: 0.5s ease opacity;
+  z-index: 99; }
+  .sp-app-overlay.sp-hide, .sp-app-overlay.sp-hidden, .sp-app.sp-hide-overlay .sp-app-overlay {
     top: -100%;
     opacity: 0; }
-    .sp-app-overlay.sp-hide > .sp-app-overlay-content {
+    .sp-app-overlay.sp-hide > .sp-app-overlay-content, .sp-app-overlay.sp-hidden > .sp-app-overlay-content, .sp-app.sp-hide-overlay .sp-app-overlay > .sp-app-overlay-content {
       transform: translate(-50%, -50%) scale(0); }
   .sp-app-overlay > .sp-app-overlay-content {
     transition: 0.25s ease transform;
@@ -9606,6 +9607,9 @@ blockquote {
 html {
   overflow-x: auto;
   background-color: #35393E; }
+
+body {
+  min-height: 100vh; }
 
 .sp-app {
   background-color: #F5F5F5;
@@ -9643,6 +9647,12 @@ html {
       pointer-events: none; }
     .sp-app.sp-initializing .sp-app-loading-logo {
       opacity: 1; }
+    .sp-app.sp-initializing .sp-app-side-menu {
+      visibility: hidden; }
+    .sp-app.sp-initializing .sp-app-overlay {
+      background-color: transparent; }
+    .sp-app.sp-initializing .sp-app-loader {
+      visibility: hidden; }
   .sp-app.sp-technical {
     height: 100%;
     display: flex;
@@ -9698,13 +9708,18 @@ html {
 
 .sp-app-loader {
   height: 0px;
-  transition: 0.5s ease height;
-  overflow: visible;
+  overflow: hidden;
   position: relative;
   z-index: 100;
   background-color: black !important; }
+  .sp-app.sp-loading .sp-app-loader {
+    height: 4px;
+    margin-bottom: -4px; }
+    .sp-app.sp-loading .sp-app-loader .sp-app-loader-message {
+      opacity: 1; }
   .sp-app-loader:active, .sp-app-loader.sp-state-active {
-    height: 4px; }
+    height: 4px;
+    margin-bottom: -4px; }
     .sp-app-loader:active .sp-app-loader-message, .sp-app-loader.sp-state-active .sp-app-loader-message {
       opacity: 1; }
   .sp-app-loader .sp-app-loader-message {
@@ -9731,15 +9746,19 @@ html {
 .sp-app-bar {
   position: relative;
   min-height: 75.67px;
-  transition: 0.5s ease transform, 0.5s ease opacity;
+  transition: 0.5s ease transform, 0.5s ease opacity, 0s ease visibility;
   opacity: 1;
-  transform: none; }
+  transform: none;
+  visibility: visible; }
 
 .sp-app-org-label {
   min-height: 37.59px;
-  transition: 0.5s ease transform, 0.5s ease opacity;
+  transition: 0.5s ease transform, 0.5s ease opacity, 0s ease visibility;
+  visibility: visible;
   opacity: 1;
   transform: none; }
+  .sp-app.sp-hide-org-label .sp-app-org-label {
+    display: none; }
 
 .sp-app-notifications {
   display: inline-block;
@@ -9753,23 +9772,31 @@ html {
 .sp-app-header {
   position: relative;
   min-height: 72.09px;
-  transition: 0.5s ease transform, 0.5s ease opacity;
+  transition: 0.5s ease transform, 0.5s ease opacity, 0s ease visibility;
+  visibility: visible;
   opacity: 1;
   transform: none; }
+  .sp-app.sp-hide-header .sp-app-header {
+    display: none; }
 
 .sp-app-menu {
   position: relative;
-  transition: 0.5s ease transform, 0.5s ease opacity;
+  transition: 0.5s ease transform, 0.5s ease opacity, 0s ease visibility;
+  visibility: visible;
   opacity: 1;
   transform: none; }
+  .sp-app.sp-hide-app-menu .sp-app-menu {
+    display: none; }
 
 .sp-app-content {
   position: relative;
   padding-top: 3.2rem;
   padding-bottom: 6.4rem;
-  transition: 0.5s ease transform, 0.5s ease opacity;
+  transition: 0.5s ease opacity;
   opacity: 1;
   transform: none; }
+  .sp-app.sp-hide-content .sp-app-content {
+    display: none; }
 
 .sp-app-content-sidebar {
   min-width: 2.13rem; }
@@ -9858,9 +9885,10 @@ html {
   transform: none;
   transition: 0.5s ease transform;
   overflow-x: hidden;
-  overflow-y: auto; }
-  .sp-app-side-menu.sp-hidden {
-    transform: translateY(100%); }
+  overflow-y: auto;
+  z-index: 98; }
+  .sp-app-side-menu.sp-hidden, .sp-app.sp-hide-menu .sp-app-side-menu {
+    transform: translateX(-110%); }
 
 .sp-creative-thumbnail {
   position: relative;
@@ -10050,6 +10078,37 @@ html {
     transform: translate(-50%, -50%); }
   .sp-app-content-main .sp-canvas-preview:hover .sp-recenter-canvas-btn {
     opacity: 1; }
+
+.sp-app.sp-loading-content .sp-hide-content-while-loading > * {
+  visibility: hidden !important;
+  pointer-events: none; }
+
+.sp-app.sp-loading-content .sp-hide-content-while-loading::after {
+  visibility: visible;
+  display: inline-block !important;
+  position: absolute;
+  font-family: 'Icon Font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Better positioning */
+  display: inline-block;
+  animation: iconSpin;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  top: 50%;
+  left: 50%;
+  font-size: 40px !important;
+  margin-left: -20px;
+  z-index: 10;
+  opacity: 0.5; }
 
 .sp-app.sp-loading-content.sp-technical .sp-app-content::after {
   display: inline-block;

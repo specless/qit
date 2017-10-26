@@ -7,8 +7,9 @@
 	@include sp-bg-overlay-dark(4);
 	opacity: 1;
 	transition: 0.5s ease opacity;
+	z-index: 99;
 
-	&.sp-hide {
+	&.sp-hide, &.sp-hidden, .sp-app.sp-hide-overlay & {
 		top: -100%;
 		opacity: 0;
 

@@ -156,7 +156,7 @@ body {
 
 .sp-app-loader {
 	height: 0px;
-	transition: 0.5s ease height;
+	//transition: 0.5s ease height;
 	overflow: visible;
 	position: relative;
 	z-index: 100;
@@ -164,6 +164,7 @@ body {
 
 	.sp-app.sp-loading & {
 		height: 4px;
+		margin-bottom: -4px;
 
 		.sp-app-loader-message {
 			opacity: 1;
@@ -172,6 +173,7 @@ body {
 
 	@include sp-state(active) {
 		height: 4px;
+		margin-bottom: -4px;
 
 		.sp-app-loader-message {
 			opacity: 1;
@@ -399,6 +401,7 @@ body {
 	transition: 0.5s ease transform;
 	overflow-x: hidden;
 	overflow-y: auto;
+	z-index: 98;
 
 	&.sp-hidden, .sp-app.sp-hide-menu & {
 		transform: translateX(-110%);

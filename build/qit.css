@@ -9069,10 +9069,10 @@ blockquote {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   opacity: 1;
   transition: 0.5s ease opacity; }
-  .sp-app-overlay.sp-hide {
+  .sp-app-overlay.sp-hide-overlay {
     top: -100%;
     opacity: 0; }
-    .sp-app-overlay.sp-hide > .sp-app-overlay-content {
+    .sp-app-overlay.sp-hide-overlay > .sp-app-overlay-content {
       transform: translate(-50%, -50%) scale(0); }
   .sp-app-overlay > .sp-app-overlay-content {
     transition: 0.25s ease transform;
@@ -9085,6 +9085,9 @@ blockquote {
 html {
   overflow-x: auto;
   background-color: #35393E; }
+
+body {
+  min-height: 100vh; }
 
 .sp-app {
   background-color: #F5F5F5;
@@ -9182,6 +9185,10 @@ html {
   position: relative;
   z-index: 100;
   background-color: black !important; }
+  .sp-app.sp-app-loading .sp-app-loader {
+    height: 4px; }
+    .sp-app.sp-app-loading .sp-app-loader .sp-app-loader-message {
+      opacity: 1; }
   .sp-app-loader:active, .sp-app-loader.sp-state-active {
     height: 4px; }
     .sp-app-loader:active .sp-app-loader-message, .sp-app-loader.sp-state-active .sp-app-loader-message {
@@ -9329,7 +9336,7 @@ html {
   transition: 0.5s ease transform;
   overflow-x: hidden;
   overflow-y: auto; }
-  .sp-app-side-menu.sp-hidden {
+  .sp-app-side-menu.sp-hidden, .sp-app.sp-hide-menu .sp-app-side-menu {
     transform: translateY(100%); }
 
 .sp-creative-thumbnail {

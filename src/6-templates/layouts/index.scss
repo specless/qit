@@ -21,6 +21,10 @@ html {
 	// }
 }
 
+body {
+	min-height: 100vh;
+}
+
 .sp-app {
 	@include sp-bg-color('light-lighter');
 	min-width: 1100px;
@@ -157,6 +161,15 @@ html {
 	position: relative;
 	z-index: 100;
 	background-color: black !important;
+
+	.sp-app.sp-app-loading & {
+		height: 4px;
+
+		.sp-app-loader-message {
+			opacity: 1;
+		}
+	}
+
 	@include sp-state(active) {
 		height: 4px;
 
@@ -375,10 +388,11 @@ html {
 	overflow-x: hidden;
 	overflow-y: auto;
 
-	&.sp-hidden {
+	&.sp-hidden, .sp-app.sp-hide-menu & {
 		transform: translateY(100%);
 	}
 }
+
 
 .sp-creative-thumbnail {
 	position: relative;

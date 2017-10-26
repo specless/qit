@@ -1,0 +1,173 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example</title>
+  <link rel="stylesheet" href="../../../qit.css">
+</head>
+
+<body class="sp-app">
+  <div class="sp-app-loader sp-container-dark">
+    <div class="sp-app-loader-bar"></div>
+  </div>
+  <div class="sp-app-loading-logo">
+    sp-app-loading-logo
+    <div class="sp-animated-logo sp-primary">
+      <div class="sp-animated-logo-top"></div>
+      <div class="sp-animated-logo-bottom"></div>
+      <div class="sp-animated-logo-left"></div>
+      <div class="sp-animated-logo-right"></div>
+      <div class="sp-animated-logo-middle"></div>
+      <div class="sp-animated-logo-inner-top"></div>
+      <div class="sp-animated-logo-inner-bottom"></div>
+    </div>
+  </div>
+  <div class="sp-app-bar sp-container-dark sp-alt-one sp-wrapper">
+    <div class="sp-row sp-vcenter sp-height-3">
+      sp-app-bar
+    </div>
+  </div>
+  <div class="sp-app-org-label sp-container-dark sp-wrapper">
+    <div class="sp-row sp-padding-2 sp-padding-left-3">
+      <div class="sp-label sp-small">sp-app-org-label</div>
+    </div>
+  </div>
+  <div class="sp-app-header sp-container-dark sp-alt-two sp-wrapper">
+    <div class="sp-row sp-vcenter">
+      <div class="sp-col sp-span-12 sp-flex sp-flex-align-items-center">
+        <h5 class="sp-inline sp-contrast sp-inline" style="flex: 1; position: relative">
+          <i class="sp-inline-icon-organization sp-color-primary sp-margin-right-1"></i>
+          sp-app-header
+          <!-- <span class="sp-color-muted sp-small" style="position: absolute; bottom: -15px; left: 32px;">/ dhC897</span> -->
+        </h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="sp-app-menu sp-container-dark sp-alt-two sp-wrapper">
+    <div class="sp-row sp-vbottom sp-height-2">
+      sp-app-menu
+    </div>
+  </div>
+
+  <div class="sp-app-content sp-wrapper">
+    <div>sp-app-content</div>
+  </div>
+
+  <div class="sp-app-side-menu">
+    <div>sp-app-side-menu</div>
+  </div>
+
+  <div class="sp-app-overlay">
+    <div>sp-app-overlay</div>
+  </div>
+
+
+    <script>
+    var grid = document.getElementById('grid');
+    var list = document.getElementById('list');
+    var target = document.getElementById('list-toggle');
+
+    grid.addEventListener('click', function() {
+      target.setAttribute('class', 'sp-row sp-padding-top-3');
+      grid.setAttribute('class', 'sp-minimal sp-simple-icon sp-primary sp-icon-grid sp-state-active');
+      list.setAttribute('class', 'sp-minimal sp-simple-icon sp-primary sp-icon-list');
+    });
+
+
+    list.addEventListener('click', function() {
+      target.setAttribute('class', 'sp-row sp-padding-top-3 sp-list');
+      grid.setAttribute('class', 'sp-minimal sp-simple-icon sp-primary sp-icon-grid');
+      list.setAttribute('class', 'sp-minimal sp-simple-icon sp-primary sp-icon-list sp-state-active');
+    });
+
+
+      
+    </script>
+
+
+
+<script>
+
+var initHelpBeacon = function(userData) {
+
+  window.helpSearch = function (param) {
+    window.HS = null;
+    !function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!0,baseUrl:"//specless.helpscoutdocs.com/"},contact:{enabled:!0,formId:"280e8d18-b297-11e7-b466-0ec85169275a"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});
+    HS.beacon.config({
+      color: '#00C3DC',
+      modal: true,
+      instructions: "Couldn't find what you were looking for? Let us know how we can help."
+    });
+    HS.beacon.ready(function() {
+      HS.beacon.identify(userData);
+      this.open();
+      HS.beacon.search(param);
+    });
+  }
+
+
+  window.helpArticle = function (articleId) {
+    window.HS = null;
+    !function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!0,baseUrl:"//specless.helpscoutdocs.com/"},contact:{enabled:!0,formId:"280e8d18-b297-11e7-b466-0ec85169275a"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});
+    HS.beacon.config({
+      color: '#00C3DC',
+      modal: true,
+      instructions: "Couldn't find what you were looking for? Let us know how we can help."
+    });
+    HS.beacon.ready(function() {
+      HS.beacon.identify(userData);
+      this.open();
+      HS.beacon.show(articleId);
+    });
+  }
+
+  window.helpContact = function () {
+    window.HS = null;
+    !function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!1,baseUrl:""},contact:{enabled:!0,formId:"febd2c5c-b299-11e7-b466-0ec85169275a"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});
+    HS.beacon.config({
+      color: '#00C3DC',
+      modal: true,
+      instructions: "Let us know how we can help!"
+    });
+    HS.beacon.ready(function() {
+      HS.beacon.identify(userData);
+      HS.beacon.prefill({
+        subject: 'App Support Request',
+        topic: 'app-support'
+      });
+      this.open();
+    });
+  }
+
+  window.helpBug = function () {
+    window.HS = null;
+    !function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!1,baseUrl:""},contact:{enabled:!0,formId:"febd2c5c-b299-11e7-b466-0ec85169275a"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});
+    HS.beacon.config({
+      color: '#00C3DC',
+      modal: true,
+      instructions: "Please describe what you were doing in the app and the issue you are seeing."
+    });
+    HS.beacon.ready(function() {
+      HS.beacon.identify(userData);
+      HS.beacon.prefill({
+        subject: 'Bug Report',
+        topic: 'bugs'
+      });
+      this.open();
+    });
+  }
+}
+
+initHelpBeacon({
+  name: "Test User",
+  email: "test@testing.com",
+  key1: "value",
+  key2: "value",
+  key3: "value"
+});
+
+</script>
+</body>
+</html>

@@ -1904,6 +1904,12 @@ html {
 .sp-no-overflow {
   overflow: hidden; }
 
+.sp-border-box {
+  box-sizing: border-box !important; }
+
+.sp-content-box {
+  box-sizing: content-box !important; }
+
 .sp-ellipsis {
   white-space: nowrap;
   overflow: hidden;
@@ -3356,8 +3362,9 @@ select + label::before, .sp-selector > input[type='text'].sp-selector-trigger + 
 .sp-line-through {
   text-decoration: line-through !important; }
 
-button,
 .sp-button,
+button,
+button[type='button'],
 input[type='button'],
 input[type='submit'],
 input[type='reset'] {
@@ -3388,9 +3395,11 @@ input[type='reset'] {
   border-width: 1px;
   background-color: #FFFFFF;
   border-radius: 4px; }
-  button.sp-small, .sp-small button,
-  .sp-button.sp-small, .sp-small
-  .sp-button,
+  .sp-button.sp-small, .sp-small .sp-button,
+  button.sp-small, .sp-small
+  button,
+  button[type='button'].sp-small, .sp-small
+  button[type='button'],
   input[type='button'].sp-small, .sp-small
   input[type='button'],
   input[type='submit'].sp-small, .sp-small
@@ -3400,9 +3409,11 @@ input[type='reset'] {
     font-size: .67rem;
     line-height: 1.1;
     letter-spacing: .1em; }
-  button.sp-large, .sp-large button,
-  .sp-button.sp-large, .sp-large
-  .sp-button,
+  .sp-button.sp-large, .sp-large .sp-button,
+  button.sp-large, .sp-large
+  button,
+  button[type='button'].sp-large, .sp-large
+  button[type='button'],
   input[type='button'].sp-large, .sp-large
   input[type='button'],
   input[type='submit'].sp-large, .sp-large
@@ -3413,24 +3424,27 @@ input[type='reset'] {
     line-height: 1.1;
     letter-spacing: .067em;
     font-weight: 600; }
-  button i,
   .sp-button i,
+  button i,
+  button[type='button'] i,
   input[type='button'] i,
   input[type='submit'] i,
   input[type='reset'] i {
     position: relative;
     top: 1px;
     left: 1px; }
-  button.sp-circle,
   .sp-button.sp-circle,
+  button.sp-circle,
+  button[type='button'].sp-circle,
   input[type='button'].sp-circle,
   input[type='submit'].sp-circle,
   input[type='reset'].sp-circle {
     max-height: unset;
     border-radius: 50%;
     position: relative; }
-    button.sp-circle > *,
     .sp-button.sp-circle > *,
+    button.sp-circle > *,
+    button[type='button'].sp-circle > *,
     input[type='button'].sp-circle > *,
     input[type='submit'].sp-circle > *,
     input[type='reset'].sp-circle > * {
@@ -3439,12 +3453,16 @@ input[type='reset'] {
       left: 0;
       width: 100%;
       height: 100%; }
-  button .sp-container-dark, button.sp-container-dark,
-  .sp-container-dark button,
-  .sp-button .sp-container-dark,
-  .sp-button.sp-container-dark,
+  .sp-button .sp-container-dark, .sp-button.sp-container-dark,
+  .sp-container-dark .sp-button,
+  button .sp-container-dark,
+  button.sp-container-dark,
   .sp-container-dark
-  .sp-button,
+  button,
+  button[type='button'] .sp-container-dark,
+  button[type='button'].sp-container-dark,
+  .sp-container-dark
+  button[type='button'],
   input[type='button'] .sp-container-dark,
   input[type='button'].sp-container-dark,
   .sp-container-dark
@@ -3458,9 +3476,11 @@ input[type='reset'] {
   .sp-container-dark
   input[type='reset'] {
     color: #FFFFFF; }
-  button:hover, button.sp-state-hover,
-  .sp-button:hover,
-  .sp-button.sp-state-hover,
+  .sp-button:hover, .sp-button.sp-state-hover,
+  button:hover,
+  button.sp-state-hover,
+  button[type='button']:hover,
+  button[type='button'].sp-state-hover,
   input[type='button']:hover,
   input[type='button'].sp-state-hover,
   input[type='submit']:hover,
@@ -3469,17 +3489,25 @@ input[type='reset'] {
   input[type='reset'].sp-state-hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.12); }
-    button:hover .sp-container-dark, button:hover.sp-container-dark,
-    .sp-container-dark button:hover, button.sp-state-hover .sp-container-dark, button.sp-state-hover.sp-container-dark,
-    .sp-container-dark button.sp-state-hover,
-    .sp-button:hover .sp-container-dark,
-    .sp-button:hover.sp-container-dark,
+    .sp-button:hover .sp-container-dark, .sp-button:hover.sp-container-dark,
+    .sp-container-dark .sp-button:hover, .sp-button.sp-state-hover .sp-container-dark, .sp-button.sp-state-hover.sp-container-dark,
+    .sp-container-dark .sp-button.sp-state-hover,
+    button:hover .sp-container-dark,
+    button:hover.sp-container-dark,
     .sp-container-dark
-    .sp-button:hover,
-    .sp-button.sp-state-hover .sp-container-dark,
-    .sp-button.sp-state-hover.sp-container-dark,
+    button:hover,
+    button.sp-state-hover .sp-container-dark,
+    button.sp-state-hover.sp-container-dark,
     .sp-container-dark
-    .sp-button.sp-state-hover,
+    button.sp-state-hover,
+    button[type='button']:hover .sp-container-dark,
+    button[type='button']:hover.sp-container-dark,
+    .sp-container-dark
+    button[type='button']:hover,
+    button[type='button'].sp-state-hover .sp-container-dark,
+    button[type='button'].sp-state-hover.sp-container-dark,
+    .sp-container-dark
+    button[type='button'].sp-state-hover,
     input[type='button']:hover .sp-container-dark,
     input[type='button']:hover.sp-container-dark,
     .sp-container-dark
@@ -3505,9 +3533,11 @@ input[type='reset'] {
     .sp-container-dark
     input[type='reset'].sp-state-hover {
       box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.22); }
-  button:active, button.sp-state-active,
-  .sp-button:active,
-  .sp-button.sp-state-active,
+  .sp-button:active, .sp-button.sp-state-active,
+  button:active,
+  button.sp-state-active,
+  button[type='button']:active,
+  button[type='button'].sp-state-active,
   input[type='button']:active,
   input[type='button'].sp-state-active,
   input[type='submit']:active,
@@ -3516,17 +3546,25 @@ input[type='reset'] {
   input[type='reset'].sp-state-active {
     background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12));
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.22); }
-    button:active .sp-container-dark, button:active.sp-container-dark,
-    .sp-container-dark button:active, button.sp-state-active .sp-container-dark, button.sp-state-active.sp-container-dark,
-    .sp-container-dark button.sp-state-active,
-    .sp-button:active .sp-container-dark,
-    .sp-button:active.sp-container-dark,
+    .sp-button:active .sp-container-dark, .sp-button:active.sp-container-dark,
+    .sp-container-dark .sp-button:active, .sp-button.sp-state-active .sp-container-dark, .sp-button.sp-state-active.sp-container-dark,
+    .sp-container-dark .sp-button.sp-state-active,
+    button:active .sp-container-dark,
+    button:active.sp-container-dark,
     .sp-container-dark
-    .sp-button:active,
-    .sp-button.sp-state-active .sp-container-dark,
-    .sp-button.sp-state-active.sp-container-dark,
+    button:active,
+    button.sp-state-active .sp-container-dark,
+    button.sp-state-active.sp-container-dark,
     .sp-container-dark
-    .sp-button.sp-state-active,
+    button.sp-state-active,
+    button[type='button']:active .sp-container-dark,
+    button[type='button']:active.sp-container-dark,
+    .sp-container-dark
+    button[type='button']:active,
+    button[type='button'].sp-state-active .sp-container-dark,
+    button[type='button'].sp-state-active.sp-container-dark,
+    .sp-container-dark
+    button[type='button'].sp-state-active,
     input[type='button']:active .sp-container-dark,
     input[type='button']:active.sp-container-dark,
     .sp-container-dark
@@ -3552,9 +3590,11 @@ input[type='reset'] {
     .sp-container-dark
     input[type='reset'].sp-state-active {
       box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5); }
-  button:disabled, button.sp-state-disabled,
-  .sp-button:disabled,
-  .sp-button.sp-state-disabled,
+  .sp-button:disabled, .sp-button.sp-state-disabled,
+  button:disabled,
+  button.sp-state-disabled,
+  button[type='button']:disabled,
+  button[type='button'].sp-state-disabled,
   input[type='button']:disabled,
   input[type='button'].sp-state-disabled,
   input[type='submit']:disabled,
@@ -3565,12 +3605,16 @@ input[type='reset'] {
     background-color: #FFFFFF !important;
     background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12));
     border-color: rgba(0, 0, 0, 0.12); }
-  button .sp-container-dark, button.sp-container-dark,
-  .sp-container-dark button,
-  .sp-button .sp-container-dark,
-  .sp-button.sp-container-dark,
+  .sp-button .sp-container-dark, .sp-button.sp-container-dark,
+  .sp-container-dark .sp-button,
+  button .sp-container-dark,
+  button.sp-container-dark,
   .sp-container-dark
-  .sp-button,
+  button,
+  button[type='button'] .sp-container-dark,
+  button[type='button'].sp-container-dark,
+  .sp-container-dark
+  button[type='button'],
   input[type='button'] .sp-container-dark,
   input[type='button'].sp-container-dark,
   .sp-container-dark
@@ -3587,17 +3631,25 @@ input[type='reset'] {
     border-width: 1px;
     background-color: #444A50;
     border-color: rgba(0, 0, 0, 0.5); }
-    button .sp-container-dark:hover, button .sp-container-dark.sp-state-hover, button.sp-container-dark:hover, button.sp-container-dark.sp-state-hover,
-    .sp-container-dark button:hover,
-    .sp-container-dark button.sp-state-hover,
-    .sp-button .sp-container-dark:hover,
-    .sp-button .sp-container-dark.sp-state-hover,
-    .sp-button.sp-container-dark:hover,
-    .sp-button.sp-container-dark.sp-state-hover,
+    .sp-button .sp-container-dark:hover, .sp-button .sp-container-dark.sp-state-hover, .sp-button.sp-container-dark:hover, .sp-button.sp-container-dark.sp-state-hover,
+    .sp-container-dark .sp-button:hover,
+    .sp-container-dark .sp-button.sp-state-hover,
+    button .sp-container-dark:hover,
+    button .sp-container-dark.sp-state-hover,
+    button.sp-container-dark:hover,
+    button.sp-container-dark.sp-state-hover,
     .sp-container-dark
-    .sp-button:hover,
+    button:hover,
     .sp-container-dark
-    .sp-button.sp-state-hover,
+    button.sp-state-hover,
+    button[type='button'] .sp-container-dark:hover,
+    button[type='button'] .sp-container-dark.sp-state-hover,
+    button[type='button'].sp-container-dark:hover,
+    button[type='button'].sp-container-dark.sp-state-hover,
+    .sp-container-dark
+    button[type='button']:hover,
+    .sp-container-dark
+    button[type='button'].sp-state-hover,
     input[type='button'] .sp-container-dark:hover,
     input[type='button'] .sp-container-dark.sp-state-hover,
     input[type='button'].sp-container-dark:hover,
@@ -3623,17 +3675,25 @@ input[type='reset'] {
     .sp-container-dark
     input[type='reset'].sp-state-hover {
       background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)); }
-    button .sp-container-dark:active, button .sp-container-dark.sp-state-active, button.sp-container-dark:active, button.sp-container-dark.sp-state-active,
-    .sp-container-dark button:active,
-    .sp-container-dark button.sp-state-active,
-    .sp-button .sp-container-dark:active,
-    .sp-button .sp-container-dark.sp-state-active,
-    .sp-button.sp-container-dark:active,
-    .sp-button.sp-container-dark.sp-state-active,
+    .sp-button .sp-container-dark:active, .sp-button .sp-container-dark.sp-state-active, .sp-button.sp-container-dark:active, .sp-button.sp-container-dark.sp-state-active,
+    .sp-container-dark .sp-button:active,
+    .sp-container-dark .sp-button.sp-state-active,
+    button .sp-container-dark:active,
+    button .sp-container-dark.sp-state-active,
+    button.sp-container-dark:active,
+    button.sp-container-dark.sp-state-active,
     .sp-container-dark
-    .sp-button:active,
+    button:active,
     .sp-container-dark
-    .sp-button.sp-state-active,
+    button.sp-state-active,
+    button[type='button'] .sp-container-dark:active,
+    button[type='button'] .sp-container-dark.sp-state-active,
+    button[type='button'].sp-container-dark:active,
+    button[type='button'].sp-container-dark.sp-state-active,
+    .sp-container-dark
+    button[type='button']:active,
+    .sp-container-dark
+    button[type='button'].sp-state-active,
     input[type='button'] .sp-container-dark:active,
     input[type='button'] .sp-container-dark.sp-state-active,
     input[type='button'].sp-container-dark:active,
@@ -3659,17 +3719,25 @@ input[type='reset'] {
     .sp-container-dark
     input[type='reset'].sp-state-active {
       background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)); }
-    button .sp-container-dark:disabled, button .sp-container-dark.sp-state-disabled, button.sp-container-dark:disabled, button.sp-container-dark.sp-state-disabled,
-    .sp-container-dark button:disabled,
-    .sp-container-dark button.sp-state-disabled,
-    .sp-button .sp-container-dark:disabled,
-    .sp-button .sp-container-dark.sp-state-disabled,
-    .sp-button.sp-container-dark:disabled,
-    .sp-button.sp-container-dark.sp-state-disabled,
+    .sp-button .sp-container-dark:disabled, .sp-button .sp-container-dark.sp-state-disabled, .sp-button.sp-container-dark:disabled, .sp-button.sp-container-dark.sp-state-disabled,
+    .sp-container-dark .sp-button:disabled,
+    .sp-container-dark .sp-button.sp-state-disabled,
+    button .sp-container-dark:disabled,
+    button .sp-container-dark.sp-state-disabled,
+    button.sp-container-dark:disabled,
+    button.sp-container-dark.sp-state-disabled,
     .sp-container-dark
-    .sp-button:disabled,
+    button:disabled,
     .sp-container-dark
-    .sp-button.sp-state-disabled,
+    button.sp-state-disabled,
+    button[type='button'] .sp-container-dark:disabled,
+    button[type='button'] .sp-container-dark.sp-state-disabled,
+    button[type='button'].sp-container-dark:disabled,
+    button[type='button'].sp-container-dark.sp-state-disabled,
+    .sp-container-dark
+    button[type='button']:disabled,
+    .sp-container-dark
+    button[type='button'].sp-state-disabled,
     input[type='button'] .sp-container-dark:disabled,
     input[type='button'] .sp-container-dark.sp-state-disabled,
     input[type='button'].sp-container-dark:disabled,
@@ -3698,18 +3766,23 @@ input[type='reset'] {
       background-color: #444A50 !important;
       background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12));
       border-color: rgba(0, 0, 0, 0.12); }
-  button.sp-primary,
   .sp-button.sp-primary,
+  button.sp-primary,
+  button[type='button'].sp-primary,
   input[type='button'].sp-primary,
   input[type='submit'].sp-primary,
   input[type='reset'].sp-primary {
     background-color: #00C3DC; }
-    button.sp-primary .sp-container-dark, button.sp-primary.sp-container-dark,
-    .sp-container-dark button.sp-primary,
-    .sp-button.sp-primary .sp-container-dark,
-    .sp-button.sp-primary.sp-container-dark,
+    .sp-button.sp-primary .sp-container-dark, .sp-button.sp-primary.sp-container-dark,
+    .sp-container-dark .sp-button.sp-primary,
+    button.sp-primary .sp-container-dark,
+    button.sp-primary.sp-container-dark,
     .sp-container-dark
-    .sp-button.sp-primary,
+    button.sp-primary,
+    button[type='button'].sp-primary .sp-container-dark,
+    button[type='button'].sp-primary.sp-container-dark,
+    .sp-container-dark
+    button[type='button'].sp-primary,
     input[type='button'].sp-primary .sp-container-dark,
     input[type='button'].sp-primary.sp-container-dark,
     .sp-container-dark
@@ -3723,17 +3796,25 @@ input[type='reset'] {
     .sp-container-dark
     input[type='reset'].sp-primary {
       background-color: #00C3DC; }
-      button.sp-primary .sp-container-dark:active, button.sp-primary .sp-container-dark.sp-state-active, button.sp-primary.sp-container-dark:active, button.sp-primary.sp-container-dark.sp-state-active,
-      .sp-container-dark button.sp-primary:active,
-      .sp-container-dark button.sp-primary.sp-state-active,
-      .sp-button.sp-primary .sp-container-dark:active,
-      .sp-button.sp-primary .sp-container-dark.sp-state-active,
-      .sp-button.sp-primary.sp-container-dark:active,
-      .sp-button.sp-primary.sp-container-dark.sp-state-active,
+      .sp-button.sp-primary .sp-container-dark:active, .sp-button.sp-primary .sp-container-dark.sp-state-active, .sp-button.sp-primary.sp-container-dark:active, .sp-button.sp-primary.sp-container-dark.sp-state-active,
+      .sp-container-dark .sp-button.sp-primary:active,
+      .sp-container-dark .sp-button.sp-primary.sp-state-active,
+      button.sp-primary .sp-container-dark:active,
+      button.sp-primary .sp-container-dark.sp-state-active,
+      button.sp-primary.sp-container-dark:active,
+      button.sp-primary.sp-container-dark.sp-state-active,
       .sp-container-dark
-      .sp-button.sp-primary:active,
+      button.sp-primary:active,
       .sp-container-dark
-      .sp-button.sp-primary.sp-state-active,
+      button.sp-primary.sp-state-active,
+      button[type='button'].sp-primary .sp-container-dark:active,
+      button[type='button'].sp-primary .sp-container-dark.sp-state-active,
+      button[type='button'].sp-primary.sp-container-dark:active,
+      button[type='button'].sp-primary.sp-container-dark.sp-state-active,
+      .sp-container-dark
+      button[type='button'].sp-primary:active,
+      .sp-container-dark
+      button[type='button'].sp-primary.sp-state-active,
       input[type='button'].sp-primary .sp-container-dark:active,
       input[type='button'].sp-primary .sp-container-dark.sp-state-active,
       input[type='button'].sp-primary.sp-container-dark:active,
@@ -3759,18 +3840,23 @@ input[type='reset'] {
       .sp-container-dark
       input[type='reset'].sp-primary.sp-state-active {
         background-color: #00C3DC; }
-  button.sp-success,
   .sp-button.sp-success,
+  button.sp-success,
+  button[type='button'].sp-success,
   input[type='button'].sp-success,
   input[type='submit'].sp-success,
   input[type='reset'].sp-success {
     background-color: #00d388; }
-    button.sp-success .sp-container-dark, button.sp-success.sp-container-dark,
-    .sp-container-dark button.sp-success,
-    .sp-button.sp-success .sp-container-dark,
-    .sp-button.sp-success.sp-container-dark,
+    .sp-button.sp-success .sp-container-dark, .sp-button.sp-success.sp-container-dark,
+    .sp-container-dark .sp-button.sp-success,
+    button.sp-success .sp-container-dark,
+    button.sp-success.sp-container-dark,
     .sp-container-dark
-    .sp-button.sp-success,
+    button.sp-success,
+    button[type='button'].sp-success .sp-container-dark,
+    button[type='button'].sp-success.sp-container-dark,
+    .sp-container-dark
+    button[type='button'].sp-success,
     input[type='button'].sp-success .sp-container-dark,
     input[type='button'].sp-success.sp-container-dark,
     .sp-container-dark
@@ -3784,17 +3870,25 @@ input[type='reset'] {
     .sp-container-dark
     input[type='reset'].sp-success {
       background-color: #00d388; }
-      button.sp-success .sp-container-dark:active, button.sp-success .sp-container-dark.sp-state-active, button.sp-success.sp-container-dark:active, button.sp-success.sp-container-dark.sp-state-active,
-      .sp-container-dark button.sp-success:active,
-      .sp-container-dark button.sp-success.sp-state-active,
-      .sp-button.sp-success .sp-container-dark:active,
-      .sp-button.sp-success .sp-container-dark.sp-state-active,
-      .sp-button.sp-success.sp-container-dark:active,
-      .sp-button.sp-success.sp-container-dark.sp-state-active,
+      .sp-button.sp-success .sp-container-dark:active, .sp-button.sp-success .sp-container-dark.sp-state-active, .sp-button.sp-success.sp-container-dark:active, .sp-button.sp-success.sp-container-dark.sp-state-active,
+      .sp-container-dark .sp-button.sp-success:active,
+      .sp-container-dark .sp-button.sp-success.sp-state-active,
+      button.sp-success .sp-container-dark:active,
+      button.sp-success .sp-container-dark.sp-state-active,
+      button.sp-success.sp-container-dark:active,
+      button.sp-success.sp-container-dark.sp-state-active,
       .sp-container-dark
-      .sp-button.sp-success:active,
+      button.sp-success:active,
       .sp-container-dark
-      .sp-button.sp-success.sp-state-active,
+      button.sp-success.sp-state-active,
+      button[type='button'].sp-success .sp-container-dark:active,
+      button[type='button'].sp-success .sp-container-dark.sp-state-active,
+      button[type='button'].sp-success.sp-container-dark:active,
+      button[type='button'].sp-success.sp-container-dark.sp-state-active,
+      .sp-container-dark
+      button[type='button'].sp-success:active,
+      .sp-container-dark
+      button[type='button'].sp-success.sp-state-active,
       input[type='button'].sp-success .sp-container-dark:active,
       input[type='button'].sp-success .sp-container-dark.sp-state-active,
       input[type='button'].sp-success.sp-container-dark:active,
@@ -3820,18 +3914,23 @@ input[type='reset'] {
       .sp-container-dark
       input[type='reset'].sp-success.sp-state-active {
         background-color: #00d388; }
-  button.sp-warning,
   .sp-button.sp-warning,
+  button.sp-warning,
+  button[type='button'].sp-warning,
   input[type='button'].sp-warning,
   input[type='submit'].sp-warning,
   input[type='reset'].sp-warning {
     background-color: #FF4A37; }
-    button.sp-warning .sp-container-dark, button.sp-warning.sp-container-dark,
-    .sp-container-dark button.sp-warning,
-    .sp-button.sp-warning .sp-container-dark,
-    .sp-button.sp-warning.sp-container-dark,
+    .sp-button.sp-warning .sp-container-dark, .sp-button.sp-warning.sp-container-dark,
+    .sp-container-dark .sp-button.sp-warning,
+    button.sp-warning .sp-container-dark,
+    button.sp-warning.sp-container-dark,
     .sp-container-dark
-    .sp-button.sp-warning,
+    button.sp-warning,
+    button[type='button'].sp-warning .sp-container-dark,
+    button[type='button'].sp-warning.sp-container-dark,
+    .sp-container-dark
+    button[type='button'].sp-warning,
     input[type='button'].sp-warning .sp-container-dark,
     input[type='button'].sp-warning.sp-container-dark,
     .sp-container-dark
@@ -3845,17 +3944,25 @@ input[type='reset'] {
     .sp-container-dark
     input[type='reset'].sp-warning {
       background-color: #FF4A37; }
-      button.sp-warning .sp-container-dark:active, button.sp-warning .sp-container-dark.sp-state-active, button.sp-warning.sp-container-dark:active, button.sp-warning.sp-container-dark.sp-state-active,
-      .sp-container-dark button.sp-warning:active,
-      .sp-container-dark button.sp-warning.sp-state-active,
-      .sp-button.sp-warning .sp-container-dark:active,
-      .sp-button.sp-warning .sp-container-dark.sp-state-active,
-      .sp-button.sp-warning.sp-container-dark:active,
-      .sp-button.sp-warning.sp-container-dark.sp-state-active,
+      .sp-button.sp-warning .sp-container-dark:active, .sp-button.sp-warning .sp-container-dark.sp-state-active, .sp-button.sp-warning.sp-container-dark:active, .sp-button.sp-warning.sp-container-dark.sp-state-active,
+      .sp-container-dark .sp-button.sp-warning:active,
+      .sp-container-dark .sp-button.sp-warning.sp-state-active,
+      button.sp-warning .sp-container-dark:active,
+      button.sp-warning .sp-container-dark.sp-state-active,
+      button.sp-warning.sp-container-dark:active,
+      button.sp-warning.sp-container-dark.sp-state-active,
       .sp-container-dark
-      .sp-button.sp-warning:active,
+      button.sp-warning:active,
       .sp-container-dark
-      .sp-button.sp-warning.sp-state-active,
+      button.sp-warning.sp-state-active,
+      button[type='button'].sp-warning .sp-container-dark:active,
+      button[type='button'].sp-warning .sp-container-dark.sp-state-active,
+      button[type='button'].sp-warning.sp-container-dark:active,
+      button[type='button'].sp-warning.sp-container-dark.sp-state-active,
+      .sp-container-dark
+      button[type='button'].sp-warning:active,
+      .sp-container-dark
+      button[type='button'].sp-warning.sp-state-active,
       input[type='button'].sp-warning .sp-container-dark:active,
       input[type='button'].sp-warning .sp-container-dark.sp-state-active,
       input[type='button'].sp-warning.sp-container-dark:active,
@@ -3881,18 +3988,23 @@ input[type='reset'] {
       .sp-container-dark
       input[type='reset'].sp-warning.sp-state-active {
         background-color: #FF4A37; }
-  button.sp-danger,
   .sp-button.sp-danger,
+  button.sp-danger,
+  button[type='button'].sp-danger,
   input[type='button'].sp-danger,
   input[type='submit'].sp-danger,
   input[type='reset'].sp-danger {
     background-color: #FF2455; }
-    button.sp-danger .sp-container-dark, button.sp-danger.sp-container-dark,
-    .sp-container-dark button.sp-danger,
-    .sp-button.sp-danger .sp-container-dark,
-    .sp-button.sp-danger.sp-container-dark,
+    .sp-button.sp-danger .sp-container-dark, .sp-button.sp-danger.sp-container-dark,
+    .sp-container-dark .sp-button.sp-danger,
+    button.sp-danger .sp-container-dark,
+    button.sp-danger.sp-container-dark,
     .sp-container-dark
-    .sp-button.sp-danger,
+    button.sp-danger,
+    button[type='button'].sp-danger .sp-container-dark,
+    button[type='button'].sp-danger.sp-container-dark,
+    .sp-container-dark
+    button[type='button'].sp-danger,
     input[type='button'].sp-danger .sp-container-dark,
     input[type='button'].sp-danger.sp-container-dark,
     .sp-container-dark
@@ -3906,17 +4018,25 @@ input[type='reset'] {
     .sp-container-dark
     input[type='reset'].sp-danger {
       background-color: #FF2455; }
-      button.sp-danger .sp-container-dark:active, button.sp-danger .sp-container-dark.sp-state-active, button.sp-danger.sp-container-dark:active, button.sp-danger.sp-container-dark.sp-state-active,
-      .sp-container-dark button.sp-danger:active,
-      .sp-container-dark button.sp-danger.sp-state-active,
-      .sp-button.sp-danger .sp-container-dark:active,
-      .sp-button.sp-danger .sp-container-dark.sp-state-active,
-      .sp-button.sp-danger.sp-container-dark:active,
-      .sp-button.sp-danger.sp-container-dark.sp-state-active,
+      .sp-button.sp-danger .sp-container-dark:active, .sp-button.sp-danger .sp-container-dark.sp-state-active, .sp-button.sp-danger.sp-container-dark:active, .sp-button.sp-danger.sp-container-dark.sp-state-active,
+      .sp-container-dark .sp-button.sp-danger:active,
+      .sp-container-dark .sp-button.sp-danger.sp-state-active,
+      button.sp-danger .sp-container-dark:active,
+      button.sp-danger .sp-container-dark.sp-state-active,
+      button.sp-danger.sp-container-dark:active,
+      button.sp-danger.sp-container-dark.sp-state-active,
       .sp-container-dark
-      .sp-button.sp-danger:active,
+      button.sp-danger:active,
       .sp-container-dark
-      .sp-button.sp-danger.sp-state-active,
+      button.sp-danger.sp-state-active,
+      button[type='button'].sp-danger .sp-container-dark:active,
+      button[type='button'].sp-danger .sp-container-dark.sp-state-active,
+      button[type='button'].sp-danger.sp-container-dark:active,
+      button[type='button'].sp-danger.sp-container-dark.sp-state-active,
+      .sp-container-dark
+      button[type='button'].sp-danger:active,
+      .sp-container-dark
+      button[type='button'].sp-danger.sp-state-active,
       input[type='button'].sp-danger .sp-container-dark:active,
       input[type='button'].sp-danger .sp-container-dark.sp-state-active,
       input[type='button'].sp-danger.sp-container-dark:active,
@@ -3942,33 +4062,39 @@ input[type='reset'] {
       .sp-container-dark
       input[type='reset'].sp-danger.sp-state-active {
         background-color: #FF2455; }
-  button.sp-primary,
   .sp-button.sp-primary,
+  button.sp-primary,
+  button[type='button'].sp-primary,
   input[type='button'].sp-primary,
   input[type='submit'].sp-primary,
   input[type='reset'].sp-primary {
     color: #FFFFFF; }
-  button.sp-success,
   .sp-button.sp-success,
+  button.sp-success,
+  button[type='button'].sp-success,
   input[type='button'].sp-success,
   input[type='submit'].sp-success,
   input[type='reset'].sp-success {
     color: #FFFFFF; }
-  button.sp-warning,
   .sp-button.sp-warning,
+  button.sp-warning,
+  button[type='button'].sp-warning,
   input[type='button'].sp-warning,
   input[type='submit'].sp-warning,
   input[type='reset'].sp-warning {
     color: #FFFFFF; }
-  button.sp-danger,
   .sp-button.sp-danger,
+  button.sp-danger,
+  button[type='button'].sp-danger,
   input[type='button'].sp-danger,
   input[type='submit'].sp-danger,
   input[type='reset'].sp-danger {
     color: #FFFFFF; }
-  button:disabled, button.sp-state-disabled,
-  .sp-button:disabled,
-  .sp-button.sp-state-disabled,
+  .sp-button:disabled, .sp-button.sp-state-disabled,
+  button:disabled,
+  button.sp-state-disabled,
+  button[type='button']:disabled,
+  button[type='button'].sp-state-disabled,
   input[type='button']:disabled,
   input[type='button'].sp-state-disabled,
   input[type='submit']:disabled,
@@ -3977,17 +4103,25 @@ input[type='reset'] {
   input[type='reset'].sp-state-disabled {
     pointer-events: none;
     color: rgba(0, 0, 0, 0.22); }
-    button:disabled .sp-container-dark, button:disabled.sp-container-dark,
-    .sp-container-dark button:disabled, button.sp-state-disabled .sp-container-dark, button.sp-state-disabled.sp-container-dark,
-    .sp-container-dark button.sp-state-disabled,
-    .sp-button:disabled .sp-container-dark,
-    .sp-button:disabled.sp-container-dark,
+    .sp-button:disabled .sp-container-dark, .sp-button:disabled.sp-container-dark,
+    .sp-container-dark .sp-button:disabled, .sp-button.sp-state-disabled .sp-container-dark, .sp-button.sp-state-disabled.sp-container-dark,
+    .sp-container-dark .sp-button.sp-state-disabled,
+    button:disabled .sp-container-dark,
+    button:disabled.sp-container-dark,
     .sp-container-dark
-    .sp-button:disabled,
-    .sp-button.sp-state-disabled .sp-container-dark,
-    .sp-button.sp-state-disabled.sp-container-dark,
+    button:disabled,
+    button.sp-state-disabled .sp-container-dark,
+    button.sp-state-disabled.sp-container-dark,
     .sp-container-dark
-    .sp-button.sp-state-disabled,
+    button.sp-state-disabled,
+    button[type='button']:disabled .sp-container-dark,
+    button[type='button']:disabled.sp-container-dark,
+    .sp-container-dark
+    button[type='button']:disabled,
+    button[type='button'].sp-state-disabled .sp-container-dark,
+    button[type='button'].sp-state-disabled.sp-container-dark,
+    .sp-container-dark
+    button[type='button'].sp-state-disabled,
     input[type='button']:disabled .sp-container-dark,
     input[type='button']:disabled.sp-container-dark,
     .sp-container-dark
@@ -4013,22 +4147,25 @@ input[type='reset'] {
     .sp-container-dark
     input[type='reset'].sp-state-disabled {
       color: rgba(255, 255, 255, 0.19); }
-  button.sp-rounded,
   .sp-button.sp-rounded,
+  button.sp-rounded,
+  button[type='button'].sp-rounded,
   input[type='button'].sp-rounded,
   input[type='submit'].sp-rounded,
   input[type='reset'].sp-rounded {
     border-radius: 50px; }
-  button.sp-circle,
   .sp-button.sp-circle,
+  button.sp-circle,
+  button[type='button'].sp-circle,
   input[type='button'].sp-circle,
   input[type='submit'].sp-circle,
   input[type='reset'].sp-circle {
     max-height: unset;
     border-radius: 50%;
     position: relative; }
-    button.sp-circle > *,
     .sp-button.sp-circle > *,
+    button.sp-circle > *,
+    button[type='button'].sp-circle > *,
     input[type='button'].sp-circle > *,
     input[type='submit'].sp-circle > *,
     input[type='reset'].sp-circle > * {
@@ -4037,8 +4174,9 @@ input[type='reset'] {
       left: 0;
       width: 100%;
       height: 100%; }
-  button[class*="sp-icon-"]::before,
   .sp-button[class*="sp-icon-"]::before,
+  button[class*="sp-icon-"]::before,
+  button[type='button'][class*="sp-icon-"]::before,
   input[type='button'][class*="sp-icon-"]::before,
   input[type='submit'][class*="sp-icon-"]::before,
   input[type='reset'][class*="sp-icon-"]::before {
@@ -4046,8 +4184,9 @@ input[type='reset'] {
     margin-right: 0.4rem;
     position: relative;
     top: 7px; }
-  button[class*="sp-icon-after-"]::after,
   .sp-button[class*="sp-icon-after-"]::after,
+  button[class*="sp-icon-after-"]::after,
+  button[type='button'][class*="sp-icon-after-"]::after,
   input[type='button'][class*="sp-icon-after-"]::after,
   input[type='submit'][class*="sp-icon-after-"]::after,
   input[type='reset'][class*="sp-icon-after-"]::after {
@@ -4055,17 +4194,20 @@ input[type='reset'] {
     margin-left: 0.4rem;
     position: relative;
     top: 7px; }
-  button:not(input):empty,
   .sp-button:not(input):empty,
+  button:not(input):empty,
+  button[type='button']:not(input):empty,
   input[type='button']:not(input):empty,
   input[type='submit']:not(input):empty,
   input[type='reset']:not(input):empty {
     padding-left: 0;
     padding-right: 0;
     width: 43.7px; }
-    button:not(input):empty[class*="sp-icon-"]::before, button:not(input):empty[class*="sp-icon-after-"]::after,
-    .sp-button:not(input):empty[class*="sp-icon-"]::before,
-    .sp-button:not(input):empty[class*="sp-icon-after-"]::after,
+    .sp-button:not(input):empty[class*="sp-icon-"]::before, .sp-button:not(input):empty[class*="sp-icon-after-"]::after,
+    button:not(input):empty[class*="sp-icon-"]::before,
+    button:not(input):empty[class*="sp-icon-after-"]::after,
+    button[type='button']:not(input):empty[class*="sp-icon-"]::before,
+    button[type='button']:not(input):empty[class*="sp-icon-after-"]::after,
     input[type='button']:not(input):empty[class*="sp-icon-"]::before,
     input[type='button']:not(input):empty[class*="sp-icon-after-"]::after,
     input[type='submit']:not(input):empty[class*="sp-icon-"]::before,
@@ -4078,9 +4220,11 @@ input[type='reset'] {
       top: 50%;
       left: 50%;
       transform: translate(-48%, -48%); }
-  button.sp-small, .sp-small button,
-  .sp-button.sp-small, .sp-small
-  .sp-button,
+  .sp-button.sp-small, .sp-small .sp-button,
+  button.sp-small, .sp-small
+  button,
+  button[type='button'].sp-small, .sp-small
+  button[type='button'],
   input[type='button'].sp-small, .sp-small
   input[type='button'],
   input[type='submit'].sp-small, .sp-small
@@ -4094,9 +4238,11 @@ input[type='reset'] {
     height: 31.66px;
     line-height: 1;
     min-width: 31.66px; }
-    button.sp-small[class*="sp-icon-"]::before, .sp-small button[class*="sp-icon-"]::before,
-    .sp-button.sp-small[class*="sp-icon-"]::before, .sp-small
-    .sp-button[class*="sp-icon-"]::before,
+    .sp-button.sp-small[class*="sp-icon-"]::before, .sp-small .sp-button[class*="sp-icon-"]::before,
+    button.sp-small[class*="sp-icon-"]::before, .sp-small
+    button[class*="sp-icon-"]::before,
+    button[type='button'].sp-small[class*="sp-icon-"]::before, .sp-small
+    button[type='button'][class*="sp-icon-"]::before,
     input[type='button'].sp-small[class*="sp-icon-"]::before, .sp-small
     input[type='button'][class*="sp-icon-"]::before,
     input[type='submit'].sp-small[class*="sp-icon-"]::before, .sp-small
@@ -4104,9 +4250,11 @@ input[type='reset'] {
     input[type='reset'].sp-small[class*="sp-icon-"]::before, .sp-small
     input[type='reset'][class*="sp-icon-"]::before {
       top: 6px; }
-    button.sp-small[class*="sp-icon-after-"]::after, .sp-small button[class*="sp-icon-after-"]::after,
-    .sp-button.sp-small[class*="sp-icon-after-"]::after, .sp-small
-    .sp-button[class*="sp-icon-after-"]::after,
+    .sp-button.sp-small[class*="sp-icon-after-"]::after, .sp-small .sp-button[class*="sp-icon-after-"]::after,
+    button.sp-small[class*="sp-icon-after-"]::after, .sp-small
+    button[class*="sp-icon-after-"]::after,
+    button[type='button'].sp-small[class*="sp-icon-after-"]::after, .sp-small
+    button[type='button'][class*="sp-icon-after-"]::after,
     input[type='button'].sp-small[class*="sp-icon-after-"]::after, .sp-small
     input[type='button'][class*="sp-icon-after-"]::after,
     input[type='submit'].sp-small[class*="sp-icon-after-"]::after, .sp-small
@@ -4114,9 +4262,11 @@ input[type='reset'] {
     input[type='reset'].sp-small[class*="sp-icon-after-"]::after, .sp-small
     input[type='reset'][class*="sp-icon-after-"]::after {
       top: 6px; }
-    button.sp-small:not(input):empty, .sp-small button:not(input):empty,
-    .sp-button.sp-small:not(input):empty, .sp-small
-    .sp-button:not(input):empty,
+    .sp-button.sp-small:not(input):empty, .sp-small .sp-button:not(input):empty,
+    button.sp-small:not(input):empty, .sp-small
+    button:not(input):empty,
+    button[type='button'].sp-small:not(input):empty, .sp-small
+    button[type='button']:not(input):empty,
     input[type='button'].sp-small:not(input):empty, .sp-small
     input[type='button']:not(input):empty,
     input[type='submit'].sp-small:not(input):empty, .sp-small
@@ -4124,9 +4274,11 @@ input[type='reset'] {
     input[type='reset'].sp-small:not(input):empty, .sp-small
     input[type='reset']:not(input):empty {
       width: 31.66px; }
-  button.sp-large, .sp-large button,
-  .sp-button.sp-large, .sp-large
-  .sp-button,
+  .sp-button.sp-large, .sp-large .sp-button,
+  button.sp-large, .sp-large
+  button,
+  button[type='button'].sp-large, .sp-large
+  button[type='button'],
   input[type='button'].sp-large, .sp-large
   input[type='button'],
   input[type='submit'].sp-large, .sp-large
@@ -4139,9 +4291,11 @@ input[type='reset'] {
     padding-right: 1.6rem;
     height: 44.39px;
     min-width: 44.39px; }
-    button.sp-large[class*="sp-icon-"]::before, .sp-large button[class*="sp-icon-"]::before,
-    .sp-button.sp-large[class*="sp-icon-"]::before, .sp-large
-    .sp-button[class*="sp-icon-"]::before,
+    .sp-button.sp-large[class*="sp-icon-"]::before, .sp-large .sp-button[class*="sp-icon-"]::before,
+    button.sp-large[class*="sp-icon-"]::before, .sp-large
+    button[class*="sp-icon-"]::before,
+    button[type='button'].sp-large[class*="sp-icon-"]::before, .sp-large
+    button[type='button'][class*="sp-icon-"]::before,
     input[type='button'].sp-large[class*="sp-icon-"]::before, .sp-large
     input[type='button'][class*="sp-icon-"]::before,
     input[type='submit'].sp-large[class*="sp-icon-"]::before, .sp-large
@@ -4150,9 +4304,11 @@ input[type='reset'] {
     input[type='reset'][class*="sp-icon-"]::before {
       margin-right: 0.4rem;
       top: 8px; }
-    button.sp-large[class*="sp-icon-after-"]::after, .sp-large button[class*="sp-icon-after-"]::after,
-    .sp-button.sp-large[class*="sp-icon-after-"]::after, .sp-large
-    .sp-button[class*="sp-icon-after-"]::after,
+    .sp-button.sp-large[class*="sp-icon-after-"]::after, .sp-large .sp-button[class*="sp-icon-after-"]::after,
+    button.sp-large[class*="sp-icon-after-"]::after, .sp-large
+    button[class*="sp-icon-after-"]::after,
+    button[type='button'].sp-large[class*="sp-icon-after-"]::after, .sp-large
+    button[type='button'][class*="sp-icon-after-"]::after,
     input[type='button'].sp-large[class*="sp-icon-after-"]::after, .sp-large
     input[type='button'][class*="sp-icon-after-"]::after,
     input[type='submit'].sp-large[class*="sp-icon-after-"]::after, .sp-large
@@ -4161,9 +4317,11 @@ input[type='reset'] {
     input[type='reset'][class*="sp-icon-after-"]::after {
       margin-left: 0.4rem;
       top: 8px; }
-    button.sp-large:not(input):empty, .sp-large button:not(input):empty,
-    .sp-button.sp-large:not(input):empty, .sp-large
-    .sp-button:not(input):empty,
+    .sp-button.sp-large:not(input):empty, .sp-large .sp-button:not(input):empty,
+    button.sp-large:not(input):empty, .sp-large
+    button:not(input):empty,
+    button[type='button'].sp-large:not(input):empty, .sp-large
+    button[type='button']:not(input):empty,
     input[type='button'].sp-large:not(input):empty, .sp-large
     input[type='button']:not(input):empty,
     input[type='submit'].sp-large:not(input):empty, .sp-large
@@ -4171,24 +4329,27 @@ input[type='reset'] {
     input[type='reset'].sp-large:not(input):empty, .sp-large
     input[type='reset']:not(input):empty {
       width: 44.39px; }
-  .sp-group button, .sp-group
-  .sp-button, .sp-group
+  .sp-group .sp-button, .sp-group
+  button, .sp-group
+  button[type='button'], .sp-group
   input[type='button'], .sp-group
   input[type='submit'], .sp-group
   input[type='reset'] {
     border-radius: 0;
     margin: 0;
     margin-left: -1px; }
-  button.sp-block,
   .sp-button.sp-block,
+  button.sp-block,
+  button[type='button'].sp-block,
   input[type='button'].sp-block,
   input[type='submit'].sp-block,
   input[type='reset'].sp-block {
     width: 100%;
     margin-left: auto;
     margin-right: auto; }
-  button.sp-minimal,
   .sp-button.sp-minimal,
+  button.sp-minimal,
+  button[type='button'].sp-minimal,
   input[type='button'].sp-minimal,
   input[type='submit'].sp-minimal,
   input[type='reset'].sp-minimal {
@@ -4200,12 +4361,16 @@ input[type='reset'] {
     border-style: solid;
     border-width: 1px;
     border-color: rgba(0, 0, 0, 0.22); }
-    button.sp-minimal .sp-container-dark, button.sp-minimal.sp-container-dark,
-    .sp-container-dark button.sp-minimal,
-    .sp-button.sp-minimal .sp-container-dark,
-    .sp-button.sp-minimal.sp-container-dark,
+    .sp-button.sp-minimal .sp-container-dark, .sp-button.sp-minimal.sp-container-dark,
+    .sp-container-dark .sp-button.sp-minimal,
+    button.sp-minimal .sp-container-dark,
+    button.sp-minimal.sp-container-dark,
     .sp-container-dark
-    .sp-button.sp-minimal,
+    button.sp-minimal,
+    button[type='button'].sp-minimal .sp-container-dark,
+    button[type='button'].sp-minimal.sp-container-dark,
+    .sp-container-dark
+    button[type='button'].sp-minimal,
     input[type='button'].sp-minimal .sp-container-dark,
     input[type='button'].sp-minimal.sp-container-dark,
     .sp-container-dark
@@ -4219,8 +4384,9 @@ input[type='reset'] {
     .sp-container-dark
     input[type='reset'].sp-minimal {
       color: #FFFFFF; }
-    button.sp-minimal.sp-simple-icon,
     .sp-button.sp-minimal.sp-simple-icon,
+    button.sp-minimal.sp-simple-icon,
+    button[type='button'].sp-minimal.sp-simple-icon,
     input[type='button'].sp-minimal.sp-simple-icon,
     input[type='submit'].sp-minimal.sp-simple-icon,
     input[type='reset'].sp-minimal.sp-simple-icon {
@@ -4228,9 +4394,11 @@ input[type='reset'] {
       background-image: none;
       border-color: transparent;
       opacity: 0.75; }
-      button.sp-minimal.sp-simple-icon:hover, button.sp-minimal.sp-simple-icon.sp-state-hover,
-      .sp-button.sp-minimal.sp-simple-icon:hover,
-      .sp-button.sp-minimal.sp-simple-icon.sp-state-hover,
+      .sp-button.sp-minimal.sp-simple-icon:hover, .sp-button.sp-minimal.sp-simple-icon.sp-state-hover,
+      button.sp-minimal.sp-simple-icon:hover,
+      button.sp-minimal.sp-simple-icon.sp-state-hover,
+      button[type='button'].sp-minimal.sp-simple-icon:hover,
+      button[type='button'].sp-minimal.sp-simple-icon.sp-state-hover,
       input[type='button'].sp-minimal.sp-simple-icon:hover,
       input[type='button'].sp-minimal.sp-simple-icon.sp-state-hover,
       input[type='submit'].sp-minimal.sp-simple-icon:hover,
@@ -4238,9 +4406,11 @@ input[type='reset'] {
       input[type='reset'].sp-minimal.sp-simple-icon:hover,
       input[type='reset'].sp-minimal.sp-simple-icon.sp-state-hover {
         opacity: 1; }
-      button.sp-minimal.sp-simple-icon:active, button.sp-minimal.sp-simple-icon.sp-state-active,
-      .sp-button.sp-minimal.sp-simple-icon:active,
-      .sp-button.sp-minimal.sp-simple-icon.sp-state-active,
+      .sp-button.sp-minimal.sp-simple-icon:active, .sp-button.sp-minimal.sp-simple-icon.sp-state-active,
+      button.sp-minimal.sp-simple-icon:active,
+      button.sp-minimal.sp-simple-icon.sp-state-active,
+      button[type='button'].sp-minimal.sp-simple-icon:active,
+      button[type='button'].sp-minimal.sp-simple-icon.sp-state-active,
       input[type='button'].sp-minimal.sp-simple-icon:active,
       input[type='button'].sp-minimal.sp-simple-icon.sp-state-active,
       input[type='submit'].sp-minimal.sp-simple-icon:active,
@@ -4249,17 +4419,25 @@ input[type='reset'] {
       input[type='reset'].sp-minimal.sp-simple-icon.sp-state-active {
         opacity: 1;
         color: rgba(0, 0, 0, 0.8); }
-        button.sp-minimal.sp-simple-icon:active .sp-container-dark, button.sp-minimal.sp-simple-icon:active.sp-container-dark,
-        .sp-container-dark button.sp-minimal.sp-simple-icon:active, button.sp-minimal.sp-simple-icon.sp-state-active .sp-container-dark, button.sp-minimal.sp-simple-icon.sp-state-active.sp-container-dark,
-        .sp-container-dark button.sp-minimal.sp-simple-icon.sp-state-active,
-        .sp-button.sp-minimal.sp-simple-icon:active .sp-container-dark,
-        .sp-button.sp-minimal.sp-simple-icon:active.sp-container-dark,
+        .sp-button.sp-minimal.sp-simple-icon:active .sp-container-dark, .sp-button.sp-minimal.sp-simple-icon:active.sp-container-dark,
+        .sp-container-dark .sp-button.sp-minimal.sp-simple-icon:active, .sp-button.sp-minimal.sp-simple-icon.sp-state-active .sp-container-dark, .sp-button.sp-minimal.sp-simple-icon.sp-state-active.sp-container-dark,
+        .sp-container-dark .sp-button.sp-minimal.sp-simple-icon.sp-state-active,
+        button.sp-minimal.sp-simple-icon:active .sp-container-dark,
+        button.sp-minimal.sp-simple-icon:active.sp-container-dark,
         .sp-container-dark
-        .sp-button.sp-minimal.sp-simple-icon:active,
-        .sp-button.sp-minimal.sp-simple-icon.sp-state-active .sp-container-dark,
-        .sp-button.sp-minimal.sp-simple-icon.sp-state-active.sp-container-dark,
+        button.sp-minimal.sp-simple-icon:active,
+        button.sp-minimal.sp-simple-icon.sp-state-active .sp-container-dark,
+        button.sp-minimal.sp-simple-icon.sp-state-active.sp-container-dark,
         .sp-container-dark
-        .sp-button.sp-minimal.sp-simple-icon.sp-state-active,
+        button.sp-minimal.sp-simple-icon.sp-state-active,
+        button[type='button'].sp-minimal.sp-simple-icon:active .sp-container-dark,
+        button[type='button'].sp-minimal.sp-simple-icon:active.sp-container-dark,
+        .sp-container-dark
+        button[type='button'].sp-minimal.sp-simple-icon:active,
+        button[type='button'].sp-minimal.sp-simple-icon.sp-state-active .sp-container-dark,
+        button[type='button'].sp-minimal.sp-simple-icon.sp-state-active.sp-container-dark,
+        .sp-container-dark
+        button[type='button'].sp-minimal.sp-simple-icon.sp-state-active,
         input[type='button'].sp-minimal.sp-simple-icon:active .sp-container-dark,
         input[type='button'].sp-minimal.sp-simple-icon:active.sp-container-dark,
         .sp-container-dark
@@ -4285,18 +4463,23 @@ input[type='reset'] {
         .sp-container-dark
         input[type='reset'].sp-minimal.sp-simple-icon.sp-state-active {
           color: #FFFFFF; }
-      button.sp-minimal.sp-simple-icon.sp-primary,
       .sp-button.sp-minimal.sp-simple-icon.sp-primary,
+      button.sp-minimal.sp-simple-icon.sp-primary,
+      button[type='button'].sp-minimal.sp-simple-icon.sp-primary,
       input[type='button'].sp-minimal.sp-simple-icon.sp-primary,
       input[type='submit'].sp-minimal.sp-simple-icon.sp-primary,
       input[type='reset'].sp-minimal.sp-simple-icon.sp-primary {
         color: rgba(0, 0, 0, 0.5); }
-        button.sp-minimal.sp-simple-icon.sp-primary .sp-container-dark, button.sp-minimal.sp-simple-icon.sp-primary.sp-container-dark,
-        .sp-container-dark button.sp-minimal.sp-simple-icon.sp-primary,
-        .sp-button.sp-minimal.sp-simple-icon.sp-primary .sp-container-dark,
-        .sp-button.sp-minimal.sp-simple-icon.sp-primary.sp-container-dark,
+        .sp-button.sp-minimal.sp-simple-icon.sp-primary .sp-container-dark, .sp-button.sp-minimal.sp-simple-icon.sp-primary.sp-container-dark,
+        .sp-container-dark .sp-button.sp-minimal.sp-simple-icon.sp-primary,
+        button.sp-minimal.sp-simple-icon.sp-primary .sp-container-dark,
+        button.sp-minimal.sp-simple-icon.sp-primary.sp-container-dark,
         .sp-container-dark
-        .sp-button.sp-minimal.sp-simple-icon.sp-primary,
+        button.sp-minimal.sp-simple-icon.sp-primary,
+        button[type='button'].sp-minimal.sp-simple-icon.sp-primary .sp-container-dark,
+        button[type='button'].sp-minimal.sp-simple-icon.sp-primary.sp-container-dark,
+        .sp-container-dark
+        button[type='button'].sp-minimal.sp-simple-icon.sp-primary,
         input[type='button'].sp-minimal.sp-simple-icon.sp-primary .sp-container-dark,
         input[type='button'].sp-minimal.sp-simple-icon.sp-primary.sp-container-dark,
         .sp-container-dark
@@ -4310,9 +4493,11 @@ input[type='reset'] {
         .sp-container-dark
         input[type='reset'].sp-minimal.sp-simple-icon.sp-primary {
           color: rgba(255, 255, 255, 0.56); }
-        button.sp-minimal.sp-simple-icon.sp-primary:active, button.sp-minimal.sp-simple-icon.sp-primary.sp-state-active,
-        .sp-button.sp-minimal.sp-simple-icon.sp-primary:active,
-        .sp-button.sp-minimal.sp-simple-icon.sp-primary.sp-state-active,
+        .sp-button.sp-minimal.sp-simple-icon.sp-primary:active, .sp-button.sp-minimal.sp-simple-icon.sp-primary.sp-state-active,
+        button.sp-minimal.sp-simple-icon.sp-primary:active,
+        button.sp-minimal.sp-simple-icon.sp-primary.sp-state-active,
+        button[type='button'].sp-minimal.sp-simple-icon.sp-primary:active,
+        button[type='button'].sp-minimal.sp-simple-icon.sp-primary.sp-state-active,
         input[type='button'].sp-minimal.sp-simple-icon.sp-primary:active,
         input[type='button'].sp-minimal.sp-simple-icon.sp-primary.sp-state-active,
         input[type='submit'].sp-minimal.sp-simple-icon.sp-primary:active,
@@ -4320,17 +4505,25 @@ input[type='reset'] {
         input[type='reset'].sp-minimal.sp-simple-icon.sp-primary:active,
         input[type='reset'].sp-minimal.sp-simple-icon.sp-primary.sp-state-active {
           color: #0096a9; }
-          button.sp-minimal.sp-simple-icon.sp-primary:active .sp-container-dark, button.sp-minimal.sp-simple-icon.sp-primary:active.sp-container-dark,
-          .sp-container-dark button.sp-minimal.sp-simple-icon.sp-primary:active, button.sp-minimal.sp-simple-icon.sp-primary.sp-state-active .sp-container-dark, button.sp-minimal.sp-simple-icon.sp-primary.sp-state-active.sp-container-dark,
-          .sp-container-dark button.sp-minimal.sp-simple-icon.sp-primary.sp-state-active,
-          .sp-button.sp-minimal.sp-simple-icon.sp-primary:active .sp-container-dark,
-          .sp-button.sp-minimal.sp-simple-icon.sp-primary:active.sp-container-dark,
+          .sp-button.sp-minimal.sp-simple-icon.sp-primary:active .sp-container-dark, .sp-button.sp-minimal.sp-simple-icon.sp-primary:active.sp-container-dark,
+          .sp-container-dark .sp-button.sp-minimal.sp-simple-icon.sp-primary:active, .sp-button.sp-minimal.sp-simple-icon.sp-primary.sp-state-active .sp-container-dark, .sp-button.sp-minimal.sp-simple-icon.sp-primary.sp-state-active.sp-container-dark,
+          .sp-container-dark .sp-button.sp-minimal.sp-simple-icon.sp-primary.sp-state-active,
+          button.sp-minimal.sp-simple-icon.sp-primary:active .sp-container-dark,
+          button.sp-minimal.sp-simple-icon.sp-primary:active.sp-container-dark,
           .sp-container-dark
-          .sp-button.sp-minimal.sp-simple-icon.sp-primary:active,
-          .sp-button.sp-minimal.sp-simple-icon.sp-primary.sp-state-active .sp-container-dark,
-          .sp-button.sp-minimal.sp-simple-icon.sp-primary.sp-state-active.sp-container-dark,
+          button.sp-minimal.sp-simple-icon.sp-primary:active,
+          button.sp-minimal.sp-simple-icon.sp-primary.sp-state-active .sp-container-dark,
+          button.sp-minimal.sp-simple-icon.sp-primary.sp-state-active.sp-container-dark,
           .sp-container-dark
-          .sp-button.sp-minimal.sp-simple-icon.sp-primary.sp-state-active,
+          button.sp-minimal.sp-simple-icon.sp-primary.sp-state-active,
+          button[type='button'].sp-minimal.sp-simple-icon.sp-primary:active .sp-container-dark,
+          button[type='button'].sp-minimal.sp-simple-icon.sp-primary:active.sp-container-dark,
+          .sp-container-dark
+          button[type='button'].sp-minimal.sp-simple-icon.sp-primary:active,
+          button[type='button'].sp-minimal.sp-simple-icon.sp-primary.sp-state-active .sp-container-dark,
+          button[type='button'].sp-minimal.sp-simple-icon.sp-primary.sp-state-active.sp-container-dark,
+          .sp-container-dark
+          button[type='button'].sp-minimal.sp-simple-icon.sp-primary.sp-state-active,
           input[type='button'].sp-minimal.sp-simple-icon.sp-primary:active .sp-container-dark,
           input[type='button'].sp-minimal.sp-simple-icon.sp-primary:active.sp-container-dark,
           .sp-container-dark
@@ -4356,18 +4549,23 @@ input[type='reset'] {
           .sp-container-dark
           input[type='reset'].sp-minimal.sp-simple-icon.sp-primary.sp-state-active {
             color: #00C3DC; }
-      button.sp-minimal.sp-simple-icon.sp-success,
       .sp-button.sp-minimal.sp-simple-icon.sp-success,
+      button.sp-minimal.sp-simple-icon.sp-success,
+      button[type='button'].sp-minimal.sp-simple-icon.sp-success,
       input[type='button'].sp-minimal.sp-simple-icon.sp-success,
       input[type='submit'].sp-minimal.sp-simple-icon.sp-success,
       input[type='reset'].sp-minimal.sp-simple-icon.sp-success {
         color: rgba(0, 0, 0, 0.5); }
-        button.sp-minimal.sp-simple-icon.sp-success .sp-container-dark, button.sp-minimal.sp-simple-icon.sp-success.sp-container-dark,
-        .sp-container-dark button.sp-minimal.sp-simple-icon.sp-success,
-        .sp-button.sp-minimal.sp-simple-icon.sp-success .sp-container-dark,
-        .sp-button.sp-minimal.sp-simple-icon.sp-success.sp-container-dark,
+        .sp-button.sp-minimal.sp-simple-icon.sp-success .sp-container-dark, .sp-button.sp-minimal.sp-simple-icon.sp-success.sp-container-dark,
+        .sp-container-dark .sp-button.sp-minimal.sp-simple-icon.sp-success,
+        button.sp-minimal.sp-simple-icon.sp-success .sp-container-dark,
+        button.sp-minimal.sp-simple-icon.sp-success.sp-container-dark,
         .sp-container-dark
-        .sp-button.sp-minimal.sp-simple-icon.sp-success,
+        button.sp-minimal.sp-simple-icon.sp-success,
+        button[type='button'].sp-minimal.sp-simple-icon.sp-success .sp-container-dark,
+        button[type='button'].sp-minimal.sp-simple-icon.sp-success.sp-container-dark,
+        .sp-container-dark
+        button[type='button'].sp-minimal.sp-simple-icon.sp-success,
         input[type='button'].sp-minimal.sp-simple-icon.sp-success .sp-container-dark,
         input[type='button'].sp-minimal.sp-simple-icon.sp-success.sp-container-dark,
         .sp-container-dark
@@ -4381,9 +4579,11 @@ input[type='reset'] {
         .sp-container-dark
         input[type='reset'].sp-minimal.sp-simple-icon.sp-success {
           color: rgba(255, 255, 255, 0.56); }
-        button.sp-minimal.sp-simple-icon.sp-success:active, button.sp-minimal.sp-simple-icon.sp-success.sp-state-active,
-        .sp-button.sp-minimal.sp-simple-icon.sp-success:active,
-        .sp-button.sp-minimal.sp-simple-icon.sp-success.sp-state-active,
+        .sp-button.sp-minimal.sp-simple-icon.sp-success:active, .sp-button.sp-minimal.sp-simple-icon.sp-success.sp-state-active,
+        button.sp-minimal.sp-simple-icon.sp-success:active,
+        button.sp-minimal.sp-simple-icon.sp-success.sp-state-active,
+        button[type='button'].sp-minimal.sp-simple-icon.sp-success:active,
+        button[type='button'].sp-minimal.sp-simple-icon.sp-success.sp-state-active,
         input[type='button'].sp-minimal.sp-simple-icon.sp-success:active,
         input[type='button'].sp-minimal.sp-simple-icon.sp-success.sp-state-active,
         input[type='submit'].sp-minimal.sp-simple-icon.sp-success:active,
@@ -4391,17 +4591,25 @@ input[type='reset'] {
         input[type='reset'].sp-minimal.sp-simple-icon.sp-success:active,
         input[type='reset'].sp-minimal.sp-simple-icon.sp-success.sp-state-active {
           color: #00af71; }
-          button.sp-minimal.sp-simple-icon.sp-success:active .sp-container-dark, button.sp-minimal.sp-simple-icon.sp-success:active.sp-container-dark,
-          .sp-container-dark button.sp-minimal.sp-simple-icon.sp-success:active, button.sp-minimal.sp-simple-icon.sp-success.sp-state-active .sp-container-dark, button.sp-minimal.sp-simple-icon.sp-success.sp-state-active.sp-container-dark,
-          .sp-container-dark button.sp-minimal.sp-simple-icon.sp-success.sp-state-active,
-          .sp-button.sp-minimal.sp-simple-icon.sp-success:active .sp-container-dark,
-          .sp-button.sp-minimal.sp-simple-icon.sp-success:active.sp-container-dark,
+          .sp-button.sp-minimal.sp-simple-icon.sp-success:active .sp-container-dark, .sp-button.sp-minimal.sp-simple-icon.sp-success:active.sp-container-dark,
+          .sp-container-dark .sp-button.sp-minimal.sp-simple-icon.sp-success:active, .sp-button.sp-minimal.sp-simple-icon.sp-success.sp-state-active .sp-container-dark, .sp-button.sp-minimal.sp-simple-icon.sp-success.sp-state-active.sp-container-dark,
+          .sp-container-dark .sp-button.sp-minimal.sp-simple-icon.sp-success.sp-state-active,
+          button.sp-minimal.sp-simple-icon.sp-success:active .sp-container-dark,
+          button.sp-minimal.sp-simple-icon.sp-success:active.sp-container-dark,
           .sp-container-dark
-          .sp-button.sp-minimal.sp-simple-icon.sp-success:active,
-          .sp-button.sp-minimal.sp-simple-icon.sp-success.sp-state-active .sp-container-dark,
-          .sp-button.sp-minimal.sp-simple-icon.sp-success.sp-state-active.sp-container-dark,
+          button.sp-minimal.sp-simple-icon.sp-success:active,
+          button.sp-minimal.sp-simple-icon.sp-success.sp-state-active .sp-container-dark,
+          button.sp-minimal.sp-simple-icon.sp-success.sp-state-active.sp-container-dark,
           .sp-container-dark
-          .sp-button.sp-minimal.sp-simple-icon.sp-success.sp-state-active,
+          button.sp-minimal.sp-simple-icon.sp-success.sp-state-active,
+          button[type='button'].sp-minimal.sp-simple-icon.sp-success:active .sp-container-dark,
+          button[type='button'].sp-minimal.sp-simple-icon.sp-success:active.sp-container-dark,
+          .sp-container-dark
+          button[type='button'].sp-minimal.sp-simple-icon.sp-success:active,
+          button[type='button'].sp-minimal.sp-simple-icon.sp-success.sp-state-active .sp-container-dark,
+          button[type='button'].sp-minimal.sp-simple-icon.sp-success.sp-state-active.sp-container-dark,
+          .sp-container-dark
+          button[type='button'].sp-minimal.sp-simple-icon.sp-success.sp-state-active,
           input[type='button'].sp-minimal.sp-simple-icon.sp-success:active .sp-container-dark,
           input[type='button'].sp-minimal.sp-simple-icon.sp-success:active.sp-container-dark,
           .sp-container-dark
@@ -4427,18 +4635,23 @@ input[type='reset'] {
           .sp-container-dark
           input[type='reset'].sp-minimal.sp-simple-icon.sp-success.sp-state-active {
             color: #00EC99; }
-      button.sp-minimal.sp-simple-icon.sp-warning,
       .sp-button.sp-minimal.sp-simple-icon.sp-warning,
+      button.sp-minimal.sp-simple-icon.sp-warning,
+      button[type='button'].sp-minimal.sp-simple-icon.sp-warning,
       input[type='button'].sp-minimal.sp-simple-icon.sp-warning,
       input[type='submit'].sp-minimal.sp-simple-icon.sp-warning,
       input[type='reset'].sp-minimal.sp-simple-icon.sp-warning {
         color: rgba(0, 0, 0, 0.5); }
-        button.sp-minimal.sp-simple-icon.sp-warning .sp-container-dark, button.sp-minimal.sp-simple-icon.sp-warning.sp-container-dark,
-        .sp-container-dark button.sp-minimal.sp-simple-icon.sp-warning,
-        .sp-button.sp-minimal.sp-simple-icon.sp-warning .sp-container-dark,
-        .sp-button.sp-minimal.sp-simple-icon.sp-warning.sp-container-dark,
+        .sp-button.sp-minimal.sp-simple-icon.sp-warning .sp-container-dark, .sp-button.sp-minimal.sp-simple-icon.sp-warning.sp-container-dark,
+        .sp-container-dark .sp-button.sp-minimal.sp-simple-icon.sp-warning,
+        button.sp-minimal.sp-simple-icon.sp-warning .sp-container-dark,
+        button.sp-minimal.sp-simple-icon.sp-warning.sp-container-dark,
         .sp-container-dark
-        .sp-button.sp-minimal.sp-simple-icon.sp-warning,
+        button.sp-minimal.sp-simple-icon.sp-warning,
+        button[type='button'].sp-minimal.sp-simple-icon.sp-warning .sp-container-dark,
+        button[type='button'].sp-minimal.sp-simple-icon.sp-warning.sp-container-dark,
+        .sp-container-dark
+        button[type='button'].sp-minimal.sp-simple-icon.sp-warning,
         input[type='button'].sp-minimal.sp-simple-icon.sp-warning .sp-container-dark,
         input[type='button'].sp-minimal.sp-simple-icon.sp-warning.sp-container-dark,
         .sp-container-dark
@@ -4452,9 +4665,11 @@ input[type='reset'] {
         .sp-container-dark
         input[type='reset'].sp-minimal.sp-simple-icon.sp-warning {
           color: rgba(255, 255, 255, 0.56); }
-        button.sp-minimal.sp-simple-icon.sp-warning:active, button.sp-minimal.sp-simple-icon.sp-warning.sp-state-active,
-        .sp-button.sp-minimal.sp-simple-icon.sp-warning:active,
-        .sp-button.sp-minimal.sp-simple-icon.sp-warning.sp-state-active,
+        .sp-button.sp-minimal.sp-simple-icon.sp-warning:active, .sp-button.sp-minimal.sp-simple-icon.sp-warning.sp-state-active,
+        button.sp-minimal.sp-simple-icon.sp-warning:active,
+        button.sp-minimal.sp-simple-icon.sp-warning.sp-state-active,
+        button[type='button'].sp-minimal.sp-simple-icon.sp-warning:active,
+        button[type='button'].sp-minimal.sp-simple-icon.sp-warning.sp-state-active,
         input[type='button'].sp-minimal.sp-simple-icon.sp-warning:active,
         input[type='button'].sp-minimal.sp-simple-icon.sp-warning.sp-state-active,
         input[type='submit'].sp-minimal.sp-simple-icon.sp-warning:active,
@@ -4462,17 +4677,25 @@ input[type='reset'] {
         input[type='reset'].sp-minimal.sp-simple-icon.sp-warning:active,
         input[type='reset'].sp-minimal.sp-simple-icon.sp-warning.sp-state-active {
           color: #ff1c04; }
-          button.sp-minimal.sp-simple-icon.sp-warning:active .sp-container-dark, button.sp-minimal.sp-simple-icon.sp-warning:active.sp-container-dark,
-          .sp-container-dark button.sp-minimal.sp-simple-icon.sp-warning:active, button.sp-minimal.sp-simple-icon.sp-warning.sp-state-active .sp-container-dark, button.sp-minimal.sp-simple-icon.sp-warning.sp-state-active.sp-container-dark,
-          .sp-container-dark button.sp-minimal.sp-simple-icon.sp-warning.sp-state-active,
-          .sp-button.sp-minimal.sp-simple-icon.sp-warning:active .sp-container-dark,
-          .sp-button.sp-minimal.sp-simple-icon.sp-warning:active.sp-container-dark,
+          .sp-button.sp-minimal.sp-simple-icon.sp-warning:active .sp-container-dark, .sp-button.sp-minimal.sp-simple-icon.sp-warning:active.sp-container-dark,
+          .sp-container-dark .sp-button.sp-minimal.sp-simple-icon.sp-warning:active, .sp-button.sp-minimal.sp-simple-icon.sp-warning.sp-state-active .sp-container-dark, .sp-button.sp-minimal.sp-simple-icon.sp-warning.sp-state-active.sp-container-dark,
+          .sp-container-dark .sp-button.sp-minimal.sp-simple-icon.sp-warning.sp-state-active,
+          button.sp-minimal.sp-simple-icon.sp-warning:active .sp-container-dark,
+          button.sp-minimal.sp-simple-icon.sp-warning:active.sp-container-dark,
           .sp-container-dark
-          .sp-button.sp-minimal.sp-simple-icon.sp-warning:active,
-          .sp-button.sp-minimal.sp-simple-icon.sp-warning.sp-state-active .sp-container-dark,
-          .sp-button.sp-minimal.sp-simple-icon.sp-warning.sp-state-active.sp-container-dark,
+          button.sp-minimal.sp-simple-icon.sp-warning:active,
+          button.sp-minimal.sp-simple-icon.sp-warning.sp-state-active .sp-container-dark,
+          button.sp-minimal.sp-simple-icon.sp-warning.sp-state-active.sp-container-dark,
           .sp-container-dark
-          .sp-button.sp-minimal.sp-simple-icon.sp-warning.sp-state-active,
+          button.sp-minimal.sp-simple-icon.sp-warning.sp-state-active,
+          button[type='button'].sp-minimal.sp-simple-icon.sp-warning:active .sp-container-dark,
+          button[type='button'].sp-minimal.sp-simple-icon.sp-warning:active.sp-container-dark,
+          .sp-container-dark
+          button[type='button'].sp-minimal.sp-simple-icon.sp-warning:active,
+          button[type='button'].sp-minimal.sp-simple-icon.sp-warning.sp-state-active .sp-container-dark,
+          button[type='button'].sp-minimal.sp-simple-icon.sp-warning.sp-state-active.sp-container-dark,
+          .sp-container-dark
+          button[type='button'].sp-minimal.sp-simple-icon.sp-warning.sp-state-active,
           input[type='button'].sp-minimal.sp-simple-icon.sp-warning:active .sp-container-dark,
           input[type='button'].sp-minimal.sp-simple-icon.sp-warning:active.sp-container-dark,
           .sp-container-dark
@@ -4498,18 +4721,23 @@ input[type='reset'] {
           .sp-container-dark
           input[type='reset'].sp-minimal.sp-simple-icon.sp-warning.sp-state-active {
             color: #FF4A37; }
-      button.sp-minimal.sp-simple-icon.sp-danger,
       .sp-button.sp-minimal.sp-simple-icon.sp-danger,
+      button.sp-minimal.sp-simple-icon.sp-danger,
+      button[type='button'].sp-minimal.sp-simple-icon.sp-danger,
       input[type='button'].sp-minimal.sp-simple-icon.sp-danger,
       input[type='submit'].sp-minimal.sp-simple-icon.sp-danger,
       input[type='reset'].sp-minimal.sp-simple-icon.sp-danger {
         color: rgba(0, 0, 0, 0.5); }
-        button.sp-minimal.sp-simple-icon.sp-danger .sp-container-dark, button.sp-minimal.sp-simple-icon.sp-danger.sp-container-dark,
-        .sp-container-dark button.sp-minimal.sp-simple-icon.sp-danger,
-        .sp-button.sp-minimal.sp-simple-icon.sp-danger .sp-container-dark,
-        .sp-button.sp-minimal.sp-simple-icon.sp-danger.sp-container-dark,
+        .sp-button.sp-minimal.sp-simple-icon.sp-danger .sp-container-dark, .sp-button.sp-minimal.sp-simple-icon.sp-danger.sp-container-dark,
+        .sp-container-dark .sp-button.sp-minimal.sp-simple-icon.sp-danger,
+        button.sp-minimal.sp-simple-icon.sp-danger .sp-container-dark,
+        button.sp-minimal.sp-simple-icon.sp-danger.sp-container-dark,
         .sp-container-dark
-        .sp-button.sp-minimal.sp-simple-icon.sp-danger,
+        button.sp-minimal.sp-simple-icon.sp-danger,
+        button[type='button'].sp-minimal.sp-simple-icon.sp-danger .sp-container-dark,
+        button[type='button'].sp-minimal.sp-simple-icon.sp-danger.sp-container-dark,
+        .sp-container-dark
+        button[type='button'].sp-minimal.sp-simple-icon.sp-danger,
         input[type='button'].sp-minimal.sp-simple-icon.sp-danger .sp-container-dark,
         input[type='button'].sp-minimal.sp-simple-icon.sp-danger.sp-container-dark,
         .sp-container-dark
@@ -4523,9 +4751,11 @@ input[type='reset'] {
         .sp-container-dark
         input[type='reset'].sp-minimal.sp-simple-icon.sp-danger {
           color: rgba(255, 255, 255, 0.56); }
-        button.sp-minimal.sp-simple-icon.sp-danger:active, button.sp-minimal.sp-simple-icon.sp-danger.sp-state-active,
-        .sp-button.sp-minimal.sp-simple-icon.sp-danger:active,
-        .sp-button.sp-minimal.sp-simple-icon.sp-danger.sp-state-active,
+        .sp-button.sp-minimal.sp-simple-icon.sp-danger:active, .sp-button.sp-minimal.sp-simple-icon.sp-danger.sp-state-active,
+        button.sp-minimal.sp-simple-icon.sp-danger:active,
+        button.sp-minimal.sp-simple-icon.sp-danger.sp-state-active,
+        button[type='button'].sp-minimal.sp-simple-icon.sp-danger:active,
+        button[type='button'].sp-minimal.sp-simple-icon.sp-danger.sp-state-active,
         input[type='button'].sp-minimal.sp-simple-icon.sp-danger:active,
         input[type='button'].sp-minimal.sp-simple-icon.sp-danger.sp-state-active,
         input[type='submit'].sp-minimal.sp-simple-icon.sp-danger:active,
@@ -4533,17 +4763,25 @@ input[type='reset'] {
         input[type='reset'].sp-minimal.sp-simple-icon.sp-danger:active,
         input[type='reset'].sp-minimal.sp-simple-icon.sp-danger.sp-state-active {
           color: #f00036; }
-          button.sp-minimal.sp-simple-icon.sp-danger:active .sp-container-dark, button.sp-minimal.sp-simple-icon.sp-danger:active.sp-container-dark,
-          .sp-container-dark button.sp-minimal.sp-simple-icon.sp-danger:active, button.sp-minimal.sp-simple-icon.sp-danger.sp-state-active .sp-container-dark, button.sp-minimal.sp-simple-icon.sp-danger.sp-state-active.sp-container-dark,
-          .sp-container-dark button.sp-minimal.sp-simple-icon.sp-danger.sp-state-active,
-          .sp-button.sp-minimal.sp-simple-icon.sp-danger:active .sp-container-dark,
-          .sp-button.sp-minimal.sp-simple-icon.sp-danger:active.sp-container-dark,
+          .sp-button.sp-minimal.sp-simple-icon.sp-danger:active .sp-container-dark, .sp-button.sp-minimal.sp-simple-icon.sp-danger:active.sp-container-dark,
+          .sp-container-dark .sp-button.sp-minimal.sp-simple-icon.sp-danger:active, .sp-button.sp-minimal.sp-simple-icon.sp-danger.sp-state-active .sp-container-dark, .sp-button.sp-minimal.sp-simple-icon.sp-danger.sp-state-active.sp-container-dark,
+          .sp-container-dark .sp-button.sp-minimal.sp-simple-icon.sp-danger.sp-state-active,
+          button.sp-minimal.sp-simple-icon.sp-danger:active .sp-container-dark,
+          button.sp-minimal.sp-simple-icon.sp-danger:active.sp-container-dark,
           .sp-container-dark
-          .sp-button.sp-minimal.sp-simple-icon.sp-danger:active,
-          .sp-button.sp-minimal.sp-simple-icon.sp-danger.sp-state-active .sp-container-dark,
-          .sp-button.sp-minimal.sp-simple-icon.sp-danger.sp-state-active.sp-container-dark,
+          button.sp-minimal.sp-simple-icon.sp-danger:active,
+          button.sp-minimal.sp-simple-icon.sp-danger.sp-state-active .sp-container-dark,
+          button.sp-minimal.sp-simple-icon.sp-danger.sp-state-active.sp-container-dark,
           .sp-container-dark
-          .sp-button.sp-minimal.sp-simple-icon.sp-danger.sp-state-active,
+          button.sp-minimal.sp-simple-icon.sp-danger.sp-state-active,
+          button[type='button'].sp-minimal.sp-simple-icon.sp-danger:active .sp-container-dark,
+          button[type='button'].sp-minimal.sp-simple-icon.sp-danger:active.sp-container-dark,
+          .sp-container-dark
+          button[type='button'].sp-minimal.sp-simple-icon.sp-danger:active,
+          button[type='button'].sp-minimal.sp-simple-icon.sp-danger.sp-state-active .sp-container-dark,
+          button[type='button'].sp-minimal.sp-simple-icon.sp-danger.sp-state-active.sp-container-dark,
+          .sp-container-dark
+          button[type='button'].sp-minimal.sp-simple-icon.sp-danger.sp-state-active,
           input[type='button'].sp-minimal.sp-simple-icon.sp-danger:active .sp-container-dark,
           input[type='button'].sp-minimal.sp-simple-icon.sp-danger:active.sp-container-dark,
           .sp-container-dark
@@ -4569,9 +4807,11 @@ input[type='reset'] {
           .sp-container-dark
           input[type='reset'].sp-minimal.sp-simple-icon.sp-danger.sp-state-active {
             color: #FF2455; }
-    button.sp-minimal:hover, button.sp-minimal.sp-state-hover,
-    .sp-button.sp-minimal:hover,
-    .sp-button.sp-minimal.sp-state-hover,
+    .sp-button.sp-minimal:hover, .sp-button.sp-minimal.sp-state-hover,
+    button.sp-minimal:hover,
+    button.sp-minimal.sp-state-hover,
+    button[type='button'].sp-minimal:hover,
+    button[type='button'].sp-minimal.sp-state-hover,
     input[type='button'].sp-minimal:hover,
     input[type='button'].sp-minimal.sp-state-hover,
     input[type='submit'].sp-minimal:hover,
@@ -4579,9 +4819,11 @@ input[type='reset'] {
     input[type='reset'].sp-minimal:hover,
     input[type='reset'].sp-minimal.sp-state-hover {
       background-image: linear-gradient(rgba(255, 255, 255, 0.19), rgba(255, 255, 255, 0.19)); }
-    button.sp-minimal:active, button.sp-minimal.sp-state-active,
-    .sp-button.sp-minimal:active,
-    .sp-button.sp-minimal.sp-state-active,
+    .sp-button.sp-minimal:active, .sp-button.sp-minimal.sp-state-active,
+    button.sp-minimal:active,
+    button.sp-minimal.sp-state-active,
+    button[type='button'].sp-minimal:active,
+    button[type='button'].sp-minimal.sp-state-active,
     input[type='button'].sp-minimal:active,
     input[type='button'].sp-minimal.sp-state-active,
     input[type='submit'].sp-minimal:active,
@@ -4589,9 +4831,11 @@ input[type='reset'] {
     input[type='reset'].sp-minimal:active,
     input[type='reset'].sp-minimal.sp-state-active {
       background-image: linear-gradient(rgba(255, 255, 255, 0.56), rgba(255, 255, 255, 0.56)); }
-    button.sp-minimal:disabled, button.sp-minimal.sp-state-disabled,
-    .sp-button.sp-minimal:disabled,
-    .sp-button.sp-minimal.sp-state-disabled,
+    .sp-button.sp-minimal:disabled, .sp-button.sp-minimal.sp-state-disabled,
+    button.sp-minimal:disabled,
+    button.sp-minimal.sp-state-disabled,
+    button[type='button'].sp-minimal:disabled,
+    button[type='button'].sp-minimal.sp-state-disabled,
     input[type='button'].sp-minimal:disabled,
     input[type='button'].sp-minimal.sp-state-disabled,
     input[type='submit'].sp-minimal:disabled,
@@ -4601,12 +4845,16 @@ input[type='reset'] {
       pointer-events: none;
       background-color: transparent !important;
       background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)); }
-    button.sp-minimal .sp-container-dark, button.sp-minimal.sp-container-dark,
-    .sp-container-dark button.sp-minimal,
-    .sp-button.sp-minimal .sp-container-dark,
-    .sp-button.sp-minimal.sp-container-dark,
+    .sp-button.sp-minimal .sp-container-dark, .sp-button.sp-minimal.sp-container-dark,
+    .sp-container-dark .sp-button.sp-minimal,
+    button.sp-minimal .sp-container-dark,
+    button.sp-minimal.sp-container-dark,
     .sp-container-dark
-    .sp-button.sp-minimal,
+    button.sp-minimal,
+    button[type='button'].sp-minimal .sp-container-dark,
+    button[type='button'].sp-minimal.sp-container-dark,
+    .sp-container-dark
+    button[type='button'].sp-minimal,
     input[type='button'].sp-minimal .sp-container-dark,
     input[type='button'].sp-minimal.sp-container-dark,
     .sp-container-dark
@@ -4620,17 +4868,25 @@ input[type='reset'] {
     .sp-container-dark
     input[type='reset'].sp-minimal {
       background-color: transparent; }
-      button.sp-minimal .sp-container-dark:hover, button.sp-minimal .sp-container-dark.sp-state-hover, button.sp-minimal.sp-container-dark:hover, button.sp-minimal.sp-container-dark.sp-state-hover,
-      .sp-container-dark button.sp-minimal:hover,
-      .sp-container-dark button.sp-minimal.sp-state-hover,
-      .sp-button.sp-minimal .sp-container-dark:hover,
-      .sp-button.sp-minimal .sp-container-dark.sp-state-hover,
-      .sp-button.sp-minimal.sp-container-dark:hover,
-      .sp-button.sp-minimal.sp-container-dark.sp-state-hover,
+      .sp-button.sp-minimal .sp-container-dark:hover, .sp-button.sp-minimal .sp-container-dark.sp-state-hover, .sp-button.sp-minimal.sp-container-dark:hover, .sp-button.sp-minimal.sp-container-dark.sp-state-hover,
+      .sp-container-dark .sp-button.sp-minimal:hover,
+      .sp-container-dark .sp-button.sp-minimal.sp-state-hover,
+      button.sp-minimal .sp-container-dark:hover,
+      button.sp-minimal .sp-container-dark.sp-state-hover,
+      button.sp-minimal.sp-container-dark:hover,
+      button.sp-minimal.sp-container-dark.sp-state-hover,
       .sp-container-dark
-      .sp-button.sp-minimal:hover,
+      button.sp-minimal:hover,
       .sp-container-dark
-      .sp-button.sp-minimal.sp-state-hover,
+      button.sp-minimal.sp-state-hover,
+      button[type='button'].sp-minimal .sp-container-dark:hover,
+      button[type='button'].sp-minimal .sp-container-dark.sp-state-hover,
+      button[type='button'].sp-minimal.sp-container-dark:hover,
+      button[type='button'].sp-minimal.sp-container-dark.sp-state-hover,
+      .sp-container-dark
+      button[type='button'].sp-minimal:hover,
+      .sp-container-dark
+      button[type='button'].sp-minimal.sp-state-hover,
       input[type='button'].sp-minimal .sp-container-dark:hover,
       input[type='button'].sp-minimal .sp-container-dark.sp-state-hover,
       input[type='button'].sp-minimal.sp-container-dark:hover,
@@ -4656,17 +4912,25 @@ input[type='reset'] {
       .sp-container-dark
       input[type='reset'].sp-minimal.sp-state-hover {
         background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)); }
-      button.sp-minimal .sp-container-dark:active, button.sp-minimal .sp-container-dark.sp-state-active, button.sp-minimal.sp-container-dark:active, button.sp-minimal.sp-container-dark.sp-state-active,
-      .sp-container-dark button.sp-minimal:active,
-      .sp-container-dark button.sp-minimal.sp-state-active,
-      .sp-button.sp-minimal .sp-container-dark:active,
-      .sp-button.sp-minimal .sp-container-dark.sp-state-active,
-      .sp-button.sp-minimal.sp-container-dark:active,
-      .sp-button.sp-minimal.sp-container-dark.sp-state-active,
+      .sp-button.sp-minimal .sp-container-dark:active, .sp-button.sp-minimal .sp-container-dark.sp-state-active, .sp-button.sp-minimal.sp-container-dark:active, .sp-button.sp-minimal.sp-container-dark.sp-state-active,
+      .sp-container-dark .sp-button.sp-minimal:active,
+      .sp-container-dark .sp-button.sp-minimal.sp-state-active,
+      button.sp-minimal .sp-container-dark:active,
+      button.sp-minimal .sp-container-dark.sp-state-active,
+      button.sp-minimal.sp-container-dark:active,
+      button.sp-minimal.sp-container-dark.sp-state-active,
       .sp-container-dark
-      .sp-button.sp-minimal:active,
+      button.sp-minimal:active,
       .sp-container-dark
-      .sp-button.sp-minimal.sp-state-active,
+      button.sp-minimal.sp-state-active,
+      button[type='button'].sp-minimal .sp-container-dark:active,
+      button[type='button'].sp-minimal .sp-container-dark.sp-state-active,
+      button[type='button'].sp-minimal.sp-container-dark:active,
+      button[type='button'].sp-minimal.sp-container-dark.sp-state-active,
+      .sp-container-dark
+      button[type='button'].sp-minimal:active,
+      .sp-container-dark
+      button[type='button'].sp-minimal.sp-state-active,
       input[type='button'].sp-minimal .sp-container-dark:active,
       input[type='button'].sp-minimal .sp-container-dark.sp-state-active,
       input[type='button'].sp-minimal.sp-container-dark:active,
@@ -4692,17 +4956,25 @@ input[type='reset'] {
       .sp-container-dark
       input[type='reset'].sp-minimal.sp-state-active {
         background-image: linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22)); }
-      button.sp-minimal .sp-container-dark:disabled, button.sp-minimal .sp-container-dark.sp-state-disabled, button.sp-minimal.sp-container-dark:disabled, button.sp-minimal.sp-container-dark.sp-state-disabled,
-      .sp-container-dark button.sp-minimal:disabled,
-      .sp-container-dark button.sp-minimal.sp-state-disabled,
-      .sp-button.sp-minimal .sp-container-dark:disabled,
-      .sp-button.sp-minimal .sp-container-dark.sp-state-disabled,
-      .sp-button.sp-minimal.sp-container-dark:disabled,
-      .sp-button.sp-minimal.sp-container-dark.sp-state-disabled,
+      .sp-button.sp-minimal .sp-container-dark:disabled, .sp-button.sp-minimal .sp-container-dark.sp-state-disabled, .sp-button.sp-minimal.sp-container-dark:disabled, .sp-button.sp-minimal.sp-container-dark.sp-state-disabled,
+      .sp-container-dark .sp-button.sp-minimal:disabled,
+      .sp-container-dark .sp-button.sp-minimal.sp-state-disabled,
+      button.sp-minimal .sp-container-dark:disabled,
+      button.sp-minimal .sp-container-dark.sp-state-disabled,
+      button.sp-minimal.sp-container-dark:disabled,
+      button.sp-minimal.sp-container-dark.sp-state-disabled,
       .sp-container-dark
-      .sp-button.sp-minimal:disabled,
+      button.sp-minimal:disabled,
       .sp-container-dark
-      .sp-button.sp-minimal.sp-state-disabled,
+      button.sp-minimal.sp-state-disabled,
+      button[type='button'].sp-minimal .sp-container-dark:disabled,
+      button[type='button'].sp-minimal .sp-container-dark.sp-state-disabled,
+      button[type='button'].sp-minimal.sp-container-dark:disabled,
+      button[type='button'].sp-minimal.sp-container-dark.sp-state-disabled,
+      .sp-container-dark
+      button[type='button'].sp-minimal:disabled,
+      .sp-container-dark
+      button[type='button'].sp-minimal.sp-state-disabled,
       input[type='button'].sp-minimal .sp-container-dark:disabled,
       input[type='button'].sp-minimal .sp-container-dark.sp-state-disabled,
       input[type='button'].sp-minimal.sp-container-dark:disabled,
@@ -4731,15 +5003,18 @@ input[type='reset'] {
         background-color: transparent !important;
         background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12));
         border-color: rgba(255, 255, 255, 0.1); }
-    button.sp-minimal.sp-primary,
     .sp-button.sp-minimal.sp-primary,
+    button.sp-minimal.sp-primary,
+    button[type='button'].sp-minimal.sp-primary,
     input[type='button'].sp-minimal.sp-primary,
     input[type='submit'].sp-minimal.sp-primary,
     input[type='reset'].sp-minimal.sp-primary {
       border-color: #00C3DC; }
-      button.sp-minimal.sp-primary:hover, button.sp-minimal.sp-primary.sp-state-hover,
-      .sp-button.sp-minimal.sp-primary:hover,
-      .sp-button.sp-minimal.sp-primary.sp-state-hover,
+      .sp-button.sp-minimal.sp-primary:hover, .sp-button.sp-minimal.sp-primary.sp-state-hover,
+      button.sp-minimal.sp-primary:hover,
+      button.sp-minimal.sp-primary.sp-state-hover,
+      button[type='button'].sp-minimal.sp-primary:hover,
+      button[type='button'].sp-minimal.sp-primary.sp-state-hover,
       input[type='button'].sp-minimal.sp-primary:hover,
       input[type='button'].sp-minimal.sp-primary.sp-state-hover,
       input[type='submit'].sp-minimal.sp-primary:hover,
@@ -4748,9 +5023,11 @@ input[type='reset'] {
       input[type='reset'].sp-minimal.sp-primary.sp-state-hover {
         background-color: #00C3DC;
         background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)); }
-      button.sp-minimal.sp-primary:active, button.sp-minimal.sp-primary.sp-state-active,
-      .sp-button.sp-minimal.sp-primary:active,
-      .sp-button.sp-minimal.sp-primary.sp-state-active,
+      .sp-button.sp-minimal.sp-primary:active, .sp-button.sp-minimal.sp-primary.sp-state-active,
+      button.sp-minimal.sp-primary:active,
+      button.sp-minimal.sp-primary.sp-state-active,
+      button[type='button'].sp-minimal.sp-primary:active,
+      button[type='button'].sp-minimal.sp-primary.sp-state-active,
       input[type='button'].sp-minimal.sp-primary:active,
       input[type='button'].sp-minimal.sp-primary.sp-state-active,
       input[type='submit'].sp-minimal.sp-primary:active,
@@ -4759,17 +5036,25 @@ input[type='reset'] {
       input[type='reset'].sp-minimal.sp-primary.sp-state-active {
         background-color: #00C3DC;
         background-image: linear-gradient(rgba(255, 255, 255, 0.19), rgba(255, 255, 255, 0.19)); }
-      button.sp-minimal.sp-primary .sp-container-dark:hover, button.sp-minimal.sp-primary .sp-container-dark.sp-state-hover, button.sp-minimal.sp-primary.sp-container-dark:hover, button.sp-minimal.sp-primary.sp-container-dark.sp-state-hover,
-      .sp-container-dark button.sp-minimal.sp-primary:hover,
-      .sp-container-dark button.sp-minimal.sp-primary.sp-state-hover,
-      .sp-button.sp-minimal.sp-primary .sp-container-dark:hover,
-      .sp-button.sp-minimal.sp-primary .sp-container-dark.sp-state-hover,
-      .sp-button.sp-minimal.sp-primary.sp-container-dark:hover,
-      .sp-button.sp-minimal.sp-primary.sp-container-dark.sp-state-hover,
+      .sp-button.sp-minimal.sp-primary .sp-container-dark:hover, .sp-button.sp-minimal.sp-primary .sp-container-dark.sp-state-hover, .sp-button.sp-minimal.sp-primary.sp-container-dark:hover, .sp-button.sp-minimal.sp-primary.sp-container-dark.sp-state-hover,
+      .sp-container-dark .sp-button.sp-minimal.sp-primary:hover,
+      .sp-container-dark .sp-button.sp-minimal.sp-primary.sp-state-hover,
+      button.sp-minimal.sp-primary .sp-container-dark:hover,
+      button.sp-minimal.sp-primary .sp-container-dark.sp-state-hover,
+      button.sp-minimal.sp-primary.sp-container-dark:hover,
+      button.sp-minimal.sp-primary.sp-container-dark.sp-state-hover,
       .sp-container-dark
-      .sp-button.sp-minimal.sp-primary:hover,
+      button.sp-minimal.sp-primary:hover,
       .sp-container-dark
-      .sp-button.sp-minimal.sp-primary.sp-state-hover,
+      button.sp-minimal.sp-primary.sp-state-hover,
+      button[type='button'].sp-minimal.sp-primary .sp-container-dark:hover,
+      button[type='button'].sp-minimal.sp-primary .sp-container-dark.sp-state-hover,
+      button[type='button'].sp-minimal.sp-primary.sp-container-dark:hover,
+      button[type='button'].sp-minimal.sp-primary.sp-container-dark.sp-state-hover,
+      .sp-container-dark
+      button[type='button'].sp-minimal.sp-primary:hover,
+      .sp-container-dark
+      button[type='button'].sp-minimal.sp-primary.sp-state-hover,
       input[type='button'].sp-minimal.sp-primary .sp-container-dark:hover,
       input[type='button'].sp-minimal.sp-primary .sp-container-dark.sp-state-hover,
       input[type='button'].sp-minimal.sp-primary.sp-container-dark:hover,
@@ -4796,17 +5081,25 @@ input[type='reset'] {
       input[type='reset'].sp-minimal.sp-primary.sp-state-hover {
         background-color: #00C3DC;
         background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); }
-      button.sp-minimal.sp-primary .sp-container-dark:active, button.sp-minimal.sp-primary .sp-container-dark.sp-state-active, button.sp-minimal.sp-primary.sp-container-dark:active, button.sp-minimal.sp-primary.sp-container-dark.sp-state-active,
-      .sp-container-dark button.sp-minimal.sp-primary:active,
-      .sp-container-dark button.sp-minimal.sp-primary.sp-state-active,
-      .sp-button.sp-minimal.sp-primary .sp-container-dark:active,
-      .sp-button.sp-minimal.sp-primary .sp-container-dark.sp-state-active,
-      .sp-button.sp-minimal.sp-primary.sp-container-dark:active,
-      .sp-button.sp-minimal.sp-primary.sp-container-dark.sp-state-active,
+      .sp-button.sp-minimal.sp-primary .sp-container-dark:active, .sp-button.sp-minimal.sp-primary .sp-container-dark.sp-state-active, .sp-button.sp-minimal.sp-primary.sp-container-dark:active, .sp-button.sp-minimal.sp-primary.sp-container-dark.sp-state-active,
+      .sp-container-dark .sp-button.sp-minimal.sp-primary:active,
+      .sp-container-dark .sp-button.sp-minimal.sp-primary.sp-state-active,
+      button.sp-minimal.sp-primary .sp-container-dark:active,
+      button.sp-minimal.sp-primary .sp-container-dark.sp-state-active,
+      button.sp-minimal.sp-primary.sp-container-dark:active,
+      button.sp-minimal.sp-primary.sp-container-dark.sp-state-active,
       .sp-container-dark
-      .sp-button.sp-minimal.sp-primary:active,
+      button.sp-minimal.sp-primary:active,
       .sp-container-dark
-      .sp-button.sp-minimal.sp-primary.sp-state-active,
+      button.sp-minimal.sp-primary.sp-state-active,
+      button[type='button'].sp-minimal.sp-primary .sp-container-dark:active,
+      button[type='button'].sp-minimal.sp-primary .sp-container-dark.sp-state-active,
+      button[type='button'].sp-minimal.sp-primary.sp-container-dark:active,
+      button[type='button'].sp-minimal.sp-primary.sp-container-dark.sp-state-active,
+      .sp-container-dark
+      button[type='button'].sp-minimal.sp-primary:active,
+      .sp-container-dark
+      button[type='button'].sp-minimal.sp-primary.sp-state-active,
       input[type='button'].sp-minimal.sp-primary .sp-container-dark:active,
       input[type='button'].sp-minimal.sp-primary .sp-container-dark.sp-state-active,
       input[type='button'].sp-minimal.sp-primary.sp-container-dark:active,
@@ -4833,15 +5126,18 @@ input[type='reset'] {
       input[type='reset'].sp-minimal.sp-primary.sp-state-active {
         background-color: #00C3DC;
         background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)); }
-    button.sp-minimal.sp-success,
     .sp-button.sp-minimal.sp-success,
+    button.sp-minimal.sp-success,
+    button[type='button'].sp-minimal.sp-success,
     input[type='button'].sp-minimal.sp-success,
     input[type='submit'].sp-minimal.sp-success,
     input[type='reset'].sp-minimal.sp-success {
       border-color: #00EC99; }
-      button.sp-minimal.sp-success:hover, button.sp-minimal.sp-success.sp-state-hover,
-      .sp-button.sp-minimal.sp-success:hover,
-      .sp-button.sp-minimal.sp-success.sp-state-hover,
+      .sp-button.sp-minimal.sp-success:hover, .sp-button.sp-minimal.sp-success.sp-state-hover,
+      button.sp-minimal.sp-success:hover,
+      button.sp-minimal.sp-success.sp-state-hover,
+      button[type='button'].sp-minimal.sp-success:hover,
+      button[type='button'].sp-minimal.sp-success.sp-state-hover,
       input[type='button'].sp-minimal.sp-success:hover,
       input[type='button'].sp-minimal.sp-success.sp-state-hover,
       input[type='submit'].sp-minimal.sp-success:hover,
@@ -4850,9 +5146,11 @@ input[type='reset'] {
       input[type='reset'].sp-minimal.sp-success.sp-state-hover {
         background-color: #00d388;
         background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)); }
-      button.sp-minimal.sp-success:active, button.sp-minimal.sp-success.sp-state-active,
-      .sp-button.sp-minimal.sp-success:active,
-      .sp-button.sp-minimal.sp-success.sp-state-active,
+      .sp-button.sp-minimal.sp-success:active, .sp-button.sp-minimal.sp-success.sp-state-active,
+      button.sp-minimal.sp-success:active,
+      button.sp-minimal.sp-success.sp-state-active,
+      button[type='button'].sp-minimal.sp-success:active,
+      button[type='button'].sp-minimal.sp-success.sp-state-active,
       input[type='button'].sp-minimal.sp-success:active,
       input[type='button'].sp-minimal.sp-success.sp-state-active,
       input[type='submit'].sp-minimal.sp-success:active,
@@ -4861,17 +5159,25 @@ input[type='reset'] {
       input[type='reset'].sp-minimal.sp-success.sp-state-active {
         background-color: #00d388;
         background-image: linear-gradient(rgba(255, 255, 255, 0.19), rgba(255, 255, 255, 0.19)); }
-      button.sp-minimal.sp-success .sp-container-dark:hover, button.sp-minimal.sp-success .sp-container-dark.sp-state-hover, button.sp-minimal.sp-success.sp-container-dark:hover, button.sp-minimal.sp-success.sp-container-dark.sp-state-hover,
-      .sp-container-dark button.sp-minimal.sp-success:hover,
-      .sp-container-dark button.sp-minimal.sp-success.sp-state-hover,
-      .sp-button.sp-minimal.sp-success .sp-container-dark:hover,
-      .sp-button.sp-minimal.sp-success .sp-container-dark.sp-state-hover,
-      .sp-button.sp-minimal.sp-success.sp-container-dark:hover,
-      .sp-button.sp-minimal.sp-success.sp-container-dark.sp-state-hover,
+      .sp-button.sp-minimal.sp-success .sp-container-dark:hover, .sp-button.sp-minimal.sp-success .sp-container-dark.sp-state-hover, .sp-button.sp-minimal.sp-success.sp-container-dark:hover, .sp-button.sp-minimal.sp-success.sp-container-dark.sp-state-hover,
+      .sp-container-dark .sp-button.sp-minimal.sp-success:hover,
+      .sp-container-dark .sp-button.sp-minimal.sp-success.sp-state-hover,
+      button.sp-minimal.sp-success .sp-container-dark:hover,
+      button.sp-minimal.sp-success .sp-container-dark.sp-state-hover,
+      button.sp-minimal.sp-success.sp-container-dark:hover,
+      button.sp-minimal.sp-success.sp-container-dark.sp-state-hover,
       .sp-container-dark
-      .sp-button.sp-minimal.sp-success:hover,
+      button.sp-minimal.sp-success:hover,
       .sp-container-dark
-      .sp-button.sp-minimal.sp-success.sp-state-hover,
+      button.sp-minimal.sp-success.sp-state-hover,
+      button[type='button'].sp-minimal.sp-success .sp-container-dark:hover,
+      button[type='button'].sp-minimal.sp-success .sp-container-dark.sp-state-hover,
+      button[type='button'].sp-minimal.sp-success.sp-container-dark:hover,
+      button[type='button'].sp-minimal.sp-success.sp-container-dark.sp-state-hover,
+      .sp-container-dark
+      button[type='button'].sp-minimal.sp-success:hover,
+      .sp-container-dark
+      button[type='button'].sp-minimal.sp-success.sp-state-hover,
       input[type='button'].sp-minimal.sp-success .sp-container-dark:hover,
       input[type='button'].sp-minimal.sp-success .sp-container-dark.sp-state-hover,
       input[type='button'].sp-minimal.sp-success.sp-container-dark:hover,
@@ -4898,17 +5204,25 @@ input[type='reset'] {
       input[type='reset'].sp-minimal.sp-success.sp-state-hover {
         background-color: #00d388;
         background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); }
-      button.sp-minimal.sp-success .sp-container-dark:active, button.sp-minimal.sp-success .sp-container-dark.sp-state-active, button.sp-minimal.sp-success.sp-container-dark:active, button.sp-minimal.sp-success.sp-container-dark.sp-state-active,
-      .sp-container-dark button.sp-minimal.sp-success:active,
-      .sp-container-dark button.sp-minimal.sp-success.sp-state-active,
-      .sp-button.sp-minimal.sp-success .sp-container-dark:active,
-      .sp-button.sp-minimal.sp-success .sp-container-dark.sp-state-active,
-      .sp-button.sp-minimal.sp-success.sp-container-dark:active,
-      .sp-button.sp-minimal.sp-success.sp-container-dark.sp-state-active,
+      .sp-button.sp-minimal.sp-success .sp-container-dark:active, .sp-button.sp-minimal.sp-success .sp-container-dark.sp-state-active, .sp-button.sp-minimal.sp-success.sp-container-dark:active, .sp-button.sp-minimal.sp-success.sp-container-dark.sp-state-active,
+      .sp-container-dark .sp-button.sp-minimal.sp-success:active,
+      .sp-container-dark .sp-button.sp-minimal.sp-success.sp-state-active,
+      button.sp-minimal.sp-success .sp-container-dark:active,
+      button.sp-minimal.sp-success .sp-container-dark.sp-state-active,
+      button.sp-minimal.sp-success.sp-container-dark:active,
+      button.sp-minimal.sp-success.sp-container-dark.sp-state-active,
       .sp-container-dark
-      .sp-button.sp-minimal.sp-success:active,
+      button.sp-minimal.sp-success:active,
       .sp-container-dark
-      .sp-button.sp-minimal.sp-success.sp-state-active,
+      button.sp-minimal.sp-success.sp-state-active,
+      button[type='button'].sp-minimal.sp-success .sp-container-dark:active,
+      button[type='button'].sp-minimal.sp-success .sp-container-dark.sp-state-active,
+      button[type='button'].sp-minimal.sp-success.sp-container-dark:active,
+      button[type='button'].sp-minimal.sp-success.sp-container-dark.sp-state-active,
+      .sp-container-dark
+      button[type='button'].sp-minimal.sp-success:active,
+      .sp-container-dark
+      button[type='button'].sp-minimal.sp-success.sp-state-active,
       input[type='button'].sp-minimal.sp-success .sp-container-dark:active,
       input[type='button'].sp-minimal.sp-success .sp-container-dark.sp-state-active,
       input[type='button'].sp-minimal.sp-success.sp-container-dark:active,
@@ -4935,15 +5249,18 @@ input[type='reset'] {
       input[type='reset'].sp-minimal.sp-success.sp-state-active {
         background-color: #00d388;
         background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)); }
-    button.sp-minimal.sp-warning,
     .sp-button.sp-minimal.sp-warning,
+    button.sp-minimal.sp-warning,
+    button[type='button'].sp-minimal.sp-warning,
     input[type='button'].sp-minimal.sp-warning,
     input[type='submit'].sp-minimal.sp-warning,
     input[type='reset'].sp-minimal.sp-warning {
       border-color: #FF4A37; }
-      button.sp-minimal.sp-warning:hover, button.sp-minimal.sp-warning.sp-state-hover,
-      .sp-button.sp-minimal.sp-warning:hover,
-      .sp-button.sp-minimal.sp-warning.sp-state-hover,
+      .sp-button.sp-minimal.sp-warning:hover, .sp-button.sp-minimal.sp-warning.sp-state-hover,
+      button.sp-minimal.sp-warning:hover,
+      button.sp-minimal.sp-warning.sp-state-hover,
+      button[type='button'].sp-minimal.sp-warning:hover,
+      button[type='button'].sp-minimal.sp-warning.sp-state-hover,
       input[type='button'].sp-minimal.sp-warning:hover,
       input[type='button'].sp-minimal.sp-warning.sp-state-hover,
       input[type='submit'].sp-minimal.sp-warning:hover,
@@ -4952,9 +5269,11 @@ input[type='reset'] {
       input[type='reset'].sp-minimal.sp-warning.sp-state-hover {
         background-color: #FF4A37;
         background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)); }
-      button.sp-minimal.sp-warning:active, button.sp-minimal.sp-warning.sp-state-active,
-      .sp-button.sp-minimal.sp-warning:active,
-      .sp-button.sp-minimal.sp-warning.sp-state-active,
+      .sp-button.sp-minimal.sp-warning:active, .sp-button.sp-minimal.sp-warning.sp-state-active,
+      button.sp-minimal.sp-warning:active,
+      button.sp-minimal.sp-warning.sp-state-active,
+      button[type='button'].sp-minimal.sp-warning:active,
+      button[type='button'].sp-minimal.sp-warning.sp-state-active,
       input[type='button'].sp-minimal.sp-warning:active,
       input[type='button'].sp-minimal.sp-warning.sp-state-active,
       input[type='submit'].sp-minimal.sp-warning:active,
@@ -4963,17 +5282,25 @@ input[type='reset'] {
       input[type='reset'].sp-minimal.sp-warning.sp-state-active {
         background-color: #FF4A37;
         background-image: linear-gradient(rgba(255, 255, 255, 0.19), rgba(255, 255, 255, 0.19)); }
-      button.sp-minimal.sp-warning .sp-container-dark:hover, button.sp-minimal.sp-warning .sp-container-dark.sp-state-hover, button.sp-minimal.sp-warning.sp-container-dark:hover, button.sp-minimal.sp-warning.sp-container-dark.sp-state-hover,
-      .sp-container-dark button.sp-minimal.sp-warning:hover,
-      .sp-container-dark button.sp-minimal.sp-warning.sp-state-hover,
-      .sp-button.sp-minimal.sp-warning .sp-container-dark:hover,
-      .sp-button.sp-minimal.sp-warning .sp-container-dark.sp-state-hover,
-      .sp-button.sp-minimal.sp-warning.sp-container-dark:hover,
-      .sp-button.sp-minimal.sp-warning.sp-container-dark.sp-state-hover,
+      .sp-button.sp-minimal.sp-warning .sp-container-dark:hover, .sp-button.sp-minimal.sp-warning .sp-container-dark.sp-state-hover, .sp-button.sp-minimal.sp-warning.sp-container-dark:hover, .sp-button.sp-minimal.sp-warning.sp-container-dark.sp-state-hover,
+      .sp-container-dark .sp-button.sp-minimal.sp-warning:hover,
+      .sp-container-dark .sp-button.sp-minimal.sp-warning.sp-state-hover,
+      button.sp-minimal.sp-warning .sp-container-dark:hover,
+      button.sp-minimal.sp-warning .sp-container-dark.sp-state-hover,
+      button.sp-minimal.sp-warning.sp-container-dark:hover,
+      button.sp-minimal.sp-warning.sp-container-dark.sp-state-hover,
       .sp-container-dark
-      .sp-button.sp-minimal.sp-warning:hover,
+      button.sp-minimal.sp-warning:hover,
       .sp-container-dark
-      .sp-button.sp-minimal.sp-warning.sp-state-hover,
+      button.sp-minimal.sp-warning.sp-state-hover,
+      button[type='button'].sp-minimal.sp-warning .sp-container-dark:hover,
+      button[type='button'].sp-minimal.sp-warning .sp-container-dark.sp-state-hover,
+      button[type='button'].sp-minimal.sp-warning.sp-container-dark:hover,
+      button[type='button'].sp-minimal.sp-warning.sp-container-dark.sp-state-hover,
+      .sp-container-dark
+      button[type='button'].sp-minimal.sp-warning:hover,
+      .sp-container-dark
+      button[type='button'].sp-minimal.sp-warning.sp-state-hover,
       input[type='button'].sp-minimal.sp-warning .sp-container-dark:hover,
       input[type='button'].sp-minimal.sp-warning .sp-container-dark.sp-state-hover,
       input[type='button'].sp-minimal.sp-warning.sp-container-dark:hover,
@@ -5000,17 +5327,25 @@ input[type='reset'] {
       input[type='reset'].sp-minimal.sp-warning.sp-state-hover {
         background-color: #FF4A37;
         background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); }
-      button.sp-minimal.sp-warning .sp-container-dark:active, button.sp-minimal.sp-warning .sp-container-dark.sp-state-active, button.sp-minimal.sp-warning.sp-container-dark:active, button.sp-minimal.sp-warning.sp-container-dark.sp-state-active,
-      .sp-container-dark button.sp-minimal.sp-warning:active,
-      .sp-container-dark button.sp-minimal.sp-warning.sp-state-active,
-      .sp-button.sp-minimal.sp-warning .sp-container-dark:active,
-      .sp-button.sp-minimal.sp-warning .sp-container-dark.sp-state-active,
-      .sp-button.sp-minimal.sp-warning.sp-container-dark:active,
-      .sp-button.sp-minimal.sp-warning.sp-container-dark.sp-state-active,
+      .sp-button.sp-minimal.sp-warning .sp-container-dark:active, .sp-button.sp-minimal.sp-warning .sp-container-dark.sp-state-active, .sp-button.sp-minimal.sp-warning.sp-container-dark:active, .sp-button.sp-minimal.sp-warning.sp-container-dark.sp-state-active,
+      .sp-container-dark .sp-button.sp-minimal.sp-warning:active,
+      .sp-container-dark .sp-button.sp-minimal.sp-warning.sp-state-active,
+      button.sp-minimal.sp-warning .sp-container-dark:active,
+      button.sp-minimal.sp-warning .sp-container-dark.sp-state-active,
+      button.sp-minimal.sp-warning.sp-container-dark:active,
+      button.sp-minimal.sp-warning.sp-container-dark.sp-state-active,
       .sp-container-dark
-      .sp-button.sp-minimal.sp-warning:active,
+      button.sp-minimal.sp-warning:active,
       .sp-container-dark
-      .sp-button.sp-minimal.sp-warning.sp-state-active,
+      button.sp-minimal.sp-warning.sp-state-active,
+      button[type='button'].sp-minimal.sp-warning .sp-container-dark:active,
+      button[type='button'].sp-minimal.sp-warning .sp-container-dark.sp-state-active,
+      button[type='button'].sp-minimal.sp-warning.sp-container-dark:active,
+      button[type='button'].sp-minimal.sp-warning.sp-container-dark.sp-state-active,
+      .sp-container-dark
+      button[type='button'].sp-minimal.sp-warning:active,
+      .sp-container-dark
+      button[type='button'].sp-minimal.sp-warning.sp-state-active,
       input[type='button'].sp-minimal.sp-warning .sp-container-dark:active,
       input[type='button'].sp-minimal.sp-warning .sp-container-dark.sp-state-active,
       input[type='button'].sp-minimal.sp-warning.sp-container-dark:active,
@@ -5037,15 +5372,18 @@ input[type='reset'] {
       input[type='reset'].sp-minimal.sp-warning.sp-state-active {
         background-color: #FF4A37;
         background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)); }
-    button.sp-minimal.sp-danger,
     .sp-button.sp-minimal.sp-danger,
+    button.sp-minimal.sp-danger,
+    button[type='button'].sp-minimal.sp-danger,
     input[type='button'].sp-minimal.sp-danger,
     input[type='submit'].sp-minimal.sp-danger,
     input[type='reset'].sp-minimal.sp-danger {
       border-color: #FF2455; }
-      button.sp-minimal.sp-danger:hover, button.sp-minimal.sp-danger.sp-state-hover,
-      .sp-button.sp-minimal.sp-danger:hover,
-      .sp-button.sp-minimal.sp-danger.sp-state-hover,
+      .sp-button.sp-minimal.sp-danger:hover, .sp-button.sp-minimal.sp-danger.sp-state-hover,
+      button.sp-minimal.sp-danger:hover,
+      button.sp-minimal.sp-danger.sp-state-hover,
+      button[type='button'].sp-minimal.sp-danger:hover,
+      button[type='button'].sp-minimal.sp-danger.sp-state-hover,
       input[type='button'].sp-minimal.sp-danger:hover,
       input[type='button'].sp-minimal.sp-danger.sp-state-hover,
       input[type='submit'].sp-minimal.sp-danger:hover,
@@ -5054,9 +5392,11 @@ input[type='reset'] {
       input[type='reset'].sp-minimal.sp-danger.sp-state-hover {
         background-color: #FF2455;
         background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)); }
-      button.sp-minimal.sp-danger:active, button.sp-minimal.sp-danger.sp-state-active,
-      .sp-button.sp-minimal.sp-danger:active,
-      .sp-button.sp-minimal.sp-danger.sp-state-active,
+      .sp-button.sp-minimal.sp-danger:active, .sp-button.sp-minimal.sp-danger.sp-state-active,
+      button.sp-minimal.sp-danger:active,
+      button.sp-minimal.sp-danger.sp-state-active,
+      button[type='button'].sp-minimal.sp-danger:active,
+      button[type='button'].sp-minimal.sp-danger.sp-state-active,
       input[type='button'].sp-minimal.sp-danger:active,
       input[type='button'].sp-minimal.sp-danger.sp-state-active,
       input[type='submit'].sp-minimal.sp-danger:active,
@@ -5065,17 +5405,25 @@ input[type='reset'] {
       input[type='reset'].sp-minimal.sp-danger.sp-state-active {
         background-color: #FF2455;
         background-image: linear-gradient(rgba(255, 255, 255, 0.19), rgba(255, 255, 255, 0.19)); }
-      button.sp-minimal.sp-danger .sp-container-dark:hover, button.sp-minimal.sp-danger .sp-container-dark.sp-state-hover, button.sp-minimal.sp-danger.sp-container-dark:hover, button.sp-minimal.sp-danger.sp-container-dark.sp-state-hover,
-      .sp-container-dark button.sp-minimal.sp-danger:hover,
-      .sp-container-dark button.sp-minimal.sp-danger.sp-state-hover,
-      .sp-button.sp-minimal.sp-danger .sp-container-dark:hover,
-      .sp-button.sp-minimal.sp-danger .sp-container-dark.sp-state-hover,
-      .sp-button.sp-minimal.sp-danger.sp-container-dark:hover,
-      .sp-button.sp-minimal.sp-danger.sp-container-dark.sp-state-hover,
+      .sp-button.sp-minimal.sp-danger .sp-container-dark:hover, .sp-button.sp-minimal.sp-danger .sp-container-dark.sp-state-hover, .sp-button.sp-minimal.sp-danger.sp-container-dark:hover, .sp-button.sp-minimal.sp-danger.sp-container-dark.sp-state-hover,
+      .sp-container-dark .sp-button.sp-minimal.sp-danger:hover,
+      .sp-container-dark .sp-button.sp-minimal.sp-danger.sp-state-hover,
+      button.sp-minimal.sp-danger .sp-container-dark:hover,
+      button.sp-minimal.sp-danger .sp-container-dark.sp-state-hover,
+      button.sp-minimal.sp-danger.sp-container-dark:hover,
+      button.sp-minimal.sp-danger.sp-container-dark.sp-state-hover,
       .sp-container-dark
-      .sp-button.sp-minimal.sp-danger:hover,
+      button.sp-minimal.sp-danger:hover,
       .sp-container-dark
-      .sp-button.sp-minimal.sp-danger.sp-state-hover,
+      button.sp-minimal.sp-danger.sp-state-hover,
+      button[type='button'].sp-minimal.sp-danger .sp-container-dark:hover,
+      button[type='button'].sp-minimal.sp-danger .sp-container-dark.sp-state-hover,
+      button[type='button'].sp-minimal.sp-danger.sp-container-dark:hover,
+      button[type='button'].sp-minimal.sp-danger.sp-container-dark.sp-state-hover,
+      .sp-container-dark
+      button[type='button'].sp-minimal.sp-danger:hover,
+      .sp-container-dark
+      button[type='button'].sp-minimal.sp-danger.sp-state-hover,
       input[type='button'].sp-minimal.sp-danger .sp-container-dark:hover,
       input[type='button'].sp-minimal.sp-danger .sp-container-dark.sp-state-hover,
       input[type='button'].sp-minimal.sp-danger.sp-container-dark:hover,
@@ -5102,17 +5450,25 @@ input[type='reset'] {
       input[type='reset'].sp-minimal.sp-danger.sp-state-hover {
         background-color: #FF2455;
         background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); }
-      button.sp-minimal.sp-danger .sp-container-dark:active, button.sp-minimal.sp-danger .sp-container-dark.sp-state-active, button.sp-minimal.sp-danger.sp-container-dark:active, button.sp-minimal.sp-danger.sp-container-dark.sp-state-active,
-      .sp-container-dark button.sp-minimal.sp-danger:active,
-      .sp-container-dark button.sp-minimal.sp-danger.sp-state-active,
-      .sp-button.sp-minimal.sp-danger .sp-container-dark:active,
-      .sp-button.sp-minimal.sp-danger .sp-container-dark.sp-state-active,
-      .sp-button.sp-minimal.sp-danger.sp-container-dark:active,
-      .sp-button.sp-minimal.sp-danger.sp-container-dark.sp-state-active,
+      .sp-button.sp-minimal.sp-danger .sp-container-dark:active, .sp-button.sp-minimal.sp-danger .sp-container-dark.sp-state-active, .sp-button.sp-minimal.sp-danger.sp-container-dark:active, .sp-button.sp-minimal.sp-danger.sp-container-dark.sp-state-active,
+      .sp-container-dark .sp-button.sp-minimal.sp-danger:active,
+      .sp-container-dark .sp-button.sp-minimal.sp-danger.sp-state-active,
+      button.sp-minimal.sp-danger .sp-container-dark:active,
+      button.sp-minimal.sp-danger .sp-container-dark.sp-state-active,
+      button.sp-minimal.sp-danger.sp-container-dark:active,
+      button.sp-minimal.sp-danger.sp-container-dark.sp-state-active,
       .sp-container-dark
-      .sp-button.sp-minimal.sp-danger:active,
+      button.sp-minimal.sp-danger:active,
       .sp-container-dark
-      .sp-button.sp-minimal.sp-danger.sp-state-active,
+      button.sp-minimal.sp-danger.sp-state-active,
+      button[type='button'].sp-minimal.sp-danger .sp-container-dark:active,
+      button[type='button'].sp-minimal.sp-danger .sp-container-dark.sp-state-active,
+      button[type='button'].sp-minimal.sp-danger.sp-container-dark:active,
+      button[type='button'].sp-minimal.sp-danger.sp-container-dark.sp-state-active,
+      .sp-container-dark
+      button[type='button'].sp-minimal.sp-danger:active,
+      .sp-container-dark
+      button[type='button'].sp-minimal.sp-danger.sp-state-active,
       input[type='button'].sp-minimal.sp-danger .sp-container-dark:active,
       input[type='button'].sp-minimal.sp-danger .sp-container-dark.sp-state-active,
       input[type='button'].sp-minimal.sp-danger.sp-container-dark:active,
@@ -5139,23 +5495,26 @@ input[type='reset'] {
       input[type='reset'].sp-minimal.sp-danger.sp-state-active {
         background-color: #FF2455;
         background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)); }
-    button.sp-minimal.sp-rounded,
     .sp-button.sp-minimal.sp-rounded,
+    button.sp-minimal.sp-rounded,
+    button[type='button'].sp-minimal.sp-rounded,
     input[type='button'].sp-minimal.sp-rounded,
     input[type='submit'].sp-minimal.sp-rounded,
     input[type='reset'].sp-minimal.sp-rounded {
       max-height: unset;
       border-radius: 50px; }
-    button.sp-minimal.sp-circle,
     .sp-button.sp-minimal.sp-circle,
+    button.sp-minimal.sp-circle,
+    button[type='button'].sp-minimal.sp-circle,
     input[type='button'].sp-minimal.sp-circle,
     input[type='submit'].sp-minimal.sp-circle,
     input[type='reset'].sp-minimal.sp-circle {
       max-height: unset;
       border-radius: 50%;
       position: relative; }
-      button.sp-minimal.sp-circle > *,
       .sp-button.sp-minimal.sp-circle > *,
+      button.sp-minimal.sp-circle > *,
+      button[type='button'].sp-minimal.sp-circle > *,
       input[type='button'].sp-minimal.sp-circle > *,
       input[type='submit'].sp-minimal.sp-circle > *,
       input[type='reset'].sp-minimal.sp-circle > * {
@@ -5164,18 +5523,23 @@ input[type='reset'] {
         left: 0;
         width: 100%;
         height: 100%; }
-    button.sp-minimal.sp-primary,
     .sp-button.sp-minimal.sp-primary,
+    button.sp-minimal.sp-primary,
+    button[type='button'].sp-minimal.sp-primary,
     input[type='button'].sp-minimal.sp-primary,
     input[type='submit'].sp-minimal.sp-primary,
     input[type='reset'].sp-minimal.sp-primary {
       color: #0096a9; }
-      button.sp-minimal.sp-primary .sp-container-dark, button.sp-minimal.sp-primary.sp-container-dark,
-      .sp-container-dark button.sp-minimal.sp-primary,
-      .sp-button.sp-minimal.sp-primary .sp-container-dark,
-      .sp-button.sp-minimal.sp-primary.sp-container-dark,
+      .sp-button.sp-minimal.sp-primary .sp-container-dark, .sp-button.sp-minimal.sp-primary.sp-container-dark,
+      .sp-container-dark .sp-button.sp-minimal.sp-primary,
+      button.sp-minimal.sp-primary .sp-container-dark,
+      button.sp-minimal.sp-primary.sp-container-dark,
       .sp-container-dark
-      .sp-button.sp-minimal.sp-primary,
+      button.sp-minimal.sp-primary,
+      button[type='button'].sp-minimal.sp-primary .sp-container-dark,
+      button[type='button'].sp-minimal.sp-primary.sp-container-dark,
+      .sp-container-dark
+      button[type='button'].sp-minimal.sp-primary,
       input[type='button'].sp-minimal.sp-primary .sp-container-dark,
       input[type='button'].sp-minimal.sp-primary.sp-container-dark,
       .sp-container-dark
@@ -5189,9 +5553,11 @@ input[type='reset'] {
       .sp-container-dark
       input[type='reset'].sp-minimal.sp-primary {
         color: #00C3DC; }
-      button.sp-minimal.sp-primary:active, button.sp-minimal.sp-primary.sp-state-active,
-      .sp-button.sp-minimal.sp-primary:active,
-      .sp-button.sp-minimal.sp-primary.sp-state-active,
+      .sp-button.sp-minimal.sp-primary:active, .sp-button.sp-minimal.sp-primary.sp-state-active,
+      button.sp-minimal.sp-primary:active,
+      button.sp-minimal.sp-primary.sp-state-active,
+      button[type='button'].sp-minimal.sp-primary:active,
+      button[type='button'].sp-minimal.sp-primary.sp-state-active,
       input[type='button'].sp-minimal.sp-primary:active,
       input[type='button'].sp-minimal.sp-primary.sp-state-active,
       input[type='submit'].sp-minimal.sp-primary:active,
@@ -5199,18 +5565,23 @@ input[type='reset'] {
       input[type='reset'].sp-minimal.sp-primary:active,
       input[type='reset'].sp-minimal.sp-primary.sp-state-active {
         color: #FFFFFF; }
-    button.sp-minimal.sp-success,
     .sp-button.sp-minimal.sp-success,
+    button.sp-minimal.sp-success,
+    button[type='button'].sp-minimal.sp-success,
     input[type='button'].sp-minimal.sp-success,
     input[type='submit'].sp-minimal.sp-success,
     input[type='reset'].sp-minimal.sp-success {
       color: #00af71; }
-      button.sp-minimal.sp-success .sp-container-dark, button.sp-minimal.sp-success.sp-container-dark,
-      .sp-container-dark button.sp-minimal.sp-success,
-      .sp-button.sp-minimal.sp-success .sp-container-dark,
-      .sp-button.sp-minimal.sp-success.sp-container-dark,
+      .sp-button.sp-minimal.sp-success .sp-container-dark, .sp-button.sp-minimal.sp-success.sp-container-dark,
+      .sp-container-dark .sp-button.sp-minimal.sp-success,
+      button.sp-minimal.sp-success .sp-container-dark,
+      button.sp-minimal.sp-success.sp-container-dark,
       .sp-container-dark
-      .sp-button.sp-minimal.sp-success,
+      button.sp-minimal.sp-success,
+      button[type='button'].sp-minimal.sp-success .sp-container-dark,
+      button[type='button'].sp-minimal.sp-success.sp-container-dark,
+      .sp-container-dark
+      button[type='button'].sp-minimal.sp-success,
       input[type='button'].sp-minimal.sp-success .sp-container-dark,
       input[type='button'].sp-minimal.sp-success.sp-container-dark,
       .sp-container-dark
@@ -5224,9 +5595,11 @@ input[type='reset'] {
       .sp-container-dark
       input[type='reset'].sp-minimal.sp-success {
         color: #00EC99; }
-      button.sp-minimal.sp-success:active, button.sp-minimal.sp-success.sp-state-active,
-      .sp-button.sp-minimal.sp-success:active,
-      .sp-button.sp-minimal.sp-success.sp-state-active,
+      .sp-button.sp-minimal.sp-success:active, .sp-button.sp-minimal.sp-success.sp-state-active,
+      button.sp-minimal.sp-success:active,
+      button.sp-minimal.sp-success.sp-state-active,
+      button[type='button'].sp-minimal.sp-success:active,
+      button[type='button'].sp-minimal.sp-success.sp-state-active,
       input[type='button'].sp-minimal.sp-success:active,
       input[type='button'].sp-minimal.sp-success.sp-state-active,
       input[type='submit'].sp-minimal.sp-success:active,
@@ -5234,18 +5607,23 @@ input[type='reset'] {
       input[type='reset'].sp-minimal.sp-success:active,
       input[type='reset'].sp-minimal.sp-success.sp-state-active {
         color: #FFFFFF; }
-    button.sp-minimal.sp-warning,
     .sp-button.sp-minimal.sp-warning,
+    button.sp-minimal.sp-warning,
+    button[type='button'].sp-minimal.sp-warning,
     input[type='button'].sp-minimal.sp-warning,
     input[type='submit'].sp-minimal.sp-warning,
     input[type='reset'].sp-minimal.sp-warning {
       color: #ff1c04; }
-      button.sp-minimal.sp-warning .sp-container-dark, button.sp-minimal.sp-warning.sp-container-dark,
-      .sp-container-dark button.sp-minimal.sp-warning,
-      .sp-button.sp-minimal.sp-warning .sp-container-dark,
-      .sp-button.sp-minimal.sp-warning.sp-container-dark,
+      .sp-button.sp-minimal.sp-warning .sp-container-dark, .sp-button.sp-minimal.sp-warning.sp-container-dark,
+      .sp-container-dark .sp-button.sp-minimal.sp-warning,
+      button.sp-minimal.sp-warning .sp-container-dark,
+      button.sp-minimal.sp-warning.sp-container-dark,
       .sp-container-dark
-      .sp-button.sp-minimal.sp-warning,
+      button.sp-minimal.sp-warning,
+      button[type='button'].sp-minimal.sp-warning .sp-container-dark,
+      button[type='button'].sp-minimal.sp-warning.sp-container-dark,
+      .sp-container-dark
+      button[type='button'].sp-minimal.sp-warning,
       input[type='button'].sp-minimal.sp-warning .sp-container-dark,
       input[type='button'].sp-minimal.sp-warning.sp-container-dark,
       .sp-container-dark
@@ -5259,9 +5637,11 @@ input[type='reset'] {
       .sp-container-dark
       input[type='reset'].sp-minimal.sp-warning {
         color: #FF4A37; }
-      button.sp-minimal.sp-warning:active, button.sp-minimal.sp-warning.sp-state-active,
-      .sp-button.sp-minimal.sp-warning:active,
-      .sp-button.sp-minimal.sp-warning.sp-state-active,
+      .sp-button.sp-minimal.sp-warning:active, .sp-button.sp-minimal.sp-warning.sp-state-active,
+      button.sp-minimal.sp-warning:active,
+      button.sp-minimal.sp-warning.sp-state-active,
+      button[type='button'].sp-minimal.sp-warning:active,
+      button[type='button'].sp-minimal.sp-warning.sp-state-active,
       input[type='button'].sp-minimal.sp-warning:active,
       input[type='button'].sp-minimal.sp-warning.sp-state-active,
       input[type='submit'].sp-minimal.sp-warning:active,
@@ -5269,18 +5649,23 @@ input[type='reset'] {
       input[type='reset'].sp-minimal.sp-warning:active,
       input[type='reset'].sp-minimal.sp-warning.sp-state-active {
         color: #FFFFFF; }
-    button.sp-minimal.sp-danger,
     .sp-button.sp-minimal.sp-danger,
+    button.sp-minimal.sp-danger,
+    button[type='button'].sp-minimal.sp-danger,
     input[type='button'].sp-minimal.sp-danger,
     input[type='submit'].sp-minimal.sp-danger,
     input[type='reset'].sp-minimal.sp-danger {
       color: #f00036; }
-      button.sp-minimal.sp-danger .sp-container-dark, button.sp-minimal.sp-danger.sp-container-dark,
-      .sp-container-dark button.sp-minimal.sp-danger,
-      .sp-button.sp-minimal.sp-danger .sp-container-dark,
-      .sp-button.sp-minimal.sp-danger.sp-container-dark,
+      .sp-button.sp-minimal.sp-danger .sp-container-dark, .sp-button.sp-minimal.sp-danger.sp-container-dark,
+      .sp-container-dark .sp-button.sp-minimal.sp-danger,
+      button.sp-minimal.sp-danger .sp-container-dark,
+      button.sp-minimal.sp-danger.sp-container-dark,
       .sp-container-dark
-      .sp-button.sp-minimal.sp-danger,
+      button.sp-minimal.sp-danger,
+      button[type='button'].sp-minimal.sp-danger .sp-container-dark,
+      button[type='button'].sp-minimal.sp-danger.sp-container-dark,
+      .sp-container-dark
+      button[type='button'].sp-minimal.sp-danger,
       input[type='button'].sp-minimal.sp-danger .sp-container-dark,
       input[type='button'].sp-minimal.sp-danger.sp-container-dark,
       .sp-container-dark
@@ -5294,9 +5679,11 @@ input[type='reset'] {
       .sp-container-dark
       input[type='reset'].sp-minimal.sp-danger {
         color: #FF2455; }
-      button.sp-minimal.sp-danger:active, button.sp-minimal.sp-danger.sp-state-active,
-      .sp-button.sp-minimal.sp-danger:active,
-      .sp-button.sp-minimal.sp-danger.sp-state-active,
+      .sp-button.sp-minimal.sp-danger:active, .sp-button.sp-minimal.sp-danger.sp-state-active,
+      button.sp-minimal.sp-danger:active,
+      button.sp-minimal.sp-danger.sp-state-active,
+      button[type='button'].sp-minimal.sp-danger:active,
+      button[type='button'].sp-minimal.sp-danger.sp-state-active,
       input[type='button'].sp-minimal.sp-danger:active,
       input[type='button'].sp-minimal.sp-danger.sp-state-active,
       input[type='submit'].sp-minimal.sp-danger:active,
@@ -5304,9 +5691,11 @@ input[type='reset'] {
       input[type='reset'].sp-minimal.sp-danger:active,
       input[type='reset'].sp-minimal.sp-danger.sp-state-active {
         color: #FFFFFF; }
-    button.sp-minimal:disabled, button.sp-minimal.sp-state-disabled,
-    .sp-button.sp-minimal:disabled,
-    .sp-button.sp-minimal.sp-state-disabled,
+    .sp-button.sp-minimal:disabled, .sp-button.sp-minimal.sp-state-disabled,
+    button.sp-minimal:disabled,
+    button.sp-minimal.sp-state-disabled,
+    button[type='button'].sp-minimal:disabled,
+    button[type='button'].sp-minimal.sp-state-disabled,
     input[type='button'].sp-minimal:disabled,
     input[type='button'].sp-minimal.sp-state-disabled,
     input[type='submit'].sp-minimal:disabled,
@@ -5315,17 +5704,25 @@ input[type='reset'] {
     input[type='reset'].sp-minimal.sp-state-disabled {
       pointer-events: none;
       color: rgba(0, 0, 0, 0.22); }
-      button.sp-minimal:disabled .sp-container-dark, button.sp-minimal:disabled.sp-container-dark,
-      .sp-container-dark button.sp-minimal:disabled, button.sp-minimal.sp-state-disabled .sp-container-dark, button.sp-minimal.sp-state-disabled.sp-container-dark,
-      .sp-container-dark button.sp-minimal.sp-state-disabled,
-      .sp-button.sp-minimal:disabled .sp-container-dark,
-      .sp-button.sp-minimal:disabled.sp-container-dark,
+      .sp-button.sp-minimal:disabled .sp-container-dark, .sp-button.sp-minimal:disabled.sp-container-dark,
+      .sp-container-dark .sp-button.sp-minimal:disabled, .sp-button.sp-minimal.sp-state-disabled .sp-container-dark, .sp-button.sp-minimal.sp-state-disabled.sp-container-dark,
+      .sp-container-dark .sp-button.sp-minimal.sp-state-disabled,
+      button.sp-minimal:disabled .sp-container-dark,
+      button.sp-minimal:disabled.sp-container-dark,
       .sp-container-dark
-      .sp-button.sp-minimal:disabled,
-      .sp-button.sp-minimal.sp-state-disabled .sp-container-dark,
-      .sp-button.sp-minimal.sp-state-disabled.sp-container-dark,
+      button.sp-minimal:disabled,
+      button.sp-minimal.sp-state-disabled .sp-container-dark,
+      button.sp-minimal.sp-state-disabled.sp-container-dark,
       .sp-container-dark
-      .sp-button.sp-minimal.sp-state-disabled,
+      button.sp-minimal.sp-state-disabled,
+      button[type='button'].sp-minimal:disabled .sp-container-dark,
+      button[type='button'].sp-minimal:disabled.sp-container-dark,
+      .sp-container-dark
+      button[type='button'].sp-minimal:disabled,
+      button[type='button'].sp-minimal.sp-state-disabled .sp-container-dark,
+      button[type='button'].sp-minimal.sp-state-disabled.sp-container-dark,
+      .sp-container-dark
+      button[type='button'].sp-minimal.sp-state-disabled,
       input[type='button'].sp-minimal:disabled .sp-container-dark,
       input[type='button'].sp-minimal:disabled.sp-container-dark,
       .sp-container-dark
@@ -5351,12 +5748,16 @@ input[type='reset'] {
       .sp-container-dark
       input[type='reset'].sp-minimal.sp-state-disabled {
         color: rgba(255, 255, 255, 0.19); }
-    button.sp-minimal .sp-container-dark, button.sp-minimal.sp-container-dark,
-    .sp-container-dark button.sp-minimal,
-    .sp-button.sp-minimal .sp-container-dark,
-    .sp-button.sp-minimal.sp-container-dark,
+    .sp-button.sp-minimal .sp-container-dark, .sp-button.sp-minimal.sp-container-dark,
+    .sp-container-dark .sp-button.sp-minimal,
+    button.sp-minimal .sp-container-dark,
+    button.sp-minimal.sp-container-dark,
     .sp-container-dark
-    .sp-button.sp-minimal,
+    button.sp-minimal,
+    button[type='button'].sp-minimal .sp-container-dark,
+    button[type='button'].sp-minimal.sp-container-dark,
+    .sp-container-dark
+    button[type='button'].sp-minimal,
     input[type='button'].sp-minimal .sp-container-dark,
     input[type='button'].sp-minimal.sp-container-dark,
     .sp-container-dark
@@ -5370,12 +5771,16 @@ input[type='reset'] {
     .sp-container-dark
     input[type='reset'].sp-minimal {
       border-color: rgba(255, 255, 255, 0.25); }
-      button.sp-minimal .sp-container-dark.sp-primary, button.sp-minimal.sp-container-dark.sp-primary,
-      .sp-container-dark button.sp-minimal.sp-primary,
-      .sp-button.sp-minimal .sp-container-dark.sp-primary,
-      .sp-button.sp-minimal.sp-container-dark.sp-primary,
+      .sp-button.sp-minimal .sp-container-dark.sp-primary, .sp-button.sp-minimal.sp-container-dark.sp-primary,
+      .sp-container-dark .sp-button.sp-minimal.sp-primary,
+      button.sp-minimal .sp-container-dark.sp-primary,
+      button.sp-minimal.sp-container-dark.sp-primary,
       .sp-container-dark
-      .sp-button.sp-minimal.sp-primary,
+      button.sp-minimal.sp-primary,
+      button[type='button'].sp-minimal .sp-container-dark.sp-primary,
+      button[type='button'].sp-minimal.sp-container-dark.sp-primary,
+      .sp-container-dark
+      button[type='button'].sp-minimal.sp-primary,
       input[type='button'].sp-minimal .sp-container-dark.sp-primary,
       input[type='button'].sp-minimal.sp-container-dark.sp-primary,
       .sp-container-dark
@@ -5390,28 +5795,43 @@ input[type='reset'] {
       input[type='reset'].sp-minimal.sp-primary {
         color: #0096a9;
         border-color: #00C3DC; }
-        button.sp-minimal .sp-container-dark.sp-primary .sp-container-dark, button.sp-minimal .sp-container-dark.sp-primary.sp-container-dark,
-        .sp-container-dark button.sp-minimal .sp-container-dark.sp-primary, button.sp-minimal.sp-container-dark.sp-primary .sp-container-dark, button.sp-minimal.sp-container-dark.sp-primary.sp-container-dark,
-        .sp-container-dark button.sp-minimal.sp-container-dark.sp-primary,
-        .sp-container-dark button.sp-minimal.sp-primary .sp-container-dark,
-        .sp-container-dark button.sp-minimal.sp-primary.sp-container-dark,
+        .sp-button.sp-minimal .sp-container-dark.sp-primary .sp-container-dark, .sp-button.sp-minimal .sp-container-dark.sp-primary.sp-container-dark,
+        .sp-container-dark .sp-button.sp-minimal .sp-container-dark.sp-primary, .sp-button.sp-minimal.sp-container-dark.sp-primary .sp-container-dark, .sp-button.sp-minimal.sp-container-dark.sp-primary.sp-container-dark,
+        .sp-container-dark .sp-button.sp-minimal.sp-container-dark.sp-primary,
+        .sp-container-dark .sp-button.sp-minimal.sp-primary .sp-container-dark,
+        .sp-container-dark .sp-button.sp-minimal.sp-primary.sp-container-dark,
         .sp-container-dark
-        .sp-container-dark button.sp-minimal.sp-primary,
-        .sp-button.sp-minimal .sp-container-dark.sp-primary .sp-container-dark,
-        .sp-button.sp-minimal .sp-container-dark.sp-primary.sp-container-dark,
+        .sp-container-dark .sp-button.sp-minimal.sp-primary,
+        button.sp-minimal .sp-container-dark.sp-primary .sp-container-dark,
+        button.sp-minimal .sp-container-dark.sp-primary.sp-container-dark,
         .sp-container-dark
-        .sp-button.sp-minimal .sp-container-dark.sp-primary,
-        .sp-button.sp-minimal.sp-container-dark.sp-primary .sp-container-dark,
-        .sp-button.sp-minimal.sp-container-dark.sp-primary.sp-container-dark,
+        button.sp-minimal .sp-container-dark.sp-primary,
+        button.sp-minimal.sp-container-dark.sp-primary .sp-container-dark,
+        button.sp-minimal.sp-container-dark.sp-primary.sp-container-dark,
         .sp-container-dark
-        .sp-button.sp-minimal.sp-container-dark.sp-primary,
+        button.sp-minimal.sp-container-dark.sp-primary,
         .sp-container-dark
-        .sp-button.sp-minimal.sp-primary .sp-container-dark,
+        button.sp-minimal.sp-primary .sp-container-dark,
         .sp-container-dark
-        .sp-button.sp-minimal.sp-primary.sp-container-dark,
+        button.sp-minimal.sp-primary.sp-container-dark,
         .sp-container-dark
         .sp-container-dark
-        .sp-button.sp-minimal.sp-primary,
+        button.sp-minimal.sp-primary,
+        button[type='button'].sp-minimal .sp-container-dark.sp-primary .sp-container-dark,
+        button[type='button'].sp-minimal .sp-container-dark.sp-primary.sp-container-dark,
+        .sp-container-dark
+        button[type='button'].sp-minimal .sp-container-dark.sp-primary,
+        button[type='button'].sp-minimal.sp-container-dark.sp-primary .sp-container-dark,
+        button[type='button'].sp-minimal.sp-container-dark.sp-primary.sp-container-dark,
+        .sp-container-dark
+        button[type='button'].sp-minimal.sp-container-dark.sp-primary,
+        .sp-container-dark
+        button[type='button'].sp-minimal.sp-primary .sp-container-dark,
+        .sp-container-dark
+        button[type='button'].sp-minimal.sp-primary.sp-container-dark,
+        .sp-container-dark
+        .sp-container-dark
+        button[type='button'].sp-minimal.sp-primary,
         input[type='button'].sp-minimal .sp-container-dark.sp-primary .sp-container-dark,
         input[type='button'].sp-minimal .sp-container-dark.sp-primary.sp-container-dark,
         .sp-container-dark
@@ -5458,12 +5878,16 @@ input[type='reset'] {
         .sp-container-dark
         input[type='reset'].sp-minimal.sp-primary {
           color: #00C3DC; }
-      button.sp-minimal .sp-container-dark.sp-success, button.sp-minimal.sp-container-dark.sp-success,
-      .sp-container-dark button.sp-minimal.sp-success,
-      .sp-button.sp-minimal .sp-container-dark.sp-success,
-      .sp-button.sp-minimal.sp-container-dark.sp-success,
+      .sp-button.sp-minimal .sp-container-dark.sp-success, .sp-button.sp-minimal.sp-container-dark.sp-success,
+      .sp-container-dark .sp-button.sp-minimal.sp-success,
+      button.sp-minimal .sp-container-dark.sp-success,
+      button.sp-minimal.sp-container-dark.sp-success,
       .sp-container-dark
-      .sp-button.sp-minimal.sp-success,
+      button.sp-minimal.sp-success,
+      button[type='button'].sp-minimal .sp-container-dark.sp-success,
+      button[type='button'].sp-minimal.sp-container-dark.sp-success,
+      .sp-container-dark
+      button[type='button'].sp-minimal.sp-success,
       input[type='button'].sp-minimal .sp-container-dark.sp-success,
       input[type='button'].sp-minimal.sp-container-dark.sp-success,
       .sp-container-dark
@@ -5478,28 +5902,43 @@ input[type='reset'] {
       input[type='reset'].sp-minimal.sp-success {
         color: #00af71;
         border-color: #00EC99; }
-        button.sp-minimal .sp-container-dark.sp-success .sp-container-dark, button.sp-minimal .sp-container-dark.sp-success.sp-container-dark,
-        .sp-container-dark button.sp-minimal .sp-container-dark.sp-success, button.sp-minimal.sp-container-dark.sp-success .sp-container-dark, button.sp-minimal.sp-container-dark.sp-success.sp-container-dark,
-        .sp-container-dark button.sp-minimal.sp-container-dark.sp-success,
-        .sp-container-dark button.sp-minimal.sp-success .sp-container-dark,
-        .sp-container-dark button.sp-minimal.sp-success.sp-container-dark,
+        .sp-button.sp-minimal .sp-container-dark.sp-success .sp-container-dark, .sp-button.sp-minimal .sp-container-dark.sp-success.sp-container-dark,
+        .sp-container-dark .sp-button.sp-minimal .sp-container-dark.sp-success, .sp-button.sp-minimal.sp-container-dark.sp-success .sp-container-dark, .sp-button.sp-minimal.sp-container-dark.sp-success.sp-container-dark,
+        .sp-container-dark .sp-button.sp-minimal.sp-container-dark.sp-success,
+        .sp-container-dark .sp-button.sp-minimal.sp-success .sp-container-dark,
+        .sp-container-dark .sp-button.sp-minimal.sp-success.sp-container-dark,
         .sp-container-dark
-        .sp-container-dark button.sp-minimal.sp-success,
-        .sp-button.sp-minimal .sp-container-dark.sp-success .sp-container-dark,
-        .sp-button.sp-minimal .sp-container-dark.sp-success.sp-container-dark,
+        .sp-container-dark .sp-button.sp-minimal.sp-success,
+        button.sp-minimal .sp-container-dark.sp-success .sp-container-dark,
+        button.sp-minimal .sp-container-dark.sp-success.sp-container-dark,
         .sp-container-dark
-        .sp-button.sp-minimal .sp-container-dark.sp-success,
-        .sp-button.sp-minimal.sp-container-dark.sp-success .sp-container-dark,
-        .sp-button.sp-minimal.sp-container-dark.sp-success.sp-container-dark,
+        button.sp-minimal .sp-container-dark.sp-success,
+        button.sp-minimal.sp-container-dark.sp-success .sp-container-dark,
+        button.sp-minimal.sp-container-dark.sp-success.sp-container-dark,
         .sp-container-dark
-        .sp-button.sp-minimal.sp-container-dark.sp-success,
+        button.sp-minimal.sp-container-dark.sp-success,
         .sp-container-dark
-        .sp-button.sp-minimal.sp-success .sp-container-dark,
+        button.sp-minimal.sp-success .sp-container-dark,
         .sp-container-dark
-        .sp-button.sp-minimal.sp-success.sp-container-dark,
+        button.sp-minimal.sp-success.sp-container-dark,
         .sp-container-dark
         .sp-container-dark
-        .sp-button.sp-minimal.sp-success,
+        button.sp-minimal.sp-success,
+        button[type='button'].sp-minimal .sp-container-dark.sp-success .sp-container-dark,
+        button[type='button'].sp-minimal .sp-container-dark.sp-success.sp-container-dark,
+        .sp-container-dark
+        button[type='button'].sp-minimal .sp-container-dark.sp-success,
+        button[type='button'].sp-minimal.sp-container-dark.sp-success .sp-container-dark,
+        button[type='button'].sp-minimal.sp-container-dark.sp-success.sp-container-dark,
+        .sp-container-dark
+        button[type='button'].sp-minimal.sp-container-dark.sp-success,
+        .sp-container-dark
+        button[type='button'].sp-minimal.sp-success .sp-container-dark,
+        .sp-container-dark
+        button[type='button'].sp-minimal.sp-success.sp-container-dark,
+        .sp-container-dark
+        .sp-container-dark
+        button[type='button'].sp-minimal.sp-success,
         input[type='button'].sp-minimal .sp-container-dark.sp-success .sp-container-dark,
         input[type='button'].sp-minimal .sp-container-dark.sp-success.sp-container-dark,
         .sp-container-dark
@@ -5546,12 +5985,16 @@ input[type='reset'] {
         .sp-container-dark
         input[type='reset'].sp-minimal.sp-success {
           color: #00EC99; }
-      button.sp-minimal .sp-container-dark.sp-warning, button.sp-minimal.sp-container-dark.sp-warning,
-      .sp-container-dark button.sp-minimal.sp-warning,
-      .sp-button.sp-minimal .sp-container-dark.sp-warning,
-      .sp-button.sp-minimal.sp-container-dark.sp-warning,
+      .sp-button.sp-minimal .sp-container-dark.sp-warning, .sp-button.sp-minimal.sp-container-dark.sp-warning,
+      .sp-container-dark .sp-button.sp-minimal.sp-warning,
+      button.sp-minimal .sp-container-dark.sp-warning,
+      button.sp-minimal.sp-container-dark.sp-warning,
       .sp-container-dark
-      .sp-button.sp-minimal.sp-warning,
+      button.sp-minimal.sp-warning,
+      button[type='button'].sp-minimal .sp-container-dark.sp-warning,
+      button[type='button'].sp-minimal.sp-container-dark.sp-warning,
+      .sp-container-dark
+      button[type='button'].sp-minimal.sp-warning,
       input[type='button'].sp-minimal .sp-container-dark.sp-warning,
       input[type='button'].sp-minimal.sp-container-dark.sp-warning,
       .sp-container-dark
@@ -5566,28 +6009,43 @@ input[type='reset'] {
       input[type='reset'].sp-minimal.sp-warning {
         color: #ff1c04;
         border-color: #FF4A37; }
-        button.sp-minimal .sp-container-dark.sp-warning .sp-container-dark, button.sp-minimal .sp-container-dark.sp-warning.sp-container-dark,
-        .sp-container-dark button.sp-minimal .sp-container-dark.sp-warning, button.sp-minimal.sp-container-dark.sp-warning .sp-container-dark, button.sp-minimal.sp-container-dark.sp-warning.sp-container-dark,
-        .sp-container-dark button.sp-minimal.sp-container-dark.sp-warning,
-        .sp-container-dark button.sp-minimal.sp-warning .sp-container-dark,
-        .sp-container-dark button.sp-minimal.sp-warning.sp-container-dark,
+        .sp-button.sp-minimal .sp-container-dark.sp-warning .sp-container-dark, .sp-button.sp-minimal .sp-container-dark.sp-warning.sp-container-dark,
+        .sp-container-dark .sp-button.sp-minimal .sp-container-dark.sp-warning, .sp-button.sp-minimal.sp-container-dark.sp-warning .sp-container-dark, .sp-button.sp-minimal.sp-container-dark.sp-warning.sp-container-dark,
+        .sp-container-dark .sp-button.sp-minimal.sp-container-dark.sp-warning,
+        .sp-container-dark .sp-button.sp-minimal.sp-warning .sp-container-dark,
+        .sp-container-dark .sp-button.sp-minimal.sp-warning.sp-container-dark,
         .sp-container-dark
-        .sp-container-dark button.sp-minimal.sp-warning,
-        .sp-button.sp-minimal .sp-container-dark.sp-warning .sp-container-dark,
-        .sp-button.sp-minimal .sp-container-dark.sp-warning.sp-container-dark,
+        .sp-container-dark .sp-button.sp-minimal.sp-warning,
+        button.sp-minimal .sp-container-dark.sp-warning .sp-container-dark,
+        button.sp-minimal .sp-container-dark.sp-warning.sp-container-dark,
         .sp-container-dark
-        .sp-button.sp-minimal .sp-container-dark.sp-warning,
-        .sp-button.sp-minimal.sp-container-dark.sp-warning .sp-container-dark,
-        .sp-button.sp-minimal.sp-container-dark.sp-warning.sp-container-dark,
+        button.sp-minimal .sp-container-dark.sp-warning,
+        button.sp-minimal.sp-container-dark.sp-warning .sp-container-dark,
+        button.sp-minimal.sp-container-dark.sp-warning.sp-container-dark,
         .sp-container-dark
-        .sp-button.sp-minimal.sp-container-dark.sp-warning,
+        button.sp-minimal.sp-container-dark.sp-warning,
         .sp-container-dark
-        .sp-button.sp-minimal.sp-warning .sp-container-dark,
+        button.sp-minimal.sp-warning .sp-container-dark,
         .sp-container-dark
-        .sp-button.sp-minimal.sp-warning.sp-container-dark,
+        button.sp-minimal.sp-warning.sp-container-dark,
         .sp-container-dark
         .sp-container-dark
-        .sp-button.sp-minimal.sp-warning,
+        button.sp-minimal.sp-warning,
+        button[type='button'].sp-minimal .sp-container-dark.sp-warning .sp-container-dark,
+        button[type='button'].sp-minimal .sp-container-dark.sp-warning.sp-container-dark,
+        .sp-container-dark
+        button[type='button'].sp-minimal .sp-container-dark.sp-warning,
+        button[type='button'].sp-minimal.sp-container-dark.sp-warning .sp-container-dark,
+        button[type='button'].sp-minimal.sp-container-dark.sp-warning.sp-container-dark,
+        .sp-container-dark
+        button[type='button'].sp-minimal.sp-container-dark.sp-warning,
+        .sp-container-dark
+        button[type='button'].sp-minimal.sp-warning .sp-container-dark,
+        .sp-container-dark
+        button[type='button'].sp-minimal.sp-warning.sp-container-dark,
+        .sp-container-dark
+        .sp-container-dark
+        button[type='button'].sp-minimal.sp-warning,
         input[type='button'].sp-minimal .sp-container-dark.sp-warning .sp-container-dark,
         input[type='button'].sp-minimal .sp-container-dark.sp-warning.sp-container-dark,
         .sp-container-dark
@@ -5634,12 +6092,16 @@ input[type='reset'] {
         .sp-container-dark
         input[type='reset'].sp-minimal.sp-warning {
           color: #FF4A37; }
-      button.sp-minimal .sp-container-dark.sp-danger, button.sp-minimal.sp-container-dark.sp-danger,
-      .sp-container-dark button.sp-minimal.sp-danger,
-      .sp-button.sp-minimal .sp-container-dark.sp-danger,
-      .sp-button.sp-minimal.sp-container-dark.sp-danger,
+      .sp-button.sp-minimal .sp-container-dark.sp-danger, .sp-button.sp-minimal.sp-container-dark.sp-danger,
+      .sp-container-dark .sp-button.sp-minimal.sp-danger,
+      button.sp-minimal .sp-container-dark.sp-danger,
+      button.sp-minimal.sp-container-dark.sp-danger,
       .sp-container-dark
-      .sp-button.sp-minimal.sp-danger,
+      button.sp-minimal.sp-danger,
+      button[type='button'].sp-minimal .sp-container-dark.sp-danger,
+      button[type='button'].sp-minimal.sp-container-dark.sp-danger,
+      .sp-container-dark
+      button[type='button'].sp-minimal.sp-danger,
       input[type='button'].sp-minimal .sp-container-dark.sp-danger,
       input[type='button'].sp-minimal.sp-container-dark.sp-danger,
       .sp-container-dark
@@ -5654,28 +6116,43 @@ input[type='reset'] {
       input[type='reset'].sp-minimal.sp-danger {
         color: #f00036;
         border-color: #FF2455; }
-        button.sp-minimal .sp-container-dark.sp-danger .sp-container-dark, button.sp-minimal .sp-container-dark.sp-danger.sp-container-dark,
-        .sp-container-dark button.sp-minimal .sp-container-dark.sp-danger, button.sp-minimal.sp-container-dark.sp-danger .sp-container-dark, button.sp-minimal.sp-container-dark.sp-danger.sp-container-dark,
-        .sp-container-dark button.sp-minimal.sp-container-dark.sp-danger,
-        .sp-container-dark button.sp-minimal.sp-danger .sp-container-dark,
-        .sp-container-dark button.sp-minimal.sp-danger.sp-container-dark,
+        .sp-button.sp-minimal .sp-container-dark.sp-danger .sp-container-dark, .sp-button.sp-minimal .sp-container-dark.sp-danger.sp-container-dark,
+        .sp-container-dark .sp-button.sp-minimal .sp-container-dark.sp-danger, .sp-button.sp-minimal.sp-container-dark.sp-danger .sp-container-dark, .sp-button.sp-minimal.sp-container-dark.sp-danger.sp-container-dark,
+        .sp-container-dark .sp-button.sp-minimal.sp-container-dark.sp-danger,
+        .sp-container-dark .sp-button.sp-minimal.sp-danger .sp-container-dark,
+        .sp-container-dark .sp-button.sp-minimal.sp-danger.sp-container-dark,
         .sp-container-dark
-        .sp-container-dark button.sp-minimal.sp-danger,
-        .sp-button.sp-minimal .sp-container-dark.sp-danger .sp-container-dark,
-        .sp-button.sp-minimal .sp-container-dark.sp-danger.sp-container-dark,
+        .sp-container-dark .sp-button.sp-minimal.sp-danger,
+        button.sp-minimal .sp-container-dark.sp-danger .sp-container-dark,
+        button.sp-minimal .sp-container-dark.sp-danger.sp-container-dark,
         .sp-container-dark
-        .sp-button.sp-minimal .sp-container-dark.sp-danger,
-        .sp-button.sp-minimal.sp-container-dark.sp-danger .sp-container-dark,
-        .sp-button.sp-minimal.sp-container-dark.sp-danger.sp-container-dark,
+        button.sp-minimal .sp-container-dark.sp-danger,
+        button.sp-minimal.sp-container-dark.sp-danger .sp-container-dark,
+        button.sp-minimal.sp-container-dark.sp-danger.sp-container-dark,
         .sp-container-dark
-        .sp-button.sp-minimal.sp-container-dark.sp-danger,
+        button.sp-minimal.sp-container-dark.sp-danger,
         .sp-container-dark
-        .sp-button.sp-minimal.sp-danger .sp-container-dark,
+        button.sp-minimal.sp-danger .sp-container-dark,
         .sp-container-dark
-        .sp-button.sp-minimal.sp-danger.sp-container-dark,
+        button.sp-minimal.sp-danger.sp-container-dark,
         .sp-container-dark
         .sp-container-dark
-        .sp-button.sp-minimal.sp-danger,
+        button.sp-minimal.sp-danger,
+        button[type='button'].sp-minimal .sp-container-dark.sp-danger .sp-container-dark,
+        button[type='button'].sp-minimal .sp-container-dark.sp-danger.sp-container-dark,
+        .sp-container-dark
+        button[type='button'].sp-minimal .sp-container-dark.sp-danger,
+        button[type='button'].sp-minimal.sp-container-dark.sp-danger .sp-container-dark,
+        button[type='button'].sp-minimal.sp-container-dark.sp-danger.sp-container-dark,
+        .sp-container-dark
+        button[type='button'].sp-minimal.sp-container-dark.sp-danger,
+        .sp-container-dark
+        button[type='button'].sp-minimal.sp-danger .sp-container-dark,
+        .sp-container-dark
+        button[type='button'].sp-minimal.sp-danger.sp-container-dark,
+        .sp-container-dark
+        .sp-container-dark
+        button[type='button'].sp-minimal.sp-danger,
         input[type='button'].sp-minimal .sp-container-dark.sp-danger .sp-container-dark,
         input[type='button'].sp-minimal .sp-container-dark.sp-danger.sp-container-dark,
         .sp-container-dark
@@ -5722,17 +6199,25 @@ input[type='reset'] {
         .sp-container-dark
         input[type='reset'].sp-minimal.sp-danger {
           color: #FF2455; }
-      button.sp-minimal .sp-container-dark:active, button.sp-minimal .sp-container-dark.sp-state-active, button.sp-minimal.sp-container-dark:active, button.sp-minimal.sp-container-dark.sp-state-active,
-      .sp-container-dark button.sp-minimal:active,
-      .sp-container-dark button.sp-minimal.sp-state-active,
-      .sp-button.sp-minimal .sp-container-dark:active,
-      .sp-button.sp-minimal .sp-container-dark.sp-state-active,
-      .sp-button.sp-minimal.sp-container-dark:active,
-      .sp-button.sp-minimal.sp-container-dark.sp-state-active,
+      .sp-button.sp-minimal .sp-container-dark:active, .sp-button.sp-minimal .sp-container-dark.sp-state-active, .sp-button.sp-minimal.sp-container-dark:active, .sp-button.sp-minimal.sp-container-dark.sp-state-active,
+      .sp-container-dark .sp-button.sp-minimal:active,
+      .sp-container-dark .sp-button.sp-minimal.sp-state-active,
+      button.sp-minimal .sp-container-dark:active,
+      button.sp-minimal .sp-container-dark.sp-state-active,
+      button.sp-minimal.sp-container-dark:active,
+      button.sp-minimal.sp-container-dark.sp-state-active,
       .sp-container-dark
-      .sp-button.sp-minimal:active,
+      button.sp-minimal:active,
       .sp-container-dark
-      .sp-button.sp-minimal.sp-state-active,
+      button.sp-minimal.sp-state-active,
+      button[type='button'].sp-minimal .sp-container-dark:active,
+      button[type='button'].sp-minimal .sp-container-dark.sp-state-active,
+      button[type='button'].sp-minimal.sp-container-dark:active,
+      button[type='button'].sp-minimal.sp-container-dark.sp-state-active,
+      .sp-container-dark
+      button[type='button'].sp-minimal:active,
+      .sp-container-dark
+      button[type='button'].sp-minimal.sp-state-active,
       input[type='button'].sp-minimal .sp-container-dark:active,
       input[type='button'].sp-minimal .sp-container-dark.sp-state-active,
       input[type='button'].sp-minimal.sp-container-dark:active,
@@ -9016,24 +9501,24 @@ blockquote {
   flex-direction: column;
   box-sizing: border-box;
   /*&:nth-child(1) {
-		z-index: 5
-	}
+      z-index: 5
+  }
 
-	&:nth-child(2) {
-		z-index: 4
-	}
+  &:nth-child(2) {
+      z-index: 4
+  }
 
-	&:nth-child(3) {
-		z-index: 3
-	}
+  &:nth-child(3) {
+      z-index: 3
+  }
 
-	&:nth-child(4) {
-		z-index: 2
-	}
+  &:nth-child(4) {
+      z-index: 2
+  }
 
-	&:nth-child(5) {
-		z-index: 1
-	}*/ }
+  &:nth-child(5) {
+      z-index: 1
+  }*/ }
   .sp-app-content-sidebar-menu .sp-app-content-sidebar-menu-content {
     flex: 1;
     overflow-y: scroll; }
@@ -9200,9 +9685,9 @@ blockquote {
 
 .sp-app-content-main {
   /*.ui-resizable-handle {
-	  transform: scale(3);
-	}*/ }
-  .sp-app-content-main #container {
+    transform: scale(3);
+  }*/ }
+  .sp-app-content-main .sp-canvas-container {
     width: 100%;
     height: 100%;
     overflow: scroll;
@@ -9213,23 +9698,16 @@ blockquote {
   .sp-app-content-main .dragging .is-draggable {
     cursor: grabbing !important;
     cursor: -webkit-grabbing !important; }
-  .sp-app-content-main #canvas {
+  .sp-app-content-main .sp-canvas {
     width: 10000px;
     height: 10000px;
     position: absolute;
     top: 0;
     left: 0; }
-  .sp-app-content-main #content {
-    width: 300px;
-    height: 250px;
-    position: absolute;
-    top: calc(100vh + 50px);
-    left: calc(100vw + 50px);
-    cursor: auto;
-    background-color: blue; }
-  .sp-app-content-main #container {
-    position: relative; }
-  .sp-app-content-main #preview {
+    .sp-app-content-main .sp-canvas > * {
+      top: 50%;
+      left: 50%; }
+  .sp-app-content-main .sp-canvas-preview {
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -9237,20 +9715,20 @@ blockquote {
     height: 100px;
     background-color: rgba(255, 255, 255, 0.15);
     border: 2px solid rgba(255, 255, 255, 0.15); }
-  .sp-app-content-main #viewable {
-    width: 50%;
-    height: 50%;
+  .sp-app-content-main .sp-canvas-viewable {
     position: absolute;
     top: 50%;
     left: 50%;
     background-color: rgba(255, 255, 255, 0.25);
     border: 2px solid rgba(255, 255, 255, 0.25); }
-  .sp-app-content-main #box {
+  .sp-app-content-main .sp-canvas-box {
     background-color: #00C3DC;
     width: 3px;
     height: 2.5px;
-    position: absolute; }
-  .sp-app-content-main #preview #recenter {
+    position: absolute;
+    top: 50%;
+    left: 50%; }
+  .sp-app-content-main .sp-canvas-preview .sp-recenter-canvas-btn {
     opacity: 0;
     transition: 0.5s ease opacity;
     position: absolute;
@@ -9258,7 +9736,7 @@ blockquote {
     left: 50%;
     z-index: 1000;
     transform: translate(-50%, -50%); }
-  .sp-app-content-main #preview:hover #recenter {
+  .sp-app-content-main .sp-canvas-preview:hover .sp-recenter-canvas-btn {
     opacity: 1; }
 
 .sp-app-overlay .sp-login {

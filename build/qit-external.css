@@ -1904,6 +1904,12 @@ html {
 .sp-no-overflow {
   overflow: hidden; }
 
+.sp-border-box {
+  box-sizing: border-box !important; }
+
+.sp-content-box {
+  box-sizing: content-box !important; }
+
 .sp-ellipsis {
   white-space: nowrap;
   overflow: hidden;

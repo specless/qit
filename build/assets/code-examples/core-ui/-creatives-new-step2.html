@@ -37,18 +37,13 @@
               <div class="sp-menu-header sp-small">Search For Help</div>
               <div class="sp-padding-horizontal-2 sp-padding-vertical-1" style="position: relative;">
                 <input type="search" class="sp-small sp-rounded" placeholder="Enter Search Term" style="width: 100%"/>
-                <button class="sp-small sp-rounded sp-icon-search sp-primary sp-margin-top-1 sp-margin-right-2" onclick="window.helpSearch('TEST')" style="position: absolute; top:0; right: 0;border-bottom-left-radius: 0;border-top-left-radius: 0;"></button>
+                <button class="sp-small sp-rounded sp-icon-search sp-primary sp-margin-top-1 sp-margin-right-2" style="position: absolute; top:0; right: 0;border-bottom-left-radius: 0;border-top-left-radius: 0;"></button>
               </div>
               <div class="sp-menu-header sp-small">Help Center</div>
-              <a class="sp-menu-item sp-icon-library" onclick="window.helpArticle('59e4faac2c7d3a752de121dd')">Getting Started Guide</a>
-              <a class="sp-menu-item sp-icon-knowledge" onclick="window.location.href = 'http://specless.helpscoutdocs.com/'">Knowledge Base</a>
-              <a class="sp-menu-item sp-icon-message" onclick="window.helpContact()">Contact Support</a>
-              <a class="sp-menu-item sp-icon-bug" onclick="window.helpBug()">Report a Bug</a>
-              <div class="sp-menu-header sp-small">Developer Hub</div>
-              <a class="sp-menu-item sp-icon-library" onclick="window.location.href = 'http://specless.readme.io/docs'">Documentation</a>
-              <a class="sp-menu-item sp-icon-code" onclick="window.location.href = 'http://specless.readme.io/reference'">Reference Guide</a>
-              <a class="sp-menu-item sp-icon-conversation" onclick="window.location.href = 'http://specless.readme.io/discuss'">Discussion</a>
-              <a class="sp-menu-item sp-icon-blog" onclick="window.location.href = 'http://specless.readme.io/blog'">Annoucements</a>
+              <a class="sp-menu-item sp-icon-account">Contact Support</a>
+              <a class="sp-menu-item sp-icon-settings">Report a Bug</a>
+              <a class="sp-menu-item sp-icon-organization">Tutorials</a>
+              <a class="sp-menu-item sp-icon-account">Knowledge Base</a>
             </div>
           </div>
         </div>
@@ -289,17 +284,18 @@
             <div class="sp-card-color-tag sp-primary"></div>
             <div class="sp-card-hover sp-container-dark">
               <div class="sp-card-hover-actions">
-                <button class="sp-card-main-action sp-primary sp-rounded sp-small sp-icon-eye" onclick="window.location.href = '-creatives-explorer.html'">Preview in Creative Explorer</button>
                 <div class="sp-card-hover-action-icons">
-                  <button class="sp-preview-button sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-explorer.html'"></button>
                   <button class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-info sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-overview.html'"></button>
-                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-margin-right-2 sp-large"></button>
+                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-explorer.html'"></button>
                   <button class="sp-minimal sp-simple-icon sp-primary sp-icon-paper-plane sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-publish.html'"></button>
                   <button class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-reporting.html'"></button>
                   <div class="sp-selector">
                       <button class="sp-selector-trigger sp-minimal sp-simple-icon sp-primary sp-icon-more sp-large"></button>
                       <div class="sp-selector-overlay">
                         <div class="sp-menu-dropdown sp-menu-dropdown-left sp-overlay sp-color-contrast">
+                          <a href="-creatives-settings.html" class="sp-menu-item sp-icon-settings">Settings</a>
+                          <a class="sp-menu-item sp-icon-share">Sharing</a>
+                          <div class="sp-spacer-vertical"></div>
                           <a class="sp-menu-item sp-icon-edit">Rename/Quick Edit</a>
                           <a class="sp-menu-item sp-icon-copy">Duplicate</a>
                           <a class="sp-menu-item sp-icon-file-cabinet">Archive</a>
@@ -349,17 +345,18 @@
             
             <div class="sp-card-hover sp-container-dark">
               <div class="sp-card-hover-actions">
-                <button class="sp-card-main-action sp-primary sp-rounded sp-small sp-icon-eye" onclick="window.location.href = '-creatives-explorer.html'">Preview in Creative Explorer</button>
                 <div class="sp-card-hover-action-icons">
-                  <button class="sp-preview-button sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-explorer.html'"></button>
                   <button class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-info sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-overview.html'"></button>
-                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-margin-right-2 sp-large"></button>
+                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-explorer.html'"></button>
                   <button class="sp-minimal sp-simple-icon sp-primary sp-icon-paper-plane sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-publish.html'"></button>
                   <button class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-reporting.html'"></button>
                   <div class="sp-selector">
                       <button class="sp-selector-trigger sp-minimal sp-simple-icon sp-primary sp-icon-more sp-large"></button>
                       <div class="sp-selector-overlay">
                         <div class="sp-menu-dropdown sp-menu-dropdown-left sp-overlay sp-color-contrast">
+                          <a href="-creatives-settings.html" class="sp-menu-item sp-icon-settings">Settings</a>
+                          <a class="sp-menu-item sp-icon-share">Sharing</a>
+                          <div class="sp-spacer-vertical"></div>
                           <a class="sp-menu-item sp-icon-edit">Rename/Quick Edit</a>
                           <a class="sp-menu-item sp-icon-copy">Duplicate</a>
                           <a class="sp-menu-item sp-icon-file-cabinet">Archive</a>
@@ -409,20 +406,21 @@
             
             <div class="sp-card-hover sp-container-dark">
               <div class="sp-card-hover-actions">
-                <button class="sp-card-main-action sp-primary sp-rounded sp-small sp-icon-eye" onclick="window.location.href = '-creatives-explorer.html'">Preview in Creative Explorer</button>
                 <div class="sp-card-hover-action-icons">
-                  <button class="sp-preview-button sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-explorer.html'"></button>
                   <button class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-info sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-overview.html'"></button>
-                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-margin-right-2 sp-large"></button>
+                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-explorer.html'"></button>
                   <button class="sp-minimal sp-simple-icon sp-primary sp-icon-paper-plane sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-publish.html'"></button>
                   <button class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-reporting.html'"></button>
                   <div class="sp-selector">
                       <button class="sp-selector-trigger sp-minimal sp-simple-icon sp-primary sp-icon-more sp-large"></button>
                       <div class="sp-selector-overlay">
                         <div class="sp-menu-dropdown sp-menu-dropdown-left sp-overlay sp-color-contrast">
+                          <a href="-creatives-settings.html" class="sp-menu-item sp-icon-settings">Settings</a>
+                          <a class="sp-menu-item sp-icon-share">Sharing</a>
+                          <div class="sp-spacer-vertical"></div>
                           <a class="sp-menu-item sp-icon-edit">Rename/Quick Edit</a>
                           <a class="sp-menu-item sp-icon-copy">Duplicate</a>
-                          <a class="sp-menu-item sp-icon-file-cabinet">Archive</a>
+                          <a class="sp-menu-item sp-icon-file-cabinet">Unarchive</a>
                         </div>
                       </div>
                     </div>
@@ -469,17 +467,18 @@
             <div class="sp-card-color-tag sp-success"></div>
             <div class="sp-card-hover sp-container-dark">
               <div class="sp-card-hover-actions">
-                <button class="sp-card-main-action sp-primary sp-rounded sp-small sp-icon-eye" onclick="window.location.href = '-creatives-explorer.html'">Preview in Creative Explorer</button>
                 <div class="sp-card-hover-action-icons">
-                  <button class="sp-preview-button sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-explorer.html'"></button>
                   <button class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-info sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-overview.html'"></button>
-                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-margin-right-2 sp-large"></button>
+                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-explorer.html'"></button>
                   <button class="sp-minimal sp-simple-icon sp-primary sp-icon-paper-plane sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-publish.html'"></button>
                   <button class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-reporting.html'"></button>
                   <div class="sp-selector">
                       <button class="sp-selector-trigger sp-minimal sp-simple-icon sp-primary sp-icon-more sp-large"></button>
                       <div class="sp-selector-overlay">
                         <div class="sp-menu-dropdown sp-menu-dropdown-left sp-overlay sp-color-contrast">
+                          <a href="-creatives-settings.html" class="sp-menu-item sp-icon-settings">Settings</a>
+                          <a class="sp-menu-item sp-icon-share">Sharing</a>
+                          <div class="sp-spacer-vertical"></div>
                           <a class="sp-menu-item sp-icon-edit">Rename/Quick Edit</a>
                           <a class="sp-menu-item sp-icon-copy">Duplicate</a>
                           <a class="sp-menu-item sp-icon-file-cabinet">Archive</a>
@@ -529,17 +528,18 @@
             <div class="sp-card-color-tag sp-warning"></div>
             <div class="sp-card-hover sp-container-dark">
               <div class="sp-card-hover-actions">
-                <button class="sp-card-main-action sp-primary sp-rounded sp-small sp-icon-eye" onclick="window.location.href = '-creatives-explorer.html'">Preview in Creative Explorer</button>
                 <div class="sp-card-hover-action-icons">
-                  <button class="sp-preview-button sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-explorer.html'"></button>
                   <button class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-info sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-overview.html'"></button>
-                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-margin-right-2 sp-large"></button>
+                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-explorer.html'"></button>
                   <button class="sp-minimal sp-simple-icon sp-primary sp-icon-paper-plane sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-publish.html'"></button>
                   <button class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-reporting.html'"></button>
                   <div class="sp-selector">
                       <button class="sp-selector-trigger sp-minimal sp-simple-icon sp-primary sp-icon-more sp-large"></button>
                       <div class="sp-selector-overlay">
                         <div class="sp-menu-dropdown sp-menu-dropdown-left sp-overlay sp-color-contrast">
+                          <a href="-creatives-settings.html" class="sp-menu-item sp-icon-settings">Settings</a>
+                          <a class="sp-menu-item sp-icon-share">Sharing</a>
+                          <div class="sp-spacer-vertical"></div>
                           <a class="sp-menu-item sp-icon-edit">Rename/Quick Edit</a>
                           <a class="sp-menu-item sp-icon-copy">Duplicate</a>
                           <a class="sp-menu-item sp-icon-file-cabinet">Archive</a>
@@ -589,17 +589,18 @@
             <div class="sp-card-color-tag sp-primary"></div>
             <div class="sp-card-hover sp-container-dark">
               <div class="sp-card-hover-actions">
-                <button class="sp-card-main-action sp-primary sp-rounded sp-small sp-icon-eye" onclick="window.location.href = '-creatives-explorer.html'">Preview in Creative Explorer</button>
                 <div class="sp-card-hover-action-icons">
-                  <button class="sp-preview-button sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-explorer.html'"></button>
                   <button class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-info sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-overview.html'"></button>
-                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-margin-right-2 sp-large"></button>
+                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-explorer.html'"></button>
                   <button class="sp-minimal sp-simple-icon sp-primary sp-icon-paper-plane sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-publish.html'"></button>
                   <button class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-reporting.html'"></button>
                   <div class="sp-selector">
                       <button class="sp-selector-trigger sp-minimal sp-simple-icon sp-primary sp-icon-more sp-large"></button>
                       <div class="sp-selector-overlay">
                         <div class="sp-menu-dropdown sp-menu-dropdown-left sp-overlay sp-color-contrast">
+                          <a href="-creatives-settings.html" class="sp-menu-item sp-icon-settings">Settings</a>
+                          <a class="sp-menu-item sp-icon-share">Sharing</a>
+                          <div class="sp-spacer-vertical"></div>
                           <a class="sp-menu-item sp-icon-edit">Rename/Quick Edit</a>
                           <a class="sp-menu-item sp-icon-copy">Duplicate</a>
                           <a class="sp-menu-item sp-icon-file-cabinet">Archive</a>
@@ -649,17 +650,18 @@
             
             <div class="sp-card-hover sp-container-dark">
               <div class="sp-card-hover-actions">
-                <button class="sp-card-main-action sp-primary sp-rounded sp-small sp-icon-eye" onclick="window.location.href = '-creatives-explorer.html'">Preview in Creative Explorer</button>
                 <div class="sp-card-hover-action-icons">
-                  <button class="sp-preview-button sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-explorer.html'"></button>
                   <button class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-info sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-overview.html'"></button>
-                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-margin-right-2 sp-large"></button>
+                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-explorer.html'"></button>
                   <button class="sp-minimal sp-simple-icon sp-primary sp-icon-paper-plane sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-publish.html'"></button>
                   <button class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-reporting.html'"></button>
                   <div class="sp-selector">
                       <button class="sp-selector-trigger sp-minimal sp-simple-icon sp-primary sp-icon-more sp-large"></button>
                       <div class="sp-selector-overlay">
                         <div class="sp-menu-dropdown sp-menu-dropdown-left sp-overlay sp-color-contrast">
+                          <a href="-creatives-settings.html" class="sp-menu-item sp-icon-settings">Settings</a>
+                          <a class="sp-menu-item sp-icon-share">Sharing</a>
+                          <div class="sp-spacer-vertical"></div>
                           <a class="sp-menu-item sp-icon-edit">Rename/Quick Edit</a>
                           <a class="sp-menu-item sp-icon-copy">Duplicate</a>
                           <a class="sp-menu-item sp-icon-file-cabinet">Archive</a>
@@ -709,17 +711,18 @@
             <div class="sp-card-color-tag sp-danger"></div>
             <div class="sp-card-hover sp-container-dark">
               <div class="sp-card-hover-actions">
-                <button class="sp-card-main-action sp-primary sp-rounded sp-small sp-icon-eye" onclick="window.location.href = '-creatives-explorer.html'">Preview in Creative Explorer</button>
                 <div class="sp-card-hover-action-icons">
-                  <button class="sp-preview-button sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-explorer.html'"></button>
                   <button class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-info sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-overview.html'"></button>
-                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-margin-right-2 sp-large"></button>
+                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-explorer.html'"></button>
                   <button class="sp-minimal sp-simple-icon sp-primary sp-icon-paper-plane sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-publish.html'"></button>
                   <button class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-reporting.html'"></button>
                   <div class="sp-selector">
                       <button class="sp-selector-trigger sp-minimal sp-simple-icon sp-primary sp-icon-more sp-large"></button>
                       <div class="sp-selector-overlay">
                         <div class="sp-menu-dropdown sp-menu-dropdown-left sp-overlay sp-color-contrast">
+                          <a href="-creatives-settings.html" class="sp-menu-item sp-icon-settings">Settings</a>
+                          <a class="sp-menu-item sp-icon-share">Sharing</a>
+                          <div class="sp-spacer-vertical"></div>
                           <a class="sp-menu-item sp-icon-edit">Rename/Quick Edit</a>
                           <a class="sp-menu-item sp-icon-copy">Duplicate</a>
                           <a class="sp-menu-item sp-icon-file-cabinet">Archive</a>
@@ -769,17 +772,18 @@
             
             <div class="sp-card-hover sp-container-dark">
               <div class="sp-card-hover-actions">
-                <button class="sp-card-main-action sp-primary sp-rounded sp-small sp-icon-eye" onclick="window.location.href = '-creatives-explorer.html'">Preview in Creative Explorer</button>
                 <div class="sp-card-hover-action-icons">
-                  <button class="sp-preview-button sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-explorer.html'"></button>
                   <button class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-info sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-overview.html'"></button>
-                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-margin-right-2 sp-large"></button>
+                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-explorer.html'"></button>
                   <button class="sp-minimal sp-simple-icon sp-primary sp-icon-paper-plane sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-publish.html'"></button>
                   <button class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-reporting.html'"></button>
                   <div class="sp-selector">
                       <button class="sp-selector-trigger sp-minimal sp-simple-icon sp-primary sp-icon-more sp-large"></button>
                       <div class="sp-selector-overlay">
                         <div class="sp-menu-dropdown sp-menu-dropdown-left sp-overlay sp-color-contrast">
+                          <a href="-creatives-settings.html" class="sp-menu-item sp-icon-settings">Settings</a>
+                          <a class="sp-menu-item sp-icon-share">Sharing</a>
+                          <div class="sp-spacer-vertical"></div>
                           <a class="sp-menu-item sp-icon-edit">Rename/Quick Edit</a>
                           <a class="sp-menu-item sp-icon-copy">Duplicate</a>
                           <a class="sp-menu-item sp-icon-file-cabinet">Archive</a>
@@ -829,17 +833,18 @@
             <div class="sp-card-color-tag sp-success"></div>
             <div class="sp-card-hover sp-container-dark">
               <div class="sp-card-hover-actions">
-                <button class="sp-card-main-action sp-primary sp-rounded sp-small sp-icon-eye" onclick="window.location.href = '-creatives-explorer.html'">Preview in Creative Explorer</button>
                 <div class="sp-card-hover-action-icons">
-                  <button class="sp-preview-button sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-explorer.html'"></button>
                   <button class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-info sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-overview.html'"></button>
-                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-margin-right-2 sp-large"></button>
+                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-explorer.html'"></button>
                   <button class="sp-minimal sp-simple-icon sp-primary sp-icon-paper-plane sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-publish.html'"></button>
                   <button class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-margin-right-2 sp-large" onclick="window.location.href = '-creatives-reporting.html'"></button>
                   <div class="sp-selector">
                       <button class="sp-selector-trigger sp-minimal sp-simple-icon sp-primary sp-icon-more sp-large"></button>
                       <div class="sp-selector-overlay">
                         <div class="sp-menu-dropdown sp-menu-dropdown-left sp-overlay sp-color-contrast">
+                          <a href="-creatives-settings.html" class="sp-menu-item sp-icon-settings">Settings</a>
+                          <a class="sp-menu-item sp-icon-share">Sharing</a>
+                          <div class="sp-spacer-vertical"></div>
                           <a class="sp-menu-item sp-icon-edit">Rename/Quick Edit</a>
                           <a class="sp-menu-item sp-icon-copy">Duplicate</a>
                           <a class="sp-menu-item sp-icon-file-cabinet">Archive</a>
@@ -871,6 +876,189 @@
 
       </div>
     </div>
+    <div id="target" class="sp-app-overlay">
+      <div class="sp-app-overlay-content">
+        <div class="sp-modal sp-overlay sp-contrast sp-rectangle sp-color-contrast sp-margin-2">
+          <div class="sp-wrapper sp-container-light sp-alt-two sp-modal-header">
+            <div class="sp-row">
+              <div class="sp-col sp-span-12">
+                <span class="sp-modal-icon sp-icon-creative sp-color-muted sp-large"></span>
+                <h2>New Creative</h2><span class="sp-float-right sp-bg-color-primary sp-h6 sp-bg-overlay-light-4">Initializing New Creative</span>
+              </div>
+            </div>
+          </div>
+          <div class="sp-wrapper sp-container-light sp-alt-two sp-modal-menu sp-padding-bottom-2">
+            <div class="sp-row sp-border-bottom-base sp-margin-0">
+               <!-- <div class="sp-menu sp-col sp-span-12 sp-padding-0">
+                 <a class="sp-menu-item sp-horizontal sp-state-active">Menu One</a>
+                 <a class="sp-menu-item sp-horizontal">Menu Two</a>
+                 <a class="sp-menu-item sp-horizontal">Menu Three</a>
+               </div> -->
+            </div>
+          </div>
+          <div class="sp-wrapper sp-modal-body sp-padding-bottom-2 sp-state-disabled" style="pointer-events: none; opacity: 0.5">
+            <div class="sp-row">
+               <div class="sp-col sp-span-7">
+                 
+                 <div class="sp-input-group sp-required">
+                    <div class="sp-input-group-label" data-description="Here is a description.">Name</div>
+                    <div class="sp-input-group-content" data-helper="Here is helper text.">
+                      <div class="sp-input-group-content-item sp-required">
+                        <input type="text" placeholder="Creative Name">
+                      </div>
+                    </div>
+                    <div class="sp-input-group-helper">
+                      <div class="sp-input-group-descr"><!-- Enter a name for this creative. --></div>
+                      <div class="sp-input-group-help-text"></div>
+                    </div>
+                  </div>
+
+                  <div class="sp-input-group sp-required">
+                    <div class="sp-input-group-label" data-description="Here is a description.">Advertiser</div>
+                    <div class="sp-input-group-content" data-helper="Here is helper text.">
+                      <div class="sp-input-group-content-item sp-required">
+                        <div class="sp-selector sp-full-width sp-margin-vertical-2">
+                          <input type="text" class="sp-full-width sp-selector-trigger" placeholder="Search Advertisers"/>
+                          <div class="sp-selector-overlay">
+                            <div class="sp-menu-dropdown sp-overlay">
+                              <a class="sp-menu-item sp-icon-circle-plus">New Advertiser: "..."</a>
+                              <div class="sp-menu-header">Matches</div>
+                              <a class="sp-menu-item">Advertiser 1</a>
+                              <a class="sp-menu-item">Advertiser 2</a>
+                              <a class="sp-menu-item">Advertiser 3</a>
+                              <a class="sp-menu-item">Advertiser 4</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sp-input-group-helper">
+                      <div class="sp-input-group-descr"><!-- Choose or enter a new advertiser. --></div>
+                      <div class="sp-input-group-help-text"></div>
+                    </div>
+                  </div>
+          
+
+                  <div class="sp-input-group sp-required">
+                    <div class="sp-input-group-label" data-description="Here is a description.">Content</div>
+                    <div class="sp-input-group-content" data-helper="Here is helper text.">
+                      <div class="sp-input-group-content-item sp-required">
+                        <div class="sp-selector sp-full-width sp-margin-vertical-2">
+                          <input type="text" class="sp-full-width sp-selector-trigger" placeholder="S-Kit Boilerplate"/>
+                          <div class="sp-selector-overlay">
+                            <div class="sp-menu-dropdown sp-overlay">
+                              <a class="sp-menu-item sp-state-active">S-Kit Boilerplate</a>
+                              <a class="sp-menu-item">Add from '.skit' Package</a>
+                              <a class="sp-menu-item">Demo Creative</a>
+                              <a class="sp-menu-item">Testing/Debugging Creative</a>
+                              <a class="sp-menu-item">Populate from Template</a>
+                              <a class="sp-menu-item">Copy Content from Existing Creative</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sp-input-group-helper">
+                      <div class="sp-input-group-descr">This content will populate the initial version of the creative.</div>
+                      <div class="sp-input-group-help-text">Add Initial Version to Specless Sync <input id="sync" type="checkbox" checked/><label for="sync" style="padding-left:0"></label></div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="sp-col sp-span-5">
+                  <!-- <div class="sp-h6 sp-margin-left-3 sp-padding-top-3 sp-padding-bottom-2">Labels</div> -->
+                  <div class="sp-padding-2 sp-padding-top-3 sp-margin-left-3 sp-margin-right-2 sp-rectangle sp-container-light sp-alt-two sp-small">
+                    <div class="sp-h6 sp-padding-bottom-2">Add Labels</div>
+                    <div class="sp-selector sp-full-width sp-margin-bottom-2">
+                      <input type="text" class="sp-padding-icon-left sp-full-width sp-selector-trigger" placeholder="Search Labels"/>
+                      <div class="sp-selector-overlay sp-icon-circle-plus">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-icon-circle-plus">Add Label: ""</a>
+                          <div class="sp-spacer-vertical"></div>
+                          <a class="sp-menu-item">CPG</a>
+                          <a class="sp-menu-item">Direct Sale</a>
+                          <a class="sp-menu-item">Custom</a>
+                          <a class="sp-menu-item">Whatever</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="">
+                      <div class="sp-tag sp-primary">Campaign: My Awesome Campaign</div>
+                      <div class="sp-tag sp-success">Advertiser: Budweiser</div>
+                      <div class="sp-tag sp-warning">Client: OMD</div>
+                      <div class="sp-tag">CPG<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+                      <div class="sp-tag">Direct Sale<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+                      <div class="sp-tag">Custom<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+                      <div class="sp-tag">Whatever<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+                    </div>
+                  </div>
+
+
+                <!-- <div class="sp-input-group">
+                  <div class="sp-input-group-label" data-description="Here is a description.">Add Labels</div>
+                  <div class="sp-input-group-content" data-helper="Here is helper text.">
+                    <div class="sp-input-group-content-item sp-required">
+                      <div class="sp-selector sp-full-width sp-margin-bottom-2">
+                        <input type="text" class="sp-padding-icon-left sp-full-width sp-selector-trigger" placeholder="Enter or Choose A Custom Label"/>
+                        <div class="sp-selector-overlay sp-icon-circle-plus">
+                          <div class="sp-menu-dropdown sp-overlay">
+                            <a class="sp-menu-item sp-icon-circle-plus">Add Label: "Whatever I entered above goes here..."</a>
+                            <div class="sp-spacer-vertical"></div>
+                            <a class="sp-menu-item">CPG</a>
+                            <a class="sp-menu-item">Direct Sale</a>
+                            <a class="sp-menu-item">Custom</a>
+                            <a class="sp-menu-item">Whatever</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sp-input-group-helper">
+                    <div class="sp-input-group-descr"></div>
+                    <div class="sp-input-group-help-text"></div>
+                  </div>
+                </div>
+
+                <div class="sp-input-group">
+                  <div class="sp-input-group-label" data-description="Here is a description."></div>
+                  <div class="sp-input-group-content" data-helper="Here is helper text.">
+                    <div class="sp-input-group-content-item sp-required">
+                      <div class="sp-padding-2 sp-container-light sp-alt-two">
+                        <div class="sp-tag sp-primary">Campaign: My Awesome Campaign</div>
+                        <div class="sp-tag sp-success">Advertiser: Budweiser</div>
+                        <div class="sp-tag sp-warning">Client: OMD</div>
+                        <div class="sp-tag">CPG<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+                        <div class="sp-tag">Direct Sale<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+                        <div class="sp-tag">Custom<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+                        <div class="sp-tag">Whatever<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sp-input-group-helper">
+                    <div class="sp-input-group-descr">Test</div>
+                    <div class="sp-input-group-help-text"></div>
+                  </div>
+                </div> -->
+
+
+                      
+
+
+               </div>
+            </div>
+          </div>
+          <div class="sp-wrapper sp-border-top-base sp-modal-footer">
+            <div class="sp-row">
+               <div class="sp-col sp-span-12 sp-modal-footer-buttons">
+                 <button class="sp-align-center sp-primary sp-state-disabled">Add Creative</button>
+               </div>
+            </div>
+          </div>
+          <button class="sp-modal-close sp-icon-close sp-rounded sp-small"></button>
+        </div>
+      </div>
+    </div>
     <script>
     var grid = document.getElementById('grid');
     var list = document.getElementById('list');
@@ -892,89 +1080,5 @@
 
       
     </script>
-
-
-
-<script>
-
-var initHelpBeacon = function(userData) {
-
-  window.helpSearch = function (param) {
-    window.HS = null;
-    !function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!0,baseUrl:"//specless.helpscoutdocs.com/"},contact:{enabled:!0,formId:"280e8d18-b297-11e7-b466-0ec85169275a"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});
-    HS.beacon.config({
-      color: '#00C3DC',
-      modal: true,
-      instructions: "Couldn't find what you were looking for? Let us know how we can help."
-    });
-    HS.beacon.ready(function() {
-      HS.beacon.identify(userData);
-      this.open();
-      HS.beacon.search(param);
-    });
-  }
-
-
-  window.helpArticle = function (articleId) {
-    window.HS = null;
-    !function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!0,baseUrl:"//specless.helpscoutdocs.com/"},contact:{enabled:!0,formId:"280e8d18-b297-11e7-b466-0ec85169275a"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});
-    HS.beacon.config({
-      color: '#00C3DC',
-      modal: true,
-      instructions: "Couldn't find what you were looking for? Let us know how we can help."
-    });
-    HS.beacon.ready(function() {
-      HS.beacon.identify(userData);
-      this.open();
-      HS.beacon.show(articleId);
-    });
-  }
-
-  window.helpContact = function () {
-    window.HS = null;
-    !function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!1,baseUrl:""},contact:{enabled:!0,formId:"febd2c5c-b299-11e7-b466-0ec85169275a"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});
-    HS.beacon.config({
-      color: '#00C3DC',
-      modal: true,
-      instructions: "Let us know how we can help!"
-    });
-    HS.beacon.ready(function() {
-      HS.beacon.identify(userData);
-      HS.beacon.prefill({
-        subject: 'App Support Request',
-        topic: 'app-support'
-      });
-      this.open();
-    });
-  }
-
-  window.helpBug = function () {
-    window.HS = null;
-    !function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!1,baseUrl:""},contact:{enabled:!0,formId:"febd2c5c-b299-11e7-b466-0ec85169275a"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});
-    HS.beacon.config({
-      color: '#00C3DC',
-      modal: true,
-      instructions: "Please describe what you were doing in the app and the issue you are seeing."
-    });
-    HS.beacon.ready(function() {
-      HS.beacon.identify(userData);
-      HS.beacon.prefill({
-        subject: 'Bug Report',
-        topic: 'bugs'
-      });
-      this.open();
-    });
-  }
-}
-
-initHelpBeacon({
-  name: "Test User",
-  email: "test@testing.com",
-  key1: "value",
-  key2: "value",
-  key3: "value"
-});
-
-</script>
 </body>
 </html>

@@ -1,0 +1,277 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example</title>
+  <link rel="stylesheet" href="../../../qit.css">
+  <style>
+
+  @keyframes spin {
+    from {transform:scale(0.75) rotate(0deg);}
+    to {transform:scale(0.75) rotate(360deg);}
+  }
+  #compiling::after {
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  </style>
+</head>
+
+<body class="sp-app sp-sync">
+
+  <div class="sp-sync-container sp-container-dark sp-overlay sp-menu-dropdown sp-menu-dropdown-below">
+    <div class="sp-sync-bar sp-container sp-contrast">
+      <button class="sp-icon-folder sp-simple-icon sp-primary sp-minimal sp-state-active"></button>
+      <button class="sp-icon-settings sp-simple-icon sp-primary sp-minimal" onclick="window.location = 'sync-settings.html'"></button>
+    </div>
+    <div class="sp-sync-header sp-container sp-alt-one sp-border-bottom-base" style="overflow: visible">
+      <div style="width: 100%">
+        <div class="sp-h6 sp-color-contrast sp-padding-top-1 sp-padding-left-2">My Local Creatives</div>
+        <div class="sp-small sp-padding-left-2" style="font-size: .72rem;line-height: 1">~scorby/documents/Specless Creatives/</div>
+      </div>
+      <div class="sp-selector sp-no-flex sp-float-right sp-margin-top-1 sp-margin-right-1">
+        <button class="sp-selector-trigger sp-icon-more sp-small"></button>
+        <div class="sp-selector-overlay sp-small">
+          <div class="sp-menu-dropdown sp-menu-dropdown-left sp-overlay sp-color-contrast">
+            <a class="sp-menu-item sp-icon-external">Open in Specless</a>
+            <a class="sp-menu-item sp-icon-folder">Open Folder in Finder</a>
+            <!-- <a class="sp-menu-item sp-icon-settings">Change Local Directory</a> -->
+          </div>
+        </div>
+      </div>
+      <!-- <button class="sp-icon-more sp-float-right sp-small sp-no-flex"></button> -->
+    </div>
+    <div class="sp-sync-content sp-container">
+      <div class="sp-small sp-label sp-padding-left-2 sp-padding-vertical-1 sp-container sp-alt-two">Coca Cola</div>
+
+      <!-- creative item -->
+      <div class="sp-padding-top-1 sp-flex sp-padding-bottom-2">
+        <div style="width: 72%">
+          <div class="sp-h6 sp-color-contrast sp-padding-left-2">Creative Name</div>
+          <div class="sp-small sp-padding-left-2" style="font-size: .72rem;line-height: 1; width: 100%">xxxxxx</div>
+        </div>
+        <div class="sp-small sp-align-right">
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-eye"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-folder"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-edit"></button>
+        </div>
+      </div>
+      <!-- /creative item -->
+
+      <!-- creative item -->
+      <div class="sp-padding-top-1 sp-flex sp-padding-bottom-2">
+        <div style="width: 72%">
+          <div class="sp-h6 sp-color-contrast sp-padding-left-2">Creative Name</div>
+          <div class="sp-small sp-padding-left-2" style="font-size: .72rem;line-height: 1; width: 100%">xxxxxx</div>
+        </div>
+        <div class="sp-small sp-align-right">
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-eye"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-folder"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-edit"></button>
+        </div>
+      </div>
+      <!-- /creative item -->
+
+      <!-- creative item -->
+      <div class="sp-padding-top-1 sp-flex sp-padding-bottom-2">
+        <div style="width: 72%">
+          <div class="sp-h6 sp-color-contrast sp-padding-left-2">Creative Name</div>
+          <div class="sp-small sp-padding-left-2" style="font-size: .72rem;line-height: 1; width: 100%">xxxxxx</div>
+        </div>
+        <div class="sp-small sp-align-right">
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-eye"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-folder"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-edit"></button>
+        </div>
+      </div>
+      <!-- /creative item -->
+
+      <div class="sp-small sp-label sp-padding-left-2 sp-padding-vertical-1 sp-container sp-alt-two">Netflix</div>
+
+      <!-- creative item -->
+      <div class="sp-padding-top-1 sp-flex sp-padding-bottom-2">
+        <div style="width: 72%">
+          <div class="sp-h6 sp-color-contrast sp-padding-left-2">Creative Name</div>
+          <div class="sp-small sp-padding-left-2" style="font-size: .72rem;line-height: 1; width: 100%">xxxxxx</div>
+        </div>
+        <div class="sp-small sp-align-right">
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-eye"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-folder"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-edit"></button>
+        </div>
+      </div>
+      <!-- /creative item -->
+
+      <!-- creative item -->
+      <div class="sp-padding-top-1 sp-flex sp-padding-bottom-2">
+        <div style="width: 72%">
+          <div class="sp-h6 sp-color-contrast sp-padding-left-2">Creative Name</div>
+          <div class="sp-small sp-padding-left-2" style="font-size: .72rem;line-height: 1; width: 100%">xxxxxx</div>
+        </div>
+        <div class="sp-small sp-align-right">
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-eye"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-folder"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-edit"></button>
+        </div>
+      </div>
+      <!-- /creative item -->
+
+      <!-- creative item -->
+      <div class="sp-padding-top-1 sp-flex sp-padding-bottom-2">
+        <div style="width: 72%">
+          <div class="sp-h6 sp-color-contrast sp-padding-left-2">Creative Name</div>
+          <div class="sp-small sp-padding-left-2" style="font-size: .72rem;line-height: 1; width: 100%">xxxxxx</div>
+        </div>
+        <div class="sp-small sp-align-right">
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-eye"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-folder"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-edit"></button>
+        </div>
+      </div>
+      <!-- /creative item -->
+
+      <!-- creative item -->
+      <div class="sp-padding-top-1 sp-flex sp-padding-bottom-2">
+        <div style="width: 72%">
+          <div class="sp-h6 sp-color-contrast sp-padding-left-2">Creative Name</div>
+          <div class="sp-small sp-padding-left-2" style="font-size: .72rem;line-height: 1; width: 100%">xxxxxx</div>
+        </div>
+        <div class="sp-small sp-align-right">
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-eye"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-folder"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-edit"></button>
+        </div>
+      </div>
+      <!-- /creative item -->
+
+      <div class="sp-small sp-label sp-padding-left-2 sp-padding-vertical-1 sp-container sp-alt-two">Volvo</div>
+
+      <!-- creative item -->
+      <div class="sp-padding-top-1 sp-flex sp-padding-bottom-2">
+        <div style="width: 72%">
+          <div class="sp-h6 sp-color-contrast sp-padding-left-2">Creative Name</div>
+          <div class="sp-small sp-padding-left-2" style="font-size: .72rem;line-height: 1; width: 100%">xxxxxx</div>
+        </div>
+        <div class="sp-small sp-align-right">
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-eye"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-folder"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-edit"></button>
+        </div>
+      </div>
+      <!-- /creative item -->
+
+      <!-- creative item -->
+      <div class="sp-padding-top-1 sp-flex sp-padding-bottom-2">
+        <div style="width: 72%">
+          <div class="sp-h6 sp-color-contrast sp-padding-left-2">Creative Name</div>
+          <div class="sp-small sp-padding-left-2" style="font-size: .72rem;line-height: 1; width: 100%">xxxxxx</div>
+        </div>
+        <div class="sp-small sp-align-right">
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-eye"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-folder"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-edit"></button>
+        </div>
+      </div>
+      <!-- /creative item -->
+
+      <!-- creative item -->
+      <div class="sp-padding-top-1 sp-flex sp-padding-bottom-2">
+        <div style="width: 72%">
+          <div class="sp-h6 sp-color-contrast sp-padding-left-2">Creative Name</div>
+          <div class="sp-small sp-padding-left-2" style="font-size: .72rem;line-height: 1; width: 100%">xxxxxx</div>
+        </div>
+        <div class="sp-small sp-align-right">
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-eye"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-folder"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-edit"></button>
+        </div>
+      </div>
+      <!-- /creative item -->
+
+      <!-- creative item -->
+      <div class="sp-padding-top-1 sp-flex sp-padding-bottom-2">
+        <div style="width: 72%">
+          <div class="sp-h6 sp-color-contrast sp-padding-left-2">Creative Name</div>
+          <div class="sp-small sp-padding-left-2" style="font-size: .72rem;line-height: 1; width: 100%">xxxxxx</div>
+        </div>
+        <div class="sp-small sp-align-right">
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-eye"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-folder"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-edit"></button>
+        </div>
+      </div>
+      <!-- /creative item -->
+
+      <!-- creative item -->
+      <div class="sp-padding-top-1 sp-flex sp-padding-bottom-2">
+        <div style="width: 72%">
+          <div class="sp-h6 sp-color-contrast sp-padding-left-2">Creative Name</div>
+          <div class="sp-small sp-padding-left-2" style="font-size: .72rem;line-height: 1; width: 100%">xxxxxx</div>
+        </div>
+        <div class="sp-small sp-align-right">
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-eye"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-folder"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-edit"></button>
+        </div>
+      </div>
+      <!-- /creative item -->
+
+      <div class="sp-small sp-label sp-padding-left-2 sp-padding-vertical-1 sp-container sp-alt-two">Gilette</div>
+
+      <!-- creative item -->
+      <div class="sp-padding-top-1 sp-flex sp-padding-bottom-2">
+        <div style="width: 72%">
+          <div class="sp-h6 sp-color-contrast sp-padding-left-2">Creative Name</div>
+          <div class="sp-small sp-padding-left-2" style="font-size: .72rem;line-height: 1; width: 100%">xxxxxx</div>
+        </div>
+        <div class="sp-small sp-align-right">
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-eye"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-folder"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-edit"></button>
+        </div>
+      </div>
+      <!-- /creative item -->
+
+      <!-- creative item -->
+      <div class="sp-padding-top-1 sp-flex sp-padding-bottom-2">
+        <div style="width: 72%">
+          <div class="sp-h6 sp-color-contrast sp-padding-left-2">Creative Name</div>
+          <div class="sp-small sp-padding-left-2" style="font-size: .72rem;line-height: 1; width: 100%">xxxxxx</div>
+        </div>
+        <div class="sp-small sp-align-right">
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-eye"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-folder"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-edit"></button>
+        </div>
+      </div>
+      <!-- /creative item -->
+
+      <!-- creative item -->
+      <div class="sp-padding-top-1 sp-flex sp-padding-bottom-2">
+        <div style="width: 72%">
+          <div class="sp-h6 sp-color-contrast sp-padding-left-2">Creative Name</div>
+          <div class="sp-small sp-padding-left-2" style="font-size: .72rem;line-height: 1; width: 100%">xxxxxx</div>
+        </div>
+        <div class="sp-small sp-align-right">
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-eye"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-folder"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-edit"></button>
+        </div>
+      </div>
+      <!-- /creative item -->
+
+    </div>
+    <div class="sp-sync-footer sp-container sp-contrast sp-border-top-base">
+      <button class="sp-minimal sp-icon-lightning sp-simple-icon sp-small" style="color: #00EC99">Connected To Browser</button>
+      <button id="compiling" class="sp-minimal sp-icon-after-reload sp-simple-icon sp-small sp-float-right">Compiling</button>
+    </div>
+
+  </div>
+
+  
+
+</body>
+</html>

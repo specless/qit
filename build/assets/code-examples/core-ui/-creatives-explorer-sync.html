@@ -51,6 +51,24 @@
           <button class="sp-selector-trigger sp-icon-after-lightning sp-rounded sp-small sp-minimal sp-success"></button>
           <div class="sp-selector-overlay">
             <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <div class="sp-menu-header sp-small" style="opacity: 1">Specless Sync<span class="sp-color-success sp-float-right">Connected</span></div>
+              <!-- <a class="sp-menu-item">Live Reload</a> -->
+              <a class="sp-menu-item sp-small">Live Reload<input id="live-reload" type="checkbox" checked class="sp-align-right"/><label for="live-reload" class="sp-float-right sp-padding-0" style="margin-right: 20px"></label></a>
+              <a class="sp-menu-item sp-small">Listen on Port<input type="text" value="8080" class="sp-align-right sp-width-3 sp-margin-left-3"/><div class="sp-button sp-primary sp-float-right sp-icon-reload"></div></a>
+              <!-- <div class="sp-menu-item sp-small"><div class="sp-button sp-block">Install Specless Sync</div></div> -->
+              <div class="sp-menu-header sp-small">Recently Modified Creatives</div>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Some Creative<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>My Awesome Ad<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Another Creative<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Coca-Cola Ad<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Samsung Galaxy Note 8<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="sp-selector sp-margin-left-2">
+          <button class="sp-selector-trigger sp-icon-after-lightning sp-rounded sp-small sp-minimal sp-success"></button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
               <div class="sp-menu-header sp-small">Connection</div>
               <div class="sp-padding-horizontal-2 sp-padding-vertical-1" style="position: relative;">
                 <div class="sp-label">Status <span class="sp-color-success sp-float-right">Active</span></div>
@@ -66,7 +84,7 @@
               <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Samsung Galaxy Note 8<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -87,13 +105,14 @@
           <!-- <span class="sp-color-muted sp-small" style="position: absolute; bottom: -15px; left: 32px;">/ dhC897</span> -->
         </h5>
         <div class="sp-selector sp-margin-left-2 sp-small">
-          <button class="sp-selector-trigger sp-icon-lightning sp-small sp-font-color-white sp-sync-enabled">Specless Sync</button>
+          <!-- <span class="">Test</span> -->
+          <button class="sp-selector-trigger sp-icon-lightning sp-small sp-font-color-white sp-sync-enabled">Specless Sync<i class="sp-inline-icon-dropdown sp-margin-left-1" style="position: relative; top: -1px"></i></button>
           <div class="sp-selector-overlay">
             <div class="sp-menu-dropdown sp-overlay sp-width-8 sp-color-contrast" style="left: auto; right: 0; transform: none;">
               <a href="-creatives-explorer.html" class="sp-menu-item sp-icon-status">Live Version</a>
-              <a href="-creatives-explorer-staging.html" class="sp-menu-item sp-icon-circle">Staging Version</a>
+              <a href="-creatives-explorer-draft.html" class="sp-menu-item sp-icon-circle">Draft Version</a>
               <a href="-creatives-explorer-sync.html" class="sp-menu-item sp-icon-lightning sp-state-active">Specless Sync</a>
-              <a href="-creatives-explorer-github.html" class="sp-menu-item sp-icon-github">Github Sync</a>
+              <a href="-creatives-explorer-github.html" class="sp-menu-item sp-icon-branch sp-state-disabled">Git Sync</a>
               <a href="-creatives-explorer-vhistory.html" class="sp-menu-item sp-icon-version sp-border-top-base">Select From Version History...</a>
               <!-- <div class="sp-align-center sp-container sp-alt-one sp-rectangle">
                 <a class="sp-button sp-icon-upload sp-success sp-rounded sp-small sp-margin-1">Publish Working Version</a>
@@ -106,18 +125,54 @@
             </div>
           </div>
         </div>
-        <button class="sp-icon-upload sp-small sp-success sp-font-color-white sp-margin-left-1">Push to Staging</button>
+        <!-- <button class="sp-icon-upload sp-small sp-success sp-font-color-white sp-margin-left-1">Push To Draft</button> -->
+        
         <div class="sp-selector sp-small">
-          <button class="sp-selector-trigger sp-icon-more sp-small sp-primary sp-font-color-white sp-margin-left-1"></button>
+          <button class="sp-selector-trigger sp-icon-up-down sp-small sp-success sp-font-color-white sp-margin-left-1">Push/Pull</button>
           <div class="sp-selector-overlay">
             <div class="sp-menu-dropdown sp-overlay sp-color-contrast" style="left: auto; right: 0; transform: none;">
-              <a class="sp-menu-item sp-icon-folder">Open Local Project Folder</a>
-              <a class="sp-menu-item sp-icon-external">Export As S-Kit Project</a>
-              <a class="sp-menu-item sp-icon-reload sp-border-top-base">Force Update to Live Version</a>
-              <a class="sp-menu-item sp-icon-reload">Force Update to Staging Version</a>
+              <!-- <a class="sp-menu-item sp-icon-upload">Push to Draft Version</a>
+              <div class="sp-spacer-vertical"></div> -->
+              <div class="sp-menu-header">Push To Specless</div>
+              <a class="sp-menu-item sp-icon-upload-arrow sp-success">Upload to Draft Version</a>
+              <a class="sp-menu-item sp-icon-upload-arrow sp-success">Upload to New (Non-Draft) Version</a>
+              <div class="sp-menu-header">Pull From Specless</div>
+              <a class="sp-menu-item sp-icon-download sp-danger">Overwrite with Live Version</a>
+              <a class="sp-menu-item sp-icon-download sp-danger">Overwrite with Draft Version</a>
+              <a class="sp-menu-item sp-icon-download sp-danger">Overwrite with Specific Version</a>
+              <div class="sp-menu-header">Other</div>
+              <a class="sp-menu-item sp-icon-branch">Overwrite from Git Repository</a>
+              <a class="sp-menu-item sp-icon-file">Replace with S-Kit Package</a>
             </div>
           </div>
         </div>
+        <div class="sp-selector sp-small">
+          <button class="sp-selector-trigger sp-icon-folder sp-small sp-primary sp-font-color-white sp-margin-left-1"></button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-color-contrast sp-width-6" style="left: auto; right: 0; transform: none;">
+              <div class="sp-menu-header">Open in Finder...</div>
+              <a class="sp-menu-item sp-icon-folder">Root Project Folder</a>
+              <a class="sp-menu-item sp-icon-folder">Assets Folder</a>
+              <a class="sp-menu-item sp-icon-folder">Panels Folder</a>
+              <div class="sp-menu-header">Open in Application...</div>
+              <a class="sp-menu-item sp-icon-edit">Text Editor</a>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="sp-selector sp-small">
+          <button class="sp-selector-trigger sp-icon-replace sp-small sp-danger sp-font-color-white sp-margin-left-1">Overwrite</button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <a class="sp-menu-item sp-icon-upload">Push to Draft Version</a>
+              <div class="sp-spacer-vertical"></div>
+              <a class="sp-menu-item sp-icon-download">Overwrite with Live Version</a>
+              <a class="sp-menu-item sp-icon-download">Overwrite with Draft Version</a>
+              <a class="sp-menu-item sp-icon-download">Overwrite with Other Version...</a>
+            </div>
+          </div>
+        </div> -->
+        <!-- <button class="sp-icon-folder sp-small sp-primary sp-font-color-white sp-margin-left-1"></button> -->
+        <!-- <button class="sp-icon-upload sp-small sp-success sp-font-color-white sp-margin-left-1">Publish</button> -->
       </div>
     </div>
   </div>
@@ -138,7 +193,7 @@
     </div>
   </div> -->
 
-  <div class="sp-app-content sp-flex">
+  <div class="sp-app-content sp-flex" style="overflow: hidden">
     <div class="sp-app-content-sidebar sp-flex">
       <div class="sp-app-content-sidebar-icon-menu sp-container-dark sp-contrast sp-border-top-base">
         <a href="-creatives-explorer.html" class="sp-button sp-minimal sp-simple-icon sp-icon-eye sp-primary sp-state-active"></a>
@@ -285,6 +340,7 @@
         <button tabindex="0" class="sp-icon-layout sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
         <button id="contexts-toggle" tabindex="0" class="sp-icon-location sp-minimal sp-simple-icon sp-small sp-primary sp-float-right "></button>
         <button id="reporting-toggle" tabindex="0" class="sp-icon-data sp-minimal sp-simple-icon sp-small sp-primary sp-float-right "></button>
+        <button id="performance-toggle" tabindex="0" class="sp-icon-speed sp-minimal sp-simple-icon sp-small sp-primary sp-float-right "></button>
         <button id="activity-toggle" tabindex="0" class="sp-icon-console sp-minimal sp-simple-icon sp-small sp-primary sp-float-right "></button>
         <!-- <button tabindex="0" class="sp-icon-code sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
         <span class="sp-border-left-base sp-float-right sp-margin-left-1">
@@ -369,92 +425,120 @@
           </div>
         </div>
         <div class="sp-align-center sp-padding-horizontal-2 sp-border-left-base sp-border-right-base">
-          <span class="sp-bg-overlay-light-4 sp-padding-horizontal-1">
-            <i class="sp-inline-icon-solid-unlock sp-color-muted"></i>
-            <div class="sp-custom-input">
-              <input class="sp-minimal sp-custom-input-trigger sp-align-right sp-minimal" type="number" value="300" style="width: 35px; background-image: none !important; font-weight: 600"/>
-              <div class="sp-custom-input-overlay">
-                <div class="sp-menu-dropdown sp-overlay sp-width-6">
-                  <div class="sp-menu-header">Min/Max Width</div>
-                  <div class="sp-padding-horizontal-2">
-                    <div class="sp-margin-top-1"><input id="width-min" type="checkbox" checked class="sp-small"/><label for="width-min" style="margin-left: 0">Min</label><input type="number" value="50" class="sp-small sp-minimal sp-align-right" style="width: 70px; font-weight: 600"/></div>
-                    <div class="sp-margin-top-1"><input id="width-max" type="checkbox" class="sp-small"/><label for="width-max" style="margin-left: 0">Max</label><input type="number" value="9999" class="sp-small sp-minimal sp-align-right" style="width: 70px; font-weight: 600"/></div>
+          <span class="sp-bg-overlay-light-4 sp-padding-horizontal-1" style="padding-top: 4px; padding-bottom: 4px;">
+            
+            <div class="sp-selector sp-inline">
+              <i tabindex="0" class="sp-selector-trigger sp-inline-icon-solid-min sp-color-muted"></i>
+              <div class="sp-selector-overlay">
+                <div class="sp-menu-dropdown sp-overlay">
+                  <div class="sp-menu-header sp-align-center">Min Width</div>
+                  <div class="sp-padding-1">
+                    <input class=" sp-details sp-custom-input-trigger sp-align-right sp-align-center" type="number" value="300" style="width: 85px; background-image: none !important; font-weight: 600"/>
                   </div>
-                  <div class="sp-menu-header">Common Ad Widths</div>
-                  <a class="sp-menu-item">300</a>
-                  <a class="sp-menu-item">320</a>
-                  <a class="sp-menu-item">728</a>
-                  <a class="sp-menu-item">970</a>
-                  <a class="sp-menu-item">1080</a>
-                  <div class="sp-menu-header">Common Device Widths</div>
-                  <a class="sp-menu-item">Match Current Viewport</a>
-                  <a class="sp-menu-item">iPhone 4s</a>
-                  <a class="sp-menu-item">iPhone 5/5s</a>
-                  <a class="sp-menu-item">iPhone 6/6s/7</a>
-                  <a class="sp-menu-item">iPhone 6/6s/7 Plus</a>
-                  <a class="sp-menu-item">iPad</a>
-                  <a class="sp-menu-item">iPad Mini</a>
-                  <a class="sp-menu-item">iPad Pro</a>
+                  <div class="sp-padding-bottom-1 sp-padding-horizontal-1 sp-align-center"><button style="width: 85px">Remove</button></div>
+                </div>
+              </div>
+            </div>
+            <input class="sp-minimal sp-custom-input-trigger sp-align-right sp-minimal sp-align-center" type="number" value="300" style="width: 35px; background-image: none !important; font-weight: 600"/>
+            <div class="sp-selector sp-inline">
+              <i tabindex="0" class="sp-selector-trigger sp-inline-icon-solid-max sp-color-muted"></i>
+              <div class="sp-selector-overlay">
+                <div class="sp-menu-dropdown sp-overlay">
+                  <div class="sp-menu-header sp-align-center">Max Width</div>
+                  <div class="sp-padding-1">
+                    <input class=" sp-details sp-custom-input-trigger sp-align-right sp-align-center" type="number" value="300" style="width: 85px; background-image: none !important; font-weight: 600"/>
+                  </div>
+                  <div class="sp-padding-bottom-1 sp-padding-horizontal-1 sp-align-center"><button style="width: 85px">Remove</button></div>
                 </div>
               </div>
             </div>
           </span>
           <span class="sp-padding-horizontal-1 sp-color-muted"><i class="sp-inline-icon-close"></i></span>
-          <span class="sp-bg-overlay-light-4 sp-padding-horizontal-1">
-            <div class="sp-custom-input sp-margin-left-1">
-              <input class="sp-minimal sp-custom-input-trigger sp-align-left sp-minimal" type="number" value="250" style="width: 35px; background-image: none !important; font-weight: 600"/>
-              <div class="sp-custom-input-overlay">
-                <div class="sp-menu-dropdown sp-overlay sp-width-6">
-                  <div class="sp-menu-header">Min/Max Height</div>
-                  <div class="sp-padding-horizontal-2">
-                    <div class="sp-margin-top-1"><input id="height-min" type="checkbox" checked class="sp-small"/><label for="height-min" style="margin-left: 0">Min</label><input type="number" value="50" class="sp-small sp-minimal sp-align-right" style="width: 70px; font-weight: 600"/></div>
-                    <div class="sp-margin-top-1"><input id="height-max" type="checkbox" class="sp-small"/><label for="height-max" style="margin-left: 0">Max</label><input type="number" value="9999" class="sp-small sp-minimal sp-align-right" style="width: 70px; font-weight: 600"/></div>
+          <span class="sp-bg-overlay-light-4 sp-padding-horizontal-1" style="padding-top: 4px; padding-bottom: 4px;">
+            
+            <div class="sp-selector sp-inline">
+              <i tabindex="0" class="sp-selector-trigger sp-inline-icon-solid-min sp-color-muted"></i>
+              <div class="sp-selector-overlay">
+                <div class="sp-menu-dropdown sp-overlay">
+                  <div class="sp-menu-header sp-align-center">Min Height</div>
+                  <div class="sp-padding-1">
+                    <input class=" sp-details sp-custom-input-trigger sp-align-right sp-align-center" type="number" value="250" style="width: 85px; background-image: none !important; font-weight: 600"/>
                   </div>
-                  <div class="sp-menu-header">Common Ad Heights</div>
-                  <a class="sp-menu-item">50</a>
-                  <a class="sp-menu-item">80</a>
-                  <a class="sp-menu-item">90</a>
-                  <a class="sp-menu-item">250</a>
-                  <a class="sp-menu-item">300</a>
-                  <a class="sp-menu-item">415</a>
-                  <a class="sp-menu-item">600</a>
-                  <a class="sp-menu-item">1080</a>
-                  <div class="sp-menu-header">Common Device Heights</div>
-                  <a class="sp-menu-item">Match Current Viewport</a>
-                  <a class="sp-menu-item">iPhone 4s</a>
-                  <a class="sp-menu-item">iPhone 5/5s</a>
-                  <a class="sp-menu-item">iPhone 6/6s/7</a>
-                  <a class="sp-menu-item">iPhone 6/6s/7 Plus</a>
-                  <a class="sp-menu-item">iPad</a>
-                  <a class="sp-menu-item">iPad Mini</a>
-                  <a class="sp-menu-item">iPad Pro</a>
+                  <div class="sp-padding-bottom-1 sp-padding-horizontal-1 sp-align-center"><button style="width: 85px">Remove</button></div>
                 </div>
               </div>
             </div>
-            <i class="sp-inline-icon-solid-unlock sp-color-muted"></i>
+            <input class="sp-minimal sp-custom-input-trigger sp-align-right sp-minimal sp-align-center" type="number" value="250" style="width: 35px; background-image: none !important; font-weight: 600"/>
+            <div class="sp-selector sp-inline">
+              <i tabindex="0" class="sp-selector-trigger sp-inline-icon-solid-max sp-color-muted"></i>
+              <div class="sp-selector-overlay">
+                <div class="sp-menu-dropdown sp-overlay">
+                  <div class="sp-menu-header sp-align-center">Max Height</div>
+                  <div class="sp-padding-1">
+                    <input class=" sp-details sp-custom-input-trigger sp-align-right sp-align-center" type="number" value="250" style="width: 85px; background-image: none !important; font-weight: 600"/>
+                  </div>
+                  <div class="sp-padding-bottom-1 sp-padding-horizontal-1 sp-align-center"><button style="width: 85px">Remove</button></div>
+                </div>
+              </div>
+            </div>
           </span>
         </div>
         <div class="sp-padding-horizontal-2" style="flex:1">
           <span class="sp-padding-right-2 sp-color-muted">Aspect Ratio<span class="sp-margin-left-1 sp-color-base">2:1</span><i class="sp-margin-left-1 sp-inline-icon-solid-unlock"></i></span>
           <span class="sp-padding-horizontal-2 sp-border-left-base sp-color-muted">Layout Scaling<span class="sp-margin-left-1 sp-color-base">0.5x</span><i class="sp-margin-left-1 sp-inline-icon-solid-unlock"></i></span>
+          <span class="sp-padding-horizontal-2 sp-border-left-base sp-color-muted">Scrolling<i class="sp-margin-left-2 sp-inline-icon-solid-horizontal"></i><i class="sp-margin-left-1 sp-inline-icon-solid-vertical"></i></span>
+          <span class="sp-padding-horizontal-2 sp-border-left-base"><i class="sp-margin-right-1 sp-inline-icon-solid-target"></i>Center</span>
+        </div>
+
+      </div>
+      <div class="sp-app-content-main-scroll sp-container sp-alt-one" style="padding: 0">
+        <div style="width: 100%;height: 100%; position: relative">
+          <div id="container">
+            <div id="canvas" class="canvas is-draggable">
+              <div id="content">
+                <div class="sp-preview-panel sp-overlay sp-rectangle sp-contrast" style="width: calc(100% + 14px); height: calc(100% + 27px); top: -20px; left: -7px; box-sizing: border-box">
+                  <div class="sp-preview-panel-header sp-font-weight-semi-bold sp-flex">
+                    <div class="sp-preview-panel-header-left sp-inline-icon-reload" style="cursor:pointer"></div>
+                    <div class="sp-preview-panel-header-middle sp-align-center is-draggable" style="cursor: grab; cursor: -webkit-grab;"><span class="sp-color-muted is-draggable">Secondary<i class="sp-inline-icon-arrow-right is-draggable"></i> Vertical</span><i class="sp-margin-left-1 sp-inline-icon-solid-unlock sp-color-muted" style="cursor:pointer"></i></div>
+                    <div class="sp-preview-panel-header-right sp-inline-icon-more" style="cursor:pointer"></div>
+                  </div>
+                  <!-- <div class="sp-preview-panel-down sp-overlay sp-icon-drag-both"></div>
+                  <div class="sp-preview-panel-right sp-overlay sp-icon-drag-both"></div>
+                  <div class="sp-preview-panel-diag sp-overlay sp-icon-resize"></div> -->
+                </div>
+                <div class="sp-preview-panel-content sp-shadow-low-inset" style="width: 100%; height: 100%">
+                  <div class="sp-preview-panel-grid"></div>
+                  <div class="sp-preview-panel-ad"><!-- AD GOES HERE --></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="preview">
+            <div id="viewable">
+            </div>
+            <div id="box">
+
+            </div>
+            <button id="recenter" class="sp-icon-center-target sp-rounded sp-minimal"></button>
+          </div>
         </div>
       </div>
-      <div class="sp-app-content-main-scroll sp-container sp-alt-one">
-        <div class="sp-preview-panel sp-overlay sp-rectangle sp-contrast">
-          <div class="sp-preview-panel-header sp-font-weight-semi-bold sp-flex">
-            <div class="sp-preview-panel-header-left sp-inline-icon-sync"></div>
-            <div class="sp-preview-panel-header-middle sp-align-center"><span class="sp-color-muted">Secondary<i class="sp-inline-icon-arrow-right"></i> Vertical</span><i class="sp-margin-left-1 sp-inline-icon-solid-unlock sp-color-muted"></i></div>
-            <div class="sp-preview-panel-header-right sp-inline-icon-more"></div>
+        <!-- <div id="canvas" class="sp-app-content-main-scroll sp-container sp-alt-one">
+          <div class="sp-preview-panel sp-overlay sp-rectangle sp-contrast">
+            <div class="sp-preview-panel-header sp-font-weight-semi-bold sp-flex">
+              <div class="sp-preview-panel-header-left sp-inline-icon-sync"></div>
+              <div class="sp-preview-panel-header-middle sp-align-center"><span class="sp-color-muted">Secondary<i class="sp-inline-icon-arrow-right"></i> Vertical</span><i class="sp-margin-left-1 sp-inline-icon-solid-unlock sp-color-muted"></i></div>
+              <div class="sp-preview-panel-header-right sp-inline-icon-more"></div>
+            </div>
+            <div class="sp-preview-panel-down sp-overlay sp-icon-drag-both"></div>
+            <div class="sp-preview-panel-right sp-overlay sp-icon-drag-both"></div>
+            <div class="sp-preview-panel-diag sp-overlay sp-icon-resize"></div>
+            <div id="content" class="sp-preview-panel-content sp-shadow-low-inset" style="width: 300px; height: 250px">
+              <div class="sp-preview-panel-grid"></div>
+              <div class="sp-preview-panel-ad"></div>
+            </div>
           </div>
-          <div class="sp-preview-panel-down sp-overlay sp-icon-drag-both"></div>
-          <div class="sp-preview-panel-right sp-overlay sp-icon-drag-both"></div>
-          <div class="sp-preview-panel-diag sp-overlay sp-icon-resize"></div>
-          <div class="sp-preview-panel-content sp-shadow-low-inset" style="width: 300px; height: 250px">
-            <div class="sp-preview-panel-grid"></div>
-            <div class="sp-preview-panel-ad"><!-- iFrame Goes here--></div>
-          </div>
-        </div>
-      </div>
+        </div> -->
       <!-- <div class="sp-app-content-main-footer sp-container">
         Test
       </div> -->
@@ -586,6 +670,160 @@
         </div>
       </div>
     </div>
+    <div id="performance" class="sp-app-content-sidebar sp-flex" style="display:none">
+      <div class="sp-app-content-sidebar-menu sp-container-dark sp-alt-one sp-shadow-medium " style="width:220px;">
+        <div class="sp-padding-1 sp-container sp-label sp-color-contrast sp-flex sp-border-bottom-base">
+          <button tabindex="0" class="sp-icon-speed sp-minimal sp-simple-icon sp-primary sp-small sp-primary sp-float-left"></button>
+          <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Performance Snapshot</span>
+          <!-- <button tabindex="0" class="sp-icon-circle-close sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
+        </div>
+        <div class="sp-app-content-sidebar-menu-content sp-small">
+          <div class="sp-align-center sp-padding-vertical-2 sp-border-bottom-base">
+            <button class="sp-primary sp-margin-left-1">
+              Take New Snapshot
+            </button>
+          </div>
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Current Snapshot</div>
+          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base sp-color-contrast" style="font-size: 12px">
+            <div><i class="sp-inline-icon-time sp-margin-right-1"></i>Time Taken<span class="sp-float-right">3:32:12pm</span></div>
+            <div><i class="sp-inline-icon-width sp-margin-right-1"></i>Panel Width<span class="sp-float-right">300px</span></div>
+            <div><i class="sp-inline-icon-height sp-margin-right-1"></i>Panel Height<span class="sp-float-right">250px</span></div>
+          </div>
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Initial Load<span class="sp-float-right sp-width-3 sp-align-right sp-font-color-contrast" style="position: relative; text-transform: none">194kb</span></div>
+          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base sp-color-contrast" style="font-size: 12px">
+            <div><i class="sp-inline-icon-circle-arrow-down sp-margin-right-1"></i>Images
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 60%; top: 0; right: 0" class="sp-bg-color-primary"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">102kb</span>
+              </span>
+            </div>
+            <div class="sp-padding-1 sp-padding-left-2 sp-margin-vertical-1 sp-font-weight-semi-bold sp-bg-overlay-dark-2 sp-border-base" style="font-size: 12px">
+              <div>
+                <span><i class="sp-inline-icon-external sp-margin-right-1"></i>logo.png</span>
+                <span class="sp-float-right">12kb</span>
+              </div>
+              <div>
+                <span><i class="sp-inline-icon-external sp-margin-right-1"></i>background.jpg</span>
+                <span class="sp-float-right">60kb</span>
+              </div>
+              <div>
+                <span><i class="sp-inline-icon-external sp-margin-right-1"></i>button.svg</span>
+                <span class="sp-float-right">1kb</span>
+              </div>
+              <div>
+                <span><i class="sp-inline-icon-external sp-margin-right-1"></i>logo-large.png</span>
+                <span class="sp-float-right">22kb</span>
+              </div>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Video
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 12%; top: 0; right: 0" class="sp-bg-color-success"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">57kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Fonts
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 8%; top: 0; right: 0" class="sp-bg-color-warning"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">12kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Code
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 4%; top: 0; right: 0" class="sp-bg-color-danger"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">18kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Other
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 6%; top: 0; right: 0" class="sp-bg-overlay-dark-4"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">5kb</span>
+              </span>
+            </div>
+            <div class="sp-color-muted"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>White-Labeled
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-base">60kb</span>
+              </span>
+            </div>
+          </div>
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Subload<span class="sp-float-right sp-width-3 sp-align-right sp-font-color-contrast" style="position: relative; text-transform: none">194kb</span></div>
+          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base sp-color-contrast" style="font-size: 12px">
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Images
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 60%; top: 0; right: 0" class="sp-bg-color-primary"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">102kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Video
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 12%; top: 0; right: 0" class="sp-bg-color-success"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">57kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Fonts
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 8%; top: 0; right: 0" class="sp-bg-color-warning"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">12kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Code
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 4%; top: 0; right: 0" class="sp-bg-color-danger"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">18kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Other
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 6%; top: 0; right: 0" class="sp-bg-overlay-dark-4"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">5kb</span>
+              </span>
+            </div>
+            <div class="sp-color-muted"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>White-Labeled
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-base">60kb</span>
+              </span>
+            </div>
+          </div>
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Post-Interaction<span class="sp-float-right sp-width-3 sp-align-right sp-font-color-contrast" style="position: relative; text-transform: none">194kb</span></div>
+          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base sp-color-contrast" style="font-size: 12px">
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Images
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 60%; top: 0; right: 0" class="sp-bg-color-primary"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">102kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Video
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 12%; top: 0; right: 0" class="sp-bg-color-success"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">57kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Fonts
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 8%; top: 0; right: 0" class="sp-bg-color-warning"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">12kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Code
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 4%; top: 0; right: 0" class="sp-bg-color-danger"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">18kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Other
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 6%; top: 0; right: 0" class="sp-bg-overlay-dark-4"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">5kb</span>
+              </span>
+            </div>
+            <div class="sp-color-muted"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>White-Labeled
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-base">60kb</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="activity" class="sp-app-content-sidebar sp-flex" style="display:none">
       <div class="sp-app-content-sidebar-menu sp-container-dark sp-alt-one sp-shadow-medium " style="width:350px;">
         <div class="sp-padding-1 sp-container sp-label sp-color-contrast sp-flex sp-border-bottom-base">
@@ -706,11 +944,110 @@
       </div>
     </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script>
+    var container = document.getElementById('container'),
+    canvas = document.getElementById('canvas'),
+    content = document.getElementById('content'),
+    recenter = document.getElementById('recenter');
 
+    function setPosition(recenter) {
+      $(canvas).css('width', $(window).width() + 5000);
+      $(canvas).css('height', $(window).height() + 5000);
+      $(content).css('top', $(window).height() + 50 + 'px');
+      $(content).css('left', $(window).width() + 50 + 'px');
+      
+      if (recenter) {
+        container.scrollTop = $(window).height();
+        container.scrollLeft = $(window).width();
+      }
+    }
+
+    $(recenter).click(function() {
+      setPosition(true);
+    });
+
+    function updatePreview() {
+      
+      $('#preview').width($(canvas).width()/100);
+      $('#preview').height($(canvas).height()/100);
+      $('#viewable').width($(container).width()/100);
+      $('#viewable').height($(container).height()/100);
+      $('#viewable').css('top', container.scrollTop/100 + 'px');
+      $('#viewable').css('left', container.scrollLeft/100 + 'px');
+      $('#box').width($(content).width()/100);
+      $('#box').height($(content).height()/100);
+      $('#box').css('top', ($(window).height() + 50)/100);
+      $('#box').css('left', ($(window).width() + 50)/100);
+      
+    }
+
+    $(window).resize(function() {
+      setPosition();
+      updatePreview();
+    });
+
+    $(container).scroll(function() {
+      updatePreview();
+    });
+
+    setPosition(true);
+    updatePreview();
+
+
+    $(content).resizable({
+      containment: container,
+      handles: "e, s, se",
+      minWidth: 20,
+      minHeight: 20,
+      maxWidth: 5000,
+      maxHeight: 5000,
+      classes: {
+        "ui-resizable-se": "sp-preview-panel-diag sp-overlay sp-icon-resize is-resizable",
+        "ui-resizable-s": "sp-preview-panel-down sp-overlay sp-icon-drag-both is-resizable",
+        "ui-resizable-e": "sp-preview-panel-right sp-overlay sp-icon-drag-both is-resizable"
+      }
+    });
+
+    function drag() {
+      var isDragging = false;
+      var isCanvas = false
+      var prevX;
+      var prevY;
+      $(canvas)
+      .mousedown(function(event) {
+          isDragging = true;
+          isCanvas = $(event.target).hasClass('is-draggable');
+          prevX = event.screenX;
+          prevY = event.screenY;
+          $(container).addClass('dragging');
+      })
+      .mousemove(function(event) {
+          if (isDragging && isCanvas) {
+           var distanceX = event.screenX - prevX;
+           var distanceY = event.screenY - prevY;
+           container.scrollTop = container.scrollTop - distanceY;
+           container.scrollLeft = container.scrollLeft - distanceX;
+           prevX = event.screenX;
+           prevY = event.screenY;
+           $(container).addClass('dragging');
+          }
+       })
+      .mouseup(function(event) {
+          isDragging = false;
+          isCanvas = false;
+          $(container).removeClass('dragging');
+      });
+    }
+
+    drag();
+  </script>
   <script>
     var contexts = document.getElementById('contexts-toggle');
     var reporting = document.getElementById('reporting-toggle');
     var activity = document.getElementById('activity-toggle');
+    var performance = document.getElementById('performance-toggle');
 
     contexts.addEventListener('click', function() {
       document.getElementById('contexts').setAttribute('style', 'display:block');
@@ -736,6 +1073,15 @@
       document.querySelector('#activity-toggle.sp-state-active').addEventListener('click', function() {
         document.getElementById('activity').setAttribute('style', 'display:none')
         activity.setAttribute('class', 'sp-icon-console sp-minimal sp-simple-icon sp-small sp-primary sp-float-right');
+      });
+    });
+
+    performance.addEventListener('click', function() {
+      document.getElementById('performance').setAttribute('style', 'display:block');
+      performance.setAttribute('class', 'sp-icon-speed sp-minimal sp-simple-icon sp-small sp-primary sp-float-right sp-state-active');
+      document.querySelector('#performance-toggle.sp-state-active').addEventListener('click', function() {
+        document.getElementById('performance').setAttribute('style', 'display:none')
+        activity.setAttribute('class', 'sp-icon-speed sp-minimal sp-simple-icon sp-small sp-primary sp-float-right');
       });
     });
 

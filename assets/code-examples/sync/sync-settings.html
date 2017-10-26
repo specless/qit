@@ -1,0 +1,163 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example</title>
+  <link rel="stylesheet" href="../../../qit.css">
+  <style>
+
+  @keyframes spin {
+    from {transform:scale(0.75) rotate(0deg);}
+    to {transform:scale(0.75) rotate(360deg);}
+  }
+  #compiling::after {
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  </style>
+</head>
+
+<body class="sp-app sp-sync">
+
+  <div class="sp-sync-container sp-container-dark sp-overlay sp-menu-dropdown sp-menu-dropdown-below">
+    <div class="sp-sync-bar sp-container sp-contrast">
+      <button class="sp-icon-folder sp-simple-icon sp-primary sp-minimal" onclick="window.location = 'sync.html'"></button>
+      <button class="sp-icon-settings sp-simple-icon sp-primary sp-minimal sp-state-active"></button>
+    </div>
+    
+    <div class="sp-sync-content sp-container">
+
+      <div class="sp-small sp-label sp-padding-left-2 sp-padding-vertical-1 sp-container sp-alt-two">Local Creatives</div>
+
+      <div class="sp-padding-top-1 sp-flex sp-padding-bottom-2">
+        <div style="width: 100%">
+          <div class="sp-h6 sp-color-contrast sp-padding-left-2">Local Project Directory</div>
+          <div class="sp-small sp-padding-left-2" style="font-size: .72rem;line-height: 1; width: 100%">~/scorby/documents/Specless Creatives</div>
+        </div>
+        <div class="sp-small sp-align-right sp-margin-right-2">
+            <button class="sp-small sp-float-right">Edit</button>
+        </div>
+      </div>
+
+      <div class="sp-margin-top-1 sp-small sp-label sp-padding-left-2 sp-padding-vertical-1 sp-container sp-alt-two">Server Settings</div>
+
+      
+      <div class="sp-padding-top-1 sp-flex sp-padding-bottom-2">
+        <div style="width: 65%">
+          <div class="sp-h6 sp-color-contrast sp-padding-left-2">Local Host Port</div>
+          <div class="sp-small sp-padding-left-2" style="font-size: .72rem;line-height: 1; width: 100%">e.g. 8080</div>
+        </div>
+        <div class="sp-small sp-align-right sp-margin-right-2 sp-group">
+            <input class="sp-shape-rectangle sp-align-right sp-float-left" type="text" value="8080" style="width:60px"/>
+            <button class="sp-small sp-float-right">Save</button>
+        </div>
+      </div>
+
+      <div class="sp-padding-top-1 sp-flex sp-padding-bottom-2">
+        <div style="width: 110%">
+          <div class="sp-h6 sp-color-contrast sp-padding-left-2">Use Proxy Server</div>
+          <div class="sp-small sp-padding-left-2" style="font-size: .72rem;line-height: 1; width: 100%">Required for some networks</div>
+        </div>
+        <div class="sp-small sp-align-right">
+            <input id="proxy" class="sp-shape-rectangle sp-align-right sp-float-right" type="checkbox"/>
+            <label for="proxy" tabindex="0" class="sp-float-right"></label>
+        </div>
+      </div>
+
+      <div class="sp-padding-top-1 sp-flex sp-padding-bottom-2 sp-state-disabled" style="opacity: 0.25; pointer-events:none">
+        <div style="width: 40%">
+          <div class="sp-h6 sp-color-contrast sp-padding-left-2">Proxy Server</div>
+          <div class="sp-small sp-padding-left-2" style="font-size: .72rem;line-height: 1; width: 100%">e.g. enter example</div>
+        </div>
+        <div class="sp-small sp-align-right sp-margin-right-2 sp-group">
+            <input class="sp-shape-rectangle sp-align-right sp-float-left" type="text" value="myproxy.com/server" style="width:150px"/>
+            <button class="sp-selector-trigger sp-small sp-float-right">Save</button>
+        </div>
+      </div>
+
+      <div class="sp-small sp-label sp-padding-left-2 sp-padding-vertical-1 sp-container sp-alt-two">Apps & Integrations</div>
+
+      <div class="sp-padding-top-1 sp-flex sp-padding-bottom-2">
+        <div style="width: 100%">
+          <div class="sp-h6 sp-color-contrast sp-padding-left-2">Current Specless Sync Version</div>
+          <div class="sp-small sp-padding-left-2" style="font-size: .72rem;line-height: 1; width: 100%">v1.2</div>
+        </div>
+        <div class="sp-small sp-align-right sp-margin-right-2">
+            <button class="sp-small sp-float-right sp-success">Update</button>
+        </div>
+      </div>
+
+      <div class="sp-padding-top-1 sp-flex sp-padding-bottom-2">
+        <div style="width: 100%">
+          <div class="sp-h6 sp-color-contrast sp-padding-left-2">Local Text Editor</div>
+          <div class="sp-small sp-padding-left-2" style="font-size: .72rem;line-height: 1; width: 100%">Sublime Text</div>
+        </div>
+        <div class="sp-small sp-align-right sp-margin-right-2">
+            <button class="sp-small sp-float-right">Edit</button>
+        </div>
+      </div>
+
+      <div class="sp-padding-top-1 sp-flex sp-padding-bottom-2" style="opacity: 0.25; pointer-events:none">
+        <div style="width: 100%">
+          <div class="sp-h6 sp-color-contrast sp-padding-left-2">Hype Pro Integration</div>
+          <div class="sp-small sp-padding-left-2" style="font-size: .72rem;line-height: 1; width: 100%">Not Installed</div>
+        </div>
+        <div class="sp-small sp-align-right sp-margin-right-2">
+            <button class="sp-small sp-float-right">Enable</button>
+        </div>
+      </div>
+
+      <div class="sp-padding-top-1 sp-flex sp-padding-bottom-2" style="opacity: 0.25; pointer-events:none">
+        <div style="width: 100%">
+          <div class="sp-h6 sp-color-contrast sp-padding-left-2">Photoshop Integration</div>
+          <div class="sp-small sp-padding-left-2" style="font-size: .72rem;line-height: 1; width: 100%">Not Installed</div>
+        </div>
+        <div class="sp-small sp-align-right sp-margin-right-2">
+            <button class="sp-small sp-float-right">Enable</button>
+        </div>
+      </div>
+
+      <div class="sp-padding-top-1 sp-flex sp-padding-bottom-2" style="opacity: 0.25; pointer-events:none">
+        <div style="width: 100%">
+          <div class="sp-h6 sp-color-contrast sp-padding-left-2">Sketch Integration</div>
+          <div class="sp-small sp-padding-left-2" style="font-size: .72rem;line-height: 1; width: 100%">Not Installed</div>
+        </div>
+        <div class="sp-small sp-align-right sp-margin-right-2">
+            <button class="sp-small sp-float-right">Enable</button>
+        </div>
+      </div>
+
+      <div class="sp-padding-top-1 sp-flex sp-padding-bottom-2" style="opacity: 0.25; pointer-events:none">
+        <div style="width: 100%">
+          <div class="sp-h6 sp-color-contrast sp-padding-left-2">Adobe Animate Integration</div>
+          <div class="sp-small sp-padding-left-2" style="font-size: .72rem;line-height: 1; width: 100%">Not Installed</div>
+        </div>
+        <div class="sp-small sp-align-right sp-margin-right-2">
+            <button class="sp-small sp-float-right">Enable</button>
+        </div>
+      </div>
+
+      <div class="sp-padding-top-1 sp-flex sp-padding-bottom-2" style="opacity: 0.25; pointer-events:none">
+        <div style="width: 100%">
+          <div class="sp-h6 sp-color-contrast sp-padding-left-2">Google Web Designer Integration</div>
+          <div class="sp-small sp-padding-left-2" style="font-size: .72rem;line-height: 1; width: 100%">Not Installed</div>
+        </div>
+        <div class="sp-small sp-align-right sp-margin-right-2">
+            <button class="sp-small sp-float-right">Enable</button>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="sp-sync-footer sp-container sp-contrast sp-border-top-base">
+      <button class="sp-minimal sp-icon-lightning sp-simple-icon sp-small" style="color: #00EC99">Connected To Browser</button>
+      <button id="compiling" class="sp-minimal sp-icon-after-reload sp-simple-icon sp-small sp-float-right">Compiling</button>
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -60,6 +60,21 @@
   text-overflow: ellipsis;
 }
 
+.sp-no-wrap {
+  white-space: nowrap !important;
+}
+
+.sp-no-wrap-clipped {
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: clip !important;
+}
+
+.sp-overflow-wrap {
+  overflow-wrap: normal !important;
+  white-space: pre-wrap !important;
+}
+
 .sp-full-width {
   box-sizing: border-box !important;
   width: 100% !important;
@@ -67,4 +82,12 @@
 
 .sp-scroll-vertical {
   overflow-y: auto;
+}
+
+.sp-pointer-events-auto {
+  pointer-events: auto !important;
+}
+
+.sp-pointer-events-none {
+  pointer-events: none !important;
 }

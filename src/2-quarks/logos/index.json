@@ -57,6 +57,20 @@
       ],
       "states": ["sp-small", "sp-large", "sp-huge"],
       "modifiers": ["sp-contrast", "sp-muted", "sp-primary", "sp-success", "sp-warning", "sp-danger"]
+    },
+    {
+      "title": "Animated Logo Mark",
+      "subTitle": "",
+      "swatches" : [
+        {
+          "title": ".sp-animated-logo",
+          "type": "box-target",
+          "classes": ["", "sp-glow"],
+          "content": "<div class='sp-animated-logo qit-target'><div class='sp-animated-logo-top'></div><div class='sp-animated-logo-bottom'></div><div class='sp-animated-logo-left'></div><div class='sp-animated-logo-right'></div><div class='sp-animated-logo-middle'></div><div class='sp-animated-logo-inner-top'></div><div class='sp-animated-logo-inner-bottom'></div></div>"
+        }
+      ],
+      "states": [],
+      "modifiers": ["sp-primary", "sp-success", "sp-warning", "sp-danger"]
     }
   ],
   "scss": ["index.scss"],

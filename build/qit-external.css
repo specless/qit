@@ -2800,6 +2800,92 @@ html {
   .sp-logo-lockup.sp-logo-horizontal.sp-large::after {
     transform: translateY(-70%); }
 
+.sp-animated-logo {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  overflow: hidden;
+  opacity: 1; }
+  .sp-animated-logo.sp-glow {
+    animation: sp-ani-logo-glow 1s linear alternate infinite;
+    animation-timing-function: ease-out; }
+  .sp-animated-logo .sp-container-dark > *, .sp-animated-logo.sp-container-dark > *,
+  .sp-container-dark .sp-animated-logo > * {
+    background-color: white; }
+  .sp-animated-logo.sp-primary > * {
+    background-color: #00C3DC; }
+  .sp-animated-logo.sp-success > * {
+    background-color: #00d388; }
+  .sp-animated-logo.sp-warning > * {
+    background-color: #FF4A37; }
+  .sp-animated-logo.sp-danger > * {
+    background-color: #FF2455; }
+  .sp-animated-logo > * {
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background-color: #384146;
+    position: absolute; }
+  .sp-animated-logo .sp-animated-logo-bottom {
+    top: auto;
+    bottom: 0; }
+  .sp-animated-logo .sp-animated-logo-right, .sp-animated-logo .sp-animated-logo-left, .sp-animated-logo .sp-animated-logo-inner-top, .sp-animated-logo .sp-animated-logo-inner-bottom {
+    width: 4px;
+    height: 100%; }
+  .sp-animated-logo .sp-animated-logo-right {
+    left: auto;
+    right: 0; }
+  .sp-animated-logo .sp-animated-logo-middle {
+    top: auto;
+    bottom: 20px;
+    animation: sp-ani-logo-middle 1s linear alternate infinite;
+    animation-timing-function: ease-out; }
+  .sp-animated-logo .sp-animated-logo-inner-top {
+    left: 20px;
+    height: 40px;
+    animation: sp-ani-logo-inner-top 1s linear alternate infinite;
+    animation-timing-function: ease-out; }
+  .sp-animated-logo .sp-animated-logo-inner-bottom {
+    left: auto;
+    height: 80px;
+    right: 20px;
+    top: 40px;
+    animation: sp-ani-logo-inner-bottom 1s linear alternate infinite;
+    animation-timing-function: ease-out; }
+
+@keyframes sp-ani-logo-glow {
+  0% {
+    opacity: 1; }
+  25% {
+    opacity: 1; }
+  100% {
+    opacity: 0.5; } }
+
+@keyframes sp-ani-logo-middle {
+  0% {
+    transform: none; }
+  25% {
+    transform: none; }
+  100% {
+    transform: translate(0, -20px); } }
+
+@keyframes sp-ani-logo-inner-top {
+  0% {
+    transform: none; }
+  25% {
+    transform: none; }
+  100% {
+    transform: translate(20px, -20px); } }
+
+@keyframes sp-ani-logo-inner-bottom {
+  0% {
+    transform: none; }
+  25% {
+    transform: none; }
+  100% {
+    transform: translate(-20px, -20px); } }
+
 .sp-shadow-none {
   box-shadow: none; }
 

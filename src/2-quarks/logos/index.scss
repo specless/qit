@@ -236,3 +236,152 @@
 		}
 	}
 }
+
+
+.sp-animated-logo {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  overflow: hidden;
+  opacity: 1;
+
+  &.sp-glow {
+  	animation: sp-ani-logo-glow 1s linear alternate infinite;
+    animation-timing-function: ease-out;
+  }
+
+  @include sp-state(dark) {
+  	> * {
+  		background-color: white;
+  	}
+  }
+
+  @include sp-primary {
+  	> * {
+  		@include sp-bg-color(primary);
+  	}
+  }
+
+  @include sp-success {
+  	> * {
+  		@include sp-bg-color(success);
+  	}
+  }
+
+  @include sp-warning {
+  	> * {
+  		@include sp-bg-color(warning);
+  	}
+  }
+
+  @include sp-danger {
+  	> * {
+  		@include sp-bg-color(danger);
+  	}
+  }
+
+  > * {
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background-color: $sp-color-dark-base;
+    position: absolute;
+  }
+  
+  .sp-animated-logo-bottom {
+    top: auto;
+    bottom: 0;
+  }
+  
+  .sp-animated-logo-right, .sp-animated-logo-left, .sp-animated-logo-inner-top, .sp-animated-logo-inner-bottom {
+    width: 4px;
+    height: 100%;
+  }
+  
+  .sp-animated-logo-right {
+    left: auto;
+    right: 0
+  }
+  
+  .sp-animated-logo-middle {
+    top: auto;
+    bottom: 20px;
+    animation: sp-ani-logo-middle 1s linear alternate infinite;
+    animation-timing-function: ease-out;
+  }
+  
+  .sp-animated-logo-inner-top {
+    left: 20px;
+    height: 40px;
+    animation: sp-ani-logo-inner-top 1s linear alternate infinite;
+    animation-timing-function: ease-out;
+  }
+  
+  .sp-animated-logo-inner-bottom {
+    left: auto;
+    height: 80px;
+    right: 20px;
+    top: 40px;
+    animation: sp-ani-logo-inner-bottom 1s linear alternate infinite;
+    animation-timing-function: ease-out;
+    
+  }
+  
+}
+
+@keyframes sp-ani-logo-glow {
+	0% {
+		opacity: 1;
+	}
+
+	25% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0.5;
+	}
+}
+
+@keyframes sp-ani-logo-middle {
+  0% {
+    transform: none;
+  }
+  
+  25% {
+    transform: none;
+  }
+  
+  100% {
+    transform: translate(0, -20px);
+  }
+}
+
+@keyframes sp-ani-logo-inner-top {
+  0% {
+    transform: none;
+  }
+  
+  25% {
+    transform: none;
+  }
+  
+  100% {
+    transform: translate(20px, -20px);
+  }
+}
+
+@keyframes sp-ani-logo-inner-bottom {
+  0% {
+    transform: none;
+  }
+  
+  25% {
+    transform: none;
+  }
+  
+  100% {
+    transform: translate(-20px, -20px);
+  }
+}

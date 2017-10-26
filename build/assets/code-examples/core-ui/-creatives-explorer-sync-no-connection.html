@@ -8,6 +8,17 @@
 </head>
 
 <body class="sp-app sp-technical sp-loading-content">
+  <div class="sp-app-loading-logo">
+    <div class="sp-animated-logo end">
+      <div class="sp-animated-logo-top"></div>
+      <div class="sp-animated-logo-bottom"></div>
+      <div class="sp-animated-logo-left"></div>
+      <div class="sp-animated-logo-right"></div>
+      <div class="sp-animated-logo-middle"></div>
+      <div class="sp-animated-logo-inner-top"></div>
+      <div class="sp-animated-logo-inner-bottom"></div>
+    </div>
+  </div>
   <div class="sp-app-bar sp-container-dark sp-alt-one sp-wrapper">
     <div class="sp-row sp-vcenter sp-height-3 sp-fluid">
       <div class="sp-col sp-span-6 sp-flex sp-flex-align-items-center">
@@ -538,117 +549,119 @@
       <div class="sp-app-content-main-footer sp-container">
         <div class="sp-padding-1 sp-container sp-border-top-base sp-border-bottom-base sp-small sp-font-weight-semi-bold sp-flex sp-flex-align-items-center" style="font-size: 12px; justify-content: center">
 
-          <span class="sp-padding-horizontal-2 sp-color-danger sp-tooltip sp-tooltip-above sp-state-hover">
-            <span>Sync Disconnected</span><i class="sp-inline-icon-solid-circle-close sp-margin-left-1"></i>
-            <div class="sp-tooltip-overlay sp-pointer-events-auto sp-width-7 sp-color-base">
-              <div class="sp-padding-bottom-1 sp-border-bottom-base sp-ellipsis sp-color-danger"><i class="sp-inline-icon-lightning sp-margin-right-1"></i>Specless Sync: No Connection<span class="sp-float-right sp-font-weight-base" style="font-size: 12px;"></span></div>
-              <p class="sp-overflow-wrap sp-font-weight-base sp-margin-top-1">Could not establish a connection with Specless Sync.</p>
-              <p class="sp-overflow-wrap sp-margin-top-1 sp-margin-bottom-1">How would you like to proceed?</p>
-              <div class="sp-padding-top-1">
-                <a class="sp-button sp-small sp-icon-circle-dot sp-block" style="flex: 1">Switch to Live Version</a>
+        <div class="sp-app-content-main-footer-left">
+            <span class="sp-padding-horizontal-2 sp-color-danger sp-tooltip sp-tooltip-above sp-state-hover">
+              <span>Sync Disconnected</span><i class="sp-inline-icon-solid-circle-close sp-margin-left-1"></i>
+              <div class="sp-tooltip-overlay sp-pointer-events-auto sp-width-7 sp-color-base">
+                <div class="sp-padding-bottom-1 sp-border-bottom-base sp-ellipsis sp-color-danger"><i class="sp-inline-icon-lightning sp-margin-right-1"></i>Specless Sync: No Connection<span class="sp-float-right sp-font-weight-base" style="font-size: 12px;"></span></div>
+                <p class="sp-overflow-wrap sp-font-weight-base sp-margin-top-1">Could not establish a connection with Specless Sync.</p>
+                <p class="sp-overflow-wrap sp-margin-top-1 sp-margin-bottom-1">How would you like to proceed?</p>
+                <div class="sp-padding-top-1">
+                  <a class="sp-button sp-small sp-icon-circle-dot sp-block" style="flex: 1">Switch to Live Version</a>
+                </div>
+                <div class="sp-padding-top-1">
+                  <a class="sp-button sp-small sp-icon-circle sp-block" style="flex: 1">Switch to Draft Version</a>
+                </div>
+                <div class="sp-padding-top-1">
+                  <a class="sp-button sp-small sp-icon-version sp-block" style="flex: 1">Switch to Other Version</a>
+                </div>
+                <div class="sp-padding-top-1">
+                  <a class="sp-button sp-small sp-icon-circle-help sp-block" style="flex: 1">Troubleshooting</a>
+                </div>
               </div>
-              <div class="sp-padding-top-1">
-                <a class="sp-button sp-small sp-icon-circle sp-block" style="flex: 1">Switch to Draft Version</a>
+            </span>
+
+            <!-- <span class="sp-padding-horizontal-2 sp-color-danger sp-tooltip sp-tooltip-above sp-state-hover">
+              <span>No Local Project</span><i class="sp-inline-icon-solid-circle-close sp-margin-left-1"></i>
+              <div class="sp-tooltip-overlay sp-pointer-events-auto sp-width-7 sp-color-base">
+                <div class="sp-padding-bottom-1 sp-border-bottom-base sp-ellipsis sp-color-danger"><i class="sp-inline-icon-lightning sp-margin-right-1"></i>Specless Sync: No Local Copy<span class="sp-float-right sp-font-weight-base" style="font-size: 12px;"></span></div>
+                <p class="sp-overflow-wrap sp-font-weight-base sp-margin-top-1">A copy of this creative could not be found in your Local Project Directory.</p>
+                <p class="sp-overflow-wrap sp-margin-top-1 sp-margin-bottom-1">Would you like to download a local copy?</p>
+                <div class="sp-padding-top-1">
+                  <a class="sp-button sp-small sp-success sp-icon-download sp-block" style="flex: 1">Download Live Version</a>
+                </div>
+                <div class="sp-padding-top-1">
+                  <a class="sp-button sp-small sp-success sp-icon-download sp-block" style="flex: 1">Download Draft Version</a>
+                </div>
+                <div class="sp-padding-top-1">
+                  <a class="sp-button sp-small sp-success sp-icon-version sp-block" style="flex: 1">Select from Version History</a>
+                </div>
               </div>
-              <div class="sp-padding-top-1">
-                <a class="sp-button sp-small sp-icon-version sp-block" style="flex: 1">Switch to Other Version</a>
+            </span> -->
+
+            <!-- <span class="sp-padding-horizontal-2">
+              <span>Previously Compiled</span><i class="sp-inline-icon-solid-circle-check sp-margin-left-1"></i>
+            </span> -->
+
+            <!-- <span class="sp-padding-horizontal-2 sp-color-primary">
+              <span>Compiling</span><i class="sp-inline-icon-solid-sync sp-margin-left-1"></i>
+            </span> -->
+
+            <!-- <span class="sp-padding-horizontal-2 sp-color-success">
+              <span>Compiled Successfully</span><i class="sp-inline-icon-solid-circle-check sp-margin-left-1"></i>
+            </span> -->
+
+            <!-- <span class="sp-padding-horizontal-2 sp-color-warning">
+              <span>Compiled With Warnings</span><i class="sp-inline-icon-solid-warning sp-margin-left-1"></i>
+            </span> -->
+
+            <!-- <span class="sp-padding-horizontal-2 sp-color-danger">
+              <span>Failed to Compile</span><i class="sp-inline-icon-solid-error sp-margin-left-1"></i>
+            </span> -->
+
+            <!-- <span class="sp-padding-horizontal-2 sp-color-danger sp-tooltip sp-tooltip-above sp-state-hover">
+              <span>Failed to Compile</span><i class="sp-inline-icon-solid-error sp-margin-left-1"></i>
+              <div class="sp-tooltip-overlay sp-pointer-events-auto sp-danger sp-width-7">
+                <div class="sp-padding-bottom-1 sp-border-bottom-base sp-ellipsis">Compile Error<span class="sp-float-right sp-font-weight-base" style="font-size: 12px;">index.css:233</span></div>
+                <div class="sp-padding-top-1 sp-flex">
+                  <a class="sp-button sp-small sp-danger sp-icon-circle-info sp-margin-right-1" style="flex: 1">Details</a>
+                  <a class="sp-button sp-small sp-danger sp-icon-reload" style="flex: 1">Retry</a>
+                </div>
               </div>
-              <div class="sp-padding-top-1">
-                <a class="sp-button sp-small sp-icon-circle-help sp-block" style="flex: 1">Troubleshooting</a>
-              </div>
+            </span> -->
+          </div>
+          <div class="sp-app-content-main-footer-middle">
+            <div class="sp-padding-horizontal-2 sp-border-right-base sp-border-left-base sp-color-muted">
+              <i class="sp-inline-icon-solid-log sp-margin-right-1"></i><span class="sp-margin-right-2">0</span>
+              <i class="sp-inline-icon-solid-warning sp-margin-right-1"></i><span class="sp-margin-right-2">0</span>
+              <i class="sp-inline-icon-solid-error sp-margin-right-1"></i><span class="">0</span>
             </div>
-          </span>
+          </div>
+          <div class="sp-app-content-main-footer-right">
+            <!-- <span class="sp-padding-horizontal-2 sp-color-primary">
+              <i class="sp-inline-icon-solid-sync sp-margin-right-1"></i><span>Loading</span>
+            </span> -->
 
-          <!-- <span class="sp-padding-horizontal-2 sp-color-danger sp-tooltip sp-tooltip-above sp-state-hover">
-            <span>No Local Project</span><i class="sp-inline-icon-solid-circle-close sp-margin-left-1"></i>
-            <div class="sp-tooltip-overlay sp-pointer-events-auto sp-width-7 sp-color-base">
-              <div class="sp-padding-bottom-1 sp-border-bottom-base sp-ellipsis sp-color-danger"><i class="sp-inline-icon-lightning sp-margin-right-1"></i>Specless Sync: No Local Copy<span class="sp-float-right sp-font-weight-base" style="font-size: 12px;"></span></div>
-              <p class="sp-overflow-wrap sp-font-weight-base sp-margin-top-1">A copy of this creative could not be found in your Local Project Directory.</p>
-              <p class="sp-overflow-wrap sp-margin-top-1 sp-margin-bottom-1">Would you like to download a local copy?</p>
-              <div class="sp-padding-top-1">
-                <a class="sp-button sp-small sp-success sp-icon-download sp-block" style="flex: 1">Download Live Version</a>
+            <!-- <span class="sp-padding-horizontal-2 sp-color-primary">
+              <i class="sp-inline-icon-solid-sync sp-margin-right-1"></i><span>Reloading</span>
+            </span> -->
+
+            <!-- <span class="sp-padding-horizontal-2 sp-color-primary">
+              <i class="sp-inline-icon-solid-sync sp-margin-right-1"></i><span>Updating</span>
+            </span> -->
+
+            <!-- <span class="sp-padding-horizontal-2">
+              <i class="sp-inline-icon-solid-circle-check sp-margin-right-1"></i><span>Panel Ready</span>
+            </span> -->
+
+            <!-- <span class="sp-padding-horizontal-2 sp-color-danger">
+              <i class="sp-inline-icon-solid-error sp-margin-right-1"></i><span>Error Loading Panel</span>
+            </span> -->
+
+            <!-- <span class="sp-padding-horizontal-2 sp-color-danger sp-tooltip sp-tooltip-above sp-state-hover">
+              <i class="sp-inline-icon-solid-error sp-margin-right-1"></i><span>Error Loading Panel</span>
+              <div class="sp-tooltip-overlay sp-pointer-events-auto sp-danger sp-width-7">
+                <div class="sp-padding-bottom-1 sp-border-bottom-base sp-ellipsis">Could Not Connect to Sync<span class="sp-float-right sp-font-weight-base" style="font-size: 12px;">Error: 204</span></div>
+                <div class="sp-padding-top-1 sp-flex">
+                  <a class="sp-button sp-small sp-danger sp-icon-circle-info" style="flex: 1">Details</a>
+                </div>
               </div>
-              <div class="sp-padding-top-1">
-                <a class="sp-button sp-small sp-success sp-icon-download sp-block" style="flex: 1">Download Draft Version</a>
-              </div>
-              <div class="sp-padding-top-1">
-                <a class="sp-button sp-small sp-success sp-icon-version sp-block" style="flex: 1">Select from Version History</a>
-              </div>
-            </div>
-          </span> -->
+            </span> -->
 
-          <!-- <span class="sp-padding-horizontal-2">
-            <span>Previously Compiled</span><i class="sp-inline-icon-solid-circle-check sp-margin-left-1"></i>
-          </span> -->
-
-          <!-- <span class="sp-padding-horizontal-2 sp-color-primary">
-            <span>Compiling</span><i class="sp-inline-icon-solid-sync sp-margin-left-1"></i>
-          </span> -->
-
-          <!-- <span class="sp-padding-horizontal-2 sp-color-success">
-            <span>Compiled Successfully</span><i class="sp-inline-icon-solid-circle-check sp-margin-left-1"></i>
-          </span> -->
-
-          <!-- <span class="sp-padding-horizontal-2 sp-color-warning">
-            <span>Compiled With Warnings</span><i class="sp-inline-icon-solid-warning sp-margin-left-1"></i>
-          </span> -->
-
-          <!-- <span class="sp-padding-horizontal-2 sp-color-danger">
-            <span>Failed to Compile</span><i class="sp-inline-icon-solid-error sp-margin-left-1"></i>
-          </span> -->
-
-          <!-- <span class="sp-padding-horizontal-2 sp-color-danger sp-tooltip sp-tooltip-above sp-state-hover">
-            <span>Failed to Compile</span><i class="sp-inline-icon-solid-error sp-margin-left-1"></i>
-            <div class="sp-tooltip-overlay sp-pointer-events-auto sp-danger sp-width-7">
-              <div class="sp-padding-bottom-1 sp-border-bottom-base sp-ellipsis">Compile Error<span class="sp-float-right sp-font-weight-base" style="font-size: 12px;">index.css:233</span></div>
-              <div class="sp-padding-top-1 sp-flex">
-                <a class="sp-button sp-small sp-danger sp-icon-circle-info sp-margin-right-1" style="flex: 1">Details</a>
-                <a class="sp-button sp-small sp-danger sp-icon-reload" style="flex: 1">Retry</a>
-              </div>
-            </div>
-          </span> -->
-          
-          <span class="sp-padding-horizontal-2 sp-border-right-base sp-border-left-base sp-color-muted">
-            <i class="sp-inline-icon-solid-log sp-margin-right-1"></i><span class="sp-margin-right-2">0</span>
-            <i class="sp-inline-icon-solid-warning sp-margin-right-1"></i><span class="sp-margin-right-2">0</span>
-            <i class="sp-inline-icon-solid-error sp-margin-right-1"></i><span class="">0</span>
-          </span>
-
-          <!-- <span class="sp-padding-horizontal-2 sp-color-primary">
-            <i class="sp-inline-icon-solid-sync sp-margin-right-1"></i><span>Loading</span>
-          </span> -->
-
-          <!-- <span class="sp-padding-horizontal-2 sp-color-primary">
-            <i class="sp-inline-icon-solid-sync sp-margin-right-1"></i><span>Reloading</span>
-          </span> -->
-
-          <!-- <span class="sp-padding-horizontal-2 sp-color-primary">
-            <i class="sp-inline-icon-solid-sync sp-margin-right-1"></i><span>Updating</span>
-          </span> -->
-
-          <!-- <span class="sp-padding-horizontal-2">
-            <i class="sp-inline-icon-solid-circle-check sp-margin-right-1"></i><span>Panel Ready</span>
-          </span> -->
-
-          <!-- <span class="sp-padding-horizontal-2 sp-color-danger">
-            <i class="sp-inline-icon-solid-error sp-margin-right-1"></i><span>Error Loading Panel</span>
-          </span> -->
-
-          <!-- <span class="sp-padding-horizontal-2 sp-color-danger sp-tooltip sp-tooltip-above sp-state-hover">
-            <i class="sp-inline-icon-solid-error sp-margin-right-1"></i><span>Error Loading Panel</span>
-            <div class="sp-tooltip-overlay sp-pointer-events-auto sp-danger sp-width-7">
-              <div class="sp-padding-bottom-1 sp-border-bottom-base sp-ellipsis">Could Not Connect to Sync<span class="sp-float-right sp-font-weight-base" style="font-size: 12px;">Error: 204</span></div>
-              <div class="sp-padding-top-1 sp-flex">
-                <a class="sp-button sp-small sp-danger sp-icon-circle-info" style="flex: 1">Details</a>
-              </div>
-            </div>
-          </span> -->
-
-          <span class="sp-padding-horizontal-2 sp-color-danger">
-            <i class="sp-inline-icon-solid-error sp-margin-right-1"></i><span>Error Loading Panel</span>
-          </span>
-
-
+            <span class="sp-padding-horizontal-2 sp-color-danger">
+              <i class="sp-inline-icon-solid-error sp-margin-right-1"></i><span>Error Loading Panel</span>
+            </span>
+          </div>
 
         </div>
       </div>

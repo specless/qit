@@ -9178,12 +9178,10 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
-  .sp-app-loading-logo .sp-app.sp-hide-content {
-    opacity: 0; }
 
 .sp-app-loader {
   height: 0px;
-  overflow: visible;
+  overflow: hidden;
   position: relative;
   z-index: 100;
   background-color: black !important; }

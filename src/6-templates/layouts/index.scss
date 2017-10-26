@@ -151,17 +151,13 @@ body {
 		left: 50%;
 		transform: translate(-50%,-50%);
 	}
-
-	.sp-app.sp-hide-content {
-		opacity: 0;
-	}
 }
 
 
 .sp-app-loader {
 	height: 0px;
 	//transition: 0.5s ease height;
-	overflow: visible;
+	overflow: hidden;
 	position: relative;
 	z-index: 100;
 	background-color: black !important;

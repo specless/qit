@@ -2261,7 +2261,7 @@ select + label::before, .sp-selector > input[type='text'].sp-selector-trigger + 
 .sp-icon-live::before, .sp-icon-after-live::after, .sp-inline-icon-live::before {
   content: "\F069"; }
 
-.sp-app.sp-loading-content.sp-technical .sp-app-content .sp-app-content-sidebar .sp-app-content-sidebar-menu-content::after, .sp-app.sp-loading-content.sp-technical .sp-app-content .sp-app-content-main::after, .sp-icon-loading-spinner::before, .sp-icon-after-loading-spinner::after, .sp-inline-icon-loading-spinner::before {
+.sp-app.sp-loading-content .sp-hide-content-while-loading::after, .sp-app.sp-loading-content.sp-technical .sp-app-content .sp-app-content-sidebar .sp-app-content-sidebar-menu-content::after, .sp-app.sp-loading-content.sp-technical .sp-app-content .sp-app-content-main::after, .sp-icon-loading-spinner::before, .sp-icon-after-loading-spinner::after, .sp-inline-icon-loading-spinner::before {
   content: "\F06A"; }
 
 .sp-icon-location::before, .sp-icon-after-location::after, .sp-inline-icon-location::before {
@@ -9126,6 +9126,12 @@ body {
       pointer-events: none; }
     .sp-app.sp-initializing .sp-app-loading-logo {
       opacity: 1; }
+    .sp-app.sp-initializing .sp-app-side-menu {
+      visibility: hidden; }
+    .sp-app.sp-initializing .sp-app-overlay {
+      background-color: transparent; }
+    .sp-app.sp-initializing .sp-app-loader {
+      visibility: hidden; }
   .sp-app.sp-technical {
     height: 100%;
     display: flex;
@@ -9219,13 +9225,15 @@ body {
 .sp-app-bar {
   position: relative;
   min-height: 75.67px;
-  transition: 0.5s ease transform, 0.5s ease opacity;
+  transition: 0.5s ease transform, 0.5s ease opacity, 0s ease visibility;
   opacity: 1;
-  transform: none; }
+  transform: none;
+  visibility: visible; }
 
 .sp-app-org-label {
   min-height: 37.59px;
-  transition: 0.5s ease transform, 0.5s ease opacity;
+  transition: 0.5s ease transform, 0.5s ease opacity, 0s ease visibility;
+  visibility: visible;
   opacity: 1;
   transform: none; }
   .sp-app.sp-hide-org-label .sp-app-org-label {
@@ -9243,7 +9251,8 @@ body {
 .sp-app-header {
   position: relative;
   min-height: 72.09px;
-  transition: 0.5s ease transform, 0.5s ease opacity;
+  transition: 0.5s ease transform, 0.5s ease opacity, 0s ease visibility;
+  visibility: visible;
   opacity: 1;
   transform: none; }
   .sp-app.sp-hide-header .sp-app-header {
@@ -9251,7 +9260,8 @@ body {
 
 .sp-app-menu {
   position: relative;
-  transition: 0.5s ease transform, 0.5s ease opacity;
+  transition: 0.5s ease transform, 0.5s ease opacity, 0s ease visibility;
+  visibility: visible;
   opacity: 1;
   transform: none; }
   .sp-app.sp-hide-app-menu .sp-app-menu {
@@ -9261,7 +9271,7 @@ body {
   position: relative;
   padding-top: 3.2rem;
   padding-bottom: 6.4rem;
-  transition: 0.5s ease transform, 0.5s ease opacity;
+  transition: 0.5s ease opacity;
   opacity: 1;
   transform: none; }
   .sp-app.sp-hide-content .sp-app-content {
@@ -9545,6 +9555,36 @@ body {
     transform: translate(-50%, -50%); }
   .sp-app-content-main #preview:hover #recenter {
     opacity: 1; }
+
+.sp-app.sp-loading-content .sp-hide-content-while-loading > * {
+  opacity: 0 !important;
+  pointer-events: none; }
+
+.sp-app.sp-loading-content .sp-hide-content-while-loading::after {
+  display: inline-block !important;
+  position: absolute;
+  font-family: 'Icon Font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Better positioning */
+  display: inline-block;
+  animation: iconSpin;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  top: 50%;
+  left: 50%;
+  font-size: 40px !important;
+  margin-left: -20px;
+  z-index: 10;
+  opacity: 0.5; }
 
 .sp-app.sp-loading-content.sp-technical .sp-app-content::after {
   display: inline-block;

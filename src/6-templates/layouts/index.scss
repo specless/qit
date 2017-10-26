@@ -74,6 +74,18 @@ body {
 			opacity: 1;
 		}
 
+		.sp-app-side-menu {
+			visibility: hidden;
+		}
+
+		.sp-app-overlay {
+			background-color: transparent;
+		}
+
+		.sp-app-loader {
+			visibility: hidden;
+		}
+
 	}
 
 	&.sp-technical {
@@ -223,14 +235,16 @@ body {
 .sp-app-bar {
 	position: relative;
 	min-height: 75.67px;
-	transition: 0.5s ease transform, 0.5s ease opacity;
+	transition: 0.5s ease transform, 0.5s ease opacity, 0s ease visibility;
 	opacity: 1;
 	transform: none;
+	visibility: visible;
 }
 
 .sp-app-org-label {
 	min-height: 37.59px;
-	transition: 0.5s ease transform, 0.5s ease opacity;
+	transition: 0.5s ease transform, 0.5s ease opacity, 0s ease visibility;
+	visibility: visible;
 	opacity: 1;
 	transform: none;
 
@@ -252,7 +266,8 @@ body {
 .sp-app-header {
 	position: relative;
 	min-height: 72.09px;
-	transition: 0.5s ease transform, 0.5s ease opacity;
+	transition: 0.5s ease transform, 0.5s ease opacity, 0s ease visibility;
+	visibility: visible;
 	opacity: 1;
 	transform: none;
 
@@ -263,7 +278,8 @@ body {
 
 .sp-app-menu {
 	position: relative;
-	transition: 0.5s ease transform, 0.5s ease opacity;
+	transition: 0.5s ease transform, 0.5s ease opacity, 0s ease visibility;
+	visibility: visible;
 	opacity: 1;
 	transform: none;
 
@@ -276,7 +292,7 @@ body {
 	position: relative;
 	@include sp-padding(4, top);
 	@include sp-padding(5, bottom);
-	transition: 0.5s ease transform, 0.5s ease opacity;
+	transition: 0.5s ease opacity;
 	opacity: 1;
 	transform: none;
 
@@ -659,6 +675,26 @@ body {
 }
 
 .sp-app.sp-loading-content {
+
+	.sp-hide-content-while-loading {
+		> * {
+			opacity: 0 !important;
+			pointer-events: none;
+		}
+
+		&::after {
+			display: inline-block !important;
+			position: absolute;
+			@include sp-icon-styles(loading-spinner);
+			@include sp-icon-spin();
+			top: 50%;
+			left: 50%;
+			font-size: 40px !important;
+			margin-left: -20px;
+			z-index: 10;
+			opacity: 0.5;
+		}
+	}
 
 
 	&.sp-technical {

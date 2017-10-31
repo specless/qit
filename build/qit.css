@@ -9094,7 +9094,9 @@ body {
   background-color: #F5F5F5;
   min-width: 1100px;
   box-shadow: rgba(0, 0, 0, 0.22);
-  transition: 0.5s ease background-color; }
+  transition: 0.5s ease background-color;
+  transition-delay: 1s;
+  user-select: none; }
   .sp-app .sp-container-dark, .sp-app.sp-container-dark,
   .sp-container-dark .sp-app {
     box-shadow: rgba(0, 0, 0, 0.5); }
@@ -9179,7 +9181,8 @@ body {
   height: 100%;
   opacity: 0;
   transition: 0.25s ease opacity;
-  pointer-events: none; }
+  pointer-events: none;
+  transition-delay: 1s; }
   .sp-app-loading-logo .sp-animated-logo {
     top: 50%;
     left: 50%;
@@ -9228,14 +9231,16 @@ body {
   transition: 0.5s ease transform, 0.5s ease opacity, 0s ease visibility;
   opacity: 1;
   transform: none;
-  visibility: visible; }
+  visibility: visible;
+  transition-delay: 1s; }
 
 .sp-app-org-label {
   min-height: 37.59px;
   transition: 0.5s ease transform, 0.5s ease opacity, 0s ease visibility;
   visibility: visible;
   opacity: 1;
-  transform: none; }
+  transform: none;
+  transition-delay: 1s; }
   .sp-app.sp-hide-org-label .sp-app-org-label {
     display: none; }
 
@@ -9254,7 +9259,8 @@ body {
   transition: 0.5s ease transform, 0.5s ease opacity, 0s ease visibility;
   visibility: visible;
   opacity: 1;
-  transform: none; }
+  transform: none;
+  transition-delay: 1s; }
   .sp-app.sp-hide-header .sp-app-header {
     display: none; }
 
@@ -9263,7 +9269,8 @@ body {
   transition: 0.5s ease transform, 0.5s ease opacity, 0s ease visibility;
   visibility: visible;
   opacity: 1;
-  transform: none; }
+  transform: none;
+  transition-delay: 1s; }
   .sp-app.sp-hide-app-menu .sp-app-menu {
     display: none; }
 
@@ -9272,6 +9279,7 @@ body {
   padding-top: 3.2rem;
   padding-bottom: 6.4rem;
   transition: 0.5s ease opacity;
+  transition-delay: 1s;
   opacity: 1;
   transform: none; }
   .sp-app.sp-hide-content .sp-app-content {
@@ -9658,7 +9666,7 @@ body {
     margin-left: -20px;
     z-index: 10;
     opacity: 0.5; }
-  .sp-app.sp-loading-content.sp-technical .sp-app-content .sp-app-content-main #content {
+  .sp-app.sp-loading-content.sp-technical .sp-app-content .sp-app-content-main #content, .sp-app.sp-loading-content.sp-technical .sp-app-content .sp-app-content-main .sp-preview-panel {
     display: none; }
   .sp-app.sp-loading-content.sp-technical .sp-app-content .sp-app-content-main > div:first-child > *, .sp-app.sp-loading-content.sp-technical .sp-app-content .sp-app-content-main > div:nth-child(2) > * {
     opacity: 0.25; }

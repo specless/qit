@@ -95,7 +95,7 @@
 	function createMarkup(content) {
 	    return { __html: content };
 	}
-	var Qit = (function (_super) {
+	var Qit = /** @class */ (function (_super) {
 	    __extends(Qit, _super);
 	    function Qit() {
 	        return _super !== null && _super.apply(this, arguments) || this;

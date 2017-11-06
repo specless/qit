@@ -1,332 +1,341 @@
 .sp-card {
-	@include sp-shape(rectangle);
-	@include sp-shadow(low, 0 0 .4em .07em);
-	@include sp-bg-color(white);
-	@include sp-padding(1);
-	margin: 10px;
-	position: relative;
+  @include sp-shape(rectangle);
+  @include sp-shadow(low, 0 0 .4em .07em);
+  @include sp-bg-color(white);
+  @include sp-padding(1);
+  margin: 10px;
+  position: relative;
 
+  .sp-card-thumbnail, .sp-card-hover-actions {
+    width: 100%;
+    padding-top: 50%;
+    position: relative;
+    @include sp-shadow(low, inset 0 0 .4em .07em);
+    @include sp-shape(rectangle);
 
-	.sp-card-thumbnail, .sp-card-hover-actions {
-		width: 100%;
-    	padding-top: 50%; 
-    	position: relative;
-    	@include sp-shadow(low, inset 0 0 .4em .07em);
-    	@include sp-shape(rectangle);
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-size: 10px;
+      background-image: url(assets/img/checker.png);
+      opacity: 0.05;
+      @include sp-shape(rectangle);
+    }
+  }
 
-    	&::before {
-    		content: "";
-    		position: absolute;
-    		display: block;
-    		width: 100%;
-    		height: 100%;
-	    	top: 0;
-	   		left: 0;
-    		background-size: 10px;
-			background-image: url(assets/img/checker.png);
-			opacity: 0.05;
-			@include sp-shape(rectangle);
-    	}
-	}
+  &.sp-card-square .sp-card-thumbnail {
+    padding-top: 70%;
+  }
 
-	&.sp-card-square .sp-card-thumbnail {
-		padding-top: 70%;
-	}
+  .sp-card-thumbnail-content {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
 
-	.sp-card-thumbnail-content {
-		position: absolute;
-    	top: 20px;
-   		left: 20px;
-    	bottom: 20px;
-    	right: 20px;
-    	background-size: contain;
-    	background-position: center center;
-    	background-repeat: no-repeat;
-	}
+  &.sp-card-report {
 
-	&.sp-card-report {
+    .sp-card-thumbnail-content {
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-size: cover;
+    }
 
+  }
 
-		.sp-card-thumbnail-content {
-			top: 0;
-   			left: 0;
-    		bottom: 0;
-    		right: 0;
-    		background-size: cover;
-		}
+  &.sp-card-report {
+    .sp-list &, &.sp-list {
+      &:hover {
+        .sp-card-thumbnail {
+          width: 112px;
+          height: 79px;
+          top: 0;
+          left: 0;
+          margin-bottom: -1px;
+          box-shadow: inherit;
+        }
 
-	}
+        .sp-card-color-tag {
+          top: 6px;
+          left: 6px;
+        }
+      }
+    }
+  }
 
-	&.sp-card-report {
-		.sp-list &, &.sp-list {
-			&:hover {
-				.sp-card-thumbnail {
-					width: 112px;
-					height: 79px;
-					top: 0;
-					left: 0;
-					margin-bottom: -1px;
-					box-shadow: inherit;
-				}
+  &.sp-card-item {
 
-				.sp-card-color-tag {
-					top: 6px;
-					left: 6px;
-				}
-			}
-		}
-	}
+  }
 
-	&.sp-card-item {
+  .sp-card-content {
+    @include sp-padding(3);
+  }
 
-	}
+  .sp-card-hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(#384146, 0.85) !important;
+    @include sp-shape(rectangle);
+    @include sp-shadow(low, 0 0 .4em .07em);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.25s ease opacity, 0.25s ease padding, 0.25s ease visibility, 0.25s ease top, 0.25s ease left, 0.25s ease right, 0.25s ease bottom;
+    padding: 6px;
+  }
 
-	.sp-card-content {
-		@include sp-padding(3);
-	}
+  .sp-card-main-action {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
-	.sp-card-hover {
-		position: absolute;
-		top: 0;
-		right: 0;
-		left: 0;
-		bottom: 0;
-		background-color: rgba(#384146, 0.85) !important;
-		@include sp-shape(rectangle);
-		@include sp-shadow(low, 0 0 .4em .07em);
-		visibility: hidden;
-		opacity: 0;
-		transition: 0.25s ease opacity, 0.25s ease padding, 0.25s ease visibility, 0.25s ease top, 0.25s ease left, 0.25s ease right, 0.25s ease bottom;
-		padding: 6px;
-	}
+  .sp-card-hover-actions {
+    box-shadow: none;
 
-	.sp-card-main-action {
-		position: absolute;
-		top: 75%;
-		left: 50%;
-		transform: translateX(-50%);
-	}
+    &::before {
+      display: none;
+    }
+  }
 
-	.sp-card-hover-actions {
-		box-shadow: none;
+  .sp-card-hover-action-icons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
 
-		&::before {
-			display: none;
-		}
-	}
+    .sp-preview-button {
+      display: none;
+    }
 
-	.sp-card-hover-action-icons {
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		text-align: center;
-		width: 100%;
+    > button,
+    > * > button,
+    > a.sp-button,
+    > * > a.sp-button {
+      @include sp-shape(rounded);
+      border: 2px solid $sp-color-primary !important;
+      color: white !important;
+      opacity: 0.8;
 
-		.sp-preview-button {
-			display: none;
-		}
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
 
-		> button, > * > button {
-			@include sp-shape(rounded);
-			border: 2px solid $sp-color-primary !important;
-			color: white !important;
-			opacity: 0.8;
+  &.sp-archived {
+    background-color: rgba(255, 255, 255, 0.25) !important;
+  }
 
-			&:hover {
-				opacity: 1;
-			}
-		}
-	}
+  &:hover {
+    @include sp-shadow(medium, 0 0 .4em .07em);
 
-	&.sp-archived {
-		background-color: rgba(255,255,255,0.25) !important;
-	}
+    .sp-card-hover {
+      top: -10px;
+      right: -10px;
+      left: -10px;
+      bottom: -10px;
+      visibility: visible;
+      opacity: 1;
+      padding: 16px;
+    }
 
-	&:hover {
-		@include sp-shadow(medium, 0 0 .4em .07em);
+  }
 
-		.sp-card-hover {
-			top: -10px;
-			right: -10px;
-			left: -10px;
-			bottom: -10px;
-			visibility: visible;
-			opacity: 1;
-			padding: 16px;
-		}
+  .sp-card-footer {
+    display: flex;
+    align-items: flex-end;
+  }
 
-	}
+  .sp-card-color-tag {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    @include sp-shape(rectangle);
 
-	.sp-card-footer {
-		align-items: flex-end;
-	}
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 300%;
+      height: 100%;
+      transform: translateX(-60%) rotate(-45deg);
+      pointer-events: none;
+      opacity: 0.5;
+    }
 
-	.sp-card-color-tag {
-		position: absolute;
-		width: 35px;
-		height: 35px;
-		top: 0;
-		left: 0;
-		overflow: hidden;
-		@include sp-shape(rectangle);
+    &.sp-primary::before {
+      @include sp-bg-color(primary);
+    }
 
-		&::before {
-			content: "";
-			display: inline-block;
-			width: 300%;
-			height: 100%;
-			transform: translateX(-60%) rotate(-45deg);
-			pointer-events: none;
-			opacity: 0.5;
-		}
+    &.sp-success::before {
+      @include sp-bg-color(success);
+    }
 
-		&.sp-primary::before {
-			@include sp-bg-color(primary);
-		}
+    &.sp-warning::before {
+      @include sp-bg-color(warning);
+    }
 
-		&.sp-success::before {
-			@include sp-bg-color(success);
-		}
+    &.sp-danger::before {
+      @include sp-bg-color(danger);
+    }
+  }
 
-		&.sp-warning::before {
-			@include sp-bg-color(warning);
-		}
+  .sp-list &, &.sp-list {
+    width: auto !important;
+    display: flex;
+    position: relative;
+    margin: 0;
+    align-items: center;
 
-		&.sp-danger::before {
-			@include sp-bg-color(danger);
-		}
-	}
+    .sp-card-color-tag {
+      top: 6px;
+      left: 6px;
+    }
 
+    .sp-card-thumbnail {
+      position: relative;
+      transition: 0.1s ease width, 0.1s ease left;
+    }
 
-	.sp-list &, &.sp-list {
-		width: auto !important;
-		display: flex;
-		position: relative;
-		margin: 0;
-		align-items: center;
+    &:hover {
+      z-index: 100;
 
-		.sp-card-color-tag {
-			top: 6px;
-			left: 6px;
-		}
+      .sp-card-thumbnail {
+        width: 250px;
+        height: 175px;
+        position: relative;
+        left: -10px;
+        top: -44px;
+        margin-bottom: -95px;
+        @include sp-shadow(low, 0 0 20px 3px);
+        @include sp-bg-color(white);
+        //border: 1px solid rgba(0,0,0,0.15);
+      }
 
-		.sp-card-thumbnail {
-			position: relative;
-			transition: 0.1s ease width, 0.1s ease left;
-		}
+      .sp-card-color-tag {
+        left: -4px;
+        top: -37px;
+      }
+    }
 
-		&:hover {
-			z-index:100;
+    .sp-card-thumbnail, .sp-card-hover-actions {
+      width: 112px;
+      height: 80px;
+      padding: 0;
+    }
 
-			.sp-card-thumbnail {
-				width: 250px;
-				height: 175px;
-				position: relative;
-				left: -10px;
-				top: -44px;
-				margin-bottom: -95px;
-				@include sp-shadow(low, 0 0 20px 3px);
-				@include sp-bg-color(white);
-				//border: 1px solid rgba(0,0,0,0.15);
-			}
+    .sp-card-content {
+      flex: 1;
+      padding-top: 0;
+      padding-bottom: 0;
+      .sp-card-label, .sp-card-title, .sp-card-id {
+        text-align: left !important;
+      }
+    }
 
-			.sp-card-color-tag {
-				left: -4px;
-				top: -37px;
-			}
-		}
+    .sp-card-footer {
+      display: block;
+      flex: 0.5;
 
-		.sp-card-thumbnail, .sp-card-hover-actions {
-			width: 112px;
-			height: 80px;
-			padding: 0;
-		}
+      .sp-card-footer-left {
+        @include sp-margin(2, bottom);
+      }
 
-		.sp-card-content {
-			flex: 1;
-			padding-top: 0;
-			padding-bottom: 0;
-			.sp-card-label, .sp-card-title, .sp-card-id {
-				text-align: left !important;
-			}
-		}
+      .sp-card-footer-right {
+        text-align: left !important;
+      }
 
-		.sp-card-footer {
-			display: block;
-			flex: 0.5;
+      .sp-card-footer-right {
+        margin-left: 8px !important;
+      }
+    }
 
-			.sp-card-footer-left {
-				@include sp-margin(2, bottom);
-			}
+    .sp-card-hover {
+      width: 275px;
+      //height: 112px;
+      box-sizing: border-box;
+      position: relative;
+      visibility: visible;
+      opacity: 1;
+      padding: 0 !important;
+      background-color: transparent !important;
+      box-shadow: none !important;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      //padding: 0;
 
-			.sp-card-footer-right {
-				text-align: left !important;
-			}
+      .sp-card-hover-actions {
+        position: relative;
+        right: -15px;
+        width: 275px;
+        //height: 100px;
+        // transform: scale(0.75);
+        // transform-origin: center right;
 
-			.sp-card-footer-right {
-				margin-left: 8px !important;
-			}
-		}
+        .sp-card-main-action {
+          display: none;
+        }
 
-		.sp-card-hover {
-			width: 275px;
-			//height: 112px;
-			box-sizing: border-box;
-			position: relative;
-			visibility: visible;
-			opacity: 1;
-			padding: 0 !important;
-			background-color: transparent !important;
-			box-shadow: none !important;
-			top: 0; left:0; right: 0; bottom: 0;
-			//padding: 0;
+        .sp-card-hover-action-icons {
+          > button,
+          > * > button,
+          > a.sp-button,
+          > * > a.sp-button {
+            transform: scale(0.75);
+            //margin: 0 !important;
+            //transform-origin: center right;
+            margin-right: -6px !important;
+            color: $sp-color-dark-lighter !important;
+            border-color: rgba(0, 0, 0, 0.15) !important;
+            border: none !important;
 
-			.sp-card-hover-actions {
-				position: relative;
-				right: -15px;
-				width: 275px;
-				//height: 100px;
-				// transform: scale(0.75);
-				// transform-origin: center right;
+            &:hover {
+              background-color: transparent;
+              background-image: none;
+              border-color: $sp-color-primary !important;
+              transform: scale(0.85);
+            }
 
-				.sp-card-main-action {
-					display: none;
-				}
+          }
 
-				.sp-card-hover-action-icons {
-					> button, > * > button {
-						transform: scale(0.75);
-						//margin: 0 !important;
-						//transform-origin: center right;
-						margin-right: -6px !important;
-						color: $sp-color-dark-lighter !important;
-						border-color: rgba(0,0,0,0.15) !important;
-						border: none !important;
+          > .sp-preview-button {
+            display: inline-block !important;
+          }
+        }
 
-						&:hover {
-							border-color: $sp-color-primary !important;
-							transform: scale(0.85);
-						}
+      }
 
-					}
-
-					> .sp-preview-button {
-							display: inline-block !important;
-					}
-				}
-
-			}
-
-			>.sp-card-content, >.sp-card-footer {
-				display: none;
-			}
-		}
-	}
+      > .sp-card-content, > .sp-card-footer {
+        display: none;
+      }
+    }
+  }
 }
 
 .sp-row.sp-list {
-	display: block;
-	> .sp-col {
-		width: auto !important;
-	}
+  display: block;
+  > .sp-col {
+    width: auto !important;
+  }
 }

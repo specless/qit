@@ -40,15 +40,15 @@
                 <button class="sp-small sp-rounded sp-icon-search sp-primary sp-margin-top-1 sp-margin-right-2" onclick="window.helpSearch('TEST')" style="position: absolute; top:0; right: 0;border-bottom-left-radius: 0;border-top-left-radius: 0;"></button>
               </div>
               <div class="sp-menu-header sp-small">Help Center</div>
-              <a class="sp-menu-item sp-icon-library" onclick="window.helpArticle('59e4faac2c7d3a752de121dd')">Getting Started Guide</a>
-              <a class="sp-menu-item sp-icon-knowledge" onclick="window.location.href = 'http://specless.helpscoutdocs.com/'">Knowledge Base</a>
+              <a class="sp-menu-item sp-icon-library" onclick="window.helpArticle('5a0203ab042863319924448e')">Getting Started Guide</a>
+              <a class="sp-menu-item sp-icon-knowledge" onclick="window.location.href = 'http://help.specless.tech/'">Knowledge Base</a>
               <a class="sp-menu-item sp-icon-message" onclick="window.helpContact()">Contact Support</a>
               <a class="sp-menu-item sp-icon-bug" onclick="window.helpBug()">Report a Bug</a>
               <div class="sp-menu-header sp-small">Developer Hub</div>
-              <a class="sp-menu-item sp-icon-library" onclick="window.location.href = 'http://specless.readme.io/docs'">Documentation</a>
-              <a class="sp-menu-item sp-icon-code" onclick="window.location.href = 'http://specless.readme.io/reference'">Reference Guide</a>
-              <a class="sp-menu-item sp-icon-conversation" onclick="window.location.href = 'http://specless.readme.io/discuss'">Discussion</a>
-              <a class="sp-menu-item sp-icon-blog" onclick="window.location.href = 'http://specless.readme.io/blog'">Annoucements</a>
+              <a class="sp-menu-item sp-icon-library" onclick="window.location.href = 'http://developer.specless.tech/docs'">Documentation</a>
+              <a class="sp-menu-item sp-icon-code" onclick="window.location.href = 'http://developer.specless.tech/reference'">Reference Guide</a>
+              <a class="sp-menu-item sp-icon-conversation" onclick="window.location.href = 'http://developer.specless.tech/discuss'">Discussion</a>
+              <a class="sp-menu-item sp-icon-blog" onclick="window.location.href = 'http://developer.specless.tech/blog'">Annoucements</a>
             </div>
           </div>
         </div>
@@ -901,7 +901,7 @@ var initHelpBeacon = function(userData) {
 
   window.helpSearch = function (param) {
     window.HS = null;
-    !function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!0,baseUrl:"//specless.helpscoutdocs.com/"},contact:{enabled:!0,formId:"280e8d18-b297-11e7-b466-0ec85169275a"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});
+    !function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!0,baseUrl:"//speclessdocs.helpscoutdocs.com/"},contact:{enabled:!0,formId:"eb6b3481-c409-11e7-b466-0ec85169275a"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});
     HS.beacon.config({
       color: '#00C3DC',
       modal: true,
@@ -917,7 +917,7 @@ var initHelpBeacon = function(userData) {
 
   window.helpArticle = function (articleId) {
     window.HS = null;
-    !function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!0,baseUrl:"//specless.helpscoutdocs.com/"},contact:{enabled:!0,formId:"280e8d18-b297-11e7-b466-0ec85169275a"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});
+    !function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!0,baseUrl:"//speclessdocs.helpscoutdocs.com/"},contact:{enabled:!0,formId:"eb6b3481-c409-11e7-b466-0ec85169275a"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});
     HS.beacon.config({
       color: '#00C3DC',
       modal: true,

@@ -67,6 +67,10 @@
 .sp-login-content {
   .sp-multi-input {
     width: 100%;
+
+    > i {
+      pointer-events: none;
+    }
   }
 
   .sp-login-email, .sp-login-password {
@@ -80,5 +84,6 @@
   .sp-login-field-label {
     width: 90px;
     display: inline-block;
+    pointer-events: none;
   }
 }

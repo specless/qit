@@ -44,6 +44,36 @@
       @include sp-icon-spin();
     }
   }
+
+  &.sp-icon-color-primary {
+    &::before {
+      color: $sp-color-primary;
+    }
+  }
+
+  &.sp-icon-color-success {
+    &::before {
+      color: $sp-color-success;
+    }
+  }
+
+  &.sp-icon-color-warning {
+    &::before {
+      color: $sp-color-warning;
+    }
+  }
+
+  &.sp-icon-color-danger {
+    &::before {
+      color: $sp-color-danger;
+    }
+  }
+
+  &.sp-icon-color-white {
+    &::before {
+      color: white;
+    }
+  }
 }
 
 [class^='sp-icon-after-'], [class*=' sp-icon-after-'] {
@@ -54,7 +84,38 @@
   &::after {
     @include sp-icon-styles;
   }
+
+  &.sp-icon-color-primary {
+    &::after {
+      color: $sp-color-primary;
+    }
+  }
+
+  &.sp-icon-color-success {
+    &::after {
+      color: $sp-color-success;
+    }
+  }
+
+  &.sp-icon-color-warning {
+    &::after {
+      color: $sp-color-warning;
+    }
+  }
+
+  &.sp-icon-color-danger {
+    &::after {
+      color: $sp-color-danger;
+    }
+  }
+
+  &.sp-icon-color-white {
+    &::after {
+      color: white;
+    }
+  }
 }
+
 
 @keyframes iconSpin {
  0% {

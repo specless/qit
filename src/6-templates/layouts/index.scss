@@ -29,8 +29,8 @@ body {
 	@include sp-bg-color('light-lighter');
 	min-width: 1100px;
 	@include sp-shadow('medium');
-	transition: 0.5s ease background-color;
-	transition-delay: 1s;
+	//transition: 0.5s ease background-color;
+	//transition-delay: 1s;
 	user-select: none;
 
 	&.sp-initializing {
@@ -159,7 +159,7 @@ body {
 	opacity: 0;
 	//transition: 0.25s ease opacity;
 	pointer-events: none;
-	transition-delay: 1s;
+	//transition-delay: 1s;
 	
 	.sp-animated-logo {
 		top: 50%;
@@ -242,7 +242,7 @@ body {
 	opacity: 1;
 	transform: none;
 	visibility: visible;
-	transition-delay: 1s;
+	//transition-delay: 1s;
 }
 
 .sp-app-org-label {
@@ -251,7 +251,7 @@ body {
 	visibility: visible;
 	opacity: 1;
 	transform: none;
-	transition-delay: 1s;
+	//transition-delay: 1s;
 
 	.sp-app.sp-hide-org-label & {
 		display: none;
@@ -275,7 +275,7 @@ body {
 	visibility: visible;
 	opacity: 1;
 	transform: none;
-	transition-delay: 1s;
+	//transition-delay: 1s;
 
 	.sp-app.sp-hide-header & {
 		display: none;
@@ -288,7 +288,7 @@ body {
 	visibility: visible;
 	opacity: 1;
 	transform: none;
-	transition-delay: 1s;
+	//transition-delay: 1s;
 
 	.sp-app.sp-hide-app-menu & {
 		display: none;
@@ -300,7 +300,7 @@ body {
 	@include sp-padding(4, top);
 	@include sp-padding(5, bottom);
 	//transition: 0.5s ease opacity;
-	transition-delay: 1s;
+	//transition-delay: 1s;
 	opacity: 1;
 	transform: none;
 

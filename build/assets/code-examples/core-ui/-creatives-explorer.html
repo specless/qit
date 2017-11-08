@@ -64,8 +64,12 @@
             <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
               <div class="sp-menu-header sp-small" style="opacity: 1">Specless Sync<span class="sp-color-success sp-float-right">Connected</span></div>
               <!-- <a class="sp-menu-item">Live Reload</a> -->
-              <a class="sp-menu-item sp-small">Live Reload<input id="live-reload" type="checkbox" checked class="sp-align-right"/><label for="live-reload" class="sp-float-right sp-padding-0" style="margin-right: 20px"></label></a>
-              <a class="sp-menu-item sp-small">Listen on Port<input type="text" value="8080" class="sp-align-right sp-width-3 sp-margin-left-3"/><div class="sp-button sp-primary sp-float-right sp-icon-reload"></div></a>
+              <div class="sp-margin-top-1 sp-padding-vertical-1 sp-padding-horizontal-2 sp-small sp-color-base sp-font-weight-semi-bold">Live Reload<input id="live-reload" type="checkbox" checked class="sp-align-right"/><label for="live-reload" class="sp-float-right sp-padding-0" style="margin-right: 20px"></label></div>
+              <div class="sp-padding-vertical-1 sp-padding-horizontal-2 sp-small sp-color-base sp-font-weight-semi-bold" style="display: flex; align-items: center">
+                <div style="flex: 1">Local Host Port</div>
+                <input type="text" value="8080" class="sp-align-right sp-width-3 sp-margin-right-1"/>
+                <div class="sp-button sp-primary sp-icon-reload"></div>
+              </div>
               <!-- <div class="sp-menu-item sp-small"><div class="sp-button sp-block">Install Specless Sync</div></div> -->
               <div class="sp-menu-header sp-small">Recently Modified Creatives</div>
               <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Some Creative<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
@@ -117,14 +121,16 @@
         </h5>
         <div class="sp-selector sp-margin-left-2 sp-small">
           <!-- <span class="">Test</span> -->
-          <button class="sp-selector-trigger sp-icon-status sp-small sp-font-color-white sp-sync-enabled">Live Version<i class="sp-inline-icon-dropdown sp-margin-left-1" style="position: relative; top: -1px"></i></button>
+          <button class="sp-selector-trigger sp-icon-live sp-icon-color-success sp-small sp-font-color-white sp-sync-enabled">Live Version<i class="sp-inline-icon-dropdown sp-margin-left-1" style="position: relative; top: -1px"></i></button>
           <div class="sp-selector-overlay">
             <div class="sp-menu-dropdown sp-overlay sp-width-8 sp-color-contrast" style="left: auto; right: 0; transform: none;">
-              <a href="-creatives-explorer.html" class="sp-menu-item sp-icon-status sp-state-active">Live Version</a>
-              <a href="-creatives-explorer-draft.html" class="sp-menu-item sp-icon-circle">Draft Version</a>
+              <div class="sp-menu-header sp-small">Uploaded Versions</div>
+              <a href="-creatives-explorer.html" class="sp-menu-item sp-icon-live sp-state-active sp-icon-color-success">Live Version</a>
+              <a href="-creatives-explorer-draft.html" class="sp-menu-item sp-icon-draft sp-icon-color-warning">Draft Version</a>
+              <a href="-creatives-explorer-vhistory.html" class="sp-menu-item sp-icon-version">Select From Version History...</a>
+              <div class="sp-menu-header sp-small">External Versions</div>
               <a href="-creatives-explorer-sync.html" class="sp-menu-item sp-icon-lightning">Specless Sync</a>
               <a href="-creatives-explorer-github.html" class="sp-menu-item sp-icon-branch sp-state-disabled">Git Sync</a>
-              <a href="-creatives-explorer-vhistory.html" class="sp-menu-item sp-icon-version sp-border-top-base">Select From Version History...</a>
               <!-- <div class="sp-align-center sp-container sp-alt-one sp-rectangle">
                 <a class="sp-button sp-icon-upload sp-success sp-rounded sp-small sp-margin-1">Publish Working Version</a>
               </div> -->

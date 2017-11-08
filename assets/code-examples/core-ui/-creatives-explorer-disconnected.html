@@ -59,24 +59,21 @@
           </div>
         </div>
         <div class="sp-selector sp-margin-left-2">
-          <button class="sp-selector-trigger sp-icon-after-lightning sp-rounded sp-small sp-minimal sp-success"></button>
+          <button class="sp-selector-trigger sp-icon-after-lightning sp-rounded sp-small sp-minimal sp-danger"></button>
           <div class="sp-selector-overlay">
             <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
-              <div class="sp-menu-header sp-small" style="opacity: 1">Specless Sync<span class="sp-color-success sp-float-right">Connected</span></div>
+              <div class="sp-menu-header sp-small" style="opacity: 1">Specless Sync<span class="sp-color-danger sp-float-right">Disconnected</span></div>
               <!-- <a class="sp-menu-item">Live Reload</a> -->
-              <div class="sp-margin-top-1 sp-padding-vertical-1 sp-padding-horizontal-2 sp-small sp-color-base sp-font-weight-semi-bold">Live Reload<input id="live-reload" type="checkbox" checked class="sp-align-right"/><label for="live-reload" class="sp-float-right sp-padding-0" style="margin-right: 20px"></label></div>
+              <div class="sp-margin-top-1 sp-padding-vertical-1 sp-padding-horizontal-2 sp-small sp-color-muted sp-font-weight-semi-bold">Live Reload<input id="live-reload" type="checkbox" disabled checked class="sp-align-right"/><label for="live-reload" class="sp-float-right sp-padding-0" style="margin-right: 20px"></label></div>
               <div class="sp-padding-vertical-1 sp-padding-horizontal-2 sp-small sp-color-base sp-font-weight-semi-bold" style="display: flex; align-items: center">
                 <div style="flex: 1">Local Host Port</div>
                 <input type="text" value="8080" class="sp-align-right sp-width-3 sp-margin-right-1"/>
                 <div class="sp-button sp-primary sp-icon-reload"></div>
               </div>
+              <div class="sp-padding-bottom-1 sp-padding-horizontal-2 sp-align-right"><a style="font-size: 12px" onclick="window.helpArticle('5a0363bc2c7d3a272c0d81a3')">Still Can't Connect?</a></div>
               <!-- <div class="sp-menu-item sp-small"><div class="sp-button sp-block">Install Specless Sync</div></div> -->
-              <div class="sp-menu-header sp-small">Recently Modified Creatives</div>
-              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Some Creative<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
-              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>My Awesome Ad<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
-              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Another Creative<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
-              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Coca-Cola Ad<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
-              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Samsung Galaxy Note 8<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <div class="sp-menu-header sp-small">Don't Have Sync Installed?</div>
+              <div class="sp-padding-vertical-1 sp-padding-horizontal-2"><a class="sp-button sp-block sp-icon-download sp-small" onclick="window.helpArticle('5a03543d0428633199244dcb')">Download Sync</a></div>
             </div>
           </div>
         </div>
@@ -121,16 +118,14 @@
         </h5>
         <div class="sp-selector sp-margin-left-2 sp-small">
           <!-- <span class="">Test</span> -->
-          <button class="sp-selector-trigger sp-icon-live sp-icon-color-success sp-small sp-font-color-white sp-sync-enabled">Live Version<i class="sp-inline-icon-dropdown sp-margin-left-1" style="position: relative; top: -1px"></i></button>
+          <button class="sp-selector-trigger sp-icon-status sp-small sp-font-color-white sp-sync-enabled">Live Version<i class="sp-inline-icon-dropdown sp-margin-left-1" style="position: relative; top: -1px"></i></button>
           <div class="sp-selector-overlay">
             <div class="sp-menu-dropdown sp-overlay sp-width-8 sp-color-contrast" style="left: auto; right: 0; transform: none;">
-              <div class="sp-menu-header sp-small">Uploaded Versions</div>
-              <a href="-creatives-explorer.html" class="sp-menu-item sp-icon-live sp-state-active sp-icon-color-success">Live Version</a>
-              <a href="-creatives-explorer-draft.html" class="sp-menu-item sp-icon-draft sp-icon-color-warning">Draft Version</a>
-              <a href="-creatives-explorer-vhistory.html" class="sp-menu-item sp-icon-version">Select From Version History...</a>
-              <div class="sp-menu-header sp-small">External Versions</div>
+              <a href="-creatives-explorer.html" class="sp-menu-item sp-icon-status sp-state-active">Live Version</a>
+              <a href="-creatives-explorer-draft.html" class="sp-menu-item sp-icon-circle">Draft Version</a>
               <a href="-creatives-explorer-sync.html" class="sp-menu-item sp-icon-lightning">Specless Sync</a>
               <a href="-creatives-explorer-github.html" class="sp-menu-item sp-icon-branch sp-state-disabled">Git Sync</a>
+              <a href="-creatives-explorer-vhistory.html" class="sp-menu-item sp-icon-version sp-border-top-base">Select From Version History...</a>
               <!-- <div class="sp-align-center sp-container sp-alt-one sp-rectangle">
                 <a class="sp-button sp-icon-upload sp-success sp-rounded sp-small sp-margin-1">Publish Working Version</a>
               </div> -->
@@ -259,12 +254,18 @@
           <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Layouts</span>
           <button tabindex="0" class="sp-icon-circle-plus sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
         </div>
-        <div class="sp-app-content-sidebar-menu-content">
-          <div class="sp-padding-2"">
-            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/400x150/0096a9/0096a9);">
+        <div class="sp-app-content-sidebar-menu-content sp-color-muted">
+          <!-- <div class="sp-padding-2">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="display: none;background-image: url(http://via.placeholder.com/400x150/0096a9/0096a9);">
               <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
             </div>
-            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Default (No Layout)</div>
+            <div class="sp-small sp-align-center sp-font-weight-semi-bold">None Matched<br><span class="sp-color-muted">No Available Layout</span></div>
+          </div> -->
+          <div class="sp-padding-2 sp-bg-overlay-light-1 sp-state-active sp-color-primary">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="display: none;">
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-align-center sp-font-weight-semi-bold">None Matched<br><span class="sp-color-muted sp-color-warning">No Available Layout</span></div>
           </div>
           <div class="sp-padding-2"">
             <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/400x150/0096a9/0096a9);">
@@ -290,7 +291,7 @@
             </div>
             <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Small</div>
           </div>
-          <div class="sp-padding-2 sp-bg-overlay-light-1 sp-color-primary sp-state-active">
+          <div class="sp-padding-2">
             <div class="sp-creative-thumbnail sp-height-3 sp-border-solid sp-border-thin sp-border-color-primary" style="background-image: url(http://via.placeholder.com/350x70/0096a9/0096a9);">
               <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
             </div>

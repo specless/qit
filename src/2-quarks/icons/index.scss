@@ -56,6 +56,18 @@
   }
 }
 
+.sp-icon-live, .sp-icon-after-live {
+  &::before {
+    color: $sp-color-success !important;
+  }
+}
+
+.sp-icon-draft, .sp-icon-after-draft {
+  &::before {
+    color: $sp-color-warning !important;
+  }
+}
+
 @keyframes iconSpin {
  0% {
   transform: rotate(0deg);

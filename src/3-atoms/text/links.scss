@@ -1,21 +1,28 @@
 a:not(.sp-menu-item):not(.sp-button) {
 	@include sp-font-color(primary);
+	opacity: 0.75;
+	@include sp-border(thin, dotted, bottom);
+	border-bottom-color: transparent;
 
 	&:visited {
 		@include sp-font-color(primary);
+		opacity: 0.8;
+		border-bottom-color: transparent;
 	}
 
 	@include sp-state(disabled) {
-
+		opacity: 0.5;
+		border-bottom-color: transparent;
 	}
 
 	@include sp-state(hover) {
 		@include sp-font-color(primary);
-		@include sp-border(thin, dotted, bottom);
-		@include sp-border-color(primary, bottom);
+		opacity: 1;
+		border-bottom-color: transparent;
 	}
 
 	@include sp-state(focus) {
+		opacity: 1;
 		@include sp-border(thin, dotted, bottom);
 		@include sp-border-color(primary, bottom);
 	}

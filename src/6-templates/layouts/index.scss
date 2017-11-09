@@ -535,6 +535,30 @@ body {
 	}
 }
 
+.sp-sync-connected {
+
+	.sp-sync-hide-connected {
+		display: none !important;
+	}
+
+	.sp-sync-disable-connected {
+		opacity: 0.25 !important;
+		pointer-events: none !important;
+	}
+}
+
+.sp-sync-disconnected {
+
+	.sp-sync-hide-disconnected {
+		display: none !important;
+	}
+
+	.sp-sync-disable-disconnected {
+		opacity: 0.25 !important;
+		pointer-events: none !important;
+	}
+}
+
 .ui-resizable-s {
 	margin-top: 6.4px;
 }

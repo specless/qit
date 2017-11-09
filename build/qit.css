@@ -7490,23 +7490,38 @@ h6 {
   font-weight: 600; }
 
 a:not(.sp-menu-item):not(.sp-button) {
-  color: #0096a9; }
+  color: #0096a9;
+  opacity: 0.75;
+  border-bottom-width: 1px;
+  border-bottom-style: dotted;
+  border-bottom-color: transparent; }
   a:not(.sp-menu-item):not(.sp-button) .sp-container-dark, a:not(.sp-menu-item):not(.sp-button).sp-container-dark,
   .sp-container-dark a:not(.sp-menu-item):not(.sp-button) {
     color: #00C3DC; }
   a:not(.sp-menu-item):not(.sp-button):visited {
-    color: #0096a9; }
+    color: #0096a9;
+    opacity: 0.8;
+    border-bottom-color: transparent; }
     a:not(.sp-menu-item):not(.sp-button):visited .sp-container-dark, a:not(.sp-menu-item):not(.sp-button):visited.sp-container-dark,
     .sp-container-dark a:not(.sp-menu-item):not(.sp-button):visited {
       color: #00C3DC; }
   a:not(.sp-menu-item):not(.sp-button):disabled, a:not(.sp-menu-item):not(.sp-button).sp-state-disabled {
-    pointer-events: none; }
+    pointer-events: none;
+    opacity: 0.5;
+    border-bottom-color: transparent; }
   a:not(.sp-menu-item):not(.sp-button):hover, a:not(.sp-menu-item):not(.sp-button).sp-state-hover {
-    color: #0096a9; }
+    color: #0096a9;
+    opacity: 1;
+    border-bottom-color: transparent; }
     a:not(.sp-menu-item):not(.sp-button):hover .sp-container-dark, a:not(.sp-menu-item):not(.sp-button):hover.sp-container-dark,
     .sp-container-dark a:not(.sp-menu-item):not(.sp-button):hover, a:not(.sp-menu-item):not(.sp-button).sp-state-hover .sp-container-dark, a:not(.sp-menu-item):not(.sp-button).sp-state-hover.sp-container-dark,
     .sp-container-dark a:not(.sp-menu-item):not(.sp-button).sp-state-hover {
       color: #00C3DC; }
+  a:not(.sp-menu-item):not(.sp-button):focus, a:not(.sp-menu-item):not(.sp-button).sp-state-focus {
+    opacity: 1;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: #00C3DC; }
 
 p.sp-contrast {
   color: rgba(0, 0, 0, 0.8); }
@@ -9476,6 +9491,20 @@ body {
       .sp-container-dark .ui-resizable-s:hover::before, .ui-resizable-se:hover::before .sp-container-dark, .ui-resizable-se:hover::before.sp-container-dark,
       .sp-container-dark .ui-resizable-se:hover::before {
         color: #00C3DC; }
+
+.sp-sync-connected .sp-hide-sync-connected {
+  display: none !important; }
+
+.sp-sync-connected .sp-disable-sync-connected {
+  opacity: 0.7;
+  pointer-events: none !important; }
+
+.sp-sync-disconnected .sp-hide-sync-disconnected {
+  display: none !important; }
+
+.sp-sync-disconnected .sp-disable-sync-disconnected {
+  opacity: 0.7;
+  pointer-events: none !important; }
 
 .ui-resizable-s {
   margin-top: 6.4px; }

@@ -9492,18 +9492,18 @@ body {
       .sp-container-dark .ui-resizable-se:hover::before {
         color: #00C3DC; }
 
-.sp-sync-connected .sp-hide-sync-connected {
+.sp-sync-connected .sp-sync-hide-connected {
   display: none !important; }
 
-.sp-sync-connected .sp-disable-sync-connected {
-  opacity: 0.7;
+.sp-sync-connected .sp-sync-disable-connected {
+  opacity: 0.25 !important;
   pointer-events: none !important; }
 
-.sp-sync-disconnected .sp-hide-sync-disconnected {
+.sp-sync-disconnected .sp-sync-hide-disconnected {
   display: none !important; }
 
-.sp-sync-disconnected .sp-disable-sync-disconnected {
-  opacity: 0.7;
+.sp-sync-disconnected .sp-sync-disable-disconnected {
+  opacity: 0.25 !important;
   pointer-events: none !important; }
 
 .ui-resizable-s {

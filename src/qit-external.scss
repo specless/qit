@@ -511,3 +511,155 @@ a:not(.btn):not(.brand) {
 // 		@include sp-tactile-minimal;
 // 	}
 // }
+
+/* Tomorrow Night Eighties Theme */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+  color: #999999 !important;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+  color: #f2777a !important;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+  color: #f99157 !important;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+  color: #ffcc66 !important;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+  color: #99cc99 !important;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+  color: #6699cc !important;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+  color: #cc99cc !important;
+}
+
+.hljs {
+  display: block !important;
+  overflow-x: auto !important;
+  background: #2d2d2d !important;
+  color: #cccccc !important;
+  padding: 0.5em !important;
+}
+
+.hljs-emphasis {
+  font-style: italic !important;
+}
+
+.hljs-strong {
+  font-weight: bold !important;
+}
+
+body.page {
+	font-family: $sp-font-primary, $sp-font-alt;
+  	-webkit-font-smoothing: antialiased;
+
+	.header {
+		background-color: white;
+	}
+
+	.nav {
+		@include sp-font-size(base);
+		@include sp-font-weight(base);
+	}
+
+	> footer {
+		display: none !important;
+	}
+
+	.navigation-sidebar {
+		.vertical-nav {
+			@include sp-font-size(base);
+			@include sp-font-weight(base);
+		}
+	}
+
+	.guide-content {
+
+
+		.show-navigation {
+
+		}
+
+		.story-title {
+
+		}
+
+
+		.wiki-content {
+			font-family: $sp-font-primary, $sp-font-alt;
+	  		-webkit-font-smoothing: antialiased;
+	  		@include sp-font-size(base);
+	  		@include sp-font-weight(base);
+
+	  		p {
+	  			@include sp-font-size(base);
+	  			@include sp-font-weight(base);
+	  		}
+
+	  		h1 {
+	  			@include sp-font-header(h2);
+	  			@include sp-font-color(contrast);
+	  		}
+
+	  		h2 {
+	  			@include sp-font-header(h4);
+	  			@include sp-font-color(contrast);
+	  		}
+
+	  		h3 {
+	  			@include sp-font-header(h5);
+	  		}
+
+	  		h4 {
+	  			@include sp-font-label(large);
+	  		}
+
+	  		h5 {
+	  			@include sp-font-header(h5);
+	  			font-family: monospace;
+	  		}
+
+	  		hr {
+	  			
+	  		}
+		}
+	}
+}

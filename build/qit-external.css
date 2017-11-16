@@ -4244,3 +4244,123 @@ a:not(.btn):not(.brand) {
   #sidebar .nav-list .active a:hover {
     font-weight: 600;
     color: #007f90; }
+
+/* Tomorrow Night Eighties Theme */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+  color: #999999 !important; }
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+  color: #f2777a !important; }
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+  color: #f99157 !important; }
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+  color: #ffcc66 !important; }
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+  color: #99cc99 !important; }
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+  color: #6699cc !important; }
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+  color: #cc99cc !important; }
+
+.hljs {
+  display: block !important;
+  overflow-x: auto !important;
+  background: #2d2d2d !important;
+  color: #cccccc !important;
+  padding: 0.5em !important; }
+
+.hljs-emphasis {
+  font-style: italic !important; }
+
+.hljs-strong {
+  font-weight: bold !important; }
+
+body.page {
+  font-family: Source Sans Pro, sans-serif;
+  -webkit-font-smoothing: antialiased; }
+  body.page .header {
+    background-color: white; }
+  body.page .nav {
+    font-size: 15px;
+    font-weight: 400; }
+  body.page > footer {
+    display: none !important; }
+  body.page .navigation-sidebar .vertical-nav {
+    font-size: 15px;
+    font-weight: 400; }
+  body.page .guide-content .wiki-content {
+    font-family: Source Sans Pro, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 15px;
+    font-weight: 400; }
+    body.page .guide-content .wiki-content p {
+      font-size: 15px;
+      font-weight: 400; }
+    body.page .guide-content .wiki-content h1 {
+      font-size: 2rem;
+      line-height: 2.53rem;
+      font-weight: 300;
+      color: rgba(0, 0, 0, 0.8); }
+      body.page .guide-content .wiki-content h1 .sp-container-dark, body.page .guide-content .wiki-content h1.sp-container-dark,
+      .sp-container-dark body.page .guide-content .wiki-content h1 {
+        color: #FFFFFF; }
+    body.page .guide-content .wiki-content h2 {
+      font-size: 1.33rem;
+      line-height: 1.67rem;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.8); }
+      body.page .guide-content .wiki-content h2 .sp-container-dark, body.page .guide-content .wiki-content h2.sp-container-dark,
+      .sp-container-dark body.page .guide-content .wiki-content h2 {
+        color: #FFFFFF; }
+    body.page .guide-content .wiki-content h3 {
+      font-size: 1.23rem;
+      line-height: 1.53rem;
+      font-weight: 600; }
+    body.page .guide-content .wiki-content h4 {
+      font-family: Source Sans Pro, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 1rem;
+      line-height: 1.1;
+      letter-spacing: .067em;
+      font-weight: 600; }
+    body.page .guide-content .wiki-content h5 {
+      font-size: 1.23rem;
+      line-height: 1.53rem;
+      font-weight: 600;
+      font-family: monospace; }

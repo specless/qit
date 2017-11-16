@@ -172,7 +172,7 @@ body {
 .sp-app-loader {
 	height: 0px;
 	//transition: 0.5s ease height;
-	overflow: hidden;
+	overflow: visible;
 	position: relative;
 	z-index: 100;
 	background-color: black !important;

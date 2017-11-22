@@ -1,0 +1,183 @@
+.sp-checkbox {
+  @include sp-state(disabled) {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  @include sp-primary {
+    > .sp-checkbox-input {
+      + .sp-checkbox-default {
+        &::before {
+          @include sp-font-color(primary);
+        }
+
+        &::after {
+          @include sp-border-color(primary);
+        }
+      }
+    }
+    > * {
+      @include sp-font-color(primary);
+    }
+  }
+
+  @include sp-success {
+    > .sp-checkbox-input {
+      + .sp-checkbox-default {
+        &::before {
+          @include sp-font-color(success);
+        }
+
+        &::after {
+          @include sp-border-color(success);
+        }
+      }
+    }
+    > * {
+      @include sp-font-color(success);
+    }
+  }
+
+  @include sp-warning {
+    > .sp-checkbox-input {
+      + .sp-checkbox-default {
+        &::before {
+          @include sp-font-color(warning);
+        }
+
+        &::after {
+          @include sp-border-color(warning);
+        }
+      }
+    }
+    > * {
+      @include sp-font-color(warning);
+    }
+  }
+
+  @include sp-danger {
+    > .sp-checkbox-input {
+      + .sp-checkbox-default {
+        &::before {
+          @include sp-font-color(danger);
+        }
+
+        &::after {
+          @include sp-border-color(danger);
+        }
+      }
+    }
+    > * {
+      @include sp-font-color(danger);
+    }
+  }
+
+  @include sp-small {
+    > .sp-checkbox-input {
+      + .sp-checkbox-default {
+        @include sp-font-size(small);
+        height: 17px;
+        width: 17px;
+        &:before {
+          @include sp-icon-size(small);
+          width: 15px;
+          height: 15px;
+          top: -3px;
+        }
+        &:after {
+          @include sp-icon-size(small);
+          width: 15px;
+          height: 15px;
+          top: -1px;
+        }
+      }
+    }
+    > * {
+      @include sp-font-size(small);
+    }
+  }
+
+  @include sp-large {
+    > .sp-checkbox-input {
+      + .sp-checkbox-default {
+        height: 22px;
+        width: 22px;
+        &:before {
+          @include sp-icon-size(large);
+          width: 20px;
+          height: 20px;
+        }
+        &:after {
+          @include sp-icon-size(large);
+          width: 20px;
+          height: 20px;
+          border-width: 2px;
+          top: -1px;
+        }
+      }
+    }
+    > * {
+      @include sp-font-size(large);
+    }
+  }
+  > .sp-checkbox-input {
+    display: none;
+    &:checked + .sp-checkbox-default:before {
+      opacity: 1;
+      @include sp-font-color(primary);
+    }
+  }
+  > .sp-checkbox-default {
+    @include sp-icon-styles(check);
+    @include sp-icon-size();
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border: thin transparent solid;
+    box-sizing: border-box;
+    &:before {
+      z-index: 2;
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      border: thin transparent solid;
+      opacity: 0;
+      content: "\F015";
+      position: relative;
+      top: -2px;
+    }
+
+    &:after {
+      content: "";
+      @include sp-shape(rectangle);
+      display: inline-block;
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 18px;
+      height: 18px;
+      border: 1px solid $sp-shade-dark-3;
+      background-color: $sp-shade-light-3;
+    }
+    @include sp-state(dark) {
+      &:after {
+        border: 1px solid $sp-shade-light-3;
+        background-color: $sp-shade-dark-3;
+      }
+    }
+
+    @include sp-state(hover) {
+      &:after {
+        background-color: $sp-shade-light-4;
+        border-color: $sp-shade-dark-4;
+      }
+      @include sp-state(dark) {
+        &:after {
+          border-color: $sp-shade-light-4;
+          background-color: $sp-shade-dark-4;
+        }
+      }
+    }
+  }
+}

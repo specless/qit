@@ -2015,7 +2015,7 @@ html {
 .sp-icon-chart-bar::before, .sp-icon-after-chart-bar::after, .sp-inline-icon-chart-bar::before {
   content: "\F014"; }
 
-[type='checkbox'] + label:before, .sp-icon-check::before, .sp-icon-after-check::after, .sp-inline-icon-check::before {
+[type='checkbox'] + label:before, .sp-checkbox > .sp-checkbox-default, .sp-icon-check::before, .sp-icon-after-check::after, .sp-inline-icon-check::before {
   content: "\F015"; }
 
 .sp-data-table .sp-data-table-row-expanded .sp-inline-icon-placeholder::before, .sp-icon-circle-arrow-down::before, .sp-icon-after-circle-arrow-down::after, .sp-inline-icon-circle-arrow-down::before {
@@ -7308,6 +7308,169 @@ input[type='radio'] {
   input[type='radio'].sp-large:checked:after, .sp-large input[type='radio']:checked:after {
     transform: translate(-35%, -50%); }
 
+.sp-checkbox:disabled, .sp-checkbox.sp-state-disabled {
+  pointer-events: none;
+  opacity: 0.5;
+  pointer-events: none; }
+
+.sp-checkbox.sp-primary > .sp-checkbox-input + .sp-checkbox-default::before {
+  color: #0096a9; }
+  .sp-checkbox.sp-primary > .sp-checkbox-input + .sp-checkbox-default::before .sp-container-dark, .sp-checkbox.sp-primary > .sp-checkbox-input + .sp-checkbox-default::before.sp-container-dark,
+  .sp-container-dark .sp-checkbox.sp-primary > .sp-checkbox-input + .sp-checkbox-default::before {
+    color: #00C3DC; }
+
+.sp-checkbox.sp-primary > .sp-checkbox-input + .sp-checkbox-default::after {
+  border-color: #00C3DC; }
+
+.sp-checkbox.sp-primary > * {
+  color: #0096a9; }
+  .sp-checkbox.sp-primary > * .sp-container-dark, .sp-checkbox.sp-primary > *.sp-container-dark,
+  .sp-container-dark .sp-checkbox.sp-primary > * {
+    color: #00C3DC; }
+
+.sp-checkbox.sp-success > .sp-checkbox-input + .sp-checkbox-default::before {
+  color: #00af71; }
+  .sp-checkbox.sp-success > .sp-checkbox-input + .sp-checkbox-default::before .sp-container-dark, .sp-checkbox.sp-success > .sp-checkbox-input + .sp-checkbox-default::before.sp-container-dark,
+  .sp-container-dark .sp-checkbox.sp-success > .sp-checkbox-input + .sp-checkbox-default::before {
+    color: #00EC99; }
+
+.sp-checkbox.sp-success > .sp-checkbox-input + .sp-checkbox-default::after {
+  border-color: #00EC99; }
+
+.sp-checkbox.sp-success > * {
+  color: #00af71; }
+  .sp-checkbox.sp-success > * .sp-container-dark, .sp-checkbox.sp-success > *.sp-container-dark,
+  .sp-container-dark .sp-checkbox.sp-success > * {
+    color: #00EC99; }
+
+.sp-checkbox.sp-warning > .sp-checkbox-input + .sp-checkbox-default::before {
+  color: #ff1c04; }
+  .sp-checkbox.sp-warning > .sp-checkbox-input + .sp-checkbox-default::before .sp-container-dark, .sp-checkbox.sp-warning > .sp-checkbox-input + .sp-checkbox-default::before.sp-container-dark,
+  .sp-container-dark .sp-checkbox.sp-warning > .sp-checkbox-input + .sp-checkbox-default::before {
+    color: #FF4A37; }
+
+.sp-checkbox.sp-warning > .sp-checkbox-input + .sp-checkbox-default::after {
+  border-color: #FF4A37; }
+
+.sp-checkbox.sp-warning > * {
+  color: #ff1c04; }
+  .sp-checkbox.sp-warning > * .sp-container-dark, .sp-checkbox.sp-warning > *.sp-container-dark,
+  .sp-container-dark .sp-checkbox.sp-warning > * {
+    color: #FF4A37; }
+
+.sp-checkbox.sp-danger > .sp-checkbox-input + .sp-checkbox-default::before {
+  color: #f00036; }
+  .sp-checkbox.sp-danger > .sp-checkbox-input + .sp-checkbox-default::before .sp-container-dark, .sp-checkbox.sp-danger > .sp-checkbox-input + .sp-checkbox-default::before.sp-container-dark,
+  .sp-container-dark .sp-checkbox.sp-danger > .sp-checkbox-input + .sp-checkbox-default::before {
+    color: #FF2455; }
+
+.sp-checkbox.sp-danger > .sp-checkbox-input + .sp-checkbox-default::after {
+  border-color: #FF2455; }
+
+.sp-checkbox.sp-danger > * {
+  color: #f00036; }
+  .sp-checkbox.sp-danger > * .sp-container-dark, .sp-checkbox.sp-danger > *.sp-container-dark,
+  .sp-container-dark .sp-checkbox.sp-danger > * {
+    color: #FF2455; }
+
+.sp-checkbox.sp-small > .sp-checkbox-input + .sp-checkbox-default, .sp-small .sp-checkbox > .sp-checkbox-input + .sp-checkbox-default {
+  font-size: 0.87rem;
+  height: 17px;
+  width: 17px; }
+  .sp-checkbox.sp-small > .sp-checkbox-input + .sp-checkbox-default:before, .sp-small .sp-checkbox > .sp-checkbox-input + .sp-checkbox-default:before {
+    font-size: 1.27rem;
+    width: 15px;
+    height: 15px;
+    top: -3px; }
+  .sp-checkbox.sp-small > .sp-checkbox-input + .sp-checkbox-default:after, .sp-small .sp-checkbox > .sp-checkbox-input + .sp-checkbox-default:after {
+    font-size: 1.27rem;
+    width: 15px;
+    height: 15px;
+    top: -1px; }
+
+.sp-checkbox.sp-small > *, .sp-small .sp-checkbox > * {
+  font-size: 0.87rem; }
+
+.sp-checkbox.sp-large > .sp-checkbox-input + .sp-checkbox-default, .sp-large .sp-checkbox > .sp-checkbox-input + .sp-checkbox-default {
+  height: 22px;
+  width: 22px; }
+  .sp-checkbox.sp-large > .sp-checkbox-input + .sp-checkbox-default:before, .sp-large .sp-checkbox > .sp-checkbox-input + .sp-checkbox-default:before {
+    font-size: 1.67rem;
+    width: 20px;
+    height: 20px; }
+  .sp-checkbox.sp-large > .sp-checkbox-input + .sp-checkbox-default:after, .sp-large .sp-checkbox > .sp-checkbox-input + .sp-checkbox-default:after {
+    font-size: 1.67rem;
+    width: 20px;
+    height: 20px;
+    border-width: 2px;
+    top: -1px; }
+
+.sp-checkbox.sp-large > *, .sp-large .sp-checkbox > * {
+  font-size: 1.2rem; }
+
+.sp-checkbox > .sp-checkbox-input {
+  display: none; }
+  .sp-checkbox > .sp-checkbox-input:checked + .sp-checkbox-default:before {
+    opacity: 1;
+    color: #0096a9; }
+    .sp-checkbox > .sp-checkbox-input:checked + .sp-checkbox-default:before .sp-container-dark, .sp-checkbox > .sp-checkbox-input:checked + .sp-checkbox-default:before.sp-container-dark,
+    .sp-container-dark .sp-checkbox > .sp-checkbox-input:checked + .sp-checkbox-default:before {
+      color: #00C3DC; }
+
+.sp-checkbox > .sp-checkbox-default {
+  font-family: 'Icon Font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Better positioning */
+  display: inline-block;
+  font-size: 1.47rem;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border: thin transparent solid;
+  box-sizing: border-box; }
+  .sp-checkbox > .sp-checkbox-default:before {
+    z-index: 2;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    border: thin transparent solid;
+    opacity: 0;
+    content: "\F015";
+    position: relative;
+    top: -2px; }
+  .sp-checkbox > .sp-checkbox-default:after {
+    content: "";
+    border-radius: 4px;
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.22);
+    background-color: rgba(255, 255, 255, 0.27); }
+  .sp-checkbox > .sp-checkbox-default .sp-container-dark:after, .sp-checkbox > .sp-checkbox-default.sp-container-dark:after,
+  .sp-container-dark .sp-checkbox > .sp-checkbox-default:after {
+    border: 1px solid rgba(255, 255, 255, 0.27);
+    background-color: rgba(0, 0, 0, 0.22); }
+  .sp-checkbox > .sp-checkbox-default:hover:after, .sp-checkbox > .sp-checkbox-default.sp-state-hover:after {
+    background-color: rgba(255, 255, 255, 0.56);
+    border-color: rgba(0, 0, 0, 0.5); }
+  .sp-checkbox > .sp-checkbox-default:hover .sp-container-dark:after, .sp-checkbox > .sp-checkbox-default:hover.sp-container-dark:after,
+  .sp-container-dark .sp-checkbox > .sp-checkbox-default:hover:after, .sp-checkbox > .sp-checkbox-default.sp-state-hover .sp-container-dark:after, .sp-checkbox > .sp-checkbox-default.sp-state-hover.sp-container-dark:after,
+  .sp-container-dark .sp-checkbox > .sp-checkbox-default.sp-state-hover:after {
+    border-color: rgba(255, 255, 255, 0.56);
+    background-color: rgba(0, 0, 0, 0.5); }
+
 .sp-menu-item {
   box-sizing: border-box;
   text-align: left;
@@ -9738,7 +9901,7 @@ body {
 
 .sp-app-loader {
   height: 0px;
-  overflow: visible;
+  overflow: hidden;
   position: relative;
   z-index: 100;
   background-color: black !important; }

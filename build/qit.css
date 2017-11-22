@@ -7758,7 +7758,8 @@ blockquote {
       opacity: 1;
       padding: 16px; }
   .sp-card .sp-card-footer {
-    align-items: flex-end; }
+    align-items: flex-end;
+    height: 48px; }
   .sp-card .sp-card-color-tag {
     position: absolute;
     width: 35px;
@@ -9241,7 +9242,7 @@ body {
 
 .sp-app-loader {
   height: 0px;
-  overflow: hidden;
+  overflow: visible;
   position: relative;
   z-index: 100;
   background-color: black !important; }

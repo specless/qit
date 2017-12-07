@@ -1,0 +1,2479 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example</title>
+  <link rel="stylesheet" href="../../../qit.css">
+</head>
+
+<body class="sp-app sp-technical sp-sync-connected">
+  <div class="sp-app-loading-logo">
+    <div class="sp-animated-logo sp-primary">
+      <div class="sp-animated-logo-top"></div>
+      <div class="sp-animated-logo-bottom"></div>
+      <div class="sp-animated-logo-left"></div>
+      <div class="sp-animated-logo-right"></div>
+      <div class="sp-animated-logo-middle"></div>
+      <div class="sp-animated-logo-inner-top"></div>
+      <div class="sp-animated-logo-inner-bottom"></div>
+    </div>
+  </div>
+  <div class="sp-app-bar sp-container-dark sp-alt-one sp-wrapper">
+    <div class="sp-row sp-vcenter sp-height-3 sp-fluid">
+      <div class="sp-col sp-span-6 sp-flex sp-flex-align-items-center">
+        <a class="sp-menu-item sp-minimal sp-icon-menu sp-padding-0"></a>
+        <div class="sp-spacer-horizontal"></div>
+        <div class="sp-logo-lockup sp-small sp-primary sp-logo-horizontal sp-margin-left-2"></div>
+      </div>
+      <div class="sp-col sp-span-6 sp-flex sp-flex-justify-content-flex-end sp-flex-align-items-center">
+        <div class="sp-selector sp-margin-left-2">
+          <button class="sp-selector-trigger sp-icon-after-circle-user sp-rounded sp-small sp-minimal">Stephen C.</button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <div class="sp-menu-header sp-small">User Details</div>
+              <a class="sp-menu-item sp-icon-account">Account</a>
+              <a class="sp-menu-item sp-icon-settings">Preferences</a>
+              <a class="sp-menu-item sp-icon-organization">Organizations</a>
+              <a class="sp-menu-item sp-icon-account">Billing</a>
+              <div class="sp-spacer-vertical sp-margin-0"></div>
+              <a class="sp-menu-item sp-icon-logout">Log Out</a>
+            </div>
+          </div>
+        </div>
+        <div class="sp-selector sp-margin-left-2">
+          <button class="sp-selector-trigger sp-icon-after-circle-help sp-rounded sp-small sp-minimal"></button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <div class="sp-menu-header sp-small">Search For Help</div>
+              <div class="sp-padding-horizontal-2 sp-padding-vertical-1" style="position: relative;">
+                <input type="search" class="sp-small sp-rounded" placeholder="Enter Search Term" style="width: 100%"/>
+                <button class="sp-small sp-rounded sp-icon-search sp-primary sp-margin-top-1 sp-margin-right-2" style="position: absolute; top:0; right: 0;border-bottom-left-radius: 0;border-top-left-radius: 0;"></button>
+              </div>
+              <div class="sp-menu-header sp-small">Help Center</div>
+              <a class="sp-menu-item sp-icon-account">Contact Support</a>
+              <a class="sp-menu-item sp-icon-settings">Report a Bug</a>
+              <a class="sp-menu-item sp-icon-organization">Tutorials</a>
+              <a class="sp-menu-item sp-icon-account">Knowledge Base</a>
+            </div>
+          </div>
+        </div>
+        <div class="sp-selector sp-margin-left-2">
+          <button tabindex="0" class="sp-selector-trigger sp-icon-after-lightning sp-rounded sp-small sp-minimal sp-success"></button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <div class="sp-menu-header sp-small" style="opacity: 1">Specless Sync<span class="sp-color-danger sp-float-right sp-sync-hide-connected">Disconnected</span><span class="sp-color-success sp-float-right sp-sync-hide-disconnected">Connected</span></div>
+              <!-- <a class="sp-menu-item">Live Reload</a> -->
+              <div class="sp-margin-top-1 sp-padding-vertical-1 sp-padding-horizontal-2 sp-small sp-font-weight-semi-bold sp-sync-disable-disconnected">Live Reload<input id="live-reload" type="checkbox" checked class="sp-align-right"/><label for="live-reload" class="sp-float-right sp-padding-0" style="margin-right: 20px"></label></div>
+              <div class="sp-padding-vertical-1 sp-padding-horizontal-2 sp-small sp-color-base sp-font-weight-semi-bold" style="display: flex; align-items: center">
+                <div style="flex: 1">Local Host Port</div>
+                <input type="text" value="8080" class="sp-align-right sp-width-3 sp-margin-right-1"/>
+                <div class="sp-button sp-primary sp-icon-reload"></div>
+              </div>
+              <div class="sp-padding-bottom-1 sp-padding-horizontal-2 sp-align-right sp-sync-hide-connected"><a style="font-size: 12px" onclick="window.helpArticle('5a0363bc2c7d3a272c0d81a3')">Still Can't Connect?</a></div>
+              <!-- <div class="sp-menu-item sp-small"><div class="sp-button sp-block">Install Specless Sync</div></div> -->
+              <div class="sp-menu-header sp-small sp-sync-hide-connected">Don't Have Sync Installed?</div>
+              <div class="sp-padding-vertical-1 sp-padding-horizontal-2 sp-sync-hide-connected"><a class="sp-button sp-block sp-icon-download sp-small" onclick="window.helpArticle('5a03543d0428633199244dcb')">Download Sync</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="sp-selector sp-margin-left-2">
+          <button class="sp-selector-trigger sp-icon-after-lightning sp-rounded sp-small sp-minimal sp-success"></button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <div class="sp-menu-header sp-small">Connection</div>
+              <div class="sp-padding-horizontal-2 sp-padding-vertical-1" style="position: relative;">
+                <div class="sp-label">Status <span class="sp-color-success sp-float-right">Active</span></div>
+              </div>
+              <div class="sp-menu-header sp-small">Settings</div>
+              <a class="sp-menu-item">Live Reload</a>
+              <a class="sp-menu-item">Listen on Port</a>
+              <div class="sp-menu-header sp-small">Recent Creatives</div>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Some Creative<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>My Awesome Ad<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Another Creative<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Coca-Cola Ad<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Samsung Galaxy Note 8<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- <div class="sp-app-org-label sp-container-dark sp-wrapper">
+    <div class="sp-row sp-padding-2 sp-padding-left-3 sp-fluid">
+      <div class="sp-label sp-small">Example Organization <span class="sp-inline-icon-arrow-right"></span> <a href="-creatives.html" class="sp-color-white">Templates</a> <span class="sp-inline-icon-arrow-right"></span> <a href="-creatives-overview.html" class="sp-color-white">Template Name Goes here</a></div>
+    </div>
+  </div> -->
+  
+
+  <div class="sp-app-header sp-container-dark sp-alt-two sp-wrapper sp-fluid sp-border-bottom-base">
+    <div class="sp-row sp-vcenter sp-fluid">
+      <div class="sp-col sp-span-12 sp-flex sp-flex-align-items-center">
+        <button class="sp-rounded sp-icon-arrow-left sp-small sp-margin-right-2"></button>
+        <h5 class="sp-inline sp-contrast sp-inline sp-flex" style="flex: 1; position: relative">
+          <!-- <button class="sp-rounded sp-icon-arrow-left sp-small sp-margin-right-2" style="margin-top: -20px;"></button> -->
+          <!-- <span class="sp-color-muted">dhC897 /</span> -->
+          Template Name
+          <!-- <span class="sp-color-muted sp-small" style="position: absolute; bottom: -15px; left: 32px;">/ dhC897</span> -->
+        </h5>
+        <div class="sp-selector sp-margin-left-2 sp-small">
+          <!-- <span class="">Test</span> -->
+          <button class="sp-selector-trigger sp-icon-draft sp-icon-color-warning sp-small sp-font-color-white sp-sync-enabled">Draft Version<i class="sp-inline-icon-dropdown sp-margin-left-1" style="position: relative; top: -1px"></i></button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-width-8 sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <div class="sp-menu-header sp-small">Uploaded Versions</div>
+              <a href="-creatives-explorer.html" class="sp-menu-item sp-icon-live sp-state-active sp-icon-color-success">Live Version</a>
+              <a href="-creatives-explorer-draft.html" class="sp-menu-item sp-icon-draft sp-icon-color-warning">Draft Version</a>
+              <a href="-creatives-explorer-vhistory.html" class="sp-menu-item sp-icon-version">Select From Version History...</a>
+              <div class="sp-menu-header sp-small">External Versions</div>
+              <a href="-creatives-explorer-sync.html" class="sp-menu-item sp-icon-lightning">Specless Sync</a>
+              <a href="-creatives-explorer-github.html" class="sp-menu-item sp-icon-branch sp-state-disabled">Git Sync</a>
+              <!-- <div class="sp-align-center sp-container sp-alt-one sp-rectangle">
+                <a class="sp-button sp-icon-upload sp-success sp-rounded sp-small sp-margin-1">Publish Working Version</a>
+              </div> -->
+              <!-- <div class="sp-align-center sp-container sp-alt-one sp-rectangle">
+                <a class="sp-button sp-icon-upload sp-primary sp-rounded sp-small sp-margin-1">Upload S-Kit Package</a>
+              </div> -->
+              <!-- <div class="sp-spacer-vertical sp-margin-0"></div>
+              <a class="sp-menu-item sp-icon-logout">Log Out</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="sp-selector sp-small">
+          <button class="sp-selector-trigger sp-icon-download sp-small sp-primary sp-font-color-white sp-margin-left-1"></button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <a class="sp-menu-item sp-icon-lightning">Download to Specless Sync</a>
+              <a class="sp-menu-item sp-icon-download">Download S-Kit Package</a>
+            </div>
+          </div>
+        </div>
+        <!-- <button class="sp-icon-folder sp-small sp-primary sp-font-color-white sp-margin-left-1"></button> -->
+        <!-- <button class="sp-icon-upload sp-small sp-success sp-font-color-white sp-margin-left-1">Publish</button> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="sp-app-menu sp-container-dark sp-alt-two sp-wrapper sp-border-bottom-base">
+    <div class="sp-row sp-vbottom sp-height-2 sp-fluid">
+      <div class="sp-col sp-span-10 sp-padding-0" style="margin-bottom: 11px">
+        <a href="-creatives-overview.html" class="sp-menu-item sp-horizontal sp-label">Overview</a>
+        <a href="-creatives-explorer.html" class="sp-menu-item sp-horizontal sp-label sp-state-active">Creative Explorer</a>
+        <a href="-creatives-trafficking.html" class="sp-menu-item sp-horizontal sp-label">Trafficking</a>
+        <a href="-creatives-reporting.html" class="sp-menu-item sp-horizontal sp-label">Reporting</a>
+        <a class="sp-menu-item sp-minimal sp-horizontal sp-label sp-icon-more"></a>
+        
+      </div>
+      <div class="sp-col sp-span-2 sp-align-right sp-padding-0">
+        
+      </div>
+    </div>
+  </div> -->
+
+  <div class="sp-app-content sp-flex" style="overflow: hidden">
+    <div class="sp-app-content-sidebar sp-flex">
+      <!-- <div class="sp-app-content-sidebar-icon-menu sp-container-dark sp-contrast sp-border-top-base">
+        <a href="-creatives-explorer.html" class="sp-button sp-minimal sp-simple-icon sp-icon-eye sp-primary sp-state-active"></a>
+        <a href="-creatives-explorer-simulate.html" class="sp-button sp-minimal sp-simple-icon sp-icon-monitor sp-primary"></a>
+        <a href="-creatives-explorer-assets.html" class="sp-button sp-minimal sp-simple-icon sp-icon-file-cabinet sp-primary"></a>
+      </div> -->
+      <div class="sp-app-content-sidebar-menu sp-container-dark sp-alt-one sp-shadow-medium " style="width:135px;">
+        <div class="sp-padding-1 sp-container sp-label sp-color-contrast sp-flex sp-border-bottom-base">
+          <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Panels</span>
+          <button tabindex="0" class="sp-icon-circle-plus sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+        </div>
+        <div class="sp-app-content-sidebar-menu-content">
+          <div class="sp-menu-header sp-small sp-align-center sp-color-contrast">Display</div>
+          <div class="sp-padding-2">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/400x150/0096a9/0096a9);">
+              <div tabindex="0" class="sp-button sp-icon-code sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold"><i class="sp-inline-icon-star-filled"></i>Primary</div>
+          </div>
+          <div class="sp-padding-2">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/350x100/0096a9/0096a9);">
+              <div tabindex="0" class="sp-button sp-icon-photoshop sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Skin Left</div>
+          </div>
+          <div class="sp-padding-2">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/350x200/0096a9/0096a9);">
+              <div tabindex="0" class="sp-button sp-icon-photoshop sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Skin Right</div>
+          </div>
+          <div class="sp-padding-2">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/350x70/0096a9/0096a9);">
+              <div tabindex="0" class="sp-button sp-icon-hype sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Test Hype Panel</div>
+          </div>
+          <div class="sp-padding-2 sp-bg-overlay-light-1 sp-color-primary sp-state-active">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-solid sp-border-thin sp-border-color-primary" style="background-image: url(http://via.placeholder.com/350x150/0096a9/0096a9);">
+              <div tabindex="0" class="sp-button sp-icon-code sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Secondary</div>
+          </div>
+          <div class="sp-menu-header sp-color-contrast sp-small sp-align-center">Native</div>
+          <div class="sp-padding-2">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/400x150/0096a9/0096a9);">
+              <div tabindex="0" class="sp-button sp-icon-native-ad sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold"><i class="sp-inline-icon-star-filled"></i>Native</div>
+          </div>
+          <div class="sp-padding-2">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/350x350/0096a9/0096a9);">
+              <div tabindex="0" class="sp-button sp-icon-native-ad sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Native Panel</div>
+          </div>
+          <div class="sp-menu-header sp-small sp-color-contrast sp-align-center">Video</div>
+          <div class="sp-padding-2">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/400x150/0096a9/0096a9);">
+              <div tabindex="0" class="sp-button sp-icon-video sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold"><i class="sp-inline-icon-star-filled"></i>Video</div>
+          </div>
+          <div class="sp-padding-2">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/16x9/0096a9/0096a9);">
+              <div tabindex="0" class="sp-button sp-icon-video sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-disabled"></div>
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Video Panel</div>
+          </div>
+        </div>
+      </div>
+      <div class="sp-app-content-sidebar-menu sp-container-dark sp-alt-one sp-shadow-medium" style="width:135px;">
+        <div class="sp-padding-1 sp-container sp-label sp-color-contrast sp-flex sp-border-bottom-base">
+          <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Layouts</span>
+          <button tabindex="0" class="sp-icon-circle-plus sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+        </div>
+        <div class="sp-app-content-sidebar-menu-content sp-color-muted">
+          <!-- <div class="sp-padding-2">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="display: none;background-image: url(http://via.placeholder.com/400x150/0096a9/0096a9);">
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-align-center sp-font-weight-semi-bold">None Matched<br><span class="sp-color-muted">No Available Layout</span></div>
+          </div> -->
+          <div class="sp-padding-2 sp-bg-overlay-light-1 sp-state-active sp-color-primary">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="display: none;">
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-align-center sp-font-weight-semi-bold">None Matched<br><span class="sp-color-muted sp-color-warning">No Available Layout</span></div>
+          </div>
+          <div class="sp-padding-2"">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/400x150/0096a9/0096a9);">
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Medium</div>
+          </div>
+          <div class="sp-padding-2">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/350x150/0096a9/0096a9);">
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Large</div>
+          </div>
+          <div class="sp-padding-2">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/350x100/0096a9/0096a9);">
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Extra Large</div>
+          </div>
+          <div class="sp-padding-2">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/350x200/0096a9/0096a9);">
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Small</div>
+          </div>
+          <div class="sp-padding-2">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-solid sp-border-thin sp-border-color-primary" style="background-image: url(http://via.placeholder.com/350x70/0096a9/0096a9);">
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Vertical</div>
+          </div>
+          <div class="sp-padding-2">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/350x350/0096a9/0096a9);">
+              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+            </div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Horizontal</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sp-app-content-main sp-container-light">
+      <div class="sp-padding-1 sp-container sp-color-contrast sp-flex sp-bg-overlay-light-4">
+        <!-- <button tabindex="0" class="sp-icon-circle-arrow-left sp-minimal sp-simple-icon sp-small sp-primary sp-float-left"></button> -->
+        <span class="sp-border-right-base sp-float-right sp-margin-right-1">
+          <!-- <button tabindex="0" class="sp-icon-edit sp-small sp-margin-left-1"></button> -->
+          <button tabindex="0" class="sp-icon-panel sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-active"></button>
+          <button tabindex="0" class="sp-icon-layout sp-minimal sp-simple-icon sp-small sp-primary sp-float-left sp-state-active"></button>
+        </span>
+        <button tabindex="0" class="sp-icon-eye sp-minimal sp-simple-icon sp-small sp-primary"></button>
+        <span class="sp-padding-vertical-1 sp-padding-left-1 sp-label" style="flex:1">Panel Preview</span>
+       <!--  <button tabindex="0" class="sp-icon-eye sp-minimal sp-simple-icon sp-small sp-primary sp-float-right sp-state-active"></button> -->
+        <!-- <button tabindex="0" class="sp-icon-panel sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
+        <button tabindex="0" class="sp-icon-layout sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
+        <button id="contexts-toggle" tabindex="0" class="sp-icon-location sp-minimal sp-simple-icon sp-small sp-primary sp-float-right "></button>
+        <button id="reporting-toggle" tabindex="0" class="sp-icon-data sp-minimal sp-simple-icon sp-small sp-primary sp-float-right "></button>
+        <button id="performance-toggle" tabindex="0" class="sp-icon-speed sp-minimal sp-simple-icon sp-small sp-primary sp-float-right "></button>
+        <button id="activity-toggle" tabindex="0" class="sp-icon-console sp-minimal sp-simple-icon sp-small sp-primary sp-float-right "></button>
+        <button tabindex="0" class="sp-icon-metadata sp-state-active sp-minimal sp-simple-icon sp-small sp-primary sp-float-right "></button>
+        <!-- <button tabindex="0" class="sp-icon-code sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
+        <span class="sp-border-left-base sp-float-right sp-margin-left-1">
+          <!-- <button tabindex="0" class="sp-icon-edit sp-small sp-margin-left-1"></button> -->
+          <div class="sp-selector sp-small">
+              <button tabindex="0" class="sp-icon-external sp-small sp-float-right sp-margin-left-1 sp-selector-trigger"></button>
+              <div class="sp-selector-overlay">
+                <div class="sp-menu-dropdown sp-overlay" style="left: auto; right: 0; transform: none;">
+                  <!-- <a class="sp-menu-item sp-icon-share">Sharing</a>
+                  <div class="sp-spacer-vertical"></div> -->
+                  <a class="sp-menu-item sp-icon-eye">Open Simple Preview</a>
+                  <a class="sp-menu-item sp-icon-link">Generate Sharable Permalink</a>
+                  
+                </div>
+              </div>
+            </div>
+        </span>
+      </div>
+      <div class="sp-padding-1 sp-container sp-border-top-base sp-border-bottom-base sp-flex sp-small sp-font-weight-semi-bold" style="font-size: 12px;">
+        <div style="flex:1" class="sp-align-right sp-padding-horizontal-2">
+          <div class="sp-selector sp-margin-left-1 sp-inline">
+            <input readonly class="sp-minimal sp-selector-trigger sp-align-right" type="text" value="Custom View" style="width: 300px; font-weight: 600"/>
+            <div class="sp-selector-overlay">
+              <div class="sp-menu-dropdown sp-overlay">
+                <a class="sp-menu-item">Some Custom Size<span class="sp-details">728 x 90</span></a>
+                <a class="sp-menu-item">Some Saved Size<span class="sp-details">728 x 90</span></a>
+                <div class="sp-menu-header">Shared With Organization</div>
+                <a class="sp-menu-item">Superhero<span class="sp-details">Fluid x 700</span></a>
+                <div class="sp-menu-header">IAB Portfolio Aspect Ratios</div>
+                <a class="sp-menu-item">1:1</a>
+                <a class="sp-menu-item">1:2</a>
+                <a class="sp-menu-item">1:3</a>
+                <a class="sp-menu-item">1:4</a>
+                <a class="sp-menu-item">2:1</a>
+                <a class="sp-menu-item">3:1</a>
+                <a class="sp-menu-item">4:1</a>
+                <a class="sp-menu-item">6:1</a>
+                <a class="sp-menu-item">8:1</a>
+                <a class="sp-menu-item">10:1</a>
+                <div class="sp-menu-header">Common Ad Slot Sizes</div>
+                <a class="sp-menu-item">Leaderboard<span class="sp-details">728 x 90</span></a>
+                <a class="sp-menu-item">Mobile Leaderboard<span class="sp-details">320 x 50</span></a>
+                <a class="sp-menu-item">Large Leaderboard<span class="sp-details">728 x 210</span></a>
+                <a class="sp-menu-item">X-Large Leaderboard<span class="sp-details">728 x 300</span></a>
+                <a class="sp-menu-item">Super Leaderboard<span class="sp-details">970 x 90</span></a>
+                <a class="sp-menu-item">Billboard<span class="sp-details">970 x 250</span></a>
+                <a class="sp-menu-item">Large Billboard<span class="sp-details">970 x 415</span></a>
+                <a class="sp-menu-item">Square<span class="sp-details">250 x 250</span></a>
+                <a class="sp-menu-item">Small Square<span class="sp-details">200 x 200</span></a>
+                <a class="sp-menu-item">Button<span class="sp-details">125 x 125</span></a>
+                <a class="sp-menu-item">Small Button<span class="sp-details">120 x 60</span></a>
+                <a class="sp-menu-item">Medium Button<span class="sp-details">120 x 90</span></a>
+                <a class="sp-menu-item">Small Rectangle<span class="sp-details">180 x 150</span></a>
+                <a class="sp-menu-item">Medium Rectangle<span class="sp-details">300 x 250</span></a>
+                <a class="sp-menu-item">Large Rectangle<span class="sp-details">336 x 280</span></a>
+                <a class="sp-menu-item">Full Banner<span class="sp-details">468 x 60</span></a>
+                <a class="sp-menu-item">Half Banner<span class="sp-details">234 x 60</span></a>
+                <a class="sp-menu-item">Sky Scraper<span class="sp-details">120 x 600</span></a>
+                <a class="sp-menu-item">Wide Scraper<span class="sp-details">160 x 600</span></a>
+                <a class="sp-menu-item">Half Page<span class="sp-details">300 x 600</span></a>
+                <div class="sp-menu-header">Responsive Sizes</div>
+                <a class="sp-menu-item">Small Responsive Banner<span class="sp-details">Fluid x 50</span></a>
+                <a class="sp-menu-item">Responsive Banner<span class="sp-details">Fluid x 90</span></a>
+                <a class="sp-menu-item">Large Responsive Banner<span class="sp-details">Fluid x 180</span></a>
+                <a class="sp-menu-item">Responsive Billboard<span class="sp-details">Fluid x 250</span></a>
+                <a class="sp-menu-item">Large Responsive Billboard<span class="sp-details">Fluid x 415</span></a>
+                <a class="sp-menu-item">X-Large Responsive Billboard<span class="sp-details">Fluid x 600</span></a>
+                <a class="sp-menu-item">Full Viewport<span class="sp-details">Fluid x Fluid</span></a>
+                <div class="sp-menu-header">Common Viewport Sizes</div>
+                <a class="sp-menu-item">iPhone 4s<span class="sp-details">728 x 90</span></a>
+                <a class="sp-menu-item">iPhone 5/5s<span class="sp-details">728 x 90</span></a>
+                <a class="sp-menu-item">iPhone 6/6s/7<span class="sp-details">728 x 90</span></a>
+                <a class="sp-menu-item">iPhone 6/6s/7 Plus<span class="sp-details">728 x 90</span></a>
+                <a class="sp-menu-item">iPad<span class="sp-details">728 x 90</span></a>
+                <a class="sp-menu-item">iPad Mini<span class="sp-details">728 x 90</span></a>
+                <a class="sp-menu-item">iPad Pro<span class="sp-details">728 x 90</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sp-align-center sp-padding-horizontal-2 sp-border-left-base sp-border-right-base">
+          <span class="sp-bg-overlay-light-4 sp-padding-horizontal-1" style="padding-top: 4px; padding-bottom: 4px;">
+            
+            <div class="sp-selector sp-inline">
+              <i tabindex="0" class="sp-selector-trigger sp-inline-icon-solid-min sp-color-muted"></i>
+              <div class="sp-selector-overlay">
+                <div class="sp-menu-dropdown sp-overlay">
+                  <div class="sp-menu-header sp-align-center">Min Width</div>
+                  <div class="sp-padding-1">
+                    <input class=" sp-details sp-custom-input-trigger sp-align-right sp-align-center" type="number" value="300" style="width: 85px; background-image: none !important; font-weight: 600"/>
+                  </div>
+                  <div class="sp-padding-bottom-1 sp-padding-horizontal-1 sp-align-center"><button style="width: 85px">Remove</button></div>
+                </div>
+              </div>
+            </div>
+            <input class="sp-minimal sp-custom-input-trigger sp-align-right sp-minimal sp-align-center" type="number" value="300" style="width: 35px; background-image: none !important; font-weight: 600"/>
+            <div class="sp-selector sp-inline">
+              <i tabindex="0" class="sp-selector-trigger sp-inline-icon-solid-max sp-color-muted"></i>
+              <div class="sp-selector-overlay">
+                <div class="sp-menu-dropdown sp-overlay">
+                  <div class="sp-menu-header sp-align-center">Max Width</div>
+                  <div class="sp-padding-1">
+                    <input class=" sp-details sp-custom-input-trigger sp-align-right sp-align-center" type="number" value="300" style="width: 85px; background-image: none !important; font-weight: 600"/>
+                  </div>
+                  <div class="sp-padding-bottom-1 sp-padding-horizontal-1 sp-align-center"><button style="width: 85px">Remove</button></div>
+                </div>
+              </div>
+            </div>
+          </span>
+          <span class="sp-padding-horizontal-1 sp-color-muted"><i class="sp-inline-icon-close"></i></span>
+          <span class="sp-bg-overlay-light-4 sp-padding-horizontal-1" style="padding-top: 4px; padding-bottom: 4px;">
+            
+            <div class="sp-selector sp-inline">
+              <i tabindex="0" class="sp-selector-trigger sp-inline-icon-solid-min sp-color-muted"></i>
+              <div class="sp-selector-overlay">
+                <div class="sp-menu-dropdown sp-overlay">
+                  <div class="sp-menu-header sp-align-center">Min Height</div>
+                  <div class="sp-padding-1">
+                    <input class=" sp-details sp-custom-input-trigger sp-align-right sp-align-center" type="number" value="250" style="width: 85px; background-image: none !important; font-weight: 600"/>
+                  </div>
+                  <div class="sp-padding-bottom-1 sp-padding-horizontal-1 sp-align-center"><button style="width: 85px">Remove</button></div>
+                </div>
+              </div>
+            </div>
+            <input class="sp-minimal sp-custom-input-trigger sp-align-right sp-minimal sp-align-center" type="number" value="250" style="width: 35px; background-image: none !important; font-weight: 600"/>
+            <div class="sp-selector sp-inline">
+              <i tabindex="0" class="sp-selector-trigger sp-inline-icon-solid-max sp-color-muted"></i>
+              <div class="sp-selector-overlay">
+                <div class="sp-menu-dropdown sp-overlay">
+                  <div class="sp-menu-header sp-align-center">Max Height</div>
+                  <div class="sp-padding-1">
+                    <input class=" sp-details sp-custom-input-trigger sp-align-right sp-align-center" type="number" value="250" style="width: 85px; background-image: none !important; font-weight: 600"/>
+                  </div>
+                  <div class="sp-padding-bottom-1 sp-padding-horizontal-1 sp-align-center"><button style="width: 85px">Remove</button></div>
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+        <div class="sp-padding-horizontal-2" style="flex:1">
+          <span class="sp-padding-right-2 sp-color-muted">Aspect Ratio<span class="sp-margin-left-1 sp-color-base">2:1</span><i class="sp-margin-left-1 sp-inline-icon-solid-unlock"></i></span>
+          <span class="sp-padding-horizontal-2 sp-border-left-base sp-color-muted">Layout Scaling<span class="sp-margin-left-1 sp-color-base">0.5x</span><i class="sp-margin-left-1 sp-inline-icon-solid-unlock"></i></span>
+          <span class="sp-padding-horizontal-2 sp-border-left-base sp-color-muted">Scrolling<i class="sp-margin-left-2 sp-inline-icon-solid-horizontal"></i><i class="sp-margin-left-1 sp-inline-icon-solid-vertical"></i></span>
+          <span class="sp-padding-horizontal-2 sp-border-left-base"><i class="sp-margin-right-1 sp-inline-icon-solid-target"></i>Center</span>
+        </div>
+
+      </div>
+      <div class="sp-app-content-main-scroll sp-container sp-alt-one" style="padding: 0">
+        <div style="width: 100%;height: 100%; position: relative">
+          <div id="container">
+            <div id="canvas" class="canvas is-draggable">
+              <div id="content">
+                <div class="sp-preview-panel sp-overlay sp-rectangle sp-contrast" style="width: calc(100% + 14px); height: calc(100% + 27px); top: -20px; left: -7px; box-sizing: border-box">
+                  <div class="sp-preview-panel-header sp-font-weight-semi-bold sp-flex">
+                    <div class="sp-preview-panel-header-left sp-inline-icon-reload" style="cursor:pointer"></div>
+                    <div class="sp-preview-panel-header-middle sp-align-center is-draggable" style="cursor: grab; cursor: -webkit-grab;"><span class="sp-color-muted is-draggable">Secondary<i class="sp-inline-icon-arrow-right is-draggable"></i> Vertical</span><i class="sp-margin-left-1 sp-inline-icon-solid-unlock sp-color-muted" style="cursor:pointer"></i></div>
+                    <div class="sp-preview-panel-header-right sp-inline-icon-more" style="cursor:pointer"></div>
+                  </div>
+                  <!-- <div class="sp-preview-panel-down sp-overlay sp-icon-drag-both"></div>
+                  <div class="sp-preview-panel-right sp-overlay sp-icon-drag-both"></div>
+                  <div class="sp-preview-panel-diag sp-overlay sp-icon-resize"></div> -->
+                </div>
+                <div class="sp-preview-panel-content sp-shadow-low-inset" style="width: 100%; height: 100%">
+                  <div class="sp-preview-panel-grid"></div>
+                  <div class="sp-preview-panel-ad"><!-- AD GOES HERE --></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="preview">
+            <div id="viewable">
+            </div>
+            <div id="box">
+
+            </div>
+            <button id="recenter" class="sp-icon-center-target sp-rounded sp-minimal"></button>
+          </div>
+        </div>
+      </div>
+        <!-- <div id="canvas" class="sp-app-content-main-scroll sp-container sp-alt-one">
+          <div class="sp-preview-panel sp-overlay sp-rectangle sp-contrast">
+            <div class="sp-preview-panel-header sp-font-weight-semi-bold sp-flex">
+              <div class="sp-preview-panel-header-left sp-inline-icon-sync"></div>
+              <div class="sp-preview-panel-header-middle sp-align-center"><span class="sp-color-muted">Secondary<i class="sp-inline-icon-arrow-right"></i> Vertical</span><i class="sp-margin-left-1 sp-inline-icon-solid-unlock sp-color-muted"></i></div>
+              <div class="sp-preview-panel-header-right sp-inline-icon-more"></div>
+            </div>
+            <div class="sp-preview-panel-down sp-overlay sp-icon-drag-both"></div>
+            <div class="sp-preview-panel-right sp-overlay sp-icon-drag-both"></div>
+            <div class="sp-preview-panel-diag sp-overlay sp-icon-resize"></div>
+            <div id="content" class="sp-preview-panel-content sp-shadow-low-inset" style="width: 300px; height: 250px">
+              <div class="sp-preview-panel-grid"></div>
+              <div class="sp-preview-panel-ad"></div>
+            </div>
+          </div>
+        </div> -->
+      <div class="sp-app-content-main-footer sp-container">
+        <div class="sp-padding-1 sp-container sp-border-top-base sp-border-bottom-base sp-small sp-font-weight-semi-bold sp-flex sp-flex-align-items-center" style="font-size: 12px; justify-content: center">
+          <div class="sp-app-content-main-footer-left">
+            <span class="sp-padding-horizontal-2 sp-color-success">
+              <span>v002 Uploaded: Oct 6, 3:45pm</span><i class="sp-inline-icon-solid-circle-check sp-margin-left-1"></i>
+            </span>
+          </div>
+          <div class="sp-app-content-main-footer-middle">
+            <div class="sp-padding-horizontal-2 sp-border-right-base sp-border-left-base sp-color-muted">
+              <i class="sp-inline-icon-solid-log sp-margin-right-1"></i><span class="sp-margin-right-2">0</span>
+              <i class="sp-inline-icon-solid-warning sp-margin-right-1"></i><span class="sp-margin-right-2">0</span>
+              <i class="sp-inline-icon-solid-error sp-margin-right-1"></i><span class="">0</span>
+            </div>
+          </div>
+          <div class="sp-app-content-main-footer-right">
+            <span class="sp-padding-horizontal-2">
+              <i class="sp-inline-icon-solid-circle-check sp-margin-right-1"></i><span>Panel Ready</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contexts" style="display:none" class="sp-app-content-sidebar sp-flex">
+      <div class="sp-app-content-sidebar-menu sp-container-dark sp-alt-one sp-shadow-medium " style="width:220px;">
+        <div class="sp-padding-1 sp-container sp-label sp-color-contrast sp-flex sp-border-bottom-base">
+          <button tabindex="0" class="sp-icon-location sp-minimal sp-simple-icon sp-primary sp-small sp-primary sp-float-left"></button>
+          <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Context Queries</span>
+          <!-- <button tabindex="0" class="sp-icon-circle-close sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
+        </div>
+        <div class="sp-app-content-sidebar-menu-content sp-small">
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Referenced Contexts</div>
+          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base" style="font-size: 12px">
+            <div><i class="sp-inline-icon-edit sp-margin-right-1 sp-color-muted"></i>device-type<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 75px" value="desktop"/></div>
+            <div><i class="sp-inline-icon-edit sp-margin-right-1 sp-color-muted"></i>location-city<input class="sp-minimal sp-align-right sp-float-right" readonly style="width: 75px" value="chicago"/></div>
+            <div class="sp-color-warning"><i class="sp-inline-icon-reset sp-margin-right-1"></i>time-day-index<input class="sp-minimal sp-align-right sp-float-right" style="width: 75px" value="3"/></div>
+          </div>
+
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Rules</div>
+
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-flex">
+              <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-down sp-margin-right-1"></i>Unnamed Rule 1</div>
+              <div class="sp-font-weight-semi-bold sp-color-success">Matched</div>
+            </div>
+            <div class="sp-padding-left-1">
+                <div><i class="sp-inline-icon-circle-check sp-color-success sp-margin-right-1"></i>device-type<span class="sp-font-weight-semi-bold sp-margin-left-1 sp-margin-right-1">is</span>desktop</div>
+                <div><i class="sp-inline-icon-circle-check sp-color-success sp-margin-right-1"></i>location-city<span class="sp-font-weight-semi-bold sp-margin-left-1 sp-margin-right-1">is</span>chicago</div>
+                <div><i class="sp-inline-icon-circle-check sp-color-success sp-margin-right-1"></i>time-day-index<span class="sp-font-weight-semi-bold sp-margin-left-1 sp-margin-right-1">></span>5</div>
+            </div>
+          </div>
+
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-flex">
+              <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-down sp-margin-right-1"></i>My Rule</div>
+              <div class="sp-font-weight-semi-bold sp-color-muted">Unmatched</div>
+            </div>
+            <div class="sp-padding-left-1">
+                <div class="sp-color-muted" style="text-decoration: line-through"><i class="sp-inline-icon-circle-close sp-color-danger sp-margin-right-1"></i>device-type<span class="sp-font-weight-semi-bold sp-margin-left-1 sp-margin-right-1">is</span>tablet</div>
+                <div><i class="sp-inline-icon-circle-check sp-color-success sp-margin-right-1"></i>location-city<span class="sp-font-weight-semi-bold sp-margin-left-1 sp-margin-right-1">is</span>chicago</div>
+                <div><i class="sp-inline-icon-circle-check sp-color-success sp-margin-right-1"></i>time-day-index<span class="sp-font-weight-semi-bold sp-margin-left-1 sp-margin-right-1">></span>5</div>
+            </div>
+          </div>
+
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-flex">
+              <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Unnamed Rule 2</div>
+              <div class="sp-font-weight-semi-bold sp-color-success">Matched</div>
+            </div>
+          </div>
+
+          
+          <!-- <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>User</div>
+          </div>
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Input</div>
+          </div>
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Device</div>
+          </div>
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Site</div>
+          </div>
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Format</div>
+          </div>
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Panel</div>
+          </div>
+          <div class="sp-border-bottom-base sp-padding-1" style="font-size: 12px">
+            <div class="sp-font-weight-semi-bold sp-color-contrast" style="flex:1"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Custom</div>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+    <div id="reporting" style="display:none" class="sp-app-content-sidebar sp-flex">
+      <div class="sp-app-content-sidebar-menu sp-container-dark sp-alt-one sp-shadow-medium " style="width:220px;">
+        <div class="sp-padding-1 sp-container sp-label sp-color-contrast sp-flex sp-border-bottom-base">
+          <button tabindex="0" class="sp-icon-data sp-minimal sp-simple-icon sp-primary sp-small sp-primary sp-float-left"></button>
+          <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Reporting</span>
+          <!-- <button tabindex="0" class="sp-icon-circle-close sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
+        </div>
+        <div class="sp-app-content-sidebar-menu-content sp-small">
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Impression Data</div>
+          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base" style="font-size: 12px">
+            <div><a href="http://specless.readme.io" target="_new"><i class="sp-inline-icon-info sp-margin-right-1"></i></a>Requested Impression<i class="sp-inline-icon-circle-check sp-margin-right-1 sp-float-right sp-color-success"></i></div>
+            <div><a href="http://specless.readme.io" target="_new"><i class="sp-inline-icon-info sp-margin-right-1"></i></a>Delivered Impression<i class="sp-inline-icon-circle-check sp-margin-right-1 sp-float-right sp-color-success"></i></div>
+            <div><a href="http://specless.readme.io" target="_new"><i class="sp-inline-icon-info sp-margin-right-1 sp-success"></i></a>Measurable Impression<i class="sp-inline-icon-circle-check sp-margin-right-1 sp-float-right sp-color-success"></i></div>
+            <div><a href="http://specless.readme.io" target="_new"><i class="sp-inline-icon-info sp-margin-right-1"></i></a>Viewable Impression<i class="sp-inline-icon-circle-check sp-margin-right-1 sp-float-right sp-color-success"></i></div>
+            <div class="sp-color-muted"><a href="http://specless.readme.io" target="_new"><i class="sp-inline-icon-info sp-margin-right-1"></i></a>Interacted Impression</div>
+            <div class="sp-color-muted"><a href="http://specless.readme.io" target="_new"><i class="sp-inline-icon-info sp-margin-right-1"></i></a>Video Impression</div>
+          </div>
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Exits (Click-Throughs)</div>
+          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base" style="font-size: 12px">
+            <div>My Exit<span class="sp-margin-right-1 sp-float-right sp-color-success">2</span></div>
+            <div>My Other Exit<span class="sp-margin-right-1 sp-float-right">0</span></div>
+            <div>Another Exit<span class="sp-margin-right-1 sp-float-right sp-color-success">2</span></div>
+            <div>Yet Another Exit<span class="sp-margin-right-1 sp-float-right">0</span></div>
+          </div>
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Trackers</div>
+          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base" style="font-size: 12px">
+            <div>My Tracker<span class="sp-margin-right-1 sp-float-right sp-color-success">2</span></div>
+            <div>My Other Tracker<span class="sp-margin-right-1 sp-float-right">0</span></div>
+            <div>Another Tracker<span class="sp-margin-right-1 sp-float-right sp-color-success">2</span></div>
+            <div>Yet Another Tracker<span class="sp-margin-right-1 sp-float-right">0</span></div>
+          </div>
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Interactions</div>
+          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base" style="font-size: 12px">
+            <div>Click: element-id<span class="sp-margin-right-1 sp-float-right sp-color-success">2</span></div>
+            <div>Click: Element Alias<span class="sp-margin-right-1 sp-float-right">0</span></div>
+            <div>Click: Another Element<span class="sp-margin-right-1 sp-float-right sp-color-success">2</span></div>
+            <div>Click: Yet Another Element<span class="sp-margin-right-1 sp-float-right">0</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="performance" class="sp-app-content-sidebar sp-flex" style="display:none">
+      <div class="sp-app-content-sidebar-menu sp-container-dark sp-alt-one sp-shadow-medium " style="width:220px;">
+        <div class="sp-padding-1 sp-container sp-label sp-color-contrast sp-flex sp-border-bottom-base">
+          <button tabindex="0" class="sp-icon-speed sp-minimal sp-simple-icon sp-primary sp-small sp-primary sp-float-left"></button>
+          <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Performance Snapshot</span>
+          <!-- <button tabindex="0" class="sp-icon-circle-close sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
+        </div>
+        <div class="sp-app-content-sidebar-menu-content sp-small">
+          <div class="sp-align-center sp-padding-vertical-2 sp-border-bottom-base">
+            <button class="sp-primary sp-margin-left-1">
+              Take New Snapshot
+            </button>
+          </div>
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Current Snapshot</div>
+          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base sp-color-contrast" style="font-size: 12px">
+            <div><i class="sp-inline-icon-time sp-margin-right-1"></i>Time Taken<span class="sp-float-right">3:32:12pm</span></div>
+            <div><i class="sp-inline-icon-width sp-margin-right-1"></i>Panel Width<span class="sp-float-right">300px</span></div>
+            <div><i class="sp-inline-icon-height sp-margin-right-1"></i>Panel Height<span class="sp-float-right">250px</span></div>
+          </div>
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Initial Load<span class="sp-float-right sp-width-3 sp-align-right sp-font-color-contrast" style="position: relative; text-transform: none">194kb</span></div>
+          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base sp-color-contrast" style="font-size: 12px">
+            <div><i class="sp-inline-icon-circle-arrow-down sp-margin-right-1"></i>Images
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 60%; top: 0; right: 0" class="sp-bg-color-primary"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">102kb</span>
+              </span>
+            </div>
+            <div class="sp-padding-1 sp-padding-left-2 sp-margin-vertical-1 sp-font-weight-semi-bold sp-bg-overlay-dark-2 sp-border-base" style="font-size: 12px">
+              <div>
+                <span><i class="sp-inline-icon-external sp-margin-right-1"></i>logo.png</span>
+                <span class="sp-float-right">12kb</span>
+              </div>
+              <div>
+                <span><i class="sp-inline-icon-external sp-margin-right-1"></i>background.jpg</span>
+                <span class="sp-float-right">60kb</span>
+              </div>
+              <div>
+                <span><i class="sp-inline-icon-external sp-margin-right-1"></i>button.svg</span>
+                <span class="sp-float-right">1kb</span>
+              </div>
+              <div>
+                <span><i class="sp-inline-icon-external sp-margin-right-1"></i>logo-large.png</span>
+                <span class="sp-float-right">22kb</span>
+              </div>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Video
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 12%; top: 0; right: 0" class="sp-bg-color-success"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">57kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Fonts
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 8%; top: 0; right: 0" class="sp-bg-color-warning"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">12kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Code
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 4%; top: 0; right: 0" class="sp-bg-color-danger"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">18kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Other
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 6%; top: 0; right: 0" class="sp-bg-overlay-dark-4"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">5kb</span>
+              </span>
+            </div>
+            <div class="sp-color-muted"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>White-Labeled
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-base">60kb</span>
+              </span>
+            </div>
+          </div>
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Subload<span class="sp-float-right sp-width-3 sp-align-right sp-font-color-contrast" style="position: relative; text-transform: none">194kb</span></div>
+          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base sp-color-contrast" style="font-size: 12px">
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Images
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 60%; top: 0; right: 0" class="sp-bg-color-primary"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">102kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Video
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 12%; top: 0; right: 0" class="sp-bg-color-success"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">57kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Fonts
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 8%; top: 0; right: 0" class="sp-bg-color-warning"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">12kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Code
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 4%; top: 0; right: 0" class="sp-bg-color-danger"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">18kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Other
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 6%; top: 0; right: 0" class="sp-bg-overlay-dark-4"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">5kb</span>
+              </span>
+            </div>
+            <div class="sp-color-muted"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>White-Labeled
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-base">60kb</span>
+              </span>
+            </div>
+          </div>
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Post-Interaction<span class="sp-float-right sp-width-3 sp-align-right sp-font-color-contrast" style="position: relative; text-transform: none">194kb</span></div>
+          <div class="sp-padding-1 sp-font-weight-semi-bold sp-border-bottom-base sp-color-contrast" style="font-size: 12px">
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Images
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 60%; top: 0; right: 0" class="sp-bg-color-primary"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">102kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Video
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 12%; top: 0; right: 0" class="sp-bg-color-success"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">57kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Fonts
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 8%; top: 0; right: 0" class="sp-bg-color-warning"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">12kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Code
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 4%; top: 0; right: 0" class="sp-bg-color-danger"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">18kb</span>
+              </span>
+            </div>
+            <div><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>Other
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: absolute; height: 100%; width: 6%; top: 0; right: 0" class="sp-bg-overlay-dark-4"></span>
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-contrast">5kb</span>
+              </span>
+            </div>
+            <div class="sp-color-muted"><i class="sp-inline-icon-circle-arrow-right sp-margin-right-1"></i>White-Labeled
+              <span class="sp-float-right sp-width-3 sp-align-right" style="position: relative">
+                <span style="position: relative" class="sp-float-right sp-font-weight-bold sp-color-base">60kb</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="activity" class="sp-app-content-sidebar sp-flex" style="display:none">
+      <div class="sp-app-content-sidebar-menu sp-container-dark sp-alt-one sp-shadow-medium " style="width:350px;">
+        <div class="sp-padding-1 sp-container sp-label sp-color-contrast sp-flex sp-border-bottom-base">
+          <button tabindex="0" class="sp-icon-console sp-minimal sp-simple-icon sp-primary sp-small sp-primary sp-float-left"></button>
+          <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Activity Console</span>
+          <!-- <button tabindex="0" class="sp-icon-circle-close sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
+        </div>
+        <div class="sp-app-content-sidebar-menu-content sp-small">
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Ad Lifespan</div>
+          <div class="sp-padding-1" style="font-size: 12px;">
+            <div class="sp-input sp-rectangle sp-padding-2">
+              <div class="sp-log-entry">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Event Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Event Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Event Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry sp-color-warning">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Warning Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Event Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry sp-color-danger">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Error Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Event Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+            </div>
+          </div>
+          <div class="sp-menu-header sp-container sp-alt-one sp-color-contrast">Specless Sync</div>
+          <div class="sp-padding-1" style="font-size: 12px;">
+            <div class="sp-input sp-rectangle sp-padding-2">
+              <div class="sp-log-entry">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Event Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Event Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Event Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry sp-color-warning">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Warning Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Event Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry sp-color-danger">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Error Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+              <div class="sp-log-entry">
+                <div class="sp-log-content sp-font-weight-semi-bold">
+                  <span class="sp-log-timestamp sp-margin-right-1" style="font-family: monospace;">00:93:23</span>
+                  <span class="sp-log-title">Some Event Happened</span>
+                </div>
+                <div class="sp-log-details sp-padding-left-2">Here are some more details about this event.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sp-app-content-sidebar sp-flex">
+      <div class="sp-app-content-sidebar-menu sp-container-dark sp-alt-one sp-shadow-medium " style="width:450px;">
+        <div class="sp-padding-1 sp-container sp-label sp-color-contrast sp-flex sp-border-bottom-base">
+          <button tabindex="0" class="sp-icon-metadata sp-minimal sp-simple-icon sp-primary sp-small sp-primary sp-float-left"></button>
+          <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Template Properties</span>
+          <!-- <button tabindex="0" class="sp-icon-circle-close sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
+        </div>
+        <div class="sp-app-content-sidebar-menu-content sp-small">
+          <div class="sp-padding-2 sp-border-bottom-base">
+            <div class="sp-selector qit-target sp-small sp-block" style="width: 100%">
+              <input readonly="" class="sp-padding-icon-left qit-target sp-selector-trigger sp-small" type="text" value="Add A New Field" style="width: 100%">
+              <div class="sp-selector-overlay sp-icon-circle-plus">
+                <div class="sp-menu-dropdown sp-overlay">
+                  <a class="sp-menu-item sp-icon-template-text">
+                    <span class="sp-color-contrast">Text Field</span>
+                    <span class="sp-float-right">Add Field<i class="sp-margin-left-1 sp-inline-icon-circle-plus"></i></span>
+                  </a>
+                  <a class="sp-menu-item sp-icon-link">
+                    <span class="sp-color-contrast">URL Field</span>
+                    <span class="sp-float-right">Add Field<i class="sp-margin-left-1 sp-inline-icon-circle-plus"></i></span>
+                  </a>
+                  <a class="sp-menu-item sp-icon-template-number">
+                    <span class="sp-color-contrast">Number Field</span>
+                    <span class="sp-float-right">Add Field<i class="sp-margin-left-1 sp-inline-icon-circle-plus"></i></span>
+                  </a>
+                  <a class="sp-menu-item sp-icon-template-list">
+                    <span class="sp-color-contrast">Dropdown List Field</span>
+                    <span class="sp-float-right">Add Field<i class="sp-margin-left-1 sp-inline-icon-circle-plus"></i></span>
+                  </a>
+                  <a class="sp-menu-item sp-icon-multi-select">
+                    <span class="sp-color-contrast">Multi-Select List Field</span>
+                    <span class="sp-float-right">Add Field<i class="sp-margin-left-1 sp-inline-icon-circle-plus"></i></span>
+                  </a>
+                  <a class="sp-menu-item sp-icon-circle-check">
+                    <span class="sp-color-contrast">Checkbox Field</span>
+                    <span class="sp-float-right">Add Field<i class="sp-margin-left-1 sp-inline-icon-circle-plus"></i></span>
+                  </a>
+                  <a class="sp-menu-item sp-icon-toggle-on">
+                    <span class="sp-color-contrast">Toggle Field</span>
+                    <span class="sp-float-right">Add Field<i class="sp-margin-left-1 sp-inline-icon-circle-plus"></i></span>
+                  </a>
+                  <a class="sp-menu-item sp-icon-calendar">
+                    <span class="sp-color-contrast">Date/Time Field</span>
+                    <span class="sp-float-right">Add Field<i class="sp-margin-left-1 sp-inline-icon-circle-plus"></i></span>
+                  </a>
+                  <a class="sp-menu-item sp-icon-label">
+                    <span class="sp-color-contrast">Section Label</span>
+                    <span class="sp-float-right">Add Field<i class="sp-margin-left-1 sp-inline-icon-circle-plus"></i></span>
+                  </a>
+                  <a class="sp-menu-item sp-icon-image">
+                    <span class="sp-color-contrast">Image Asset Field</span>
+                    <span class="sp-float-right">Add Field<i class="sp-margin-left-1 sp-inline-icon-circle-plus"></i></span>
+                  </a>
+                  <a class="sp-menu-item sp-icon-video">
+                    <span class="sp-color-contrast">Video Asset Field</span>
+                    <span class="sp-float-right">Add Field<i class="sp-margin-left-1 sp-inline-icon-circle-plus"></i></span>
+                  </a>
+                  <a class="sp-menu-item sp-icon-file">
+                    <span class="sp-color-contrast">File Upload Field</span>
+                    <span class="sp-float-right">Add Field<i class="sp-margin-left-1 sp-inline-icon-circle-plus"></i></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="sp-group sp-flex">
+            <a class="sp-button sp-tooltip sp-tooltip-below sp-icon-template-text" style="flex: 1"></a>
+            <a class="sp-button sp-tooltip sp-tooltip-below sp-icon-link" style="flex: 1"></a>
+            <a class="sp-button sp-tooltip sp-tooltip-below sp-icon-template-number" style="flex: 1"></a>
+            <a class="sp-button sp-tooltip sp-tooltip-below sp-icon-template-slider" style="flex: 1"></a>
+            <a class="sp-button sp-tooltip sp-tooltip-below sp-icon-template-list" style="flex: 1"></a>
+            <a class="sp-button sp-tooltip sp-tooltip-below sp-icon-multi-select" style="flex: 1"></a>
+            <a class="sp-button sp-tooltip sp-tooltip-below sp-icon-circle-check" style="flex: 1"></a>
+            <a class="sp-button sp-tooltip sp-tooltip-below sp-icon-toggle-on" style="flex: 1"></a>
+            <a class="sp-button sp-tooltip sp-tooltip-below sp-icon-calendar" style="flex: 1"></a>
+            <a class="sp-button sp-tooltip sp-tooltip-below sp-icon-label" style="flex: 1"></a>
+            <a class="sp-button sp-tooltip sp-tooltip-below sp-icon-image" style="flex: 1"></a>
+            <a class="sp-button sp-tooltip sp-tooltip-below sp-icon-video" style="flex: 1"></a>
+            <a class="sp-button sp-tooltip sp-tooltip-below sp-icon-file" style="flex: 1"></a>
+          </div> -->
+          <div class="sp-padding-2">
+
+            <div class="sp-border-bottom-base sp-margin-bottom-2 sp-padding-1 sp-bg-overlay-dark-2">
+              <div class="sp-h6 sp-color-contrast">
+                Section Label One
+                <span class="sp-float-right sp-color-base"><i class="sp-inline-icon-edit sp-margin-right-1"></i><i class="sp-inline-icon-circle-close sp-margin-right-1"></i></span>
+              </div>
+            </div>
+
+            <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
+              <div class="sp-h6 sp-color-contrast">
+                <i class="sp-inline-icon-circle-arrow-down sp-margin-right-1 sp-color-base"></i>
+                <i class="sp-inline-icon-template-text sp-margin-right-1"></i>
+                My Custom Text Field
+                <span style="font-size: 12px" class="sp-float-right sp-color-base">{{textfield}}</span>
+              </div>
+              <div class="sp-border-top-base sp-margin-top-1 sp-padding-1 sp-wrapper" style="font-size: 12px">
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Field Name</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="My Custom Text Field" style="width: calc(100% - 20px)"/></div>
+                </div>
+                
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">ID</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="textfield" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Default Value</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="Here's some text!" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-horizontal-2 sp-align-right">Is Required?</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <input type="checkbox" class="qit-target sp-small"><label></label>
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Min Characters</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" type="number" value="0" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Max Characters</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" type="number" value="1000" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Only Show When</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <div class="sp-selector sp-small sp-block" style="width: 100%">
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2 sp-selector-trigger" value="Always Show" readonly style="font-size: 12px; width: calc(100% - 20px)"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-state-active" style="font-size: 12px">Always Show</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px; pointer-events: none">The value of <span class="sp-color-contrast sp-font-weight-bold">dropdownList</span> is:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item1</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item2</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item3</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px">The value of <span class="sp-color-contrast sp-font-weight-bold">checkbox</span> is:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>true</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>false</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px">The selected values of <span class="sp-color-contrast sp-font-weight-bold">multiSelect</span> includes:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item1</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item2</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item3</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item4</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item5</a>
+                        </div>
+                      </div>
+                    </div>                  
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-2 sp-padding-horizontal-2 sp-align-right">Helper Text</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <textarea class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="textfield" style="width: calc(100% - 20px); min-width: calc(100% - 20px); max-width: calc(100% - 20px)">Here I can enter some text that will show in the form to help the user.</textarea></div>
+                </div>
+
+
+              </div>
+
+              <div class="sp-border-top-base sp-margin-top-1 sp-padding-1 sp-flex sp-group" style="font-size: 12px">
+                <button class="sp-icon-save sp-state-disabled">Save Changes</button>
+                <button class="sp-icon-circle-close sp-state-disabled">Discard Edits</button>
+                <button class="sp-icon-trash sp-icon-color-danger" style="flex: 1">Delete</button>
+              </div>
+            </div>
+
+            <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
+              <div class="sp-h6 sp-color-contrast">
+                <i class="sp-inline-icon-circle-arrow-down sp-margin-right-1 sp-color-base"></i>
+                <i class="sp-inline-icon-link sp-margin-right-1"></i>
+                My URL Field
+                <span style="font-size: 12px" class="sp-float-right sp-color-base">{{url}}</span>
+              </div>
+              <div class="sp-border-top-base sp-margin-top-1 sp-padding-1 sp-wrapper" style="font-size: 12px">
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Field Name</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="My URL Field" style="width: calc(100% - 20px)"/></div>
+                </div>
+                
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">ID</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="url" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Default Value</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="https://gospecless.com" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-horizontal-2 sp-align-right">Is Required?</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <input type="checkbox" class="qit-target sp-small"><label></label>
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-horizontal-2 sp-align-right">Enforce HTTPS?</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <input type="checkbox" checked class="qit-target sp-small"><label></label>
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Only Show When</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <div class="sp-selector sp-small sp-block" style="width: 100%">
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2 sp-selector-trigger" value="Always Show" readonly style="font-size: 12px; width: calc(100% - 20px)"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-state-active" style="font-size: 12px">Always Show</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px; pointer-events: none">The value of <span class="sp-color-contrast sp-font-weight-bold">dropdownList</span> is:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item1</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item2</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item3</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px">The value of <span class="sp-color-contrast sp-font-weight-bold">checkbox</span> is:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>true</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>false</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px">The selected values of <span class="sp-color-contrast sp-font-weight-bold">multiSelect</span> includes:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item1</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item2</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item3</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item4</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item5</a>
+                        </div>
+                      </div>
+                    </div>                  
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-2 sp-padding-horizontal-2 sp-align-right">Helper Text</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <textarea class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="textfield" style="width: calc(100% - 20px); min-width: calc(100% - 20px); max-width: calc(100% - 20px)">Here I can enter some text that will show in the form to help the user.</textarea></div>
+                </div>
+
+
+              </div>
+
+              <div class="sp-border-top-base sp-margin-top-1 sp-padding-1 sp-flex sp-group" style="font-size: 12px">
+                <button class="sp-icon-save sp-state-disabled">Save Changes</button>
+                <button class="sp-icon-circle-close sp-state-disabled">Discard Edits</button>
+                <button class="sp-icon-trash sp-icon-color-danger" style="flex: 1">Delete</button>
+              </div>
+
+            </div>
+
+            <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
+              <div class="sp-h6 sp-color-contrast">
+                <i class="sp-inline-icon-circle-arrow-down sp-margin-right-1 sp-color-base"></i>
+                <i class="sp-inline-icon-template-number sp-margin-right-1"></i>
+                My Custom Number Field
+                <span style="font-size: 12px" class="sp-float-right sp-color-base">{{customNumber}}</span>
+              </div>
+              <div class="sp-border-top-base sp-margin-top-1 sp-padding-1 sp-wrapper" style="font-size: 12px">
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Field Name</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="My Custom Number Field" style="width: calc(100% - 20px)"/></div>
+                </div>
+                
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">ID</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="customNumber" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Default Value</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="12" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-horizontal-2 sp-align-right">Is Required?</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <input type="checkbox" class="qit-target sp-small"><label></label>
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-horizontal-2 sp-align-right">Use Slider UI?</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <input type="checkbox" class="qit-target sp-small"><label></label>
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Min Value</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" type="number" value="-10" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Max Value</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" type="number" value="10" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Only Show When</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <div class="sp-selector sp-small sp-block" style="width: 100%">
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2 sp-selector-trigger" value="Always Show" readonly style="font-size: 12px; width: calc(100% - 20px)"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-state-active" style="font-size: 12px">Always Show</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px; pointer-events: none">The value of <span class="sp-color-contrast sp-font-weight-bold">dropdownList</span> is:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item1</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item2</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item3</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px">The value of <span class="sp-color-contrast sp-font-weight-bold">checkbox</span> is:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>true</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>false</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px">The selected values of <span class="sp-color-contrast sp-font-weight-bold">multiSelect</span> includes:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item1</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item2</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item3</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item4</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item5</a>
+                        </div>
+                      </div>
+                    </div>                  
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Only Show When</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <div class="sp-selector sp-small sp-block" style="width: 100%">
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2 sp-selector-trigger" value="Always Show" readonly style="font-size: 12px; width: calc(100% - 20px)"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-state-active" style="font-size: 12px">Always Show</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px; pointer-events: none">The value of <span class="sp-color-contrast sp-font-weight-bold">dropdownList</span> is:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item1</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item2</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item3</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px">The value of <span class="sp-color-contrast sp-font-weight-bold">checkbox</span> is:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>true</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>false</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px">The selected values of <span class="sp-color-contrast sp-font-weight-bold">multiSelect</span> includes:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item1</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item2</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item3</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item4</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item5</a>
+                        </div>
+                      </div>
+                    </div>                  
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-2 sp-padding-horizontal-2 sp-align-right">Helper Text</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <textarea class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="textfield" style="width: calc(100% - 20px); min-width: calc(100% - 20px); max-width: calc(100% - 20px)">Here I can enter some text that will show in the form to help the user.</textarea></div>
+                </div>
+
+
+              </div>
+
+              <div class="sp-border-top-base sp-margin-top-1 sp-padding-1 sp-flex sp-group" style="font-size: 12px">
+                <button class="sp-icon-save sp-state-disabled">Save Changes</button>
+                <button class="sp-icon-circle-close sp-state-disabled">Discard Edits</button>
+                <button class="sp-icon-trash sp-icon-color-danger" style="flex: 1">Delete</button>
+              </div>
+            </div>
+
+
+            <div class="sp-border-bottom-base sp-margin-bottom-2 sp-padding-1 sp-bg-overlay-dark-2">
+              <div class="sp-h6 sp-color-contrast">
+                Section Label Two
+                <span style="font-size: 12px" class="sp-float-right sp-color-base"><i class="sp-inline-icon-edit sp-margin-right-1"></i><i class="sp-inline-icon-circle-close sp-margin-right-1"></i></span>
+              </div>
+            </div>
+
+
+            <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
+              <div class="sp-h6 sp-color-contrast">
+                <i class="sp-inline-icon-circle-arrow-down sp-margin-right-1 sp-color-base"></i>
+                <i class="sp-inline-icon-template-list sp-margin-right-1"></i>
+                My Dropdown List Field
+                <span style="font-size: 12px" class="sp-float-right sp-color-base">{{dropdownList}}</span>
+              </div>
+              <div class="sp-border-top-base sp-margin-top-1 sp-padding-1 sp-wrapper" style="font-size: 12px">
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Field Name</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="My Dropdown List Field" style="width: calc(100% - 20px)"/></div>
+                </div>
+                
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">ID</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="dropdownList" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-horizontal-2 sp-align-right">Is Required?</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <input type="checkbox" class="qit-target sp-small"><label></label>
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">List Items</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <button class="sp-block sp-icon-circle-plus">Add Item</button>
+                    <div class="sp-flex sp-margin-top-1">
+                      <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2" style="width:50%">Display Name</div>
+                      <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2" style="width:50%">Value</div>
+                    </div>
+                    <div class="sp-flex sp-margin-top-1" style="position: relative">
+                      <span style="display: inline-block;position: absolute; right: 100%; top: 5px; width:100px" class="sp-padding-horizontal-2 sp-align-right">
+                        <i class="sp-icon-menu sp-margin-right-2"></i><i class="sp-icon-star sp-margin-right-2 sp-color-muted"></i><i class="sp-icon-circle-close"></i>
+                      </span>
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2 sp-margin-right-1" value="First Item"/>
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="item1"/>
+                    </div>
+                    <div class="sp-flex sp-margin-top-1" style="position: relative">
+                      <span style="display: inline-block;position: absolute; right: 100%; top: 5px; width:100px" class="sp-padding-horizontal-2 sp-align-right">
+                        <i class="sp-icon-menu sp-margin-right-2"></i><i class="sp-icon-star sp-margin-right-2 sp-color-primary"></i><i class="sp-icon-circle-close"></i>
+                      </span>
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2 sp-margin-right-1" value="Second Item"/>
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="item2"/>
+                    </div>
+                    <div class="sp-flex sp-margin-top-1" style="position: relative">
+                      <span style="display: inline-block;position: absolute; right: 100%; top: 5px; width:100px" class="sp-padding-horizontal-2 sp-align-right">
+                        <i class="sp-icon-menu sp-margin-right-2"></i><i class="sp-icon-star sp-margin-right-2 sp-color-muted"></i><i class="sp-icon-circle-close"></i>
+                      </span>
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2 sp-margin-right-1" value="Third Item"/>
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="item3"/>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Only Show When</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <div class="sp-selector sp-small sp-block" style="width: 100%">
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2 sp-selector-trigger" value="Always Show" readonly style="font-size: 12px; width: calc(100% - 20px)"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-state-active" style="font-size: 12px">Always Show</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px; pointer-events: none">The value of <span class="sp-color-contrast sp-font-weight-bold">dropdownList</span> is:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item1</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item2</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item3</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px">The value of <span class="sp-color-contrast sp-font-weight-bold">checkbox</span> is:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>true</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>false</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px">The selected values of <span class="sp-color-contrast sp-font-weight-bold">multiSelect</span> includes:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item1</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item2</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item3</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item4</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item5</a>
+                        </div>
+                      </div>
+                    </div>                  
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-2 sp-padding-horizontal-2 sp-align-right">Helper Text</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <textarea class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="textfield" style="width: calc(100% - 20px); min-width: calc(100% - 20px); max-width: calc(100% - 20px)">Here I can enter some text that will show in the form to help the user.</textarea></div>
+                </div>
+
+
+              </div>
+
+              <div class="sp-border-top-base sp-margin-top-1 sp-padding-1 sp-flex sp-group" style="font-size: 12px">
+                <button class="sp-icon-save sp-state-disabled">Save Changes</button>
+                <button class="sp-icon-circle-close sp-state-disabled">Discard Edits</button>
+                <button class="sp-icon-trash sp-icon-color-danger" style="flex: 1">Delete</button>
+              </div>
+            </div>
+
+            <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
+              <div class="sp-h6 sp-color-contrast">
+                <i class="sp-inline-icon-circle-arrow-down sp-margin-right-1 sp-color-base"></i>
+                <i class="sp-inline-icon-multi-select sp-margin-right-1"></i>
+                My Multi Select Field
+                <span style="font-size: 12px" class="sp-float-right sp-color-base">{{multiSelect}}</span>
+              </div>
+              <div class="sp-border-top-base sp-margin-top-1 sp-padding-1 sp-wrapper" style="font-size: 12px">
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Field Name</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="My Multi Select Field" style="width: calc(100% - 20px)"/></div>
+                </div>
+                
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">ID</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="multiSelect" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-horizontal-2 sp-align-right">Is Required?</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <input type="checkbox" class="qit-target sp-small"><label></label>
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">List Items</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <button class="sp-block sp-icon-circle-plus">Add Item</button>
+                    <div class="sp-flex sp-margin-top-1">
+                      <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2" style="width:50%">Display Name</div>
+                      <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2" style="width:50%">Value</div>
+                    </div>
+                    <div class="sp-flex sp-margin-top-1" style="position: relative">
+                      <span style="display: inline-block;position: absolute; right: 100%; top: 5px; width:100px" class="sp-padding-horizontal-2 sp-align-right">
+                        <i class="sp-icon-menu sp-margin-right-2"></i><i class="sp-icon-star sp-margin-right-2 sp-color-muted"></i><i class="sp-icon-circle-close"></i>
+                      </span>
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2 sp-margin-right-1" value="First Item"/>
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="item1"/>
+                    </div>
+                    <div class="sp-flex sp-margin-top-1" style="position: relative">
+                      <span style="display: inline-block;position: absolute; right: 100%; top: 5px; width:100px" class="sp-padding-horizontal-2 sp-align-right">
+                        <i class="sp-icon-menu sp-margin-right-2"></i><i class="sp-icon-star sp-margin-right-2 sp-color-primary"></i><i class="sp-icon-circle-close"></i>
+                      </span>
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2 sp-margin-right-1" value="Second Item"/>
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="item2"/>
+                    </div>
+                    <div class="sp-flex sp-margin-top-1" style="position: relative">
+                      <span style="display: inline-block;position: absolute; right: 100%; top: 5px; width:100px" class="sp-padding-horizontal-2 sp-align-right">
+                        <i class="sp-icon-menu sp-margin-right-2"></i><i class="sp-icon-star sp-margin-right-2 sp-color-muted"></i><i class="sp-icon-circle-close"></i>
+                      </span>
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2 sp-margin-right-1" value="Third Item"/>
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="item3"/>
+                    </div>
+                    <div class="sp-flex sp-margin-top-1" style="position: relative">
+                      <span style="display: inline-block;position: absolute; right: 100%; top: 5px; width:100px" class="sp-padding-horizontal-2 sp-align-right">
+                        <i class="sp-icon-menu sp-margin-right-2"></i><i class="sp-icon-star sp-margin-right-2 sp-color-muted"></i><i class="sp-icon-circle-close"></i>
+                      </span>
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2 sp-margin-right-1" value="Fourth Item"/>
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="item4"/>
+                    </div>
+                    <div class="sp-flex sp-margin-top-1" style="position: relative">
+                      <span style="display: inline-block;position: absolute; right: 100%; top: 5px; width:100px" class="sp-padding-horizontal-2 sp-align-right">
+                        <i class="sp-icon-menu sp-margin-right-2"></i><i class="sp-icon-star sp-margin-right-2 sp-color-primary"></i><i class="sp-icon-circle-close"></i>
+                      </span>
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2 sp-margin-right-1" value="Fifth Item"/>
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="item5"/>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Only Show When</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <div class="sp-selector sp-small sp-block" style="width: 100%">
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2 sp-selector-trigger" value="Always Show" readonly style="font-size: 12px; width: calc(100% - 20px)"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-state-active" style="font-size: 12px">Always Show</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px; pointer-events: none">The value of <span class="sp-color-contrast sp-font-weight-bold">dropdownList</span> is:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item1</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item2</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item3</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px">The value of <span class="sp-color-contrast sp-font-weight-bold">checkbox</span> is:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>true</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>false</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px">The selected values of <span class="sp-color-contrast sp-font-weight-bold">multiSelect</span> includes:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item1</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item2</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item3</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item4</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item5</a>
+                        </div>
+                      </div>
+                    </div>                  
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-2 sp-padding-horizontal-2 sp-align-right">Helper Text</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <textarea class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="textfield" style="width: calc(100% - 20px); min-width: calc(100% - 20px); max-width: calc(100% - 20px)">Here I can enter some text that will show in the form to help the user.</textarea></div>
+                </div>
+
+
+              </div>
+
+              <div class="sp-border-top-base sp-margin-top-1 sp-padding-1 sp-flex sp-group" style="font-size: 12px">
+                <button class="sp-icon-save sp-state-disabled">Save Changes</button>
+                <button class="sp-icon-circle-close sp-state-disabled">Discard Edits</button>
+                <button class="sp-icon-trash sp-icon-color-danger" style="flex: 1">Delete</button>
+              </div>
+            </div>
+
+
+            <div class="sp-border-bottom-base sp-margin-bottom-2 sp-padding-1 sp-bg-overlay-dark-2">
+              <div class="sp-h6 sp-color-contrast">
+                Section Label Three
+                <span style="font-size: 12px" class="sp-float-right sp-color-base"><i class="sp-inline-icon-edit sp-margin-right-1"></i><i class="sp-inline-icon-circle-close sp-margin-right-1"></i></span>
+              </div>
+            </div>
+
+            <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
+              <div class="sp-h6 sp-color-contrast">
+                <i class="sp-inline-icon-circle-arrow-down sp-margin-right-1 sp-color-base"></i>
+                <i class="sp-inline-icon-image sp-margin-right-1"></i>
+                My Custom Image
+                <span style="font-size: 12px" class="sp-float-right sp-color-base">{{customImage}}</span>
+              </div>
+              <div class="sp-border-top-base sp-margin-top-1 sp-padding-1 sp-wrapper" style="font-size: 12px">
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Field Name</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="My Custom Image" style="width: calc(100% - 20px)"/></div>
+                </div>
+                
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">ID</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="customImage" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Default Value</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="assets/image.png" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-horizontal-2 sp-align-right">Is Required?</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <input type="checkbox" class="qit-target sp-small"><label></label>
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-horizontal-2 sp-align-right">File Types</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <input checked type="checkbox" class="qit-target sp-small"><label>JPEG</label><br>
+                    <input checked type="checkbox" class="qit-target sp-small"><label>PNG</label><br>
+                    <input checked type="checkbox" class="qit-target sp-small"><label>GIF</label><br>
+                    <input checked type="checkbox" class="qit-target sp-small"><label>WEBP</label><br>
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Max Size (KB)</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" type="number" value="1000" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Min Width (px)</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" type="number" value="0" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Max Width (px)</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" type="number" value="32000" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Min Height (px)</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" type="number" value="0" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Max Height (px)</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" type="number" value="32000" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Only Show When</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <div class="sp-selector sp-small sp-block" style="width: 100%">
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2 sp-selector-trigger" value="Always Show" readonly style="font-size: 12px; width: calc(100% - 20px)"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-state-active" style="font-size: 12px">Always Show</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px; pointer-events: none">The value of <span class="sp-color-contrast sp-font-weight-bold">dropdownList</span> is:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item1</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item2</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item3</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px">The value of <span class="sp-color-contrast sp-font-weight-bold">checkbox</span> is:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>true</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>false</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px">The selected values of <span class="sp-color-contrast sp-font-weight-bold">multiSelect</span> includes:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item1</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item2</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item3</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item4</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item5</a>
+                        </div>
+                      </div>
+                    </div>                  
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-2 sp-padding-horizontal-2 sp-align-right">Helper Text</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <textarea class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="textfield" style="width: calc(100% - 20px); min-width: calc(100% - 20px); max-width: calc(100% - 20px)">Here I can enter some text that will show in the form to help the user.</textarea></div>
+                </div>
+
+
+              </div>
+
+              <div class="sp-border-top-base sp-margin-top-1 sp-padding-1 sp-flex sp-group" style="font-size: 12px">
+                <button class="sp-icon-save sp-state-disabled">Save Changes</button>
+                <button class="sp-icon-circle-close sp-state-disabled">Discard Edits</button>
+                <button class="sp-icon-trash sp-icon-color-danger" style="flex: 1">Delete</button>
+              </div>
+            </div>
+
+            <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
+              <div class="sp-h6 sp-color-contrast">
+                <i class="sp-inline-icon-circle-arrow-down sp-margin-right-1 sp-color-base"></i>
+                <i class="sp-inline-icon-video sp-margin-right-1"></i>
+                My Custom Video
+                <span style="font-size: 12px" class="sp-float-right sp-color-base">{{customVideo}}</span>
+              </div>
+              <div class="sp-border-top-base sp-margin-top-1 sp-padding-1 sp-wrapper" style="font-size: 12px">
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Field Name</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="My Custom Video" style="width: calc(100% - 20px)"/></div>
+                </div>
+                
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">ID</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="customVideo" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Default Value</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="assets/video.mp4" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-horizontal-2 sp-align-right">Is Required?</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <input type="checkbox" class="qit-target sp-small"><label></label>
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-horizontal-2 sp-align-right">Aspect Ratio</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <input checked type="radio" class="qit-target sp-small"><label>Any</label>
+                    <input type="radio" class="sp-small"><label>16:9</label>
+                    <input type="radio" class="sp-small"><label>4:3</label>
+                    <input type="radio" class="sp-small"><label>1:85:1</label>
+                    <input type="radio" class="sp-small"><label>2:39:1</label>
+                    <div class="sp-margin-top-1"></div>
+                    <input type="radio" class="sp-small"><label>Other</label><input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" style="width: 20px"/> : <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" style="width: 20px"/>
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Max Size (KB)</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" type="number" value="10000" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Min Duration (Seconds)</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" type="number" value="1" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Max Duration (Seconds)</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" type="number" value="1000" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Only Show When</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <div class="sp-selector sp-small sp-block" style="width: 100%">
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2 sp-selector-trigger" value="Always Show" readonly style="font-size: 12px; width: calc(100% - 20px)"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-state-active" style="font-size: 12px">Always Show</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px; pointer-events: none">The value of <span class="sp-color-contrast sp-font-weight-bold">dropdownList</span> is:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item1</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item2</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item3</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px">The value of <span class="sp-color-contrast sp-font-weight-bold">checkbox</span> is:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>true</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>false</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px">The selected values of <span class="sp-color-contrast sp-font-weight-bold">multiSelect</span> includes:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item1</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item2</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item3</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item4</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item5</a>
+                        </div>
+                      </div>
+                    </div>                  
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-2 sp-padding-horizontal-2 sp-align-right">Helper Text</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <textarea class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="textfield" style="width: calc(100% - 20px); min-width: calc(100% - 20px); max-width: calc(100% - 20px)">Here I can enter some text that will show in the form to help the user.</textarea></div>
+                </div>
+
+
+              </div>
+
+              <div class="sp-border-top-base sp-margin-top-1 sp-padding-1 sp-flex sp-group" style="font-size: 12px">
+                <button class="sp-icon-save sp-state-disabled">Save Changes</button>
+                <button class="sp-icon-circle-close sp-state-disabled">Discard Edits</button>
+                <button class="sp-icon-trash sp-icon-color-danger" style="flex: 1">Delete</button>
+              </div>
+            </div>
+
+            <!-- <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
+              <div class="sp-h6 sp-color-contrast">
+                <i class="sp-inline-icon-circle-arrow-down sp-margin-right-1 sp-color-base"></i>
+                <i class="sp-inline-icon-template-collection sp-margin-right-1"></i>
+                My Custom Collection
+                <span style="font-size: 12px" class="sp-float-right sp-color-base">{{customCollection}}</span>
+              </div>
+            </div> -->
+
+            <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
+              <div class="sp-h6 sp-color-contrast">
+                <i class="sp-inline-icon-circle-arrow-down sp-margin-right-1 sp-color-base"></i>
+                <i class="sp-inline-icon-image sp-margin-right-1"></i>
+                My File Upload Field
+                <span style="font-size: 12px" class="sp-float-right sp-color-base">{{customFile}}</span>
+              </div>
+              <div class="sp-border-top-base sp-margin-top-1 sp-padding-1 sp-wrapper" style="font-size: 12px">
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Field Name</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="My File Upload Field" style="width: calc(100% - 20px)"/></div>
+                </div>
+                
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">ID</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="customFile" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Default Value</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="assets/addresses.csv" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-horizontal-2 sp-align-right">Is Required?</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <input type="checkbox" class="qit-target sp-small"><label></label>
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-horizontal-2 sp-align-right">Allowed File Types</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <input type="checkbox" class="qit-target sp-small"><label>JSON</label><br>
+                    <input checked type="checkbox" class="qit-target sp-small"><label>CSV</label><br>
+                    <input type="checkbox" class="qit-target sp-small"><label>SVG</label><br>
+                    <input type="checkbox" class="qit-target sp-small"><label>XML</label><br>
+                    <input type="checkbox" class="qit-target sp-small"><label>PDF</label><br>
+                    <input type="checkbox" class="qit-target sp-small"><label>DOC</label><br>
+                    <input type="checkbox" class="qit-target sp-small"><label>XLS</label><br>
+                    <input type="checkbox" class="qit-target sp-small"><label>ZIP</label><br>
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Max Size (KB)</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" type="number" value="1000" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Only Show When</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <div class="sp-selector sp-small sp-block" style="width: 100%">
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2 sp-selector-trigger" value="Always Show" readonly style="font-size: 12px; width: calc(100% - 20px)"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-state-active" style="font-size: 12px">Always Show</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px; pointer-events: none">The value of <span class="sp-color-contrast sp-font-weight-bold">dropdownList</span> is:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item1</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item2</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item3</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px">The value of <span class="sp-color-contrast sp-font-weight-bold">checkbox</span> is:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>true</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>false</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px">The selected values of <span class="sp-color-contrast sp-font-weight-bold">multiSelect</span> includes:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item1</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item2</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item3</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item4</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item5</a>
+                        </div>
+                      </div>
+                    </div>                  
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-2 sp-padding-horizontal-2 sp-align-right">Helper Text</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <textarea class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="textfield" style="width: calc(100% - 20px); min-width: calc(100% - 20px); max-width: calc(100% - 20px)">Here I can enter some text that will show in the form to help the user.</textarea></div>
+                </div>
+
+
+              </div>
+
+              <div class="sp-border-top-base sp-margin-top-1 sp-padding-1 sp-flex sp-group" style="font-size: 12px">
+                <button class="sp-icon-save sp-state-disabled">Save Changes</button>
+                <button class="sp-icon-circle-close sp-state-disabled">Discard Edits</button>
+                <button class="sp-icon-trash sp-icon-color-danger" style="flex: 1">Delete</button>
+              </div>
+            </div>
+
+            <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
+              <div class="sp-h6 sp-color-contrast">
+                <i class="sp-inline-icon-circle-arrow-down sp-margin-right-1 sp-color-base"></i>
+                <i class="sp-inline-icon-circle-check sp-margin-right-1"></i>
+                My Checkbox
+                <span style="font-size: 12px" class="sp-float-right sp-color-base">{{checkbox}}</span>
+              </div>
+              <div class="sp-border-top-base sp-margin-top-1 sp-padding-1 sp-wrapper" style="font-size: 12px">
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Field Name</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="My Checkbox" style="width: calc(100% - 20px)"/></div>
+                </div>
+                
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">ID</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="checkbox" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Default Value</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <input type="radio" class="qit-target sp-small"/><label>true</label><input type="radio" checked class="sp-small"/><label>false</label>
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-horizontal-2 sp-align-right">Is Required?</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <input type="checkbox" class="qit-target sp-small"><label></label>
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Checkbox Label</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="Include This?" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Only Show When</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <div class="sp-selector sp-small sp-block" style="width: 100%">
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2 sp-selector-trigger" value="Always Show" readonly style="font-size: 12px; width: calc(100% - 20px)"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-state-active" style="font-size: 12px">Always Show</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px; pointer-events: none">The value of <span class="sp-color-contrast sp-font-weight-bold">dropdownList</span> is:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item1</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item2</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item3</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px">The value of <span class="sp-color-contrast sp-font-weight-bold">checkbox</span> is:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>true</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>false</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px">The selected values of <span class="sp-color-contrast sp-font-weight-bold">multiSelect</span> includes:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item1</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item2</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item3</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item4</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item5</a>
+                        </div>
+                      </div>
+                    </div>                  
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-2 sp-padding-horizontal-2 sp-align-right">Helper Text</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <textarea class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="textfield" style="width: calc(100% - 20px); min-width: calc(100% - 20px); max-width: calc(100% - 20px)">Here I can enter some text that will show in the form to help the user.</textarea></div>
+                </div>
+
+
+              </div>
+
+              <div class="sp-border-top-base sp-margin-top-1 sp-padding-1 sp-flex sp-group" style="font-size: 12px">
+                <button class="sp-icon-save sp-state-disabled">Save Changes</button>
+                <button class="sp-icon-circle-close sp-state-disabled">Discard Edits</button>
+                <button class="sp-icon-trash sp-icon-color-danger" style="flex: 1">Delete</button>
+              </div>
+            </div>
+
+            <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
+              <div class="sp-h6 sp-color-contrast">
+                <i class="sp-inline-icon-circle-arrow-down sp-margin-right-1 sp-color-base"></i>
+                <i class="sp-inline-icon-calendar sp-margin-right-1"></i>
+                My Custom Date
+                <span style="font-size: 12px" class="sp-float-right sp-color-base">{{dateField}}</span>
+              </div>
+              <div class="sp-border-top-base sp-margin-top-1 sp-padding-1 sp-wrapper" style="font-size: 12px">
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Field Name</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="My Custom Date" style="width: calc(100% - 20px)"/></div>
+                </div>
+                
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">ID</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="dateField" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Default Value</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="March 1, 1983 12:00am" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-horizontal-2 sp-align-right">Is Required?</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <input type="checkbox" class="qit-target sp-small"><label></label>
+                  </div>
+                </div>
+
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Only Show When</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <div class="sp-selector sp-small sp-block" style="width: 100%">
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2 sp-selector-trigger" value="Always Show" readonly style="font-size: 12px; width: calc(100% - 20px)"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-state-active" style="font-size: 12px">Always Show</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px; pointer-events: none">The value of <span class="sp-color-contrast sp-font-weight-bold">dropdownList</span> is:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item1</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item2</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item3</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px">The value of <span class="sp-color-contrast sp-font-weight-bold">checkbox</span> is:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>true</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>false</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px">The selected values of <span class="sp-color-contrast sp-font-weight-bold">multiSelect</span> includes:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item1</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item2</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item3</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item4</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item5</a>
+                        </div>
+                      </div>
+                    </div>                  
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-2 sp-padding-horizontal-2 sp-align-right">Helper Text</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <textarea class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="textfield" style="width: calc(100% - 20px); min-width: calc(100% - 20px); max-width: calc(100% - 20px)">Here I can enter some text that will show in the form to help the user.</textarea></div>
+                </div>
+
+
+              </div>
+
+              <div class="sp-border-top-base sp-margin-top-1 sp-padding-1 sp-flex sp-group" style="font-size: 12px">
+                <button class="sp-icon-save sp-state-disabled">Save Changes</button>
+                <button class="sp-icon-circle-close sp-state-disabled">Discard Edits</button>
+                <button class="sp-icon-trash sp-icon-color-danger" style="flex: 1">Delete</button>
+              </div>
+            </div>
+
+            <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
+              <div class="sp-h6 sp-color-contrast">
+                <i class="sp-inline-icon-circle-arrow-down sp-margin-right-1 sp-color-base"></i>
+                <i class="sp-inline-icon-toggle-on sp-margin-right-1"></i>
+                My Toggle
+                <span style="font-size: 12px" class="sp-float-right sp-color-base">{{customToggle}}</span>
+              </div>
+              <div class="sp-border-top-base sp-margin-top-1 sp-padding-1 sp-wrapper" style="font-size: 12px">
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Field Name</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="My Custom Text Field" style="width: calc(100% - 20px)"/></div>
+                </div>
+                
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">ID</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="textfield" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Default Value</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <input type="radio" class="qit-target sp-small"/><label>true</label><input type="radio" checked class="sp-small"/><label>false</label>
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-horizontal-2 sp-align-right">Is Required?</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <input type="checkbox" class="qit-target sp-small"><label></label>
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">On State Label</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="On" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Off State Label</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="Off" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Only Show When</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <div class="sp-selector sp-small sp-block" style="width: 100%">
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2 sp-selector-trigger" value="Always Show" readonly style="font-size: 12px; width: calc(100% - 20px)"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-state-active" style="font-size: 12px">Always Show</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px; pointer-events: none">The value of <span class="sp-color-contrast sp-font-weight-bold">dropdownList</span> is:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item1</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item2</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item3</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px">The value of <span class="sp-color-contrast sp-font-weight-bold">checkbox</span> is:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>true</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>false</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px">The selected values of <span class="sp-color-contrast sp-font-weight-bold">multiSelect</span> includes:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item1</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item2</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item3</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item4</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item5</a>
+                        </div>
+                      </div>
+                    </div>                  
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-2 sp-padding-horizontal-2 sp-align-right">Helper Text</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <textarea class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="textfield" style="width: calc(100% - 20px); min-width: calc(100% - 20px); max-width: calc(100% - 20px)">Here I can enter some text that will show in the form to help the user.</textarea></div>
+                </div>
+
+
+              </div>
+
+              <div class="sp-border-top-base sp-margin-top-1 sp-padding-1 sp-flex sp-group" style="font-size: 12px">
+                <button class="sp-icon-save sp-state-disabled">Save Changes</button>
+                <button class="sp-icon-circle-close sp-state-disabled">Discard Edits</button>
+                <button class="sp-icon-trash sp-icon-color-danger" style="flex: 1">Delete</button>
+              </div>
+            </div>
+
+
+            
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script>
+    var container = document.getElementById('container'),
+    canvas = document.getElementById('canvas'),
+    content = document.getElementById('content'),
+    recenter = document.getElementById('recenter');
+
+    function setPosition(recenter) {
+      $(canvas).css('width', $(window).width() + 5000);
+      $(canvas).css('height', $(window).height() + 5000);
+      $(content).css('top', $(window).height() + 50 + 'px');
+      $(content).css('left', $(window).width() + 50 + 'px');
+      
+      if (recenter) {
+        container.scrollTop = $(window).height();
+        container.scrollLeft = $(window).width();
+      }
+    }
+
+    $(recenter).click(function() {
+      setPosition(true);
+    });
+
+    function updatePreview() {
+      
+      $('#preview').width($(canvas).width()/100);
+      $('#preview').height($(canvas).height()/100);
+      $('#viewable').width($(container).width()/100);
+      $('#viewable').height($(container).height()/100);
+      $('#viewable').css('top', container.scrollTop/100 + 'px');
+      $('#viewable').css('left', container.scrollLeft/100 + 'px');
+      $('#box').width($(content).width()/100);
+      $('#box').height($(content).height()/100);
+      $('#box').css('top', ($(window).height() + 50)/100);
+      $('#box').css('left', ($(window).width() + 50)/100);
+      
+    }
+
+    $(window).resize(function() {
+      setPosition();
+      updatePreview();
+    });
+
+    $(container).scroll(function() {
+      updatePreview();
+    });
+
+    setPosition(true);
+    updatePreview();
+
+
+    $(content).resizable({
+      containment: container,
+      handles: "e, s, se",
+      minWidth: 20,
+      minHeight: 20,
+      maxWidth: 5000,
+      maxHeight: 5000,
+      classes: {
+        "ui-resizable-se": "sp-preview-panel-diag sp-overlay sp-icon-resize is-resizable",
+        "ui-resizable-s": "sp-preview-panel-down sp-overlay sp-icon-drag-both is-resizable",
+        "ui-resizable-e": "sp-preview-panel-right sp-overlay sp-icon-drag-both is-resizable"
+      }
+    });
+
+    function drag() {
+      var isDragging = false;
+      var isCanvas = false
+      var prevX;
+      var prevY;
+      $(canvas)
+      .mousedown(function(event) {
+          isDragging = true;
+          isCanvas = $(event.target).hasClass('is-draggable');
+          prevX = event.screenX;
+          prevY = event.screenY;
+          $(container).addClass('dragging');
+      })
+      .mousemove(function(event) {
+          if (isDragging && isCanvas) {
+           var distanceX = event.screenX - prevX;
+           var distanceY = event.screenY - prevY;
+           container.scrollTop = container.scrollTop - distanceY;
+           container.scrollLeft = container.scrollLeft - distanceX;
+           prevX = event.screenX;
+           prevY = event.screenY;
+           $(container).addClass('dragging');
+          }
+       })
+      .mouseup(function(event) {
+          isDragging = false;
+          isCanvas = false;
+          $(container).removeClass('dragging');
+      });
+    }
+
+    drag();
+  </script>
+  <script>
+    var contexts = document.getElementById('contexts-toggle');
+    var reporting = document.getElementById('reporting-toggle');
+    var activity = document.getElementById('activity-toggle');
+    var performance = document.getElementById('performance-toggle');
+
+    contexts.addEventListener('click', function() {
+      document.getElementById('contexts').setAttribute('style', 'display:block');
+      contexts.setAttribute('class', 'sp-icon-location sp-minimal sp-simple-icon sp-small sp-primary sp-float-right sp-state-active');
+      document.querySelector('#contexts-toggle.sp-state-active').addEventListener('click', function() {
+        document.getElementById('contexts').setAttribute('style', 'display:none')
+        contexts.setAttribute('class', 'sp-icon-location sp-minimal sp-simple-icon sp-small sp-primary sp-float-right');
+      });
+    });
+
+    reporting.addEventListener('click', function() {
+      document.getElementById('reporting').setAttribute('style', 'display:block');
+      reporting.setAttribute('class', 'sp-icon-data sp-minimal sp-simple-icon sp-small sp-primary sp-float-right sp-state-active');
+      document.querySelector('#reporting-toggle.sp-state-active').addEventListener('click', function() {
+        document.getElementById('reporting').setAttribute('style', 'display:none')
+        reporting.setAttribute('class', 'sp-icon-data sp-minimal sp-simple-icon sp-small sp-primary sp-float-right');
+      });
+    });
+
+    activity.addEventListener('click', function() {
+      document.getElementById('activity').setAttribute('style', 'display:block');
+      activity.setAttribute('class', 'sp-icon-console sp-minimal sp-simple-icon sp-small sp-primary sp-float-right sp-state-active');
+      document.querySelector('#activity-toggle.sp-state-active').addEventListener('click', function() {
+        document.getElementById('activity').setAttribute('style', 'display:none')
+        activity.setAttribute('class', 'sp-icon-console sp-minimal sp-simple-icon sp-small sp-primary sp-float-right');
+      });
+    });
+
+    performance.addEventListener('click', function() {
+      document.getElementById('performance').setAttribute('style', 'display:block');
+      performance.setAttribute('class', 'sp-icon-speed sp-minimal sp-simple-icon sp-small sp-primary sp-float-right sp-state-active');
+      document.querySelector('#performance-toggle.sp-state-active').addEventListener('click', function() {
+        document.getElementById('performance').setAttribute('style', 'display:none')
+        activity.setAttribute('class', 'sp-icon-speed sp-minimal sp-simple-icon sp-small sp-primary sp-float-right');
+      });
+    });
+
+
+    
+
+
+      
+    </script>
+
+  
+
+</body>
+</html>

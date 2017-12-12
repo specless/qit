@@ -149,6 +149,25 @@ body {
 	}
 }
 
+.sp-docs {
+	.sp-docs-left-nav {
+		width: 220px;
+		@include sp-padding(3, left);
+		@include sp-padding(3, right);
+	}
+
+	.sp-docs-main {
+		flex: 1;
+		max-width: 960px;
+	}
+
+	.sp-docs-right-nav {
+		width: 220px;
+		@include sp-padding(3, left);
+		@include sp-padding(3, right);
+	}
+}
+
 .sp-app-loading-logo {
 	position: absolute;
 	display: inline-block;

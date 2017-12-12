@@ -166,6 +166,19 @@ body {
 		@include sp-padding(3, left);
 		@include sp-padding(3, right);
 	}
+
+	.sp-submenu {
+		display: block
+		
+		.sp-submenu {
+			display: none;
+		}
+
+
+		a.sp-state-active+.sp-submenu, .sp-submenu.sp-state-active {
+			display: block
+		}
+	}
 }
 
 .sp-app-loading-logo {

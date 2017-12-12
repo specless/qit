@@ -9278,6 +9278,12 @@ body {
   padding-left: 1.6rem;
   padding-right: 1.6rem; }
 
+.sp-docs .sp-submenu .sp-submenu {
+  display: none; }
+
+.sp-docs .sp-submenu a.sp-state-active + .sp-submenu {
+  display: block; }
+
 .sp-app-loading-logo {
   position: absolute;
   display: inline-block;

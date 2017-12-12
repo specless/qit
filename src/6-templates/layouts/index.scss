@@ -168,16 +168,12 @@ body {
 	}
 
 	.sp-submenu {
+		display: none;
+	}
+
+
+	a.sp-state-active+.sp-submenu, .sp-submenu.sp-state-active {
 		display: block
-		
-		.sp-submenu {
-			display: none;
-		}
-
-
-		a.sp-state-active+.sp-submenu, .sp-submenu.sp-state-active {
-			display: block
-		}
 	}
 }
 

@@ -207,6 +207,14 @@ body {
 		ul ul {
 			@include sp-padding(2, left);
 		}
+
+		ul ul li {
+			font-weight: 400 !important;
+		}
+
+		ul ul ul {
+			display: none;
+		}
 	}
 
 	.sp-submenu {

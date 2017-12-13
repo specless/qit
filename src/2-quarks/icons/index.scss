@@ -191,26 +191,35 @@
   }
 }
 
-.sp-icon-docs[href='/getting-started']::before {
-  @extend %icon-circle-start
-}
 
-.sp-icon-docs[href='/platform']::before {
-  @extend %icon-window
-}
+.sp-docs {
 
-.sp-icon-docs[href='/developer']::before {
-  @extend %icon-code
-}
+  .sp-icon-docs[href='/getting-started']::before {
+    @extend %icon-circle-start
+  }
 
-.sp-icon-docs[href='/glossary']::before {
-  @extend %icon-guide
-}
+  .sp-icon-docs[href='/platform']::before {
+    @extend %icon-window
+  }
 
-.sp-icon-docs[href='/services']::before {
-  @extend %icon-tools
-}
+  .sp-icon-docs[href='/developer']::before {
+    @extend %icon-code
+  }
 
-a.sp-menu-item.sp-icon-folder[href*='-questions']::before {
-  @extend %icon-questions
+  .sp-icon-docs[href='/glossary']::before {
+    @extend %icon-guide
+  }
+
+  .sp-icon-docs[href='/services']::before {
+    @extend %icon-tools
+  }
+
+  a.sp-menu-item.sp-icon-folder[href*='-questions']::before {
+    @extend %icon-questions
+  }
+
+  a.sp-menu-item.sp-icon-folder[href*='-guides']::before {
+    @extend %icon-guide
+  }
+
 }

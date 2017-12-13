@@ -2039,7 +2039,7 @@ html {
 .sp-icon-circle-plus::before, .sp-icon-after-circle-plus::after, .sp-inline-icon-circle-plus::before {
   content: "\F01F"; }
 
-.sp-icon-docs[href='/getting-started']::before, .sp-icon-circle-start::before, .sp-icon-after-circle-start::after, .sp-inline-icon-circle-start::before {
+.sp-docs .sp-icon-docs[href='/getting-started']::before, .sp-icon-circle-start::before, .sp-icon-after-circle-start::after, .sp-inline-icon-circle-start::before {
   content: "\F020"; }
 
 .sp-icon-circle-sync::before, .sp-icon-after-circle-sync::after, .sp-inline-icon-circle-sync::before {
@@ -2060,7 +2060,7 @@ html {
 .sp-icon-close::before, .sp-icon-after-close::after, .sp-inline-icon-close::before {
   content: "\F026"; }
 
-.sp-icon-docs[href='/developer']::before, .sp-icon-code::before, .sp-icon-after-code::after, .sp-inline-icon-code::before {
+.sp-docs .sp-icon-docs[href='/developer']::before, .sp-icon-code::before, .sp-icon-after-code::after, .sp-inline-icon-code::before {
   content: "\F027"; }
 
 .sp-icon-console::before, .sp-icon-after-console::after, .sp-inline-icon-console::before {
@@ -2210,7 +2210,7 @@ html {
 .sp-icon-grid::before, .sp-icon-after-grid::after, .sp-inline-icon-grid::before {
   content: "\F058"; }
 
-.sp-icon-docs[href='/glossary']::before, .sp-icon-guide::before, .sp-icon-after-guide::after, .sp-inline-icon-guide::before {
+.sp-docs .sp-icon-docs[href='/glossary']::before, .sp-docs a.sp-menu-item.sp-icon-folder[href*='-guides']::before, .sp-icon-guide::before, .sp-icon-after-guide::after, .sp-inline-icon-guide::before {
   content: "\F059"; }
 
 .sp-icon-height-scale::before, .sp-icon-after-height-scale::after, .sp-inline-icon-height-scale::before {
@@ -2360,7 +2360,7 @@ html {
 .sp-icon-quarks::before, .sp-icon-after-quarks::after, .sp-inline-icon-quarks::before {
   content: "\F08A"; }
 
-a.sp-menu-item.sp-icon-folder[href*='-questions']::before, .sp-icon-questions::before, .sp-icon-after-questions::after, .sp-inline-icon-questions::before {
+.sp-docs a.sp-menu-item.sp-icon-folder[href*='-questions']::before, .sp-icon-questions::before, .sp-icon-after-questions::after, .sp-inline-icon-questions::before {
   content: "\F08B"; }
 
 .sp-icon-recent::before, .sp-icon-after-recent::after, .sp-inline-icon-recent::before {
@@ -2516,7 +2516,7 @@ a.sp-menu-item.sp-icon-folder[href*='-questions']::before, .sp-icon-questions::b
 .sp-icon-toggle-on::before, .sp-icon-after-toggle-on::after, .sp-inline-icon-toggle-on::before {
   content: "\F0BE"; }
 
-.sp-icon-docs[href='/services']::before, .sp-icon-tools::before, .sp-icon-after-tools::after, .sp-inline-icon-tools::before {
+.sp-docs .sp-icon-docs[href='/services']::before, .sp-icon-tools::before, .sp-icon-after-tools::after, .sp-inline-icon-tools::before {
   content: "\F0BF"; }
 
 .sp-icon-tracker::before, .sp-icon-after-tracker::after, .sp-inline-icon-tracker::before {
@@ -2567,7 +2567,7 @@ a.sp-menu-item.sp-icon-folder[href*='-questions']::before, .sp-icon-questions::b
 .sp-icon-width::before, .sp-icon-after-width::after, .sp-inline-icon-width::before {
   content: "\F0CF"; }
 
-.sp-icon-docs[href='/platform']::before, .sp-icon-window::before, .sp-icon-after-window::after, .sp-inline-icon-window::before {
+.sp-docs .sp-icon-docs[href='/platform']::before, .sp-icon-window::before, .sp-icon-after-window::after, .sp-inline-icon-window::before {
   content: "\F0D0"; }
 
 .sp-icon-workspace::before, .sp-icon-after-workspace::after, .sp-inline-icon-workspace::before {

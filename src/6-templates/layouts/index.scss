@@ -176,6 +176,11 @@ body {
 	a.sp-state-active+.sp-submenu, .sp-submenu.sp-state-active {
 		display: block
 	}
+
+
+	a.sp-state-active[href*='-questions']+.sp-submenu {
+		display: none !important;
+	}
 }
 
 .sp-app-loading-logo {

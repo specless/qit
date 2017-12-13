@@ -2360,218 +2360,221 @@ select + label::before, .sp-selector > input[type='text'].sp-selector-trigger + 
 .sp-icon-quarks::before, .sp-icon-after-quarks::after, .sp-inline-icon-quarks::before {
   content: "\F08A"; }
 
-.sp-icon-recent::before, .sp-icon-after-recent::after, .sp-inline-icon-recent::before {
+a.sp-menu-item.sp-icon-folder[href*='-questions']::before, .sp-icon-questions::before, .sp-icon-after-questions::after, .sp-inline-icon-questions::before {
   content: "\F08B"; }
 
-.sp-icon-rectangle-corners::before, .sp-icon-after-rectangle-corners::after, .sp-inline-icon-rectangle-corners::before {
+.sp-icon-recent::before, .sp-icon-after-recent::after, .sp-inline-icon-recent::before {
   content: "\F08C"; }
 
-.sp-icon-redo::before, .sp-icon-after-redo::after, .sp-inline-icon-redo::before {
+.sp-icon-rectangle-corners::before, .sp-icon-after-rectangle-corners::after, .sp-inline-icon-rectangle-corners::before {
   content: "\F08D"; }
 
-.sp-icon-reload::before, .sp-icon-after-reload::after, .sp-inline-icon-reload::before {
+.sp-icon-redo::before, .sp-icon-after-redo::after, .sp-inline-icon-redo::before {
   content: "\F08E"; }
 
-.sp-icon-replace::before, .sp-icon-after-replace::after, .sp-inline-icon-replace::before {
+.sp-icon-reload::before, .sp-icon-after-reload::after, .sp-inline-icon-reload::before {
   content: "\F08F"; }
 
-.sp-icon-reset::before, .sp-icon-after-reset::after, .sp-inline-icon-reset::before {
+.sp-icon-replace::before, .sp-icon-after-replace::after, .sp-inline-icon-replace::before {
   content: "\F090"; }
 
-.sp-icon-resize::before, .sp-icon-after-resize::after, .sp-inline-icon-resize::before {
+.sp-icon-reset::before, .sp-icon-after-reset::after, .sp-inline-icon-reset::before {
   content: "\F091"; }
 
-.sp-icon-rotate-device::before, .sp-icon-after-rotate-device::after, .sp-inline-icon-rotate-device::before {
+.sp-icon-resize::before, .sp-icon-after-resize::after, .sp-inline-icon-resize::before {
   content: "\F092"; }
 
-.sp-icon-ruler::before, .sp-icon-after-ruler::after, .sp-inline-icon-ruler::before {
+.sp-icon-rotate-device::before, .sp-icon-after-rotate-device::after, .sp-inline-icon-rotate-device::before {
   content: "\F093"; }
 
-.sp-icon-save::before, .sp-icon-after-save::after, .sp-inline-icon-save::before {
+.sp-icon-ruler::before, .sp-icon-after-ruler::after, .sp-inline-icon-ruler::before {
   content: "\F094"; }
 
-.sp-icon-scale-to-fit::before, .sp-icon-after-scale-to-fit::after, .sp-inline-icon-scale-to-fit::before {
+.sp-icon-save::before, .sp-icon-after-save::after, .sp-inline-icon-save::before {
   content: "\F095"; }
 
-.sp-icon-search::before, .sp-icon-after-search::after, .sp-inline-icon-search::before {
+.sp-icon-scale-to-fit::before, .sp-icon-after-scale-to-fit::after, .sp-inline-icon-scale-to-fit::before {
   content: "\F096"; }
 
-.sp-icon-settings::before, .sp-icon-after-settings::after, .sp-inline-icon-settings::before {
+.sp-icon-search::before, .sp-icon-after-search::after, .sp-inline-icon-search::before {
   content: "\F097"; }
 
-.sp-icon-share::before, .sp-icon-after-share::after, .sp-inline-icon-share::before {
+.sp-icon-settings::before, .sp-icon-after-settings::after, .sp-inline-icon-settings::before {
   content: "\F098"; }
 
-.sp-icon-site::before, .sp-icon-after-site::after, .sp-inline-icon-site::before {
+.sp-icon-share::before, .sp-icon-after-share::after, .sp-inline-icon-share::before {
   content: "\F099"; }
 
-.sp-icon-size::before, .sp-icon-after-size::after, .sp-inline-icon-size::before {
+.sp-icon-site::before, .sp-icon-after-site::after, .sp-inline-icon-site::before {
   content: "\F09A"; }
 
-.sp-icon-sketch::before, .sp-icon-after-sketch::after, .sp-inline-icon-sketch::before {
+.sp-icon-size::before, .sp-icon-after-size::after, .sp-inline-icon-size::before {
   content: "\F09B"; }
 
-.sp-icon-solid-circle-check::before, .sp-icon-after-solid-circle-check::after, .sp-inline-icon-solid-circle-check::before {
+.sp-icon-sketch::before, .sp-icon-after-sketch::after, .sp-inline-icon-sketch::before {
   content: "\F09C"; }
 
-.sp-icon-solid-circle-close::before, .sp-icon-after-solid-circle-close::after, .sp-inline-icon-solid-circle-close::before {
+.sp-icon-solid-circle-check::before, .sp-icon-after-solid-circle-check::after, .sp-inline-icon-solid-circle-check::before {
   content: "\F09D"; }
 
-.sp-icon-solid-error::before, .sp-icon-after-solid-error::after, .sp-inline-icon-solid-error::before {
+.sp-icon-solid-circle-close::before, .sp-icon-after-solid-circle-close::after, .sp-inline-icon-solid-circle-close::before {
   content: "\F09E"; }
 
-.sp-icon-solid-horizontal::before, .sp-icon-after-solid-horizontal::after, .sp-inline-icon-solid-horizontal::before {
+.sp-icon-solid-error::before, .sp-icon-after-solid-error::after, .sp-inline-icon-solid-error::before {
   content: "\F09F"; }
 
-.sp-icon-solid-lock::before, .sp-icon-after-solid-lock::after, .sp-inline-icon-solid-lock::before {
+.sp-icon-solid-horizontal::before, .sp-icon-after-solid-horizontal::after, .sp-inline-icon-solid-horizontal::before {
   content: "\F0A0"; }
 
-.sp-icon-solid-log::before, .sp-icon-after-solid-log::after, .sp-inline-icon-solid-log::before {
+.sp-icon-solid-lock::before, .sp-icon-after-solid-lock::after, .sp-inline-icon-solid-lock::before {
   content: "\F0A1"; }
 
-.sp-icon-solid-max::before, .sp-icon-after-solid-max::after, .sp-inline-icon-solid-max::before {
+.sp-icon-solid-log::before, .sp-icon-after-solid-log::after, .sp-inline-icon-solid-log::before {
   content: "\F0A2"; }
 
-.sp-icon-solid-min::before, .sp-icon-after-solid-min::after, .sp-inline-icon-solid-min::before {
+.sp-icon-solid-max::before, .sp-icon-after-solid-max::after, .sp-inline-icon-solid-max::before {
   content: "\F0A3"; }
 
-.sp-icon-solid-refresh::before, .sp-icon-after-solid-refresh::after, .sp-inline-icon-solid-refresh::before {
+.sp-icon-solid-min::before, .sp-icon-after-solid-min::after, .sp-inline-icon-solid-min::before {
   content: "\F0A4"; }
 
-.sp-icon-solid-sync::before, .sp-icon-after-solid-sync::after, .sp-inline-icon-solid-sync::before {
+.sp-icon-solid-refresh::before, .sp-icon-after-solid-refresh::after, .sp-inline-icon-solid-refresh::before {
   content: "\F0A5"; }
 
-.sp-icon-solid-target::before, .sp-icon-after-solid-target::after, .sp-inline-icon-solid-target::before {
+.sp-icon-solid-sync::before, .sp-icon-after-solid-sync::after, .sp-inline-icon-solid-sync::before {
   content: "\F0A6"; }
 
-.sp-icon-solid-unlock::before, .sp-icon-after-solid-unlock::after, .sp-inline-icon-solid-unlock::before {
+.sp-icon-solid-target::before, .sp-icon-after-solid-target::after, .sp-inline-icon-solid-target::before {
   content: "\F0A7"; }
 
-.sp-icon-solid-vertical::before, .sp-icon-after-solid-vertical::after, .sp-inline-icon-solid-vertical::before {
+.sp-icon-solid-unlock::before, .sp-icon-after-solid-unlock::after, .sp-inline-icon-solid-unlock::before {
   content: "\F0A8"; }
 
-.sp-icon-solid-warning::before, .sp-icon-after-solid-warning::after, .sp-inline-icon-solid-warning::before {
+.sp-icon-solid-vertical::before, .sp-icon-after-solid-vertical::after, .sp-inline-icon-solid-vertical::before {
   content: "\F0A9"; }
 
-.sp-icon-sort-down::before, .sp-icon-after-sort-down::after, .sp-inline-icon-sort-down::before {
+.sp-icon-solid-warning::before, .sp-icon-after-solid-warning::after, .sp-inline-icon-solid-warning::before {
   content: "\F0AA"; }
 
-.sp-icon-sort-up::before, .sp-icon-after-sort-up::after, .sp-inline-icon-sort-up::before {
+.sp-icon-sort-down::before, .sp-icon-after-sort-down::after, .sp-inline-icon-sort-down::before {
   content: "\F0AB"; }
 
-.sp-icon-speed::before, .sp-icon-after-speed::after, .sp-inline-icon-speed::before {
+.sp-icon-sort-up::before, .sp-icon-after-sort-up::after, .sp-inline-icon-sort-up::before {
   content: "\F0AC"; }
 
-.sp-icon-star-filled::before, .sp-icon-after-star-filled::after, .sp-inline-icon-star-filled::before {
+.sp-icon-speed::before, .sp-icon-after-speed::after, .sp-inline-icon-speed::before {
   content: "\F0AD"; }
 
-.sp-input-group.sp-required .sp-input-group-label::before, .sp-icon-star::before, .sp-icon-after-star::after, .sp-inline-icon-star::before {
+.sp-icon-star-filled::before, .sp-icon-after-star-filled::after, .sp-inline-icon-star-filled::before {
   content: "\F0AE"; }
 
-.sp-icon-states::before, .sp-icon-after-states::after, .sp-inline-icon-states::before {
+.sp-input-group.sp-required .sp-input-group-label::before, .sp-icon-star::before, .sp-icon-after-star::after, .sp-inline-icon-star::before {
   content: "\F0AF"; }
 
-.sp-icon-status::before, .sp-icon-after-status::after, .sp-inline-icon-status::before {
+.sp-icon-states::before, .sp-icon-after-states::after, .sp-inline-icon-states::before {
   content: "\F0B0"; }
 
-.sp-icon-sun::before, .sp-icon-after-sun::after, .sp-inline-icon-sun::before {
+.sp-icon-status::before, .sp-icon-after-status::after, .sp-inline-icon-status::before {
   content: "\F0B1"; }
 
-.sp-icon-sync::before, .sp-icon-after-sync::after, .sp-inline-icon-sync::before {
+.sp-icon-sun::before, .sp-icon-after-sun::after, .sp-inline-icon-sun::before {
   content: "\F0B2"; }
 
-.sp-icon-template-collection::before, .sp-icon-after-template-collection::after, .sp-inline-icon-template-collection::before {
+.sp-icon-sync::before, .sp-icon-after-sync::after, .sp-inline-icon-sync::before {
   content: "\F0B3"; }
 
-.sp-icon-template-list::before, .sp-icon-after-template-list::after, .sp-inline-icon-template-list::before {
+.sp-icon-template-collection::before, .sp-icon-after-template-collection::after, .sp-inline-icon-template-collection::before {
   content: "\F0B4"; }
 
-.sp-icon-template-number::before, .sp-icon-after-template-number::after, .sp-inline-icon-template-number::before {
+.sp-icon-template-list::before, .sp-icon-after-template-list::after, .sp-inline-icon-template-list::before {
   content: "\F0B5"; }
 
-.sp-icon-template-slider::before, .sp-icon-after-template-slider::after, .sp-inline-icon-template-slider::before {
+.sp-icon-template-number::before, .sp-icon-after-template-number::after, .sp-inline-icon-template-number::before {
   content: "\F0B6"; }
 
-.sp-icon-template-text::before, .sp-icon-after-template-text::after, .sp-inline-icon-template-text::before {
+.sp-icon-template-slider::before, .sp-icon-after-template-slider::after, .sp-inline-icon-template-slider::before {
   content: "\F0B7"; }
 
-.sp-icon-templates::before, .sp-icon-after-templates::after, .sp-inline-icon-templates::before {
+.sp-icon-template-text::before, .sp-icon-after-template-text::after, .sp-inline-icon-template-text::before {
   content: "\F0B8"; }
 
-.sp-icon-text::before, .sp-icon-after-text::after, .sp-inline-icon-text::before {
+.sp-icon-templates::before, .sp-icon-after-templates::after, .sp-inline-icon-templates::before {
   content: "\F0B9"; }
 
-.sp-icon-time::before, .sp-icon-after-time::after, .sp-inline-icon-time::before {
+.sp-icon-text::before, .sp-icon-after-text::after, .sp-inline-icon-text::before {
   content: "\F0BA"; }
 
-.sp-icon-timer::before, .sp-icon-after-timer::after, .sp-inline-icon-timer::before {
+.sp-icon-time::before, .sp-icon-after-time::after, .sp-inline-icon-time::before {
   content: "\F0BB"; }
 
-.sp-icon-toggle-off::before, .sp-icon-after-toggle-off::after, .sp-inline-icon-toggle-off::before {
+.sp-icon-timer::before, .sp-icon-after-timer::after, .sp-inline-icon-timer::before {
   content: "\F0BC"; }
 
-.sp-icon-toggle-on::before, .sp-icon-after-toggle-on::after, .sp-inline-icon-toggle-on::before {
+.sp-icon-toggle-off::before, .sp-icon-after-toggle-off::after, .sp-inline-icon-toggle-off::before {
   content: "\F0BD"; }
 
-.sp-icon-docs[href='/services']::before, .sp-icon-tools::before, .sp-icon-after-tools::after, .sp-inline-icon-tools::before {
+.sp-icon-toggle-on::before, .sp-icon-after-toggle-on::after, .sp-inline-icon-toggle-on::before {
   content: "\F0BE"; }
 
-.sp-icon-tracker::before, .sp-icon-after-tracker::after, .sp-inline-icon-tracker::before {
+.sp-icon-docs[href='/services']::before, .sp-icon-tools::before, .sp-icon-after-tools::after, .sp-inline-icon-tools::before {
   content: "\F0BF"; }
 
-.sp-icon-trash::before, .sp-icon-after-trash::after, .sp-inline-icon-trash::before {
+.sp-icon-tracker::before, .sp-icon-after-tracker::after, .sp-inline-icon-tracker::before {
   content: "\F0C0"; }
 
-.sp-icon-triangle-down::before, .sp-icon-after-triangle-down::after, .sp-inline-icon-triangle-down::before {
+.sp-icon-trash::before, .sp-icon-after-trash::after, .sp-inline-icon-trash::before {
   content: "\F0C1"; }
 
-.sp-icon-undo::before, .sp-icon-after-undo::after, .sp-inline-icon-undo::before {
+.sp-icon-triangle-down::before, .sp-icon-after-triangle-down::after, .sp-inline-icon-triangle-down::before {
   content: "\F0C2"; }
 
-.sp-icon-unlink::before, .sp-icon-after-unlink::after, .sp-inline-icon-unlink::before {
+.sp-icon-undo::before, .sp-icon-after-undo::after, .sp-inline-icon-undo::before {
   content: "\F0C3"; }
 
-.sp-icon-unlocked::before, .sp-icon-after-unlocked::after, .sp-inline-icon-unlocked::before {
+.sp-icon-unlink::before, .sp-icon-after-unlink::after, .sp-inline-icon-unlink::before {
   content: "\F0C4"; }
 
-.sp-icon-up-down::before, .sp-icon-after-up-down::after, .sp-inline-icon-up-down::before {
+.sp-icon-unlocked::before, .sp-icon-after-unlocked::after, .sp-inline-icon-unlocked::before {
   content: "\F0C5"; }
 
-.sp-icon-upload-arrow::before, .sp-icon-after-upload-arrow::after, .sp-inline-icon-upload-arrow::before {
+.sp-icon-up-down::before, .sp-icon-after-up-down::after, .sp-inline-icon-up-down::before {
   content: "\F0C6"; }
 
-.sp-icon-upload::before, .sp-icon-after-upload::after, .sp-inline-icon-upload::before {
+.sp-icon-upload-arrow::before, .sp-icon-after-upload-arrow::after, .sp-inline-icon-upload-arrow::before {
   content: "\F0C7"; }
 
-.sp-icon-user-guide::before, .sp-icon-after-user-guide::after, .sp-inline-icon-user-guide::before {
+.sp-icon-upload::before, .sp-icon-after-upload::after, .sp-inline-icon-upload::before {
   content: "\F0C8"; }
 
-.sp-icon-version::before, .sp-icon-after-version::after, .sp-inline-icon-version::before {
+.sp-icon-user-guide::before, .sp-icon-after-user-guide::after, .sp-inline-icon-user-guide::before {
   content: "\F0C9"; }
 
-.sp-icon-video::before, .sp-icon-after-video::after, .sp-inline-icon-video::before {
+.sp-icon-version::before, .sp-icon-after-version::after, .sp-inline-icon-version::before {
   content: "\F0CA"; }
 
-.sp-dialog.sp-warning .sp-dialog-icon::before, .sp-notification.sp-warning .sp-icon-placeholder::before, .sp-icon-warning::before, .sp-icon-after-warning::after, .sp-inline-icon-warning::before {
+.sp-icon-video::before, .sp-icon-after-video::after, .sp-inline-icon-video::before {
   content: "\F0CB"; }
 
-.sp-icon-weight::before, .sp-icon-after-weight::after, .sp-inline-icon-weight::before {
+.sp-dialog.sp-warning .sp-dialog-icon::before, .sp-notification.sp-warning .sp-icon-placeholder::before, .sp-icon-warning::before, .sp-icon-after-warning::after, .sp-inline-icon-warning::before {
   content: "\F0CC"; }
 
-.sp-icon-width-scale::before, .sp-icon-after-width-scale::after, .sp-inline-icon-width-scale::before {
+.sp-icon-weight::before, .sp-icon-after-weight::after, .sp-inline-icon-weight::before {
   content: "\F0CD"; }
 
-.sp-icon-width::before, .sp-icon-after-width::after, .sp-inline-icon-width::before {
+.sp-icon-width-scale::before, .sp-icon-after-width-scale::after, .sp-inline-icon-width-scale::before {
   content: "\F0CE"; }
 
-.sp-icon-docs[href='/platform']::before, .sp-icon-window::before, .sp-icon-after-window::after, .sp-inline-icon-window::before {
+.sp-icon-width::before, .sp-icon-after-width::after, .sp-inline-icon-width::before {
   content: "\F0CF"; }
 
-.sp-icon-workspace::before, .sp-icon-after-workspace::after, .sp-inline-icon-workspace::before {
+.sp-icon-docs[href='/platform']::before, .sp-icon-window::before, .sp-icon-after-window::after, .sp-inline-icon-window::before {
   content: "\F0D0"; }
 
-.sp-icon-zoom-in::before, .sp-icon-after-zoom-in::after, .sp-inline-icon-zoom-in::before {
+.sp-icon-workspace::before, .sp-icon-after-workspace::after, .sp-inline-icon-workspace::before {
   content: "\F0D1"; }
+
+.sp-icon-zoom-in::before, .sp-icon-after-zoom-in::after, .sp-inline-icon-zoom-in::before {
+  content: "\F0D2"; }
 
 [class^='sp-icon-']::before, [class*=' sp-icon-']::before, [class^='sp-inline-icon-']::before, [class*=' sp-inline-icon-']::before, .sp-icon::before {
   font-family: 'Icon Font' !important;
@@ -9288,6 +9291,9 @@ body {
 
 .sp-docs a.sp-state-active + .sp-submenu, .sp-docs .sp-submenu.sp-state-active {
   display: block; }
+
+.sp-docs a.sp-state-active[href*='-questions'] + .sp-submenu {
+  display: none !important; }
 
 .sp-app-loading-logo {
   position: absolute;

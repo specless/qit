@@ -211,6 +211,6 @@
   @extend %icon-tools
 }
 
-.sp-menu-item.sp-icon-folder[href*='-questions']::before {
-  @extend %icon-circle-question
+a.sp-menu-item.sp-icon-folder[href*='-questions']::before {
+  @extend %icon-questions
 }

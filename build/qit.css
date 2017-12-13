@@ -9288,7 +9288,7 @@ body {
 .sp-docs .sp-docs-left-nav {
   width: 270px; }
   .sp-docs .sp-docs-left-nav .sp-menu-item.sp-label.sp-state-active {
-    border-bottom: 1px solid #00C3DC; }
+    border-bottom: 2px solid #00C3DC; }
 
 .sp-docs .sp-docs-main {
   flex: 1;

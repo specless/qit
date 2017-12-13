@@ -217,6 +217,29 @@ body {
 		}
 	}
 
+	.sp-docs-article-content {
+
+		 h1 {
+		 	@include sp-font-header(2);
+		 }
+
+		 h2 {
+		 	@include sp-font-header(3);
+		 }
+
+		 h3 {
+		 	@include sp-font-header(4);
+		 }
+
+		 h4 {
+		 	@include sp-font-header(5);
+		 }
+
+		 p {
+		 	line-height: 1.3;
+		 }
+	}
+
 	.sp-submenu {
 		display: none;
 	}

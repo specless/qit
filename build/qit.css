@@ -9325,6 +9325,29 @@ body {
   .sp-docs .sp-docs-right-nav ul ul ul {
     display: none; }
 
+.sp-docs .sp-docs-article-content h1 {
+  font-size: 2rem;
+  line-height: 2.53rem;
+  font-weight: 300; }
+
+.sp-docs .sp-docs-article-content h2 {
+  font-size: 1.6rem;
+  line-height: 2.07rem;
+  font-weight: 400; }
+
+.sp-docs .sp-docs-article-content h3 {
+  font-size: 1.33rem;
+  line-height: 1.67rem;
+  font-weight: 600; }
+
+.sp-docs .sp-docs-article-content h4 {
+  font-size: 1.23rem;
+  line-height: 1.53rem;
+  font-weight: 600; }
+
+.sp-docs .sp-docs-article-content p {
+  line-height: 1.3; }
+
 .sp-docs .sp-submenu {
   display: none; }
 

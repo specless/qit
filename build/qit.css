@@ -9302,17 +9302,20 @@ body {
     font-weight: 400; }
 
 .sp-docs .sp-docs-left-nav {
-  width: 270px; }
+  width: 270px;
+  z-index: 0; }
   .sp-docs .sp-docs-left-nav .sp-menu-item.sp-label.sp-state-active {
     border-bottom: 2px solid #00C3DC; }
 
 .sp-docs .sp-docs-main {
   flex: 1;
   max-width: 960px;
-  margin-top: -34px; }
+  margin-top: -34px;
+  z-index: 1; }
 
 .sp-docs .sp-docs-right-nav {
-  width: 220px; }
+  width: 220px;
+  z-index: 0; }
   .sp-docs .sp-docs-right-nav .sp-menu-item.sp-label.sp-state-active {
     border-bottom: 2px solid #00C3DC; }
   .sp-docs .sp-docs-right-nav ul ul {

@@ -180,6 +180,7 @@ body {
 .sp-docs {
 	.sp-docs-left-nav {
 		width: 270px;
+		z-index: 0;
 		// @include sp-padding(3, left);
 		// @include sp-padding(3, right);
 
@@ -192,10 +193,12 @@ body {
 		flex: 1;
 		max-width: 960px;
 		margin-top: -34px;
+		z-index: 1;
 	}
 
 	.sp-docs-right-nav {
 		width: 220px;
+		z-index: 0;
 
 		.sp-menu-item.sp-label.sp-state-active {
 			border-bottom: 2px solid $sp-color-primary;

@@ -2688,6 +2688,9 @@ select + label::before, .sp-selector > input[type='text'].sp-selector-trigger + 
 [class*="sp-icon-after-"].sp-huge:after, .sp-huge [class*="sp-icon-after-"]:after {
   font-size: 3.2rem; }
 
+.sp-icon-docs[href='/developer']::before {
+  content: "\F026"; }
+
 [class^='sp-logo-'], [class*=' sp-logo-'] {
   /* use !important to prevent issues with browser extensions that change fonts */
   line-height: 1 !important; }

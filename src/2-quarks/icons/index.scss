@@ -190,3 +190,8 @@
     }
   }
 }
+
+
+.sp-icon-docs[href='/developer']::before {
+  content: "\F026";
+}

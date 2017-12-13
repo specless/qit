@@ -210,3 +210,7 @@
 .sp-icon-docs[href='/services']::before {
   @extend %icon-tools
 }
+
+.sp-menu-item.sp-icon-folder[href*='-questions']::before {
+  @extend %icon-circle-question
+}

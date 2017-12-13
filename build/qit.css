@@ -9271,11 +9271,12 @@ body {
     transform: translateX(125%); } }
 
 .sp-docs .sp-docs-left-nav {
-  width: 220px; }
+  width: 270px; }
 
 .sp-docs .sp-docs-main {
   flex: 1;
-  max-width: 960px; }
+  max-width: 960px;
+  margin-top: -34px; }
 
 .sp-docs .sp-docs-right-nav {
   width: 220px;

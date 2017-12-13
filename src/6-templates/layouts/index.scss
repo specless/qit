@@ -151,7 +151,7 @@ body {
 
 .sp-docs {
 	.sp-docs-left-nav {
-		width: 220px;
+		width: 270px;
 		// @include sp-padding(3, left);
 		// @include sp-padding(3, right);
 	}
@@ -159,6 +159,7 @@ body {
 	.sp-docs-main {
 		flex: 1;
 		max-width: 960px;
+		margin-top: -34px;
 	}
 
 	.sp-docs-right-nav {

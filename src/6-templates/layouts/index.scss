@@ -208,7 +208,7 @@ body {
 			@include sp-padding(2, left);
 		}
 
-		ul ul li {
+		ul ul li > a {
 			font-weight: 400 !important;
 		}
 

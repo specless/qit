@@ -9320,7 +9320,7 @@ body {
     border-bottom: 2px solid #00C3DC; }
   .sp-docs .sp-docs-right-nav ul ul {
     padding-left: 0.8rem; }
-  .sp-docs .sp-docs-right-nav ul ul li {
+  .sp-docs .sp-docs-right-nav ul ul li > a {
     font-weight: 400 !important; }
   .sp-docs .sp-docs-right-nav ul ul ul {
     display: none; }

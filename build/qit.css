@@ -9265,9 +9265,7 @@ body {
     transform: translateX(125%); } }
 
 .sp-docs .sp-docs-left-nav {
-  width: 220px;
-  padding-left: 1.6rem;
-  padding-right: 1.6rem; }
+  width: 220px; }
 
 .sp-docs .sp-docs-main {
   flex: 1;

@@ -152,8 +152,8 @@ body {
 .sp-docs {
 	.sp-docs-left-nav {
 		width: 220px;
-		@include sp-padding(3, left);
-		@include sp-padding(3, right);
+		// @include sp-padding(3, left);
+		// @include sp-padding(3, right);
 	}
 
 	.sp-docs-main {

@@ -191,7 +191,22 @@
   }
 }
 
+.sp-icon-docs[href='/getting-started']::before {
+  @extend %icon-circle-start
+}
+
+.sp-icon-docs[href='/platform']::before {
+  @extend %icon-window
+}
 
 .sp-icon-docs[href='/developer']::before {
-  content: "\F026";
+  @extend %icon-code
+}
+
+.sp-icon-docs[href='/glossary']::before {
+  @extend %icon-guide
+}
+
+.sp-icon-docs[href='/services']::before {
+  @extend %icon-tools
 }

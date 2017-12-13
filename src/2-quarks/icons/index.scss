@@ -270,6 +270,10 @@
     @extend %icon-code-file
   }
 
+  a.sp-menu-item > i.sp-inline-icon-arrow-right::before {
+    transform: translateY(18%) scale(1);
+  }
+
   a.sp-menu-item.sp-state-active > i.sp-inline-icon-arrow-right::before {
     transform: translateY(18%) scale(1) rotate(90deg);
   }

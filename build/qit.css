@@ -9312,9 +9312,11 @@ body {
   margin-top: -34px; }
 
 .sp-docs .sp-docs-right-nav {
-  width: 220px;
-  padding-left: 1.6rem;
-  padding-right: 1.6rem; }
+  width: 220px; }
+  .sp-docs .sp-docs-right-nav .sp-menu-item.sp-label.sp-state-active {
+    border-bottom: 2px solid #00C3DC; }
+  .sp-docs .sp-docs-right-nav ul ul {
+    padding-left: 0.8rem; }
 
 .sp-docs .sp-submenu {
   display: none; }

@@ -149,6 +149,29 @@ body {
 	}
 }
 
+.sp-app-search-results {
+
+	h1 {
+
+	}
+
+	.search-results {
+
+		.list_item {
+			margin: 28px;
+			padding: 28px;
+			@include sp-shape(rectangle);
+			@include sp-overlay();
+
+			h2 {
+				margin-top: 0;
+    			font-size: 1.5em;
+    			font-weight: 400;
+			}
+		}
+	}
+}
+
 .sp-docs {
 	.sp-docs-left-nav {
 		width: 270px;

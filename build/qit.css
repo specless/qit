@@ -9285,6 +9285,41 @@ body {
   100% {
     transform: translateX(125%); } }
 
+.sp-app-search-results .search-results .list_item {
+  margin: 28px;
+  padding: 28px;
+  border-radius: 4px;
+  box-shadow: 0 0 0.4em 0.27em rgba(0, 0, 0, 0.12);
+  background-color: #FFFFFF; }
+  .sp-app-search-results .search-results .list_item .sp-container-dark, .sp-app-search-results .search-results .list_item.sp-container-dark,
+  .sp-container-dark .sp-app-search-results .search-results .list_item {
+    box-shadow: 0 0 0.4em 0.27em rgba(0, 0, 0, 0.22); }
+  .sp-app-search-results .search-results .list_item .sp-container-dark, .sp-app-search-results .search-results .list_item.sp-container-dark,
+  .sp-container-dark .sp-app-search-results .search-results .list_item {
+    background-color: #444A50;
+    box-shadow: 0 0 0.4em 0.27em rgba(0, 0, 0, 0.22);
+    box-shadow: 0 0 0.4em 0.27em rgba(0, 0, 0, 0.12); }
+    .sp-app-search-results .search-results .list_item .sp-container-dark .sp-container-dark, .sp-app-search-results .search-results .list_item .sp-container-dark.sp-container-dark,
+    .sp-container-dark .sp-app-search-results .search-results .list_item .sp-container-dark, .sp-app-search-results .search-results .list_item.sp-container-dark .sp-container-dark, .sp-app-search-results .search-results .list_item.sp-container-dark.sp-container-dark,
+    .sp-container-dark .sp-app-search-results .search-results .list_item.sp-container-dark,
+    .sp-container-dark .sp-app-search-results .search-results .list_item .sp-container-dark,
+    .sp-container-dark .sp-app-search-results .search-results .list_item.sp-container-dark,
+    .sp-container-dark
+    .sp-container-dark .sp-app-search-results .search-results .list_item {
+      box-shadow: 0 0 0.4em 0.27em rgba(0, 0, 0, 0.5); }
+    .sp-app-search-results .search-results .list_item .sp-container-dark .sp-container-dark, .sp-app-search-results .search-results .list_item .sp-container-dark.sp-container-dark,
+    .sp-container-dark .sp-app-search-results .search-results .list_item .sp-container-dark, .sp-app-search-results .search-results .list_item.sp-container-dark .sp-container-dark, .sp-app-search-results .search-results .list_item.sp-container-dark.sp-container-dark,
+    .sp-container-dark .sp-app-search-results .search-results .list_item.sp-container-dark,
+    .sp-container-dark .sp-app-search-results .search-results .list_item .sp-container-dark,
+    .sp-container-dark .sp-app-search-results .search-results .list_item.sp-container-dark,
+    .sp-container-dark
+    .sp-container-dark .sp-app-search-results .search-results .list_item {
+      box-shadow: 0 0 0.4em 0.27em rgba(0, 0, 0, 0.22); }
+  .sp-app-search-results .search-results .list_item h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    font-weight: 400; }
+
 .sp-docs .sp-docs-left-nav {
   width: 270px; }
   .sp-docs .sp-docs-left-nav .sp-menu-item.sp-label.sp-state-active {

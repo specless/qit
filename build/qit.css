@@ -2700,6 +2700,9 @@ select + label::before, .sp-selector > input[type='text'].sp-selector-trigger + 
 [class*="sp-icon-after-"].sp-huge:after, .sp-huge [class*="sp-icon-after-"]:after {
   font-size: 3.2rem; }
 
+.sp-docs a.sp-menu-item.sp-state-active > i.sp-inline-icon-arrow-right::before {
+  transform: translateY(18%) scale(1) rotate(90deg); }
+
 [class^='sp-logo-'], [class*=' sp-logo-'] {
   /* use !important to prevent issues with browser extensions that change fonts */
   line-height: 1 !important; }

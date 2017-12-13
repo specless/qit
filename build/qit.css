@@ -2507,77 +2507,83 @@ select + label::before, .sp-selector > input[type='text'].sp-selector-trigger + 
 .sp-icon-text::before, .sp-icon-after-text::after, .sp-inline-icon-text::before {
   content: "\F0BB"; }
 
-.sp-icon-time::before, .sp-icon-after-time::after, .sp-inline-icon-time::before {
+.sp-icon-thumbs-down::before, .sp-icon-after-thumbs-down::after, .sp-inline-icon-thumbs-down::before {
   content: "\F0BC"; }
 
-.sp-icon-timer::before, .sp-icon-after-timer::after, .sp-inline-icon-timer::before {
+.sp-icon-thumbs-up::before, .sp-icon-after-thumbs-up::after, .sp-inline-icon-thumbs-up::before {
   content: "\F0BD"; }
 
-.sp-icon-toggle-off::before, .sp-icon-after-toggle-off::after, .sp-inline-icon-toggle-off::before {
+.sp-icon-time::before, .sp-icon-after-time::after, .sp-inline-icon-time::before {
   content: "\F0BE"; }
 
-.sp-icon-toggle-on::before, .sp-icon-after-toggle-on::after, .sp-inline-icon-toggle-on::before {
+.sp-icon-timer::before, .sp-icon-after-timer::after, .sp-inline-icon-timer::before {
   content: "\F0BF"; }
 
-.sp-docs .sp-icon-docs[href='/services']::before, .sp-icon-tools::before, .sp-icon-after-tools::after, .sp-inline-icon-tools::before {
+.sp-icon-toggle-off::before, .sp-icon-after-toggle-off::after, .sp-inline-icon-toggle-off::before {
   content: "\F0C0"; }
 
-.sp-icon-tracker::before, .sp-icon-after-tracker::after, .sp-inline-icon-tracker::before {
+.sp-icon-toggle-on::before, .sp-icon-after-toggle-on::after, .sp-inline-icon-toggle-on::before {
   content: "\F0C1"; }
 
-.sp-icon-trash::before, .sp-icon-after-trash::after, .sp-inline-icon-trash::before {
+.sp-docs .sp-icon-docs[href='/services']::before, .sp-icon-tools::before, .sp-icon-after-tools::after, .sp-inline-icon-tools::before {
   content: "\F0C2"; }
 
-.sp-icon-triangle-down::before, .sp-icon-after-triangle-down::after, .sp-inline-icon-triangle-down::before {
+.sp-icon-tracker::before, .sp-icon-after-tracker::after, .sp-inline-icon-tracker::before {
   content: "\F0C3"; }
 
-.sp-icon-undo::before, .sp-icon-after-undo::after, .sp-inline-icon-undo::before {
+.sp-icon-trash::before, .sp-icon-after-trash::after, .sp-inline-icon-trash::before {
   content: "\F0C4"; }
 
-.sp-icon-unlink::before, .sp-icon-after-unlink::after, .sp-inline-icon-unlink::before {
+.sp-icon-triangle-down::before, .sp-icon-after-triangle-down::after, .sp-inline-icon-triangle-down::before {
   content: "\F0C5"; }
 
-.sp-icon-unlocked::before, .sp-icon-after-unlocked::after, .sp-inline-icon-unlocked::before {
+.sp-icon-undo::before, .sp-icon-after-undo::after, .sp-inline-icon-undo::before {
   content: "\F0C6"; }
 
-.sp-icon-up-down::before, .sp-icon-after-up-down::after, .sp-inline-icon-up-down::before {
+.sp-icon-unlink::before, .sp-icon-after-unlink::after, .sp-inline-icon-unlink::before {
   content: "\F0C7"; }
 
-.sp-icon-upload-arrow::before, .sp-icon-after-upload-arrow::after, .sp-inline-icon-upload-arrow::before {
+.sp-icon-unlocked::before, .sp-icon-after-unlocked::after, .sp-inline-icon-unlocked::before {
   content: "\F0C8"; }
 
-.sp-icon-upload::before, .sp-icon-after-upload::after, .sp-inline-icon-upload::before {
+.sp-icon-up-down::before, .sp-icon-after-up-down::after, .sp-inline-icon-up-down::before {
   content: "\F0C9"; }
 
-.sp-icon-user-guide::before, .sp-icon-after-user-guide::after, .sp-inline-icon-user-guide::before {
+.sp-icon-upload-arrow::before, .sp-icon-after-upload-arrow::after, .sp-inline-icon-upload-arrow::before {
   content: "\F0CA"; }
 
-.sp-icon-version::before, .sp-icon-after-version::after, .sp-inline-icon-version::before {
+.sp-icon-upload::before, .sp-icon-after-upload::after, .sp-inline-icon-upload::before {
   content: "\F0CB"; }
 
-.sp-icon-video::before, .sp-icon-after-video::after, .sp-inline-icon-video::before {
+.sp-icon-user-guide::before, .sp-icon-after-user-guide::after, .sp-inline-icon-user-guide::before {
   content: "\F0CC"; }
 
-.sp-dialog.sp-warning .sp-dialog-icon::before, .sp-notification.sp-warning .sp-icon-placeholder::before, .sp-icon-warning::before, .sp-icon-after-warning::after, .sp-inline-icon-warning::before {
+.sp-icon-version::before, .sp-icon-after-version::after, .sp-inline-icon-version::before {
   content: "\F0CD"; }
 
-.sp-icon-weight::before, .sp-icon-after-weight::after, .sp-inline-icon-weight::before {
+.sp-icon-video::before, .sp-icon-after-video::after, .sp-inline-icon-video::before {
   content: "\F0CE"; }
 
-.sp-icon-width-scale::before, .sp-icon-after-width-scale::after, .sp-inline-icon-width-scale::before {
+.sp-dialog.sp-warning .sp-dialog-icon::before, .sp-notification.sp-warning .sp-icon-placeholder::before, .sp-icon-warning::before, .sp-icon-after-warning::after, .sp-inline-icon-warning::before {
   content: "\F0CF"; }
 
-.sp-icon-width::before, .sp-icon-after-width::after, .sp-inline-icon-width::before {
+.sp-icon-weight::before, .sp-icon-after-weight::after, .sp-inline-icon-weight::before {
   content: "\F0D0"; }
 
-.sp-docs .sp-icon-docs[href='/platform']::before, .sp-icon-window::before, .sp-icon-after-window::after, .sp-inline-icon-window::before {
+.sp-icon-width-scale::before, .sp-icon-after-width-scale::after, .sp-inline-icon-width-scale::before {
   content: "\F0D1"; }
 
-.sp-icon-workspace::before, .sp-icon-after-workspace::after, .sp-inline-icon-workspace::before {
+.sp-icon-width::before, .sp-icon-after-width::after, .sp-inline-icon-width::before {
   content: "\F0D2"; }
 
-.sp-icon-zoom-in::before, .sp-icon-after-zoom-in::after, .sp-inline-icon-zoom-in::before {
+.sp-docs .sp-icon-docs[href='/platform']::before, .sp-icon-window::before, .sp-icon-after-window::after, .sp-inline-icon-window::before {
   content: "\F0D3"; }
+
+.sp-icon-workspace::before, .sp-icon-after-workspace::after, .sp-inline-icon-workspace::before {
+  content: "\F0D4"; }
+
+.sp-icon-zoom-in::before, .sp-icon-after-zoom-in::after, .sp-inline-icon-zoom-in::before {
+  content: "\F0D5"; }
 
 [class^='sp-icon-']::before, [class*=' sp-icon-']::before, [class^='sp-inline-icon-']::before, [class*=' sp-inline-icon-']::before, .sp-icon::before {
   font-family: 'Icon Font' !important;

@@ -2703,6 +2703,9 @@ select + label::before, .sp-selector > input[type='text'].sp-selector-trigger + 
 .sp-docs a.sp-menu-item > i.sp-inline-icon-arrow-right::before {
   transform: translateY(18%) scale(1); }
 
+.sp-docs a.sp-menu-item.sp-icon-folder[href*='-questions'] > i.sp-inline-icon-arrow-right {
+  display: none; }
+
 .sp-docs a.sp-menu-item.sp-state-active > i.sp-inline-icon-arrow-right::before {
   transform: translateY(18%) scale(1) rotate(90deg); }
 

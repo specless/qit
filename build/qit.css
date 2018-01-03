@@ -4602,9 +4602,9 @@ input[type='reset'] {
     input[type='button'].sp-minimal.sp-simple-icon,
     input[type='submit'].sp-minimal.sp-simple-icon,
     input[type='reset'].sp-minimal.sp-simple-icon {
-      background-color: transparent;
-      background-image: none;
-      border-color: transparent;
+      background-color: transparent !important;
+      background-image: none !important;
+      border-color: transparent !important;
       opacity: 0.75; }
       .sp-button.sp-minimal.sp-simple-icon:hover, .sp-button.sp-minimal.sp-simple-icon.sp-state-hover,
       button.sp-minimal.sp-simple-icon:hover,
@@ -7375,6 +7375,7 @@ input[type='radio'] {
 
 .sp-checkbox.sp-small > .sp-checkbox-input + .sp-checkbox-default, .sp-small .sp-checkbox > .sp-checkbox-input + .sp-checkbox-default {
   font-size: 0.87rem;
+  left: -1px;
   height: 17px;
   width: 17px; }
   .sp-checkbox.sp-small > .sp-checkbox-input + .sp-checkbox-default:before, .sp-small .sp-checkbox > .sp-checkbox-input + .sp-checkbox-default:before {
@@ -7470,6 +7471,135 @@ input[type='radio'] {
   .sp-container-dark .sp-checkbox > .sp-checkbox-default.sp-state-hover:after {
     border-color: rgba(255, 255, 255, 0.56);
     background-color: rgba(0, 0, 0, 0.5); }
+
+.sp-radio input[type='radio'], .sp-radio .sp-radio-input {
+  border-radius: 50px;
+  position: relative;
+  top: auto !important;
+  width: 18px;
+  height: 18px;
+  margin-left: 0.4rem;
+  margin-right: 1em; }
+  .sp-radio input[type='radio']:before, .sp-radio .sp-radio-input:before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 0;
+    line-height: 0;
+    transform: translateY(-50%);
+    border: 1px solid rgba(0, 0, 0, 0.22);
+    background-color: rgba(255, 255, 255, 0.27); }
+  .sp-radio input[type='radio'] .sp-container-dark:before, .sp-radio input[type='radio'].sp-container-dark:before,
+  .sp-container-dark .sp-radio input[type='radio']:before, .sp-radio .sp-radio-input .sp-container-dark:before, .sp-radio .sp-radio-input.sp-container-dark:before,
+  .sp-container-dark .sp-radio .sp-radio-input:before {
+    border: 1px solid rgba(255, 255, 255, 0.27);
+    background-color: rgba(0, 0, 0, 0.22); }
+  .sp-radio input[type='radio']:checked:after, .sp-radio .sp-radio-input:checked:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #00C3DC;
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    line-height: 0;
+    transform: translate(-40%, -50%); }
+
+.sp-radio.sp-primary > .sp-radio-input + * {
+  color: #0096a9; }
+  .sp-radio.sp-primary > .sp-radio-input + * .sp-container-dark, .sp-radio.sp-primary > .sp-radio-input + *.sp-container-dark,
+  .sp-container-dark .sp-radio.sp-primary > .sp-radio-input + * {
+    color: #00C3DC; }
+
+.sp-radio.sp-primary > .sp-radio-input::before {
+  border-color: #00C3DC; }
+
+.sp-radio.sp-primary > .sp-radio-input:checked::after {
+  background-color: #00C3DC; }
+
+.sp-radio.sp-success > .sp-radio-input + * {
+  color: #00af71; }
+  .sp-radio.sp-success > .sp-radio-input + * .sp-container-dark, .sp-radio.sp-success > .sp-radio-input + *.sp-container-dark,
+  .sp-container-dark .sp-radio.sp-success > .sp-radio-input + * {
+    color: #00EC99; }
+
+.sp-radio.sp-success > .sp-radio-input::before {
+  border-color: #00EC99; }
+
+.sp-radio.sp-success > .sp-radio-input:checked::after {
+  background-color: #00d388; }
+
+.sp-radio.sp-warning > .sp-radio-input + * {
+  color: #ff1c04; }
+  .sp-radio.sp-warning > .sp-radio-input + * .sp-container-dark, .sp-radio.sp-warning > .sp-radio-input + *.sp-container-dark,
+  .sp-container-dark .sp-radio.sp-warning > .sp-radio-input + * {
+    color: #FF4A37; }
+
+.sp-radio.sp-warning > .sp-radio-input::before {
+  border-color: #FF4A37; }
+
+.sp-radio.sp-warning > .sp-radio-input:checked::after {
+  background-color: #FF4A37; }
+
+.sp-radio.sp-danger > .sp-radio-input + * {
+  color: #f00036; }
+  .sp-radio.sp-danger > .sp-radio-input + * .sp-container-dark, .sp-radio.sp-danger > .sp-radio-input + *.sp-container-dark,
+  .sp-container-dark .sp-radio.sp-danger > .sp-radio-input + * {
+    color: #FF2455; }
+
+.sp-radio.sp-danger > .sp-radio-input::before {
+  border-color: #FF2455; }
+
+.sp-radio.sp-danger > .sp-radio-input:checked::after {
+  background-color: #FF2455; }
+
+.sp-radio:hover > .sp-radio-input:before, .sp-radio.sp-state-hover > .sp-radio-input:before {
+  border-color: rgba(0, 0, 0, 0.5); }
+
+.sp-radio:hover .sp-container-dark > .sp-radio-input:before, .sp-radio:hover.sp-container-dark > .sp-radio-input:before,
+.sp-container-dark .sp-radio:hover > .sp-radio-input:before, .sp-radio.sp-state-hover .sp-container-dark > .sp-radio-input:before, .sp-radio.sp-state-hover.sp-container-dark > .sp-radio-input:before,
+.sp-container-dark .sp-radio.sp-state-hover > .sp-radio-input:before {
+  border-color: rgba(255, 255, 255, 0.56); }
+
+.sp-radio:disabled, .sp-radio.sp-state-disabled {
+  pointer-events: none; }
+  .sp-radio:disabled, .sp-radio:disabled *, .sp-radio.sp-state-disabled, .sp-radio.sp-state-disabled * {
+    opacity: 0.5;
+    pointer-events: none; }
+
+.sp-radio.sp-small > .sp-radio-input + *, .sp-small .sp-radio > .sp-radio-input + * {
+  font-size: 0.87rem; }
+
+.sp-radio.sp-small > .sp-radio-input::before, .sp-small .sp-radio > .sp-radio-input::before {
+  width: 16px;
+  height: 16px; }
+
+.sp-radio.sp-small > .sp-radio-input:checked::after, .sp-small .sp-radio > .sp-radio-input:checked::after {
+  margin-left: -1px;
+  width: 7px;
+  height: 7px; }
+
+.sp-radio.sp-large > .sp-radio-input + *, .sp-large .sp-radio > .sp-radio-input + * {
+  font-size: 1.2rem; }
+
+.sp-radio.sp-large > .sp-radio-input:before, .sp-large .sp-radio > .sp-radio-input:before {
+  width: 22px;
+  height: 22px;
+  border-width: 2px; }
+
+.sp-radio.sp-large > .sp-radio-input:checked:after, .sp-large .sp-radio > .sp-radio-input:checked:after {
+  width: 14px;
+  height: 14px;
+  transform: translate(-35%, -50%); }
 
 .sp-menu-item {
   box-sizing: border-box;
@@ -7675,7 +7805,7 @@ input[type='radio'] {
         top: 6px; }
       .sp-menu-item.sp-label.sp-small[class*="sp-icon-after-"]::after, .sp-small .sp-menu-item.sp-label[class*="sp-icon-after-"]::after {
         top: 6px; }
-      .sp-menu-item.sp-label.sp-small:not(input):empty, .sp-small .sp-menu-item.sp-label:not(input):empty {
+      F .sp-menu-item.sp-label.sp-small:not(input):empty, F .sp-small .sp-menu-item.sp-label:not(input):empty {
         width: 31.66px; }
     .sp-menu-item.sp-label.sp-large, .sp-large .sp-menu-item.sp-label {
       padding-top: 0.8rem;
@@ -7770,6 +7900,7 @@ input[type='radio'] {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   opacity: 0.5;
+  pointer-events: none;
   border-color: rgba(0, 0, 0, 0.12); }
   .sp-menu-header.sp-small, .sp-small .sp-menu-header {
     font-size: .67rem;
@@ -8813,6 +8944,10 @@ blockquote {
     display: inline-block; }
   .sp-tooltip:hover .sp-tooltip-overlay, .sp-tooltip.sp-state-hover .sp-tooltip-overlay {
     opacity: 0.85; }
+  .sp-tooltip.sp-no-auto-hover:hover .sp-tooltip-overlay {
+    opacity: 0; }
+  .sp-tooltip.sp-no-auto-hover.sp-state-hover .sp-tooltip-overlay {
+    opacity: 0.85; }
 
 .sp-multi-input {
   background-image: linear-gradient(rgba(255, 255, 255, 0.56), rgba(255, 255, 255, 0.56));
@@ -9271,6 +9406,13 @@ blockquote {
     .sp-danger .sp-input-group-helper .sp-input-group-help-text .sp-container-dark, .sp-danger .sp-input-group-helper .sp-input-group-help-text.sp-container-dark,
     .sp-container-dark .sp-danger .sp-input-group-helper .sp-input-group-help-text {
       color: #FF2455; }
+
+.react-datepicker__triangle {
+  border: 8px solid transparent;
+  border-bottom-color: #EAEAEA; }
+  .react-datepicker__triangle .sp-container-dark, .react-datepicker__triangle.sp-container-dark,
+  .sp-container-dark .react-datepicker__triangle {
+    border-bottom-color: #384146; }
 
 .sp-menu-dropdown {
   position: relative;
@@ -9901,7 +10043,7 @@ body {
 
 .sp-app-loader {
   height: 0px;
-  overflow: hidden;
+  overflow: visible;
   position: relative;
   z-index: 100;
   background-color: black !important; }

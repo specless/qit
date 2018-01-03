@@ -76,6 +76,7 @@
     > .sp-checkbox-input {
       + .sp-checkbox-default {
         @include sp-font-size(small);
+        left: -1px;
         height: 17px;
         width: 17px;
         &:before {

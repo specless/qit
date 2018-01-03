@@ -1,0 +1,162 @@
+.sp-radio {
+  input[type='radio'], .sp-radio-input {
+    border-radius: 50px;
+    position: relative;
+    top: auto !important;
+    width: 18px;
+    height: 18px;
+    @include sp-margin(1, left);
+    margin-right: 1em;
+
+    &:before {
+      content: '';
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      border: 2px solid black;
+      display: inline-block;
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 0;
+      line-height: 0;
+      transform: translateY(-50%);
+      border: 1px solid $sp-shade-dark-3;
+      background-color: $sp-shade-light-3;
+    }
+
+    @include sp-state(dark) {
+      &:before {
+        border: 1px solid $sp-shade-light-3;
+        background-color: $sp-shade-dark-3;
+      }
+    }
+
+    &:checked:after {
+      content: '';
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $sp-color-primary;
+      display: inline-block;
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      line-height: 0;
+      transform: translate(-40%, -50%);
+    }
+  }
+  @include sp-primary {
+    & > .sp-radio-input {
+      + * {
+        @include sp-font-color(primary);
+      }
+      &::before {
+        @include sp-border-color(primary);
+      }
+      &:checked::after {
+        @include sp-bg-color(primary);
+      }
+    }
+  }
+  @include sp-success {
+    & > .sp-radio-input {
+      + * {
+        @include sp-font-color(success);
+      }
+      &::before {
+        @include sp-border-color(success);
+      }
+      &:checked::after {
+        @include sp-bg-color(success);
+      }
+    }
+  }
+  @include sp-warning {
+    & > .sp-radio-input {
+      + * {
+        @include sp-font-color(warning);
+      }
+      &::before {
+        @include sp-border-color(warning);
+      }
+      &:checked::after {
+        @include sp-bg-color(warning);
+      }
+    }
+  }
+  @include sp-danger {
+    & > .sp-radio-input {
+      + * {
+        @include sp-font-color(danger);
+      }
+      &::before {
+        @include sp-border-color(danger);
+      }
+      &:checked::after {
+        @include sp-bg-color(danger);
+      }
+    }
+  }
+
+  @include sp-state(hover) {
+    & > .sp-radio-input {
+      &:before {
+        border-color: $sp-shade-dark-4;
+      }
+    }
+    @include sp-state(dark) {
+      & > .sp-radio-input {
+        &:before {
+          border-color: $sp-shade-light-4;
+        }
+      }
+    }
+  }
+  @include sp-state(disabled) {
+    &, & * {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }
+
+  @include sp-small {
+    & > .sp-radio-input {
+      + * {
+        @include sp-font-size(small);
+      }
+
+      &::before {
+        width: 16px;
+        height: 16px;
+      }
+
+      &:checked::after {
+        margin-left: -1px;
+        width: 7px;
+        height: 7px;
+      }
+    }
+  }
+
+  @include sp-large {
+    & > .sp-radio-input {
+      + * {
+        @include sp-font-size(large);
+      }
+
+      &:before {
+        width: 22px;
+        height: 22px;
+        border-width: 2px;
+      }
+
+      &:checked:after {
+        width: 14px;
+        height: 14px;
+        transform: translate(-35%, -50%);
+      }
+    }
+  }
+}

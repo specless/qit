@@ -123,12 +123,13 @@
           <button class="sp-selector-trigger sp-icon-draft sp-icon-color-warning sp-small sp-font-color-white sp-sync-enabled">Draft Version<i class="sp-inline-icon-dropdown sp-margin-left-1" style="position: relative; top: -1px"></i></button>
           <div class="sp-selector-overlay">
             <div class="sp-menu-dropdown sp-overlay sp-width-8 sp-color-contrast" style="left: auto; right: 0; transform: none;">
-              <div class="sp-menu-header sp-small">Uploaded Versions</div>
-              <a href="-creatives-explorer.html" class="sp-menu-item sp-icon-live sp-state-active sp-icon-color-success">Live Version</a>
+              <div class="sp-menu-header sp-small">Published Versions</div>
+              <a href="-creatives-explorer.html" class="sp-menu-item sp-icon-live sp-icon-color-success">Live Version</a>
               <a href="-creatives-explorer-draft.html" class="sp-menu-item sp-icon-draft sp-icon-color-warning">Draft Version</a>
               <a href="-creatives-explorer-vhistory.html" class="sp-menu-item sp-icon-version">Select From Version History...</a>
-              <div class="sp-menu-header sp-small">External Versions</div>
-              <a href="-creatives-explorer-sync.html" class="sp-menu-item sp-icon-lightning">Specless Sync</a>
+              <div class="sp-menu-header sp-small">Unpublished Versions</div>
+              <a href="-creatives-explorer-template-editor.html" class="sp-menu-item sp-icon-cloud-drive sp-state-disabled">Cloud Editor</a>
+              <a href="-creatives-explorer-sync.html" class="sp-menu-item sp-icon-lightning sp-state-active">Specless Sync</a>
               <a href="-creatives-explorer-github.html" class="sp-menu-item sp-icon-branch sp-state-disabled">Git Sync</a>
               <!-- <div class="sp-align-center sp-container sp-alt-one sp-rectangle">
                 <a class="sp-button sp-icon-upload sp-success sp-rounded sp-small sp-margin-1">Publish Working Version</a>
@@ -940,6 +941,10 @@
           <!-- <button tabindex="0" class="sp-icon-circle-close sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
         </div>
         <div class="sp-app-content-sidebar-menu-content sp-small">
+          <div class="sp-align-center sp-border-bottom-base sp-container">
+            <a class="sp-menu-item sp-horizontal sp-state-active">Property Editor</a>
+            <a class="sp-menu-item sp-horizontal">Demo Values</a>
+          </div>
           <div class="sp-padding-2 sp-border-bottom-base">
             <div class="sp-selector qit-target sp-small sp-block" style="width: 100%">
               <input readonly="" class="sp-padding-icon-left qit-target sp-selector-trigger sp-small" type="text" value="Add Template Property Field" style="width: 100%">

@@ -7,18 +7,7 @@
   <link rel="stylesheet" href="../../../qit.css">
 </head>
 
-<body class="sp-app sp-technical sp-sync-connected">
-  <div class="sp-app-loading-logo">
-    <div class="sp-animated-logo sp-primary">
-      <div class="sp-animated-logo-top"></div>
-      <div class="sp-animated-logo-bottom"></div>
-      <div class="sp-animated-logo-left"></div>
-      <div class="sp-animated-logo-right"></div>
-      <div class="sp-animated-logo-middle"></div>
-      <div class="sp-animated-logo-inner-top"></div>
-      <div class="sp-animated-logo-inner-bottom"></div>
-    </div>
-  </div>
+<body class="sp-app sp-technical">
   <div class="sp-app-bar sp-container-dark sp-alt-one sp-wrapper">
     <div class="sp-row sp-vcenter sp-height-3 sp-fluid">
       <div class="sp-col sp-span-6 sp-flex sp-flex-align-items-center">
@@ -59,25 +48,23 @@
           </div>
         </div>
         <div class="sp-selector sp-margin-left-2">
-          <button tabindex="0" class="sp-selector-trigger sp-icon-after-lightning sp-rounded sp-small sp-minimal sp-success"></button>
+          <button class="sp-selector-trigger sp-icon-after-lightning sp-rounded sp-small sp-minimal sp-success"></button>
           <div class="sp-selector-overlay">
             <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
-              <div class="sp-menu-header sp-small" style="opacity: 1">Specless Sync<span class="sp-color-danger sp-float-right sp-sync-hide-connected">Disconnected</span><span class="sp-color-success sp-float-right sp-sync-hide-disconnected">Connected</span></div>
+              <div class="sp-menu-header sp-small" style="opacity: 1">Specless Sync<span class="sp-color-success sp-float-right">Connected</span></div>
               <!-- <a class="sp-menu-item">Live Reload</a> -->
-              <div class="sp-margin-top-1 sp-padding-vertical-1 sp-padding-horizontal-2 sp-small sp-font-weight-semi-bold sp-sync-disable-disconnected">Live Reload<input id="live-reload" type="checkbox" checked class="sp-align-right"/><label for="live-reload" class="sp-float-right sp-padding-0" style="margin-right: 20px"></label></div>
-              <div class="sp-padding-vertical-1 sp-padding-horizontal-2 sp-small sp-color-base sp-font-weight-semi-bold" style="display: flex; align-items: center">
-                <div style="flex: 1">Local Host Port</div>
-                <input type="text" value="8080" class="sp-align-right sp-width-3 sp-margin-right-1"/>
-                <div class="sp-button sp-primary sp-icon-reload"></div>
-              </div>
-              <div class="sp-padding-bottom-1 sp-padding-horizontal-2 sp-align-right sp-sync-hide-connected"><a style="font-size: 12px" onclick="window.helpArticle('5a0363bc2c7d3a272c0d81a3')">Still Can't Connect?</a></div>
+              <a class="sp-menu-item sp-small">Live Reload<input id="live-reload" type="checkbox" checked class="sp-align-right"/><label for="live-reload" class="sp-float-right sp-padding-0" style="margin-right: 20px"></label></a>
+              <a class="sp-menu-item sp-small">Listen on Port<input type="text" value="8080" class="sp-align-right sp-width-3 sp-margin-left-3"/><div class="sp-button sp-primary sp-float-right sp-icon-reload"></div></a>
               <!-- <div class="sp-menu-item sp-small"><div class="sp-button sp-block">Install Specless Sync</div></div> -->
-              <div class="sp-menu-header sp-small sp-sync-hide-connected">Don't Have Sync Installed?</div>
-              <div class="sp-padding-vertical-1 sp-padding-horizontal-2 sp-sync-hide-connected"><a class="sp-button sp-block sp-icon-download sp-small" onclick="window.helpArticle('5a03543d0428633199244dcb')">Download Sync</a></div>
+              <div class="sp-menu-header sp-small">Recently Modified Creatives</div>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Some Creative<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>My Awesome Ad<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Another Creative<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Coca-Cola Ad<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Samsung Galaxy Note 8<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
             </div>
           </div>
         </div>
-
         <!-- <div class="sp-selector sp-margin-left-2">
           <button class="sp-selector-trigger sp-icon-after-lightning sp-rounded sp-small sp-minimal sp-success"></button>
           <div class="sp-selector-overlay">
@@ -101,26 +88,25 @@
       </div>
     </div>
   </div>
-  <!-- <div class="sp-app-org-label sp-container-dark sp-wrapper">
+  <div class="sp-app-org-label sp-container-dark sp-wrapper">
     <div class="sp-row sp-padding-2 sp-padding-left-3 sp-fluid">
-      <div class="sp-label sp-small">Example Organization <span class="sp-inline-icon-arrow-right"></span> <a href="-creatives.html" class="sp-color-white">Templates</a> <span class="sp-inline-icon-arrow-right"></span> <a href="-creatives-overview.html" class="sp-color-white">Template Name Goes here</a></div>
+      <div class="sp-label sp-small">Example Organization <span class="sp-inline-icon-arrow-right"></span> <a href="-creatives.html" class="sp-color-white">Creatives</a> <span class="sp-inline-icon-arrow-right"></span> <a href="-creatives-overview.html" class="sp-color-white">Creative Name Goes here</a></div>
     </div>
-  </div> -->
+  </div>
   
 
   <div class="sp-app-header sp-container-dark sp-alt-two sp-wrapper sp-fluid sp-border-bottom-base">
     <div class="sp-row sp-vcenter sp-fluid">
       <div class="sp-col sp-span-12 sp-flex sp-flex-align-items-center">
-        <button class="sp-rounded sp-icon-arrow-left sp-small sp-margin-right-2"></button>
         <h5 class="sp-inline sp-contrast sp-inline sp-flex" style="flex: 1; position: relative">
-          <!-- <button class="sp-rounded sp-icon-arrow-left sp-small sp-margin-right-2" style="margin-top: -20px;"></button> -->
+          <i class="sp-inline-icon-creative sp-color-primary sp-margin-right-1"></i>
           <!-- <span class="sp-color-muted">dhC897 /</span> -->
-          Template Name
+          Creative Explorer
           <!-- <span class="sp-color-muted sp-small" style="position: absolute; bottom: -15px; left: 32px;">/ dhC897</span> -->
         </h5>
         <div class="sp-selector sp-margin-left-2 sp-small">
           <!-- <span class="">Test</span> -->
-          <button class="sp-selector-trigger sp-icon-draft sp-icon-color-warning sp-small sp-font-color-white sp-sync-enabled">Draft Version<i class="sp-inline-icon-dropdown sp-margin-left-1" style="position: relative; top: -1px"></i></button>
+          <button class="sp-selector-trigger sp-icon-cloud-drive sp-small sp-font-color-white sp-sync-enabled">Cloud Editor<i class="sp-inline-icon-dropdown sp-margin-left-1" style="position: relative; top: -1px"></i></button>
           <div class="sp-selector-overlay">
             <div class="sp-menu-dropdown sp-overlay sp-width-8 sp-color-contrast" style="left: auto; right: 0; transform: none;">
               <div class="sp-menu-header sp-small">Published Versions</div>
@@ -128,8 +114,8 @@
               <a href="-creatives-explorer-draft.html" class="sp-menu-item sp-icon-draft sp-icon-color-warning">Draft Version</a>
               <a href="-creatives-explorer-vhistory.html" class="sp-menu-item sp-icon-version">Select From Version History...</a>
               <div class="sp-menu-header sp-small">Unpublished Versions</div>
-              <a href="-creatives-explorer-template-editor.html" class="sp-menu-item sp-icon-cloud-drive sp-state-disabled">Cloud Editor</a>
-              <a href="-creatives-explorer-sync.html" class="sp-menu-item sp-icon-lightning sp-state-active">Specless Sync</a>
+              <a href="-creatives-explorer-template-editor.html" class="sp-menu-item sp-icon-cloud-drive sp-state-active">Cloud Editor</a>
+              <a href="-creatives-explorer-sync.html" class="sp-menu-item sp-icon-lightning">Specless Sync</a>
               <a href="-creatives-explorer-github.html" class="sp-menu-item sp-icon-branch sp-state-disabled">Git Sync</a>
               <!-- <div class="sp-align-center sp-container sp-alt-one sp-rectangle">
                 <a class="sp-button sp-icon-upload sp-success sp-rounded sp-small sp-margin-1">Publish Working Version</a>
@@ -142,15 +128,49 @@
             </div>
           </div>
         </div>
+        <!-- <button class="sp-icon-upload sp-small sp-success sp-font-color-white sp-margin-left-1">Push To Draft</button> -->
+        
         <div class="sp-selector sp-small">
-          <button class="sp-selector-trigger sp-icon-download sp-small sp-primary sp-font-color-white sp-margin-left-1"></button>
+          <button class="sp-selector-trigger sp-icon-up-down sp-small sp-success sp-font-color-white sp-margin-left-1">Push/Pull</button>
           <div class="sp-selector-overlay">
             <div class="sp-menu-dropdown sp-overlay sp-color-contrast" style="left: auto; right: 0; transform: none;">
-              <a class="sp-menu-item sp-icon-lightning">Download to Specless Sync</a>
-              <a class="sp-menu-item sp-icon-download">Download S-Kit Package</a>
+              <!-- <a class="sp-menu-item sp-icon-upload">Push to Draft Version</a>
+              <div class="sp-spacer-vertical"></div> -->
+              <div class="sp-menu-header">Push To Specless</div>
+              <a class="sp-menu-item sp-icon-upload-arrow sp-success">Publish to Draft Version</a>
+              <a class="sp-menu-item sp-icon-upload-arrow sp-success">Publish to New (Non-Draft) Version</a>
+              <div class="sp-menu-header">Pull From Specless</div>
+              <a class="sp-menu-item sp-icon-download sp-danger">Overwrite with Live Version</a>
+              <a class="sp-menu-item sp-icon-download sp-danger">Overwrite with Draft Version</a>
+              <a class="sp-menu-item sp-icon-download sp-danger">Overwrite with Specific Version</a>
             </div>
           </div>
         </div>
+        <div class="sp-selector sp-small">
+          <button class="sp-selector-trigger sp-icon-folder sp-small sp-primary sp-font-color-white sp-margin-left-1"></button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-color-contrast sp-width-6" style="left: auto; right: 0; transform: none;">
+              <div class="sp-menu-header">Open in Finder...</div>
+              <a class="sp-menu-item sp-icon-folder">Root Project Folder</a>
+              <a class="sp-menu-item sp-icon-folder">Assets Folder</a>
+              <a class="sp-menu-item sp-icon-folder">Panels Folder</a>
+              <div class="sp-menu-header">Open in Application...</div>
+              <a class="sp-menu-item sp-icon-edit">Text Editor</a>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="sp-selector sp-small">
+          <button class="sp-selector-trigger sp-icon-replace sp-small sp-danger sp-font-color-white sp-margin-left-1">Overwrite</button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <a class="sp-menu-item sp-icon-upload">Push to Draft Version</a>
+              <div class="sp-spacer-vertical"></div>
+              <a class="sp-menu-item sp-icon-download">Overwrite with Live Version</a>
+              <a class="sp-menu-item sp-icon-download">Overwrite with Draft Version</a>
+              <a class="sp-menu-item sp-icon-download">Overwrite with Other Version...</a>
+            </div>
+          </div>
+        </div> -->
         <!-- <button class="sp-icon-folder sp-small sp-primary sp-font-color-white sp-margin-left-1"></button> -->
         <!-- <button class="sp-icon-upload sp-small sp-success sp-font-color-white sp-margin-left-1">Publish</button> -->
       </div>
@@ -259,18 +279,12 @@
           <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Layouts</span>
           <button tabindex="0" class="sp-icon-circle-plus sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
         </div>
-        <div class="sp-app-content-sidebar-menu-content sp-color-muted">
-          <!-- <div class="sp-padding-2">
-            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="display: none;background-image: url(http://via.placeholder.com/400x150/0096a9/0096a9);">
+        <div class="sp-app-content-sidebar-menu-content">
+          <div class="sp-padding-2"">
+            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/400x150/0096a9/0096a9);">
               <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
             </div>
-            <div class="sp-small sp-align-center sp-font-weight-semi-bold">None Matched<br><span class="sp-color-muted">No Available Layout</span></div>
-          </div> -->
-          <div class="sp-padding-2 sp-bg-overlay-light-1 sp-state-active sp-color-primary">
-            <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="display: none;">
-              <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
-            </div>
-            <div class="sp-small sp-align-center sp-font-weight-semi-bold">None Matched<br><span class="sp-color-muted sp-color-warning">No Available Layout</span></div>
+            <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Default (No Layout)</div>
           </div>
           <div class="sp-padding-2"">
             <div class="sp-creative-thumbnail sp-height-3 sp-border-base" style="background-image: url(http://via.placeholder.com/400x150/0096a9/0096a9);">
@@ -296,7 +310,7 @@
             </div>
             <div class="sp-small sp-margin-top-1 sp-align-center sp-font-weight-semi-bold">Small</div>
           </div>
-          <div class="sp-padding-2">
+          <div class="sp-padding-2 sp-bg-overlay-light-1 sp-color-primary sp-state-active">
             <div class="sp-creative-thumbnail sp-height-3 sp-border-solid sp-border-thin sp-border-color-primary" style="background-image: url(http://via.placeholder.com/350x70/0096a9/0096a9);">
               <button tabindex="0" class="sp-icon-settings sp-small sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button>
             </div>
@@ -339,14 +353,13 @@
                   <!-- <a class="sp-menu-item sp-icon-share">Sharing</a>
                   <div class="sp-spacer-vertical"></div> -->
                   <a class="sp-menu-item sp-icon-eye">Open Simple Preview</a>
-                  <a class="sp-menu-item sp-icon-link">Generate Sharable Permalink</a>
-                  
+                  <a class="sp-menu-item sp-icon-link">Generate Custom Permalink</a>
                 </div>
               </div>
             </div>
         </span>
       </div>
-      <div class="sp-padding-1 sp-container sp-border-top-base sp-border-bottom-base sp-flex sp-small sp-font-weight-semi-bold" style="font-size: 12px;">
+      <div class="sp-padding-1 sp-container sp-border-top-base sp-border-bottom-base sp-flex sp-small sp-font-weight-semi-bold sp-no-wrap" style="font-size: 12px;">
         <div style="flex:1" class="sp-align-right sp-padding-horizontal-2">
           <div class="sp-selector sp-margin-left-1 sp-inline">
             <input readonly class="sp-minimal sp-selector-trigger sp-align-right" type="text" value="Custom View" style="width: 300px; font-weight: 600"/>
@@ -525,10 +538,77 @@
         </div> -->
       <div class="sp-app-content-main-footer sp-container">
         <div class="sp-padding-1 sp-container sp-border-top-base sp-border-bottom-base sp-small sp-font-weight-semi-bold sp-flex sp-flex-align-items-center" style="font-size: 12px; justify-content: center">
-          <div class="sp-app-content-main-footer-left">
+
+        <div class="sp-app-content-main-footer-left">
+            <!-- <span class="sp-padding-horizontal-2 sp-color-danger sp-tooltip sp-tooltip-above sp-state-hover">
+              <span>Sync Disconnected</span><i class="sp-inline-icon-solid-circle-close sp-margin-left-1"></i>
+              <div class="sp-tooltip-overlay sp-pointer-events-auto sp-width-7 sp-color-base">
+                <div class="sp-padding-bottom-1 sp-border-bottom-base sp-ellipsis sp-color-danger"><i class="sp-inline-icon-lightning sp-margin-right-1"></i>Specless Sync: No Connection<span class="sp-float-right sp-font-weight-base" style="font-size: 12px;"></span></div>
+                <p class="sp-overflow-wrap sp-font-weight-base sp-margin-top-1">Could not establish a connection with Specless Sync.</p>
+                <p class="sp-overflow-wrap sp-margin-top-1 sp-margin-bottom-1">How would you like to proceed?</p>
+                <div class="sp-padding-top-1">
+                  <a class="sp-button sp-small sp-icon-circle-dot sp-block" style="flex: 1">Switch to Live Version</a>
+                </div>
+                <div class="sp-padding-top-1">
+                  <a class="sp-button sp-small sp-icon-circle sp-block" style="flex: 1">Switch to Draft Version</a>
+                </div>
+                <div class="sp-padding-top-1">
+                  <a class="sp-button sp-small sp-icon-version sp-block" style="flex: 1">Switch to Other Version</a>
+                </div>
+                <div class="sp-padding-top-1">
+                  <a class="sp-button sp-small sp-icon-circle-help sp-block" style="flex: 1">Troubleshooting</a>
+                </div>
+              </div>
+            </span> -->
+
+            <!-- <span class="sp-padding-horizontal-2 sp-color-danger sp-tooltip sp-tooltip-above sp-state-hover">
+              <span>No Local Project</span><i class="sp-inline-icon-solid-circle-close sp-margin-left-1"></i>
+              <div class="sp-tooltip-overlay sp-pointer-events-auto sp-width-7 sp-color-base">
+                <div class="sp-padding-bottom-1 sp-border-bottom-base sp-ellipsis sp-color-danger"><i class="sp-inline-icon-lightning sp-margin-right-1"></i>Specless Sync: No Local Copy<span class="sp-float-right sp-font-weight-base" style="font-size: 12px;"></span></div>
+                <p class="sp-overflow-wrap sp-font-weight-base sp-margin-top-1">A copy of this creative could not be found in your Local Project Directory.</p>
+                <p class="sp-overflow-wrap sp-margin-top-1 sp-margin-bottom-1">Would you like to download a local copy?</p>
+                <div class="sp-padding-top-1">
+                  <a class="sp-button sp-small sp-success sp-icon-download sp-block" style="flex: 1">Download Live Version</a>
+                </div>
+                <div class="sp-padding-top-1">
+                  <a class="sp-button sp-small sp-success sp-icon-download sp-block" style="flex: 1">Download Draft Version</a>
+                </div>
+                <div class="sp-padding-top-1">
+                  <a class="sp-button sp-small sp-success sp-icon-version sp-block" style="flex: 1">Select from Version History</a>
+                </div>
+              </div>
+            </span> -->
+
+            <!-- <span class="sp-padding-horizontal-2">
+              <span>Previously Compiled</span><i class="sp-inline-icon-solid-circle-check sp-margin-left-1"></i>
+            </span> -->
+
+            <!-- <span class="sp-padding-horizontal-2 sp-color-primary">
+              <span>Compiling</span><i class="sp-inline-icon-solid-sync sp-margin-left-1"></i>
+            </span> -->
+
             <span class="sp-padding-horizontal-2 sp-color-success">
-              <span>v002 Uploaded: Oct 6, 3:45pm</span><i class="sp-inline-icon-solid-circle-check sp-margin-left-1"></i>
+              <span>Compiled Successfully</span><i class="sp-inline-icon-solid-circle-check sp-margin-left-1"></i>
             </span>
+
+            <!-- <span class="sp-padding-horizontal-2 sp-color-warning">
+              <span>Compiled With Warnings</span><i class="sp-inline-icon-solid-warning sp-margin-left-1"></i>
+            </span> -->
+
+            <!-- <span class="sp-padding-horizontal-2 sp-color-danger">
+              <span>Failed to Compile</span><i class="sp-inline-icon-solid-error sp-margin-left-1"></i>
+            </span> -->
+
+            <!-- <span class="sp-padding-horizontal-2 sp-color-danger sp-tooltip sp-tooltip-above sp-state-hover">
+              <span>Failed to Compile</span><i class="sp-inline-icon-solid-error sp-margin-left-1"></i>
+              <div class="sp-tooltip-overlay sp-pointer-events-auto sp-danger sp-width-7">
+                <div class="sp-padding-bottom-1 sp-border-bottom-base sp-ellipsis">Compile Error<span class="sp-float-right sp-font-weight-base" style="font-size: 12px;">index.css:233</span></div>
+                <div class="sp-padding-top-1 sp-flex">
+                  <a class="sp-button sp-small sp-danger sp-icon-circle-info sp-margin-right-1" style="flex: 1">Details</a>
+                  <a class="sp-button sp-small sp-danger sp-icon-reload" style="flex: 1">Retry</a>
+                </div>
+              </div>
+            </span> -->
           </div>
           <div class="sp-app-content-main-footer-middle">
             <div class="sp-padding-horizontal-2 sp-border-right-base sp-border-left-base sp-color-muted">
@@ -538,10 +618,41 @@
             </div>
           </div>
           <div class="sp-app-content-main-footer-right">
+            <!-- <span class="sp-padding-horizontal-2 sp-color-primary">
+              <i class="sp-inline-icon-solid-sync sp-margin-right-1"></i><span>Loading</span>
+            </span> -->
+
+            <!-- <span class="sp-padding-horizontal-2 sp-color-primary">
+              <i class="sp-inline-icon-solid-sync sp-margin-right-1"></i><span>Reloading</span>
+            </span> -->
+
+            <!-- <span class="sp-padding-horizontal-2 sp-color-primary">
+              <i class="sp-inline-icon-solid-sync sp-margin-right-1"></i><span>Updating</span>
+            </span> -->
+
             <span class="sp-padding-horizontal-2">
               <i class="sp-inline-icon-solid-circle-check sp-margin-right-1"></i><span>Panel Ready</span>
             </span>
+
+            <!-- <span class="sp-padding-horizontal-2 sp-color-danger">
+              <i class="sp-inline-icon-solid-error sp-margin-right-1"></i><span>Error Loading Panel</span>
+            </span> -->
+
+            <!-- <span class="sp-padding-horizontal-2 sp-color-danger sp-tooltip sp-tooltip-above sp-state-hover">
+              <i class="sp-inline-icon-solid-error sp-margin-right-1"></i><span>Error Loading Panel</span>
+              <div class="sp-tooltip-overlay sp-pointer-events-auto sp-danger sp-width-7">
+                <div class="sp-padding-bottom-1 sp-border-bottom-base sp-ellipsis">Could Not Connect to Sync<span class="sp-float-right sp-font-weight-base" style="font-size: 12px;">Error: 204</span></div>
+                <div class="sp-padding-top-1 sp-flex">
+                  <a class="sp-button sp-small sp-danger sp-icon-circle-info" style="flex: 1">Details</a>
+                </div>
+              </div>
+            </span> -->
+
+            <!-- <span class="sp-padding-horizontal-2 sp-color-danger">
+              <i class="sp-inline-icon-solid-error sp-margin-right-1"></i><span>Error Loading Panel</span>
+            </span> -->
           </div>
+
         </div>
       </div>
     </div>
@@ -940,213 +1051,264 @@
           <span class="sp-padding-vertical-1 sp-padding-left-1" style="flex:1">Template Properties</span>
           <!-- <button tabindex="0" class="sp-icon-circle-close sp-minimal sp-simple-icon sp-small sp-primary sp-float-right"></button> -->
         </div>
+
         <div class="sp-app-content-sidebar-menu-content sp-small">
-          <div class="sp-align-center sp-border-bottom-base sp-container">
-            <a class="sp-menu-item sp-horizontal sp-state-active">Property Editor</a>
-            <a class="sp-menu-item sp-horizontal">Demo Values</a>
+          <div class="sp-group sp-flex sp-padding-1">
+            <a class="sp-button sp-icon-save sp-state-disabled" style="flex: 1">Save Changes</a>
+            <a class="sp-button sp-icon-circle-close sp-state-disabled" style="flex: 1">Discard Edits</a>
           </div>
-          <div class="sp-padding-2 sp-border-bottom-base">
-            <div class="sp-selector qit-target sp-small sp-block" style="width: 100%">
-              <input readonly="" class="sp-padding-icon-left qit-target sp-selector-trigger sp-small" type="text" value="Add Template Property Field" style="width: 100%">
-              <div class="sp-selector-overlay sp-icon-circle-plus">
-                <div class="sp-menu-dropdown sp-overlay">
-                  <a class="sp-menu-item sp-icon-template-text">
-                    <span class="sp-color-contrast">Text Field</span>
-                    <span class="sp-float-right">Add Field<i class="sp-margin-left-1 sp-inline-icon-circle-plus"></i></span>
-                  </a>
-                  <a class="sp-menu-item sp-icon-link">
-                    <span class="sp-color-contrast">URL Field</span>
-                    <span class="sp-float-right">Add Field<i class="sp-margin-left-1 sp-inline-icon-circle-plus"></i></span>
-                  </a>
-                  <a class="sp-menu-item sp-icon-template-number">
-                    <span class="sp-color-contrast">Number Field</span>
-                    <span class="sp-float-right">Add Field<i class="sp-margin-left-1 sp-inline-icon-circle-plus"></i></span>
-                  </a>
-                  <a class="sp-menu-item sp-icon-template-list">
-                    <span class="sp-color-contrast">Dropdown List Field</span>
-                    <span class="sp-float-right">Add Field<i class="sp-margin-left-1 sp-inline-icon-circle-plus"></i></span>
-                  </a>
-                  <a class="sp-menu-item sp-icon-multi-select">
-                    <span class="sp-color-contrast">Multi-Select List Field</span>
-                    <span class="sp-float-right">Add Field<i class="sp-margin-left-1 sp-inline-icon-circle-plus"></i></span>
-                  </a>
-                  <a class="sp-menu-item sp-icon-circle-check">
-                    <span class="sp-color-contrast">Checkbox Field</span>
-                    <span class="sp-float-right">Add Field<i class="sp-margin-left-1 sp-inline-icon-circle-plus"></i></span>
-                  </a>
-                  <a class="sp-menu-item sp-icon-toggle-on">
-                    <span class="sp-color-contrast">Toggle Field</span>
-                    <span class="sp-float-right">Add Field<i class="sp-margin-left-1 sp-inline-icon-circle-plus"></i></span>
-                  </a>
-                  <a class="sp-menu-item sp-icon-calendar">
-                    <span class="sp-color-contrast">Date/Time Field</span>
-                    <span class="sp-float-right">Add Field<i class="sp-margin-left-1 sp-inline-icon-circle-plus"></i></span>
-                  </a>
-                  <a class="sp-menu-item sp-icon-label">
-                    <span class="sp-color-contrast">Section Label</span>
-                    <span class="sp-float-right">Add Field<i class="sp-margin-left-1 sp-inline-icon-circle-plus"></i></span>
-                  </a>
-                  <a class="sp-menu-item sp-icon-image">
-                    <span class="sp-color-contrast">Image Asset Field</span>
-                    <span class="sp-float-right">Add Field<i class="sp-margin-left-1 sp-inline-icon-circle-plus"></i></span>
-                  </a>
-                  <a class="sp-menu-item sp-icon-video">
-                    <span class="sp-color-contrast">Video Asset Field</span>
-                    <span class="sp-float-right">Add Field<i class="sp-margin-left-1 sp-inline-icon-circle-plus"></i></span>
-                  </a>
-                  <a class="sp-menu-item sp-icon-file">
-                    <span class="sp-color-contrast">File Upload Field</span>
-                    <span class="sp-float-right">Add Field<i class="sp-margin-left-1 sp-inline-icon-circle-plus"></i></span>
-                  </a>
+          <div class="sp-padding-2">
+
+            <div class="sp-border-bottom-base sp-margin-bottom-2 sp-padding-1 ">
+              <div class="sp-h6 sp-color-contrast">
+                Section Label One
+              </div>
+            </div>
+
+            <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
+              <div class="sp-h6 sp-color-contrast">
+                <i class="sp-margin-right-1"></i>
+                My Custom Text Field
+                <span> 
+              </div>
+              <p class="sp-padding-1 sp-border-top-base sp-margin-top-1">
+                This is where the helper text goes.
+              </p>
+              <p class="sp-padding-1 sp-margin-top-1 sp-font-weight-semi-bold">
+               Character Limits: 0-1000 Characters
+              </p>
+              <div class="sp-padding-1">
+                <input type="text" value="Here's some custom text." style="width: 100%"/>
+              </div>
+            </div>
+
+            <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
+              <div class="sp-h6 sp-color-contrast">
+                <i class="sp-margin-right-1"></i>
+                My Custom Number Field
+                <span> 
+              </div>
+              <p class="sp-padding-1 sp-border-top-base sp-margin-top-1">
+                This is where the helper text goes.
+              </p>
+              <p class="sp-padding-1 sp-margin-top-1 sp-font-weight-semi-bold">
+                Value Range: 0-1000
+              </p>
+              <div class="sp-padding-1">
+                <div class="sp-padding-1 sp-group">
+                <input type="number" value="0" style="width: 100px"/><button class="sp-icon-arrow-up"></button><button class="sp-icon-arrow-down"></button>
+              </div>
+              </div>
+            </div>
+
+            <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
+              <div class="sp-h6 sp-color-contrast">
+                <i class="sp-margin-right-1"></i>
+                My Custom Number Field Slider
+                <span> 
+              </div>
+              <p class="sp-padding-1 sp-border-top-base sp-margin-top-1">
+                This is where the helper text goes.
+              </p>
+              <p class="sp-padding-1 sp-margin-top-1 sp-font-weight-semi-bold">
+                Value Range: 20-50
+              </p>
+              <div class="sp-padding-1">
+                <div class="sp-padding-1 sp-flex">
+                  <input type="number" value="0" style="width: 100px" class="sp-margin-right-2"/>
+                  <div style="flex:1">
+                    <div class="sp-input sp-rectangle sp-margin-top-2" style="height: 6px">
+                      <button class="sp-primary sp-circle" style="transform: translateY(-40%)"></button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- <div class="sp-group sp-flex">
-            <a class="sp-button sp-tooltip sp-tooltip-below sp-icon-template-text" style="flex: 1"></a>
-            <a class="sp-button sp-tooltip sp-tooltip-below sp-icon-link" style="flex: 1"></a>
-            <a class="sp-button sp-tooltip sp-tooltip-below sp-icon-template-number" style="flex: 1"></a>
-            <a class="sp-button sp-tooltip sp-tooltip-below sp-icon-template-slider" style="flex: 1"></a>
-            <a class="sp-button sp-tooltip sp-tooltip-below sp-icon-template-list" style="flex: 1"></a>
-            <a class="sp-button sp-tooltip sp-tooltip-below sp-icon-multi-select" style="flex: 1"></a>
-            <a class="sp-button sp-tooltip sp-tooltip-below sp-icon-circle-check" style="flex: 1"></a>
-            <a class="sp-button sp-tooltip sp-tooltip-below sp-icon-toggle-on" style="flex: 1"></a>
-            <a class="sp-button sp-tooltip sp-tooltip-below sp-icon-calendar" style="flex: 1"></a>
-            <a class="sp-button sp-tooltip sp-tooltip-below sp-icon-label" style="flex: 1"></a>
-            <a class="sp-button sp-tooltip sp-tooltip-below sp-icon-image" style="flex: 1"></a>
-            <a class="sp-button sp-tooltip sp-tooltip-below sp-icon-video" style="flex: 1"></a>
-            <a class="sp-button sp-tooltip sp-tooltip-below sp-icon-file" style="flex: 1"></a>
-          </div> -->
-          <div class="sp-padding-2">
-
-            <div class="sp-border-bottom-base sp-margin-bottom-2 sp-padding-1 sp-bg-overlay-dark-2">
-              <div class="sp-h6 sp-color-contrast">
-                Section Label One
-                <span class="sp-float-right sp-color-base"><i class="sp-inline-icon-edit sp-margin-right-1"></i><i class="sp-inline-icon-circle-close sp-margin-right-1"></i></span>
-              </div>
-            </div>
 
             <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
               <div class="sp-h6 sp-color-contrast">
-                <i class="sp-inline-icon-circle-arrow-right sp-margin-right-1 sp-color-base"></i>
-                <i class="sp-inline-icon-template-text sp-margin-right-1"></i>
-                My Custom Text Field
-                <span style="font-size: 12px" class="sp-float-right sp-color-base">{{textfield}}</span>
-              </div>
-            </div>
-
-            <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
-              <div class="sp-h6 sp-color-contrast">
-                <i class="sp-inline-icon-circle-arrow-right sp-margin-right-1 sp-color-base"></i>
-                <i class="sp-inline-icon-link sp-margin-right-1"></i>
+                <i class="sp-margin-right-1"></i>
                 My URL Field
-                <span style="font-size: 12px" class="sp-float-right sp-color-base">{{url}}</span>
+                <span> 
+              </div>
+              <p class="sp-padding-1 sp-border-top-base sp-margin-top-1">
+                This is where the helper text goes.
+              </p>
+              <p class="sp-padding-1 sp-margin-top-1 sp-font-weight-semi-bold">
+                Must be a Secure URL (HTTPS).
+              </p>
+              <div class="sp-padding-1">
+                <input type="text" value="Here's some custom text." style="width: 100%"/>
               </div>
             </div>
 
             <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
               <div class="sp-h6 sp-color-contrast">
-                <i class="sp-inline-icon-circle-arrow-right sp-margin-right-1 sp-color-base"></i>
-                <i class="sp-inline-icon-template-number sp-margin-right-1"></i>
-                My Custom Number Field
-                <span style="font-size: 12px" class="sp-float-right sp-color-base">{{customNumber}}</span>
+                <i class="sp-margin-right-1"></i>
+                My List Field
+                <span> 
+              </div>
+              <p class="sp-padding-1 sp-border-top-base sp-margin-top-1">
+                This is where the helper text goes.
+              </p>
+              <div class="sp-padding-1">
+                <div class="sp-selector sp-block" style="width: auto; display: block">
+                  <input class="sp-selector-trigger" type="text" readonly value="List Item 1" style="width: 100%"/>
+                  <div class="sp-selector-overlay">
+                    <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
+                      <a class="sp-menu-item sp-state-active">List Item 1</a>
+                      <a class="sp-menu-item">List Item 2</a>
+                      <a class="sp-menu-item">List Item 3</a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
             <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
               <div class="sp-h6 sp-color-contrast">
-                <i class="sp-inline-icon-circle-arrow-right sp-margin-right-1 sp-color-base"></i>
-                <i class="sp-inline-icon-template-slider sp-margin-right-1"></i>
-                My Range Selector
-                <span style="font-size: 12px" class="sp-float-right sp-color-base">{{rangeSelector}}</span>
+                <i class="sp-margin-right-1"></i>
+                My Multi-Select List Field
+                <span> 
               </div>
-            </div>
-
-            <div class="sp-border-bottom-base sp-margin-bottom-2 sp-padding-1 sp-bg-overlay-dark-2">
-              <div class="sp-h6 sp-color-contrast">
-                Section Label Two
-                <span style="font-size: 12px" class="sp-float-right sp-color-base"><i class="sp-inline-icon-edit sp-margin-right-1"></i><i class="sp-inline-icon-circle-close sp-margin-right-1"></i></span>
-              </div>
-            </div>
-
-            <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
-              <div class="sp-h6 sp-color-contrast">
-                <i class="sp-inline-icon-circle-arrow-right sp-margin-right-1 sp-color-base"></i>
-                <i class="sp-inline-icon-multi-select sp-margin-right-1"></i>
-                My Multi Select Field
-                <span style="font-size: 12px" class="sp-float-right sp-color-base">{{multiSelect}}</span>
-              </div>
-            </div>
-
-            <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
-              <div class="sp-h6 sp-color-contrast">
-                <i class="sp-inline-icon-circle-arrow-right sp-margin-right-1 sp-color-base"></i>
-                <i class="sp-inline-icon-template-list sp-margin-right-1"></i>
-                My Dropdown List Field
-                <span style="font-size: 12px" class="sp-float-right sp-color-base">{{dropdownList}}</span>
-              </div>
-            </div>
-
-            <div class="sp-border-bottom-base sp-margin-bottom-2 sp-padding-1 sp-bg-overlay-dark-2">
-              <div class="sp-h6 sp-color-contrast">
-                Section Label Three
-                <span style="font-size: 12px" class="sp-float-right sp-color-base"><i class="sp-inline-icon-edit sp-margin-right-1"></i><i class="sp-inline-icon-circle-close sp-margin-right-1"></i></span>
+              <p class="sp-padding-1 sp-border-top-base sp-margin-top-1">
+                This is where the helper text goes.
+              </p>
+              <div class="sp-padding-1">
+                <div class="sp-margin-bottom-1">
+                  <input type="checkbox" class="qit-target sp-small"><label>Item 1</label>
+                </div>
+                <div class="sp-margin-bottom-1">
+                  <input type="checkbox" class="qit-target sp-small"><label>Item 2</label>
+                </div>
+                <div class="sp-margin-bottom-1">
+                  <input type="checkbox" class="qit-target sp-small"><label>Item 3</label>
+                </div>
+                <div class="sp-margin-bottom-1">
+                  <input type="checkbox" class="qit-target sp-small"><label>Item 4</label>
+                </div>
+                <div class="sp-margin-bottom-1">
+                  <input type="checkbox" class="qit-target sp-small"><label>Item 5</label>
+                </div>
               </div>
             </div>
 
             <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
               <div class="sp-h6 sp-color-contrast">
-                <i class="sp-inline-icon-circle-arrow-right sp-margin-right-1 sp-color-base"></i>
-                <i class="sp-inline-icon-image sp-margin-right-1"></i>
-                My Custom Image
-                <span style="font-size: 12px" class="sp-float-right sp-color-base">{{customImage}}</span>
-              </div>
-            </div>
-
-            <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
-              <div class="sp-h6 sp-color-contrast">
-                <i class="sp-inline-icon-circle-arrow-right sp-margin-right-1 sp-color-base"></i>
-                <i class="sp-inline-icon-video sp-margin-right-1"></i>
-                My Custom Video
-                <span style="font-size: 12px" class="sp-float-right sp-color-base">{{customVideo}}</span>
-              </div>
-            </div>
-
-            <!-- <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
-              <div class="sp-h6 sp-color-contrast">
-                <i class="sp-inline-icon-circle-arrow-right sp-margin-right-1 sp-color-base"></i>
-                <i class="sp-inline-icon-template-collection sp-margin-right-1"></i>
-                My Custom Collection
-                <span style="font-size: 12px" class="sp-float-right sp-color-base">{{customCollection}}</span>
-              </div>
-            </div> -->
-
-            <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
-              <div class="sp-h6 sp-color-contrast">
-                <i class="sp-inline-icon-circle-arrow-right sp-margin-right-1 sp-color-base"></i>
-                <i class="sp-inline-icon-circle-check sp-margin-right-1"></i>
+                <i class="sp-margin-right-1"></i>
                 My Checkbox
-                <span style="font-size: 12px" class="sp-float-right sp-color-base">{{checkbox}}</span>
+                <span> 
+              </div>
+              <p class="sp-padding-1 sp-border-top-base sp-margin-top-1">
+                This is where the helper text goes.
+              </p>
+              <div class="sp-padding-1">
+                <div class="sp-margin-bottom-1">
+                  <input type="checkbox" class="qit-target sp-small"><label>Include this?</label>
+                </div>
               </div>
             </div>
 
-            <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
-              <div class="sp-h6 sp-color-contrast">
-                <i class="sp-inline-icon-circle-arrow-right sp-margin-right-1 sp-color-base"></i>
-                <i class="sp-inline-icon-calendar sp-margin-right-1"></i>
-                My Custom Date
-                <span style="font-size: 12px" class="sp-float-right sp-color-base">{{dateField}}</span>
-              </div>
-            </div>
 
             <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
               <div class="sp-h6 sp-color-contrast">
-                <i class="sp-inline-icon-circle-arrow-right sp-margin-right-1 sp-color-base"></i>
-                <i class="sp-inline-icon-toggle-on sp-margin-right-1"></i>
+                <i class="sp-margin-right-1"></i>
                 My Toggle
-                <span style="font-size: 12px" class="sp-float-right sp-color-base">{{customToggle}}</span>
+                <span> 
+              </div>
+              <p class="sp-padding-1 sp-border-top-base sp-margin-top-1">
+                This is where the helper text goes.
+              </p>
+              <div class="sp-padding-1">
+                <div class="sp-margin-bottom-1 sp-row">
+                  <div class="sp-col sp-span-5 sp-align-right">Off Label</div>
+                  <div class="sp-col sp-span-2 sp-align-center"><i class="sp-inline-icon-toggle-on sp-color-primary" style="display: inline-block; transform: scale(2.25) !important"></i></div>
+                  <div class="sp-col sp-span-5 sp-align-left">On Label</div>
+                </div>
               </div>
             </div>
+
+            <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
+              <div class="sp-h6 sp-color-contrast">
+                <i class="sp-margin-right-1"></i>
+                Image Field
+                
+              </div>
+              <p class="sp-padding-1 sp-border-top-base sp-margin-top-1">
+                This is where the helper text goes.
+              </p>
+              <p class="sp-padding-1 sp-margin-top-1 sp-font-weight-semi-bold">
+                Accepts PNG, JPG.
+              </p>
+              <div class="sp-padding-1 sp-flex sp-group">
+                <input type="text" value="my_image-file.png" readonly style="width: 60%"/><button style="flex: 1">Upload Image</button>
+              </div>
+              <div class="sp-row sp-border-base sp-rectangle sp-bg-overlay-dark-1">
+                <div class="sp-col sp-span-7">
+                  <div class="sp-height-4 sp-margin-1" style="background-image: url(http://via.placeholder.com/100x100); background-size: contain; background-position: center center; background-repeat: no-repeat"></div>
+                </div>
+                <div class="sp-col sp-span-5 sp-align-center">
+                  <div class="sp-margin-top-3 sp-font-weight-semi-bold">PNG</div>
+                  <div class="sp-font-weight-semi-bold">92.4KB</div>
+                  <div class="sp-color-muted">(Before Optimization)</div>
+                  <div class="sp-font-weight-semi-bold">100 x 100</div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
+              <div class="sp-h6 sp-color-contrast">
+                <i class="sp-margin-right-1"></i>
+                Video Field
+                
+              </div>
+              <p class="sp-padding-1 sp-border-top-base sp-margin-top-1">
+                This is where the helper text goes.
+              </p>
+              <p class="sp-padding-1 sp-margin-top-1 sp-font-weight-semi-bold">
+                Accepts MP4, WMV, AVI, MPG, MOV.
+              </p>
+              <div class="sp-padding-1 sp-flex sp-group">
+                <input type="text" value="my_video-file.mp4" readonly style="width: 60%"/><button style="flex: 1">Upload Video</button>
+              </div>
+              <div class="sp-row sp-border-base sp-rectangle sp-bg-overlay-dark-1">
+                <div class="sp-col sp-span-7">
+                  <div class="sp-height-4 sp-margin-1" style="background-color: black;"></div>
+                </div>
+                <div class="sp-col sp-span-5 sp-align-center">
+                  <div class="sp-margin-top-3 sp-font-weight-semi-bold">MP4</div>
+                  <div class="sp-font-weight-semi-bold">4240.4KB</div>
+                  <div class="sp-color-muted">(Before Optimization)</div>
+                  <div class="sp-font-weight-semi-bold">16:9</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
+              <div class="sp-h6 sp-color-contrast">
+                <i class="sp-margin-right-1"></i>
+                File Field
+                
+              </div>
+              <p class="sp-padding-1 sp-border-top-base sp-margin-top-1">
+                This is where the helper text goes.
+              </p>
+              <p class="sp-padding-1 sp-margin-top-1 sp-font-weight-semi-bold">
+                Accepts JSON.
+              </p>
+              <div class="sp-padding-1 sp-flex sp-group">
+                <input type="text" value="my_other-file.json" readonly style="width: 60%"/><button style="flex: 1">Upload File</button>
+              </div>
+              <div class="sp-row sp-border-base sp-rectangle sp-bg-overlay-dark-1">
+                <div class="sp-col sp-span-12 sp-align-center">
+                  <div class="sp-font-weight-semi-bold">JSON</div>
+                  <div class="sp-font-weight-semi-bold">1.4KB</div>
+                </div>
+              </div>
+            </div>
+
+            
 
 
             

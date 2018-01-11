@@ -50,11 +50,11 @@
       </div>
     </div>
   </div>
-  <div class="sp-app-org-label sp-container-dark sp-wrapper sp-fluid">
+  <!-- <div class="sp-app-org-label sp-container-dark sp-wrapper sp-fluid">
     <div class="sp-row sp-padding-2 sp-padding-left-3 sp-fluid">
       <div class="sp-label sp-small">Example Organization <span class="sp-inline-icon-arrow-right"></span> <a href="-reports.html" class="sp-color-white">Reports</a></div>
     </div>
-  </div>
+  </div> -->
   <!-- <div class="sp-app-header sp-container-dark sp-alt-two sp-wrapper sp-fluid">
     <div class="sp-row sp-vcenter sp-fluid">
       <div class="sp-col sp-span-12 sp-flex sp-flex-align-items-center">
@@ -85,7 +85,7 @@
     <div class="sp-container sp-padding-1 sp-contrast sp-flex sp-border-bottom-base">
       <span class="sp-padding-1 sp-label sp-color-contrast" style="flex:1; align-items: center">
         <i class="sp-inline-icon-filter sp-color-primary"></i>
-        Custom Query
+        Query Editor
       </span>
       <div class="sp-small" style="position: absolute; top:5px; right: 10px;">
         <button class="sp-icon-circle-arrow-up sp-small"></button>
@@ -97,9 +97,44 @@
       <div class=" sp-margin-left-2 sp-padding-top-1 sp-border-left-base" style="">
         <div class="sp-small sp-flex sp-padding-vertical-1" style="align-items: center">
           <span class="sp-border-top-base" style="height:0; width: 15px;"></span>
-          <div class="sp-form-tactile sp-no-edit sp-minimal">All Ads Served From 'Example Organization'</div>
+          <div class="sp-form-tactile sp-no-edit sp-minimal">All Ads Served From:</div>
           <span class="sp-border-top-base" style="height:0; width: 15px;"></span>
-          <div class="sp-form-tactile sp-primary">Over the last 30 days<i class="sp-inline-icon-edit sp-margin-left-1"></i></div>
+          <div class="sp-selector">
+            <div tabindex="0" class="sp-form-tactile sp-selector-trigger"><i class="sp-inline-icon-edit sp-margin-right-1"></i>Specless, Inc + 2 Other Orgs.</div>
+            <div class="sp-selector-overlay">
+              <div class="sp-menu-dropdown sp-menu-arrow sp-overlay sp-width-7 sp-color-contrast">
+                <!-- <div class="sp-padding-horizontal-1 sp-padding-vertical-1" style="position: relative;">
+                  <input type="search" class="sp-small" placeholder="Search Values" style="width: 100%"/>
+                </div> -->
+                <div class="sp-menu-header">Organizations</div>
+                <div class="sp-margin-1 sp-input sp-rectangle" style="max-height:250px; overflow-y:auto">
+                  <div class="sp-menu-item"><i class="sp-inline-icon-circle sp-margin-right-1"></i>All Organizations</div>
+                  <div class="sp-menu-item sp-state-active"><i class="sp-inline-icon-circle-check sp-margin-right-1"></i>Specless, Inc</div>
+                  <div class="sp-menu-item sp-state-active"><i class="sp-inline-icon-circle-check sp-margin-right-1"></i>Specless Demo</div>
+                  <div class="sp-menu-item"><i class="sp-inline-icon-circle sp-margin-right-1"></i>Some Other Org</div>
+                  <div class="sp-menu-item"><i class="sp-inline-icon-circle sp-margin-right-1"></i>Org Two Test</div>
+                  <div class="sp-menu-item sp-state-active"><i class="sp-inline-icon-circle-check sp-margin-right-1"></i>NBC Sandbox</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="sp-border-top-base" style="height:0; width: 15px;"></span>
+          <div class="sp-selector">
+            <div tabindex="0" class="sp-form-tactile sp-selector-trigger"><i class="sp-inline-icon-edit sp-margin-right-1"></i>Over the last 30 days.</div>
+            <div class="sp-selector-overlay">
+              <div class="sp-menu-dropdown sp-menu-arrow sp-overlay sp-width-7 sp-color-contrast">
+                <div class="sp-menu-header">Date Range</div>
+                <div class="sp-margin-1 sp-input sp-rectangle" style="max-height:250px; overflow-y:auto">
+                  <div class="sp-menu-item">Over the last 365 days.</div>
+                  <div class="sp-menu-item">Over the last 90 days.</div>
+                  <div class="sp-menu-item sp-state-active">Over the last 30 days.</div>
+                  <div class="sp-menu-item">Over the last 7 days.</div>
+                  <div class="sp-menu-item">Since the first impression served.</div>
+                  <div class="sp-menu-item">During a specifc date range.</div>
+                </div>
+              </div>
+            </div>
+          </div>
           
         </div>
         <div class="sp-small sp-flex sp-padding-vertical-1" style="align-items: center">
@@ -109,7 +144,7 @@
           <div class="sp-form-tactile >is</div> -->
           <span class="sp-border-top-base" style="height:0; width: 15px;"></span>
           <div class="sp-selector">
-            <div tab-ndex="0" class="sp-form-tactile sp-slector-trigger"><i class="sp-inline-icon-edit sp-margin-right-1"></i>Example Creative 1<i class="sp-inline-icon-circle-close sp-margin-left-1"></i></div>
+            <div tabindex="0" class="sp-form-tactile sp-selector-trigger"><i class="sp-inline-icon-edit sp-margin-right-1"></i>Example Creative 1<i class="sp-inline-icon-circle-close sp-margin-left-1"></i></div>
             <div class="sp-selector-overlay">
               <div class="sp-menu-dropdown sp-menu-arrow sp-overlay sp-width-7 sp-color-contrast">
                 <div class="sp-padding-horizontal-1 sp-padding-vertical-1" style="position: relative;">
@@ -130,7 +165,7 @@
           <div class="sp-form-tactile sp-minimal sp-no-edit">Or</div>
           <span class="sp-border-top-base" style="height:0; width: 15px;"></span>
           <div class="sp-selector">
-            <div tab-ndex="0" class="sp-form-tactile sp-slector-trigger"><i class="sp-inline-icon-edit sp-margin-right-1"></i>Example Creative 2<i class="sp-inline-icon-circle-close sp-margin-left-1"></i></div>
+            <div tabindex="0" class="sp-form-tactile sp-selector-trigger"><i class="sp-inline-icon-edit sp-margin-right-1"></i>Example Creative 2<i class="sp-inline-icon-circle-close sp-margin-left-1"></i></div>
             <div class="sp-selector-overlay">
               <div class="sp-menu-dropdown sp-menu-arrow sp-overlay sp-width-7 sp-color-contrast">
                 <div class="sp-padding-horizontal-1 sp-padding-vertical-1" style="position: relative;">
@@ -168,19 +203,28 @@
         </div>
         <div class="sp-small sp-flex sp-padding-vertical-1" style="align-items: center">
           <span class="sp-border-top-base" style="height:0; width: 15px;"></span>
-          <div class="sp-form-tactile sp-success"><i class="sp-inline-icon-sync sp-margin-right-1"></i>Update Report</div>
+          <div class="sp-form-tactile sp-success"><i class="sp-inline-icon-sync sp-margin-right-1"></i>Update Data</div>
         </div>
       </div>
     </div>
     <div class="sp-container sp-padding-1 sp-contrast sp-flex sp-border-top-base" style="position: relative">
       <span class="sp-padding-1 sp-label sp-color-contrast" style="flex:1; align-items: center">
         <i class="sp-inline-icon-data sp-color-primary"></i>
-        Custom Report
+        Data
       </span>
       <div class="sp-small" style="position: absolute; top:5px; right: 10px;">
-        <button href="-data-viewer-metrics.html" class="sp-margin-left-1 sp-icon-metric" onclick="window.location.href = '-data-viewer-metrics.html'">Metrics (Columns)</button>
-        <button class="sp-margin-left-1 sp-icon-eye sp-state-disabled">Visualizations</button>
-        <button class="sp-margin-left-1 sp-icon-save">Save As Report</button>
+        <a href="-data-viewer-metrics.html" class="sp-button sp-margin-left-1 sp-icon-metric" onclick="window.location.href = '-data-viewer-metrics.html'">Metrics (Columns)</a>
+        <a class="sp-button sp-margin-left-1 sp-icon-eye sp-state-disabled">Visualizations</a>
+        <span class="sp-selector sp-small">
+          <button tabindex="0" class="sp-icon-save sp-small sp-float-right sp-margin-left-1 sp-selector-trigger"></button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay" style="left: auto; right: 0; transform: none;">
+              <a class="sp-menu-item sp-icon-circle-plus">Add to Report</a>
+              <a class="sp-menu-item sp-icon-filter">Save Query</a>
+              <a class="sp-menu-item sp-icon-download">Download Data</a>
+            </div>
+          </div>
+        </span>
       </div>
     </div>
   </div>

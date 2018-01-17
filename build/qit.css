@@ -8813,15 +8813,16 @@ blockquote {
 
 .sp-modal {
   width: 55.87rem;
-  height: 37.33rem;
+  min-height: 400px;
+  max-height: 90vh;
   display: flex;
   flex-direction: column;
   position: relative; }
   .sp-modal .sp-modal-header {
-    flex-grow: 0;
     padding-left: 1.6rem;
     padding-right: 1.6rem;
-    border-radius: 4px; }
+    border-radius: 4px;
+    min-height: 88px; }
     .sp-modal .sp-modal-header .sp-modal-icon {
       position: relative;
       top: 3px; }
@@ -8830,7 +8831,10 @@ blockquote {
       margin-left: 0.8rem; }
   .sp-modal .sp-modal-menu {
     flex-grow: 0;
-    padding-bottom: 0 !important; }
+    padding-bottom: 0 !important;
+    min-height: 43px; }
+    .sp-small .sp-modal .sp-modal-menu, .sp-modal .sp-modal-menu.sp-small {
+      min-height: 33px; }
   .sp-modal .sp-modal-body {
     flex-grow: 1;
     margin-left: 1.6rem;
@@ -8839,7 +8843,9 @@ blockquote {
     overflow-y: auto;
     padding-top: 0.8rem; }
   .sp-modal .sp-modal-footer {
-    flex-grow: 0; }
+    min-height: 67px; }
+    .sp-small .sp-modal .sp-modal-footer, .sp-modal .sp-modal-footer.sp-small {
+      min-height: 54px; }
     .sp-modal .sp-modal-footer .sp-modal-footer-buttons {
       display: flex; }
       .sp-modal .sp-modal-footer .sp-modal-footer-buttons > * {

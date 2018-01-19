@@ -15,7 +15,7 @@
         top: -3px;
         opacity: 0;
         @include sp-icon-size();
-      }
+      } 
       &:after {
         content: "";
         @include sp-shape(rectangle);

@@ -149,6 +149,22 @@ select, input:not([type='button']):not([type='submit']):not([type='reset']):not(
 
 		}
 
+		@include sp-primary {
+			@include sp-border-color(primary);
+		}
+
+		@include sp-success {
+			@include sp-border-color(success);
+		}
+
+		@include sp-warning {
+			@include sp-border-color(warning);
+		}
+
+		@include sp-danger {
+			@include sp-border-color(danger);
+		}
+
 	}
 
 	.sp-group & {

@@ -394,7 +394,7 @@
 	@include sp-padding(1);
 	display: flex;
 	align-items: center;
-	flex-wrap: wrap;
+	flex-wrap: wrap; 
 
 	&.sp-overlay {
 		@include sp-shape(rectangle);

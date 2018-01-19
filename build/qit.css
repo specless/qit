@@ -6239,6 +6239,14 @@ select, input:not([type='button']):not([type='submit']):not([type='reset']):not(
         color: #FFFFFF; }
     select.sp-minimal:disabled, select.sp-minimal.sp-state-disabled, input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-minimal:disabled, input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-minimal.sp-state-disabled {
       pointer-events: none; }
+    select.sp-minimal.sp-primary, input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-minimal.sp-primary {
+      border-color: #00C3DC; }
+    select.sp-minimal.sp-success, input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-minimal.sp-success {
+      border-color: #00EC99; }
+    select.sp-minimal.sp-warning, input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-minimal.sp-warning {
+      border-color: #FF4A37; }
+    select.sp-minimal.sp-danger, input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']).sp-minimal.sp-danger {
+      border-color: #FF2455; }
   .sp-group select, .sp-group input:not([type='button']):not([type='submit']):not([type='reset']):not([type='radio']):not([type='checkbox']) {
     border-radius: 0;
     margin: 0; }

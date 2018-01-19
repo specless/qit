@@ -70,9 +70,9 @@ body {
 
 header#hub-header #header-top #header-nav-right li a {
   text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 0.08em;
-  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
   color: rgba(0, 0, 0, 0.5); }
   header#hub-header #header-top #header-nav-right li a:hover {
     color: #00C3DC;
@@ -80,3 +80,14 @@ header#hub-header #header-top #header-nav-right li a {
 
 .theme-line header#hub-header #header-top {
   border-bottom: 1px solid rgba(0, 0, 0, 0.22); }
+
+nav#hub-sidebar ul a {
+  border-radius: 0;
+  border-left: 3px solid transparent; }
+  nav#hub-sidebar ul a:hover {
+    border-left: 3px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.05); }
+  nav#hub-sidebar ul a.active {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-left: 3px solid #00C3DC;
+    color: rgba(0, 0, 0, 0.5); }

@@ -8843,6 +8843,8 @@ blockquote {
     min-height: 43px; }
     .sp-small .sp-modal .sp-modal-menu, .sp-modal .sp-modal-menu.sp-small {
       min-height: 33px; }
+    .sp-modal .sp-modal-menu:empty {
+      height: 0px !important; }
   .sp-modal .sp-modal-body {
     flex-grow: 1;
     margin-left: 1.6rem;
@@ -9266,6 +9268,8 @@ body {
       opacity: 1; }
     .sp-app.sp-initializing .sp-app-side-menu {
       visibility: hidden; }
+    .sp-app.sp-initializing .sp-app-help-menu {
+      visibility: hidden; }
     .sp-app.sp-initializing .sp-app-overlay {
       background-color: transparent; }
     .sp-app.sp-initializing .sp-app-loader {
@@ -9525,7 +9529,7 @@ body {
       text-align: left;
       margin-right: 5px; }
 
-.sp-app-side-menu {
+.sp-app-side-menu, .sp-app-help-menu {
   width: 16.27rem;
   height: 100vh;
   position: absolute;
@@ -9536,8 +9540,43 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   z-index: 98; }
-  .sp-app-side-menu.sp-hidden, .sp-app.sp-hide-menu .sp-app-side-menu {
+  .sp-app-side-menu.sp-hidden, .sp-app.sp-hide-menu .sp-app-side-menu, .sp-app-help-menu.sp-hidden, .sp-app.sp-hide-menu .sp-app-help-menu {
     transform: translateX(-110%); }
+
+.sp-app-help-menu {
+  width: 515px;
+  left: auto;
+  right: 0;
+  box-sizing: border-box; }
+  .sp-app-help-menu .sp-help-logo {
+    display: inline-block;
+    padding-top: 2px;
+    height: 24px;
+    width: 200px;
+    text-indent: 0;
+    font-size: 18px;
+    font-weight: 300;
+    border-left: 1px solid #00C3DC;
+    padding-left: 6px;
+    color: #00C3DC;
+    margin-left: 10px; }
+  .sp-app-help-menu .sp-app-help-menu-header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 58px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.12);
+    height: 1px; }
+  .sp-app-help-menu .sp-app-help-menu-content {
+    height: calc(100% - 60px);
+    flex-direction: column;
+    display: flex; }
+    .sp-app-help-menu .sp-app-help-menu-content iframe {
+      width: 100%;
+      height: 100%;
+      border: 0; }
 
 .sp-creative-thumbnail {
   position: relative;

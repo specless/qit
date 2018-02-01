@@ -125,6 +125,10 @@
 		.sp-small &, &.sp-small {
 			min-height: 33px;
 		}
+
+		&:empty {
+			height: 0px !important;
+		}
 	}
 
 	.sp-modal-body {

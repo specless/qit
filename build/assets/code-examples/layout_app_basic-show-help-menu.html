@@ -83,10 +83,10 @@
       <a class="sp-menu-item sp-minimal sp-icon-close sp-padding-0"></a>
     </div>
     <div class="sp-app-help-menu-content">
-        <div class="sp-border-bottom-base">
-          <input style="width:100%" type="search" placeholder="Search the Knowledge Base" class="sp-small sp-margin-vertical-2"/>
+        <div class="sp-border-bottom-base sp-flex">
+          <input id="search-input" type="search" style="flex:1" placeholder="Search the Knowledge Base" class="sp-small sp-margin-vertical-2"/><button id="search-button" class="sp-primary sp-small sp-margin-left-1 sp-margin-vertical-2">Search</button>
         </div>
-        <div style="flex:1">
+        <div style="flex:1; overflow: hidden;">
           <iframe id="support-content" src="//developer.specless.tech/v1.0?isolated=true"></iframe>
         </div>
         <div class="sp-border-top-base">
@@ -97,6 +97,14 @@
             <button class="sp-primary sp-block sp-small">Submit Feedback</button>
           </div>
         </div>
+        <script>
+          var searchInput = document.getElementById('search-input');
+          var searchButton = document.getElementById('search-button');
+          var supportContent = document.getElementById('support-content');
+          searchButton.addEventListener('click', function() {
+            supportContent.setAttribute('src', 'https://developer.specless.tech/v1.0/search?isolated=true&q=' + searchInput.value);
+          });
+          </script>
     </div>
   </div>
 

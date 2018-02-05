@@ -570,6 +570,67 @@ body {
 	}
 }
 
+.sp-app-help-menu {
+  right: -550px;
+  transition: 0.75s ease right;
+  
+  &.sp-showing {
+    right: 0;
+  }
+  
+  .sp-content-frame {
+    position: relative;
+    
+    .sp-iframe-navigation {
+      position: relative;
+      z-index: 2;
+      background-color: white
+    }
+    
+    iframe {
+      height: calc(100% - 43px);
+    }
+    
+    iframe[src*='specless.atlassian.'] {
+      position: relative;
+      top: -180px;
+      height: calc(100% + 180px);
+      z-index: 1;
+    }
+  }
+  
+  .sp-contact-options, .sp-feedback-options {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  
+  &.show-contact-options {
+    .sp-content-frame iframe, .sp-iframe-navigation {
+      display: none;
+    }
+    
+    .sp-contact-options {
+      display: block;
+    }
+  }
+  
+  &.show-feedback-options {
+   .sp-content-frame iframe, .sp-iframe-navigation {
+      display: none;
+    }
+    
+    .sp-feedback-options {
+      display: block;
+    }
+  }
+}
+
 
 .sp-creative-thumbnail {
 	position: relative;

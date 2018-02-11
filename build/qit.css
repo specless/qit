@@ -7873,7 +7873,7 @@ input[type='radio'] {
         top: 6px; }
       .sp-menu-item.sp-label.sp-small[class*="sp-icon-after-"]::after, .sp-small .sp-menu-item.sp-label[class*="sp-icon-after-"]::after {
         top: 6px; }
-      F .sp-menu-item.sp-label.sp-small:not(input):empty, F .sp-small .sp-menu-item.sp-label:not(input):empty {
+      .sp-menu-item.sp-label.sp-small:not(input):empty, .sp-small .sp-menu-item.sp-label:not(input):empty {
         width: 31.66px; }
     .sp-menu-item.sp-label.sp-large, .sp-large .sp-menu-item.sp-label {
       padding-top: 0.8rem;
@@ -10166,7 +10166,7 @@ body {
 
 .sp-app-loader {
   height: 0px;
-  overflow: visible;
+  overflow: hidden;
   position: relative;
   z-index: 100;
   background-color: black !important; }

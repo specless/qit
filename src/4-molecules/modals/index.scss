@@ -93,15 +93,17 @@
 
 .sp-modal {
 	@include sp-width(10);
-	@include sp-height(9);
+	min-height: 400px;
+	max-height: 90vh;
 	display: flex;
 	flex-direction: column;
 	position: relative;
 
 	.sp-modal-header {
-		flex-grow: 0;
+		//flex-grow: 0;
 		@include sp-padding(3, horizontal);
 		@include sp-shape(rectangle);
+		min-height: 88px;
 
 		.sp-modal-icon {
 			position: relative;
@@ -117,6 +119,12 @@
 	.sp-modal-menu {
 		flex-grow: 0;
 		padding-bottom: 0 !important;
+
+		min-height: 43px;
+
+		.sp-small &, &.sp-small {
+			min-height: 33px;
+		}
 	}
 
 	.sp-modal-body {
@@ -128,7 +136,13 @@
 	}
 
 	.sp-modal-footer {
-		flex-grow: 0;
+		//flex-grow: 0;
+		
+		min-height: 67px;
+
+		.sp-small &, &.sp-small {
+			min-height: 54px;
+		}
 
 		.sp-modal-footer-buttons {
 			display: flex;

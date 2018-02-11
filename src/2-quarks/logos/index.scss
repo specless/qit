@@ -134,6 +134,8 @@
 		@extend %icon-logo-mark !optional;
 		font-size: 40px;
 		margin-bottom: 0.35em;
+		width: 40px;
+		height: 40px;
 	}
 
 	&:after {
@@ -146,6 +148,8 @@
 	&.sp-small {
 		&:before {
 			font-size: 24px;
+			width: 25px;
+			height: 25px;
 		}
 		&:after {
 			font-size: 13px;
@@ -155,6 +159,8 @@
 	&.sp-large {
 		&:before {
 			font-size: 60px;
+			width: 60px;
+			height: 60px;
 		}
 		&:after {
 			font-size: 24px;
@@ -164,6 +170,8 @@
 	&.sp-huge {
 		&:before {
 			font-size: 75px;
+			width: 60px;
+			height: 60px;
 		}
 		&:after {
 			font-size: 36px;

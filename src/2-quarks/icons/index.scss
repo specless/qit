@@ -190,3 +190,96 @@
     }
   }
 }
+
+
+.sp-docs {
+
+  .sp-icon-docs[href='/getting-started']::before {
+    @extend %icon-circle-start
+  }
+
+  .sp-icon-docs[href='/platform']::before {
+    @extend %icon-window
+  }
+
+  .sp-icon-docs[href='/developer']::before {
+    @extend %icon-code
+  }
+
+  .sp-icon-docs[href='/glossary']::before {
+    @extend %icon-guide
+  }
+
+  .sp-icon-docs[href='/services']::before {
+    @extend %icon-tools
+  }
+
+  a.sp-menu-item.sp-icon-folder[href='/creatives']::before {
+    @extend %icon-creative
+  }
+
+  a.sp-menu-item.sp-icon-folder[href='/formats']::before {
+    @extend %icon-format
+  }
+
+  a.sp-menu-item.sp-icon-folder[href='/reporting']::before {
+    @extend %icon-data
+  }
+
+  a.sp-menu-item.sp-icon-folder[href='/templates']::before {
+    @extend %icon-templates
+  }
+
+  a.sp-menu-item.sp-icon-folder[href='/trafficking']::before {
+    @extend %icon-paper-plane
+  }
+
+  a.sp-menu-item.sp-icon-folder[href='/integrations']::before {
+    @extend %icon-circle-sync
+  }
+
+  a.sp-menu-item.sp-icon-folder[href='/creative-development']::before {
+    @extend %icon-creative
+  }
+
+  a.sp-menu-item.sp-icon-folder[href='/format-development']::before {
+    @extend %icon-format
+  }
+
+  a.sp-menu-item.sp-icon-folder[href='/template-development']::before {
+    @extend %icon-templates
+  }
+
+  a.sp-menu-item.sp-icon-folder[href='/context-queries']::before {
+    @extend %icon-location
+  }
+
+  a.sp-menu-item.sp-icon-folder[href='/settings']::before {
+    @extend %icon-settings
+  }
+
+  a.sp-menu-item.sp-icon-folder[href*='-questions']::before {
+    @extend %icon-questions
+  }
+
+  a.sp-menu-item.sp-icon-folder[href*='-guides']::before {
+    @extend %icon-guide
+  }
+
+  a.sp-menu-item.sp-icon-content[href*='skit-']::before {
+    @extend %icon-code-file
+  }
+
+  a.sp-menu-item > i.sp-inline-icon-arrow-right::before {
+    transform: translateY(18%) scale(1);
+  }
+
+  a.sp-menu-item.sp-icon-folder[href*='-questions'] > i.sp-inline-icon-arrow-right {
+    display: none;
+  }
+
+  a.sp-menu-item.sp-state-active > i.sp-inline-icon-arrow-right::before {
+    transform: translateY(18%) scale(1) rotate(90deg);
+  }
+
+}

@@ -16,6 +16,7 @@
   "elementPrefix" : "sp",
   "baseStyles" : "./src/qit.scss",
   "externalStyles" : "./src/qit-external.scss",
+  "docStyles" : "./src/qit-readme.scss",
   "baseJs" : "./src/index.tsx",
   "buildDir" : "./build",
   "icons" : "./icons",

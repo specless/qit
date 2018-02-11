@@ -80,6 +80,10 @@ body {
 			visibility: hidden;
 		}
 
+		.sp-app-help-menu {
+			visibility: hidden;
+		}
+
 		.sp-app-overlay {
 			background-color: transparent;
 		}
@@ -503,7 +507,7 @@ body {
 	}
 }
 
-.sp-app-side-menu {
+.sp-app-side-menu, .sp-app-help-menu {
 	@include sp-width(7);
 	height: 100vh;
 	position: absolute;
@@ -518,6 +522,114 @@ body {
 	&.sp-hidden, .sp-app.sp-hide-menu & {
 		transform: translateX(-110%);
 	}
+}
+
+.sp-app-help-menu {
+	width: 515px;
+	left: auto;
+	right: 0;
+	box-sizing: border-box;
+
+	.sp-help-logo {
+		display: inline-block;
+	    padding-top: 2px;
+	    height: 24px;
+	    width: 200px;
+	    text-indent: 0;
+	    font-size: 18px;
+	    font-weight: 300;
+	    border-left: 1px solid $sp-color-primary;
+	    padding-left: 6px;
+	    color: $sp-color-primary;
+	    margin-left: 10px;
+	}
+
+	.sp-app-help-menu-header {
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 58px;
+			display: inline-block;
+			background-color: rgba(0, 0, 0, 0.12);
+			height: 1px;
+
+		}
+	}
+
+	.sp-app-help-menu-content {
+		height: calc(100% - 60px);
+		flex-direction: column;
+		display: flex;
+
+		iframe {
+			width: 100%;
+			height: 100%;
+			border: 0;
+		}
+	}
+}
+
+.sp-app-help-menu {
+  right: -550px;
+  transition: 0.75s ease right;
+  
+  &.sp-showing {
+    right: 0;
+  }
+  
+  .sp-content-frame {
+    position: relative;
+    
+    .sp-iframe-navigation {
+      position: relative;
+      z-index: 2;
+      background-color: white
+    }
+    
+    iframe {
+      height: calc(100% - 43px);
+    }
+    
+    iframe[src*='specless.atlassian.'] {
+      position: relative;
+      top: -180px;
+      height: calc(100% + 180px);
+      z-index: 1;
+    }
+  }
+  
+  .sp-contact-options, .sp-feedback-options {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  
+  &.show-contact-options {
+    .sp-content-frame iframe, .sp-iframe-navigation {
+      display: none;
+    }
+    
+    .sp-contact-options {
+      display: block;
+    }
+  }
+  
+  &.show-feedback-options {
+   .sp-content-frame iframe, .sp-iframe-navigation {
+      display: none;
+    }
+    
+    .sp-feedback-options {
+      display: block;
+    }
+  }
 }
 
 

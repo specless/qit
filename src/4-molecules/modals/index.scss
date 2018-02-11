@@ -93,8 +93,8 @@
 
 .sp-modal {
 	@include sp-width(10);
-	min-height: 400px;
-	max-height: 90vh;
+	min-height: 550px;
+	max-height: 92vh;
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -124,6 +124,10 @@
 
 		.sp-small &, &.sp-small {
 			min-height: 33px;
+		}
+
+		&:empty {
+			height: 0px !important;
 		}
 	}
 

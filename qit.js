@@ -301,6 +301,18 @@ var qitCore;
 						console.log('Error Compiling Qit External SCSS');
 						console.error(err);
 					}
+				});
+
+				config.file = options.docStyles;
+
+				sass.render(config, function(err, result) {
+					if (!err) {
+						fs.writeFileSync(options.buildDir + '/qit-readme.css', result.css);
+						console.log('Complete: Documentation SCSS Compiled.');
+					} else {
+						console.log('Error Compiling Qit Documentation SCSS');
+						console.error(err);
+					}
 				})
 			} else {
 				console.log('Error Compiling SCSS');

@@ -14,65 +14,175 @@ function getParameterByName(name, url) {
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-var hasReportedSecond = false;
-var ran = false;
+var isActiveTab = true;
+var visible = false;
+var changed = true;
 
-window.setInterval(function() {
+window.addEventListener('blur', function() {
+   isActiveTab = false;
+}, false);
+
+window.addEventListener('focus', function() {
+   isActiveTab = true;
+}, false);
+
+
+
+var prevVisible = false;
+
+function check() {
+	var visible = false;
 	
-	window.requestAnimationFrame(function(event) {
-		if (!ran) {
-			console.log('currently-inview');
-			ran = true;
-			window.parent.postMessage(
-			    {
-			        event_id: 'viewData',
-			        data: {
-			            position: getParameterByName('position'),
-			            type: 'in'
-			        }
-			    }, 
-			    "*"
-			);
-		}
-
-		window.setTimeout(function() {
-			window.requestAnimationFrame(function(event) {
-				if (!hasReportedSecond) {
-					console.log('inview-second');
-					window.parent.postMessage(
-					    {
-					        event_id: 'viewData',
-					        data: {
-					            position: getParameterByName('position'),
-					            type: 'one-second'
-					        }
-					    }, 
-					    "*"
-					);
-					hasReportedSecond = true;
-				}
-			});
-		}, 1000);
+	requestAnimationFrame(function() {
+		visible = true;
 	});
 
-	window.setTimeout(function() {
-		if (!ran) {
-			console.log('currently-outofview');
-			ran = false;
+	if (prevVisible != visible) {
+
+	} 
+
+	setTimeout(function() {
+
+		if (prevVisible !== visible) {
+			
 			window.parent.postMessage(
 			    {
-			        event_id: 'viewData',
+			        event_id: 'inview',
 			        data: {
 			            position: getParameterByName('position'),
-			            type: 'out'
+			            value: visible
 			        }
 			    }, 
 			    "*"
 			);
 		}
-	}, 16);
+		prevVisible = visible;
+		check();
+	}, 100);
+}
 
-}, 100);
+check();
+
+
+// function myLoop() {
+	
+// 	requestAnimationFrame(function() {
+// 		if (!visible) {
+// 			console.log('visible');
+// 			visible = true;
+// 		}
+// 		ran = true;
+// 		myLoop();
+// 	});
+
+// 	setTimeout(function() {
+// 		if (!ran) {
+// 			if (visible) {
+// 				console.log('not');
+// 				visible = false;
+// 			}
+// 			ran = false;
+// 			myLoop();
+// 		} else {
+// 			ran = false;
+// 			myLoop();
+// 		}
+// 	}, 50);
+
+
+
+
+	// if (visible && changed) {
+	// 	console.log(visible);
+	// } else if (changed) {
+	// 	console.log(visible);
+	// }
+    
+ //    requestAnimationFrame(function() {
+ //    	if (!visible) {
+ //    		changed = true;
+ //    	} else {
+ //    		changed = false;
+ //    	}
+ //    	visible = true;
+ //     	myLoop();
+ //    });
+    
+ //    setTimeout(function() {
+ //    	if (visible) {
+ //    		changed = true;
+ //    	} else {
+ //    		changed = false;
+ //    	}
+ //     	visible = false;
+ //     	myLoop();
+ //    }, 100);
+// }
+// myLoop();
+
+
+
+
+
+// var hasReportedSecond = false;
+// var ran = false;
+
+// window.setInterval(function() {
+	
+// 	window.requestAnimationFrame(function(event) {
+// 		if (!ran) {
+// 			console.log('currently-inview');
+// 			ran = true;
+// 			window.parent.postMessage(
+// 			    {
+// 			        event_id: 'viewData',
+// 			        data: {
+// 			            position: getParameterByName('position'),
+// 			            type: 'in'
+// 			        }
+// 			    }, 
+// 			    "*"
+// 			);
+// 		}
+
+// 		window.setTimeout(function() {
+// 			window.requestAnimationFrame(function(event) {
+// 				if (!hasReportedSecond) {
+// 					console.log('inview-second');
+// 					window.parent.postMessage(
+// 					    {
+// 					        event_id: 'viewData',
+// 					        data: {
+// 					            position: getParameterByName('position'),
+// 					            type: 'one-second'
+// 					        }
+// 					    }, 
+// 					    "*"
+// 					);
+// 					hasReportedSecond = true;
+// 				}
+// 			});
+// 		}, 1000);
+// 	});
+
+// 	window.setTimeout(function() {
+// 		if (!ran) {
+// 			console.log('currently-outofview');
+// 			ran = false;
+// 			window.parent.postMessage(
+// 			    {
+// 			        event_id: 'viewData',
+// 			        data: {
+// 			            position: getParameterByName('position'),
+// 			            type: 'out'
+// 			        }
+// 			    }, 
+// 			    "*"
+// 			);
+// 		}
+// 	}, 16);
+
+// }, 100);
 </script> 
 </head>
 

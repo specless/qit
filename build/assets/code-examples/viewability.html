@@ -42,7 +42,6 @@ function check() {
 	} 
 
 	setTimeout(function() {
-
 		if (prevVisible !== visible) {
 			
 			window.parent.postMessage(
@@ -58,7 +57,7 @@ function check() {
 		}
 		prevVisible = visible;
 		check();
-	}, 100);
+	}, 50);
 }
 
 check();

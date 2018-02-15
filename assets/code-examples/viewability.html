@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+var hasReportedSecond = false;
+var ran = false;
+
+window.setInterval(function() {
+	
+	window.requestAnimationFrame(function(event) {
+		if (!ran) {
+			console.log('currently-inview');
+			ran = true;
+			window.parent.postMessage(
+			    {
+			        event_id: 'viewData',
+			        data: {
+			            position: getParameterByName('position'),
+			            type: 'in'
+			        }
+			    }, 
+			    "*"
+			);
+		}
+
+		window.setTimeout(function() {
+			window.requestAnimationFrame(function(event) {
+				if (!hasReportedSecond) {
+					console.log('inview-second');
+					window.parent.postMessage(
+					    {
+					        event_id: 'viewData',
+					        data: {
+					            position: getParameterByName('position'),
+					            type: 'one-second'
+					        }
+					    }, 
+					    "*"
+					);
+					hasReportedSecond = true;
+				}
+			});
+		}, 1000);
+	});
+
+	window.setTimeout(function() {
+		if (!ran) {
+			console.log('currently-outofview');
+			ran = false;
+			window.parent.postMessage(
+			    {
+			        event_id: 'viewData',
+			        data: {
+			            position: getParameterByName('position'),
+			            type: 'out'
+			        }
+			    }, 
+			    "*"
+			);
+		}
+	}, 16);
+
+}, 100);
+</script> 
+</head>
+
+<body>
+</body>
+</html>

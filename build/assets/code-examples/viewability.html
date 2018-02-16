@@ -81,24 +81,7 @@ if (typeof document.addEventListener === "undefined" || typeof document.hidden =
 
 
 
-// Here's one final way... easily the best, but least supported.
-//http://productblog.appnexus.com/introducing-viewability-measurement-using-intersection-observer-api/
-// Function that is called every time the viewability of a tracked element changes
-var trackIntersectionObserver = function(entries, observer) {
-    var inViewPercentage = entries[0].intersectionRatio;
-    console.log(entries);
-    console.log(inViewPercentage);
-}
 
-var options = {
-    rootBounds: null,
-    threshold: [1, 0, .50, .30], // Only track changes between 0%, 50%, 100% in-view
-    root: null
-}
-
-var observer = new IntersectionObserver(trackIntersectionObserver, options);
-// Start tracking your element
-observer.observe(document.querySelector('html'));
 
 
 </script> 

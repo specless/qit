@@ -97,7 +97,7 @@ var options = {
 
 var observer = new IntersectionObserver(trackIntersectionObserver, options);
 // Start tracking your element
-observer.observe(window);
+observer.observe(document.querySelector('html'));
 
 
 </script> 

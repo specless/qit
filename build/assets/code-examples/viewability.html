@@ -4,6 +4,10 @@
 <head>
 <meta charset="utf-8">
 <script>
+
+var visible = false;
+var prevVisible = false;
+
 function getParameterByName(name, url) {
     if (!url) url = window.location.href;
     name = name.replace(/[\[\]]/g, "\\$&");
@@ -13,23 +17,6 @@ function getParameterByName(name, url) {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
-
-var isActiveTab = true;
-var visible = false;
-var changed = true;
-
-window.addEventListener('blur', function() {
-   isActiveTab = false;
-}, false);
-
-window.addEventListener('focus', function() {
-   isActiveTab = true;
-}, false);
-
-
-
-var prevVisible = false;
-
 function check() {
 	var visible = false;
 	
@@ -63,125 +50,30 @@ function check() {
 check();
 
 
-// function myLoop() {
-	
-// 	requestAnimationFrame(function() {
-// 		if (!visible) {
-// 			console.log('visible');
-// 			visible = true;
-// 		}
-// 		ran = true;
-// 		myLoop();
-// 	});
+// NOTE!!!!! The below might be a WAY better way to do this....
 
-// 	setTimeout(function() {
-// 		if (!ran) {
-// 			if (visible) {
-// 				console.log('not');
-// 				visible = false;
-// 			}
-// 			ran = false;
-// 			myLoop();
-// 		} else {
-// 			ran = false;
-// 			myLoop();
-// 		}
-// 	}, 50);
+var hidden, visibilityChange; 
+if (typeof document.hidden !== "undefined") { // Opera 12.10 and Firefox 18 and later support 
+  hidden = "hidden";
+  visibilityChange = "visibilitychange";
+} else if (typeof document.msHidden !== "undefined") {
+  hidden = "msHidden";
+  visibilityChange = "msvisibilitychange";
+} else if (typeof document.webkitHidden !== "undefined") {
+  hidden = "webkitHidden";
+  visibilityChange = "webkitvisibilitychange";
+}
 
+function handleVisibilityChange() {
+  if (document[hidden]) {
+    console.log('Hidden:' + window.location.href);
+  } else {
+    console.log('Visible:' + window.location.href);
+  }
+}
 
+document.addEventListener(visibilityChange, handleVisibilityChange, false);
 
-
-	// if (visible && changed) {
-	// 	console.log(visible);
-	// } else if (changed) {
-	// 	console.log(visible);
-	// }
-    
- //    requestAnimationFrame(function() {
- //    	if (!visible) {
- //    		changed = true;
- //    	} else {
- //    		changed = false;
- //    	}
- //    	visible = true;
- //     	myLoop();
- //    });
-    
- //    setTimeout(function() {
- //    	if (visible) {
- //    		changed = true;
- //    	} else {
- //    		changed = false;
- //    	}
- //     	visible = false;
- //     	myLoop();
- //    }, 100);
-// }
-// myLoop();
-
-
-
-
-
-// var hasReportedSecond = false;
-// var ran = false;
-
-// window.setInterval(function() {
-	
-// 	window.requestAnimationFrame(function(event) {
-// 		if (!ran) {
-// 			console.log('currently-inview');
-// 			ran = true;
-// 			window.parent.postMessage(
-// 			    {
-// 			        event_id: 'viewData',
-// 			        data: {
-// 			            position: getParameterByName('position'),
-// 			            type: 'in'
-// 			        }
-// 			    }, 
-// 			    "*"
-// 			);
-// 		}
-
-// 		window.setTimeout(function() {
-// 			window.requestAnimationFrame(function(event) {
-// 				if (!hasReportedSecond) {
-// 					console.log('inview-second');
-// 					window.parent.postMessage(
-// 					    {
-// 					        event_id: 'viewData',
-// 					        data: {
-// 					            position: getParameterByName('position'),
-// 					            type: 'one-second'
-// 					        }
-// 					    }, 
-// 					    "*"
-// 					);
-// 					hasReportedSecond = true;
-// 				}
-// 			});
-// 		}, 1000);
-// 	});
-
-// 	window.setTimeout(function() {
-// 		if (!ran) {
-// 			console.log('currently-outofview');
-// 			ran = false;
-// 			window.parent.postMessage(
-// 			    {
-// 			        event_id: 'viewData',
-// 			        data: {
-// 			            position: getParameterByName('position'),
-// 			            type: 'out'
-// 			        }
-// 			    }, 
-// 			    "*"
-// 			);
-// 		}
-// 	}, 16);
-
-// }, 100);
 </script> 
 </head>
 

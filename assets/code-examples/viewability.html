@@ -65,9 +65,9 @@ if (typeof document.hidden !== "undefined") { // Opera 12.10 and Firefox 18 and 
 
 function handleVisibilityChange() {
   if (document[hidden]) {
-    // do something if hidden
+    // do something if page is hidden
   } else {
-    console.log('Visible:' + window.location.href);
+   // do something if page is visible
   }
 }
 
@@ -81,17 +81,18 @@ if (typeof document.addEventListener === "undefined" || typeof document.hidden =
 
 
 
-// Here's one final way... not widely supported yet:
-
+// Here's one final way... easily the best, but least supported.
+//http://productblog.appnexus.com/introducing-viewability-measurement-using-intersection-observer-api/
 // Function that is called every time the viewability of a tracked element changes
 var trackIntersectionObserver = function(entries, observer) {
     var inViewPercentage = entries[0].intersectionRatio;
+    console.log(entries);
     console.log(inViewPercentage);
 }
 
 var options = {
     rootBounds: null,
-    threshold: [1, 0, .50], // Only track changes between 0%, 50%, 100% in-view
+    threshold: [1, 0, .50, .30], // Only track changes between 0%, 50%, 100% in-view
     root: null
 }
 

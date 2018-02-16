@@ -49,8 +49,7 @@ function check() {
 
 check();
 
-
-// NOTE!!!!! The below might be a WAY better way to do this....
+// Here's another way to track page visibility (only works when whole window is unfocused or out of view)
 
 var hidden, visibilityChange; 
 if (typeof document.hidden !== "undefined") { // Opera 12.10 and Firefox 18 and later support 
@@ -66,7 +65,7 @@ if (typeof document.hidden !== "undefined") { // Opera 12.10 and Firefox 18 and 
 
 function handleVisibilityChange() {
   if (document[hidden]) {
-    console.log('Hidden:' + window.location.href);
+    // do something if hidden
   } else {
     console.log('Visible:' + window.location.href);
   }
@@ -74,11 +73,31 @@ function handleVisibilityChange() {
 
 // Warn if the browser doesn't support addEventListener or the Page Visibility API
 if (typeof document.addEventListener === "undefined" || typeof document.hidden === "undefined") {
-  console.log("This demo requires a browser, such as Google Chrome or Firefox, that supports the Page Visibility API.");
+  //do something if browser not supported...
 } else {
   handleVisibilityChange();
   document.addEventListener(visibilityChange, handleVisibilityChange, false);
 }
+
+
+
+// Here's one final way... not widely supported yet:
+
+// Function that is called every time the viewability of a tracked element changes
+var trackIntersectionObserver = function(entries, observer) {
+    var inViewPercentage = entries[0].intersectionRatio;
+    console.log(inViewPercentage);
+}
+
+var options = {
+    rootBounds: null,
+    threshold: [1, 0, .50], // Only track changes between 0%, 50%, 100% in-view
+    root: null
+}
+
+var observer = new IntersectionObserver(trackIntersectionObserver, options);
+// Start tracking your element
+observer.observe(window);
 
 
 </script> 

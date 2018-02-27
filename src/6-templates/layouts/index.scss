@@ -893,7 +893,7 @@ body {
 	}
 }
 
-.sp-app.sp-loading-content {
+.sp-loading-content {
 
 	.sp-hide-content-while-loading {
 		> * {
@@ -974,7 +974,7 @@ body {
 				}
 
 				#content, .sp-preview-panel {
-					display: none;
+					visibility: hidden;
 				}
 
 				> div {

@@ -2294,7 +2294,7 @@ select + label::before, .sp-selector > input[type='text'].sp-selector-trigger + 
 .sp-icon-live::before, .sp-icon-after-live::after, .sp-inline-icon-live::before {
   content: "\F071"; }
 
-.sp-app.sp-loading-content .sp-hide-content-while-loading::after, .sp-app.sp-loading-content.sp-technical .sp-app-content .sp-app-content-sidebar .sp-app-content-sidebar-menu-content::after, .sp-app.sp-loading-content.sp-technical .sp-app-content .sp-app-content-main::after, .sp-icon-loading-spinner::before, .sp-icon-after-loading-spinner::after, .sp-inline-icon-loading-spinner::before {
+.sp-loading-content .sp-hide-content-while-loading::after, .sp-loading-content.sp-technical .sp-app-content .sp-app-content-sidebar .sp-app-content-sidebar-menu-content::after, .sp-loading-content.sp-technical .sp-app-content .sp-app-content-main::after, .sp-icon-loading-spinner::before, .sp-icon-after-loading-spinner::after, .sp-inline-icon-loading-spinner::before {
   content: "\F072"; }
 
 .sp-docs a.sp-menu-item.sp-icon-folder[href='/context-queries']::before, .sp-icon-location::before, .sp-icon-after-location::after, .sp-inline-icon-location::before {
@@ -9038,8 +9038,7 @@ blockquote {
   border-style: solid;
   box-shadow: inset 0 0 0.4em 0.07em rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  display: flex;
-  align-items: center;
+  display: inline-block;
   height: 43.7px;
   min-width: 43.7px;
   width: auto;
@@ -9136,6 +9135,11 @@ blockquote {
     .sp-multi-input.sp-large > [class*="sp-icon-"]::before, .sp-large .sp-multi-input > [class*="sp-icon-"]::before {
       margin-right: 0.4rem;
       top: 8px; }
+  .sp-multi-input > [class^='sp-icon-']:before, .sp-multi-input > [class*=' sp-icon-']:before {
+    line-height: 0;
+    margin-right: 0.4rem;
+    position: relative;
+    top: 7px; }
   .sp-multi-input > input, .sp-multi-input > select {
     background: none !important;
     background-color: transparent !important;
@@ -9147,7 +9151,8 @@ blockquote {
     left: -6px; }
 
 .sp-selector, .sp-custom-input {
-  position: relative; }
+  position: relative;
+  display: inline-block; }
   .sp-selector.sp-small > .sp-selector-overlay[class^='sp-icon-']::before, .sp-selector.sp-small > .sp-selector-overlay[class*=' sp-icon-']::before, .sp-selector.sp-small > .sp-custom-input-overlay[class^='sp-icon-']::before, .sp-selector.sp-small > .sp-custom-input-overlay[class*=' sp-icon-']::before, .sp-small .sp-selector > .sp-selector-overlay[class^='sp-icon-']::before, .sp-small .sp-selector > .sp-selector-overlay[class*=' sp-icon-']::before, .sp-small .sp-selector > .sp-custom-input-overlay[class^='sp-icon-']::before, .sp-small .sp-selector > .sp-custom-input-overlay[class*=' sp-icon-']::before, .sp-custom-input.sp-small > .sp-selector-overlay[class^='sp-icon-']::before, .sp-custom-input.sp-small > .sp-selector-overlay[class*=' sp-icon-']::before, .sp-custom-input.sp-small > .sp-custom-input-overlay[class^='sp-icon-']::before, .sp-custom-input.sp-small > .sp-custom-input-overlay[class*=' sp-icon-']::before, .sp-small .sp-custom-input > .sp-selector-overlay[class^='sp-icon-']::before, .sp-small .sp-custom-input > .sp-selector-overlay[class*=' sp-icon-']::before, .sp-small .sp-custom-input > .sp-custom-input-overlay[class^='sp-icon-']::before, .sp-small .sp-custom-input > .sp-custom-input-overlay[class*=' sp-icon-']::before {
     margin-left: 0.4rem; }
   .sp-selector.sp-small > .sp-selector-overlay[class^='sp-icon-'] > .sp-selector-label, .sp-selector.sp-small > .sp-selector-overlay[class^='sp-icon-'] > .sp-custom-input-label, .sp-selector.sp-small > .sp-selector-overlay[class*=' sp-icon-'] > .sp-selector-label, .sp-selector.sp-small > .sp-selector-overlay[class*=' sp-icon-'] > .sp-custom-input-label, .sp-selector.sp-small > .sp-custom-input-overlay[class^='sp-icon-'] > .sp-selector-label, .sp-selector.sp-small > .sp-custom-input-overlay[class^='sp-icon-'] > .sp-custom-input-label, .sp-selector.sp-small > .sp-custom-input-overlay[class*=' sp-icon-'] > .sp-selector-label, .sp-selector.sp-small > .sp-custom-input-overlay[class*=' sp-icon-'] > .sp-custom-input-label, .sp-small .sp-selector > .sp-selector-overlay[class^='sp-icon-'] > .sp-selector-label, .sp-small .sp-selector > .sp-selector-overlay[class^='sp-icon-'] > .sp-custom-input-label, .sp-small .sp-selector > .sp-selector-overlay[class*=' sp-icon-'] > .sp-selector-label, .sp-small .sp-selector > .sp-selector-overlay[class*=' sp-icon-'] > .sp-custom-input-label, .sp-small .sp-selector > .sp-custom-input-overlay[class^='sp-icon-'] > .sp-selector-label, .sp-small .sp-selector > .sp-custom-input-overlay[class^='sp-icon-'] > .sp-custom-input-label, .sp-small .sp-selector > .sp-custom-input-overlay[class*=' sp-icon-'] > .sp-selector-label, .sp-small .sp-selector > .sp-custom-input-overlay[class*=' sp-icon-'] > .sp-custom-input-label, .sp-custom-input.sp-small > .sp-selector-overlay[class^='sp-icon-'] > .sp-selector-label, .sp-custom-input.sp-small > .sp-selector-overlay[class^='sp-icon-'] > .sp-custom-input-label, .sp-custom-input.sp-small > .sp-selector-overlay[class*=' sp-icon-'] > .sp-selector-label, .sp-custom-input.sp-small > .sp-selector-overlay[class*=' sp-icon-'] > .sp-custom-input-label, .sp-custom-input.sp-small > .sp-custom-input-overlay[class^='sp-icon-'] > .sp-selector-label, .sp-custom-input.sp-small > .sp-custom-input-overlay[class^='sp-icon-'] > .sp-custom-input-label, .sp-custom-input.sp-small > .sp-custom-input-overlay[class*=' sp-icon-'] > .sp-selector-label, .sp-custom-input.sp-small > .sp-custom-input-overlay[class*=' sp-icon-'] > .sp-custom-input-label, .sp-small .sp-custom-input > .sp-selector-overlay[class^='sp-icon-'] > .sp-selector-label, .sp-small .sp-custom-input > .sp-selector-overlay[class^='sp-icon-'] > .sp-custom-input-label, .sp-small .sp-custom-input > .sp-selector-overlay[class*=' sp-icon-'] > .sp-selector-label, .sp-small .sp-custom-input > .sp-selector-overlay[class*=' sp-icon-'] > .sp-custom-input-label, .sp-small .sp-custom-input > .sp-custom-input-overlay[class^='sp-icon-'] > .sp-selector-label, .sp-small .sp-custom-input > .sp-custom-input-overlay[class^='sp-icon-'] > .sp-custom-input-label, .sp-small .sp-custom-input > .sp-custom-input-overlay[class*=' sp-icon-'] > .sp-selector-label, .sp-small .sp-custom-input > .sp-custom-input-overlay[class*=' sp-icon-'] > .sp-custom-input-label {
@@ -9191,7 +9196,8 @@ blockquote {
       transition: 0.25s ease top, 0.5s ease opacity, 0.5s ease visibility;
       margin-top: 5px;
       visibility: hidden;
-      pointer-events: none; }
+      pointer-events: none;
+      min-width: 100%; }
       .sp-selector > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-selector > .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-custom-input > .sp-selector-overlay > .sp-menu-dropdown.sp-menu-dropdown-above, .sp-custom-input > .sp-custom-input-overlay > .sp-menu-dropdown.sp-menu-dropdown-above {
         top: auto;
         bottom: 0%;
@@ -9488,13 +9494,6 @@ blockquote {
     .sp-danger .sp-input-group-helper .sp-input-group-help-text .sp-container-dark, .sp-danger .sp-input-group-helper .sp-input-group-help-text.sp-container-dark,
     .sp-container-dark .sp-danger .sp-input-group-helper .sp-input-group-help-text {
       color: #FF2455; }
-
-.react-datepicker__triangle {
-  border: 8px solid transparent;
-  border-bottom-color: #EAEAEA; }
-  .react-datepicker__triangle .sp-container-dark, .react-datepicker__triangle.sp-container-dark,
-  .sp-container-dark .react-datepicker__triangle {
-    border-bottom-color: #384146; }
 
 .sp-menu-dropdown {
   position: relative;
@@ -10184,7 +10183,7 @@ body {
 
 .sp-app-loader {
   height: 0px;
-  overflow: hidden;
+  overflow: visible;
   position: relative;
   z-index: 100;
   background-color: black !important; }
@@ -10634,11 +10633,11 @@ body {
 .sp-app-content-main .sp-canvas-preview:hover .sp-recenter-canvas-btn {
   opacity: 1; }
 
-.sp-app.sp-loading-content .sp-hide-content-while-loading > * {
+.sp-loading-content .sp-hide-content-while-loading > * {
   visibility: hidden !important;
   pointer-events: none; }
 
-.sp-app.sp-loading-content .sp-hide-content-while-loading::after {
+.sp-loading-content .sp-hide-content-while-loading::after {
   visibility: visible;
   display: inline-block !important;
   position: absolute;
@@ -10665,7 +10664,7 @@ body {
   z-index: 10;
   opacity: 0.5; }
 
-.sp-app.sp-loading-content.sp-technical .sp-app-content::after {
+.sp-loading-content.sp-technical .sp-app-content::after {
   display: inline-block;
   content: "";
   position: absolute;
@@ -10676,11 +10675,11 @@ body {
   left: 0;
   z-index: 6; }
 
-.sp-app.sp-loading-content.sp-technical .sp-app-content .sp-app-content-sidebar .sp-app-content-sidebar-menu-content {
+.sp-loading-content.sp-technical .sp-app-content .sp-app-content-sidebar .sp-app-content-sidebar-menu-content {
   position: relative; }
-  .sp-app.sp-loading-content.sp-technical .sp-app-content .sp-app-content-sidebar .sp-app-content-sidebar-menu-content > div {
+  .sp-loading-content.sp-technical .sp-app-content .sp-app-content-sidebar .sp-app-content-sidebar-menu-content > div {
     display: none !important; }
-  .sp-app.sp-loading-content.sp-technical .sp-app-content .sp-app-content-sidebar .sp-app-content-sidebar-menu-content::after {
+  .sp-loading-content.sp-technical .sp-app-content .sp-app-content-sidebar .sp-app-content-sidebar-menu-content::after {
     display: inline-block;
     position: absolute;
     font-family: 'Icon Font' !important;
@@ -10706,12 +10705,12 @@ body {
     z-index: 10;
     opacity: 0.5; }
 
-.sp-app.sp-loading-content.sp-technical .sp-app-content .sp-app-content-main #content {
+.sp-loading-content.sp-technical .sp-app-content .sp-app-content-main #content {
   display: none; }
 
-.sp-app.sp-loading-content.sp-technical .sp-app-content .sp-app-content-main {
+.sp-loading-content.sp-technical .sp-app-content .sp-app-content-main {
   position: relative; }
-  .sp-app.sp-loading-content.sp-technical .sp-app-content .sp-app-content-main::after {
+  .sp-loading-content.sp-technical .sp-app-content .sp-app-content-main::after {
     display: inline-block;
     position: absolute;
     font-family: 'Icon Font' !important;
@@ -10736,13 +10735,13 @@ body {
     margin-left: -20px;
     z-index: 10;
     opacity: 0.5; }
-  .sp-app.sp-loading-content.sp-technical .sp-app-content .sp-app-content-main #content, .sp-app.sp-loading-content.sp-technical .sp-app-content .sp-app-content-main .sp-preview-panel {
-    display: none; }
-  .sp-app.sp-loading-content.sp-technical .sp-app-content .sp-app-content-main > div:first-child > *, .sp-app.sp-loading-content.sp-technical .sp-app-content .sp-app-content-main > div:nth-child(2) > * {
+  .sp-loading-content.sp-technical .sp-app-content .sp-app-content-main #content, .sp-loading-content.sp-technical .sp-app-content .sp-app-content-main .sp-preview-panel {
+    visibility: hidden; }
+  .sp-loading-content.sp-technical .sp-app-content .sp-app-content-main > div:first-child > *, .sp-loading-content.sp-technical .sp-app-content .sp-app-content-main > div:nth-child(2) > * {
     opacity: 0.25; }
-  .sp-app.sp-loading-content.sp-technical .sp-app-content .sp-app-content-main .sp-app-content-main-footer {
+  .sp-loading-content.sp-technical .sp-app-content .sp-app-content-main .sp-app-content-main-footer {
     position: relative; }
-    .sp-app.sp-loading-content.sp-technical .sp-app-content .sp-app-content-main .sp-app-content-main-footer::after {
+    .sp-loading-content.sp-technical .sp-app-content .sp-app-content-main .sp-app-content-main-footer::after {
       display: inline-block;
       content: "";
       position: absolute;

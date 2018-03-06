@@ -329,7 +329,7 @@
         </div>
 
       </div>
-      <div class="sp-app-content-main-page-preview sp-container sp-alt-one" style="padding: 0; position: relative">
+      <div class="sp-app-content-main-page-preview sp-container sp-alt-one" style="padding: 0; position: relative;">
         
           
             
@@ -346,7 +346,39 @@
                 <div class="sp-preview-panel-content sp-shadow-low-inset" style="width: 100%; height: 100%;">
                   
                   <div class="sp-preview-panel-ad" style="width:100%;height:100%;">
-                    <iframe src="//gizmodo.com" style="width:100%;height:100%;border: 1px solid rgba(0,0,0,0.25)"></iframe>
+                    <div class="sp-preview-panel-grid"></div>
+                    
+                      <div class="sp-preview-panel-error-message sp-dialog sp-overlay sp-contrast sp-rectangle sp-no-overflow sp-color-contrast sp-small">
+                        <div class="sp-wrapper sp-dialog-header">
+                          <div class="sp-row">
+                            <div class="sp-col sp-span-12 sp-align-center">Open in New Window</div>
+                          </div>
+                        </div>
+                        <div class="sp-wrapper sp-dialog-body sp-padding-bottom-2">
+                           <div class="sp-row">
+                             <div class="sp-col sp-span-12 sp-align-center">
+                               <span class="sp-icon sp-dialog-icon sp-contrast sp-color-muted"></span>
+                             </div>
+                          </div>
+                          <div class="sp-row">
+                             <div class="sp-col sp-span-12 sp-align-center">
+                               <p>This site does not allow embedded previews.</p><br>
+                               <p>To proceed, please open in new window.</p>
+                             </div>
+                          </div>
+                        </div>
+                        <div class="sp-wrapper sp-border-top-base sp-dialog-footer">
+                          <div class="sp-row">
+                             <div class="sp-col sp-span-6">
+                               <button class="sp-block sp-minimal sp-align-center sp-icon-circle-info">Info</button>
+                             </div>
+                            <div class="sp-col sp-span-6 sp-align-center">
+                               <button class="sp-block sp-success sp-align-center sp-icon-external">Open</button>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+                    
                   </div>
                 </div>
               </div>
@@ -2178,6 +2210,187 @@
       </div>
     </div>
   </div>
+  <div id="target" class="sp-app-overlay">
+      <div class="sp-app-overlay-content">
+        <div class="sp-modal sp-overlay sp-contrast sp-rectangle sp-color-contrast sp-margin-2">
+          <div class="sp-wrapper sp-container-light sp-alt-two sp-modal-header sp-border-bottom-base">
+            <div class="sp-row">
+              <div class="sp-col sp-span-12">
+                <span class="sp-modal-icon sp-icon-creative sp-color-muted sp-large"></span>
+                <h2>New Preview Page</h2>
+              </div>
+            </div>
+          </div>
+          
+          <div class="sp-wrapper sp-modal-body sp-padding-bottom-2">
+            <div class="sp-row">
+               <div class="sp-col sp-span-7">
+                 
+                 <div class="sp-input-group sp-required">
+                    <div class="sp-input-group-label" data-description="Here is a description.">Preview Name</div>
+                    <div class="sp-input-group-content" data-helper="Here is helper text.">
+                      <div class="sp-input-group-content-item sp-required">
+                        <input type="text" placeholder="Creative Name">
+                      </div>
+                    </div>
+                    <div class="sp-input-group-helper">
+                      <div class="sp-input-group-descr"><!-- Enter a name for this creative. --></div>
+                      <div class="sp-input-group-help-text"></div>
+                    </div>
+                  </div>
+
+                  <div class="sp-input-group sp-required">
+                    <div class="sp-input-group-label" data-description="Here is a description.">URL</div>
+                    <div class="sp-input-group-content" data-helper="Here is helper text.">
+                      <div class="sp-input-group-content-item sp-required">
+                        <input type="text" placeholder="http://mysite.com/page?adtest=xyz">
+                      </div>
+                    </div>
+                    <div class="sp-input-group-helper">
+                      <div class="sp-input-group-descr"></div>
+                      <div class="sp-input-group-help-text">URL of page where test tag is trafficked.</div>
+                    </div>
+                  </div>
+
+                  <div class="sp-input-group">
+                    <div class="sp-input-group-label" data-description="Here is a description.">Min/Max Preview Width</div>
+                    <div class="sp-input-group-content" data-helper="Here is helper text.">
+                      <div class="sp-input-group-content-item sp-required">
+                        <input type="text" placeholder="300">
+                      </div>
+                      <div class="sp-input-group-content-item sp-required">
+                        <input type="text" placeholder="1400">
+                      </div>
+                    </div>
+                    <div class="sp-input-group-helper">
+                      <div class="sp-input-group-descr">Restrict the size this preview page can be viewed at.</div>
+                      <div class="sp-input-group-help-text">This is a mobile-only preview page <input id="sync" type="checkbox" checked/><label for="sync" style="padding-left:0"></label></div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="sp-col sp-span-5">
+                  <!-- <div class="sp-h6 sp-margin-left-3 sp-padding-top-3 sp-padding-bottom-2">Labels</div> -->
+                  <div class="sp-padding-2 sp-padding-top-3 sp-margin-left-3 sp-margin-right-2 sp-rectangle sp-container-light sp-alt-two sp-small">
+                    <div class="sp-h6 sp-padding-bottom-2">Test Tag</div>
+                    <p class="sp-margin-bottom-1">This tag must be permanently trafficked to the URL provided. Please choose your ad server below:</p>
+                    <div class="sp-selector sp-full-width sp-margin-bottom-2">
+                      <input type="text" class="sp-full-width sp-selector-trigger" placeholder="DoubleClick for Publishers"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item">DoubleClick for Publishers</a>
+                          <a class="sp-menu-item sp-state-disabled">OpenX</a>
+                          <a class="sp-menu-item sp-state-disabled">Freewheel</a>
+                          <a class="sp-menu-item sp-state-disabled">Whatever</a>
+                          <a class="sp-menu-item sp-state-disabled">Whatever</a>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <textarea readonly class="sp-height-7" style="width: 100%; box-sizing: border-box; font-size: 10px"><!--
+                        <script>window.__tsmp=+(new Date());</script>
+                        <link rel="dns-prefetch" href="//c.specless.io">
+                        <link rel="preconnect" href="//c.specless.io" crossorigin>
+                        <script type="text/javascript" src="https://unpkg.com/jsurl@0.1.5/lib/jsurl.js"></script>
+                        <script type="text/javascript" src="https://s.specless.io/frame/2/scripts/624-variable-tags_time_0hF2DXjrVx_script"></script>
+                        <script type="text/javascript">
+                        loadDynamicTag("0hF2DXjrVx", {
+                          macros: {
+                            cachebuster: "%%CACHEBUSTER%%",
+                            click: "%%CLICK_URL_ESC%%",
+                            click_unescaped: "%%CLICK_URL_UNESC%%",
+                            domain: "%%SITE%%",
+                            impression: "%%VIEW_URL_UNESC%%",
+                            width: "%%WIDTH%%",
+                            height: "%%HEIGHT%%",
+                            destination: "%%DEST_URL_ESC%%",
+                            destination_unescaped: "%%DEST_URL_UNESC%%",
+                            targeting_map: %%PATTERN:TARGETINGMAP%%,
+                            child_directed_content: "%%TFCD%%",
+                            referrer_url: "%%PATTERN:url%%",
+                            server_lineitem_id: "%eaid!",
+                            server_adverister_id: "%eadv!",
+                            server_order_id: "%ebuy!",
+                            server_creative_id: "%ecid!",
+                            server_adunit: "%%ADUNIT%%",
+                            server_placement_id: "%epid!",
+                            server_tagtype: "%eenv!",
+                            server_site_id: "%esid!",
+                            server_previewmode: "%%PREVIEW_MODE%%"
+                          }
+                        });
+                        </script> --></textarea>
+                        <div class="sp-group sp-flex sp-margin-bottom-1">
+                          <button class="sp-icon-download" style="flex:1"></button><button class="sp-icon-copy" style="flex:1"></button>
+                        </div>
+                  </div>
+
+
+                <!-- <div class="sp-input-group">
+                  <div class="sp-input-group-label" data-description="Here is a description.">Add Labels</div>
+                  <div class="sp-input-group-content" data-helper="Here is helper text.">
+                    <div class="sp-input-group-content-item sp-required">
+                      <div class="sp-selector sp-full-width sp-margin-bottom-2">
+                        <input type="text" class="sp-padding-icon-left sp-full-width sp-selector-trigger" placeholder="Enter or Choose A Custom Label"/>
+                        <div class="sp-selector-overlay sp-icon-circle-plus">
+                          <div class="sp-menu-dropdown sp-overlay">
+                            <a class="sp-menu-item sp-icon-circle-plus">Add Label: "Whatever I entered above goes here..."</a>
+                            <div class="sp-spacer-vertical"></div>
+                            <a class="sp-menu-item">CPG</a>
+                            <a class="sp-menu-item">Direct Sale</a>
+                            <a class="sp-menu-item">Custom</a>
+                            <a class="sp-menu-item">Whatever</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sp-input-group-helper">
+                    <div class="sp-input-group-descr"></div>
+                    <div class="sp-input-group-help-text"></div>
+                  </div>
+                </div>
+
+                <div class="sp-input-group">
+                  <div class="sp-input-group-label" data-description="Here is a description."></div>
+                  <div class="sp-input-group-content" data-helper="Here is helper text.">
+                    <div class="sp-input-group-content-item sp-required">
+                      <div class="sp-padding-2 sp-container-light sp-alt-two">
+                        <div class="sp-tag sp-primary">Campaign: My Awesome Campaign</div>
+                        <div class="sp-tag sp-success">Advertiser: Budweiser</div>
+                        <div class="sp-tag sp-warning">Client: OMD</div>
+                        <div class="sp-tag">CPG<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+                        <div class="sp-tag">Direct Sale<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+                        <div class="sp-tag">Custom<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+                        <div class="sp-tag">Whatever<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sp-input-group-helper">
+                    <div class="sp-input-group-descr">Test</div>
+                    <div class="sp-input-group-help-text"></div>
+                  </div>
+                </div> -->
+
+
+                      
+
+
+               </div>
+            </div>
+          </div>
+          <div class="sp-wrapper sp-border-top-base sp-modal-footer">
+            <div class="sp-row">
+               <div class="sp-col sp-span-12 sp-modal-footer-buttons">
+                 <button class="sp-align-center sp-primary">Add Preview Page</button>
+               </div>
+            </div>
+          </div>
+          <button class="sp-modal-close sp-icon-close sp-rounded sp-small"></button>
+        </div>
+      </div>
+    </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   

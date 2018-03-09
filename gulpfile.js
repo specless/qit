@@ -18,9 +18,7 @@ gulp.task('copy', () => {
 
 gulp.task('deploy', () => {
     return gulp.src('./dist/**/*')
-        .pipe(gulp.dest('../styleguide/packages/qit-components/assets'))
-        .pipe(gulp.dest('../styleguide/packages/qit-pages/assets'))
-        .pipe(gulp.dest('../styleguide/packages/site/assets'));
+        .pipe(gulp.dest('../styleguide/assets'));
 });
 
 gulp.task('build', gulp.series('pre','copy', 'sass', 'deploy'));

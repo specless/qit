@@ -127,7 +127,8 @@
     > button,
     > * > button,
     > a.sp-button,
-    > * > a.sp-button {
+    > * > a.sp-button,
+    & .sp-selector > a.sp-button {
       @include sp-shape(rounded);
       border: 2px solid $sp-color-primary !important;
       color: white !important;
@@ -302,7 +303,8 @@
           > button,
           > * > button,
           > a.sp-button,
-          > * > a.sp-button {
+          > * > a.sp-button,
+          & .sp-selector > a.sp-button {
             transform: scale(0.75);
             //margin: 0 !important;
             //transform-origin: center right;

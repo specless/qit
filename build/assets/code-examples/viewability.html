@@ -1,0 +1,92 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>
+
+var visible = false;
+var prevVisible = false;
+
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+function check() {
+	var visible = false;
+	
+	requestAnimationFrame(function() {
+		visible = true;
+	});
+
+	if (prevVisible != visible) {
+
+	} 
+
+	setTimeout(function() {
+		if (prevVisible !== visible) {
+			
+			window.parent.postMessage(
+			    {
+			        event_id: 'inview',
+			        data: {
+			            position: getParameterByName('position'),
+			            value: visible
+			        }
+			    }, 
+			    "*"
+			);
+		}
+		prevVisible = visible;
+		check();
+	}, 50);
+}
+
+check();
+
+// Here's another way to track page visibility (only works when whole window is unfocused or out of view)
+
+var hidden, visibilityChange; 
+if (typeof document.hidden !== "undefined") { // Opera 12.10 and Firefox 18 and later support 
+  hidden = "hidden";
+  visibilityChange = "visibilitychange";
+} else if (typeof document.msHidden !== "undefined") {
+  hidden = "msHidden";
+  visibilityChange = "msvisibilitychange";
+} else if (typeof document.webkitHidden !== "undefined") {
+  hidden = "webkitHidden";
+  visibilityChange = "webkitvisibilitychange";
+}
+
+function handleVisibilityChange() {
+  if (document[hidden]) {
+    // do something if page is hidden
+  } else {
+   // do something if page is visible
+  }
+}
+
+// Warn if the browser doesn't support addEventListener or the Page Visibility API
+if (typeof document.addEventListener === "undefined" || typeof document.hidden === "undefined") {
+  //do something if browser not supported...
+} else {
+  handleVisibilityChange();
+  document.addEventListener(visibilityChange, handleVisibilityChange, false);
+}
+
+
+
+
+
+
+</script> 
+</head>
+
+<body>
+</body>
+</html>

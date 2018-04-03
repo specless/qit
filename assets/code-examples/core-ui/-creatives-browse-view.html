@@ -1,0 +1,828 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example</title>
+  <link rel="stylesheet" href="../../../qit.css">
+</head>
+
+<body class="sp-app">
+  <div class="sp-app-bar sp-container-dark sp-alt-one sp-wrapper">
+    <div class="sp-row sp-vcenter sp-height-3">
+      <div class="sp-col sp-span-6 sp-flex sp-flex-align-items-center">
+        <a class="sp-menu-item sp-minimal sp-icon-menu sp-padding-0"></a>
+        <div class="sp-spacer-horizontal"></div>
+        <div class="sp-logo-lockup sp-small sp-primary sp-logo-horizontal sp-margin-left-2"></div>
+      </div>
+      <div class="sp-col sp-span-6 sp-flex sp-flex-justify-content-flex-end sp-flex-align-items-center">
+        <div class="sp-selector sp-margin-left-2">
+          <button class="sp-selector-trigger sp-icon-after-circle-user sp-rounded sp-small sp-minimal">Stephen C.</button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <div class="sp-menu-header sp-small">User Details</div>
+              <a class="sp-menu-item sp-icon-account">Account</a>
+              <a class="sp-menu-item sp-icon-settings">Preferences</a>
+              <a class="sp-menu-item sp-icon-organization">Organizations</a>
+              <a class="sp-menu-item sp-icon-account">Billing</a>
+              <div class="sp-spacer-vertical sp-margin-0"></div>
+              <a class="sp-menu-item sp-icon-logout">Log Out</a>
+            </div>
+          </div>
+        </div>
+        <div class="sp-selector sp-margin-left-2">
+          <button class="sp-selector-trigger sp-icon-after-circle-help sp-rounded sp-small sp-minimal"></button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <div class="sp-menu-header sp-small">Search For Help</div>
+              <div class="sp-padding-horizontal-2 sp-padding-vertical-1" style="position: relative;">
+                <input type="search" class="sp-small sp-rounded" placeholder="Enter Search Term" style="width: 100%"/>
+                <button class="sp-small sp-rounded sp-icon-search sp-primary sp-margin-top-1 sp-margin-right-2" onclick="window.helpSearch('TEST')" style="position: absolute; top:0; right: 0;border-bottom-left-radius: 0;border-top-left-radius: 0;"></button>
+              </div>
+              <div class="sp-menu-header sp-small">Help Center</div>
+              <div class="sp-menu-item sp-icon-library">Getting Started Guide
+                <div class="sp-menu-dropdown sp-menu-sub-left sp-overlay sp-color-contrast">
+                  <a class="sp-menu-item sp-icon-guide" onclick="window.helpArticle('5a03406a2c7d3a272c0d7fe5')">1. Introduction To Specless</a>
+                  <a class="sp-menu-item sp-icon-guide" onclick="window.helpArticle('5a0340a72c7d3a272c0d7fee')">2. Understanding The Core Concepts</a>
+                  <a class="sp-menu-item sp-icon-guide" onclick="window.helpArticle('5a03409a2c7d3a272c0d7fea')">3. Learning Your Way Around the Interface</a>
+                  <a class="sp-menu-item sp-icon-guide" onclick="window.helpArticle('5a0340db2c7d3a272c0d7ff2')">4. Adding a New Creative</a>
+                  <a class="sp-menu-item sp-icon-guide" onclick="window.helpArticle('5a03410c2c7d3a272c0d7ff6')">5. The Creative Explorer & Sync Workflow</a>
+                  <a class="sp-menu-item sp-icon-guide" onclick="window.helpArticle('5a03411e0428633199244cbc')">6. Building Creative with S-Kit</a>
+                  <a class="sp-menu-item sp-icon-guide" onclick="window.helpArticle('5a03412e0428633199244cbd')">7. Publishing A Creative to Specless</a>
+                  <a class="sp-menu-item sp-icon-guide" onclick="window.helpArticle('5a0341db0428633199244cd1')">8. Trafficking A Creative</a>
+                  <a class="sp-menu-item sp-icon-guide" onclick="window.helpArticle('5a0342060428633199244cd5')">9. Reporting & Analytics Basics</a>
+                  <a class="sp-menu-item sp-icon-guide" onclick="window.helpArticle('5a0342322c7d3a272c0d8002')">10. Generating & Sharing A Report</a>
+                </div>
+              </div>
+              <a class="sp-menu-item sp-icon-knowledge" onclick="window.location.href = 'http://help.specless.tech/'">Knowledge Base</a>
+              <a class="sp-menu-item sp-icon-message" onclick="window.helpContact()">Contact Support</a>
+              <a class="sp-menu-item sp-icon-bug" onclick="window.helpBug()">Report a Bug</a>
+              <div class="sp-menu-header sp-small">Developer Hub</div>
+              <a class="sp-menu-item sp-icon-library" onclick="window.location.href = 'http://developer.specless.tech/docs'">Developer Docs & Guides</a>
+              <a class="sp-menu-item sp-icon-code" onclick="window.location.href = 'http://developer.specless.tech/reference'">Reference Guide</a>
+              <a class="sp-menu-item sp-icon-conversation" onclick="window.location.href = 'http://developer.specless.tech/discuss'">Discussion</a>
+              <a class="sp-menu-item sp-icon-blog" onclick="window.location.href = 'http://developer.specless.tech/blog'">Annoucements</a>
+            </div>
+          </div>
+        </div>
+        <div class="sp-selector sp-margin-left-2">
+          <button class="sp-selector-trigger sp-icon-after-lightning sp-rounded sp-small sp-minimal sp-success"></button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <div class="sp-menu-header sp-small">Connection</div>
+              <div class="sp-padding-horizontal-2 sp-padding-vertical-1" style="position: relative;">
+                <div class="sp-label">Status <span class="sp-color-success sp-float-right">Active</span></div>
+              </div>
+              <div class="sp-menu-header sp-small">Settings</div>
+              <a class="sp-menu-item">Live Reload</a>
+              <a class="sp-menu-item">Listen on Port</a>
+              <div class="sp-menu-header sp-small">Recent Creatives</div>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Some Creative<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>My Awesome Ad<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Another Creative<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Coca-Cola Ad<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Samsung Galaxy Note 8<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="sp-app-org-label sp-container-dark sp-wrapper">
+    <div class="sp-row sp-padding-2 sp-padding-left-3">
+      <div class="sp-label sp-small">Organizations <span class="sp-inline-icon-arrow-right"></span> <a href="#" class="sp-color-white">Org Name Goes Here</a></div>
+    </div>
+  </div> -->
+  <div class="sp-app-header sp-container-dark sp-alt-two sp-wrapper">
+    <div class="sp-row sp-vcenter">
+      <div class="sp-col sp-span-12 sp-flex sp-flex-align-items-center">
+        <h5 class="sp-inline sp-contrast sp-inline" style="flex: 1; position: relative">
+          <i class="sp-inline-icon-organization sp-color-primary sp-margin-right-1"></i>
+          Example Organization
+          <!-- <span class="sp-color-muted sp-small" style="position: absolute; bottom: -15px; left: 32px;">/ dhC897</span> -->
+        </h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="sp-app-menu sp-container-dark sp-alt-two sp-wrapper">
+    <div class="sp-row sp-vbottom sp-height-2">
+      <div class="sp-col sp-span-10 sp-padding-0" style="margin-bottom: 2px">
+        <a href="-creatives.html" class="sp-menu-item sp-horizontal sp-label sp-state-active">Creatives</a>
+        <a href="-reports.html" class="sp-menu-item sp-horizontal sp-label">Reports</a>
+        <a href="-formats.html" class="sp-menu-item sp-horizontal sp-label">Formats</a>
+        <a class="sp-menu-item sp-horizontal sp-label sp-state-disabled">Templates</a>
+        <a class="sp-menu-item sp-horizontal sp-label sp-state-disabled">Campaigns</a>
+        <!-- <a class="sp-menu-item sp-horizontal sp-label sp-icon-more sp-minimal"></a> -->
+      </div>
+      <div class="sp-col sp-span-2 sp-align-right sp-padding-0">
+        <button class="sp-rounded sp-primary sp-icon-circle-plus sp-offset-half-down sp-margin-left-2 sp-large"></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="sp-app-content sp-wrapper">
+    <div class="sp-wrapper">
+      <div class="sp-row sp-border-bottom-base">
+        <div class="sp-col sp-span-12">
+          <span class="">
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-filter sp-state-active"></button>
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-search"></button>
+            <input class="sp-minimal sp-large" type="text" placeholder="Enter Search Term"/>
+          </span>
+          <div class="sp-float-right ">
+            <button id="grid" class="sp-minimal sp-simple-icon sp-primary sp-icon-grid"></button>
+            <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-list"></button>
+            <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-columns sp-state-active"></button>
+          </div>
+        </div>
+      </div>
+
+      <div id="list-toggle" class="sp-row sp-padding-top-3" style="flex-wrap: wrap">
+        <div class="sp-col sp-span-2">
+          <div class="sp-shadow-high-inset sp-border-base sp-container-dark sp-alt-two sp-height-9 sp-rectangle" style="overflow-y: scroll">
+            <div class="sp-menu-item sp-state-active">By Advertiser</div>
+            <div class="sp-menu-item">Campaign</div>
+            <div class="sp-menu-item">Label</div>
+            <div class="sp-menu-item">Status</div>
+            <div class="sp-menu-item">Template Used</div>
+            <div class="sp-menu-item">Features</div>
+          </div>
+        </div>
+        <div class="sp-col sp-span-2">
+          <div class="sp-shadow-high-inset sp-border-base sp-container-dark sp-alt-two sp-height-9 sp-rectangle" style="overflow-y: scroll">
+            <div class="sp-menu-item">Any</div>
+            <div class="sp-menu-item">Coca-Cola</div>
+            <div class="sp-menu-item">Paramount</div>
+            <div class="sp-menu-item sp-state-active">Lucasfilm</div>
+            <div class="sp-menu-item">Some Other Advertiser</div>
+            <div class="sp-menu-item">Something else</div>
+          </div>
+        </div>
+        <div class="sp-col sp-span-2">
+          <div class="sp-shadow-high-inset sp-border-base sp-container-dark sp-alt-two sp-height-9 sp-rectangle" style="overflow-y: scroll">
+            <div class="sp-menu-item sp-state-active">Status</div>
+            <div class="sp-menu-item">Campaign</div>
+            <div class="sp-menu-item">Label</div>
+            <div class="sp-menu-item">Template Used</div>
+            <div class="sp-menu-item">Features</div>
+          </div>
+        </div>
+        <div class="sp-col sp-span-2">
+          <div class="sp-shadow-high-inset sp-border-base sp-container-dark sp-alt-two sp-height-9 sp-rectangle" style="overflow-y: scroll">
+            <div class="sp-menu-item sp-state-active">Any</div>
+            <div class="sp-menu-item">Development</div>
+            <div class="sp-menu-item">Serving</div>
+            <div class="sp-menu-item">Idle</div>
+            <div class="sp-menu-item">Archived</div>
+          </div>
+        </div>
+        <div class="sp-col sp-span-4">
+          <div class="sp-shadow-high-inset sp-border-base sp-container-dark sp-alt-two sp-height-9 sp-rectangle" style="overflow-y: scroll">
+            
+
+            <div class="sp-flex sp-border-bottom-base">
+              <div class="sp-width-4 sp-height-3 sp-padding-1 sp-margin-1 sp-shadow-low-inset sp-rectangle" style="position: relative">
+                <div style="width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  background-size: 10px;
+                  background-image: url(../../img/checker.png);
+                  opacity: 0.05;
+                  position: absolute;
+                  border-radius: 4px;"></div>
+                <div class="sp-creative-thumbnail" style="width:100%;height: 100%;background-image: url(http://via.placeholder.com/350x200/0096a9/0096a9);"></div>
+              </div>
+              <div class="sp-padding-left-1" style="flex:1">
+                <div class="sp-label sp-small sp-margin-top-2">Advertiser Name<i class="sp-inline-icon-status sp-margin-horizontal-1 sp-float-right"></i></div>
+                <div class="sp-color-contrast sp-h6">Creative Name Here</div>
+                <div class="sp-color-muted sp-small">dsadjf</div>
+                <div class="sp-small">
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-more sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-paper-plane sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-info sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-float-right"></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="sp-flex sp-border-bottom-base">
+              <div class="sp-width-4 sp-height-3 sp-padding-1 sp-margin-1 sp-shadow-low-inset sp-rectangle" style="position: relative">
+                <div style="width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  background-size: 10px;
+                  background-image: url(../../img/checker.png);
+                  opacity: 0.05;
+                  position: absolute;
+                  border-radius: 4px;"></div>
+                <div class="sp-creative-thumbnail" style="width:100%;height: 100%;background-image: url(http://via.placeholder.com/350x200/0096a9/0096a9);"></div>
+              </div>
+              <div class="sp-padding-left-1" style="flex:1">
+                <div class="sp-label sp-small sp-margin-top-2">Advertiser Name<i class="sp-inline-icon-status sp-margin-horizontal-1 sp-float-right"></i></div>
+                <div class="sp-color-contrast sp-h6">Creative Name Here</div>
+                <div class="sp-color-muted sp-small">dsadjf</div>
+                <div class="sp-small">
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-more sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-paper-plane sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-info sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-float-right"></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="sp-flex sp-border-bottom-base">
+              <div class="sp-width-4 sp-height-3 sp-padding-1 sp-margin-1 sp-shadow-low-inset sp-rectangle" style="position: relative">
+                <div style="width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  background-size: 10px;
+                  background-image: url(../../img/checker.png);
+                  opacity: 0.05;
+                  position: absolute;
+                  border-radius: 4px;"></div>
+                <div class="sp-creative-thumbnail" style="width:100%;height: 100%;background-image: url(http://via.placeholder.com/350x200/0096a9/0096a9);"></div>
+              </div>
+              <div class="sp-padding-left-1" style="flex:1">
+                <div class="sp-label sp-small sp-margin-top-2">Advertiser Name<i class="sp-inline-icon-status sp-margin-horizontal-1 sp-float-right"></i></div>
+                <div class="sp-color-contrast sp-h6">Creative Name Here</div>
+                <div class="sp-color-muted sp-small">dsadjf</div>
+                <div class="sp-small">
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-more sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-paper-plane sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-info sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-float-right"></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="sp-flex sp-border-bottom-base">
+              <div class="sp-width-4 sp-height-3 sp-padding-1 sp-margin-1 sp-shadow-low-inset sp-rectangle" style="position: relative">
+                <div style="width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  background-size: 10px;
+                  background-image: url(../../img/checker.png);
+                  opacity: 0.05;
+                  position: absolute;
+                  border-radius: 4px;"></div>
+                <div class="sp-creative-thumbnail" style="width:100%;height: 100%;background-image: url(http://via.placeholder.com/350x200/0096a9/0096a9);"></div>
+              </div>
+              <div class="sp-padding-left-1" style="flex:1">
+                <div class="sp-label sp-small sp-margin-top-2">Advertiser Name<i class="sp-inline-icon-status sp-margin-horizontal-1 sp-float-right"></i></div>
+                <div class="sp-color-contrast sp-h6">Creative Name Here</div>
+                <div class="sp-color-muted sp-small">dsadjf</div>
+                <div class="sp-small">
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-more sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-paper-plane sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-info sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-float-right"></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="sp-flex sp-border-bottom-base">
+              <div class="sp-width-4 sp-height-3 sp-padding-1 sp-margin-1 sp-shadow-low-inset sp-rectangle" style="position: relative">
+                <div style="width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  background-size: 10px;
+                  background-image: url(../../img/checker.png);
+                  opacity: 0.05;
+                  position: absolute;
+                  border-radius: 4px;"></div>
+                <div class="sp-creative-thumbnail" style="width:100%;height: 100%;background-image: url(http://via.placeholder.com/350x200/0096a9/0096a9);"></div>
+              </div>
+              <div class="sp-padding-left-1" style="flex:1">
+                <div class="sp-label sp-small sp-margin-top-2">Advertiser Name<i class="sp-inline-icon-status sp-margin-horizontal-1 sp-float-right"></i></div>
+                <div class="sp-color-contrast sp-h6">Creative Name Here</div>
+                <div class="sp-color-muted sp-small">dsadjf</div>
+                <div class="sp-small">
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-more sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-paper-plane sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-info sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-float-right"></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="sp-flex sp-border-bottom-base">
+              <div class="sp-width-4 sp-height-3 sp-padding-1 sp-margin-1 sp-shadow-low-inset sp-rectangle" style="position: relative">
+                <div style="width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  background-size: 10px;
+                  background-image: url(../../img/checker.png);
+                  opacity: 0.05;
+                  position: absolute;
+                  border-radius: 4px;"></div>
+                <div class="sp-creative-thumbnail" style="width:100%;height: 100%;background-image: url(http://via.placeholder.com/350x200/0096a9/0096a9);"></div>
+              </div>
+              <div class="sp-padding-left-1" style="flex:1">
+                <div class="sp-label sp-small sp-margin-top-2">Advertiser Name<i class="sp-inline-icon-status sp-margin-horizontal-1 sp-float-right"></i></div>
+                <div class="sp-color-contrast sp-h6">Creative Name Here</div>
+                <div class="sp-color-muted sp-small">dsadjf</div>
+                <div class="sp-small">
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-more sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-paper-plane sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-info sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-float-right"></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="sp-flex sp-border-bottom-base">
+              <div class="sp-width-4 sp-height-3 sp-padding-1 sp-margin-1 sp-shadow-low-inset sp-rectangle" style="position: relative">
+                <div style="width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  background-size: 10px;
+                  background-image: url(../../img/checker.png);
+                  opacity: 0.05;
+                  position: absolute;
+                  border-radius: 4px;"></div>
+                <div class="sp-creative-thumbnail" style="width:100%;height: 100%;background-image: url(http://via.placeholder.com/350x200/0096a9/0096a9);"></div>
+              </div>
+              <div class="sp-padding-left-1" style="flex:1">
+                <div class="sp-label sp-small sp-margin-top-2">Advertiser Name<i class="sp-inline-icon-status sp-margin-horizontal-1 sp-float-right"></i></div>
+                <div class="sp-color-contrast sp-h6">Creative Name Here</div>
+                <div class="sp-color-muted sp-small">dsadjf</div>
+                <div class="sp-small">
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-more sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-paper-plane sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-info sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-float-right"></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="sp-flex sp-border-bottom-base">
+              <div class="sp-width-4 sp-height-3 sp-padding-1 sp-margin-1 sp-shadow-low-inset sp-rectangle" style="position: relative">
+                <div style="width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  background-size: 10px;
+                  background-image: url(../../img/checker.png);
+                  opacity: 0.05;
+                  position: absolute;
+                  border-radius: 4px;"></div>
+                <div class="sp-creative-thumbnail" style="width:100%;height: 100%;background-image: url(http://via.placeholder.com/350x200/0096a9/0096a9);"></div>
+              </div>
+              <div class="sp-padding-left-1" style="flex:1">
+                <div class="sp-label sp-small sp-margin-top-2">Advertiser Name<i class="sp-inline-icon-status sp-margin-horizontal-1 sp-float-right"></i></div>
+                <div class="sp-color-contrast sp-h6">Creative Name Here</div>
+                <div class="sp-color-muted sp-small">dsadjf</div>
+                <div class="sp-small">
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-more sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-paper-plane sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-info sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-float-right"></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="sp-flex sp-border-bottom-base">
+              <div class="sp-width-4 sp-height-3 sp-padding-1 sp-margin-1 sp-shadow-low-inset sp-rectangle" style="position: relative">
+                <div style="width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  background-size: 10px;
+                  background-image: url(../../img/checker.png);
+                  opacity: 0.05;
+                  position: absolute;
+                  border-radius: 4px;"></div>
+                <div class="sp-creative-thumbnail" style="width:100%;height: 100%;background-image: url(http://via.placeholder.com/350x200/0096a9/0096a9);"></div>
+              </div>
+              <div class="sp-padding-left-1" style="flex:1">
+                <div class="sp-label sp-small sp-margin-top-2">Advertiser Name<i class="sp-inline-icon-status sp-margin-horizontal-1 sp-float-right"></i></div>
+                <div class="sp-color-contrast sp-h6">Creative Name Here</div>
+                <div class="sp-color-muted sp-small">dsadjf</div>
+                <div class="sp-small">
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-more sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-paper-plane sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-info sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-float-right"></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="sp-flex sp-border-bottom-base">
+              <div class="sp-width-4 sp-height-3 sp-padding-1 sp-margin-1 sp-shadow-low-inset sp-rectangle" style="position: relative">
+                <div style="width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  background-size: 10px;
+                  background-image: url(../../img/checker.png);
+                  opacity: 0.05;
+                  position: absolute;
+                  border-radius: 4px;"></div>
+                <div class="sp-creative-thumbnail" style="width:100%;height: 100%;background-image: url(http://via.placeholder.com/350x200/0096a9/0096a9);"></div>
+              </div>
+              <div class="sp-padding-left-1" style="flex:1">
+                <div class="sp-label sp-small sp-margin-top-2">Advertiser Name<i class="sp-inline-icon-status sp-margin-horizontal-1 sp-float-right"></i></div>
+                <div class="sp-color-contrast sp-h6">Creative Name Here</div>
+                <div class="sp-color-muted sp-small">dsadjf</div>
+                <div class="sp-small">
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-more sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-paper-plane sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-info sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-float-right"></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="sp-flex sp-border-bottom-base">
+              <div class="sp-width-4 sp-height-3 sp-padding-1 sp-margin-1 sp-shadow-low-inset sp-rectangle" style="position: relative">
+                <div style="width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  background-size: 10px;
+                  background-image: url(../../img/checker.png);
+                  opacity: 0.05;
+                  position: absolute;
+                  border-radius: 4px;"></div>
+                <div class="sp-creative-thumbnail" style="width:100%;height: 100%;background-image: url(http://via.placeholder.com/350x200/0096a9/0096a9);"></div>
+              </div>
+              <div class="sp-padding-left-1" style="flex:1">
+                <div class="sp-label sp-small sp-margin-top-2">Advertiser Name<i class="sp-inline-icon-status sp-margin-horizontal-1 sp-float-right"></i></div>
+                <div class="sp-color-contrast sp-h6">Creative Name Here</div>
+                <div class="sp-color-muted sp-small">dsadjf</div>
+                <div class="sp-small">
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-more sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-paper-plane sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-info sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-float-right"></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="sp-flex sp-border-bottom-base">
+              <div class="sp-width-4 sp-height-3 sp-padding-1 sp-margin-1 sp-shadow-low-inset sp-rectangle" style="position: relative">
+                <div style="width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  background-size: 10px;
+                  background-image: url(../../img/checker.png);
+                  opacity: 0.05;
+                  position: absolute;
+                  border-radius: 4px;"></div>
+                <div class="sp-creative-thumbnail" style="width:100%;height: 100%;background-image: url(http://via.placeholder.com/350x200/0096a9/0096a9);"></div>
+              </div>
+              <div class="sp-padding-left-1" style="flex:1">
+                <div class="sp-label sp-small sp-margin-top-2">Advertiser Name<i class="sp-inline-icon-status sp-margin-horizontal-1 sp-float-right"></i></div>
+                <div class="sp-color-contrast sp-h6">Creative Name Here</div>
+                <div class="sp-color-muted sp-small">dsadjf</div>
+                <div class="sp-small">
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-more sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-paper-plane sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-info sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-float-right"></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="sp-flex sp-border-bottom-base">
+              <div class="sp-width-4 sp-height-3 sp-padding-1 sp-margin-1 sp-shadow-low-inset sp-rectangle" style="position: relative">
+                <div style="width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  background-size: 10px;
+                  background-image: url(../../img/checker.png);
+                  opacity: 0.05;
+                  position: absolute;
+                  border-radius: 4px;"></div>
+                <div class="sp-creative-thumbnail" style="width:100%;height: 100%;background-image: url(http://via.placeholder.com/350x200/0096a9/0096a9);"></div>
+              </div>
+              <div class="sp-padding-left-1" style="flex:1">
+                <div class="sp-label sp-small sp-margin-top-2">Advertiser Name<i class="sp-inline-icon-status sp-margin-horizontal-1 sp-float-right"></i></div>
+                <div class="sp-color-contrast sp-h6">Creative Name Here</div>
+                <div class="sp-color-muted sp-small">dsadjf</div>
+                <div class="sp-small">
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-more sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-paper-plane sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-info sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-float-right"></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="sp-flex sp-border-bottom-base">
+              <div class="sp-width-4 sp-height-3 sp-padding-1 sp-margin-1 sp-shadow-low-inset sp-rectangle" style="position: relative">
+                <div style="width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  background-size: 10px;
+                  background-image: url(../../img/checker.png);
+                  opacity: 0.05;
+                  position: absolute;
+                  border-radius: 4px;"></div>
+                <div class="sp-creative-thumbnail" style="width:100%;height: 100%;background-image: url(http://via.placeholder.com/350x200/0096a9/0096a9);"></div>
+              </div>
+              <div class="sp-padding-left-1" style="flex:1">
+                <div class="sp-label sp-small sp-margin-top-2">Advertiser Name<i class="sp-inline-icon-status sp-margin-horizontal-1 sp-float-right"></i></div>
+                <div class="sp-color-contrast sp-h6">Creative Name Here</div>
+                <div class="sp-color-muted sp-small">dsadjf</div>
+                <div class="sp-small">
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-more sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-paper-plane sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-info sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-float-right"></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="sp-flex sp-border-bottom-base">
+              <div class="sp-width-4 sp-height-3 sp-padding-1 sp-margin-1 sp-shadow-low-inset sp-rectangle" style="position: relative">
+                <div style="width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  background-size: 10px;
+                  background-image: url(../../img/checker.png);
+                  opacity: 0.05;
+                  position: absolute;
+                  border-radius: 4px;"></div>
+                <div class="sp-creative-thumbnail" style="width:100%;height: 100%;background-image: url(http://via.placeholder.com/350x200/0096a9/0096a9);"></div>
+              </div>
+              <div class="sp-padding-left-1" style="flex:1">
+                <div class="sp-label sp-small sp-margin-top-2">Advertiser Name<i class="sp-inline-icon-status sp-margin-horizontal-1 sp-float-right"></i></div>
+                <div class="sp-color-contrast sp-h6">Creative Name Here</div>
+                <div class="sp-color-muted sp-small">dsadjf</div>
+                <div class="sp-small">
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-more sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-paper-plane sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-info sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-float-right"></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="sp-flex sp-border-bottom-base">
+              <div class="sp-width-4 sp-height-3 sp-padding-1 sp-margin-1 sp-shadow-low-inset sp-rectangle" style="position: relative">
+                <div style="width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  background-size: 10px;
+                  background-image: url(../../img/checker.png);
+                  opacity: 0.05;
+                  position: absolute;
+                  border-radius: 4px;"></div>
+                <div class="sp-creative-thumbnail" style="width:100%;height: 100%;background-image: url(http://via.placeholder.com/350x200/0096a9/0096a9);"></div>
+              </div>
+              <div class="sp-padding-left-1" style="flex:1">
+                <div class="sp-label sp-small sp-margin-top-2">Advertiser Name<i class="sp-inline-icon-status sp-margin-horizontal-1 sp-float-right"></i></div>
+                <div class="sp-color-contrast sp-h6">Creative Name Here</div>
+                <div class="sp-color-muted sp-small">dsadjf</div>
+                <div class="sp-small">
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-more sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-paper-plane sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-info sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-float-right"></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="sp-flex sp-border-bottom-base">
+              <div class="sp-width-4 sp-height-3 sp-padding-1 sp-margin-1 sp-shadow-low-inset sp-rectangle" style="position: relative">
+                <div style="width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  background-size: 10px;
+                  background-image: url(../../img/checker.png);
+                  opacity: 0.05;
+                  position: absolute;
+                  border-radius: 4px;"></div>
+                <div class="sp-creative-thumbnail" style="width:100%;height: 100%;background-image: url(http://via.placeholder.com/350x200/0096a9/0096a9);"></div>
+              </div>
+              <div class="sp-padding-left-1" style="flex:1">
+                <div class="sp-label sp-small sp-margin-top-2">Advertiser Name<i class="sp-inline-icon-status sp-margin-horizontal-1 sp-float-right"></i></div>
+                <div class="sp-color-contrast sp-h6">Creative Name Here</div>
+                <div class="sp-color-muted sp-small">dsadjf</div>
+                <div class="sp-small">
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-more sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-paper-plane sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-info sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-float-right"></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="sp-flex sp-border-bottom-base">
+              <div class="sp-width-4 sp-height-3 sp-padding-1 sp-margin-1 sp-shadow-low-inset sp-rectangle" style="position: relative">
+                <div style="width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  background-size: 10px;
+                  background-image: url(../../img/checker.png);
+                  opacity: 0.05;
+                  position: absolute;
+                  border-radius: 4px;"></div>
+                <div class="sp-creative-thumbnail" style="width:100%;height: 100%;background-image: url(http://via.placeholder.com/350x200/0096a9/0096a9);"></div>
+              </div>
+              <div class="sp-padding-left-1" style="flex:1">
+                <div class="sp-label sp-small sp-margin-top-2">Advertiser Name<i class="sp-inline-icon-status sp-margin-horizontal-1 sp-float-right"></i></div>
+                <div class="sp-color-contrast sp-h6">Creative Name Here</div>
+                <div class="sp-color-muted sp-small">dsadjf</div>
+                <div class="sp-small">
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-more sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-paper-plane sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-info sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-float-right"></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="sp-flex sp-border-bottom-base">
+              <div class="sp-width-4 sp-height-3 sp-padding-1 sp-margin-1 sp-shadow-low-inset sp-rectangle" style="position: relative">
+                <div style="width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  background-size: 10px;
+                  background-image: url(../../img/checker.png);
+                  opacity: 0.05;
+                  position: absolute;
+                  border-radius: 4px;"></div>
+                <div class="sp-creative-thumbnail" style="width:100%;height: 100%;background-image: url(http://via.placeholder.com/350x200/0096a9/0096a9);"></div>
+              </div>
+              <div class="sp-padding-left-1" style="flex:1">
+                <div class="sp-label sp-small sp-margin-top-2">Advertiser Name<i class="sp-inline-icon-status sp-margin-horizontal-1 sp-float-right"></i></div>
+                <div class="sp-color-contrast sp-h6">Creative Name Here</div>
+                <div class="sp-color-muted sp-small">dsadjf</div>
+                <div class="sp-small">
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-more sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-paper-plane sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-info sp-float-right"></button>
+                  <button id="list" class="sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-float-right"></button>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+    var grid = document.getElementById('grid');
+    var list = document.getElementById('list');
+    var target = document.getElementById('list-toggle');
+
+    grid.addEventListener('click', function() {
+      target.setAttribute('class', 'sp-row sp-padding-top-3');
+      grid.setAttribute('class', 'sp-minimal sp-simple-icon sp-primary sp-icon-grid sp-state-active');
+      list.setAttribute('class', 'sp-minimal sp-simple-icon sp-primary sp-icon-list');
+    });
+
+
+    list.addEventListener('click', function() {
+      target.setAttribute('class', 'sp-row sp-padding-top-3 sp-list');
+      grid.setAttribute('class', 'sp-minimal sp-simple-icon sp-primary sp-icon-grid');
+      list.setAttribute('class', 'sp-minimal sp-simple-icon sp-primary sp-icon-list sp-state-active');
+    });
+
+
+      
+    </script>
+
+
+
+<script>
+
+var initHelpBeacon = function(userData) {
+
+  window.helpSearch = function (param) {
+    window.HS = null;
+    !function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!0,baseUrl:"//speclessdocs.helpscoutdocs.com/"},contact:{enabled:!0,formId:"eb6b3481-c409-11e7-b466-0ec85169275a"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});
+    HS.beacon.config({
+      color: '#00C3DC',
+      modal: true,
+      instructions: "Couldn't find what you were looking for? Let us know how we can help."
+    });
+    HS.beacon.ready(function() {
+      HS.beacon.identify(userData);
+      this.open();
+      HS.beacon.search(param);
+    });
+  }
+
+
+  window.helpArticle = function (articleId) {
+    window.HS = null;
+    !function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!0,baseUrl:"//speclessdocs.helpscoutdocs.com/"},contact:{enabled:!0,formId:"eb6b3481-c409-11e7-b466-0ec85169275a"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});
+    HS.beacon.config({
+      color: '#00C3DC',
+      modal: true,
+      instructions: "Couldn't find what you were looking for? Let us know how we can help."
+    });
+    HS.beacon.ready(function() {
+      HS.beacon.identify(userData);
+      this.open();
+      HS.beacon.show(articleId);
+    });
+  }
+
+  window.helpContact = function () {
+    window.HS = null;
+    !function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!1,baseUrl:""},contact:{enabled:!0,formId:"febd2c5c-b299-11e7-b466-0ec85169275a"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});
+    HS.beacon.config({
+      color: '#00C3DC',
+      modal: true,
+      instructions: "Let us know how we can help!"
+    });
+    HS.beacon.ready(function() {
+      HS.beacon.identify(userData);
+      HS.beacon.prefill({
+        subject: 'App Support Request',
+        topic: 'app-support'
+      });
+      this.open();
+    });
+  }
+
+  window.helpBug = function () {
+    window.HS = null;
+    !function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!1,baseUrl:""},contact:{enabled:!0,formId:"febd2c5c-b299-11e7-b466-0ec85169275a"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});
+    HS.beacon.config({
+      color: '#00C3DC',
+      modal: true,
+      instructions: "Please describe what you were doing in the app and the issue you are seeing."
+    });
+    HS.beacon.ready(function() {
+      HS.beacon.identify(userData);
+      HS.beacon.prefill({
+        subject: 'Bug Report',
+        topic: 'bugs'
+      });
+      this.open();
+    });
+  }
+}
+
+initHelpBeacon({
+  name: "Test User",
+  email: "test@testing.com",
+  key1: "value",
+  key2: "value",
+  key3: "value"
+});
+
+</script>
+</body>
+</html>

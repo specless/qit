@@ -207,6 +207,7 @@
     position: relative;
     margin: 0;
     align-items: center;
+    z-index: 0;
 
     .sp-card-color-tag {
       top: 6px;
@@ -219,7 +220,7 @@
     }
 
     &:hover {
-      z-index: 100;
+      z-index: 1;
 
       .sp-card-thumbnail {
         width: 250px;

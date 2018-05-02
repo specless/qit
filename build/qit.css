@@ -8662,7 +8662,8 @@ blockquote {
     display: flex;
     position: relative;
     margin: 0;
-    align-items: center; }
+    align-items: center;
+    z-index: 0; }
     .sp-list .sp-card .sp-card-color-tag, .sp-card.sp-list .sp-card-color-tag {
       top: 6px;
       left: 6px; }
@@ -8670,7 +8671,7 @@ blockquote {
       position: relative;
       transition: 0.1s ease width, 0.1s ease left; }
     .sp-list .sp-card:hover, .sp-card.sp-list:hover {
-      z-index: 100; }
+      z-index: 1; }
       .sp-list .sp-card:hover .sp-card-thumbnail, .sp-card.sp-list:hover .sp-card-thumbnail {
         width: 250px;
         height: 175px;

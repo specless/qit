@@ -1029,6 +1029,261 @@
             <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
               <div class="sp-h6 sp-color-contrast">
                 <i class="sp-inline-icon-circle-arrow-down sp-margin-right-1 sp-color-base"></i>
+                <i class="sp-inline-icon-resize sp-margin-right-1"></i>
+                My Custom Size & Position Field
+                <span style="font-size: 12px" class="sp-float-right sp-color-base">{{sizepos}}</span>
+              </div>
+              <div class="sp-border-top-base sp-margin-top-1 sp-padding-1 sp-wrapper" style="font-size: 12px">
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Field Name</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="My Custom Size & Position Field" style="width: calc(100% - 20px)"/></div>
+                </div>
+                
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">ID</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="textfield" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-horizontal-2 sp-align-right">Is Required?</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <input type="checkbox" class="qit-target sp-small"><label></label>
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-horizontal-2 sp-align-right">Width</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <input type="checkbox" checked class="qit-target sp-small"><label></label>
+                    <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" placeholder="min" style="width: 30px;"/>
+                    <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" placeholder="max" style="width: 30px;"/>
+                    <div class="sp-selector sp-small sp-block" style="width: 30px">
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2 sp-selector-trigger" value="spx" readonly style="font-size: 12px; width: 30px"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>spx</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>px</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>vw</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>vh</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>em</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>rem</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>%</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-horizontal-2 sp-align-right">Height</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <input type="checkbox" class="qit-target sp-small"><label></label>
+                    
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-horizontal-2 sp-align-right">X Position</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <div class="sp-selector sp-small sp-block" style="width: 30px; margin-right: 30px">
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2 sp-selector-trigger" value="Left" readonly style="font-size: 12px; width: 30px"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>Disable</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>Left</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>Right</a>
+                        </div>
+                      </div>
+                    </div>
+                    <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" placeholder="min" style="width: 30px;"/>
+                    <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" placeholder="max" style="width: 30px;"/>
+                    <div class="sp-selector sp-small sp-block" style="width: 30px">
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2 sp-selector-trigger" value="spx" readonly style="font-size: 12px; width: 30px"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>spx</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>px</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>vw</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>vh</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>em</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>rem</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>%</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-horizontal-2 sp-align-right">Y Position</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <div class="sp-selector sp-small sp-block" style="width: 30px; margin-right: 30px">
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2 sp-selector-trigger" value="Top" readonly style="font-size: 12px; width: 30px"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>Disable</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>Top</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>Bottom</a>
+                        </div>
+                      </div>
+                    </div>
+                    <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" placeholder="min" style="width: 30px;"/>
+                    <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" placeholder="max" style="width: 30px;"/>
+                    <div class="sp-selector sp-small sp-block" style="width: 30px">
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2 sp-selector-trigger" value="spx" readonly style="font-size: 12px; width: 30px"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>spx</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>px</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>vw</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>vh</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>em</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>rem</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>%</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Default Width</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" type="number" value="120" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row" style="opacity:0.7">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Default Height</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" type="number" disabled style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Default X</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" type="number" value="120" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Default Y</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" type="number" value="10" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Reference Layout</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <div class="sp-selector sp-small sp-block" style="width: 100%">
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2 sp-selector-trigger" value="Panel A: Layout 1" readonly style="font-size: 12px; width: calc(100% - 20px)"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>Not Applicable</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px; pointer-events: none"><span class="sp-color-contrast sp-font-weight-bold">Panel A</span></a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold sp-state-active" style="font-size: 12px"><span class="sp-margin-right-2"></span>Layout 1</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>Layout 2</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>Layout 3</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px; pointer-events: none"><span class="sp-color-contrast sp-font-weight-bold">Panel B</span></a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>Layout 1</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>Layout 2</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>Layout 3</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>Layout 4</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>Layout 5</a>
+                        </div>
+                      </div>
+                    </div>                  
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Element Selector</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="#myElement" style="width: calc(100% - 20px)"/></div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-align-right">Only Show When</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                    <div class="sp-selector sp-small sp-block" style="width: 100%">
+                      <input class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2 sp-selector-trigger" value="Always Show" readonly style="font-size: 12px; width: calc(100% - 20px)"/>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-state-active" style="font-size: 12px">Always Show</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px; pointer-events: none">The value of <span class="sp-color-contrast sp-font-weight-bold">dropdownList</span> is:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item1</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item2</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item3</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px">The value of <span class="sp-color-contrast sp-font-weight-bold">checkbox</span> is:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>true</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>false</a>
+                          <a class="sp-menu-item sp-border-bottom-base" style="font-size: 12px">The selected values of <span class="sp-color-contrast sp-font-weight-bold">multiSelect</span> includes:</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item1</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item2</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item3</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item4</a>
+                          <a class="sp-menu-item sp-color-contrast sp-font-weight-bold" style="font-size: 12px"><span class="sp-margin-right-2"></span>item5</a>
+                        </div>
+                      </div>
+                    </div>                  
+                  </div>
+                </div>
+
+                <div class="sp-row">
+                  <div class="sp-col sp-span-4">
+                    <div class="sp-font-weight-semi-bold sp-padding-vertical-2 sp-padding-horizontal-2 sp-align-right">Helper Text</div>
+                  </div>
+                  <div class="sp-col sp-span-8">
+                  <textarea class="sp-minimal sp-font-weight-semi-bold sp-padding-vertical-1 sp-padding-horizontal-2 sp-bg-overlay-dark-2" value="textfield" style="width: calc(100% - 20px); min-width: calc(100% - 20px); max-width: calc(100% - 20px)">Here I can enter some text that will show in the form to help the user.</textarea></div>
+                </div>
+
+
+              </div>
+
+              <div class="sp-border-top-base sp-margin-top-1 sp-padding-1 sp-flex sp-group" style="font-size: 12px">
+                <button class="sp-icon-save sp-state-disabled">Save Changes</button>
+                <button class="sp-icon-circle-close sp-state-disabled">Discard Edits</button>
+                <button class="sp-icon-trash sp-icon-color-danger" style="flex: 1">Delete</button>
+              </div>
+            </div>
+
+            <div class="sp-overlay sp-alt-one sp-margin-bottom-2 sp-padding-1 sp-rectangle">
+              <div class="sp-h6 sp-color-contrast">
+                <i class="sp-inline-icon-circle-arrow-down sp-margin-right-1 sp-color-base"></i>
                 <i class="sp-inline-icon-template-text sp-margin-right-1"></i>
                 My Custom Text Field
                 <span style="font-size: 12px" class="sp-float-right sp-color-base">{{textfield}}</span>

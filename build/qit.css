@@ -10379,8 +10379,9 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   z-index: 98; }
-  .sp-app-side-menu.sp-hidden, .sp-app.sp-hide-menu .sp-app-side-menu, .sp-app-help-menu.sp-hidden, .sp-app.sp-hide-menu .sp-app-help-menu {
-    transform: translateX(-110%); }
+
+.sp-app-side-menu.sp-hidden, .sp-app.sp-hide-menu .sp-app-side-menu {
+  transform: translateX(-110%); }
 
 .sp-app-help-menu {
   width: 515px;
@@ -10418,10 +10419,11 @@ body {
       border: 0; }
 
 .sp-app-help-menu {
-  right: -550px;
-  transition: 0.75s ease right; }
+  transition: 0.75s ease transform;
+  right: 0;
+  transform: translateX(110%); }
   .sp-app-help-menu.sp-showing {
-    right: 0; }
+    transform: none; }
   .sp-app-help-menu .sp-content-frame {
     position: relative; }
     .sp-app-help-menu .sp-content-frame .sp-iframe-navigation {

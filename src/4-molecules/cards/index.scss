@@ -263,11 +263,9 @@
       }
 
       .sp-card-footer-right {
-        text-align: left !important;
-      }
-
-      .sp-card-footer-right {
-        margin-left: 8px !important;
+        @include sp-hidden(true);
+        //text-align: left !important;
+        //margin-left: 8px !important;
       }
     }
 

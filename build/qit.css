@@ -8694,7 +8694,8 @@ blockquote {
     .sp-list .sp-card .sp-card-content, .sp-card.sp-list .sp-card-content {
       flex: 1;
       padding-top: 0;
-      padding-bottom: 0; }
+      padding-bottom: 0;
+      max-width: 350px; }
       .sp-list .sp-card .sp-card-content .sp-card-label, .sp-list .sp-card .sp-card-content .sp-card-title, .sp-list .sp-card .sp-card-content .sp-card-id, .sp-card.sp-list .sp-card-content .sp-card-label, .sp-card.sp-list .sp-card-content .sp-card-title, .sp-card.sp-list .sp-card-content .sp-card-id {
         text-align: left !important; }
     .sp-list .sp-card .sp-card-footer, .sp-card.sp-list .sp-card-footer {
@@ -8703,9 +8704,7 @@ blockquote {
       .sp-list .sp-card .sp-card-footer .sp-card-footer-left, .sp-card.sp-list .sp-card-footer .sp-card-footer-left {
         margin-bottom: 0.8rem; }
       .sp-list .sp-card .sp-card-footer .sp-card-footer-right, .sp-card.sp-list .sp-card-footer .sp-card-footer-right {
-        text-align: left !important; }
-      .sp-list .sp-card .sp-card-footer .sp-card-footer-right, .sp-card.sp-list .sp-card-footer .sp-card-footer-right {
-        margin-left: 8px !important; }
+        display: none !important; }
     .sp-list .sp-card .sp-card-hover, .sp-card.sp-list .sp-card-hover {
       width: 275px;
       box-sizing: border-box;

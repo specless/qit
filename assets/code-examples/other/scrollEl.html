@@ -58,6 +58,14 @@ function getScrollEls(selectorOrEl) {
       return scrollEl
     }
   }
+  // If there is client rect info that needs to be gathered this returns the function that should be used:
+  function getClientRectEl(scrollEl) {
+    if (getGeomElement(scrollEl) === document.documentElement) {
+      return document.body
+    } else {
+      return scrollEl
+    }
+  }
   var el;
   try { el = elementTest(selectorOrEl) || document.querySelector(selectorOrEl) || document.scrollingElement}
   finally {
@@ -72,7 +80,8 @@ function getScrollEls(selectorOrEl) {
   return {
     el: el,
     listener: getScrollListener(el),
-    geometry: getGeomElement(el)
+    geometry: getGeomElement(el),
+    clientRect: getClientRectEl(el)
   }
 }
 // // This function returns the element to listen for a scroll event based on what the scroll element is

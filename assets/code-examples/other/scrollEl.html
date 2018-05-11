@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+ 	<style>
+ 	#large {
+	  height: 1000000px;
+	}
+
+	#output {
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	}
+	</style>
+</head>
+<body>
+	<div id="large"></div>
+	<h2 id="output"></h2>
+
+<script>
+// This function should always return the correct element. Optionally pass a selector string or a valid dom element
+function getScrollEl(selectorOrEl) {
+  var el;
+  // Checks if selectorOrEl is a valid DOM element
+  function isElement(o){
+    return (
+      typeof HTMLElement === "object" ? o instanceof HTMLElement : //DOM2
+      o && typeof o === "object" && o !== null && o.nodeType === 1 && typeof o.nodeName==="string"
+    );
+  }
+  // Checks and returns DOM node if is verified as a DOM element
+  function elementTest(o){
+    if (isElement(o)) {
+      return o
+    }
+  }
+  // Checks if browser is IE
+  function isIE() {
+    ua = navigator.userAgent;
+    /* MSIE used to detect old browsers and Trident used to newer ones*/
+    var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
+    return is_ie; 
+  }
+  try { el = elementTest(selectorOrEl) || document.querySelector(selectorOrEl) || document.scrollingElement}
+  finally {
+    if (!el) {
+      if (isIE()) {
+        el = document.documentElement;
+      } else {
+        el = window;
+      }
+    }
+  }
+  return el
+}
+
+
+var scrollEl = getScrollEl();
+function updateScrollValue() {
+  var value = scrollEl.pageYOffset || scrollEl.scrollY || scrollEl.scrollTop;
+  output.innerHTML = value + ', ' + window.pageYOffset + ', ' + document.body.scrollTop + ', ' + document.documentElement.scrollTop + ', ' + window.scrollY;
+  window.requestAnimationFrame(updateScrollValue);
+}
+updateScrollValue();
+
+window.requestAnimationFrame(updateScrollValue);
+</script>
+</body>
+</html>

@@ -21,8 +21,7 @@
 <script>
 
 // This function should always return the correct element. Optionally pass a selector string or a valid dom element
-function getScrollEl(selectorOrEl) {
-  var el;
+function getScrollEls(selectorOrEl) {
   // Checks if selectorOrEl is a valid DOM element
   function isElement(o){
     return (
@@ -43,6 +42,23 @@ function getScrollEl(selectorOrEl) {
     var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
     return is_ie; 
   }
+  // This returns the element to attach the event listener to
+  function getScrollListener(scrollEl) {
+    if (scrollEl === document.documentElement || scrollEl === window || scrollEl === document.body) {
+      return window
+    } else {
+      return scrollEl
+    }
+  }
+  // This function returns the element to measure geometry information from
+  function getGeomElement(scrollEl) {
+    if (getScrollListener(scrollEl) === window) {
+      return document.documentElement
+    } else {
+      return scrollEl
+    }
+  }
+  var el;
   try { el = elementTest(selectorOrEl) || document.querySelector(selectorOrEl) || document.scrollingElement}
   finally {
     if (!el) {
@@ -53,25 +69,41 @@ function getScrollEl(selectorOrEl) {
       }
     }
   }
-  return el
-}
-// This function returns the element to listen for a scroll event based on what the scroll element is
-function getScrollListener(scrollEl) {
-  if (scrollEl === document.documentElement || scrollEl === window || scrollEl === document.body) {
-    return window
-  } else {
-    return scrollEl
+  return {
+    el: el,
+    listener: getScrollListener(el),
+    geometry: getGeomElement(el)
   }
 }
+// // This function returns the element to listen for a scroll event based on what the scroll element is
+// function getScrollListener(scrollEl) {
+//   if (scrollEl === document.documentElement || scrollEl === window || scrollEl === document.body) {
+//     return window
+//   } else {
+//     return scrollEl
+//   }
+// }
+
+// function getGeometryElement(scrollEl) {
+//   if (scrollEl === document.documentElement || scrollEl === window) {
+//     return document.body
+//   }
+// }
 
 var elementOption = null;
-var scrollEl = getScrollEl(elementOption);
-var scrollListener = getScrollListener(scrollEl);
+var scrollData = getScrollEls(elementOption);
+var scrollEl = scrollData.el;
+var scrollListener = scrollData.listener;
+var scrollGeomElement = scrollData.geometry;
+
+console.log(scrollData);
 
 function updateScrollValue() {
-  var value = Math.max(scrollEl.scrollY || scrollEl.pageYOffset || scrollEl.scrollTop || 0);
+  var value = scrollEl.scrollY || scrollEl.pageYOffset || scrollEl.scrollTop || 0;
+  console.log(value);
   output.innerHTML = '<span style="color:green">' + value + '</span>, ' + window.pageYOffset + ', ' + document.body.scrollTop + ', ' + document.documentElement.scrollTop + ', ' + window.scrollY;
 }
+
 
 updateScrollValue();
 scrollListener.addEventListener('scroll', updateScrollValue);

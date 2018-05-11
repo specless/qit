@@ -68,10 +68,8 @@ var elementOption = null;
 var scrollEl = getScrollEl(elementOption);
 var scrollListener = getScrollListener(scrollEl);
 
-console.log(scrollListener);
-
 function updateScrollValue() {
-  var value = scrollEl.pageYOffset || scrollEl.scrollY || scrollEl.scrollTop;
+  var value = Math.max(scrollEl.scrollY || scrollEl.pageYOffset || scrollEl.scrollTop || 0);
   output.innerHTML = '<span style="color:green">' + value + '</span>, ' + window.pageYOffset + ', ' + document.body.scrollTop + ', ' + document.documentElement.scrollTop + ', ' + window.scrollY;
 }
 

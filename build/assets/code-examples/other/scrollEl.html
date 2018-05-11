@@ -19,6 +19,7 @@
 	<h2 id="output"></h2>
 
 <script>
+
 // This function should always return the correct element. Optionally pass a selector string or a valid dom element
 function getScrollEl(selectorOrEl) {
   var el;
@@ -54,17 +55,27 @@ function getScrollEl(selectorOrEl) {
   }
   return el
 }
+// This function returns the element to listen for a scroll event based on what the scroll element is
+function getScrollListener(scrollEl) {
+  if (scrollEl === document.documentElement || scrollEl === window) {
+    return window
+  } else {
+    return scrollEl
+  }
+}
 
+var elementOption = null;
+var scrollEl = getScrollEl(elementOption);
+var scrollListener = getScrollListener(scrollEl);
 
-var scrollEl = getScrollEl();
 function updateScrollValue() {
   var value = scrollEl.pageYOffset || scrollEl.scrollY || scrollEl.scrollTop;
   output.innerHTML = value + ', ' + window.pageYOffset + ', ' + document.body.scrollTop + ', ' + document.documentElement.scrollTop + ', ' + window.scrollY;
-  window.requestAnimationFrame(updateScrollValue);
+  
 }
-updateScrollValue();
 
-window.requestAnimationFrame(updateScrollValue);
+updateScrollValue();
+scrollListener.addEventListener('scroll', updateScrollValue);
 </script>
 </body>
 </html>

@@ -57,7 +57,7 @@ function getScrollEl(selectorOrEl) {
 }
 // This function returns the element to listen for a scroll event based on what the scroll element is
 function getScrollListener(scrollEl) {
-  if (scrollEl === document.documentElement || scrollEl === window) {
+  if (scrollEl === document.documentElement || scrollEl === window || scrollEl === document.body) {
     return window
   } else {
     return scrollEl
@@ -68,10 +68,11 @@ var elementOption = null;
 var scrollEl = getScrollEl(elementOption);
 var scrollListener = getScrollListener(scrollEl);
 
+console.log(scrollListener);
+
 function updateScrollValue() {
   var value = scrollEl.pageYOffset || scrollEl.scrollY || scrollEl.scrollTop;
-  output.innerHTML = value + ', ' + window.pageYOffset + ', ' + document.body.scrollTop + ', ' + document.documentElement.scrollTop + ', ' + window.scrollY;
-  
+  output.innerHTML = '<span style="color:green">' + value + '</span>, ' + window.pageYOffset + ', ' + document.body.scrollTop + ', ' + document.documentElement.scrollTop + ', ' + window.scrollY;
 }
 
 updateScrollValue();

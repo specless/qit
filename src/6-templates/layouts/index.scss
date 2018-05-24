@@ -344,6 +344,12 @@ body {
   }
 }
 
+.sp-app:not(.sp-hide-org-label) > .sp-app-menu > .sp-container-dark.sp-alt-two {
+  // For some reason, when the org-label is visible and the height is greater than ~11px, the active menu item displays slightly inconsistently. The following line addresses that
+  // It's extremely specific so hopefully it doesn't impact anything outside of this narrow use case
+  padding-bottom: 1px;
+}
+
 .sp-app-notifications {
   display: inline-block;
   position: absolute;

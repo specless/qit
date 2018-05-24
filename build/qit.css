@@ -10245,6 +10245,9 @@ body {
   .sp-app.sp-hide-org-label .sp-app-org-label {
     display: none; }
 
+.sp-app:not(.sp-hide-org-label) > .sp-app-menu > .sp-container-dark.sp-alt-two {
+  padding-bottom: 1px; }
+
 .sp-app-notifications {
   display: inline-block;
   position: absolute;

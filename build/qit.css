@@ -3651,6 +3651,11 @@ select + label::before, .sp-selector > input[type='text'].sp-selector-trigger + 
 .sp-line-through {
   text-decoration: line-through !important; }
 
+.sp-text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
 .sp-button,
 button,
 button[type='button'],

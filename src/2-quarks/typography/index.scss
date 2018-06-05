@@ -169,14 +169,11 @@
   }
 }
 
-
 /////////////////////////
 //                     //
 //      headings       //
 //                     //
 /////////////////////////
-
-
 
 .sp-h1 {
   @include sp-font-header(h1);
@@ -232,4 +229,16 @@
 
 .sp-line-through {
   text-decoration: line-through !important;
+}
+
+/////////////////////////
+//                     //
+//        utils        //
+//                     //
+/////////////////////////
+
+.sp-text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

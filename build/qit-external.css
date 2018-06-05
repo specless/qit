@@ -3651,6 +3651,11 @@ html {
 .sp-line-through {
   text-decoration: line-through !important; }
 
+.sp-text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
 body {
   font-family: Source Sans Pro, sans-serif;
   -webkit-font-smoothing: antialiased;

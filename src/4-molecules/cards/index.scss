@@ -250,18 +250,21 @@
       flex: 1;
       padding-top: 0;
       padding-bottom: 0;
-      max-width: 350px;
+      max-width: 470px;
       .sp-card-label, .sp-card-title, .sp-card-id {
         text-align: left !important;
       }
     }
 
     .sp-card-footer {
-      display: block;
-      flex: 0.5;
+      align-items: center;
+      justify-content: center;
+      display: inline-flex;
+      //flex: 0.5;
 
       .sp-card-footer-left {
-        @include sp-margin(2, bottom);
+        //@include sp-margin(2, bottom);
+        display: inline-flex;
       }
 
       .sp-card-footer-right {

@@ -8715,14 +8715,15 @@ blockquote {
       flex: 1;
       padding-top: 0;
       padding-bottom: 0;
-      max-width: 350px; }
+      max-width: 470px; }
       .sp-list .sp-card .sp-card-content .sp-card-label, .sp-list .sp-card .sp-card-content .sp-card-title, .sp-list .sp-card .sp-card-content .sp-card-id, .sp-card.sp-list .sp-card-content .sp-card-label, .sp-card.sp-list .sp-card-content .sp-card-title, .sp-card.sp-list .sp-card-content .sp-card-id {
         text-align: left !important; }
     .sp-list .sp-card .sp-card-footer, .sp-card.sp-list .sp-card-footer {
-      display: block;
-      flex: 0.5; }
+      align-items: center;
+      justify-content: center;
+      display: inline-flex; }
       .sp-list .sp-card .sp-card-footer .sp-card-footer-left, .sp-card.sp-list .sp-card-footer .sp-card-footer-left {
-        margin-bottom: 0.8rem; }
+        display: inline-flex; }
       .sp-list .sp-card .sp-card-footer .sp-card-footer-right, .sp-card.sp-list .sp-card-footer .sp-card-footer-right {
         display: none !important; }
     .sp-list .sp-card .sp-card-hover, .sp-card.sp-list .sp-card-hover {

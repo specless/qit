@@ -10075,8 +10075,7 @@ body {
 .sp-app {
   background-color: #F5F5F5;
   min-width: 1100px;
-  box-shadow: rgba(0, 0, 0, 0.22);
-  user-select: none; }
+  box-shadow: rgba(0, 0, 0, 0.22); }
   .sp-app .sp-container-dark, .sp-app.sp-container-dark,
   .sp-container-dark .sp-app {
     box-shadow: rgba(0, 0, 0, 0.5); }
@@ -10345,7 +10344,8 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  overflow: hidden; }
+  overflow: hidden;
+  user-select: none; }
 
 .sp-app-content-main-scroll {
   padding: 1.6rem;

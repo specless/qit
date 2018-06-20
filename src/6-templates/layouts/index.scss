@@ -31,7 +31,6 @@ body {
   @include sp-shadow('medium');
   //transition: 0.5s ease background-color;
   //transition-delay: 1s;
-  user-select: none;
 
   &.sp-initializing {
     background-color: rgba(0, 0, 0, 0);
@@ -453,6 +452,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  user-select: none;
 }
 
 .sp-app-content-main-scroll {

@@ -8676,6 +8676,10 @@ blockquote {
       background-color: #FF4A37; }
     .sp-card .sp-card-color-tag.sp-danger::before {
       background-color: #FF2455; }
+  .sp-list.sp-tag-list .sp-card .sp-card-footer {
+    display: none; }
+  .sp-list.sp-tag-list .sp-card .sp-card-content {
+    width: 63%; }
   .sp-list .sp-card, .sp-card.sp-list {
     width: auto !important;
     display: flex;
@@ -8692,7 +8696,7 @@ blockquote {
     .sp-list .sp-card:hover, .sp-card.sp-list:hover {
       z-index: 1; }
       .sp-list .sp-card:hover .sp-card-thumbnail, .sp-card.sp-list:hover .sp-card-thumbnail {
-        width: 250px;
+        width: 24%;
         height: 175px;
         position: relative;
         left: -10px;
@@ -8704,30 +8708,33 @@ blockquote {
         .sp-container-dark .sp-list .sp-card:hover .sp-card-thumbnail, .sp-card.sp-list:hover .sp-card-thumbnail .sp-container-dark, .sp-card.sp-list:hover .sp-card-thumbnail.sp-container-dark,
         .sp-container-dark .sp-card.sp-list:hover .sp-card-thumbnail {
           box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.22); }
+      .sp-list .sp-card:hover .sp-card-content, .sp-card.sp-list:hover .sp-card-content {
+        width: 40%; }
       .sp-list .sp-card:hover .sp-card-color-tag, .sp-card.sp-list:hover .sp-card-color-tag {
         left: -4px;
         top: -37px; }
     .sp-list .sp-card .sp-card-thumbnail, .sp-list .sp-card .sp-card-hover-actions, .sp-card.sp-list .sp-card-thumbnail, .sp-card.sp-list .sp-card-hover-actions {
-      width: 112px;
+      width: 11%;
       height: 80px;
       padding: 0; }
     .sp-list .sp-card .sp-card-content, .sp-card.sp-list .sp-card-content {
       flex: 1;
       padding-top: 0;
       padding-bottom: 0;
-      max-width: 470px; }
+      width: 53%; }
       .sp-list .sp-card .sp-card-content .sp-card-label, .sp-list .sp-card .sp-card-content .sp-card-title, .sp-list .sp-card .sp-card-content .sp-card-id, .sp-card.sp-list .sp-card-content .sp-card-label, .sp-card.sp-list .sp-card-content .sp-card-title, .sp-card.sp-list .sp-card-content .sp-card-id {
         text-align: left !important; }
     .sp-list .sp-card .sp-card-footer, .sp-card.sp-list .sp-card-footer {
       align-items: center;
       justify-content: center;
-      display: inline-flex; }
+      display: inline-flex;
+      width: 10%; }
       .sp-list .sp-card .sp-card-footer .sp-card-footer-left, .sp-card.sp-list .sp-card-footer .sp-card-footer-left {
         display: inline-flex; }
       .sp-list .sp-card .sp-card-footer .sp-card-footer-right, .sp-card.sp-list .sp-card-footer .sp-card-footer-right {
         display: none !important; }
     .sp-list .sp-card .sp-card-hover, .sp-card.sp-list .sp-card-hover {
-      width: 275px;
+      width: 26%;
       box-sizing: border-box;
       position: relative;
       visibility: visible;
@@ -8742,7 +8749,7 @@ blockquote {
       .sp-list .sp-card .sp-card-hover .sp-card-hover-actions, .sp-card.sp-list .sp-card-hover .sp-card-hover-actions {
         position: relative;
         right: -15px;
-        width: 275px; }
+        width: 100%; }
         .sp-list .sp-card .sp-card-hover .sp-card-hover-actions .sp-card-main-action, .sp-card.sp-list .sp-card-hover .sp-card-hover-actions .sp-card-main-action {
           display: none; }
         .sp-list .sp-card .sp-card-hover .sp-card-hover-actions .sp-card-hover-action-icons > button,

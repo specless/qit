@@ -2,6 +2,10 @@
   border-collapse: collapse;
   border-spacing: 0;
 
+  * {
+    box-sizing: border-box;
+  }
+
   .sp-data-table-head {
     @include sp-bg-overlay-dark(3);
     th, .sp-data-table-head-cell {
@@ -11,8 +15,15 @@
       @include sp-padding(1);
       &:first-child {
         text-align: left;
+        width: 250px;
+        flex: 0 0 250px !important;
       }
     }
+  }
+
+  * > td:first-child, .sp-data-table-cell:first-child {
+    width: 250px;
+    flex: 0 0 250px !important;
   }
 
   .sp-data-table-total {
@@ -45,11 +56,23 @@
     }
   }
 
+  .sp-data-table-row {
+    transition: opacity 300ms ease-in-out, top 300ms ease-in-out, height 300ms ease-in-out;
+    opacity: 1;
+  }
+
+  .sp-data-table-row-collapse {
+    opacity: 0;
+    top: 0 !important;
+  }
+
   tr:not(.sp-data-table-category):not(.sp-data-table-total):not(.sp-data-table-head),
   .sp-data-table-row:not(.sp-data-table-category):not(.sp-data-table-total):not(.sp-data-table-head) {
     &:hover {
       @include sp-font-color(contrast);
       @include sp-shadow(high, 0 0 .4em .07em);
+      @include sp-bg-color(white);
+      background-image: none;
 
       td, .sp-data-table-cell {
         background-color: white;

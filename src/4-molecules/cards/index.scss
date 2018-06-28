@@ -201,16 +201,6 @@
     }
   }
 
-  .sp-list.sp-tag-list & {
-    .sp-card-footer {
-      display: none;
-    }
-
-    .sp-card-content {
-      width: 63%;
-    }
-  }
-
   .sp-list &, &.sp-list {
     width: auto !important;
     display: flex;

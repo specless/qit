@@ -69,7 +69,6 @@
   @include sp-border-style($style, $loc, $override);
 }
 
-
 @each $thickness in (thin, medium, thick) {
   @each $loc in (null, 'top', 'bottom', 'right', 'left') {
     $class: '.sp-border';
@@ -97,10 +96,6 @@
     }
   }
 }
-
-
-
-
 
 // For each style (excluding none and hidden),
 // generate a class combining style, thickness, and direction
@@ -138,42 +133,42 @@
 }
 
 .sp-border-base {
-  border: 1px solid $sp-shade-dark-2;
+  border: 1px solid $sp-shade-dark-2 !important;
 
   @include sp-state(dark) {
-    border: 1px solid $sp-shade-light-2;
+    border: 1px solid $sp-shade-light-2 !important;
   }
 }
 
 .sp-border-top-base {
-  border-top: 1px solid $sp-shade-dark-2;
+  border-top: 1px solid $sp-shade-dark-2 !important;
 
   @include sp-state(dark) {
-    border-top: 1px solid $sp-shade-light-2;
+    border-top: 1px solid $sp-shade-light-2 !important;
   }
 }
 
 .sp-border-right-base {
-  border-right: 1px solid $sp-shade-dark-2;
+  border-right: 1px solid $sp-shade-dark-2 !important;
 
   @include sp-state(dark) {
-    border-right: 1px solid $sp-shade-light-2;
+    border-right: 1px solid $sp-shade-light-2 !important;
   }
 }
 
 .sp-border-bottom-base {
-  border-bottom: 1px solid $sp-shade-dark-2;
+  border-bottom: 1px solid $sp-shade-dark-2 !important;
 
   @include sp-state(dark) {
-    border-bottom: 1px solid $sp-shade-light-2;
+    border-bottom: 1px solid $sp-shade-light-2 !important;
   }
 }
 
 .sp-border-left-base {
-  border-left: 1px solid $sp-shade-dark-2;
+  border-left: 1px solid $sp-shade-dark-2 !important;
 
   @include sp-state(dark) {
-    border-left: 1px solid $sp-shade-light-2;
+    border-left: 1px solid $sp-shade-light-2 !important;
   }
 }
 

@@ -1461,34 +1461,34 @@ html {
   border-left-style: hidden !important; }
 
 .sp-border-base {
-  border: 1px solid rgba(0, 0, 0, 0.12); }
+  border: 1px solid rgba(0, 0, 0, 0.12) !important; }
   .sp-border-base .sp-container-dark, .sp-border-base.sp-container-dark,
   .sp-container-dark .sp-border-base {
-    border: 1px solid rgba(255, 255, 255, 0.19); }
+    border: 1px solid rgba(255, 255, 255, 0.19) !important; }
 
 .sp-border-top-base {
-  border-top: 1px solid rgba(0, 0, 0, 0.12); }
+  border-top: 1px solid rgba(0, 0, 0, 0.12) !important; }
   .sp-border-top-base .sp-container-dark, .sp-border-top-base.sp-container-dark,
   .sp-container-dark .sp-border-top-base {
-    border-top: 1px solid rgba(255, 255, 255, 0.19); }
+    border-top: 1px solid rgba(255, 255, 255, 0.19) !important; }
 
 .sp-border-right-base {
-  border-right: 1px solid rgba(0, 0, 0, 0.12); }
+  border-right: 1px solid rgba(0, 0, 0, 0.12) !important; }
   .sp-border-right-base .sp-container-dark, .sp-border-right-base.sp-container-dark,
   .sp-container-dark .sp-border-right-base {
-    border-right: 1px solid rgba(255, 255, 255, 0.19); }
+    border-right: 1px solid rgba(255, 255, 255, 0.19) !important; }
 
 .sp-border-bottom-base {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12) !important; }
   .sp-border-bottom-base .sp-container-dark, .sp-border-bottom-base.sp-container-dark,
   .sp-container-dark .sp-border-bottom-base {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.19); }
+    border-bottom: 1px solid rgba(255, 255, 255, 0.19) !important; }
 
 .sp-border-left-base {
-  border-left: 1px solid rgba(0, 0, 0, 0.12); }
+  border-left: 1px solid rgba(0, 0, 0, 0.12) !important; }
   .sp-border-left-base .sp-container-dark, .sp-border-left-base.sp-container-dark,
   .sp-container-dark .sp-border-left-base {
-    border-left: 1px solid rgba(255, 255, 255, 0.19); }
+    border-left: 1px solid rgba(255, 255, 255, 0.19) !important; }
 
 .sp-base {
   border-radius: 0; }
@@ -10030,28 +10030,34 @@ blockquote {
     -webkit-transform: scale3D(0, 0, 1);
     transform: scale3D(0, 0, 1); } }
 
+/*
 .sp-app-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  @include sp-bg-overlay-dark(4);
   opacity: 1;
-  transition: 0.5s ease opacity; }
-  .sp-app-overlay.sp-hide {
-    top: -100%;
-    opacity: 0; }
-    .sp-app-overlay.sp-hide > .sp-app-overlay-content {
-      transform: translate(-50%, -50%) scale(0); }
-  .sp-app-overlay > .sp-app-overlay-content {
-    transition: 0.25s ease transform;
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1); }
+  transition: 0.5s ease opacity;
+  @include sp-flex();
+  align-items: center;
+  justify-content: center;
 
+  &.sp-hide {
+    top: -100%;
+    opacity: 0;
+
+    > .sp-app-overlay-content {
+      transform: translate(-50%, -50%) scale(0);
+    }
+  }
+
+  > .sp-app-overlay-content {
+    transition: 0.25s ease transform;
+    display: block;
+  }
+}*/
 /* Headers */
 .sp-app-overlay {
   position: fixed;
@@ -10062,19 +10068,21 @@ blockquote {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   opacity: 1;
   transition: 0.5s ease opacity;
-  z-index: 99; }
-  .sp-app-overlay.sp-hide, .sp-app-overlay.sp-hidden, .sp-app.sp-hide-overlay .sp-app-overlay {
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*&.sp-hide, &.sp-hidden, .sp-app.sp-hide-overlay & {
     top: -100%;
-    opacity: 0; }
-    .sp-app-overlay.sp-hide > .sp-app-overlay-content, .sp-app-overlay.sp-hidden > .sp-app-overlay-content, .sp-app.sp-hide-overlay .sp-app-overlay > .sp-app-overlay-content {
-      transform: translate(-50%, -50%) scale(0); }
+    opacity: 0;
+
+    > .sp-app-overlay-content {
+      transform: translate(-50%, -50%) scale(0);
+    }
+  }*/ }
   .sp-app-overlay > .sp-app-overlay-content {
     transition: 0.25s ease transform;
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1); }
+    display: block; }
 
 html {
   overflow-x: auto;

@@ -1,0 +1,1181 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example</title>
+  <link rel="stylesheet" href="../../../qit.css">
+</head>
+
+<body class="sp-app">
+  <div class="sp-app-bar sp-container-dark sp-alt-one sp-wrapper">
+    <div class="sp-row sp-vcenter sp-height-3">
+      <div class="sp-col sp-span-6 sp-flex sp-flex-align-items-center">
+        <a class="sp-menu-item sp-minimal sp-icon-menu sp-padding-0"></a>
+        <div class="sp-spacer-horizontal"></div>
+        <div class="sp-logo-lockup sp-small sp-primary sp-logo-horizontal sp-margin-left-2"></div>
+      </div>
+      <div class="sp-col sp-span-6 sp-flex sp-flex-justify-content-flex-end sp-flex-align-items-center">
+        <div class="sp-selector sp-margin-left-2">
+          <button class="sp-selector-trigger sp-icon-after-circle-user sp-rounded sp-small sp-minimal">Stephen C.</button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <div class="sp-menu-header sp-small">User Details</div>
+              <a class="sp-menu-item sp-icon-account">Account</a>
+              <a class="sp-menu-item sp-icon-settings">Preferences</a>
+              <a class="sp-menu-item sp-icon-organization">Organizations</a>
+              <a class="sp-menu-item sp-icon-account">Billing</a>
+              <div class="sp-spacer-vertical sp-margin-0"></div>
+              <a class="sp-menu-item sp-icon-logout">Log Out</a>
+            </div>
+          </div>
+        </div>
+        <div class="sp-selector sp-margin-left-2">
+          <button class="sp-selector-trigger sp-icon-after-circle-help sp-rounded sp-small sp-minimal"></button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <div class="sp-menu-header sp-small">Search For Help</div>
+              <div class="sp-padding-horizontal-2 sp-padding-vertical-1" style="position: relative;">
+                <input type="search" class="sp-small sp-rounded" placeholder="Enter Search Term" style="width: 100%"/>
+                <button class="sp-small sp-rounded sp-icon-search sp-primary sp-margin-top-1 sp-margin-right-2" onclick="window.helpSearch('TEST')" style="position: absolute; top:0; right: 0;border-bottom-left-radius: 0;border-top-left-radius: 0;"></button>
+              </div>
+              <div class="sp-menu-header sp-small">Help Center</div>
+              <div class="sp-menu-item sp-icon-library">Getting Started Guide
+                <div class="sp-menu-dropdown sp-menu-sub-left sp-overlay sp-color-contrast">
+                  <a class="sp-menu-item sp-icon-guide" onclick="window.helpArticle('5a03406a2c7d3a272c0d7fe5')">1. Introduction To Specless</a>
+                  <a class="sp-menu-item sp-icon-guide" onclick="window.helpArticle('5a0340a72c7d3a272c0d7fee')">2. Understanding The Core Concepts</a>
+                  <a class="sp-menu-item sp-icon-guide" onclick="window.helpArticle('5a03409a2c7d3a272c0d7fea')">3. Learning Your Way Around the Interface</a>
+                  <a class="sp-menu-item sp-icon-guide" onclick="window.helpArticle('5a0340db2c7d3a272c0d7ff2')">4. Adding a New Creative</a>
+                  <a class="sp-menu-item sp-icon-guide" onclick="window.helpArticle('5a03410c2c7d3a272c0d7ff6')">5. The Creative Explorer & Sync Workflow</a>
+                  <a class="sp-menu-item sp-icon-guide" onclick="window.helpArticle('5a03411e0428633199244cbc')">6. Building Creative with S-Kit</a>
+                  <a class="sp-menu-item sp-icon-guide" onclick="window.helpArticle('5a03412e0428633199244cbd')">7. Publishing A Creative to Specless</a>
+                  <a class="sp-menu-item sp-icon-guide" onclick="window.helpArticle('5a0341db0428633199244cd1')">8. Trafficking A Creative</a>
+                  <a class="sp-menu-item sp-icon-guide" onclick="window.helpArticle('5a0342060428633199244cd5')">9. Reporting & Analytics Basics</a>
+                  <a class="sp-menu-item sp-icon-guide" onclick="window.helpArticle('5a0342322c7d3a272c0d8002')">10. Generating & Sharing A Report</a>
+                </div>
+              </div>
+              <a class="sp-menu-item sp-icon-knowledge" onclick="window.location.href = 'http://help.specless.tech/'">Knowledge Base</a>
+              <a class="sp-menu-item sp-icon-message" onclick="window.helpContact()">Contact Support</a>
+              <a class="sp-menu-item sp-icon-bug" onclick="window.helpBug()">Report a Bug</a>
+              <div class="sp-menu-header sp-small">Developer Hub</div>
+              <a class="sp-menu-item sp-icon-library" onclick="window.location.href = 'http://developer.specless.tech/docs'">Developer Docs & Guides</a>
+              <a class="sp-menu-item sp-icon-code" onclick="window.location.href = 'http://developer.specless.tech/reference'">Reference Guide</a>
+              <a class="sp-menu-item sp-icon-conversation" onclick="window.location.href = 'http://developer.specless.tech/discuss'">Discussion</a>
+              <a class="sp-menu-item sp-icon-blog" onclick="window.location.href = 'http://developer.specless.tech/blog'">Annoucements</a>
+            </div>
+          </div>
+        </div>
+        <div class="sp-selector sp-margin-left-2">
+          <button class="sp-selector-trigger sp-icon-after-lightning sp-rounded sp-small sp-minimal sp-success"></button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <div class="sp-menu-header sp-small">Connection</div>
+              <div class="sp-padding-horizontal-2 sp-padding-vertical-1" style="position: relative;">
+                <div class="sp-label">Status <span class="sp-color-success sp-float-right">Active</span></div>
+              </div>
+              <div class="sp-menu-header sp-small">Settings</div>
+              <a class="sp-menu-item">Live Reload</a>
+              <a class="sp-menu-item">Listen on Port</a>
+              <div class="sp-menu-header sp-small">Recent Creatives</div>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Some Creative<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>My Awesome Ad<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Another Creative<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Coca-Cola Ad<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Samsung Galaxy Note 8<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="sp-app-org-label sp-container-dark sp-wrapper">
+    <div class="sp-row sp-padding-2 sp-padding-left-3">
+      <div class="sp-label sp-small">Organizations <span class="sp-inline-icon-arrow-right"></span> <a href="#" class="sp-color-white">Org Name Goes Here</a></div>
+    </div>
+  </div> -->
+  <div class="sp-app-header sp-container-dark sp-alt-two sp-wrapper">
+    <div class="sp-row sp-vcenter">
+      <div class="sp-col sp-span-12 sp-flex sp-flex-align-items-center">
+        <h5 class="sp-inline sp-contrast sp-inline" style="flex: 1; position: relative">
+          <i class="sp-inline-icon-organization sp-color-primary sp-margin-right-1"></i>
+          Example Organization
+          <!-- <span class="sp-color-muted sp-small" style="position: absolute; bottom: -15px; left: 32px;">/ dhC897</span> -->
+        </h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="sp-app-menu sp-container-dark sp-alt-two sp-wrapper">
+    <div class="sp-row sp-vbottom sp-height-2">
+      <div class="sp-col sp-span-10 sp-padding-0" style="margin-bottom: 2px">
+        <a href="-org-home.html" class="sp-menu-item sp-horizontal sp-label sp-state-active sp-bg-overlay-light-4 sp-icon-home"></a>
+        <a href="-creatives.html" class="sp-menu-item sp-horizontal sp-label">Creatives</a>
+        <a href="-reports.html" class="sp-menu-item sp-horizontal sp-label">Reports</a>
+        <a href="-formats.html" class="sp-menu-item sp-horizontal sp-label">Formats</a>
+        <a class="sp-menu-item sp-horizontal sp-label sp-state-disabled">Templates</a>
+        <a class="sp-menu-item sp-horizontal sp-label sp-state-disabled">Campaigns</a>
+        <!-- <a class="sp-menu-item sp-horizontal sp-label sp-icon-more sp-minimal"></a> -->
+      </div>
+      <!-- <div class="sp-col sp-span-2 sp-align-right sp-padding-0">
+        <button class="sp-rounded sp-primary sp-icon-circle-plus sp-offset-half-down sp-margin-left-2 sp-large">New Creative</button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="sp-app-content sp-wrapper">
+    <div class="sp-wrapper">
+      <div class="sp-row">
+        <div class="sp-col sp-span-12">
+          <div class="sp-label sp-margin-bottom-2">Common Actions</div>
+        </div>
+      </div>
+      <div class="sp-row sp-input sp-rectangle sp-container-dark">
+        
+        <div class="sp-col sp-span-2 sp-tactile sp-align-center sp-rectangle">
+          <div class="sp-icon-creative sp-margin-top-2 sp-huge sp-color-primary"></div>
+          <h6 class="sp-color-contrast"><i class="sp-inline-icon-circle-plus sp-margin-right-1"></i>Build A New Creative</h6>
+        </div>
+
+        <div class="sp-col sp-span-2 sp-tactile sp-align-center sp-rectangle">
+          <div class="sp-icon-data sp-margin-top-2 sp-huge sp-color-success"></div>
+          <h6 class="sp-color-contrast"><i class="sp-inline-icon-circle-plus sp-margin-right-1"></i>Run A Report</h6>
+        </div>
+
+        <div class="sp-col sp-span-2 sp-tactile sp-align-center sp-rectangle">
+          <div class="sp-icon-paper-plane sp-margin-top-2 sp-huge sp-color-warning"></div>
+          <h6 class="sp-color-contrast"><i class="sp-inline-icon-circle-plus sp-margin-right-1"></i>Generate A Tag</h6>
+        </div>
+
+        <div class="sp-col sp-span-2 sp-tactile sp-align-center sp-rectangle">
+          <div class="sp-icon-layout sp-margin-top-2 sp-huge sp-color-danger"></div>
+          <h6 class="sp-color-contrast"><i class="sp-inline-icon-circle-plus sp-margin-right-1"></i>Create A New Template</h6>
+        </div>
+
+        <div class="sp-col sp-span-2 sp-tactile sp-align-center sp-rectangle">
+          <div class="sp-icon-format sp-margin-top-2 sp-huge sp-color-contrast"></div>
+          <h6 class="sp-color-contrast"><i class="sp-inline-icon-circle-plus sp-margin-right-1"></i>Create A New Format</h6>
+        </div>
+
+        <div class="sp-col sp-span-2 sp-tactile sp-align-center sp-rectangle">
+          <div class="sp-icon-circle-help sp-margin-top-2 sp-huge sp-color-grey"></div>
+          <h6 class="sp-color-contrast"><i class="sp-inline-icon-conversation sp-margin-right-1"></i>Get Help & Support</h6>
+        </div>
+        
+      </div>
+
+      <div class="sp-row">
+        <div class="sp-col sp-span-12">
+          <div class="sp-label sp-margin-vertical-2">Browse Organization</div>
+        </div>
+      </div>
+      <div class="sp-row">
+        <div class="sp-col sp-span-12 sp-input sp-height-9 sp-flex sp-padding-0 sp-rectangle">
+          <div style="flex: 1; position: relative; flex-direction: column; max-width: 33.3%" class="sp-flex">
+            
+
+            <div class="sp-container-dark">
+              
+
+              <!-- <div class="sp-padding-left-1 sp-padding-top-1">
+                <span class="sp-label">Browsing by </span>
+                <select class="sp-minimal sp-label" style="width: calc(100% - 105px);">
+                  <option value="item-1">Advertiser</option>
+                  <option value="item-2">Label</option>
+                </select>
+                <label></label>
+              </div> -->
+
+                <div class="sp-padding-horizontal-2 sp-padding-vertical-1" style="position: relative;">
+                  <div class="sp-selector" style="display: block;">
+                      <input readonly="" class="sp-minimal sp-selector-trigger sp-label" type="text" value="Browsing By Advertiser" style="width: 100%">
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-state-active">Advertiser</a>
+                          <a class="sp-menu-item">Label</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+               <div class="sp-padding-horizontal-2 sp-padding-vertical-1 sp-bg-overlay-light-1" style="position: relative;">
+                <input type="search" class="sp-small sp-rounded" placeholder="Search Advertisers" style="width: 100%"/>
+                
+              </div>
+
+            </div>
+            <div class="sp-menu" style="overflow-y: auto">
+
+              <a class="sp-menu-item sp-block sp-border-base">
+                <div class="sp-ellipsis sp-float-left sp-color-primary">Add New Advertiser</div>
+                <i class="sp-inline-icon-circle-plus sp-float-right sp-color-primary"></i>
+              </a>
+              
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">This is a very very long advertiser name that overflows the content area and you can see how it works here</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Advertiser</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Advertiser</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Advertiser</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Advertiser</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block sp-state-active">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Advertiser</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Advertiser</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Advertiser</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Advertiser</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Advertiser</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Advertiser</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Advertiser</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Advertiser</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Advertiser</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Advertiser</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Advertiser</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Advertiser</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Advertiser</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Advertiser</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Advertiser</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Advertiser</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Advertiser</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Advertiser</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Advertiser</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+              
+            </div>
+          </div>
+          <div style="width: 1px" class="sp-bg-overlay-dark-4"></div>
+          <div style="flex: 1; position: relative; flex-direction: column; max-width: 33.3%" class="sp-flex">
+            
+
+            <div class="sp-container-dark">
+              
+
+              <!-- <div class="sp-padding-left-1 sp-padding-top-1">
+                <span class="sp-label">Browsing by </span>
+                <select class="sp-minimal sp-label" style="width: calc(100% - 105px);">
+                  <option value="item-1">Advertiser</option>
+                  <option value="item-2">Label</option>
+                </select>
+                <label></label>
+              </div> -->
+
+                <div class="sp-padding-horizontal-2 sp-padding-vertical-1" style="position: relative;">
+                  <div class="sp-selector" style="display: block;">
+                      <input readonly="" class="sp-minimal sp-selector-trigger sp-label" type="text" value="Then Browse By Campaign" style="width: 100%">
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-state-disabled">Advertiser</a>
+                          <a class="sp-menu-item sp-state-active">Campaign</a>
+                          <a class="sp-menu-item">Label</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+               <div class="sp-padding-horizontal-2 sp-padding-vertical-1 sp-bg-overlay-light-1" style="position: relative;">
+                <input type="search" class="sp-small sp-rounded" placeholder="Search Campaigns" style="width: 100%"/>
+                
+              </div>
+
+            </div>
+            <div class="sp-menu" style="overflow-y: auto">
+
+              <a class="sp-menu-item sp-block sp-border-base">
+                <div class="sp-ellipsis sp-float-left sp-color-primary">Add New Campaign</div>
+                <i class="sp-inline-icon-circle-plus sp-float-right sp-color-primary"></i>
+              </a>
+              
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 40px)">Show All</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 40px)">No Campaign Assigned</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">This is also a very long campaign name that is setup to overflow eventually blah blah blah blah blah blah blah</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Campaign</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block sp-state-active">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Campaign</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Campaign</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Campaign</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Campaign</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Campaign</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Campaign</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Campaign</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Campaign</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Campaign</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Campaign</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Campaign</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Campaign</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Campaign</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Campaign</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Campaign</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Campaign</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Campaign</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Campaign</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Campaign</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+
+              <a class="sp-menu-item sp-block">
+                <div class="sp-ellipsis sp-float-left" style="max-width: calc(100% - 60px)">Campaign</div>
+                <i class="sp-color-muted sp-inline-icon-arrow-right sp-float-right"></i>
+                <i class="sp-inline-icon-data sp-float-right sp-margin-right-1" style="color: white"></i>
+                <i class="sp-inline-icon-settings sp-float-right sp-margin-right-1" style="color: white"></i>
+              </a>
+              
+            </div>
+          </div>
+          <div style="width: 1px" class="sp-bg-overlay-dark-4"></div>
+          <div style="flex: 1; position: relative; flex-direction: column; max-width: 33.3%" class="sp-flex">
+            
+
+            <div class="sp-container-dark">
+              
+
+              <!-- <div class="sp-padding-left-1 sp-padding-top-1">
+                <span class="sp-label">Browsing by </span>
+                <select class="sp-minimal sp-label" style="width: calc(100% - 105px);">
+                  <option value="item-1">Advertiser</option>
+                  <option value="item-2">Label</option>
+                </select>
+                <label></label>
+              </div> -->
+
+                <div class="sp-padding-horizontal-2 sp-padding-vertical-1" style="position: relative;">
+                  <div class="sp-selector" style="display: block;">
+                      <input readonly="" class="sp-minimal sp-selector-trigger sp-label" type="text" value="Show All" style="width: 100%">
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-state-active">All</a>
+                          <a class="sp-menu-item">Creatives</a>
+                          <a class="sp-menu-item">Reports</a>
+                          <a class="sp-menu-item">Tags</a>
+                          <a class="sp-menu-item">Templates</a>
+                          <a class="sp-menu-item">Formats</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+               <div class="sp-padding-horizontal-2 sp-padding-vertical-1 sp-bg-overlay-light-1" style="position: relative;">
+                <input type="search" class="sp-small sp-rounded" placeholder="Search All" style="width: 100%"/>
+                
+              </div>
+
+            </div>
+            <div class="sp-menu" style="overflow-y: auto">
+              <div class="sp-menu-header">Creatives
+                <button class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-plus sp-float-right sp-margin-right-1 sp-small" style="margin-top: -6px"></button>
+                <button class="sp-minimal sp-simple-icon sp-primary sp-icon-list-detailed sp-float-right sp-margin-right-1 sp-small" style="margin-top: -6px">List</button>
+                <button class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-float-right sp-margin-right-1 sp-small" style="margin-top: -6px">Run Report</button>
+              </div>
+            
+
+              <style>
+              .sp-results-item {
+                position: relative;
+                left: 0;
+              }
+
+              .sp-results-item-overlay, .sp-results-item-content {
+                transform: translateX(0);
+                transition: 0.5s ease transform;
+              }
+
+              .sp-results-item:focus {
+                background-color: #00C3DC;
+              }
+
+              .sp-results-item:focus .sp-results-item-overlay {
+                transform: translateX(-100%);
+              }
+
+              .sp-results-item:focus .sp-results-item-content {
+                transform: translateX(-90%);
+              }
+
+              .sp-results-item .sp-results-item-overlay {
+                position: absolute;
+                top: 0;
+                left: 100%;
+                width: 90%;
+                bottom: 0;
+                color: white;
+              }
+
+              .sp-results-item .sp-results-item-overlay .sp-results-item-overlay-action {
+                text-align: center;
+              }
+
+              .sp-results-item .sp-results-item-overlay .sp-results-item-overlay-action:hover {
+                color: #00C3DC;
+              }
+
+              </style>
+
+              <a class="sp-results-item sp-menu-item sp-block" tabindex="0">
+                <div class="sp-results-item-content">
+                  <div class="sp-width-4 sp-height-3 sp-float-left sp-margin-right-1 sp-border-base" style="position: relative">
+                    <div style="width: 100%;height: 100%;position: absolute;opacity:0.15;background-size: 10px;
+      background-image: url(../../img/checker.png);top:0;left:0"></div>
+                    <div style="width: 90%;height: 90%;position: absolute;top:5%;left:5%;background-repeat: no-repeat; background-position: center center; background-size: contain;background-image: url(https://serve.specless.tech/creative/1/VfGcQK/0011/snapshots/primary-panel.png)"></div>
+                  </div>
+                  <div class="sp-float-left" style="width: calc(100% - 6.7rem);">
+                    <div class="sp-ellipsis sp-small">Creative Name Goes Here</div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base sp-color-muted">sa72hd | Template Name</div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base sp-color-muted"><i class="sp-inline-icon-status sp-margin-right-1"></i><span>Idle</span></div>
+                  </div>
+                </div>
+                <div class="sp-results-item-overlay sp-container-dark sp-input">
+                    <div class="sp-row sp-small">
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-eye sp-margin-right-1"></i>Preview</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-info sp-margin-right-1"></i>Overview</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-settings sp-margin-right-1"></i>Settings</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-paper-plane sp-margin-right-1"></i>Publish</div>
+                    </div>
+                    <div class="sp-row sp-small">
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-metadata sp-margin-right-1"></i>Reports</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-copy sp-margin-right-1"></i>Duplicate</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-export sp-margin-right-1"></i>Move</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-trash sp-margin-right-1"></i>Delete</div>
+                    </div>
+                </div>
+              </a>
+
+
+              <a class="sp-results-item sp-menu-item sp-block" tabindex="0">
+                <div class="sp-results-item-content">
+                  <div class="sp-width-4 sp-height-3 sp-float-left sp-margin-right-1 sp-border-base" style="position: relative">
+                    <div style="width: 100%;height: 100%;position: absolute;opacity:0.15;background-size: 10px;
+      background-image: url(../../img/checker.png);top:0;left:0"></div>
+                    <div style="width: 90%;height: 90%;position: absolute;top:5%;left:5%;background-repeat: no-repeat; background-position: center center; background-size: contain;background-image: url(https://serve.specless.tech/creative/1/VfGcQK/0011/snapshots/primary-panel.png)"></div>
+                  </div>
+                  <div class="sp-float-left" style="width: calc(100% - 6.7rem);">
+                    <div class="sp-ellipsis sp-small">Creative Name Goes Here</div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base sp-color-muted">sa72hd | Template Name</div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base sp-color-muted"><i class="sp-inline-icon-status sp-margin-right-1"></i><span>Idle</span></div>
+                  </div>
+                </div>
+                <div class="sp-results-item-overlay sp-container-dark sp-input">
+                    <div class="sp-row sp-small">
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-eye sp-margin-right-1"></i>Preview</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-info sp-margin-right-1"></i>Overview</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-settings sp-margin-right-1"></i>Settings</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-paper-plane sp-margin-right-1"></i>Publish</div>
+                    </div>
+                    <div class="sp-row sp-small">
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-metadata sp-margin-right-1"></i>Reports</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-copy sp-margin-right-1"></i>Duplicate</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-export sp-margin-right-1"></i>Move</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-trash sp-margin-right-1"></i>Delete</div>
+                    </div>
+                </div>
+              </a>
+
+
+              <a class="sp-results-item sp-menu-item sp-block" tabindex="0">
+                <div class="sp-results-item-content">
+                  <div class="sp-width-4 sp-height-3 sp-float-left sp-margin-right-1 sp-border-base" style="position: relative">
+                    <div style="width: 100%;height: 100%;position: absolute;opacity:0.15;background-size: 10px;
+      background-image: url(../../img/checker.png);top:0;left:0"></div>
+                    <div style="width: 90%;height: 90%;position: absolute;top:5%;left:5%;background-repeat: no-repeat; background-position: center center; background-size: contain;background-image: url(https://serve.specless.tech/creative/1/VfGcQK/0011/snapshots/primary-panel.png)"></div>
+                  </div>
+                  <div class="sp-float-left" style="width: calc(100% - 6.7rem);">
+                    <div class="sp-ellipsis sp-small">Creative Name Goes Here</div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base sp-color-muted">sa72hd | Template Name</div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base sp-color-muted"><i class="sp-inline-icon-status sp-margin-right-1"></i><span>Idle</span></div>
+                  </div>
+                </div>
+                <div class="sp-results-item-overlay sp-container-dark sp-input">
+                    <div class="sp-row sp-small">
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-eye sp-margin-right-1"></i>Preview</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-info sp-margin-right-1"></i>Overview</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-settings sp-margin-right-1"></i>Settings</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-paper-plane sp-margin-right-1"></i>Publish</div>
+                    </div>
+                    <div class="sp-row sp-small">
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-metadata sp-margin-right-1"></i>Reports</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-copy sp-margin-right-1"></i>Duplicate</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-export sp-margin-right-1"></i>Move</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-trash sp-margin-right-1"></i>Delete</div>
+                    </div>
+                </div>
+              </a>
+
+
+              <div class="sp-menu-header">Reports
+                <button class="sp-minimal sp-simple-icon sp-primary sp-icon-circle-plus sp-float-right sp-margin-right-1 sp-small" style="margin-top: -6px"></button>
+                <button class="sp-minimal sp-simple-icon sp-primary sp-icon-list-detailed sp-float-right sp-margin-right-1 sp-small" style="margin-top: -6px">List</button>
+              </div>
+
+
+              <a class="sp-results-item sp-menu-item sp-block" tabindex="0">
+                <div class="sp-results-item-content">
+                  
+                  <div class="sp-float-left">
+                    <div class="sp-ellipsis sp-small">Report Name Goes Here</div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base sp-color-muted">sa72hd</div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base sp-color-muted"><i class="sp-inline-icon-status sp-margin-right-1"></i><span>Idle</span></div>
+                  </div>
+                </div>
+                <div class="sp-results-item-overlay sp-container-dark sp-input">
+                    <div class="sp-row sp-small">
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-data sp-margin-right-1"></i>View</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-settings sp-margin-right-1"></i>Settings</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-copy sp-margin-right-1"></i>Duplicate</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-trash sp-margin-right-1"></i>Delete</div>
+                    </div>
+                </div>
+              </a>
+
+
+              <a class="sp-results-item sp-menu-item sp-block" tabindex="0">
+                <div class="sp-results-item-content">
+                  
+                  <div class="sp-float-left">
+                    <div class="sp-ellipsis sp-small">Report Name Goes Here</div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base sp-color-muted">sa72hd</div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base sp-color-muted"><i class="sp-inline-icon-status sp-margin-right-1"></i><span>Idle</span></div>
+                  </div>
+                </div>
+                <div class="sp-results-item-overlay sp-container-dark sp-input">
+                    <div class="sp-row sp-small">
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-data sp-margin-right-1"></i>View</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-settings sp-margin-right-1"></i>Settings</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-copy sp-margin-right-1"></i>Duplicate</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-trash sp-margin-right-1"></i>Delete</div>
+                    </div>
+                </div>
+              </a>
+
+
+              <a class="sp-results-item sp-menu-item sp-block" tabindex="0">
+                <div class="sp-results-item-content">
+                  
+                  <div class="sp-float-left">
+                    <div class="sp-ellipsis sp-small">Report Name Goes Here</div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base sp-color-muted">sa72hd</div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base sp-color-muted"><i class="sp-inline-icon-status sp-margin-right-1"></i><span>Idle</span></div>
+                  </div>
+                </div>
+                <div class="sp-results-item-overlay sp-container-dark sp-input">
+                    <div class="sp-row sp-small">
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-data sp-margin-right-1"></i>View</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-settings sp-margin-right-1"></i>Settings</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-copy sp-margin-right-1"></i>Duplicate</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-trash sp-margin-right-1"></i>Delete</div>
+                    </div>
+                </div>
+              </a>
+
+              <div class="sp-menu-header">Instances/Tags
+                <button class="sp-minimal sp-simple-icon sp-primary sp-icon-download sp-float-right sp-margin-right-1 sp-small" style="margin-top: -6px">Download</button>
+                <button class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-float-right sp-margin-right-1 sp-small" style="margin-top: -6px">Run Report</button>
+              </div>
+
+
+              <a class="sp-results-item sp-menu-item sp-block" tabindex="0">
+                <div class="sp-results-item-content">
+                  
+                  <div class="sp-float-left">
+                    <div class="sp-ellipsis sp-small">Tag Name Goes Here</div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base">Creative: Creative Name Goes Here</div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base sp-color-muted">sa72hdfdsfa | Format Name</div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base sp-color-muted"><i class="sp-inline-icon-status sp-margin-right-1"></i><span>Idle</span></div>
+                  </div>
+                </div>
+                <div class="sp-results-item-overlay sp-container-dark sp-input">
+                    <div class="sp-row sp-small">
+                      <div class="sp-col sp-span-4 sp-results-item-overlay-action"><i class="sp-inline-icon-settings sp-margin-right-1"></i>Settings</div>
+                      <div class="sp-col sp-span-4 sp-results-item-overlay-action"><i class="sp-inline-icon-eye sp-margin-right-1"></i>Preview</div>
+                      <div class="sp-col sp-span-4 sp-results-item-overlay-action"><i class="sp-inline-icon-data sp-margin-right-1"></i>Run Report</div>
+                    </div>
+                    <div class="sp-row sp-small">
+                      <div class="sp-col sp-span-4 sp-results-item-overlay-action"><i class="sp-inline-icon-download sp-margin-right-1"></i>Download</div>
+                      <div class="sp-col sp-span-4 sp-results-item-overlay-action"><i class="sp-inline-icon-copy sp-margin-right-1"></i>Duplicate</div>
+                      <div class="sp-col sp-span-4 sp-results-item-overlay-action"><i class="sp-inline-icon-trash sp-margin-right-1"></i>Delete</div>
+                      <!-- <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-eye sp-margin-right-1"></i>Preview</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-data sp-margin-right-1"></i>Run Report</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-copy sp-margin-right-1"></i>Duplicate</div> -->
+                    </div>
+                </div>
+              </a>
+
+              <a class="sp-results-item sp-menu-item sp-block" tabindex="0">
+                <div class="sp-results-item-content">
+                  
+                  <div class="sp-float-left">
+                    <div class="sp-ellipsis sp-small">Tag Name Goes Here</div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base">Creative: Creative Name Goes Here</div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base sp-color-muted">sa72hdfdsfa | Format Name</div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base sp-color-muted"><i class="sp-inline-icon-status sp-margin-right-1"></i><span>Idle</span></div>
+                  </div>
+                </div>
+                <div class="sp-results-item-overlay sp-container-dark sp-input">
+                    <div class="sp-row sp-small">
+                      <div class="sp-col sp-span-4 sp-results-item-overlay-action"><i class="sp-inline-icon-settings sp-margin-right-1"></i>Settings</div>
+                      <div class="sp-col sp-span-4 sp-results-item-overlay-action"><i class="sp-inline-icon-eye sp-margin-right-1"></i>Preview</div>
+                      <div class="sp-col sp-span-4 sp-results-item-overlay-action"><i class="sp-inline-icon-data sp-margin-right-1"></i>Run Report</div>
+                    </div>
+                    <div class="sp-row sp-small">
+                      <div class="sp-col sp-span-4 sp-results-item-overlay-action"><i class="sp-inline-icon-download sp-margin-right-1"></i>Download</div>
+                      <div class="sp-col sp-span-4 sp-results-item-overlay-action"><i class="sp-inline-icon-copy sp-margin-right-1"></i>Duplicate</div>
+                      <div class="sp-col sp-span-4 sp-results-item-overlay-action"><i class="sp-inline-icon-trash sp-margin-right-1"></i>Delete</div>
+                      <!-- <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-eye sp-margin-right-1"></i>Preview</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-data sp-margin-right-1"></i>Run Report</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-copy sp-margin-right-1"></i>Duplicate</div> -->
+                    </div>
+                </div>
+              </a>
+
+              <a class="sp-results-item sp-menu-item sp-block" tabindex="0">
+                <div class="sp-results-item-content">
+                  
+                  <div class="sp-float-left">
+                    <div class="sp-ellipsis sp-small">Tag Name Goes Here</div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base">Creative: Creative Name Goes Here</div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base sp-color-muted">sa72hdfdsfa | Format Name</div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base sp-color-muted"><i class="sp-inline-icon-status sp-margin-right-1"></i><span>Idle</span></div>
+                  </div>
+                </div>
+                <div class="sp-results-item-overlay sp-container-dark sp-input">
+                    <div class="sp-row sp-small">
+                      <div class="sp-col sp-span-4 sp-results-item-overlay-action"><i class="sp-inline-icon-settings sp-margin-right-1"></i>Settings</div>
+                      <div class="sp-col sp-span-4 sp-results-item-overlay-action"><i class="sp-inline-icon-eye sp-margin-right-1"></i>Preview</div>
+                      <div class="sp-col sp-span-4 sp-results-item-overlay-action"><i class="sp-inline-icon-data sp-margin-right-1"></i>Run Report</div>
+                    </div>
+                    <div class="sp-row sp-small">
+                      <div class="sp-col sp-span-4 sp-results-item-overlay-action"><i class="sp-inline-icon-download sp-margin-right-1"></i>Download</div>
+                      <div class="sp-col sp-span-4 sp-results-item-overlay-action"><i class="sp-inline-icon-copy sp-margin-right-1"></i>Duplicate</div>
+                      <div class="sp-col sp-span-4 sp-results-item-overlay-action"><i class="sp-inline-icon-trash sp-margin-right-1"></i>Delete</div>
+                      <!-- <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-eye sp-margin-right-1"></i>Preview</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-data sp-margin-right-1"></i>Run Report</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-copy sp-margin-right-1"></i>Duplicate</div> -->
+                    </div>
+                </div>
+              </a>
+
+              <div class="sp-menu-header">Templates
+                
+                <button class="sp-minimal sp-simple-icon sp-primary sp-icon-list-detailed sp-float-right sp-margin-right-1 sp-small" style="margin-top: -6px">List</button>
+                <button class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-float-right sp-margin-right-1 sp-small" style="margin-top: -6px">Run Report</button>
+              </div>
+
+
+              <a class="sp-results-item sp-menu-item sp-block" tabindex="0">
+                <div class="sp-results-item-content">
+                  <div class="sp-width-4 sp-height-3 sp-float-left sp-margin-right-1 sp-border-base" style="position: relative">
+                    <div style="width: 100%;height: 100%;position: absolute;opacity:0.15;background-size: 10px;
+      background-image: url(../../img/checker.png);top:0;left:0"></div>
+                    <div style="width: 90%;height: 90%;position: absolute;top:5%;left:5%;background-repeat: no-repeat; background-position: center center; background-size: contain;background-image: url(https://serve.specless.tech/creative/1/VfGcQK/0011/snapshots/primary-panel.png)"></div>
+                  </div>
+                  <div class="sp-float-left" style="width: calc(100% - 6.7rem);">
+                    <div class="sp-ellipsis sp-small">Template Name Goes Here</div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base sp-color-muted">sa72hd</div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base sp-color-muted"><i class="sp-inline-icon-status sp-margin-right-1"></i><span>Idle</span></div>
+                  </div>
+                </div>
+                <div class="sp-results-item-overlay sp-container-dark sp-input">
+                    <div class="sp-row sp-small">
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-eye sp-margin-right-1"></i>Preview</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-info sp-margin-right-1"></i>Overview</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-data sp-margin-right-1"></i>Run Report</div>
+                    </div>
+                    <div class="sp-row sp-small">
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-circle-plus sp-margin-right-1"></i>Creative</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-copy sp-margin-right-1"></i>Duplicate</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-export sp-margin-right-1"></i>Move</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-trash sp-margin-right-1"></i>Delete</div>
+                    </div>
+                </div>
+              </a>
+
+              <a class="sp-results-item sp-menu-item sp-block" tabindex="0">
+                <div class="sp-results-item-content">
+                  <div class="sp-width-4 sp-height-3 sp-float-left sp-margin-right-1 sp-border-base" style="position: relative">
+                    <div style="width: 100%;height: 100%;position: absolute;opacity:0.15;background-size: 10px;
+      background-image: url(../../img/checker.png);top:0;left:0"></div>
+                    <div style="width: 90%;height: 90%;position: absolute;top:5%;left:5%;background-repeat: no-repeat; background-position: center center; background-size: contain;background-image: url(https://serve.specless.tech/creative/1/VfGcQK/0011/snapshots/primary-panel.png)"></div>
+                  </div>
+                  <div class="sp-float-left" style="width: calc(100% - 6.7rem);">
+                    <div class="sp-ellipsis sp-small">Template Name Goes Here</div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base sp-color-muted">sa72hd</div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base sp-color-muted"><i class="sp-inline-icon-status sp-margin-right-1"></i><span>Idle</span></div>
+                  </div>
+                </div>
+                <div class="sp-results-item-overlay sp-container-dark sp-input">
+                    <div class="sp-row sp-small">
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-eye sp-margin-right-1"></i>Preview</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-info sp-margin-right-1"></i>Overview</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-data sp-margin-right-1"></i>Run Report</div>
+                    </div>
+                    <div class="sp-row sp-small">
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-circle-plus sp-margin-right-1"></i>Creative</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-copy sp-margin-right-1"></i>Duplicate</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-export sp-margin-right-1"></i>Move</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-trash sp-margin-right-1"></i>Delete</div>
+                    </div>
+                </div>
+              </a>
+
+
+              <div class="sp-menu-header">Formats
+                
+                <button class="sp-minimal sp-simple-icon sp-primary sp-icon-list-detailed sp-float-right sp-margin-right-1 sp-small" style="margin-top: -6px">List</button>
+                <button class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-float-right sp-margin-right-1 sp-small" style="margin-top: -6px">Run Report</button>
+              </div>
+
+              <a class="sp-results-item sp-menu-item sp-block" tabindex="0">
+                <div class="sp-results-item-content">
+                  <!-- <div class="sp-width-4 sp-height-3 sp-float-left sp-margin-right-1 sp-border-base" style="position: relative">
+                    <div style="width: 100%;height: 100%;position: absolute;opacity:0.15;background-size: 10px;
+      background-image: url(../../img/checker.png);top:0;left:0"></div>
+                    <div style="width: 90%;height: 90%;position: absolute;top:5%;left:5%;background-repeat: no-repeat; background-position: center center; background-size: contain;background-image: url(https://serve.specless.tech/creative/1/VfGcQK/0011/snapshots/primary-panel.png)"></div>
+                  </div> -->
+                  <div class="sp-float-left">
+                    <div class="sp-ellipsis sp-small">This is a very very long format name that should eventually overflow the content area </div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base sp-color-muted">sa72hd</div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base sp-color-muted"><i class="sp-inline-icon-status sp-margin-right-1"></i><span>Idle</span></div>
+                  </div>
+                </div>
+                <div class="sp-results-item-overlay sp-container-dark sp-input">
+                    <div class="sp-row sp-small">
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-info sp-margin-right-1"></i>Overview</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-data sp-margin-right-1"></i>Run Report</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-copy sp-margin-right-1"></i>Duplicate</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-export sp-margin-right-1"></i>Move</div>
+                    </div>
+                    
+                </div>
+              </a>
+
+              <a class="sp-results-item sp-menu-item sp-block" tabindex="0">
+                <div class="sp-results-item-content">
+                  <!-- <div class="sp-width-4 sp-height-3 sp-float-left sp-margin-right-1 sp-border-base" style="position: relative">
+                    <div style="width: 100%;height: 100%;position: absolute;opacity:0.15;background-size: 10px;
+      background-image: url(../../img/checker.png);top:0;left:0"></div>
+                    <div style="width: 90%;height: 90%;position: absolute;top:5%;left:5%;background-repeat: no-repeat; background-position: center center; background-size: contain;background-image: url(https://serve.specless.tech/creative/1/VfGcQK/0011/snapshots/primary-panel.png)"></div>
+                  </div> -->
+                  <div class="sp-float-left">
+                    <div class="sp-ellipsis sp-small">Format Name Goes Here</div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base sp-color-muted">sa72hd</div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base sp-color-muted"><i class="sp-inline-icon-status sp-margin-right-1"></i><span>Idle</span></div>
+                  </div>
+                </div>
+                <div class="sp-results-item-overlay sp-container-dark sp-input">
+                    <div class="sp-row sp-small">
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-info sp-margin-right-1"></i>Overview</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-data sp-margin-right-1"></i>Run Report</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-copy sp-margin-right-1"></i>Duplicate</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-export sp-margin-right-1"></i>Move</div>
+                    </div>
+                    
+                </div>
+              </a>
+
+              <a class="sp-results-item sp-menu-item sp-block" tabindex="0">
+                <div class="sp-results-item-content">
+                  <!-- <div class="sp-width-4 sp-height-3 sp-float-left sp-margin-right-1 sp-border-base" style="position: relative">
+                    <div style="width: 100%;height: 100%;position: absolute;opacity:0.15;background-size: 10px;
+      background-image: url(../../img/checker.png);top:0;left:0"></div>
+                    <div style="width: 90%;height: 90%;position: absolute;top:5%;left:5%;background-repeat: no-repeat; background-position: center center; background-size: contain;background-image: url(https://serve.specless.tech/creative/1/VfGcQK/0011/snapshots/primary-panel.png)"></div>
+                  </div> -->
+                  <div class="sp-float-left">
+                    <div class="sp-ellipsis sp-small">Format Name Goes Here</div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base sp-color-muted">sa72hd</div>
+                    <div class="sp-ellipsis sp-small sp-font-weight-base sp-color-muted"><i class="sp-inline-icon-status sp-margin-right-1"></i><span>Idle</span></div>
+                  </div>
+                </div>
+                <div class="sp-results-item-overlay sp-container-dark sp-input">
+                    <div class="sp-row sp-small">
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-info sp-margin-right-1"></i>Overview</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-data sp-margin-right-1"></i>Run Report</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-copy sp-margin-right-1"></i>Duplicate</div>
+                      <div class="sp-col sp-span-3 sp-results-item-overlay-action"><i class="sp-inline-icon-export sp-margin-right-1"></i>Move</div>
+                    </div>
+                    
+                </div>
+              </a>
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <script>
+    var grid = document.getElementById('grid');
+    var list = document.getElementById('list');
+    var target = document.getElementById('list-toggle');
+
+    grid.addEventListener('click', function() {
+      target.setAttribute('class', 'sp-row sp-padding-top-3');
+      grid.setAttribute('class', 'sp-minimal sp-simple-icon sp-primary sp-icon-grid sp-state-active');
+      list.setAttribute('class', 'sp-minimal sp-simple-icon sp-primary sp-icon-list');
+    });
+
+
+    list.addEventListener('click', function() {
+      target.setAttribute('class', 'sp-row sp-padding-top-3 sp-list');
+      grid.setAttribute('class', 'sp-minimal sp-simple-icon sp-primary sp-icon-grid');
+      list.setAttribute('class', 'sp-minimal sp-simple-icon sp-primary sp-icon-list sp-state-active');
+    });
+
+
+      
+    </script>
+
+
+
+<script>
+
+var initHelpBeacon = function(userData) {
+
+  window.helpSearch = function (param) {
+    window.HS = null;
+    !function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!0,baseUrl:"//speclessdocs.helpscoutdocs.com/"},contact:{enabled:!0,formId:"eb6b3481-c409-11e7-b466-0ec85169275a"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});
+    HS.beacon.config({
+      color: '#00C3DC',
+      modal: true,
+      instructions: "Couldn't find what you were looking for? Let us know how we can help."
+    });
+    HS.beacon.ready(function() {
+      HS.beacon.identify(userData);
+      this.open();
+      HS.beacon.search(param);
+    });
+  }
+
+
+  window.helpArticle = function (articleId) {
+    window.HS = null;
+    !function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!0,baseUrl:"//speclessdocs.helpscoutdocs.com/"},contact:{enabled:!0,formId:"eb6b3481-c409-11e7-b466-0ec85169275a"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});
+    HS.beacon.config({
+      color: '#00C3DC',
+      modal: true,
+      instructions: "Couldn't find what you were looking for? Let us know how we can help."
+    });
+    HS.beacon.ready(function() {
+      HS.beacon.identify(userData);
+      this.open();
+      HS.beacon.show(articleId);
+    });
+  }
+
+  window.helpContact = function () {
+    window.HS = null;
+    !function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!1,baseUrl:""},contact:{enabled:!0,formId:"febd2c5c-b299-11e7-b466-0ec85169275a"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});
+    HS.beacon.config({
+      color: '#00C3DC',
+      modal: true,
+      instructions: "Let us know how we can help!"
+    });
+    HS.beacon.ready(function() {
+      HS.beacon.identify(userData);
+      HS.beacon.prefill({
+        subject: 'App Support Request',
+        topic: 'app-support'
+      });
+      this.open();
+    });
+  }
+
+  window.helpBug = function () {
+    window.HS = null;
+    !function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!1,baseUrl:""},contact:{enabled:!0,formId:"febd2c5c-b299-11e7-b466-0ec85169275a"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});
+    HS.beacon.config({
+      color: '#00C3DC',
+      modal: true,
+      instructions: "Please describe what you were doing in the app and the issue you are seeing."
+    });
+    HS.beacon.ready(function() {
+      HS.beacon.identify(userData);
+      HS.beacon.prefill({
+        subject: 'Bug Report',
+        topic: 'bugs'
+      });
+      this.open();
+    });
+  }
+}
+
+initHelpBeacon({
+  name: "Test User",
+  email: "test@testing.com",
+  key1: "value",
+  key2: "value",
+  key3: "value"
+});
+
+</script>
+</body>
+</html>

@@ -8448,6 +8448,18 @@ blockquote {
     border-right-width: 3px;
     border-right-style: solid; }
 
+.sp-query-builder-row-filters:after {
+  content: '';
+  width: 1px;
+  height: calc(100% - 26px);
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.12);
+  margin-top: 13.5px;
+  left: -1px; }
+
+.sp-data-table-empty .ReactVirtualized__Grid.ReactVirtualized__Table__Grid {
+  will-change: unset !important; }
+
 .sp-data-table {
   border-collapse: collapse;
   border-spacing: 0; }

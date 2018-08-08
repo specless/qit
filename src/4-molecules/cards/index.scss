@@ -9,7 +9,7 @@
 
 	.sp-card-thumbnail, .sp-card-hover-actions {
 		width: 100%;
-    	padding-top: 50%; 
+    	padding-top: 50%;
     	position: relative;
     	@include sp-shadow(low, inset 0 0 .4em .07em);
     	@include sp-shape(rectangle);
@@ -153,7 +153,11 @@
 			visibility: visible;
 			opacity: 1;
 			padding: 16px;
-		}
+    }
+
+    .sp-card-content {
+      display: none;
+    }
 
 	}
 

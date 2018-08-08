@@ -1,130 +1,145 @@
 .sp-tooltip {
-	position: relative;
+  position: relative;
 
-	.sp-tooltip-overlay {
-		@include sp-font-size(small);
-		@include sp-padding(1, vertical);
-		@include sp-padding(2, horizontal);
-		@include sp-overlay;
-		@include sp-shape(rectangle);
-		display: inline-block;
-		position: absolute;
-		font-weight: 600;
-		pointer-events: none;
-		opacity: 0;
-		transition: 0.5s ease opacity;
-		transition-delay: 0.5s;
-		top: 60%;
-		left: 50%;
-		transform: translateX(-50%);
-		//overflow: hidden;
-    	white-space: nowrap;
-    	box-sizing: border-box;
-    	z-index: 1000;
-    	min-width: 38.59px;
-    	//min-height: 38.59px;
+  .sp-tooltip-overlay {
+    @include sp-font-size(small);
+    @include sp-padding(1, vertical);
+    @include sp-padding(2, horizontal);
+    @include sp-overlay;
+    @include sp-shape(rectangle);
+    display: inline-block;
+    position: absolute;
+    font-weight: 600;
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.5s ease opacity;
+    transition-delay: 0.5s;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    //overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    z-index: 1000;
+    min-width: 38.59px;
+    //min-height: 38.59px;
 
-    	@include sp-primary {
-		    @include sp-overlay(primary);
-		    color: darken($sp-color-primary, 20%);
-		}
-		@include sp-success {
-		    @include sp-overlay(success);
-		    color: darken($sp-color-success, 20%);
-		    
-		}
-		@include sp-warning {
-		    @include sp-overlay(warning);
-		    color: darken($sp-color-warning, 20%);
-		    
-		}
-		@include sp-danger {
-		    @include sp-overlay(danger);
-		    color: darken($sp-color-danger, 20%);
-		    
-		}
-		@include sp-alt-one {
-		    @include sp-overlay(alt-one)
-		}
-		@include sp-alt-two {
-		    @include sp-overlay(alt-two)
-		}
+    @include sp-primary {
+      @include sp-overlay(primary);
+      color: darken($sp-color-primary, 20%);
+    }
+    @include sp-success {
+      @include sp-overlay(success);
+      color: darken($sp-color-success, 20%);
 
-    	&::before {
-    		display: none;
-    		content: "";
-    		background-color: inherit;
-    		background-image: inherit;
-    		width: 12px;
-    		height: 12px;
-    		position: absolute;
-    		top: 0;
-    		left: 50%;
-    		@include sp-shadow(low, 0 0 .4em .27em);
-    		clip-path: polygon(200% -100%, -100% -100%, -100% 200%);
-    		transform: translate(-50%, -44%) rotate(45deg);
-    	}
-	}
+    }
+    @include sp-warning {
+      @include sp-overlay(warning);
+      color: darken($sp-color-warning, 20%);
 
-	&.sp-tooltip-below {
-		.sp-tooltip-overlay {
-			top: 100%;
-			transform: translate(-50%, 10px);
-		}
-		.sp-tooltip-overlay::before {
-			display: inline-block;
-		}
-	}
+    }
+    @include sp-danger {
+      @include sp-overlay(danger);
+      color: darken($sp-color-danger, 20%);
 
-	&.sp-tooltip-above {
-		.sp-tooltip-overlay {
-			top: auto;
-			bottom: 100%;
-			transform: translate(-50%, -10px);
-		}
-		.sp-tooltip-overlay::before {
-			display: inline-block;
-			top: auto;
-			bottom: 0;
-			transform: translate(-50%, 44%) rotate(225deg);
-		}
-	}
+    }
+    @include sp-alt-one {
+      @include sp-overlay(alt-one)
+    }
+    @include sp-alt-two {
+      @include sp-overlay(alt-two)
+    }
 
-	&.sp-tooltip-right {
-		.sp-tooltip-overlay {
-			top: 50%;
-			left: 100%;
-			transform: translate(10px, -50%);
-		}
-		.sp-tooltip-overlay::before {
-			display: inline-block;
-			top: 50%;
-			left: 0;
-			transform: translate(-44%, -50%) rotate(-45deg);
-		}
-	}
+    &::before {
+      display: none;
+      content: "";
+      background-color: inherit;
+      background-image: inherit;
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      @include sp-shadow(low, 0 0 .4em .27em);
+      clip-path: polygon(200% -100%, -100% -100%, -100% 200%);
+      transform: translate(-50%, -44%) rotate(45deg);
+    }
+  }
 
-	&.sp-tooltip-left {
-		.sp-tooltip-overlay {
-			top: 50%;
-			left: auto;
-			right: 100%;
-			transform: translate(-10px, -50%);
-		}
-		.sp-tooltip-overlay::before {
-			top: 50%;
-			left: auto;
-			right: 0;
-			transform: translate(44%, -50%) rotate(135deg);
-			display: inline-block;
-		}
-	}
+  &.sp-tooltip-below {
+    .sp-tooltip-overlay {
+      top: 100%;
+      transform: translate(-50%, 10px);
+    }
+    .sp-tooltip-overlay::before {
+      display: inline-block;
+    }
+  }
 
-	@include sp-state(hover) {
-		.sp-tooltip-overlay {
-			//display: block;
-			opacity: 0.85;
+  &.sp-tooltip-above {
+    .sp-tooltip-overlay {
+      top: auto;
+      bottom: 100%;
+      transform: translate(-50%, -10px);
+    }
+    .sp-tooltip-overlay::before {
+      display: inline-block;
+      top: auto;
+      bottom: 0;
+      transform: translate(-50%, 44%) rotate(225deg);
+    }
+  }
 
-		}
-	}
+  &.sp-tooltip-right {
+    .sp-tooltip-overlay {
+      top: 50%;
+      left: 100%;
+      transform: translate(10px, -50%);
+    }
+    .sp-tooltip-overlay::before {
+      display: inline-block;
+      top: 50%;
+      left: 0;
+      transform: translate(-44%, -50%) rotate(-45deg);
+    }
+  }
+
+  &.sp-tooltip-left {
+    .sp-tooltip-overlay {
+      top: 50%;
+      left: auto;
+      right: 100%;
+      transform: translate(-10px, -50%);
+    }
+    .sp-tooltip-overlay::before {
+      top: 50%;
+      left: auto;
+      right: 0;
+      transform: translate(44%, -50%) rotate(135deg);
+      display: inline-block;
+    }
+  }
+  @include sp-state(hover) {
+    .sp-tooltip-overlay {
+      //display: block;
+      opacity: 0.85;
+
+    }
+  }
+
+  &.sp-no-auto-hover {
+    &:hover {
+      .sp-tooltip-overlay {
+        //display: block;
+        opacity: 0;
+      }
+    }
+    &.sp-state-hover {
+      .sp-tooltip-overlay {
+        //display: block;
+        opacity: 0.85;
+
+      }
+    }
+  }
 }

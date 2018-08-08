@@ -1,4 +1,5 @@
 /////////////////////////
+/////////////////////////
 //                     //
 //       family        //
 //                     //
@@ -168,14 +169,11 @@
   }
 }
 
-
 /////////////////////////
 //                     //
 //      headings       //
 //                     //
 /////////////////////////
-
-
 
 .sp-h1 {
   @include sp-font-header(h1);
@@ -227,4 +225,20 @@
 
 .sp-label {
   @include sp-font-label;
+}
+
+.sp-line-through {
+  text-decoration: line-through !important;
+}
+
+/////////////////////////
+//                     //
+//        utils        //
+//                     //
+/////////////////////////
+
+.sp-text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

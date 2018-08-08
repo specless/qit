@@ -1,17 +1,17 @@
-@mixin sp-shadow($level: '', $options: null) {
+@mixin sp-shadow($level: '', $options: null, $override: false) {
   // No box shadow
   @if ($level == 'none' or $level == '') {
-    box-shadow: none;
+    box-shadow: if($override, none !important, none);
   } @else {
     // Find appropiate shade and set box shadow to it
     $key: sp-shadow-#{$level};
     @if map-has-key($sp-shadow, $key) {
       $val: map-get($sp-shadow, $key);
-      box-shadow: $options $val;
+      box-shadow: if($override, $options $val !important, $options $val);
       @include sp-state-dark {
         // Go one step darker on dark backgrounds
         $val: map-get-next($sp-shadow, $key);
-        box-shadow: $options $val;
+        box-shadow: if($override, $options $val !important, $options $val);
       }
     } @else {
       @error '#{$key} does not exist in map: [$sp-shadow]';

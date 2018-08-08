@@ -105,6 +105,10 @@
   padding: 0.75em;
   box-sizing: border-box;
 
+  &.sp-fluid {
+    padding: 0;
+  }
+
   .sp-fluid & {
     max-width: none;
   }
@@ -123,12 +127,12 @@
   @for $i from 1 through 12 {
     &.sp-span-#{$i} {
       flex: none;
-      width: ($i / 12) * 100%
+      width: ($i / 12) * 100% !important;
     }
 
     &.sp-offset-#{$i} {
       flex: none;
-      margin-left: ($i / 12) * 100%
+      margin-left: ($i / 12) * 100% !important;
     }
   }
 }

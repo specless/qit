@@ -377,7 +377,7 @@
 	@include sp-padding(2, vertical);
 	@include sp-border(thin, solid, bottom);
 	opacity: 0.5;
-
+	pointer-events: none;
 	border-color: $sp-shade-dark-2;
 
 	@include sp-state(dark) {

@@ -1,14 +1,14 @@
-@mixin sp-color-helper($color, $attr, $root, $map, $special: '') {
+@mixin sp-color-helper($color, $attr, $root, $map, $special: '', $override: false) {
   @if ($color == 'transparent' or $color == transparent) {
-    #{$attr}: transparent;
+    #{$attr}: if($override, transparent !important, transparent);;
   } @else {
     $key: #{$root}-#{$color};
     @if (map-has-key($map, $key)) {
       $val: map-get($map, $key);
       @if $special == '' {
-        #{$attr}: $val;
+        #{$attr}: if($override, $val !important, $val);
       } @else if $special == linear-gradient {
-        #{$attr}: linear-gradient($val, $val);
+        #{$attr}: if($override, linear-gradient($val, $val) !important, linear-gradient($val, $val));
       }
     } @else {
       @error '#{$key} does not exist in #{$map}';
@@ -16,20 +16,20 @@
   }
 }
 
-@mixin sp-color($color, $attr) {
-  @include sp-color-helper($color, $attr, sp-color, $sp-color);
+@mixin sp-color($color, $attr, $override: false) {
+  @include sp-color-helper($color, $attr, sp-color, $sp-color, '', $override);
 }
 
-@mixin sp-color-overlay($level, $attr, $root, $map, $special) {
-  @include sp-color-helper($level, $attr, $root, $map, $special);
+@mixin sp-color-overlay($level, $attr, $root, $map, $special, $override: false) {
+  @include sp-color-helper($level, $attr, $root, $map, $special, $override);
 }
 
-@mixin sp-color-overlay-dark($level, $attr, $special: '') {
-  @include sp-color-overlay($level, $attr, sp-shade-dark, $sp-overlay-dark, $special);
+@mixin sp-color-overlay-dark($level, $attr, $special: '', $override: false) {
+  @include sp-color-overlay($level, $attr, sp-shade-dark, $sp-overlay-dark, $special, $override);
 }
 
-@mixin sp-color-overlay-light($level, $attr, $special: '') {
-  @include sp-color-overlay($level, $attr, sp-shade-light, $sp-overlay-light, $special);
+@mixin sp-color-overlay-light($level, $attr, $special: '', $override: false) {
+  @include sp-color-overlay($level, $attr, sp-shade-light, $sp-overlay-light, $special, $override);
 }
 
 /////////////////////////
@@ -38,48 +38,64 @@
 //                     //
 /////////////////////////
 
-@mixin sp-font-color($color: null) {
+@mixin sp-font-color($color: null, $override: false) {
+  $val: $color;
   @if ($color == inherit or $color == initial) {
-    color: $color;
+    $val: $color;
+    color: if($override, $val !important, $val);
   } @else if ($color == null or $color == base or $color == '') {
-    color: $sp-shade-dark-4;
+    $val: $sp-shade-dark-4;
+    color: if($override, $val !important, $val);
     @include sp-state-dark {
-      color: $sp-shade-light-4;
+      $val: $sp-shade-light-4;
+      color: if($override, $val !important, $val);
     }
   } @else if ($color == contrast) {
-    color: $sp-shade-dark-5;
+    $val: $sp-shade-dark-5;
+    color: if($override, $val !important, $val);
     @include sp-state-dark {
-      color: $sp-color-white;
+      $val: $sp-color-white;
+      color: if($override, $val !important, $val);
     }
   } @else if ($color == muted) {
-    color: $sp-shade-dark-3;
+    $val: $sp-shade-dark-3;
+    color: if($override, $val !important, $val);
     @include sp-state-dark {
-      color: $sp-shade-light-2;
+      $val: $sp-shade-light-2;
+      color: if($override, $val !important, $val);
     }
   } @else if ($color == success) {
-    color: darken($sp-color-success, 12%);
+    $val: darken($sp-color-success, 12%);
+    color: if($override, $val !important, $val);
     @include sp-state-dark {
-      color: $sp-color-success;
+      $val: $sp-color-success;
+      color: if($override, $val !important, $val);
     }
   } @else if ($color == primary) {
-    color: darken($sp-color-primary, 10%);
+    $val: darken($sp-color-primary, 10%);
+    color: if($override, $val !important, $val);
     @include sp-state-dark {
-      color: $sp-color-primary;
+      $val: $sp-color-primary;
+      color: if($override, $val !important, $val);
     }
   } @else if ($color == warning) {
-    color: darken($sp-color-warning, 10%);
+    $val: darken($sp-color-warning, 10%);
+    color: if($override, $val !important, $val);
     @include sp-state-dark {
-      color: $sp-color-warning;
+      $val: $sp-color-warning;
+      color: if($override, $val !important, $val);
     }
   } @else if ($color == danger) {
-    color: darken($sp-color-danger, 10%);
+    $val: darken($sp-color-danger, 10%);
+    color: if($override, $val !important, $val);
     @include sp-state-dark {
-      color: $sp-color-danger;
+      $val: $sp-color-danger;
+      color: if($override, $val !important, $val);
     }
   } @else {
     @if (map-has-key($sp-color, 'sp-color-#{$color}')) {
       $val: map-get($sp-color, 'sp-color-#{$color}');
-      color: $val;
+      color: if($override, $val !important, $val);
     }
   }
 }
@@ -90,20 +106,21 @@
 //                     //
 /////////////////////////
 
-@mixin sp-bg-color($color) {
+@mixin sp-bg-color($color, $override: false) {
   @if ($color == success) {
-    background-color: darken($sp-color-success, 5%);
+    $val: darken($sp-color-success, 5%);
+    background-color: if($override, $val !important, $val);
   } @else {
-    @include sp-color($color, background-color);
+    @include sp-color($color, background-color, $override);
   }
 }
 
-@mixin sp-bg-overlay-dark($level) {
-  @include sp-color-overlay-dark($level, background-image, linear-gradient);
+@mixin sp-bg-overlay-dark($level, $override: false) {
+  @include sp-color-overlay-dark($level, background-image, linear-gradient, $override);
 }
 
-@mixin sp-bg-overlay-light($level) {
-  @include sp-color-overlay-light($level, background-image, linear-gradient);
+@mixin sp-bg-overlay-light($level, $override: false) {
+  @include sp-color-overlay-light($level, background-image, linear-gradient, $override);
 }
 
 /////////////////////////
@@ -112,7 +129,7 @@
 //                     //
 /////////////////////////
 
-@mixin sp-border-color($color, $location: null) {
+@mixin sp-border-color($color, $location: null, $override: false) {
   $attr: border-color;
   @if $location == top or
       $location == right or
@@ -120,10 +137,10 @@
       $location == left {
     $attr: 'border-#{$location}-color';
   }
-  @include sp-color($color, $attr);
+  @include sp-color($color, $attr, $override);
 }
 
-@mixin sp-border-overlay-dark($color,$location: null) {
+@mixin sp-border-overlay-dark($color, $location: null, $override: false) {
   $attr: border-color;
   @if $location == top or
       $location == right or
@@ -131,10 +148,10 @@
       $location == left {
     $attr: 'border-#{$location}-color';
   }
-  @include sp-color-overlay-dark($color, $attr);
+  @include sp-color-overlay-dark($color, $attr, '', $override);
 }
 
-@mixin sp-border-overlay-light($color,$location: null) {
+@mixin sp-border-overlay-light($color, $location: null, $override: false) {
   $attr: border-color;
   @if $location == top or
       $location == right or
@@ -142,5 +159,5 @@
       $location == left {
     $attr: 'border-#{$location}-color';
   }
-  @include sp-color-overlay-light($color, $attr);
+  @include sp-color-overlay-light($color, $attr, '', $override);
 }

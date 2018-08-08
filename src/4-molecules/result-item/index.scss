@@ -1,0 +1,38 @@
+.sp-results-item {
+  position: relative;
+  left: 0;
+  @include sp-state-focus() {
+    background-color: #00C3DC;
+
+    .sp-results-item-overlay {
+      transform: translateX(-100%);
+    }
+
+    .sp-results-item-content {
+      transform: translateX(-90%);
+    }
+  }
+}
+
+.sp-results-item-overlay, .sp-results-item-content {
+  transform: translateX(0);
+  transition: 0.5s ease transform;
+}
+
+.sp-results-item .sp-results-item-overlay {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 90%;
+  bottom: 0;
+  color: white;
+}
+
+.sp-results-item .sp-results-item-overlay .sp-results-item-overlay-action {
+  text-align: center;
+}
+
+.sp-results-item .sp-results-item-overlay .sp-results-item-overlay-action:hover {
+  color: #00C3DC;
+}
+

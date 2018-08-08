@@ -341,6 +341,6 @@
       "modifiers": ["sp-state-disabled", "sp-rounded", "sp-minimal", "sp-minimal sp-rounded", "sp-minimal sp-rounded sp-state-disabled"]
     }
   ],
-  "scss": ["index.scss", "checks-radios.scss"],
+  "scss": ["index.scss", "checks-radios.scss", "checks.scss", "radios.scss"],
   "markdown": "index.md"
 }

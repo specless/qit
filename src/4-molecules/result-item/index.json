@@ -1,0 +1,7 @@
+{
+  "title": "Result Items",
+  "description": "Text goes here.",
+  "examples": [],
+  "scss": ["index.scss"],
+  "markdown": "index.md"
+}

@@ -30,6 +30,10 @@
 
 .sp-results-item .sp-results-item-overlay .sp-results-item-overlay-action {
   text-align: center;
+  @include sp-state-disabled() {
+    opacity: .25;
+    pointer-events: none;
+  }
 }
 
 .sp-results-item .sp-results-item-overlay .sp-results-item-overlay-action:hover {

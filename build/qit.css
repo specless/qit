@@ -8675,6 +8675,8 @@ blockquote {
       visibility: visible;
       opacity: 1;
       padding: 16px; }
+    .sp-card:hover > .sp-card-content {
+      visibility: hidden; }
   .sp-card .sp-card-footer {
     align-items: flex-end;
     display: flex;
@@ -8744,7 +8746,8 @@ blockquote {
       flex: 1;
       padding-top: 0;
       padding-bottom: 0;
-      width: 53%; }
+      width: 53%;
+      visibility: visible; }
       .sp-list .sp-card .sp-card-content .sp-card-label, .sp-list .sp-card .sp-card-content .sp-card-title, .sp-list .sp-card .sp-card-content .sp-card-id, .sp-card.sp-list .sp-card-content .sp-card-label, .sp-card.sp-list .sp-card-content .sp-card-title, .sp-card.sp-list .sp-card-content .sp-card-id {
         text-align: left !important; }
     .sp-list .sp-card .sp-card-footer, .sp-card.sp-list .sp-card-footer {
@@ -10066,6 +10069,10 @@ blockquote {
 
 .sp-results-item .sp-results-item-overlay .sp-results-item-overlay-action {
   text-align: center; }
+  .sp-results-item .sp-results-item-overlay .sp-results-item-overlay-action:disabled, .sp-results-item .sp-results-item-overlay .sp-results-item-overlay-action.sp-state-disabled {
+    pointer-events: none;
+    opacity: .25;
+    pointer-events: none; }
 
 .sp-results-item .sp-results-item-overlay .sp-results-item-overlay-action:hover {
   color: #00C3DC; }

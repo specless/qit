@@ -1,6 +1,7 @@
 .sp-results-item {
   position: relative;
   left: 0;
+  min-height: 90px;
   @include sp-state-focus() {
     background-color: #00C3DC;
 
@@ -29,7 +30,7 @@
 }
 
 .sp-results-item .sp-results-item-overlay .sp-results-item-overlay-action {
-  text-align: center;
+  text-align: left;
   @include sp-state-disabled() {
     opacity: .25;
     pointer-events: none;

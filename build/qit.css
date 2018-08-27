@@ -10047,7 +10047,8 @@ blockquote {
 
 .sp-results-item {
   position: relative;
-  left: 0; }
+  left: 0;
+  min-height: 90px; }
   .sp-results-item:focus, .sp-results-item.sp-state-focus {
     background-color: #00C3DC; }
     .sp-results-item:focus .sp-results-item-overlay, .sp-results-item.sp-state-focus .sp-results-item-overlay {
@@ -10068,7 +10069,7 @@ blockquote {
   color: white; }
 
 .sp-results-item .sp-results-item-overlay .sp-results-item-overlay-action {
-  text-align: center; }
+  text-align: left; }
   .sp-results-item .sp-results-item-overlay .sp-results-item-overlay-action:disabled, .sp-results-item .sp-results-item-overlay .sp-results-item-overlay-action.sp-state-disabled {
     pointer-events: none;
     opacity: .25;

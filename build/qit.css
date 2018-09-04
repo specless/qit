@@ -7842,6 +7842,8 @@ blockquote {
       visibility: visible;
       opacity: 1;
       padding: 16px; }
+    .sp-card:hover .sp-card-content {
+      display: none; }
   .sp-card .sp-card-footer {
     align-items: flex-end;
     height: 48px; }

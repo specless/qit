@@ -95,7 +95,7 @@
 	function createMarkup(content) {
 	    return { __html: content };
 	}
-	var Qit = (function (_super) {
+	var Qit = /** @class */ (function (_super) {
 	    __extends(Qit, _super);
 	    function Qit() {
 	        return _super !== null && _super.apply(this, arguments) || this;
@@ -219,9 +219,10 @@
 	        });
 	    }, 1000);
 	};
-	var render = function (items, name) {
+	var render;
+	(function (items, name) {
 	    ReactDOM.render(React.createElement(Qit, { items: items, category: name }), document.getElementById('root'), finalSteps());
-	};
+	});
 	var currentPath = window.location.search.split('?')[1];
 	if (!currentPath) {
 	    window.location.search = '?quarks';

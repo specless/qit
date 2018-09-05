@@ -8477,12 +8477,7 @@ blockquote {
       .sp-container-dark .sp-data-table .sp-data-table-head .sp-data-table-head-cell {
         color: #FFFFFF; }
       .sp-data-table .sp-data-table-head th:first-child, .sp-data-table .sp-data-table-head .sp-data-table-head-cell:first-child {
-        text-align: left;
-        width: 250px;
-        flex: 0 0 250px !important; }
-  .sp-data-table * > td:first-child, .sp-data-table .sp-data-table-cell:first-child {
-    width: 250px;
-    flex: 0 0 250px !important; }
+        text-align: left; }
   .sp-data-table .sp-data-table-total {
     background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12));
     color: rgba(0, 0, 0, 0.8);
@@ -10188,6 +10183,8 @@ body {
     flex-direction: column;
     max-height: 100vh;
     overflow: hidden; }
+    .sp-app.sp-technical.sp-reporting {
+      max-height: initial; }
     .sp-app.sp-technical > .sp-app-content {
       flex-grow: 1;
       padding: 0 !important;

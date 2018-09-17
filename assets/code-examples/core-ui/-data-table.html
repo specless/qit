@@ -1,0 +1,708 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example</title>
+  <link rel="stylesheet" href="../../../qit.css">
+  <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+  <style>
+    .sp-data-table .sp-data-table-head th {
+      min-width: 100px;
+      width: auto;
+      white-space: nowrap;
+    }
+
+    .sp-data-table th {
+      border-top: 4px solid #CECECE;
+      position: relative;
+    }
+
+    /*.sp-data-table .ui-resizable-handle {
+      width: 5px;
+      height: 100px;
+      background: red;
+    }*/
+
+    .sp-data-table th, .sp-data-table td {
+      border-right: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .sp-data-table td {
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .sp-data-table .sp-data-table-category td {
+       border-bottom: 2px solid rgba(0,0,0,0.1);
+    }
+
+    .sp-info-tooltip {
+      opacity: 0.5;
+      cursor: pointer;
+    }
+
+    .sp-info-tooltip:hover {
+      opacity: 1;
+    }
+
+    .sp-info-tooltop.sp-color-contrast {
+      opacity: 1 !important;
+    }
+
+    .sp-data-table th.sp-data-table-is-expandable {
+      position: relative;
+      padding-right: 40px;
+      border-right: none;
+    }
+
+    .sp-data-table th.sp-data-table-is-expandable.sp-is-expanded {
+      border-top: 4px solid #8D8D8D;
+    }
+
+    .sp-data-table th.sp-data-table-is-expandable.sp-is-expanded .sp-column-button {
+      background-color: #8D8D8D;
+    }
+
+    .sp-data-table th.sp-data-table-is-expandable .sp-column-button {
+      width: 25px;
+      height: 25px;
+      display: inline-block;
+      position: absolute;
+      right: -1px;
+      top: -4px;
+      box-sizing: border-box;
+      padding: 4px 5px;
+      background-color: rgba(0,0,0,0.15);
+      cursor: pointer;
+      color: white;
+    }
+
+    .sp-data-table th.sp-data-table-is-expandable .sp-column-button.sp-hidden {
+      display: none;
+    }
+
+    .sp-data-table th.sp-data-table-is-expandable .sp-column-button:hover {
+      background-color: rgba(0,0,0,0.45);
+      color: white;
+    }
+
+    .sp-sub-column, .sp-load-column {
+      box-shadow: inset 1000px 1000px 0px 1000px rgba(0,0,0,0.04);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .sp-load-column {
+      min-width: 0px !important;
+      width: 0px !important;
+      overflow: hidden;
+      padding: 0 !important;
+      border-right: none !important;
+      transition: 0.25s ease min-width;
+      position: relative;
+    }
+
+    .sp-load-column > span {
+      display: inline-block;
+      position: absolute;
+      left: 10px;
+      top: 5px;
+      opacity: 0.05;
+      background-color: black;
+    }
+
+    .sp-load-column.sp-show {
+      min-width: 35px !important;
+    }
+
+
+    .sp-load-column.sp-loading {
+      min-width: 200px !important;
+    }
+
+    th.sp-load-column.sp-loading > span {
+      background-color: transparent;
+      opacity: 1;
+      transform: translateY(-5px);
+    }
+
+    th.sp-sub-column, th.sp-load-column {
+      border-top: 4px solid #8D8D8D;
+    }
+
+    .sp-sub-column.sp-sub-column-hide {
+      display: none;
+    }
+
+    .sp-sub-column-left::before, .sp-sub-column-right::after, .sp-load-column::before, .sp-load-column::after {
+      content: "";
+      height: 100%;
+      width: 20px;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      opacity: 0.06;
+    }
+
+    .sp-sub-column-left::before, .sp-load-column::before {
+      left: 0;
+      background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    }
+
+    .sp-sub-column-right::after, .sp-load-column::after {
+      right: 0;
+      background: red;
+      background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    }
+
+    .sp-data-content::-webkit-scrollbar {
+      width: 15px;
+      height: 15px;
+      border: 1px solid rgba(0,0,0,0.25);
+      overflow: hidden;
+    }
+
+    .sp-data-content::-webkit-scrollbar-thumb {
+      border-radius: 0;
+    }
+
+
+  </style>
+</head>
+
+<body class="sp-app sp-technical">
+
+  <!-- <div class="sp-app-bar sp-container-light sp-contrast sp-wrapper">
+    <div class="sp-row sp-vcenter sp-height-3 sp-fluid">
+      <div class="sp-col sp-span-6 sp-flex sp-flex-align-items-center">
+        <img src="http://via.placeholder.com/40x40/0096a9/ffffff?text=ORG"/>
+        <div class="sp-spacer-horizontal"></div>
+        <div>
+          <div class="sp-h6 sp-color-contrast">Report Name</div>
+          <div class="sp-small">January 1, 2018 - December 31, 2018</div>
+        </div>
+      </div>
+      <div class="sp-col sp-span-6 sp-flex sp-flex-justify-content-flex-end sp-flex-align-items-center">
+        <button class="sp-small sp-icon-after-circle-user sp-rounded">Log In</button>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="sp-app-content sp-container-light sp-contrast sp-data-content" style="background-image:none">
+
+    <div class="">
+      <div>
+        <table class="sp-data-table sp-small" style="min-width: 100%;">
+          <tr class="sp-data-table-head">
+            <th style="min-width: 325px">Dimensions</th>
+            <th class="sp-data-table-requested">
+              <i class="sp-inline-icon-column-sort-down sp-margin-right-1 sp-info-tooltip sp-color-contrast"></i>
+              Requested Impressions
+              <i class="sp-inline-icon-circle-info sp-margin-left-1 sp-info-tooltip"></i>
+            </th>
+            <th class="sp-data-table-delivered">
+              <i class="sp-inline-icon-column-sort sp-margin-right-1 sp-info-tooltip"></i>
+              Delivered Impressions
+              <i class="sp-inline-icon-circle-info sp-margin-left-1 sp-info-tooltip"></i>
+            </th>
+            <th class="sp-data-table-plugin sp-data-table-is-expandable">
+              <i class="sp-inline-icon-column-sort sp-margin-right-1 sp-info-tooltip"></i>
+              Exits (Click Throughs)
+              <i class="sp-inline-icon-circle-info sp-margin-left-1 sp-info-tooltip"></i>
+              
+              <i id="expandButton" class="sp-column-button sp-inline-icon-column-expand"></i>
+              <i id="closeButton" class="sp-column-button sp-inline-icon-column-collapse sp-hidden"></i>
+            </th>
+            <th class="sp-load-column">
+              <span>
+                <i class="sp-inline-icon-loading-spinner sp-icon-spin sp-margin-right-1 sp-info-tooltip sp-color-contrast"></i>Loading Sub-Metrics...
+              </span>
+            </th>
+            <th class="sp-sub-column sp-sub-column-left sp-sub-column-hide">
+              <i class="sp-inline-icon-column-sort sp-margin-right-1 sp-info-tooltip"></i>
+              Sub metric
+              
+              <i class="sp-inline-icon-circle-info sp-margin-left-1 sp-info-tooltip"></i>
+            </th>
+            <th class="sp-sub-column sp-sub-column-hide">
+              <i class="sp-inline-icon-column-sort sp-margin-right-1 sp-info-tooltip"></i>
+              Sub metric
+              <i class="sp-inline-icon-circle-info sp-margin-left-1 sp-info-tooltip"></i>
+              
+            </th>
+            <th class="sp-sub-column sp-sub-column-right sp-sub-column-hide">
+              <i class="sp-inline-icon-column-sort sp-margin-right-1 sp-info-tooltip"></i>
+              Sub metric
+              <i class="sp-inline-icon-circle-info sp-margin-left-1 sp-info-tooltip"></i>
+              
+            </th>
+            <th class="sp-data-table-measurable">
+              <i class="sp-inline-icon-column-sort sp-margin-right-1 sp-info-tooltip"></i>
+              Measurable Impressions
+              <i class="sp-inline-icon-circle-info sp-margin-left-1 sp-info-tooltip"></i>
+              
+            </th>
+            <th class="sp-data-table-enhanced">
+              <i class="sp-inline-icon-column-sort sp-margin-right-1 sp-info-tooltip"></i>
+              Enhanced Analytics Impressions
+              <i class="sp-inline-icon-circle-info sp-margin-left-1 sp-info-tooltip"></i>
+              
+            </th>
+            <th>
+              <i class="sp-inline-icon-column-sort sp-margin-right-1 sp-info-tooltip"></i>
+              Metric 1
+              <i class="sp-inline-icon-circle-info sp-margin-left-1 sp-info-tooltip"></i>
+            </th>
+            <th>
+              <i class="sp-inline-icon-column-sort sp-margin-right-1 sp-info-tooltip"></i>
+              Metric 2
+              <i class="sp-inline-icon-circle-info sp-margin-left-1 sp-info-tooltip"></i>
+            </th>
+            <th>
+              <i class="sp-inline-icon-column-sort sp-margin-right-1 sp-info-tooltip"></i>
+              Metric 3
+              <i class="sp-inline-icon-circle-info sp-margin-left-1 sp-info-tooltip"></i>
+            </th>
+            <th>
+              <i class="sp-inline-icon-column-sort sp-margin-right-1 sp-info-tooltip"></i>
+              Metric 4
+              <i class="sp-inline-icon-circle-info sp-margin-left-1 sp-info-tooltip"></i>
+            </th>
+            <th>
+              <i class="sp-inline-icon-column-sort sp-margin-right-1 sp-info-tooltip"></i>
+              Metric 5
+              <i class="sp-inline-icon-circle-info sp-margin-left-1 sp-info-tooltip"></i>
+            </th>
+            <th>
+              <i class="sp-inline-icon-column-sort sp-margin-right-1 sp-info-tooltip"></i>
+              Metric 6
+              <i class="sp-inline-icon-circle-info sp-margin-left-1 sp-info-tooltip"></i>
+            </th>
+          </tr>
+          <tr class="sp-data-table-total">
+            <td>Totals</td>
+            <td>900,000</td>
+            <td>800,000</td>
+            <td>700,000</td>
+            <td class="sp-load-column"><span>000,000,000</span></td>
+            <td class="sp-sub-column sp-sub-column-left sp-sub-column-hide">600,000</td>
+            <td class="sp-sub-column sp-sub-column-hide">500,000</td>
+            <td class="sp-sub-column sp-sub-column-right sp-sub-column-hide">400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+            <td>400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+            <td>200,000</td>
+            <td>400,000</td>
+            <td>300,000</td>
+          </tr>
+          <tr class="sp-data-table-category sp-border-bottom-base">
+            <td>Device Type<i class="sp-inline-icon-circle-info sp-margin-left-1 sp-info-tooltip"></i></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="sp-load-column"></td>
+            <td class="sp-sub-column sp-sub-column-left sp-sub-column-hide"></td>
+            <td class="sp-sub-column sp-sub-column-hide"></td>
+            <td class="sp-sub-column sp-sub-column-right sp-sub-column-hide"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="sp-data-table-nested-1">
+            <td><i class="sp-inline-icon-placeholder sp-margin-right-1"></i>Desktop/Laptop</td>
+            <td>900,000</td>
+            <td>800,000</td>
+            <td>700,000</td>
+            <td class="sp-load-column"><span>000</span></td>
+            <td class="sp-sub-column sp-sub-column-left sp-sub-column-hide">600,000</td>
+            <td class="sp-sub-column sp-sub-column-hide">500,000</td>
+            <td class="sp-sub-column sp-sub-column-right sp-sub-column-hide">400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+            <td>400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+            <td>400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+          </tr>
+          <tr class="sp-data-table-nested-1">
+            <td><i class="sp-inline-icon-placeholder sp-margin-right-1"></i>Tablet</td>
+            <td>900,000</td>
+            <td>800,000</td>
+            <td>700,000</td>
+            <td class="sp-load-column"><span>0,000,000</span></td>
+            <td class="sp-sub-column sp-sub-column-left sp-sub-column-hide">600,000</td>
+            <td class="sp-sub-column sp-sub-column-hide">500,000</td>
+            <td class="sp-sub-column sp-sub-column-right sp-sub-column-hide">400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+            <td>400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+            <td>400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+          </tr>
+          <tr class="sp-data-table-nested-1 sp-data-table-row-expanded">
+            <td><i class="sp-inline-icon-placeholder sp-margin-right-1"></i>Smartphone</td>
+            <td>900,000</td>
+            <td>800,000</td>
+            <td>700,000</td>
+            <td class="sp-load-column"><span>00,000,000</span></td>
+            <td class="sp-sub-column sp-sub-column-left sp-sub-column-hide">600,000</td>
+            <td class="sp-sub-column sp-sub-column-hide">500,000</td>
+            <td class="sp-sub-column sp-sub-column-right sp-sub-column-hide">400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+            <td>400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+            <td>400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+          </tr>
+          <tr class="sp-data-table-nested-2 sp-data-table-category sp-border-bottom-base">
+            <td>IAB Viewability<i class="sp-inline-icon-circle-info sp-margin-left-1 sp-info-tooltip"></i></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="sp-load-column"></td>
+            <td class="sp-sub-column sp-sub-column-left sp-sub-column-hide"></td>
+            <td class="sp-sub-column sp-sub-column-hide"></td>
+            <td class="sp-sub-column sp-sub-column-right sp-sub-column-hide"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="sp-data-table-nested-2">
+            <td>IAB Viewable Impressions</td>
+            <td>900,000</td>
+            <td>800,000</td>
+            <td>700,000</td>
+            <td class="sp-load-column"><span>000,000,000</span></td>
+            <td class="sp-sub-column sp-sub-column-left sp-sub-column-hide">600,000</td>
+            <td class="sp-sub-column sp-sub-column-hide">500,000</td>
+            <td class="sp-sub-column sp-sub-column-right sp-sub-column-hide">400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+            <td>400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+            <td>400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+          </tr>
+          <tr class="sp-data-table-nested-2">
+            <td>IAB Unviewable Impressions</td>
+            <td>900,000</td>
+            <td>800,000</td>
+            <td>700,000</td>
+            <td class="sp-load-column"><span>00,000</span></td>
+            <td class="sp-sub-column sp-sub-column-left sp-sub-column-hide">600,000</td>
+            <td class="sp-sub-column sp-sub-column-hide">500,000</td>
+            <td class="sp-sub-column sp-sub-column-right sp-sub-column-hide">400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+            <td>400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+            <td>400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+          </tr>
+          <tr class="sp-data-table-nested-2">
+            <td>Unreported (Unmeasurable Impressions)</td>
+            <td>900,000</td>
+            <td>800,000</td>
+            <td>700,000</td>
+            <td class="sp-load-column"><span>0,000</span></td>
+            <td class="sp-sub-column sp-sub-column-left sp-sub-column-hide">600,000</td>
+            <td class="sp-sub-column sp-sub-column-hide">500,000</td>
+            <td class="sp-sub-column sp-sub-column-right sp-sub-column-hide">400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+            <td>400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+            <td>400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+          </tr>
+          <tr class="sp-data-table-nested-2">
+            <td>Unreported (Interupted Impressions)</td>
+            <td>900,000</td>
+            <td>800,000</td>
+            <td>700,000</td>
+            <td class="sp-load-column"><span>000,000,000</span></td>
+            <td class="sp-sub-column sp-sub-column-left sp-sub-column-hide">600,000</td>
+            <td class="sp-sub-column sp-sub-column-hide">500,000</td>
+            <td class="sp-sub-column sp-sub-column-right sp-sub-column-hide">400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+            <td>400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+            <td>400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+          </tr>
+          <tr class="sp-data-table-nested-1">
+            <td><i class="sp-inline-icon-placeholder sp-margin-right-1"></i>Other Device Type</td>
+            <td>900,000</td>
+            <td>800,000</td>
+            <td>700,000</td>
+            <td class="sp-load-column"><span>000,000</span></td>
+            <td class="sp-sub-column sp-sub-column-left sp-sub-column-hide">600,000</td>
+            <td class="sp-sub-column sp-sub-column-hide">500,000</td>
+            <td class="sp-sub-column sp-sub-column-right sp-sub-column-hide">400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+            <td>400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+            <td>400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+          </tr>
+          <tr class="sp-data-table-nested-1">
+            <td><i class="sp-inline-icon-placeholder sp-margin-right-1"></i>Unidentified</td>
+            <td>900,000</td>
+            <td>800,000</td>
+            <td>700,000</td>
+            <td class="sp-load-column"><span>000,000</span></td>
+            <td class="sp-sub-column sp-sub-column-left sp-sub-column-hide">600,000</td>
+            <td class="sp-sub-column sp-sub-column-hide">500,000</td>
+            <td class="sp-sub-column sp-sub-column-right sp-sub-column-hide">400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+            <td>400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+            <td>400,000</td>
+            <td>300,000</td>
+            <td>200,000</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- <div class="sp-app-content-sidebar sp-container sp-border-right-base">
+      <div>
+        <div class="sp-container sp-padding-1 sp-contrast sp-flex">
+          <span class="sp-padding-1 sp-label sp-color-contrast" style="flex:1; align-items: center">
+            <i class="sp-inline-icon-calendar sp-color-primary"></i>
+            Date Range
+          </span>
+        </div>
+        <div class="sp-padding-bottom-1 sp-padding-horizontal-1">
+          <div class="sp-selector qit-target sp-small sp-inline sp-margin-top-1">
+            <input readonly="" class="qit-target sp-selector-trigger sp-small" type="text" value="Custom Range" style="width:245px;">
+            <div class="sp-selector-overlay">
+              <div class="sp-menu-dropdown sp-overlay">
+                <a class="sp-menu-item sp-state-active">Custom Range</a>
+              </div>
+            </div>
+          </div>
+          <div class="sp-small sp-font-weight-semi-bold sp-padding-1">Start Date</div>
+          <div class="sp-selector qit-target sp-small sp-inline">
+            <input readonly="" class="qit-target sp-selector-trigger sp-small" type="text" value="Menu Item 2" style="width:160px;">
+            <div class="sp-selector-overlay">
+              <div class="sp-menu-dropdown sp-overlay">
+                <a class="sp-menu-item">Menu Item 1</a>
+              </div>
+            </div>
+          </div>
+          <div class="sp-selector qit-target sp-small sp-inline">
+            <input readonly="" class="qit-target sp-selector-trigger sp-small" type="text" value="Menu Item 2" style="width:80px;">
+            <div class="sp-selector-overlay">
+              <div class="sp-menu-dropdown sp-overlay">
+                <a class="sp-menu-item">Menu Item 1</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sp-padding-bottom-1 sp-padding-horizontal-1">
+          <div class="sp-small sp-font-weight-semi-bold sp-padding-1">End Date</div>
+          <div class="sp-selector qit-target sp-small sp-inline">
+            <input readonly="" class="qit-target sp-selector-trigger sp-small" type="text" value="Menu Item 2" style="width:160px;">
+            <div class="sp-selector-overlay">
+              <div class="sp-menu-dropdown sp-overlay">
+                <a class="sp-menu-item">Menu Item 1</a>
+              </div>
+            </div>
+          </div>
+          <div class="sp-selector qit-target sp-small sp-inline">
+            <input readonly="" class="qit-target sp-selector-trigger sp-small" type="text" value="Menu Item 2" style="width:80px;">
+            <div class="sp-selector-overlay">
+              <div class="sp-menu-dropdown sp-overlay">
+                <a class="sp-menu-item">Menu Item 1</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="sp-container sp-padding-1 sp-contrast sp-flex">
+          <span class="sp-padding-1 sp-label sp-color-contrast" style="flex:1; align-items: center">
+            <i class="sp-inline-icon-filter sp-color-primary"></i>
+            Query Parameters
+          </span>
+          <button tabindex="0" class="sp-icon-circle-sync sp-minimal sp-simple-icon sp-small sp-primary"></button>
+          <button tabindex="0" class="sp-icon-circle-plus sp-minimal sp-simple-icon sp-small sp-primary"></button>
+        </div>
+        <div class="sp-padding-bottom-1 sp-padding-horizontal-1">
+          <div class="sp-small sp-font-weight-semi-bold sp-padding-1">Creative</div>
+          <div class="sp-tag">My Awesome Ad<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+          <div class="sp-tag">Some Other Awesome Ad<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+        </div>
+        <div class="sp-padding-bottom-1 sp-padding-horizontal-1">
+          <div class="sp-small sp-font-weight-semi-bold sp-padding-1">Format</div>
+          <div class="sp-tag">Mobile Parallax<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+          <div class="sp-tag">Mobile Scroller<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+        </div>
+      </div>
+      <div>
+
+      <div>
+        <div class="sp-container sp-padding-1 sp-contrast sp-flex">
+          <span class="sp-padding-1 sp-label sp-color-contrast" style="flex:1; align-items: center">
+            <i class="sp-inline-icon-dimensions sp-color-primary"></i>
+            Dimensions
+          </span>
+          <button tabindex="0" class="sp-icon-circle-sync sp-minimal sp-simple-icon sp-small sp-primary"></button>
+        </div>
+
+        <div class="sp-padding-bottom-2 sp-padding-horizontal-1">
+          <div class="sp-small sp-font-weight-semi-bold sp-padding-1">Primary Dimension</div>
+          <div class="sp-selector qit-target sp-small">
+            <input readonly="" class="qit-target sp-selector-trigger sp-small" type="text" value="Menu Item 2" style="width:245px;">
+            <div class="sp-selector-overlay">
+              <div class="sp-menu-dropdown sp-overlay">
+                <a class="sp-menu-item">Menu Item 1</a>
+                <a class="sp-menu-item sp-state-active">Menu Item 2</a>
+                <a class="sp-menu-item">Menu Item 3</a>
+                <a class="sp-menu-item sp-state-disabled">Menu Item 4</a>
+                <div class="sp-menu-header">Section Header</div>
+                <a class="sp-menu-item">Menu Item 5</a>
+                <a class="sp-menu-item">Menu Item 6</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sp-padding-bottom-2 sp-padding-horizontal-1">
+          <div class="sp-small sp-font-weight-semi-bold sp-padding-1">Secondary Dimension</div>
+          <div class="sp-selector qit-target sp-small">
+            <input readonly="" class="qit-target sp-selector-trigger sp-small" type="text" value="Menu Item 2" style="width:245px;">
+            <div class="sp-selector-overlay">
+              <div class="sp-menu-dropdown sp-overlay">
+                <a class="sp-menu-item">Menu Item 1</a>
+                <a class="sp-menu-item sp-state-active">Menu Item 2</a>
+                <a class="sp-menu-item">Menu Item 3</a>
+                <a class="sp-menu-item sp-state-disabled">Menu Item 4</a>
+                <div class="sp-menu-header">Section Header</div>
+                <a class="sp-menu-item">Menu Item 5</a>
+                <a class="sp-menu-item">Menu Item 6</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    
+      </div>
+    </div> -->
+      <!-- <div>
+        <div class="sp-container sp-padding-1 sp-contrast sp-flex">
+          <span class="sp-padding-1 sp-label sp-color-contrast" style="flex:1; align-items: center">
+            <i class="sp-inline-icon-metric sp-color-primary"></i>
+            Metrics
+          </span>
+          <button tabindex="0" class="sp-icon-circle-sync sp-minimal sp-simple-icon sp-small sp-primary"></button>
+          <button tabindex="0" class="sp-icon-circle-plus sp-minimal sp-simple-icon sp-small sp-primary"></button>
+        </div>
+        <div class="sp-padding-bottom-1 sp-padding-horizontal-1">
+          <div class="sp-selector qit-target sp-small sp-inline sp-margin-top-1">
+            <input readonly="" class="qit-target sp-selector-trigger sp-small" type="text" value="Custom Metric Set" style="width:245px;">
+            <div class="sp-selector-overlay">
+              <div class="sp-menu-dropdown sp-overlay">
+                <a class="sp-menu-item">Basic Performance</a>
+                <a class="sp-menu-item">Video Performance</a>
+                <a class="sp-menu-item">Engagement</a>
+                <a class="sp-menu-item">User Experience</a>
+                <a class="sp-menu-item sp-state-active">Custom Metric Set</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sp-padding-bottom-1 sp-padding-horizontal-1">
+          <div class="sp-small sp-font-weight-semi-bold sp-padding-1">Impression Types</div>
+          <div class="sp-tag">Delivered Impressions<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+          <div class="sp-tag">Video Impressions<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+        </div>
+
+        <div class="sp-padding-bottom-1 sp-padding-horizontal-1">
+          <div class="sp-small sp-font-weight-semi-bold sp-padding-1">Interactions</div>
+          <div class="sp-tag">Click Throughs (Exits)<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+        </div>
+      </div>
+    </div> -->
+    <!-- <div class="sp-app-content-main sp-container-light sp-alt-one">
+      <div class=""></div>
+    </div> -->
+  </div>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+  <script>
+    $('#expandButton').click(function() {
+      $('#expandButton').addClass('sp-hidden');
+      $('#closeButton').removeClass('sp-hidden');
+      $('.sp-load-column').addClass('sp-loading');
+      $('.sp-data-table-is-expandable').addClass('sp-is-expanded');
+      window.setTimeout(function() {
+        $('.sp-load-column').removeClass('sp-loading');
+        $('.sp-sub-column').removeClass('sp-sub-column-hide');
+      }, 3000);
+    });
+
+    $('#closeButton').click(function() {
+      $('.sp-sub-column').addClass('sp-sub-column-hide');
+      $('#closeButton').addClass('sp-hidden');
+      $('#expandButton').removeClass('sp-hidden');
+      $('.sp-data-table-is-expandable').removeClass('sp-is-expanded');
+    });
+
+    $('#expandButton').on('mouseover', function() {
+      $('.sp-load-column').addClass('sp-show');
+    });
+
+    $('#expandButton').on('mouseout', function() {
+      $('.sp-load-column').removeClass('sp-show');
+    });
+
+    // $('th').resizable({
+    //   handles: "e, w"
+    // });
+
+
+  </script>
+</body>
+</html>

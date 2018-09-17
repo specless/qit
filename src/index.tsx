@@ -234,7 +234,7 @@ const finalSteps = function() {
 	}, 1000);
 }
 
-const render(items, name) {
+const render = function(items, name) {
 	ReactDOM.render(
 	 	<Qit items={items} category={name}/>,
 	 	document.getElementById('root'),

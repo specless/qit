@@ -101,6 +101,9 @@ body {
     overflow: hidden;
     &.sp-reporting {
       max-height: initial;
+      > .sp-app-content {
+        overflow-y: hidden;
+      }
     }
     // 	@include sp-bg-color('dark-darker');
 

@@ -24,7 +24,9 @@
   }
 
   .sp-data-table-head {
-    @include sp-bg-overlay-dark(3);
+    /*position: relative;
+    @include sp-layering(1);*/
+    //@include sp-bg-overlay-dark(3);
     th,
     .sp-data-table-head-cell {
       min-width: 100px;
@@ -33,6 +35,7 @@
 
       border-top: 4px solid #CECECE;
       position: relative;
+      /*background-color: #BFBFBF;*/
       /*border-right: 1px solid rgba(0, 0, 0, 0.1);*/
 
       font-weight: 600;
@@ -41,6 +44,8 @@
       @include sp-padding(1);
       &:first-child {
         text-align: left;
+        min-width: 400px;
+        /*position: sticky*/;
       }
 
       &.sp-data-table-is-expandable {
@@ -117,9 +122,17 @@
     }
   }
 
+  /*tr > th:first-child,
+  tr > td:first-child {
+    position: sticky;
+    left: 0;
+    @include sp-layering(1);
+  }*/
+
   .sp-data-table-row {
     transition: opacity 300ms ease-in-out, top 300ms ease-in-out;
     opacity: 1;
+    /*position: relative;*/
   }
 
   .sp-data-table-row-collapse {
@@ -200,6 +213,87 @@
 
   }
 
+  .sp-load-column,
+  .sp-sub-column {
+    box-shadow: inset 1000px 1000px 0 1000px rgba(0, 0, 0, 0.04);
+    position: relative;
+    overflow: hidden;
+  }
+
+  th {
+    &.sp-load-column,
+    &.sp-sub-column {
+      border-top: 4px solid #8D8D8D;
+      &.sp-loading {
+        min-width: 200px !important;
+      }
+    }
+  }
+
+  .sp-load-column {
+    min-width: 0 !important;
+    width: 0 !important;
+    overflow: hidden;
+    padding: 0 !important;
+    border-right: none !important;
+    transition: 0.25s ease min-width;
+    position: relative;
+    &.sp-show {
+      min-width: 35px !important;
+    }
+
+    & > span {
+      display: inline-block;
+      position: absolute;
+      left: 10px;
+      top: 5px;
+      opacity: 0.05;
+      background-color: black;
+    }
+  }
+
+  .sp-sub-column {
+    &.sp-sub-column-hide {
+      display: none;
+    }
+  }
+
+  .sp-sub-column-left::before,
+  .sp-sub-column-right::after,
+  .sp-load-column::before,
+  .sp-load-column::after {
+    content: "";
+    height: 100%;
+    width: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    opacity: 0.06;
+  }
+
+  .sp-sub-column-left::before,
+  .sp-load-column::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  .sp-sub-column-right::after,
+  .sp-load-column::after {
+    right: 0;
+    background: red;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  }
+
+  .sp-data-content::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+  }
+
+  .sp-data-content::-webkit-scrollbar-thumb {
+    border-radius: 0;
+  }
 }
 
 .sp-info-tooltip {
@@ -213,84 +307,3 @@
     opacity: 1 !important;
   }
 }
-
-.sp-load-column {
-  box-shadow: inset 1000px 1000px 0px 1000px rgba(0, 0, 0, 0.04);
-  position: relative;
-  overflow: hidden;
-
-  th#{&} {
-    border-top: 4px solid #8D8D8D;
-  }
-}
-
-.sp-load-column {
-  min-width: 0px !important;
-  width: 0px !important;
-  overflow: hidden;
-  padding: 0 !important;
-  border-right: none !important;
-  transition: 0.25s ease min-width;
-  position: relative;
-  &.sp-show {
-    min-width: 35px !important;
-  }
-
-  th#{&}.sp-loading {
-    min-width: 200px !important;
-  }
-
-  & > span {
-    display: inline-block;
-    position: absolute;
-    left: 10px;
-    top: 5px;
-    opacity: 0.05;
-    background-color: black;
-  }
-}
-
-.sp-sub-column {
-  &.sp-sub-column-hide {
-    display: none;
-  }
-}
-
-.sp-sub-column-left::before,
-.sp-sub-column-right::after,
-.sp-load-column::before,
-.sp-load-column::after {
-  content: "";
-  height: 100%;
-  width: 20px;
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  opacity: 0.06;
-}
-
-.sp-sub-column-left::before,
-.sp-load-column::before {
-  left: 0;
-  background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-}
-
-.sp-sub-column-right::after,
-.sp-load-column::after {
-  right: 0;
-  background: red;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
-}
-
-.sp-data-content::-webkit-scrollbar {
-  width: 15px;
-  height: 15px;
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  overflow: hidden;
-}
-
-.sp-data-content::-webkit-scrollbar-thumb {
-  border-radius: 0;
-}
-
-

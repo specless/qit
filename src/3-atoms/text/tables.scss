@@ -24,9 +24,9 @@
   }
 
   .sp-data-table-head {
-    /*position: relative;
-    @include sp-layering(1);*/
-    //@include sp-bg-overlay-dark(3);
+    @include sp-layering(2);
+    position: sticky;
+    top: -1px;
     th,
     .sp-data-table-head-cell {
       min-width: 100px;
@@ -34,6 +34,7 @@
       white-space: nowrap;
 
       border-top: 4px solid #CECECE;
+      background-color: #BFBFBF;
       position: relative;
       /*background-color: #BFBFBF;*/
       /*border-right: 1px solid rgba(0, 0, 0, 0.1);*/
@@ -43,9 +44,12 @@
       @include sp-font-color(contrast);
       @include sp-padding(1);
       &:first-child {
+        @include sp-layering(2);
         text-align: left;
         min-width: 400px;
-        /*position: sticky*/;
+        position: sticky;
+        top: 0;
+        left: 0;
       }
 
       &.sp-data-table-is-expandable {
@@ -86,7 +90,6 @@
   }
 
   .sp-data-table-total {
-    @include sp-bg-overlay-dark(2);
     @include sp-font-color(contrast);
     border-bottom: 2px solid rgba(0, 0, 0, 0.5);
     td:first-child,
@@ -94,11 +97,15 @@
       font-weight: 600;
       text-align: left;
     }
+    td {
+      background-color: #D7D7D7;
+    }
   }
 
   .sp-data-table-category {
     td,
     .sp-data-table-cell {
+      background-color: #E9E9E9;
       padding-top: 3px;
       padding-bottom: 3px;
       border-bottom: 2px solid rgba(0, 0, 0, 0.1);
@@ -116,7 +123,7 @@
   }
 
   .sp-data-table-row-expanded {
-    @include sp-bg-overlay-dark(1);
+    //@include sp-bg-overlay-dark(1);
     .sp-inline-icon-placeholder::before {
       @extend %icon-circle-arrow-down;
     }
@@ -159,6 +166,10 @@
   .sp-data-table-row td:first-child,
   .sp-data-table-row .sp-data-table-cell:first-child {
     @include sp-font-weight(semi-bold);
+    position: sticky;
+    left: 0;
+
+    z-index: 1;
   }
 
   .sp-data-table-nested-1 {
@@ -166,13 +177,18 @@
     .sp-data-table-cell:first-child {
       @include sp-padding(2, left);
     }
+    td {
+      background-color: #F5F5F5;
+    }
   }
 
   .sp-data-table-nested-2 {
-    @include sp-bg-overlay-dark(1);
     td:first-child,
     .sp-data-table-cell:first-child {
       @include sp-padding(4, left);
+    }
+    td {
+      background-color: #E9E9E9;
     }
   }
 

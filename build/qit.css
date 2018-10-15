@@ -8475,6 +8475,7 @@ blockquote {
 
 .sp-data-table {
   border-collapse: collapse;
+  table-layout: fixed;
   border-spacing: 0;
   /*tr > th:first-child,
   tr > td:first-child {
@@ -8492,17 +8493,17 @@ blockquote {
   .sp-data-table .sp-data-table-head {
     z-index: 2;
     position: sticky;
-    top: -1px;
-    border-top: 4px solid #CECECE;
-    background-color: #BFBFBF; }
+    top: -1px; }
     .sp-data-table .sp-data-table-head th,
     .sp-data-table .sp-data-table-head .sp-data-table-head-cell {
       min-width: 100px;
       width: auto;
       white-space: nowrap;
-      background-color: inherit;
-      border-top-color: inherit;
+      border-top: 4px solid #CECECE;
+      background-color: #BFBFBF;
       position: relative;
+      /*background-color: #BFBFBF;*/
+      /*border-right: 1px solid rgba(0, 0, 0, 0.1);*/
       font-weight: 600;
       text-align: left;
       color: rgba(0, 0, 0, 0.8);
@@ -10347,10 +10348,7 @@ body {
     .sp-app.sp-technical.sp-reporting {
       max-height: initial; }
       .sp-app.sp-technical.sp-reporting > .sp-app-content {
-        overflow-y: hidden !important;
-        min-width: 100%; }
-        .sp-app.sp-technical.sp-reporting > .sp-app-content > .sp-data-table {
-          min-width: inherit; }
+        overflow-y: hidden !important; }
       .sp-app.sp-technical.sp-reporting.sp-reporting-sticky-header {
         max-height: initial;
         overflow: initial !important; }

@@ -13,6 +13,10 @@
   table-layout: fixed;
   border-spacing: 0;
 
+  tr {
+    height: 31px !important;
+  }
+
   * {
     box-sizing: border-box;
   }

@@ -102,15 +102,42 @@ body {
     overflow: hidden;
     &.sp-reporting {
       max-height: initial;
-      overflow: initial !important; // DEV-762: Persistent Horizontal Scrollbar
+      overflow: initial !important;
+      > .sp-app-bar,
+      > .sp-app-header {
+        background-color: transparent;
+        > div {
+          @include sp-fixed(true);
+          width: 100%;
+        }
+      }
+      > .sp-app-menu {
+        z-index: 0 !important;
+        > div {
+          @include sp-fixed(true);
+          width: 100%;
+        }
+      }
+      > .sp-app-bar > div {
+        @include sp-bg-color('dark-darker');
+
+      }
+      > .sp-app-header > div {
+        @include sp-bg-color('dark-lighter');
+      }
       > .sp-app-content {
         //overflow-y: hidden !important;
-        overflow: initial !important; // DEV-762: Persistent Horizontal Scrollbar
+        background-color: #F5F5F5;
+        overflow: initial !important;
       }
       &.sp-reporting-sticky-header {
         max-height: initial;
         overflow: initial !important;
+        > .sp-app-menu {
+          z-index: 0 !important;
+        }
         > .sp-app-content {
+          background-color: #F5F5F5;
           overflow: initial !important;
         }
       }

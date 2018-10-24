@@ -8483,6 +8483,8 @@ blockquote {
     left: 0;
     @include sp-layering(1);
   }*/ }
+  .sp-data-table tr {
+    height: 31px !important; }
   .sp-data-table * {
     box-sizing: border-box; }
   .sp-data-table th,
@@ -10346,9 +10348,10 @@ body {
     max-height: 100vh;
     overflow: hidden; }
     .sp-app.sp-technical.sp-reporting {
-      max-height: initial; }
+      max-height: initial;
+      overflow: initial !important; }
       .sp-app.sp-technical.sp-reporting > .sp-app-content {
-        overflow-y: hidden !important; }
+        overflow: initial !important; }
       .sp-app.sp-technical.sp-reporting.sp-reporting-sticky-header {
         max-height: initial;
         overflow: initial !important; }

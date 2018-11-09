@@ -10530,13 +10530,21 @@ body {
   padding-bottom: 1px; }
 
 .sp-app-notifications {
-  display: inline-block;
-  position: absolute;
-  top: 75px;
-  right: 10px;
-  overflow: visible;
-  max-height: 0;
-  z-index: 10; }
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
+  transition: 300ms ease-in-out background-color;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: .4rem;
+  display: block;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.05); }
+  .sp-app-notifications:empty {
+    display: none; }
+  .sp-app-notifications:hover, .sp-app-notifications.sp-state-hover {
+    background-color: rgba(0, 0, 0, 0.22); }
 
 .sp-app-header {
   position: relative;

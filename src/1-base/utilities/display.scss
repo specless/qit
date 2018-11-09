@@ -54,6 +54,14 @@
   }
 }
 
+@mixin sp-sticky($force: false) {
+  @if($force) {
+    position: sticky !important;
+  } @else {
+    position: sticky;
+  }
+}
+
 @mixin sp-hidden($force: false) {
   @if($force) {
     display: none !important;

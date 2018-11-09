@@ -104,42 +104,28 @@ body {
       max-height: initial;
       overflow: initial !important;
       > .sp-app-bar,
-      > .sp-app-header {
-        background-color: transparent;
-        > div {
-          @include sp-fixed(true);
-          width: 100%;
-        }
-      }
+      > .sp-app-header,
       > .sp-app-menu {
-        z-index: 0 !important;
-        > div {
-          @include sp-fixed(true);
-          width: 100%;
-        }
-      }
-      > .sp-app-bar > div {
-        @include sp-bg-color('dark-darker');
-
-      }
-      > .sp-app-header > div {
-        @include sp-bg-color('dark-lighter');
+        @include sp-sticky(true);
+        left: 0;
       }
       > .sp-app-content {
-        //overflow-y: hidden !important;
         background-color: #F5F5F5;
         overflow: initial !important;
       }
-      &.sp-reporting-sticky-header {
-        max-height: initial;
+      .sp-app-loader-message {
+        background-color: #444A50;
+      }
+    }
+    &.sp-reporting-sticky-header {
+      max-height: initial;
+      overflow: initial !important;
+      > .sp-app-content {
+        background-color: #F5F5F5;
         overflow: initial !important;
-        > .sp-app-menu {
-          z-index: 0 !important;
-        }
-        > .sp-app-content {
-          background-color: #F5F5F5;
-          overflow: initial !important;
-        }
+      }
+      .sp-app-loader-message {
+        background-color: #444A50;
       }
     }
     // 	@include sp-bg-color('dark-darker');
@@ -184,6 +170,7 @@ body {
     }
 
   }
+
 }
 
 @keyframes loader {
@@ -403,7 +390,7 @@ body {
   padding: .4rem;
   display: block;
   z-index: 10;
-  background-color: $sp-shade-dark-1;
+  background-color: transparent;
 
   &:empty {
     display: none;

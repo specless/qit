@@ -1,0 +1,697 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example</title>
+  <link rel="stylesheet" href="../../../qit.css">
+</head>
+
+<body class="sp-app">
+  <div class="sp-app-bar sp-container-dark sp-alt-one sp-wrapper">
+    <div class="sp-row sp-vcenter sp-height-3">
+      <div class="sp-col sp-span-6 sp-flex sp-flex-align-items-center">
+        <a class="sp-menu-item sp-minimal sp-icon-menu sp-padding-0"></a>
+        <div class="sp-spacer-horizontal"></div>
+        <div class="sp-logo-lockup sp-small sp-primary sp-logo-horizontal sp-margin-left-2"></div>
+      </div>
+      <div class="sp-col sp-span-6 sp-flex sp-flex-justify-content-flex-end sp-flex-align-items-center">
+        <div class="sp-selector sp-margin-right-1">
+          <button class="sp-selector-trigger sp-rounded sp-small sp-minimal sp-simple-icon">Stephen C.<i class="sp-margin-left-2 sp-inline-icon-circle-user" style="display: inline-block;transform: scale(2) translateY(-1px)"></i></button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <div class="sp-menu-header sp-small">User Details</div>
+              <a class="sp-menu-item sp-icon-account">Account</a>
+              <a class="sp-menu-item sp-icon-settings">Preferences</a>
+              <a class="sp-menu-item sp-icon-organization">Organizations</a>
+              <a class="sp-menu-item sp-icon-account">Billing</a>
+              <div class="sp-spacer-vertical sp-margin-0"></div>
+              <a class="sp-menu-item sp-icon-logout">Log Out</a>
+            </div>
+          </div>
+        </div>
+        <div class="sp-selector">
+          <button class="sp-selector-trigger sp-icon-after-circle-help sp-rounded sp-simple-icon sp-minimal sp-large"></button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <div class="sp-menu-header sp-small">Search For Help</div>
+              <div class="sp-padding-horizontal-2 sp-padding-vertical-1" style="position: relative;">
+                <input type="search" class="sp-small sp-rounded" placeholder="Enter Search Term" style="width: 100%"/>
+                <button class="sp-small sp-rounded sp-icon-search sp-primary sp-margin-top-1 sp-margin-right-2" style="position: absolute; top:0; right: 0;border-bottom-left-radius: 0;border-top-left-radius: 0;"></button>
+              </div>
+              <div class="sp-menu-header sp-small">Help Center</div>
+              <a class="sp-menu-item sp-icon-account">Contact Support</a>
+              <a class="sp-menu-item sp-icon-settings">Report a Bug</a>
+              <a class="sp-menu-item sp-icon-organization">Tutorials</a>
+              <a class="sp-menu-item sp-icon-account">Knowledge Base</a>
+            </div>
+          </div>
+        </div>
+        <div class="sp-selector">
+          <button class="sp-selector-trigger sp-icon-after-lightning sp-rounded sp-simple-icon sp-minimal sp-large sp-success sp-state-active"></button>
+          <div class="sp-selector-overlay">
+            <div class="sp-menu-dropdown sp-overlay sp-width-7 sp-color-contrast" style="left: auto; right: 0; transform: none;">
+              <div class="sp-menu-header sp-small">Connection</div>
+              <div class="sp-padding-horizontal-2 sp-padding-vertical-1" style="position: relative;">
+                <div class="sp-label">Status <span class="sp-color-success sp-float-right">Active</span></div>
+              </div>
+              <div class="sp-menu-header sp-small">Settings</div>
+              <a class="sp-menu-item">Live Reload</a>
+              <a class="sp-menu-item">Listen on Port</a>
+              <div class="sp-menu-header sp-small">Recent Creatives</div>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Some Creative<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>My Awesome Ad<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Another Creative<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Coca-Cola Ad<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+              <a class="sp-menu-item sp-small"><i class="sp-inline-icon-lightning sp-margin-right-1 sp-color-success"></i>Samsung Galaxy Note 8<span class="sp-float-right sp-font-weight-base">DyJ93K</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sp-app-org-label sp-container-dark sp-wrapper">
+    <div class="sp-row sp-padding-2 sp-padding-left-3">
+      <div class="sp-label sp-small">Example Organization <span class="sp-inline-icon-arrow-right"></span> <a href="-creatives.html" class="sp-color-white">Creatives</a></div>
+    </div>
+  </div>
+  <div class="sp-app-header sp-container-dark sp-alt-two sp-wrapper">
+    <div class="sp-row sp-vcenter">
+      <div class="sp-col sp-span-12 sp-flex sp-flex-align-items-center">
+        <h5 class="sp-contrast sp-row sp-flex-align-items-center"><a class="sp-button sp-rounded sp-icon-arrow-left sp-margin-right-2"></a><span>Creative Name Here</span></h5>
+        <div>
+          <a href="-creatives-explorer.html" class="sp-button sp-primary sp-icon-eye sp-small sp-rounded">Launch Creative Explorer</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sp-app-menu sp-container-dark sp-alt-two sp-wrapper">
+    <div class="sp-row">
+      <div class="sp-col sp-span-10 sp-padding-0" style="margin-bottom: 3px">
+        <a href="-creatives-overview.html" class="sp-menu-item sp-horizontal sp-label">Overview</a>
+        <a href="-creatives-settings.html" class="sp-menu-item sp-horizontal sp-label">Settings</a>
+        <!-- <a href="-creatives-explorer.html" class="sp-menu-item sp-horizontal sp-label">Creative Explorer</a> -->
+        <a href="-creatives-trafficking.html" class="sp-menu-item sp-horizontal sp-label sp-state-active">Publish</a>
+        <a href="-creatives-reporting.html" class="sp-menu-item sp-horizontal sp-label">Reporting</a>
+        <a class="sp-menu-item sp-minimal sp-horizontal sp-label sp-icon-more"></a>
+        <!-- <a class="sp-menu-item sp-horizontal sp-label sp-icon-more sp-minimal"></a> -->
+      </div>
+      <div class="sp-col sp-span-2 sp-align-right sp-padding-0">
+        <!-- <button class="sp-rounded sp-primary sp-icon-more sp-offset-half-down sp-margin-left-2 sp-large"></button> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="sp-app-content">
+    <div class="sp-wrapper">
+      <div class="sp-row sp-border-bottom-base">
+        <div class="sp-col sp-span-12">
+          <span class="">
+            <button class="sp-minimal sp-simple-icon sp-primary sp-icon-search"></button>
+            <input class="sp-minimal sp-large" type="text" placeholder="Search"/>
+          </span>
+          <div class="sp-float-right ">
+            <a class="sp-button sp-small sp-icon-circle-plus sp-success">Publish New Instance (Tag)</a>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="sp-row sp-border-bottom-base sp-small">
+        <div class="sp-col sp-span-2">
+          <div class="sp-label">Sort</div>
+          <div class="sp-selector sp-full-width sp-margin-vertical-2 sp-small">
+            <input type="text" class="sp-minimal sp-padding-icon-left sp-full-width sp-selector-trigger" value="By Date Created"/>
+            <div class="sp-selector-overlay sp-icon-sort-down">
+              <div class="sp-menu-dropdown sp-overlay">
+                <a class="sp-menu-item sp-icon-sort-down">Decending<i class="sp-inline-icon-check sp-float-right"></i></a>
+                <a class="sp-menu-item sp-icon-sort-up">Ascending</a>
+                <div class="sp-menu-header">Sort By</div>
+                <a class="sp-menu-item sp-icon-calendar">Date Created<i class="sp-inline-icon-check sp-float-right"></i></a>
+                <a class="sp-menu-item sp-icon-time">Last Modified</a>
+                <a class="sp-menu-item sp-icon-text">Name</a>
+                <a class="sp-menu-item sp-icon-advertiser">Advertiser</a>
+                <a class="sp-menu-item sp-icon-campaign">Campaign</a>
+                <a class="sp-menu-item sp-icon-status">Status</a>
+                <a class="sp-menu-item sp-icon-paint">Color</a>
+              </div>
+            </div>
+          </div>
+          <div class="sp-align-left">
+            <input id="showArchived" type="checkbox" class="sp-minimal"/>
+            <label for="showArchived">Show Archived</label>
+          </div>
+          <button class="sp-small sp-block sp-icon-circle-close sp-margin-top-2 sp-rounded">Clear All Filters</button>
+        </div>
+
+        <div class="sp-col sp-span-2">
+
+          <div class="sp-label">Campaign</div>
+
+          <div class="sp-selector sp-full-width sp-margin-vertical-2 sp-small">
+            <input type="text" class="sp-minimal sp-padding-icon-left sp-full-width sp-selector-trigger" placeholder="Add Campaign Filter"/>
+            <div class="sp-selector-overlay sp-icon-circle-plus">
+              <div class="sp-menu-dropdown sp-overlay">
+                <div class="sp-menu-header">Matches</div>
+                <a class="sp-menu-item">Campaign 1</a>
+                <a class="sp-menu-item">Campaign 2</a>
+                <a class="sp-menu-item">Campaign 3</a>
+                <a class="sp-menu-item">Campaign 4</a>
+              </div>
+            </div>
+          </div>
+          <div class="sp-padding-vertical-2">
+            <div class="sp-tag">Campaign 1<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+            <div class="sp-tag">Campaign 2<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+            <div class="sp-tag">Campaign 3<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+            <div class="sp-tag">Campaign 4<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+          </div>
+        </div>
+        <div class="sp-col sp-span-2">
+          <div class="sp-label">Labels</div>
+
+          <div class="sp-selector sp-full-width sp-margin-vertical-2 sp-small">
+            <input type="text" class="sp-minimal sp-padding-icon-left sp-full-width sp-selector-trigger" placeholder="Add Label Filter"/>
+            <div class="sp-selector-overlay sp-icon-circle-plus">
+              <div class="sp-menu-dropdown sp-overlay">
+                <div class="sp-menu-header">Matches</div>
+                <a class="sp-menu-item">Label 1</a>
+                <a class="sp-menu-item">Label 2</a>
+                <a class="sp-menu-item">Label 3</a>
+                <a class="sp-menu-item">Label 4</a>
+              </div>
+            </div>
+          </div>
+          <div class="sp-padding-vertical-2">
+            <div class="sp-tag">Label 1<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+            <div class="sp-tag">Label 2<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+            <div class="sp-tag">Label 3<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+            <div class="sp-tag">Label 4<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+          </div>
+
+
+        </div>
+        <div class="sp-col sp-span-2">
+          <div class="sp-label">Status</div>
+
+          <div class="sp-selector sp-full-width sp-margin-vertical-2 sp-small">
+            <input type="text" readonly class="sp-minimal sp-padding-icon-left sp-full-width sp-selector-trigger" placeholder="Add Status Filter"/>
+            <div class="sp-selector-overlay sp-icon-circle-plus">
+              <div class="sp-menu-dropdown sp-overlay">
+                <a class="sp-menu-item">Status 1</a>
+                <a class="sp-menu-item">Status 2</a>
+                <a class="sp-menu-item">Status 3</a>
+                <a class="sp-menu-item">Status 4</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="sp-padding-vertical-2">
+            <div class="sp-tag">Status 1<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+            <div class="sp-tag">Status 2<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+            <div class="sp-tag">Status 3<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+            <div class="sp-tag">Status 4<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+          </div>
+        </div>
+        
+      </div> -->
+
+      <div class="sp-row sp-padding-top-3 sp-list" style="flex-wrap: wrap">
+
+        <!-- Entry: Start -->
+        <div class="sp-col sp-span-4">
+          <div class="sp-card">
+            <div class="sp-width-3 sp-height-3 sp-align-center">
+              <i class="sp-inline-icon-code sp-color-muted" style="font-size: 36px; line-height: 2"></i>
+            </div>
+            <div class="sp-card-content sp-align-center" style="padding: 8px;">
+              <div class="sp-card-label sp-label sp-small sp-align-center">DoubleClick For Publishers Tag</div>
+              <div class="sp-card-title sp-align-center sp-color-contrast sp-large">My awesome Tag</div>
+              <div class="sp-card-id sp-small sp-align-center sp-color-muted">xHikL9fdsf<span class="sp-font-weight-semi-bold sp-padding-left-1 sp-margin-left-1 sp-border-left-base">Adventure Unit Top</span></div>
+            </div>
+            <div class="sp-card-footer sp-flex sp-small" style="flex:0.75">
+              <div class="sp-card-footer-left sp-align-left sp-padding-left-1" style="flex:1"><i class="sp-inline-icon-status sp-margin-right-1"></i>Status</div>
+              <div class="sp-card-footer-right sp-align-right sp-padding-right-1" style="flex:1; overflow: hidden">
+                <div class="sp-tag sp-primary">Campaign: Cool Stuff Q1</div>
+                <div class="sp-tag">Label 1</div>
+                <div class="sp-tag">+ 3 more</div>
+              </div>
+            </div>
+            <div class="sp-card-hover sp-container-dark">
+              <div class="sp-card-hover-actions">
+                <button class="sp-card-main-action sp-primary sp-rounded sp-small sp-icon-eye" onclick="window.location.href = '-creatives-explorer.html'">Preview in Creative Explorer</button>
+                <div class="sp-card-hover-action-icons">
+                  <button class="sp-preview-button sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-margin-right-2 sp-large"></button>
+                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-margin-right-2 sp-large"></button>
+                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-margin-right-2 sp-large"></button>
+                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-download sp-margin-right-2 sp-large"></button>
+                  <div class="sp-selector">
+                      <button class="sp-selector-trigger sp-minimal sp-simple-icon sp-primary sp-icon-more sp-large"></button>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-menu-dropdown-left sp-overlay sp-color-contrast">
+                          <a class="sp-menu-item sp-icon-edit">Rename</a>
+                          <a class="sp-menu-item sp-icon-copy">Duplicate</a>
+                          <a class="sp-menu-item sp-icon-file-cabinet">Archive</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Entry: End -->
+
+        <!-- Entry: Start -->
+        <div class="sp-col sp-span-4">
+          <div class="sp-card">
+            <div class="sp-width-3 sp-height-3 sp-align-center">
+              <i class="sp-inline-icon-code sp-color-muted" style="font-size: 36px; line-height: 2"></i>
+            </div>
+            <div class="sp-card-content sp-align-center" style="padding: 8px;">
+              <div class="sp-card-label sp-label sp-small sp-align-center">DoubleClick For Publishers Tag</div>
+              <div class="sp-card-title sp-align-center sp-color-contrast sp-large">My awesome Tag</div>
+              <div class="sp-card-id sp-small sp-align-center sp-color-muted">xHikL9fdsf<span class="sp-font-weight-semi-bold sp-padding-left-1 sp-margin-left-1 sp-border-left-base">Adventure Unit Top</span></div>
+            </div>
+            <div class="sp-card-footer sp-flex sp-small" style="flex:0.75">
+              <div class="sp-card-footer-left sp-align-left sp-padding-left-1" style="flex:1"><i class="sp-inline-icon-status sp-margin-right-1"></i>Status</div>
+              <div class="sp-card-footer-right sp-align-right sp-padding-right-1" style="flex:1">
+                <div class="sp-tag">Label 1</div>
+                <div class="sp-tag">Label 2</div>
+                <div class="sp-tag">+ 3 more</div>
+              </div>
+            </div>
+            <div class="sp-card-hover sp-container-dark">
+              <div class="sp-card-hover-actions">
+                <button class="sp-card-main-action sp-primary sp-rounded sp-small sp-icon-eye" onclick="window.location.href = '-creatives-explorer.html'">Preview in Creative Explorer</button>
+                <div class="sp-card-hover-action-icons">
+                  <button class="sp-preview-button sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-margin-right-2 sp-large"></button>
+                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-margin-right-2 sp-large"></button>
+                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-margin-right-2 sp-large"></button>
+                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-download sp-margin-right-2 sp-large"></button>
+                  <div class="sp-selector">
+                      <button class="sp-selector-trigger sp-minimal sp-simple-icon sp-primary sp-icon-more sp-large"></button>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-menu-dropdown-left sp-overlay sp-color-contrast">
+                          <a class="sp-menu-item sp-icon-edit">Rename</a>
+                          <a class="sp-menu-item sp-icon-copy">Duplicate</a>
+                          <a class="sp-menu-item sp-icon-file-cabinet">Archive</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Entry: End -->
+
+        <!-- Entry: Start -->
+        <div class="sp-col sp-span-4">
+          <div class="sp-card">
+            <div class="sp-width-3 sp-height-3 sp-align-center">
+              <i class="sp-inline-icon-code sp-color-muted" style="font-size: 36px; line-height: 2"></i>
+            </div>
+            <div class="sp-card-content sp-align-center" style="padding: 8px;">
+              <div class="sp-card-label sp-label sp-small sp-align-center">DoubleClick For Publishers Tag</div>
+              <div class="sp-card-title sp-align-center sp-color-contrast sp-large">My awesome Tag</div>
+              <div class="sp-card-id sp-small sp-align-center sp-color-muted">xHikL9fdsf<span class="sp-font-weight-semi-bold sp-padding-left-1 sp-margin-left-1 sp-border-left-base">Adventure Unit Top</span></div>
+            </div>
+            <div class="sp-card-footer sp-flex sp-small" style="flex:0.75">
+              <div class="sp-card-footer-left sp-align-left sp-padding-left-1" style="flex:1"><i class="sp-inline-icon-status sp-margin-right-1"></i>Status</div>
+              <div class="sp-card-footer-right sp-align-right sp-padding-right-1" style="flex:1">
+                <div class="sp-tag">Label 1</div>
+                <div class="sp-tag">Label 2</div>
+                <div class="sp-tag">+ 3 more</div>
+              </div>
+            </div>
+            <div class="sp-card-hover sp-container-dark">
+              <div class="sp-card-hover-actions">
+                <button class="sp-card-main-action sp-primary sp-rounded sp-small sp-icon-eye" onclick="window.location.href = '-creatives-explorer.html'">Preview in Creative Explorer</button>
+                <div class="sp-card-hover-action-icons">
+                  <button class="sp-preview-button sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-margin-right-2 sp-large"></button>
+                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-margin-right-2 sp-large"></button>
+                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-margin-right-2 sp-large"></button>
+                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-download sp-margin-right-2 sp-large"></button>
+                  <div class="sp-selector">
+                      <button class="sp-selector-trigger sp-minimal sp-simple-icon sp-primary sp-icon-more sp-large"></button>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-menu-dropdown-left sp-overlay sp-color-contrast">
+                          <a class="sp-menu-item sp-icon-edit">Rename</a>
+                          <a class="sp-menu-item sp-icon-copy">Duplicate</a>
+                          <a class="sp-menu-item sp-icon-file-cabinet">Archive</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Entry: End -->
+
+        <!-- Entry: Start -->
+        <div class="sp-col sp-span-4">
+          <div class="sp-card">
+            <div class="sp-width-3 sp-height-3 sp-align-center">
+              <i class="sp-inline-icon-code sp-color-muted" style="font-size: 36px; line-height: 2"></i>
+            </div>
+            <div class="sp-card-content sp-align-center" style="padding: 8px;">
+              <div class="sp-card-label sp-label sp-small sp-align-center">DoubleClick For Publishers Tag</div>
+              <div class="sp-card-title sp-align-center sp-color-contrast sp-large">My awesome Tag</div>
+              <div class="sp-card-id sp-small sp-align-center sp-color-muted">xHikL9fdsf<span class="sp-font-weight-semi-bold sp-padding-left-1 sp-margin-left-1 sp-border-left-base">Adventure Unit Top</span></div>
+            </div>
+            <div class="sp-card-footer sp-flex sp-small" style="flex:0.75">
+              <div class="sp-card-footer-left sp-align-left sp-padding-left-1" style="flex:1"><i class="sp-inline-icon-status sp-margin-right-1"></i>Status</div>
+              <div class="sp-card-footer-right sp-align-right sp-padding-right-1" style="flex:1">
+                <div class="sp-tag">Label 1</div>
+                <div class="sp-tag">Label 2</div>
+                <div class="sp-tag">+ 3 more</div>
+              </div>
+            </div>
+            <div class="sp-card-hover sp-container-dark">
+              <div class="sp-card-hover-actions">
+                <button class="sp-card-main-action sp-primary sp-rounded sp-small sp-icon-eye" onclick="window.location.href = '-creatives-explorer.html'">Preview in Creative Explorer</button>
+                <div class="sp-card-hover-action-icons">
+                  <button class="sp-preview-button sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-margin-right-2 sp-large"></button>
+                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-margin-right-2 sp-large"></button>
+                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-margin-right-2 sp-large"></button>
+                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-download sp-margin-right-2 sp-large"></button>
+                  <div class="sp-selector">
+                      <button class="sp-selector-trigger sp-minimal sp-simple-icon sp-primary sp-icon-more sp-large"></button>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-menu-dropdown-left sp-overlay sp-color-contrast">
+                          <a class="sp-menu-item sp-icon-edit">Rename</a>
+                          <a class="sp-menu-item sp-icon-copy">Duplicate</a>
+                          <a class="sp-menu-item sp-icon-file-cabinet">Archive</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Entry: End -->
+
+        <!-- Entry: Start -->
+        <div class="sp-col sp-span-4">
+          <div class="sp-card">
+            <div class="sp-width-3 sp-height-3 sp-align-center">
+              <i class="sp-inline-icon-code sp-color-muted" style="font-size: 36px; line-height: 2"></i>
+            </div>
+            <div class="sp-card-content sp-align-center" style="padding: 8px;">
+              <div class="sp-card-label sp-label sp-small sp-align-center">DoubleClick For Publishers Tag</div>
+              <div class="sp-card-title sp-align-center sp-color-contrast sp-large">My awesome Tag</div>
+              <div class="sp-card-id sp-small sp-align-center sp-color-muted">xHikL9fdsf<span class="sp-font-weight-semi-bold sp-padding-left-1 sp-margin-left-1 sp-border-left-base">Adventure Unit Top</span></div>
+            </div>
+            <div class="sp-card-footer sp-flex sp-small" style="flex:0.75">
+              <div class="sp-card-footer-left sp-align-left sp-padding-left-1" style="flex:1"><i class="sp-inline-icon-status sp-margin-right-1"></i>Status</div>
+              <div class="sp-card-footer-right sp-align-right sp-padding-right-1" style="flex:1">
+                <div class="sp-tag">Label 1</div>
+                <div class="sp-tag">Label 2</div>
+                <div class="sp-tag">+ 3 more</div>
+              </div>
+            </div>
+            <div class="sp-card-hover sp-container-dark">
+              <div class="sp-card-hover-actions">
+                <button class="sp-card-main-action sp-primary sp-rounded sp-small sp-icon-eye" onclick="window.location.href = '-creatives-explorer.html'">Preview in Creative Explorer</button>
+                <div class="sp-card-hover-action-icons">
+                  <button class="sp-preview-button sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-margin-right-2 sp-large"></button>
+                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-margin-right-2 sp-large"></button>
+                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-margin-right-2 sp-large"></button>
+                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-download sp-margin-right-2 sp-large"></button>
+                  <div class="sp-selector">
+                      <button class="sp-selector-trigger sp-minimal sp-simple-icon sp-primary sp-icon-more sp-large"></button>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-menu-dropdown-left sp-overlay sp-color-contrast">
+                          <a class="sp-menu-item sp-icon-edit">Rename</a>
+                          <a class="sp-menu-item sp-icon-copy">Duplicate</a>
+                          <a class="sp-menu-item sp-icon-file-cabinet">Archive</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Entry: End -->
+
+        <!-- Entry: Start -->
+        <div class="sp-col sp-span-4">
+          <div class="sp-card">
+            <div class="sp-width-3 sp-height-3 sp-align-center">
+              <i class="sp-inline-icon-code sp-color-muted" style="font-size: 36px; line-height: 2"></i>
+            </div>
+            <div class="sp-card-content sp-align-center" style="padding: 8px;">
+              <div class="sp-card-label sp-label sp-small sp-align-center">DoubleClick For Publishers Tag</div>
+              <div class="sp-card-title sp-align-center sp-color-contrast sp-large">My awesome Tag</div>
+              <div class="sp-card-id sp-small sp-align-center sp-color-muted">xHikL9fdsf<span class="sp-font-weight-semi-bold sp-padding-left-1 sp-margin-left-1 sp-border-left-base">Adventure Unit Top</span></div>
+            </div>
+            <div class="sp-card-footer sp-flex sp-small" style="flex:0.75">
+              <div class="sp-card-footer-left sp-align-left sp-padding-left-1" style="flex:1"><i class="sp-inline-icon-status sp-margin-right-1"></i>Status</div>
+              <div class="sp-card-footer-right sp-align-right sp-padding-right-1" style="flex:1">
+                <div class="sp-tag">Label 1</div>
+                <div class="sp-tag">Label 2</div>
+                <div class="sp-tag">+ 3 more</div>
+              </div>
+            </div>
+            <div class="sp-card-hover sp-container-dark">
+              <div class="sp-card-hover-actions">
+                <button class="sp-card-main-action sp-primary sp-rounded sp-small sp-icon-eye" onclick="window.location.href = '-creatives-explorer.html'">Preview in Creative Explorer</button>
+                <div class="sp-card-hover-action-icons">
+                  <button class="sp-preview-button sp-minimal sp-simple-icon sp-primary sp-icon-eye sp-margin-right-2 sp-large"></button>
+                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-settings sp-margin-right-2 sp-large"></button>
+                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-data sp-margin-right-2 sp-large"></button>
+                  <button class="sp-minimal sp-simple-icon sp-primary sp-icon-download sp-margin-right-2 sp-large"></button>
+                  <div class="sp-selector">
+                      <button class="sp-selector-trigger sp-minimal sp-simple-icon sp-primary sp-icon-more sp-large"></button>
+                      <div class="sp-selector-overlay">
+                        <div class="sp-menu-dropdown sp-menu-dropdown-left sp-overlay sp-color-contrast">
+                          <a class="sp-menu-item sp-icon-edit">Rename</a>
+                          <a class="sp-menu-item sp-icon-copy">Duplicate</a>
+                          <a class="sp-menu-item sp-icon-file-cabinet">Archive</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Entry: End -->
+
+        
+      </div>
+    </div>
+  </div>
+
+  <div id="target" class="sp-app-overlay">
+      <div class="sp-app-overlay-content">
+        <div class="sp-modal sp-overlay sp-contrast sp-rectangle sp-color-contrast sp-margin-2">
+          <div class="sp-wrapper sp-container-light sp-alt-two sp-modal-header">
+            <div class="sp-row">
+              <div class="sp-col sp-span-12">
+                <span class="sp-modal-icon sp-icon-paper-plane sp-color-muted sp-large"></span>
+                <h2>Publish New Instance (Page)</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="sp-wrapper sp-container-light sp-alt-two sp-modal-menu sp-padding-bottom-2">
+            <div class="sp-row sp-border-bottom-base sp-margin-0">
+               <div class="sp-menu sp-col sp-span-12 sp-padding-0">
+                 <a class="sp-menu-item sp-horizontal sp-state-active">1. General</a>
+                 <a class="sp-menu-item sp-horizontal">2. Trafficking Settings</a>
+                 <a class="sp-menu-item sp-horizontal">3. Click Through Setup</a>
+               </div>
+            </div>
+          </div>
+          
+          <div class="sp-wrapper sp-modal-body sp-padding-bottom-2">
+            <div class="sp-border-bottom-base sp-padding-2 sp-padding-left-3">
+              <h5><i class="sp-inline-icon-circle-info sp-margin-right-2"></i>Details</h5>
+            </div>
+            <div class="sp-row">
+               <div class="sp-col sp-span-7">
+
+                 
+                 <div class="sp-input-group sp-required">
+                    <div class="sp-input-group-label" data-description="Here is a description.">Instance/Tag Name</div>
+                    <div class="sp-input-group-content" data-helper="Here is helper text.">
+                      <div class="sp-input-group-content-item sp-required">
+                        <input type="text" placeholder="Enter a Name">
+                      </div>
+                    </div>
+                    <div class="sp-input-group-helper">
+                      <div class="sp-input-group-descr"><!-- Enter a name for this creative. --></div>
+                      <div class="sp-input-group-help-text"></div>
+                    </div>
+                  </div>
+
+                  <div class="sp-input-group">
+                    <div class="sp-input-group-label" data-description="Here is a description.">Campaign</div>
+                    <div class="sp-input-group-content" data-helper="Here is helper text.">
+                      <div class="sp-input-group-content-item sp-required">
+                        <div class="sp-selector sp-full-width">
+                          <input type="text" class="sp-padding-icon-left sp-full-width sp-selector-trigger" placeholder="Add/Search Campaigns"/>
+                          <div class="sp-selector-overlay sp-icon-circle-plus">
+                            <div class="sp-menu-dropdown sp-overlay">
+                              <a class="sp-menu-item sp-icon-circle-plus">Add Campaign: ""</a>
+                              <div class="sp-spacer-vertical"></div>
+                              <a class="sp-menu-item">Some Campaign</a>
+                              <a class="sp-menu-item">Another Campaign</a>
+                              <a class="sp-menu-item">Custom</a>
+                              <a class="sp-menu-item">Whatever</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sp-input-group-helper">
+                      <div class="sp-input-group-descr"><!-- Choose or enter a new advertiser. --></div>
+                      <div class="sp-input-group-help-text"></div>
+                    </div>
+                  </div>
+
+                  <div class="sp-input-group sp-required">
+                    <div class="sp-input-group-label" data-description="Here is a description.">Trafficking Preset</div>
+                    <div class="sp-input-group-content" data-helper="Here is helper text.">
+                      <div class="sp-input-group-content-item sp-required">
+                        <div class="sp-selector sp-full-width">
+                          <input type="text" class="sp-full-width sp-selector-trigger" value="Outstream Video (Default)"/>
+                          <div class="sp-selector-overlay">
+                            <div class="sp-menu-dropdown sp-overlay">
+                              <a class="sp-menu-item sp-state-active">Outstream Video (Default)</a>
+                              <a class="sp-menu-item">Flex Impact</a>
+                              <a class="sp-menu-item">Custom Settings (No Preset)</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sp-input-group-helper">
+                      <div class="sp-input-group-descr"></div>
+                      <div class="sp-input-group-help-text"></div>
+                    </div>
+                  </div>
+          
+
+                  <!-- <div class="sp-input-group sp-required">
+                    <div class="sp-input-group-label" data-description="Here is a description.">Ad Server</div>
+                    <div class="sp-input-group-content" data-helper="Here is helper text.">
+                      <div class="sp-input-group-content-item sp-required">
+                        <div class="sp-selector sp-full-width">
+                          <input type="text" class="sp-full-width sp-selector-trigger" value="DoubleClick for Publishers"/>
+                          <div class="sp-selector-overlay">
+                            <div class="sp-menu-dropdown sp-overlay">
+                              <a class="sp-menu-item">Generic (Placeholder Macros)</a>
+                              <a class="sp-menu-item sp-state-active">DoubleClick for Publishers</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sp-input-group-helper">
+                      <div class="sp-input-group-descr"></div>
+                      <div class="sp-input-group-help-text"></div>
+                    </div>
+                  </div> -->
+
+                </div>
+
+                <div class="sp-col sp-span-5">
+                  <!-- <div class="sp-h6 sp-margin-left-3 sp-padding-top-3 sp-padding-bottom-2">Labels</div> -->
+                  <div class="sp-padding-2 sp-padding-top-3 sp-margin-left-3 sp-margin-right-2 sp-rectangle sp-container-light sp-alt-two sp-small">
+                    <div class="sp-h6 sp-padding-bottom-2">Add Labels</div>
+                    <div class="sp-selector sp-full-width sp-margin-bottom-2">
+                      <input type="text" class="sp-padding-icon-left sp-full-width sp-selector-trigger" placeholder="Search Labels"/>
+                      <div class="sp-selector-overlay sp-icon-circle-plus">
+                        <div class="sp-menu-dropdown sp-overlay">
+                          <a class="sp-menu-item sp-icon-circle-plus">Add Label: ""</a>
+                          <div class="sp-spacer-vertical"></div>
+                          <a class="sp-menu-item">CPG</a>
+                          <a class="sp-menu-item">Direct Sale</a>
+                          <a class="sp-menu-item">Custom</a>
+                          <a class="sp-menu-item">Whatever</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="">
+                      <div class="sp-tag sp-primary">Campaign: My Awesome Campaign</div>
+                      <div class="sp-tag sp-success">Advertiser: Budweiser</div>
+                      <div class="sp-tag">CPG<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+                      <div class="sp-tag">Direct Sale<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+                      <div class="sp-tag">Custom<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+                      <div class="sp-tag">Whatever<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+                    </div>
+                  </div>
+
+
+                <!-- <div class="sp-input-group">
+                  <div class="sp-input-group-label" data-description="Here is a description.">Add Labels</div>
+                  <div class="sp-input-group-content" data-helper="Here is helper text.">
+                    <div class="sp-input-group-content-item sp-required">
+                      <div class="sp-selector sp-full-width sp-margin-bottom-2">
+                        <input type="text" class="sp-padding-icon-left sp-full-width sp-selector-trigger" placeholder="Enter or Choose A Custom Label"/>
+                        <div class="sp-selector-overlay sp-icon-circle-plus">
+                          <div class="sp-menu-dropdown sp-overlay">
+                            <a class="sp-menu-item sp-icon-circle-plus">Add Label: "Whatever I entered above goes here..."</a>
+                            <div class="sp-spacer-vertical"></div>
+                            <a class="sp-menu-item">CPG</a>
+                            <a class="sp-menu-item">Direct Sale</a>
+                            <a class="sp-menu-item">Custom</a>
+                            <a class="sp-menu-item">Whatever</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sp-input-group-helper">
+                    <div class="sp-input-group-descr"></div>
+                    <div class="sp-input-group-help-text"></div>
+                  </div>
+                </div>
+
+                <div class="sp-input-group">
+                  <div class="sp-input-group-label" data-description="Here is a description."></div>
+                  <div class="sp-input-group-content" data-helper="Here is helper text.">
+                    <div class="sp-input-group-content-item sp-required">
+                      <div class="sp-padding-2 sp-container-light sp-alt-two">
+                        <div class="sp-tag sp-primary">Campaign: My Awesome Campaign</div>
+                        <div class="sp-tag sp-success">Advertiser: Budweiser</div>
+                        <div class="sp-tag sp-warning">Client: OMD</div>
+                        <div class="sp-tag">CPG<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+                        <div class="sp-tag">Direct Sale<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+                        <div class="sp-tag">Custom<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+                        <div class="sp-tag">Whatever<i class="sp-inline-icon-circle-close sp-margin-left-2"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sp-input-group-helper">
+                    <div class="sp-input-group-descr">Test</div>
+                    <div class="sp-input-group-help-text"></div>
+                  </div>
+                </div> -->
+
+
+                      
+
+
+               </div>
+            </div>
+          </div>
+          <div class="sp-wrapper sp-border-top-base sp-modal-footer">
+            <div class="sp-row">
+               <div class="sp-col sp-span-12 sp-modal-footer-buttons">
+                 <button class="sp-align-center sp-icon-after-circle-arrow-left sp-state-disabled">Previous</button>
+                 <button class="sp-align-center sp-primary sp-icon-after-circle-arrow-right">Next</button>
+               </div>
+            </div>
+          </div>
+          <button class="sp-modal-close sp-icon-close sp-rounded sp-small"></button>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

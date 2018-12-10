@@ -111,9 +111,9 @@
       background-color: black;
     }
 
-    .sp-load-column.sp-show {
+    /*.sp-load-column.sp-show {
       min-width: 35px !important;
-    }
+    }*/
 
 
     .sp-load-column.sp-loading {
@@ -696,6 +696,21 @@
 
     $('#expandButton').on('mouseout', function() {
       $('.sp-load-column').removeClass('sp-show');
+    });
+
+    var $scrollEl = $('.sp-app-content');
+    var $metricLabels = $('.sp-data-table-head');
+    var $dimensionLabels = $('td:first-child, th:first-child');
+
+    $scrollEl.scroll(function() {
+
+      var scrollTop = $scrollEl.scrollTop();
+      var scrollLeft = $scrollEl.scrollLeft();
+
+      $dimensionLabels.css('transform', 'translateX(' + scrollLeft + 'px)');
+      $metricLabels.css('transform', 'translateY(' + scrollTop + 'px)');
+
+      console.log(scrollTop, scrollLeft);
     });
 
     // $('th').resizable({
